@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Atelier Studio | Molecular CAD, Telemetry & Live Pass</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            void: '#040406',
+            obsidian: '#09090d',
+            glass: 'rgba(18, 18, 26, 0.72)',
+            gold: { DEFAULT: '#d4af37', light: '#f7efcf', dim: '#7a6218' },
+            neonEmerald: '#10b981',
+            crimson: '#e11d48'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #040406;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.06) 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 40%),
+        linear-gradient(to bottom, #040406, #09090d);
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .glass-panel {
+      background: rgba(15, 15, 22, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .gold-border-glow {
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.07);
+    }
+    .grid-bg {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: #040406; }
+    ::-webkit-scrollbar-thumb { background: #262636; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-gold selection:text-black">
+
+  <!-- TOP TELEMETRY HUD BAR -->
+  <header class="glass-panel sticky top-0 z-40 px-6 py-3 flex flex-wrap justify-between items-center gap-4 border-b border-white/10">
+    <div class="flex items-center gap-4">
+      <a href="index.html" class="flex items-center gap-2 text-xs font-mono text-stone-400 hover:text-gold transition bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
+        <span>← Return to Curator OS</span>
+      </a>
+      <div class="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
+          <h1 class="text-lg font-display font-bold tracking-widest text-white uppercase">L'Atelier <span class="text-gold">EXO-STUDIO</span></h1>
+          <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">CAD + TELEMETRY v4.0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mode Switcher -->
+    <nav class="flex items-center bg-void/90 border border-white/10 rounded-xl p-1 text-xs font-display">
+      <button onclick="setStudioTab('plating')" id="stab-plating" class="px-4 py-1.5 rounded-lg bg-gold text-black font-bold transition-all">1. Plating CAD</button>
+      <button onclick="setStudioTab('telemetry')" id="stab-telemetry" class="px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">2. Sensory Telemetry</button>
+      <button onclick="setStudioTab('molecular')" id="stab-molecular" class="px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">3. Hydrocolloid Lab</button>
+      <button onclick="setStudioTab('kds')" id="stab-kds" class="px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">4. Live Pass KDS</button>
+    </nav>
+
+    <!-- Right Quick Command Trigger -->
+    <div class="flex items-center gap-3">
+      <button onclick="toggleCmdPalette()" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-3 py-1.5 text-xs font-mono text-stone-300 flex items-center gap-2 transition">
+        <span>Command</span>
+        <kbd class="px-1.5 py-0.5 text-[10px] bg-black rounded border border-white/20 text-gold">Ctrl+K</kbd>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN WORKSPACE -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+
+    <!-- ================= MODULE 1: INTERACTIVE PLATING CAD CANVAS ================= -->
+    <section id="view-plating" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Left Tool Palette -->
+      <div class="lg:col-span-4 glass-panel rounded-2xl p-6 space-y-6 gold-border-glow">
+        <div>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Architectural Assembly</span>
+          <h2 class="text-2xl font-serif font-bold text-white mt-0.5">Ceramic Plating Blueprint</h2>
+          <p class="text-xs text-stone-400 mt-1">Design negative space, emulsion dots, quenelles, and protein placement before service.</p>
+        </div>
+
+        <!-- Ceramic Vessel Geometry -->
+        <div class="space-y-2">
+          <label class="text-[11px] font-mono uppercase text-stone-400">1. Select Vessel Geometry</label>
+          <div class="grid grid-cols-3 gap-2 text-xs font-display">
+            <button onclick="setVessel('coupe')" id="v-coupe" class="p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-bold">Coupe Bowl</button>
+            <button onclick="setVessel('slate')" id="v-slate" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300">Black Slate</button>
+            <button onclick="setVessel('wide')" id="v-wide" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300">Wide Rim</button>
+          </div>
+        </div>
+
+        <!-- Culinary Brush / Element Tool -->
+        <div class="space-y-2">
+          <label class="text-[11px] font-mono uppercase text-stone-400">2. Select Plating Tool</label>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <button onclick="setBrush('dot')" id="b-dot" class="p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-medium text-left flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span> Fluid Gel Dot
+            </button>
+            <button onclick="setBrush('swoosh')" id="b-swoosh" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
+              <span>〰️</span> Puree Swoosh
+            </button>
+            <button onclick="setBrush('protein')" id="b-protein" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
+              <span>🥩</span> Protein Medallion
+            </button>
+            <button onclick="setBrush('quenelle')" id="b-quenelle" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
+              <span>🥄</span> Caviar / Quenelle
+            </button>
+            <button onclick="setBrush('herb')" id="b-herb" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
+              <span>🌿</span> Tweezers Micro-Herb
+            </button>
+            <button onclick="setBrush('oil')" id="b-oil" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
+              <span>💧</span> Chive Oil Bead
+            </button>
+          </div>
+        </div>
+
+        <!-- Color / Sauce Tint -->
+        <div class="space-y-2">
+          <label class="text-[11px] font-mono uppercase text-stone-400">3. Pigment / Emulsion Hue</label>
+          <div class="flex gap-2.5">
+            <button onclick="setColor('#d4af37')" class="w-7 h-7 rounded-full bg-[#d4af37] ring-2 ring-white" title="Beurre Monté / Gold"></button>
+            <button onclick="setColor('#881337')" class="w-7 h-7 rounded-full bg-[#881337]" title="Cherry / Port Gastrique"></button>
+            <button onclick="setColor('#10b981')" class="w-7 h-7 rounded-full bg-[#10b981]" title="Blanched Chive / Parsley Oil"></button>
+            <button onclick="setColor('#f8fafc')" class="w-7 h-7 rounded-full bg-[#f8fafc]" title="Parsnip / Celeriac Mousseline"></button>
+            <button onclick="setColor('#1e1b18')" class="w-7 h-7 rounded-full bg-[#1e1b18] border border-white/30" title="Black Winter Truffle / Caviar"></button>
+            <button onclick="setColor('#ea580c')" class="w-7 h-7 rounded-full bg-[#ea580c]" title="Sea Buckthorn / Carrot Reduction"></button>
+          </div>
+        </div>
+
+        <!-- Element Size Slider -->
+        <div class="space-y-1">
+          <div class="flex justify-between text-[11px] font-mono text-stone-400">
+            <span>Nozzle / Portion Scale</span>
+            <span id="brush-size-label" class="text-gold">18mm</span>
+          </div>
+          <input type="range" id="brush-size" min="6" max="55" value="18" oninput="document.getElementById('brush-size-label').textContent = this.value + 'mm'" class="w-full accent-gold cursor-pointer">
+        </div>
+
+        <div class="pt-3 border-t border-white/10 flex gap-2">
+          <button onclick="undoCanvas()" class="flex-1 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-stone-300 border border-white/10 transition">↩ Undo</button>
+          <button onclick="clearCanvas()" class="flex-1 py-2 rounded-xl bg-crimson/20 hover:bg-crimson/40 text-xs font-mono text-red-300 border border-crimson/40 transition">✕ Clear</button>
+          <button onclick="downloadPlatingPNG()" class="flex-1 py-2 rounded-xl bg-gold hover:bg-gold-light text-xs font-display font-bold text-black transition">⬇ Save PNG</button>
+        </div>
+      </div>
+
+      <!-- Right Interactive CAD Canvas -->
+      <div class="lg:col-span-8 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center relative grid-bg min-h-[540px]">
+        <div class="w-full flex justify-between items-center mb-3 text-xs font-mono text-stone-400">
+          <span>INTERACTIVE VIEWPORT • CLICK OR DRAG TO PLATE</span>
+          <span id="canvas-coords" class="text-gold">X: 000 | Y: 000</span>
+        </div>
+        <canvas id="plating-canvas" width="520" height="520" class="rounded-2xl cursor-crosshair shadow-2xl border border-white/10 bg-[#07070b]"></canvas>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 2: SENSORY TELEMETRY & RADAR ================= -->
+    <section id="view-telemetry" class="hidden space-y-8">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Physicochemical Palate Modeling</span>
+          <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Degustation Sensory Telemetry</h2>
+          <p class="text-xs text-stone-400 mt-1">Real-time multi-axis radar and progression curves mapping lipid coating, pH sharpness, and glutamic umami across your active menu.</p>
+        </div>
+        <button onclick="randomizeTelemetrySimulation()" class="px-4 py-2 rounded-xl bg-gold text-black font-display font-bold text-xs uppercase transition">
+          Recalculate Active Arc
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- 5-Axis Radar Canvas -->
+        <div class="lg:col-span-5 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center">
+          <h3 class="text-xs font-mono uppercase tracking-widest text-gold mb-4">5-Axis Palate Equilibrium</h3>
+          <canvas id="radar-canvas" width="360" height="360"></canvas>
+        </div>
+
+        <!-- Course-by-Course Waveforms -->
+        <div class="lg:col-span-7 glass-panel rounded-2xl p-6 flex flex-col justify-between space-y-6">
+          <div>
+            <h3 class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Course Progression Harmonics (Acid vs. Lipid Weight)</h3>
+            <p class="text-xs text-stone-400">Prevents palate fatigue by ensuring high-lipid climax courses are immediately followed by a high-acid pre-dessert spike.</p>
+          </div>
+          <canvas id="wave-canvas" width="600" height="240" class="w-full bg-void/60 rounded-xl border border-white/5 p-2"></canvas>
+
+          <div class="grid grid-cols-3 gap-4 text-center pt-2">
+            <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-[10px] font-mono text-stone-400 block">PEAK MAILLARD INDEX</span>
+              <span class="text-xl font-mono font-bold text-gold">Course 03 (9.4)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-[10px] font-mono text-stone-400 block">PALATE CLEANSING DELTA</span>
+              <span class="text-xl font-mono font-bold text-neonEmerald">+6.8 pH Shift</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-[10px] font-mono text-stone-400 block">THERMAL CONTRAST</span>
+              <span class="text-xl font-mono font-bold text-white">-5°C to 74°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 3: HYDROCOLLOID & EMULSION LAB ================= -->
+    <section id="view-molecular" class="hidden space-y-8">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow">
+        <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Modernist Precision Formulation</span>
+        <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Hydrocolloid & Fluid Gel Calculator</h2>
+        <p class="text-xs text-stone-400 mt-1">Calculate exact metric weights to 0.01g accuracy for modernist gels, airs, spheres, and stable beurre monté emulsions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Input Controls -->
+        <div class="glass-panel rounded-2xl p-6 space-y-5">
+          <div>
+            <label class="text-xs font-mono uppercase text-gold block mb-2">1. Base Liquid Volume / Weight (g or ml)</label>
+            <input type="number" id="hydro-base" value="500" oninput="calcHydro()" class="w-full bg-void border border-white/15 rounded-xl p-3 font-mono text-xl text-white focus:border-gold focus:outline-none">
+          </div>
+
+          <div>
+            <label class="text-xs font-mono uppercase text-gold block mb-2">2. Select Modernist Technique</label>
+            <select id="hydro-type" onchange="calcHydro()" class="w-full bg-void border border-white/15 rounded-xl p-3 text-sm text-white font-sans focus:border-gold focus:outline-none">
+              <option value="fluid_gel">Agar-Agar Sheared Fluid Gel (1.0% ratio)</option>
+              <option value="firm_gel">Agar-Agar Standing Sheet / Cube Gel (1.8% ratio)</option>
+              <option value="xanthan">Xanthan Gum Sauce Suspension / Vinaigrette (0.25% ratio)</option>
+              <option value="lecithin">Soy Lecithin Botanical Air / Foam (0.6% ratio)</option>
+              <option value="alginate">Sodium Alginate Direct Spherification Bath (0.5% ratio)</option>
+              <option value="pectin">High-Methoxyl Pectin Pate de Fruit (1.5% ratio)</option>
+            </select>
+          </div>
+
+          <div id="hydro-protocol" class="p-4 rounded-xl bg-white/5 border border-white/10 text-xs text-stone-300 space-y-1.5 leading-relaxed">
+            <!-- Dynamically updated -->
+          </div>
+        </div>
+
+        <!-- Precision Output Readout -->
+        <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between gold-border-glow">
+          <div>
+            <span class="text-[10px] font-mono uppercase text-stone-400 block">Precision Jewelry Scale Target</span>
+            <h3 id="hydro-title-out" class="text-2xl font-serif font-bold text-white mt-1">Agar-Agar Sheared Fluid Gel</h3>
+          </div>
+
+          <div class="my-8 text-center py-8 bg-void/80 rounded-2xl border border-white/10">
+            <span class="text-xs font-mono text-stone-400 block mb-2">REQUIRED HYDROCOLLOID MASS</span>
+            <span id="hydro-grams-out" class="text-6xl font-mono font-bold text-gold">5.00 g</span>
+            <span id="hydro-pct-out" class="text-xs font-mono text-neonEmerald block mt-2">1.00% Hydration Ratio</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+              <span class="text-stone-400 block text-[10px]">HYDRATION TEMP</span>
+              <span id="hydro-temp-out" class="text-white font-bold text-sm">95°C – 100°C Boil</span>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+              <span class="text-stone-400 block text-[10px]">SET WINDOW</span>
+              <span id="hydro-set-out" class="text-white font-bold text-sm">35°C – 40°C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 4: LIVE PASS KDS (EXPEDITOR DISPLAY) ================= -->
+    <section id="view-kds" class="hidden space-y-6">
+      <div class="glass-panel rounded-2xl p-6 flex flex-wrap justify-between items-center gap-4 border-l-4 border-l-gold">
+        <div>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Back-Of-House Expeditor Screen</span>
+          <h2 class="text-2xl font-serif font-bold text-white">Live Service Pass Monitor (KDS)</h2>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-right font-mono">
+            <span class="text-[10px] text-stone-400 block">SERVICE ELAPSED</span>
+            <span id="kds-master-clock" class="text-2xl font-bold text-neonEmerald">00:00:00</span>
+          </div>
+          <button onclick="fireNextCourseKDS()" class="px-5 py-2.5 rounded-xl bg-gold text-black font-display font-bold text-xs uppercase shadow-lg hover:bg-gold-light transition">
+            🔥 Fire Next Course
+          </button>
+        </div>
+      </div>
+
+      <div id="kds-tickets-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <!-- Injected dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- COMMAND PALETTE (CTRL+K) -->
+  <div id="cmd-palette" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-start justify-center pt-24 p-4">
+    <div class="glass-panel max-w-lg w-full rounded-2xl overflow-hidden shadow-2xl border border-gold/40">
+      <div class="p-4 border-b border-white/10 flex items-center gap-3">
+        <span class="text-gold font-mono">❯</span>
+        <input type="text" id="cmd-input" oninput="filterCommands()" placeholder="Type a studio command (e.g., 'Plating', 'Clear', 'KDS', 'Curator')..." class="w-full bg-transparent text-sm text-white focus:outline-none font-mono">
+        <button onclick="toggleCmdPalette()" class="text-xs text-stone-500 font-mono">ESC</button>
+      </div>
+      <div id="cmd-list" class="p-2 max-h-64 overflow-y-auto space-y-1 text-xs font-mono"></div>
+    </div>
+  </div>
+
+  <script>
+    /* =========================================================
+       1. TAB NAVIGATION & KEYBOARD SHORTCUTS
+       ========================================================= */
+    function setStudioTab(tab) {
+      ['plating', 'telemetry', 'molecular', 'kds'].forEach(t => {
+        document.getElementById(`view-${t}`).classList.toggle('hidden', t !== tab);
+        const btn = document.getElementById(`stab-${t}`);
+        btn.className = t === tab 
+          ? "px-4 py-1.5 rounded-lg bg-gold text-black font-bold transition-all"
+          : "px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all";
+      });
+      if (tab === 'telemetry') {
+        drawRadarChart();
+        drawWaveChart();
+      }
+      if (tab === 'molecular') calcHydro();
+      if (tab === 'kds') renderKDSTickets();
+    }
+
+    /* =========================================================
+       2. INTERACTIVE PLATING CAD CANVAS
+       ========================================================= */
+    const canvas = document.getElementById('plating-canvas');
+    const ctx = canvas.getContext('2d');
+    let currentVessel = 'coupe';
+    let currentBrush = 'dot';
+    let currentColor = '#d4af37';
+    let historyStack = [];
+    let isDrawing = false;
+
+    function saveCanvasState() {
+      if (historyStack.length > 15) historyStack.shift();
+      historyStack.push(canvas.toDataURL());
+    }
+
+    function drawBaseVessel() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+
+      if (currentVessel === 'coupe') {
+        // Dark matte ceramic coupe bowl
+        const grad = ctx.createRadialGradient(cx - 30, cy - 30, 20, cx, cy, 230);
+        grad.addColorStop(0, '#1e1e26');
+        grad.addColorStop(1, '#0e0e12');
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(cx, cy, 225, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.25)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Inner well line
+        ctx.beginPath();
+        ctx.arc(cx, cy, 165, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.06)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      } else if (currentVessel === 'slate') {
+        // Rectangular brushed basalt slate
+        ctx.fillStyle = '#141419';
+        ctx.fillRect(45, 70, 430, 380);
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(45, 70, 430, 380);
+      } else if (currentVessel === 'wide') {
+        // Wide rimmed French porcelain (off-white/bone dark mode)
+        ctx.fillStyle = '#181820';
+        ctx.beginPath();
+        ctx.arc(cx, cy, 235, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+        ctx.stroke();
+
+        // Small off-center inner target well
+        ctx.fillStyle = '#101016';
+        ctx.beginPath();
+        ctx.arc(cx, cy, 115, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.35)';
+        ctx.stroke();
+      }
+      saveCanvasState();
+    }
+
+    function setVessel(v) {
+      currentVessel = v;
+      ['coupe', 'slate', 'wide'].forEach(k => {
+        document.getElementById(`v-${k}`).className = k === v
+          ? "p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-bold"
+          : "p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300";
+      });
+      historyStack = [];
+      drawBaseVessel();
+    }
+
+    function setBrush(b) {
+      currentBrush = b;
+      ['dot', 'swoosh', 'protein', 'quenelle', 'herb', 'oil'].forEach(k => {
+        document.getElementById(`b-${k}`).className = k === b
+          ? "p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-medium text-left flex items-center gap-2"
+          : "p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2";
+      });
+    }
+
+    function setColor(hex) {
+      currentColor = hex;
+    }
+
+    canvas.addEventListener('mousemove', e => {
+      const rect = canvas.getBoundingClientRect();
+      const x = Math.round(e.clientX - rect.left);
+      const y = Math.round(e.clientY - rect.top);
+      document.getElementById('canvas-coords').textContent = `X: ${x.toString().padStart(3, '0')} | Y: ${y.toString().padStart(3, '0')}`;
+
+      if (isDrawing && currentBrush === 'swoosh') {
+        const size = parseInt(document.getElementById('brush-size').value);
+        ctx.fillStyle = currentColor;
+        ctx.beginPath();
+        ctx.arc(x, y, size * 0.6, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    });
+
+    canvas.addEventListener('mousedown', e => {
+      saveCanvasState();
+      isDrawing = true;
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const size = parseInt(document.getElementById('brush-size').value);
+
+      ctx.save();
+      ctx.translate(x, y);
+
+      if (currentBrush === 'dot') {
+        // Glossy fluid gel dot with specular highlight
+        ctx.fillStyle = currentColor;
+        ctx.beginPath();
+        ctx.arc(0, 0, size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = 'rgba(255,255,255,0.45)';
+        ctx.beginPath();
+        ctx.arc(-size * 0.3, -size * 0.3, size * 0.22, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (currentBrush === 'protein') {
+        // Carved protein medallion
+        ctx.rotate(-0.25);
+        ctx.fillStyle = '#5c2129';
+        ctx.strokeStyle = '#3b1508';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.roundRect(-size * 1.6, -size, size * 3.2, size * 2, 12);
+        ctx.fill();
+        ctx.stroke();
+      } else if (currentBrush === 'quenelle') {
+        // Classic 3-sided rocher/quenelle
+        ctx.rotate(-0.4);
+        ctx.fillStyle = currentColor;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, size * 1.4, size * 0.7, 0, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (currentBrush === 'herb') {
+        // Micro-herb leaf cluster
+        ctx.fillStyle = '#10b981';
+        for (let i = 0; i < 3; i++) {
+          ctx.rotate((Math.PI * 2) / 3);
+          ctx.beginPath();
+          ctx.ellipse(size * 0.5, 0, size * 0.5, size * 0.2, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      } else if (currentBrush === 'oil') {
+        // Cluster of broken herb oil droplets
+        for (let i = 0; i < 6; i++) {
+          const ox = (Math.random() - 0.5) * size * 2.2;
+          const oy = (Math.random() - 0.5) * size * 2.2;
+          const r = Math.random() * (size * 0.3) + 2;
+          ctx.fillStyle = currentColor;
+          ctx.globalAlpha = 0.85;
+          ctx.beginPath();
+          ctx.arc(ox, oy, r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      ctx.restore();
+    });
+
+    window.addEventListener('mouseup', () => { isDrawing = false; });
+
+    function undoCanvas() {
+      if (historyStack.length > 0) {
+        const img = new Image();
+        img.src = historyStack.pop();
+        img.onload = () => {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(img, 0, 0);
+        };
+      }
+    }
+
+    function clearCanvas() {
+      drawBaseVessel();
+    }
+
+    function downloadPlatingPNG() {
+      const link = document.createElement('a');
+      link.download = 'latelier-plating-blueprint.png';
+      link.href = canvas.toDataURL();
+      link.click();
+    }
+
+    /* =========================================================
+       3. SENSORY TELEMETRY (RADAR & WAVE CHARTS)
+       ========================================================= */
+    let radarStats = [8.5, 7.2, 9.1, 8.8, 7.9]; // Acid, Lipid, Umami, Thermal, Maillard
+
+    function drawRadarChart() {
+      const rc = document.getElementById('radar-canvas');
+      if (!rc) return;
+      const rctx = rc.getContext('2d');
+      rctx.clearRect(0, 0, rc.width, rc.height);
+
+      const cx = rc.width / 2;
+      const cy = rc.height / 2;
+      const maxR = 125;
+      const labels = ['ACIDITY', 'LIPID FAT', 'UMAMI', 'THERMAL', 'MAILLARD'];
+
+      // Draw concentric web rings
+      for (let level = 1; level <= 4; level++) {
+        const r = (maxR / 4) * level;
+        rctx.beginPath();
+        for (let i = 0; i < 5; i++) {
+          const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+          const x = cx + Math.cos(angle) * r;
+          const y = cy + Math.sin(angle) * r;
+          if (i === 0) rctx.moveTo(x, y);
+          else rctx.lineTo(x, y);
+        }
+        rctx.closePath();
+        rctx.strokeStyle = 'rgba(255,255,255,0.08)';
+        rctx.stroke();
+      }
+
+      // Draw polygon data
+      rctx.beginPath();
+      for (let i = 0; i < 5; i++) {
+        const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+        const valR = (radarStats[i] / 10) * maxR;
+        const x = cx + Math.cos(angle) * valR;
+        const y = cy + Math.sin(angle) * valR;
+        if (i === 0) rctx.moveTo(x, y);
+        else rctx.lineTo(x, y);
+      }
+      rctx.closePath();
+      rctx.fillStyle = 'rgba(212, 175, 55, 0.25)';
+      rctx.fill();
+      rctx.strokeStyle = '#d4af37';
+      rctx.lineWidth = 2;
+      rctx.stroke();
+
+      // Axis labels
+      rctx.fillStyle = '#a8a29e';
+      rctx.font = '10px "JetBrains Mono"';
+      rctx.textAlign = 'center';
+      for (let i = 0; i < 5; i++) {
+        const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
+        const x = cx + Math.cos(angle) * (maxR + 24);
+        const y = cy + Math.sin(angle) * (maxR + 24);
+        rctx.fillText(`${labels[i]} (${radarStats[i]})`, x, y);
+      }
+    }
+
+    function drawWaveChart() {
+      const wc = document.getElementById('wave-canvas');
+      if (!wc) return;
+      const wctx = wc.getContext('2d');
+      wctx.clearRect(0, 0, wc.width, wc.height);
+
+      const courses = ['01 OPENER', '02 MID', '03 CLIMAX', '04 PRE-DESSERT', '05 FINALE'];
+      const acidPoints = [8.5, 5.5, 4.0, 9.5, 6.0];
+      const fatPoints = [3.0, 7.5, 9.5, 1.0, 7.0];
+
+      const stepX = wc.width / 5;
+
+      // Acid Line (Emerald)
+      wctx.beginPath();
+      acidPoints.forEach((val, i) => {
+        const x = i * stepX + 55;
+        const y = wc.height - (val / 10) * (wc.height - 50) - 25;
+        if (i === 0) wctx.moveTo(x, y);
+        else wctx.lineTo(x, y);
+      });
+      wctx.strokeStyle = '#10b981';
+      wctx.lineWidth = 3;
+      wctx.stroke();
+
+      // Fat Line (Gold)
+      wctx.beginPath();
+      fatPoints.forEach((val, i) => {
+        const x = i * stepX + 55;
+        const y = wc.height - (val / 10) * (wc.height - 50) - 25;
+        if (i === 0) wctx.moveTo(x, y);
+        else wctx.lineTo(x, y);
+      });
+      wctx.strokeStyle = '#d4af37';
+      wctx.lineWidth = 3;
+      wctx.stroke();
+
+      // Labels
+      wctx.fillStyle = '#a8a29e';
+      wctx.font = '10px "JetBrains Mono"';
+      courses.forEach((c, i) => {
+        wctx.fillText(c, i * stepX + 25, wc.height - 6);
+      });
+    }
+
+    function randomizeTelemetrySimulation() {
+      radarStats = radarStats.map(() => +(Math.random() * 3 + 6.8).toFixed(1));
+      drawRadarChart();
+      drawWaveChart();
+    }
+
+    /* =========================================================
+       4. HYDROCOLLOID & MODERNIST RATIO CALCULATOR
+       ========================================================= */
+    const HYDRO_SPECS = {
+      fluid_gel: {
+        title: "Agar-Agar Sheared Fluid Gel",
+        ratio: 0.010,
+        temp: "95°C – 100°C Full Boil",
+        set: "35°C – 40°C",
+        protocol: "1. Cold-disperse agar powder into liquid base with immersion blender.\n2. Bring to a rolling boil for 90 seconds to fully hydrate polymers.\n3. Pour into shallow hotel pan and chill until solid.\n4. Cube the set gel and blend on high shear until glossy, pipeable fluid gel forms."
+      },
+      firm_gel: {
+        title: "Agar-Agar Standing Sheet / Cube Gel",
+        ratio: 0.018,
+        temp: "100°C Boil (2 mins)",
+        set: "38°C Rapid Set",
+        protocol: "1. Whisk agar into cold liquid base.\n2. Boil for 2 minutes.\n3. Cast onto flat rimmed tray to 2mm thickness for veils or 1.5cm for cubes."
+      },
+      xanthan: {
+        title: "Xanthan Gum Shear-Thinning Suspension",
+        ratio: 0.0025,
+        temp: "Cold or Warm (0°C – 85°C)",
+        set: "Instantaneous Viscosity",
+        protocol: "1. Slowly vortex xanthan into liquid using an immersion blender to prevent clumping.\n2. Pass through fine chinois or vacuum chamber to remove micro-air bubbles."
+      },
+      lecithin: {
+        title: "Soy Lecithin Botanical Air / Espuma",
+        ratio: 0.006,
+        temp: "15°C – 45°C",
+        set: "Stable Surface Foam",
+        protocol: "1. Blend soy lecithin into watery aromatic liquid.\n2. Tilt wide container and skim surface with hand blender to incorporate air.\n3. Let foam stabilize 60 seconds, then spoon off dry aromatic cloud."
+      },
+      alginate: {
+        title: "Sodium Alginate Direct Spherification",
+        ratio: 0.005,
+        temp: "Cold Hydration (Rest 12h)",
+        set: "Chemical Calcium Cross-Link",
+        protocol: "1. Blend sodium alginate into low-calcium flavorful liquid.\n2. Rest 12 hours in fridge to purge air bubbles.\n3. Drop into 0.5% Calcium Chloride setting bath for 90 seconds; rinse in pure water."
+      },
+      pectin: {
+        title: "High-Methoxyl Pectin Fruit Gel",
+        ratio: 0.015,
+        temp: "106°C Brix Target",
+        set: "Acid-Triggered Set",
+        protocol: "1. Whisk HM pectin with 5x its weight in caster sugar so it disperses evenly.\n2. Boil with fruit puree to 106°C, then stir in citric acid solution immediately before casting."
+      }
+    };
+
+    function calcHydro() {
+      const base = parseFloat(document.getElementById('hydro-base').value) || 0;
+      const type = document.getElementById('hydro-type').value;
+      const spec = HYDRO_SPECS[type];
+
+      const grams = (base * spec.ratio).toFixed(2);
+      document.getElementById('hydro-title-out').textContent = spec.title;
+      document.getElementById('hydro-grams-out').textContent = `${grams} g`;
+      document.getElementById('hydro-pct-out').textContent = `${(spec.ratio * 100).toFixed(2)}% Hydration Ratio`;
+      document.getElementById('hydro-temp-out').textContent = spec.temp;
+      document.getElementById('hydro-set-out').textContent = spec.set;
+      document.getElementById('hydro-protocol').innerText = spec.protocol;
+    }
+
+    /* =========================================================
+       5. LIVE PASS KDS (EXPEDITOR TICKETS)
+       ========================================================= */
+    let kdsCourses = [
+      { num: "01", slot: "OPENER", name: "Salmon Cornets / Red Onion Crème", status: "PLATED", color: "border-neonEmerald text-neonEmerald" },
+      { num: "02", slot: "MID", name: "Oysters & Pearls / Tapioca Sabayon", status: "FIRING NOW", color: "border-gold text-gold animate-pulse" },
+      { num: "03", slot: "CLIMAX", name: "Dry-Aged Duck / Cherry Gastrique", status: "RESTING (53°C)", color: "border-amber-500 text-amber-400" },
+      { num: "04", slot: "PRE-DESSERT", name: "Menton Lemon Granita / Rosemary", status: "ON DECK", color: "border-white/20 text-stone-400" },
+      { num: "05", slot: "FINALE", name: "Deconstructed Lemon Tart", status: "HOLD", color: "border-white/20 text-stone-400" }
+    ];
+
+    function renderKDSTickets() {
+      const grid = document.getElementById('kds-tickets-grid');
+      grid.innerHTML = kdsCourses.map((c, idx) => `
+        <div class="glass-panel rounded-2xl p-5 border-t-4 ${c.color} flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex justify-between items-center text-[10px] font-mono">
+              <span>COURSE ${c.num}</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">${c.status}</span>
+            </div>
+            <h4 class="text-lg font-serif font-bold text-white mt-2">${c.name}</h4>
+          </div>
+          <button onclick="advanceKDSTicket(${idx})" class="w-full py-2 rounded-lg bg-white/5 hover:bg-gold hover:text-black text-xs font-mono text-stone-300 transition">
+            Advance Status →
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function advanceKDSTicket(idx) {
+      const states = ["ON DECK", "FIRING NOW", "RESTING", "PLATED"];
+      const cur = kdsCourses[idx].status;
+      const next = states[(states.indexOf(cur) + 1) % states.length] || "PLATED";
+      kdsCourses[idx].status = next;
+      kdsCourses[idx].color = next === "PLATED" ? "border-neonEmerald text-neonEmerald" : "border-gold text-gold";
+      renderKDSTickets();
+    }
+
+    function fireNextCourseKDS() {
+      const idx = kdsCourses.findIndex(c => c.status !== "PLATED");
+      if (idx !== -1) {
+        kdsCourses[idx].status = "PLATED";
+        kdsCourses[idx].color = "border-neonEmerald text-neonEmerald";
+        if (kdsCourses[idx + 1]) {
+          kdsCourses[idx + 1].status = "FIRING NOW";
+          kdsCourses[idx + 1].color = "border-gold text-gold animate-pulse";
+        }
+        renderKDSTickets();
+      }
+    }
+
+    // Master KDS Clock
+    let kdsSeconds = 0;
+    setInterval(() => {
+      kdsSeconds++;
+      const h = String(Math.floor(kdsSeconds / 3600)).padStart(2, '0');
+      const m = String(Math.floor((kdsSeconds % 3600) / 60)).padStart(2, '0');
+      const s = String(kdsSeconds % 60).padStart(2, '0');
+      const el = document.getElementById('kds-master-clock');
+      if (el) el.textContent = `${h}:${m}:${s}`;
+    }, 1000);
+
+    /* =========================================================
+       6. CTRL+K COMMAND PALETTE
+       ========================================================= */
+    const COMMANDS = [
+      { label: "Switch to Interactive Plating CAD", action: () => setStudioTab('plating') },
+      { label: "Switch to Sensory Telemetry Radar", action: () => setStudioTab('telemetry') },
+      { label: "Switch to Hydrocolloid & Emulsion Lab", action: () => setStudioTab('molecular') },
+      { label: "Switch to Live Pass KDS Monitor", action: () => setStudioTab('kds') },
+      { label: "Clear Plating CAD Canvas", action: () => clearCanvas() },
+      { label: "Export Plating Blueprint as PNG", action: () => downloadPlatingPNG() },
+      { label: "Return to Main Curator OS (index.html)", action: () => window.location.href = 'index.html' }
+    ];
+
+    function toggleCmdPalette() {
+      const modal = document.getElementById('cmd-palette');
+      modal.classList.toggle('hidden');
+      if (!modal.classList.contains('hidden')) {
+        document.getElementById('cmd-input').value = '';
+        filterCommands();
+        document.getElementById('cmd-input').focus();
+      }
+    }
+
+    function filterCommands() {
+      const q = document.getElementById('cmd-input').value.toLowerCase();
+      const list = document.getElementById('cmd-list');
+      list.innerHTML = '';
+      COMMANDS.filter(c => c.label.toLowerCase().includes(q)).forEach(cmd => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-2.5 rounded-lg hover:bg-gold hover:text-black text-stone-300 transition flex justify-between items-center";
+        btn.innerHTML = `<span>${cmd.label}</span><span class="text-[10px] opacity-60">↵ Enter</span>`;
+        btn.onclick = () => {
+          cmd.action();
+          toggleCmdPalette();
+        };
+        list.appendChild(btn);
+      });
+    }
+
+    window.addEventListener('keydown', e => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        toggleCmdPalette();
+      } else if (e.key === 'Escape') {
+        document.getElementById('cmd-palette').classList.add('hidden');
+      }
+    });
+
+    // Initialize default view
+    window.addEventListener('DOMContentLoaded', () => {
+      drawBaseVessel();
+      calcHydro();
+    });
+  </script>
+</body>
+</html>

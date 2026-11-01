@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#070709">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>L'Atelier OS | Haute Cuisine Degustation Engine</title>
+  <title>L'Atelier OS v3.0 | Haute Cuisine Degustation Engine</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#070709">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,13 +67,13 @@
         box-shadow: none !important;
         padding: 0 !important;
       }
-      .print-card h2, .print-card h3, .print-card p { color: #111111 !important; }
+      .print-card h2, .print-card h3, .print-card h4, .print-card p, .print-card span { color: #111111 !important; }
     }
   </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-gold selection:text-black">
 
-  <!-- ================= TOP APP BAR ================= -->
+  <!-- TOP APP BAR -->
   <header class="no-print border-b border-surfaceLight bg-charcoal/90 backdrop-blur-md sticky top-0 z-40 px-4 sm:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4 transition-all">
     <div class="flex items-center gap-3.5">
       <div class="w-10 h-10 border border-gold/40 rounded-full flex items-center justify-center text-gold font-display font-bold text-base bg-surface shadow-[0_0_15px_rgba(212,175,55,0.15)]">
@@ -82,31 +82,36 @@
       <div>
         <div class="flex items-center gap-2">
           <h1 class="text-xl sm:text-2xl font-display text-white font-bold tracking-widest uppercase">L'Atelier</h1>
-          <span class="text-[9px] uppercase tracking-widest px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30 font-display">OS v2.5</span>
+          <span class="text-[9px] uppercase tracking-widest px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30 font-display">OS v3.0</span>
         </div>
         <p class="text-[11px] text-stone-400 font-serif italic">Haute Cuisine Operating System & Degustation Studio</p>
       </div>
     </div>
 
     <!-- Navigation Tabs -->
-    <nav class="flex items-center bg-obsidian border border-surfaceLight rounded-full p-1 text-xs font-display">
-      <button onclick="switchTab('degustation')" id="tab-degustation" class="px-4 py-1.5 rounded-full bg-gold text-black font-bold transition-all">Curator</button>
-      <button onclick="switchTab('provisions')" id="tab-provisions" class="px-4 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Provisions</button>
-      <button onclick="switchTab('timers')" id="tab-timers" class="px-4 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Stations</button>
-      <button onclick="switchTab('misenplace')" id="tab-misenplace" class="px-4 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Firing Line</button>
+    <nav class="flex flex-wrap items-center bg-obsidian border border-surfaceLight rounded-full p-1 text-xs font-display">
+      <button onclick="switchTab('degustation')" id="tab-degustation" class="px-3.5 py-1.5 rounded-full bg-gold text-black font-bold transition-all">Curator</button>
+      <button onclick="switchTab('archive')" id="tab-archive" class="px-3.5 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Archive (<span id="nav-db-count">0</span>)</button>
+      <button onclick="switchTab('provisions')" id="tab-provisions" class="px-3.5 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Provisions</button>
+      <button onclick="switchTab('timers')" id="tab-timers" class="px-3.5 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Stations</button>
+      <button onclick="switchTab('misenplace')" id="tab-misenplace" class="px-3.5 py-1.5 rounded-full text-stone-400 hover:text-white transition-all">Firing Line</button>
     </nav>
 
     <!-- Global Controls -->
-    <div class="flex items-center gap-2.5">
+    <div class="flex items-center gap-2">
       <div class="flex items-center bg-obsidian border border-surfaceLight rounded-xl px-2.5 py-1 text-xs">
-        <span class="text-stone-500 mr-2 uppercase tracking-wider text-[10px] font-display">Covers:</span>
-        <button onclick="setCovers(2)" id="cov-2" class="px-2 py-0.5 rounded font-bold transition text-gold">2</button>
-        <button onclick="setCovers(4)" id="cov-4" class="px-2 py-0.5 rounded transition text-stone-400 hover:text-white">4</button>
-        <button onclick="setCovers(6)" id="cov-6" class="px-2 py-0.5 rounded transition text-stone-400 hover:text-white">6</button>
-        <button onclick="setCovers(8)" id="cov-8" class="px-2 py-0.5 rounded transition text-stone-400 hover:text-white">8</button>
+        <span class="text-stone-500 mr-1.5 uppercase tracking-wider text-[10px] font-display">Covers:</span>
+        <button onclick="setCovers(2)" id="cov-2" class="px-1.5 py-0.5 rounded font-bold transition text-gold">2</button>
+        <button onclick="setCovers(4)" id="cov-4" class="px-1.5 py-0.5 rounded transition text-stone-400 hover:text-white">4</button>
+        <button onclick="setCovers(6)" id="cov-6" class="px-1.5 py-0.5 rounded transition text-stone-400 hover:text-white">6</button>
+        <button onclick="setCovers(8)" id="cov-8" class="px-1.5 py-0.5 rounded transition text-stone-400 hover:text-white">8</button>
       </div>
 
-      <button onclick="toggleVaultDrawer(true)" class="border border-surfaceLight hover:border-gold/50 text-stone-300 hover:text-gold px-3 py-1.5 rounded-xl text-xs flex items-center gap-2 transition bg-surface">
+      <button onclick="openCreatorModal()" class="border border-gold/40 hover:border-gold text-gold px-3 py-1.5 rounded-xl text-xs font-display transition bg-surface hidden sm:flex items-center gap-1" title="Create Custom Dish">
+        <span>+ Dish</span>
+      </button>
+
+      <button onclick="toggleVaultDrawer(true)" class="border border-surfaceLight hover:border-gold/50 text-stone-300 hover:text-gold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition bg-surface">
         <span class="font-display text-[11px] uppercase tracking-wider hidden sm:inline">Vault</span>
         <span id="saved-vault-badge" class="bg-gold text-black text-[10px] font-bold px-1.5 py-0.2 rounded-full">0</span>
       </button>
@@ -152,13 +157,11 @@
             </div>
 
             <button onclick="randomizeUnlockedCourses()" class="bg-gradient-to-r from-gold via-gold-light to-gold-dark text-black font-display font-bold text-xs uppercase px-5 py-2.5 rounded-xl shadow-lg hover:shadow-gold/20 transition-all flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-              <span>Randomize All</span>
+              <span>🎲 Randomize All</span>
             </button>
 
             <button onclick="promptSaveCurrentMenu()" class="border border-gold/40 hover:border-gold text-gold font-display text-xs px-4 py-2.5 rounded-xl transition bg-surface flex items-center gap-2">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path></svg>
-              <span>Save Menu</span>
+              <span>💾 Save Menu</span>
             </button>
           </div>
         </div>
@@ -186,7 +189,32 @@
       <div id="degustation-feed" class="space-y-8"></div>
     </section>
 
-    <!-- VIEW 2: PROVISIONS MATRIX -->
+    <!-- VIEW 2: ARCHIVE EXPLORER -->
+    <section id="view-archive" class="hidden space-y-6">
+      <div class="bg-charcoal p-6 sm:p-8 rounded-2xl border border-surfaceLight flex flex-col md:flex-row justify-between items-start md:items-center gap-4 gold-glow">
+        <div>
+          <span class="text-[10px] tracking-widest uppercase text-gold font-display font-semibold">Complete Culinary Vault</span>
+          <h2 class="text-3xl font-serif font-bold text-white mt-1">Master Recipe Archive</h2>
+          <p class="text-xs text-stone-400 mt-1">Search across all ingested Michelin, bistro, and custom preparations. Inject any dish directly into your active menu.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+          <input type="text" id="archive-search" oninput="renderArchiveExplorer()" placeholder="Search dish, chef, ingredient..." class="flex-1 md:w-64 bg-obsidian border border-surfaceLight rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-gold">
+          <select id="archive-slot-filter" onchange="renderArchiveExplorer()" class="bg-obsidian border border-surfaceLight rounded-xl px-3 py-2 text-xs text-gold font-display focus:outline-none">
+            <option value="all">All Slots</option>
+            <option value="opener">Opener</option>
+            <option value="mid">Mid Course</option>
+            <option value="climax">Savory Climax</option>
+            <option value="predessert">Pre-Dessert</option>
+            <option value="dessert">Dessert</option>
+          </select>
+          <button onclick="openCreatorModal()" class="bg-gold text-black font-display font-bold text-xs px-4 py-2 rounded-xl">+ New Dish</button>
+        </div>
+      </div>
+
+      <div id="archive-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- VIEW 3: PROVISIONS MATRIX -->
     <section id="view-provisions" class="hidden space-y-6">
       <div class="bg-charcoal p-6 sm:p-8 rounded-2xl border border-surfaceLight flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 gold-glow">
         <div>
@@ -196,9 +224,8 @@
         </div>
         
         <div class="flex items-center gap-3">
-          <button onclick="copyProvisionsToClipboard()" class="bg-gold hover:bg-gold-light text-black font-display font-bold text-xs uppercase px-4 py-2 rounded-xl transition flex items-center gap-2 shadow-lg">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-            <span>Copy Text</span>
+          <button onclick="copyProvisionsToClipboard()" class="bg-gold hover:bg-gold-light text-black font-display font-bold text-xs uppercase px-4 py-2 rounded-xl transition shadow-lg">
+            📋 Copy Text
           </button>
           <button onclick="resetProvisionsCheckboxes()" class="bg-surface hover:bg-surfaceLight text-stone-300 font-display text-xs px-3.5 py-2 rounded-xl border border-surfaceLight transition">
             Reset Checks
@@ -209,7 +236,7 @@
       <div id="provisions-departments" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </section>
 
-    <!-- VIEW 3: KITCHEN STATIONS & TIMERS -->
+    <!-- VIEW 4: KITCHEN STATIONS & TIMERS -->
     <section id="view-timers" class="hidden space-y-6">
       <div class="bg-charcoal p-6 sm:p-8 rounded-2xl border border-surfaceLight flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 gold-glow">
         <div>
@@ -217,15 +244,18 @@
           <h2 class="text-3xl font-serif font-bold text-white mt-1">Kitchen Station Timers</h2>
           <p class="text-xs text-stone-400 mt-1">Web Audio synthesized harmonic chimes for precision culinary thresholds.</p>
         </div>
-        <button onclick="testChimeSound()" class="border border-gold/40 hover:border-gold text-gold font-display text-xs px-4 py-2 rounded-xl transition bg-surface flex items-center gap-2">
-          <span>🔔 Test Chime Alert</span>
-        </button>
+        <div class="flex items-center gap-3">
+          <button onclick="promptAddCustomTimer()" class="bg-gold text-black font-display font-bold text-xs px-4 py-2 rounded-xl transition">+ Custom Timer</button>
+          <button onclick="testChimeSound()" class="border border-gold/40 hover:border-gold text-gold font-display text-xs px-4 py-2 rounded-xl transition bg-surface">
+            🔔 Test Chime
+          </button>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="timers-grid"></div>
     </section>
 
-    <!-- VIEW 4: FIRING LINE -->
+    <!-- VIEW 5: FIRING LINE -->
     <section id="view-misenplace" class="hidden space-y-6">
       <div class="bg-charcoal p-6 sm:p-8 rounded-2xl border border-surfaceLight gold-glow">
         <span class="text-[10px] tracking-widest uppercase text-gold font-display font-semibold">Back-Of-House Operation</span>
@@ -236,6 +266,63 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="firing-line-roadmap"></div>
     </section>
   </main>
+
+  <!-- CUSTOM RECIPE CREATOR MODAL -->
+  <div id="creator-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-charcoal border border-surfaceLight max-w-xl w-full rounded-2xl p-6 space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center border-b border-surfaceLight pb-3">
+        <div>
+          <span class="text-[10px] uppercase font-display text-gold">Chef's Private Repertoire</span>
+          <h4 class="font-serif text-2xl text-white font-bold">Create Custom Dish</h4>
+        </div>
+        <button onclick="closeCreatorModal()" class="text-stone-400 hover:text-white text-xl">✕</button>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        <div>
+          <label class="text-stone-400 block mb-1">Dish Title</label>
+          <input id="new-dish-title" type="text" placeholder="e.g., Pan-Roasted Cobia with Yuzu Kosho Beurre Blanc" class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 text-white">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-stone-400 block mb-1">Course Slot</label>
+            <select id="new-dish-slot" class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 text-gold font-display">
+              <option value="opener">Opener</option>
+              <option value="mid">Mid Course</option>
+              <option value="climax">Savory Climax</option>
+              <option value="predessert">Pre-Dessert</option>
+              <option value="dessert">Dessert</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-stone-400 block mb-1">Hero Tag (e.g., Duck, Beef, Citrus)</label>
+            <input id="new-dish-hero" type="text" placeholder="Duck" class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 text-white">
+          </div>
+        </div>
+        <div>
+          <label class="text-stone-400 block mb-1">Ingredients (One per line: Name | Grams/ML | Unit)</label>
+          <textarea id="new-dish-ings" rows="4" placeholder="Dry-Aged Duck Breast | 240 | g&#10;Tart Cherry Puree | 60 | ml&#10;Maldon Sea Salt | 5 | g" class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 font-mono text-[11px] text-white"></textarea>
+        </div>
+        <div>
+          <label class="text-stone-400 block mb-1">Thermal & Culinary Execution</label>
+          <textarea id="new-dish-tech" rows="3" placeholder="Score skin tightly. Render in cold dry stainless pan for 9 minutes..." class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 text-white"></textarea>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-stone-400 block mb-1">Wine Pairing</label>
+            <input id="new-dish-wine" type="text" placeholder="Volnay 1er Cru" class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 text-white">
+          </div>
+          <div>
+            <label class="text-stone-400 block mb-1">Zero-Proof Pairing</label>
+            <input id="new-dish-zp" type="text" placeholder="Smoked Tart Cherry Cordial" class="w-full bg-obsidian border border-surfaceLight rounded-xl p-2.5 text-white">
+          </div>
+        </div>
+        <button onclick="saveCustomDishFromForm()" class="w-full py-3 bg-gold hover:bg-gold-light text-black font-display font-bold uppercase rounded-xl transition shadow-lg mt-2">
+          Save to Catalog & Persistent Memory
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- SWAP MODAL -->
   <div id="swap-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
@@ -285,11 +372,13 @@
           <input type="file" id="json-file-input" accept=".json" onchange="handleFileUpload(event)" class="w-full p-2 bg-obsidian border border-surfaceLight rounded-xl text-stone-400 file:mr-4 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-gold file:text-black hover:file:bg-gold-light cursor-pointer">
         </div>
 
-        <div class="pt-2 border-t border-surfaceLight/60">
-          <span class="font-display uppercase text-gold block mb-1">Paste Raw JSON</span>
-          <textarea id="raw-json-textarea" rows="4" placeholder='[{"id":"custom-dish","dish":"...","slot":"opener",...}]' class="w-full bg-obsidian border border-surfaceLight rounded-xl p-3 font-mono text-[11px] text-stone-200 focus:outline-none focus:border-gold"></textarea>
-          <button onclick="handlePasteImport()" class="mt-2 px-4 py-2 bg-surfaceLight hover:bg-gold hover:text-black font-display font-semibold text-xs rounded-xl transition">
-            Import JSON
+        <div class="pt-2 border-t border-surfaceLight/60 flex justify-between items-center">
+          <div>
+            <span class="font-display uppercase text-gold block">Export Full Database</span>
+            <span class="text-[10px] text-stone-500">Download all recipes + custom dishes as JSON</span>
+          </div>
+          <button onclick="exportFullCatalogJSON()" class="px-3.5 py-1.5 bg-gold text-black font-display font-bold rounded-lg text-xs transition">
+            ⬇ Download JSON
           </button>
         </div>
 
@@ -310,6 +399,10 @@
 
   <!-- SCRIPT MASTER -->
   <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    }
+
     const MASTER_SEED_RECIPES = [
       {
         id: "tfl-salmon-cornets",
@@ -422,26 +515,24 @@
     let selectedHeroFilters = [];
     let groceryCheckedItems = {};
     let activeSwapIndex = null;
+    const CUSTOM_DISHES_KEY = 'latelier_custom_dishes_v3';
 
     const HERO_TAGS = [
       "Duck", "Beef", "Wagyu", "Strip", "Lobster", "Scallop", "Halibut", 
       "Salmon", "Tuna", "Hamachi", "Oyster", "Caviar", "Foie Gras",
-      "Asparagus", "Celery Root", "Citrus", "Lemon", "Chocolate", "Coffee"
+      "Asparagus", "Celery Root", "Citrus", "Lemon", "Chocolate", "Coffee", "Vanilla"
     ];
 
-    /* --- DATA SANITIZER (Prevents Crashes from Ingested Web Data) --- */
     function sanitizeRecipe(r) {
       if (!r || typeof r !== 'object') return null;
-
       const validSlots = ['opener', 'mid', 'climax', 'predessert', 'dessert'];
       let slot = r.slot && validSlots.includes(r.slot.toLowerCase()) ? r.slot.toLowerCase() : null;
-
       const title = r.dish || r.name || "Artisanal Preparation";
       const tech = r.technique || r.instructions || "Execute with careful thermal control and seasoning balance.";
 
       if (!slot) {
         const text = (title + " " + tech).toLowerCase();
-        if (text.match(/dessert|cake|tart|chocolate|sweet|souffle|pastry|cookie|brulee|pudding/)) slot = 'dessert';
+        if (text.match(/dessert|cake|tart|chocolate|sweet|souffle|pastry|cookie|brulee|pudding|cheesecake/)) slot = 'dessert';
         else if (text.match(/sorbet|granita|cleanser/)) slot = 'predessert';
         else if (text.match(/beef|steak|duck|lamb|pork|roast|venison|wagyu|ribeye/)) slot = 'climax';
         else if (text.match(/seafood|fish|lobster|scallop|pasta|halibut|salmon|shrimp|dashi/)) slot = 'mid';
@@ -480,7 +571,7 @@
       };
     }
 
-    /* --- AUDIO ENGINE --- */
+    /* --- AUDIO SYNTHESIZER --- */
     let audioCtx = null;
     function getAudioCtx() {
       if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -512,7 +603,7 @@
       showToast("🔔 Harmonic crystal chime triggered");
     }
 
-    /* --- BOOTSTRAP --- */
+    /* --- INITIALIZATION --- */
     window.addEventListener('DOMContentLoaded', async () => {
       document.getElementById('print-date-label').textContent = `Service of ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} • L'Atelier`;
       renderHeroPills();
@@ -520,25 +611,130 @@
       renderTimers();
       renderFiringLine();
 
+      const localCustom = JSON.parse(localStorage.getItem(CUSTOM_DISHES_KEY) || '[]');
+
       try {
         const res = await fetch('recipes.json');
         if (!res.ok) throw new Error("recipes.json fetch error");
         const raw = await res.json();
         if (Array.isArray(raw) && raw.length > 0) {
-          catalog = raw.map(sanitizeRecipe).filter(Boolean);
-          document.getElementById('active-db-count-label').textContent = `${catalog.length} dishes active (recipes.json)`;
-          showToast(`Loaded ${catalog.length} recipes from recipes.json`);
+          catalog = [...localCustom, ...raw].map(sanitizeRecipe).filter(Boolean);
+          updateCatalogBadges("recipes.json");
         } else {
           throw new Error("Empty recipes.json");
         }
       } catch (err) {
-        catalog = MASTER_SEED_RECIPES.map(sanitizeRecipe);
-        document.getElementById('active-db-count-label').textContent = `${catalog.length} dishes active (Master Seed)`;
-        showToast("Connected to 3-Star Master Seed");
+        catalog = [...localCustom, ...MASTER_SEED_RECIPES].map(sanitizeRecipe).filter(Boolean);
+        updateCatalogBadges("Master Seed");
       }
 
       generateMenu(true);
+      renderArchiveExplorer();
     });
+
+    function updateCatalogBadges(sourceLabel) {
+      document.getElementById('active-db-count-label').textContent = `${catalog.length} dishes active (${sourceLabel})`;
+      document.getElementById('nav-db-count').textContent = catalog.length;
+    }
+
+    /* --- CUSTOM DISH CREATOR --- */
+    function openCreatorModal() { document.getElementById('creator-modal').classList.remove('hidden'); }
+    function closeCreatorModal() { document.getElementById('creator-modal').classList.add('hidden'); }
+
+    function saveCustomDishFromForm() {
+      const title = document.getElementById('new-dish-title').value.trim();
+      const slot = document.getElementById('new-dish-slot').value;
+      const hero = document.getElementById('new-dish-hero').value.trim() || "Specialty";
+      const ingsRaw = document.getElementById('new-dish-ings').value.trim();
+      const tech = document.getElementById('new-dish-tech').value.trim();
+      const wine = document.getElementById('new-dish-wine').value.trim() || "Sommelier Reserve";
+      const zp = document.getElementById('new-dish-zp').value.trim() || "Botanical Infusion";
+
+      if (!title) { alert("Please enter a dish title."); return; }
+
+      const comps = [];
+      if (ingsRaw) {
+        ingsRaw.split('\n').forEach(line => {
+          const parts = line.split('|').map(s => s.trim());
+          if (parts[0]) {
+            comps.push({
+              name: parts[0],
+              qty: parseFloat(parts[1]) || 50,
+              unit: parts[2] || 'g',
+              dept: 'pantry'
+            });
+          }
+        });
+      }
+
+      const newDish = sanitizeRecipe({
+        id: 'custom-' + Date.now(),
+        dish: title,
+        restaurant: "Chef's Private Vault",
+        chef: "House Signature",
+        location: "L'Atelier Studio",
+        slot: slot,
+        hero: [hero],
+        components: comps,
+        technique: tech,
+        pairing: { wine, zeroProof: zp }
+      });
+
+      catalog.unshift(newDish);
+      const savedCustom = JSON.parse(localStorage.getItem(CUSTOM_DISHES_KEY) || '[]');
+      savedCustom.unshift(newDish);
+      localStorage.setItem(CUSTOM_DISHES_KEY, JSON.stringify(savedCustom));
+
+      updateCatalogBadges("Custom + Archive");
+      renderArchiveExplorer();
+      closeCreatorModal();
+      showToast(`Added "${title}" to catalog`);
+    }
+
+    /* --- ARCHIVE EXPLORER --- */
+    function renderArchiveExplorer() {
+      const q = (document.getElementById('archive-search')?.value || '').toLowerCase();
+      const slotFilter = document.getElementById('archive-slot-filter')?.value || 'all';
+      const grid = document.getElementById('archive-grid');
+      if (!grid) return;
+
+      const filtered = catalog.filter(r => {
+        const matchesSlot = slotFilter === 'all' || r.slot === slotFilter;
+        const matchesQuery = !q || r.dish.toLowerCase().includes(q) || r.restaurant.toLowerCase().includes(q) || (r.hero && r.hero.some(h => h.toLowerCase().includes(q)));
+        return matchesSlot && matchesQuery;
+      });
+
+      grid.innerHTML = filtered.slice(0, 90).map(r => `
+        <div class="bg-charcoal border border-surfaceLight hover:border-gold/40 rounded-2xl p-5 flex flex-col justify-between transition shadow-lg">
+          <div>
+            <div class="flex justify-between items-center text-[10px] text-gold font-display uppercase mb-1">
+              <span>${r.slot}</span>
+              <span class="text-stone-500">${r.restaurant}</span>
+            </div>
+            <h4 class="font-serif font-bold text-xl text-white">${r.dish}</h4>
+            <p class="text-[11px] text-stone-400 mt-2 line-clamp-3 font-light">${r.technique}</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-surfaceLight flex justify-between items-center">
+            <span class="text-[10px] font-mono text-stone-500">${r.components.length} components</span>
+            <button onclick="injectIntoActiveMenu('${r.id}')" class="text-xs bg-surface hover:bg-gold hover:text-black text-gold border border-gold/30 px-3 py-1 rounded-lg font-display transition">
+              Inject into Menu
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function injectIntoActiveMenu(id) {
+      const target = catalog.find(r => r.id === id);
+      if (!target) return;
+      const slotIdx = activeMenu.findIndex(m => m.slot === target.slot);
+      const replaceIdx = slotIdx !== -1 ? slotIdx : 0;
+      activeMenu[replaceIdx] = target;
+      renderActiveMenuCards();
+      renderProvisionsMatrix();
+      switchTab('degustation');
+      showToast(`Injected "${target.dish}" into Course ${replaceIdx + 1}`);
+    }
 
     /* --- CURATOR & MENU ARC --- */
     function setCourseArc(num) {
@@ -556,7 +752,7 @@
       currentCovers = num;
       [2, 4, 6, 8].forEach(n => {
         const btn = document.getElementById(`cov-${n}`);
-        btn.className = n === num ? "px-2 py-0.5 rounded font-bold transition text-gold" : "px-2 py-0.5 rounded transition text-stone-400 hover:text-white";
+        btn.className = n === num ? "px-1.5 py-0.5 rounded font-bold transition text-gold" : "px-1.5 py-0.5 rounded transition text-stone-400 hover:text-white";
       });
       document.getElementById('prov-cover-label').textContent = `${num} covers`;
       renderActiveMenuCards();
@@ -619,12 +815,8 @@
           if (heroMatch.length > 0) candidates = heroMatch;
         }
 
-        if (candidates.length === 0) {
-          candidates = catalog.filter(r => r.slot === slot);
-        }
-        if (candidates.length === 0) {
-          candidates = catalog;
-        }
+        if (candidates.length === 0) candidates = catalog.filter(r => r.slot === slot);
+        if (candidates.length === 0) candidates = catalog;
 
         const pick = candidates[Math.floor(Math.random() * candidates.length)];
         usedIds.add(pick.id);
@@ -742,7 +934,7 @@
       const list = document.getElementById('swap-modal-candidates');
       list.innerHTML = '';
 
-      candidates.slice(0, 40).forEach(cand => {
+      candidates.slice(0, 50).forEach(cand => {
         const isCurrent = cand.id === activeMenu[idx].id;
         const item = document.createElement('div');
         item.className = `p-4 rounded-xl border transition cursor-pointer flex justify-between items-center ${
@@ -868,6 +1060,25 @@
       { id: 3, title: "U-10 Scallop Hard Sear", desc: "Smoking oil plancha caramelization (1-side)", total: 110, remaining: 110, running: false, interval: null },
       { id: 4, title: "Carryover Meat Rest", desc: "Elevated wire rack internal juice equalization", total: 480, remaining: 480, running: false, interval: null }
     ];
+
+    function promptAddCustomTimer() {
+      const name = prompt("Station Timer Name (e.g., 'Brioche Proof' or 'Soufflé Bake'):");
+      if (!name) return;
+      const mins = parseFloat(prompt("Duration in minutes:", "10"));
+      if (isNaN(mins) || mins <= 0) return;
+      const secs = Math.round(mins * 60);
+      activeTimers.push({
+        id: Date.now(),
+        title: name,
+        desc: "Custom station countdown",
+        total: secs,
+        remaining: secs,
+        running: false,
+        interval: null
+      });
+      renderTimers();
+      showToast(`Added timer: ${name}`);
+    }
 
     function renderTimers() {
       const grid = document.getElementById('timers-grid');
@@ -1063,9 +1274,20 @@
       showToast("Menu deleted");
     }
 
-    /* --- DATA IMPORT --- */
+    /* --- DATA IMPORT / EXPORT --- */
     function openDataModal() { document.getElementById('data-modal').classList.remove('hidden'); }
     function closeDataModal() { document.getElementById('data-modal').classList.add('hidden'); }
+
+    function exportFullCatalogJSON() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(catalog, null, 2));
+      const a = document.createElement('a');
+      a.setAttribute("href", dataStr);
+      a.setAttribute("download", "recipes.json");
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      showToast("Exported recipes.json");
+    }
 
     function handleFileUpload(e) {
       const file = e.target.files[0];
@@ -1076,12 +1298,11 @@
           const parsed = JSON.parse(evt.target.result);
           if (Array.isArray(parsed) && parsed.length > 0) {
             catalog = parsed.map(sanitizeRecipe).filter(Boolean);
-            document.getElementById('active-db-count-label').textContent = `${catalog.length} dishes active (Uploaded)`;
+            updateCatalogBadges("Uploaded");
             generateMenu(true);
+            renderArchiveExplorer();
             closeDataModal();
             showToast(`Ingested ${catalog.length} recipes`);
-          } else {
-            alert("Expected an array of recipe objects.");
           }
         } catch (err) {
           alert("Invalid JSON file.");
@@ -1090,45 +1311,30 @@
       reader.readAsText(file);
     }
 
-    function handlePasteImport() {
-      const text = document.getElementById('raw-json-textarea').value.trim();
-      if (!text) return;
-      try {
-        const parsed = JSON.parse(text);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          catalog = parsed.map(sanitizeRecipe).filter(Boolean);
-          document.getElementById('active-db-count-label').textContent = `${catalog.length} dishes active (Pasted)`;
-          generateMenu(true);
-          closeDataModal();
-          showToast(`Ingested ${catalog.length} recipes`);
-        }
-      } catch (e) {
-        alert("Syntax error in JSON string.");
-      }
-    }
-
     function loadDefaultSeedData() {
       catalog = MASTER_SEED_RECIPES.map(sanitizeRecipe);
-      document.getElementById('active-db-count-label').textContent = `${catalog.length} dishes active (Master Seed)`;
+      updateCatalogBadges("Master Seed");
       generateMenu(true);
+      renderArchiveExplorer();
       closeDataModal();
       showToast("Reset to Master Seed");
     }
 
     /* --- TABS & NOTIFICATIONS --- */
     function switchTab(tabId) {
-      ['degustation', 'provisions', 'timers', 'misenplace'].forEach(t => {
+      ['degustation', 'archive', 'provisions', 'timers', 'misenplace'].forEach(t => {
         const view = document.getElementById(`view-${t}`);
         const btn = document.getElementById(`tab-${t}`);
         if (t === tabId) {
           view.classList.remove('hidden');
-          btn.className = "px-4 py-1.5 rounded-full bg-gold text-black font-bold transition-all";
+          btn.className = "px-3.5 py-1.5 rounded-full bg-gold text-black font-bold transition-all";
         } else {
           view.classList.add('hidden');
-          btn.className = "px-4 py-1.5 rounded-full text-stone-400 hover:text-white transition-all";
+          btn.className = "px-3.5 py-1.5 rounded-full text-stone-400 hover:text-white transition-all";
         }
       });
       if (tabId === 'provisions') renderProvisionsMatrix();
+      if (tabId === 'archive') renderArchiveExplorer();
     }
 
     function showToast(msg) {
