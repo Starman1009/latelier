@@ -62,7 +62,7 @@
     ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-gold selection:text-black">
+<body class="min-h-screen flex flex-col selection:bg-gold selection:text-black"><aside style="padding:12px 20px;background:#211d16;color:#f0dcac;font:14px/1.5 system-ui;border-bottom:1px solid #80704f"><a href="index.html" style="color:#fff;text-decoration:underline">← Menu generator</a> · Advanced / Lab Mode. Legacy recipes need review; generated schedules, scientific scores, and temperature simulations are illustrative estimates. Verify recipe-specific cooking and safety instructions with the original source.</aside>
 
   <!-- ================= TOP NAVIGATION & COMMAND HEADER ================= -->
   <header class="glass-panel sticky top-0 z-40 px-4 sm:px-8 py-3 flex flex-wrap justify-between items-center gap-4 border-b border-white/10">
@@ -958,7 +958,12 @@
       } else if (sel === 'preset_scallop') {
         activePlan = JSON.parse(JSON.stringify(PRESET_PLANS.preset_scallop));
       } else {
-        const synced = JSON.parse(localStorage.getItem('latelier_active_arc') || '[]');
+        let synced = JSON.parse(localStorage.getItem('latelier_active_arc') || '[]');
+        if (new URLSearchParams(location.search).get('menu') === 'kitchen') {
+          const kitchen = JSON.parse(localStorage.getItem('atelier_menu_v1') || '{"courses":[]}');
+          const text = value => String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+          synced = (kitchen.courses || []).map((c, i) => ({dish:text(c.recipe.title),slot:/dessert|sweet/i.test(c.role)?'dessert':i===0?'opener':'climax',components:c.recipe.ingredients.map(x=>({name:text(x.name),qty:text(x.raw),unit:'',dept:'pantry'})),technique:c.recipe.steps.map(text).join(' '),plating:'Follow the source recipe.'}));
+        }
         activePlan = compileDynamicMenuToPlan(synced);
       }
       recalculateAll();

@@ -1,82 +1,16 @@
-\# L'Atelier: Haute Cuisine Tasting Menu Engine \& Studio
+# L’Atelier kitchen
 
+Run `python -m http.server 8000 --bind 127.0.0.1` from this folder and open http://localhost:8000.
 
+The new home page supports local title/ingredient search, online TheMealDB name search, attributed recipe detail, cooking steps, local saved recipes, shopping lists, and backup export/restore. User recipes support known-yield scaling. Online measures remain exactly as returned; unknown yields disable scaling. No private API key or backend is used.
 
-\[!\[Live App](https://img.shields.io/badge/Live-Demo-d4af37?style=for-the-badge\&logo=googlechrome\&logoColor=black)](https://starman1009.github.io/latelier/)
+The original interface is preserved at curator.html. Its legacy calculations are not validated. recipes.json and existing local-storage keys were preserved. data-review.json summarizes known catalog defects. Legacy recipes are explicitly discovery-only in the new interface. Automatic catalog rewriting/synthesis is disabled; the workflow now performs a manual read-only JSON check.
 
-\[!\[License: MIT](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)](LICENSE)
+TheMealDB test API is for development/personal use. Check https://www.themealdb.com/api.php and current terms before public release; production access may require a supporter key. Provider availability and completeness are not guaranteed. No provider images are copied. Online searches are by recipe name, local searches also search ingredients.
 
+The service worker caches only the app shell. Saved recipes and shopping items live in browser storage. Export backups regularly; there is no cloud recovery. HTTPS or localhost is needed for service workers. PWA installation varies by browser; native app packaging, production icons, and mobile installation validation remain future work.
 
+Remaining: reviewed recipe yields, vetted equipment metadata, timed steps, verified dietary/allergy filters, richer imports/editing, safe unit-aware list aggregation, and production provider configuration. No allergy-safety claims are made.
 
-An autonomous gastronomic curation engine designed for high-end degustation menu planning, palate-weight balancing, and back-of-house kitchen logistics.
-
-
-
-\---
-
-
-
-\## Live Deployment
-
-Access the interactive web app anywhere:
-
-👉 \*\*\[https://starman1009.github.io/latelier/](https://starman1009.github.io/latelier/)\*\*
-
-
-
-\---
-
-
-
-\## Core Capabilities
-
-
-
-\- \*\*Algorithmic Degustation Arc:\*\* Curates 3, 5, or 7-course progressions respecting strict sensory physics:
-
-&#x20; - `Opener`: High-acid raw seafood, amuses, and crudos.
-
-&#x20; - `Mid`: Emulsified shellfish, beurre monté poaches, and handmade pasta.
-
-&#x20; - `Climax`: Deep Maillard roasted proteins (dry-aged duck, calotte de bœuf, squab).
-
-&#x20; - `Predessert`: Palate-cleansing granitas and citrus infusions.
-
-&#x20; - `Dessert`: Technical pâtisserie, ganaches, and deconstructed tarts.
-
-\- \*\*Hero Ingredient Filtering:\*\* Filter the entire corpus by proteins and produce (Wagyu, Duck, Caviar, Scallops, Truffles, Citrus).
-
-\- \*\*Provisions Matrix:\*\* Unified, cross-department grocery consolidation scaled dynamically for 2, 4, 6, or 8 covers with one-click clipboard copying.
-
-\- \*\*Synthesized Audio Timers:\*\* Zero-dependency crystal harmonic chimes powered by the browser's Web Audio API for delicate holding and searing windows.
-
-\- \*\*Local Vault:\*\* Save custom menus directly to persistent browser storage.
-
-
-
-\---
-
-
-
-\## Local Architecture
-
-
-
-```text
-
-latelier/
-
-├── index.html            # Single-page client dashboard \& audio synthesizer
-
-├── recipes.json          # Master metric recipe database
-
-├── super\_harvest.py      # Multi-source scraper (RSS feeds, APIs, culinary archives)
-
-├── audit\_database.py     # Schema auditor, cleaner, and unit validator
-
-├── export\_menu.py        # Plaintext \& print sheet formatter
-
-├── run\_atelier.bat       # 1-click Windows desktop local server launcher
-
-└── manifest.json         # PWA configuration for mobile installation
-
+## Meal generator
+The default homepage now composes breakfast, brunch, lunch, or dinner with 2–4 courses. Selected recipe pools are fetched from the live TheMealDB lookup API and checked for ingredients, measures, and instruction content. Locks survive regeneration; individual courses can be swapped. The current menu and prep checks persist locally. Whole-menu shopping retains original quantities. Mise en place includes ingredient staging, source-mentioned equipment, and verbatim preparation excerpts. Source checks do not constitute culinary testing, and no serving yield or schedule is invented.
