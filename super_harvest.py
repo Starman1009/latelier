@@ -1,3 +1,6 @@
+if __name__ == "__main__":
+    raise SystemExit("Legacy catalog writer disabled: use python -m ingestion.pipeline --help. Original algorithms retained for reference; they must not overwrite reviewed data.")
+
 import os
 import sys
 import re

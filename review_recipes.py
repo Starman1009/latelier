@@ -10,7 +10,7 @@ def audit():
         issues=[]
         if not isinstance(r,dict):
             findings.append({'index':index,'issues':['invalid_record']}); continue
-        if not r.get('servings') and not r.get('yield'): issues.append('missing_original_yield')
+        if not r.get('servings') and not (r.get('yield',{}).get('servings') if isinstance(r.get('yield'),dict) else r.get('yield')): issues.append('missing_original_yield')
         if not r.get('technique'): issues.append('missing_instructions')
         elif len(r['technique']) in (800,1000,1200): issues.append('possible_instruction_truncation')
         if names[str(r.get('dish','')).casefold()]>1: issues.append('duplicate_title_requires_review')

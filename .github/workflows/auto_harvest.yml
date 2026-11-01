@@ -11,5 +11,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Validate original catalog JSON
-        run: python -m json.tool recipes.json > /dev/null
+      - name: Install offline validation dependencies
+        run: pip install -r ingestion/requirements.txt
+      - name: Validate catalog schema and integrity
+        run: python -m ingestion.pipeline validate recipes.json
+      - name: Test ingestion safeguards
+        run: python -m unittest ingestion.test_pipeline

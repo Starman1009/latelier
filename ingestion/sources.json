@@ -1,0 +1,120 @@
+{
+  "themealdb": {
+    "publisher": "TheMealDB",
+    "hosts": [
+      "www.themealdb.com"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "policy_url": "https://www.themealdb.com/api.php",
+    "note": "Development key; no yields provided. Review-only imports."
+  },
+  "woks_of_life": {
+    "publisher": "The Woks of Life",
+    "hosts": [
+      "thewoksoflife.com"
+    ],
+    "sitemaps": [
+      "https://thewoksoflife.com/sitemap_index.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "just_one_cookbook": {
+    "publisher": "Just One Cookbook",
+    "hosts": [
+      "www.justonecookbook.com"
+    ],
+    "sitemaps": [
+      "https://www.justonecookbook.com/sitemap_index.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "maangchi": {
+    "publisher": "Maangchi",
+    "hosts": [
+      "www.maangchi.com"
+    ],
+    "sitemaps": [
+      "https://www.maangchi.com/sitemap.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "king_arthur": {
+    "publisher": "King Arthur Baking",
+    "hosts": [
+      "www.kingarthurbaking.com"
+    ],
+    "sitemaps": [
+      "https://www.kingarthurbaking.com/sitemap.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "sally": {
+    "publisher": "Sally's Baking Addiction",
+    "hosts": [
+      "sallysbakingaddiction.com"
+    ],
+    "sitemaps": [
+      "https://sallysbakingaddiction.com/sitemap_index.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "recipetin": {
+    "publisher": "RecipeTin Eats",
+    "hosts": [
+      "www.recipetineats.com"
+    ],
+    "sitemaps": [
+      "https://www.recipetineats.com/sitemap_index.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "serious_eats": {
+    "publisher": "Serious Eats",
+    "hosts": [
+      "www.seriouseats.com"
+    ],
+    "sitemaps": [
+      "https://www.seriouseats.com/sitemap.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "smitten_kitchen": {
+    "publisher": "Smitten Kitchen",
+    "hosts": [
+      "smittenkitchen.com"
+    ],
+    "sitemaps": [
+      "https://smittenkitchen.com/sitemap_index.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  },
+  "french_cooking_academy": {
+    "publisher": "French Cooking Academy",
+    "hosts": [
+      "www.thefrenchcookingacademy.com"
+    ],
+    "sitemaps": [
+      "https://www.thefrenchcookingacademy.com/sitemap.xml"
+    ],
+    "enabled": true,
+    "redistribution_confirmed": false,
+    "note": "Acquisition to local review queue only; robots checked at runtime. Sitemap candidate must resolve. No redistribution rights asserted."
+  }
+}

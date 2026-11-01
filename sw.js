@@ -1,4 +1,4 @@
-const CACHE = 'atelier-kitchen-v3';
+const CACHE = 'atelier-kitchen-v4';
 const SHELL = ['./','./index.html','./kitchen.css','./culinary.js','./kitchen.js','./menu.js','./cooking.js','./tools.js','./manifest.json','./icon-192.png','./icon-512.png'];
 const LOCAL = [...SHELL,'./recipes.json','./data-review.json','./brigade.html','./studio.html','./curator.html'].map(path=>new URL(path,self.registration.scope).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));

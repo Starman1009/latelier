@@ -1,0 +1,365 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "L Atelier master recipe v2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "dish",
+    "restaurant",
+    "chef",
+    "location",
+    "source",
+    "provenance",
+    "yield",
+    "timing",
+    "difficulty",
+    "slot",
+    "hero",
+    "dietary",
+    "sensoryRole",
+    "components",
+    "equipment",
+    "technique",
+    "plating",
+    "pairing",
+    "review",
+    "rights",
+    "retrieved_at",
+    "cookable",
+    "occasions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dish": {
+      "type": "string"
+    },
+    "restaurant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chef": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance": {
+      "enum": [
+        "verified_sourced",
+        "adapted_publisher",
+        "user_created",
+        "gc_ms_synthesis"
+      ]
+    },
+    "yield": {
+      "type": "object",
+      "required": [
+        "servings",
+        "raw_yield"
+      ],
+      "properties": {
+        "servings": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "raw_yield": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "required": [
+        "prep_mins",
+        "cook_mins",
+        "total_mins"
+      ],
+      "properties": {
+        "prep_mins": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "cook_mins": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "total_mins": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "difficulty": {
+      "enum": [
+        "Easy",
+        "Intermediate",
+        "Advanced",
+        null
+      ]
+    },
+    "slot": {
+      "enum": [
+        "opener",
+        "mid",
+        "climax",
+        "predessert",
+        "dessert",
+        null
+      ]
+    },
+    "hero": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dietary": {
+      "type": "object",
+      "required": [
+        "gluten_free",
+        "dairy_free",
+        "vegetarian",
+        "vegan",
+        "allergens"
+      ],
+      "properties": {
+        "gluten_free": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dairy_free": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "vegetarian": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "vegan": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "allergens": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sensoryRole": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "qty",
+          "unit",
+          "original_measure",
+          "dept",
+          "preparation",
+          "quantity_status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "qty": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0
+          },
+          "unit": {
+            "type": "string"
+          },
+          "original_measure": {
+            "type": "string"
+          },
+          "dept": {
+            "enum": [
+              "produce",
+              "butchery",
+              "seafood",
+              "dairy",
+              "drygoods",
+              "pantry"
+            ]
+          },
+          "preparation": {
+            "type": "string"
+          },
+          "quantity_status": {
+            "enum": [
+              "specified",
+              "unspecified",
+              "to_taste",
+              "range",
+              "legacy_unverified"
+            ]
+          }
+        }
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "technique": {
+      "type": "string"
+    },
+    "plating": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pairing": {
+      "type": "object",
+      "required": [
+        "wine",
+        "zeroProof"
+      ],
+      "properties": {
+        "wine": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zeroProof": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status",
+        "issues",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "needs_review",
+            "approved"
+          ]
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": [
+        "license",
+        "redistribution_confirmed"
+      ],
+      "properties": {
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "redistribution_confirmed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "cookable": {
+      "type": "boolean"
+    },
+    "occasions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "breakfast",
+          "brunch",
+          "lunch",
+          "dinner"
+        ]
+      }
+    }
+  }
+}

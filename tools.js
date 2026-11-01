@@ -1,5 +1,5 @@
 /* Supporting product flows; no build system or server is required. */
-function notice(message){const el=$('#notice');el.textContent=message;el.hidden=false;clearTimeout(notice.timeout);notice.timeout=setTimeout(()=>{el.hidden=true},8000)}
+function notice(message){const dialog=document.querySelector('dialog[open]');if(dialog){let msg=dialog.querySelector('.dialog-notice');if(!msg){msg=document.createElement('p');msg.className='dialog-notice';msg.setAttribute('role','status');dialog.prepend(msg)}msg.textContent=message}const el=$('#notice');el.textContent=message;el.hidden=false;clearTimeout(notice.timeout);notice.timeout=setTimeout(()=>{el.hidden=true},8000)}
 function ask(title,message){return new Promise(resolve=>{const d=$('#confirm-modal');$('#confirm-title').textContent=title;$('#confirm-message').textContent=message;const finish=value=>{d.close();resolve(value)};$('#confirm-yes').onclick=()=>finish(true);$('#confirm-no').onclick=()=>finish(false);d.oncancel=e=>{e.preventDefault();finish(false)};d.showModal();$('#confirm-no').focus()})}
 let shoppingUndo=null;
 function shopping(){
@@ -24,7 +24,7 @@ async function search(){
  if($('#collection').value==='online'){
  if(fold.length<2){results=[];renderResults();$('#status').textContent='Enter a dish name for online discovery. Use the local collection for multi-ingredient fridge search.';return}
  const response=await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='+encodeURIComponent(q),{signal:AbortSignal.timeout(12000)});if(!response.ok)throw Error();const data=await response.json();if(seq!==request)return;
- results=(data.meals||[]).map(m=>({id:'online-'+m.idMeal,title:m.strMeal,source:safeURL(m.strSource)||'https://www.themealdb.com/meal/'+m.idMeal,sourceLabel:'TheMealDB',cuisine:m.strArea||'',ingredients:Array.from({length:20},(_,i)=>({name:m['strIngredient'+(i+1)],raw:m['strMeasure'+(i+1)]||'Quantity not supplied'})).filter(i=>i.name?.trim()),steps:(m.strInstructions||'').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),equipment:[],yield:null,online:true}));
+ results=(data.meals||[]).map(m=>({id:'online-'+m.idMeal,title:m.strMeal,source:safeURL(m.strSource)||'https://www.themealdb.com/meal/'+m.idMeal,sourceLabel:'TheMealDB',provenance:'adapted_publisher',cuisine:m.strArea||'',ingredients:Array.from({length:20},(_,i)=>({name:m['strIngredient'+(i+1)],raw:m['strMeasure'+(i+1)]||'Quantity not supplied'})).filter(i=>i.name?.trim()),steps:(m.strInstructions||'').split(/\r?\n/).map(s=>s.trim()).filter(Boolean),equipment:[],yield:null,online:true}));
  }else{
  const pool=[...state.custom,...state.saved,...menu.courses.map(c=>c.recipe),...archive];const seen=new Set();const terms=(fridge?q.split(','):fold.split(' ')).map(Culinary.fold).filter(Boolean);
  results=pool.filter(r=>{if(seen.has(r.id))return false;seen.add(r.id);const hay=fridge?Culinary.fold(r.ingredients.map(i=>i.name).join(' ')):searchData(r);return terms.every(t=>hay.includes(t))});
@@ -46,3 +46,13 @@ $('#restore').onchange=async e=>{const file=e.target.files[0];if(!file)return;tr
 $('#search').onclick=search;$('#query').onkeydown=e=>{if(e.key==='Enter')search()};
 for(const id of ['fridge-mode','filter-cuisine','filter-diet','filter-time'])$('#'+id).onchange=()=>{if(view==='discover')search()};
 $('#detail').setAttribute('aria-label','Recipe and cooking instructions');$('#editor').setAttribute('aria-label','Create a recipe');
+
+// Keep keyboard focus inside the active native dialog, including nested confirmations.
+document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('keydown',event=>{
+ if(event.key!=='Tab')return;
+ const items=[...dialog.querySelectorAll('button,input,select,textarea,a[href],[tabindex]')].filter(el=>!el.disabled&&el.tabIndex>=0&&el.getClientRects().length);
+ if(!items.length){event.preventDefault();return}
+ const first=items[0],last=items[items.length-1],active=document.activeElement;
+ if(event.shiftKey&&(active===first||!items.includes(active))){event.preventDefault();last.focus()}
+ else if(!event.shiftKey&&(active===last||!items.includes(active))){event.preventDefault();first.focus()}
+}));
