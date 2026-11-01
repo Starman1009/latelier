@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>L'Atelier Studio | Molecular CAD, Telemetry & Live Pass</title>
+  <title>L'Atelier Exo-Studio v5.0 | 3D CAD, GC-MS Compounds & Thermal Physics</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +15,12 @@
       theme: {
         extend: {
           colors: {
-            void: '#040406',
-            obsidian: '#09090d',
-            glass: 'rgba(18, 18, 26, 0.72)',
+            void: '#040407',
+            obsidian: '#090910',
             gold: { DEFAULT: '#d4af37', light: '#f7efcf', dim: '#7a6218' },
             neonEmerald: '#10b981',
-            crimson: '#e11d48'
+            crimson: '#e11d48',
+            cyanGlow: '#06b6d4'
           },
           fontFamily: {
             serif: ['"Cormorant Garamond"', 'serif'],
@@ -35,24 +35,23 @@
 
   <style>
     body {
-      background-color: #040406;
+      background-color: #040407;
       background-image: 
-        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.06) 0%, transparent 35%),
-        radial-gradient(circle at 85% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 40%),
-        linear-gradient(to bottom, #040406, #09090d);
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.07) 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 40%);
       color: #e2e8f0;
       font-family: 'Inter', sans-serif;
       overflow-x: hidden;
     }
     .glass-panel {
-      background: rgba(15, 15, 22, 0.75);
+      background: rgba(14, 14, 22, 0.78);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .gold-border-glow {
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      box-shadow: 0 0 30px rgba(212, 175, 55, 0.07);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      box-shadow: 0 0 35px rgba(212, 175, 55, 0.08);
     }
     .grid-bg {
       background-size: 24px 24px;
@@ -60,8 +59,19 @@
         linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     }
+    /* 3D Seated Guest Perspective Transform */
+    .perspective-stage {
+      perspective: 1100px;
+    }
+    .plate-3d-tilt {
+      transform: rotateX(46deg) rotateZ(-12deg) scale(0.95);
+      box-shadow: -18px 32px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 175, 55, 0.15);
+    }
+    #plating-canvas {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+    }
     ::-webkit-scrollbar { width: 5px; height: 5px; }
-    ::-webkit-scrollbar-track { background: #040406; }
+    ::-webkit-scrollbar-track { background: #040407; }
     ::-webkit-scrollbar-thumb { background: #262636; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
   </style>
@@ -69,237 +79,296 @@
 <body class="min-h-screen flex flex-col selection:bg-gold selection:text-black">
 
   <!-- TOP TELEMETRY HUD BAR -->
-  <header class="glass-panel sticky top-0 z-40 px-6 py-3 flex flex-wrap justify-between items-center gap-4 border-b border-white/10">
-    <div class="flex items-center gap-4">
-      <a href="index.html" class="flex items-center gap-2 text-xs font-mono text-stone-400 hover:text-gold transition bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-        <span>← Return to Curator OS</span>
+  <header class="glass-panel sticky top-0 z-40 px-4 sm:px-6 py-3 flex flex-wrap justify-between items-center gap-3 border-b border-white/10">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="flex items-center gap-1.5 text-xs font-mono text-stone-300 hover:text-gold transition bg-white/5 px-3 py-1.5 rounded-xl border border-white/10">
+        <span>← Curator OS</span>
       </a>
-      <div class="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
       <div>
         <div class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
-          <h1 class="text-lg font-display font-bold tracking-widest text-white uppercase">L'Atelier <span class="text-gold">EXO-STUDIO</span></h1>
-          <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/30">CAD + TELEMETRY v4.0</span>
+          <h1 class="text-base sm:text-lg font-display font-bold tracking-widest text-white uppercase">L'Atelier <span class="text-gold">ARGON LABS</span></h1>
         </div>
       </div>
     </div>
 
-    <!-- Mode Switcher -->
-    <nav class="flex items-center bg-void/90 border border-white/10 rounded-xl p-1 text-xs font-display">
-      <button onclick="setStudioTab('plating')" id="stab-plating" class="px-4 py-1.5 rounded-lg bg-gold text-black font-bold transition-all">1. Plating CAD</button>
-      <button onclick="setStudioTab('telemetry')" id="stab-telemetry" class="px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">2. Sensory Telemetry</button>
-      <button onclick="setStudioTab('molecular')" id="stab-molecular" class="px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">3. Hydrocolloid Lab</button>
-      <button onclick="setStudioTab('kds')" id="stab-kds" class="px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">4. Live Pass KDS</button>
+    <!-- 6-Module Switcher -->
+    <nav class="flex flex-wrap items-center bg-void/90 border border-white/10 rounded-xl p-1 text-[11px] font-display gap-1">
+      <button onclick="setStudioTab('plating')" id="stab-plating" class="px-3 py-1.5 rounded-lg bg-gold text-black font-bold transition-all">1. 3D Plating CAD</button>
+      <button onclick="setStudioTab('compounds')" id="stab-compounds" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">2. GC-MS Flavor Graph</button>
+      <button onclick="setStudioTab('kinetics')" id="stab-kinetics" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">3. Maillard & Thermal</button>
+      <button onclick="setStudioTab('osmosis')" id="stab-osmosis" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">4. EQ Brine & Dry-Age</button>
+      <button onclick="setStudioTab('molecular')" id="stab-molecular" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">5. Hydrocolloids</button>
+      <button onclick="setStudioTab('kds')" id="stab-kds" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all">6. Live Pass KDS</button>
     </nav>
 
-    <!-- Right Quick Command Trigger -->
-    <div class="flex items-center gap-3">
-      <button onclick="toggleCmdPalette()" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-3 py-1.5 text-xs font-mono text-stone-300 flex items-center gap-2 transition">
-        <span>Command</span>
-        <kbd class="px-1.5 py-0.5 text-[10px] bg-black rounded border border-white/20 text-gold">Ctrl+K</kbd>
-      </button>
-    </div>
+    <button onclick="toggleCmdPalette()" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl px-3 py-1.5 text-xs font-mono text-stone-300 flex items-center gap-2 transition">
+      <span>CMD</span>
+      <kbd class="px-1.5 py-0.5 text-[10px] bg-black rounded border border-white/20 text-gold">Ctrl+K</kbd>
+    </button>
   </header>
 
   <!-- MAIN WORKSPACE -->
   <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8">
 
-    <!-- ================= MODULE 1: INTERACTIVE PLATING CAD CANVAS ================= -->
+    <!-- ================= MODULE 1: 3D STONEWARE PLATING CAD ================= -->
     <section id="view-plating" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <!-- Left Tool Palette -->
-      <div class="lg:col-span-4 glass-panel rounded-2xl p-6 space-y-6 gold-border-glow">
-        <div>
-          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Architectural Assembly</span>
-          <h2 class="text-2xl font-serif font-bold text-white mt-0.5">Ceramic Plating Blueprint</h2>
-          <p class="text-xs text-stone-400 mt-1">Design negative space, emulsion dots, quenelles, and protein placement before service.</p>
+      <div class="lg:col-span-4 glass-panel rounded-2xl p-6 space-y-5 gold-border-glow">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Volumetric Assembly</span>
+            <h2 class="text-2xl font-serif font-bold text-white mt-0.5">3D Stoneware CAD</h2>
+          </div>
+          <button onclick="toggle3DTilt()" id="tilt-btn" class="px-3 py-1.5 rounded-xl bg-white/5 border border-gold/40 text-gold text-xs font-mono hover:bg-gold hover:text-black transition">
+            📐 45° Guest View
+          </button>
         </div>
 
-        <!-- Ceramic Vessel Geometry -->
         <div class="space-y-2">
-          <label class="text-[11px] font-mono uppercase text-stone-400">1. Select Vessel Geometry</label>
+          <label class="text-[11px] font-mono uppercase text-stone-400">1. Vessel Geometry & Rule-of-Thirds</label>
           <div class="grid grid-cols-3 gap-2 text-xs font-display">
-            <button onclick="setVessel('coupe')" id="v-coupe" class="p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-bold">Coupe Bowl</button>
-            <button onclick="setVessel('slate')" id="v-slate" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300">Black Slate</button>
-            <button onclick="setVessel('wide')" id="v-wide" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300">Wide Rim</button>
+            <button onclick="setVessel('coupe')" id="v-coupe" class="p-2 rounded-xl border border-gold bg-gold/15 text-gold font-bold">Coupe</button>
+            <button onclick="setVessel('slate')" id="v-slate" class="p-2 rounded-xl border border-white/10 bg-white/5 text-stone-300">Basalt Slate</button>
+            <button onclick="setVessel('wide')" id="v-wide" class="p-2 rounded-xl border border-white/10 bg-white/5 text-stone-300">Offset Well</button>
           </div>
         </div>
 
-        <!-- Culinary Brush / Element Tool -->
         <div class="space-y-2">
-          <label class="text-[11px] font-mono uppercase text-stone-400">2. Select Plating Tool</label>
+          <label class="text-[11px] font-mono uppercase text-stone-400">2. Precision Culinary Tool</label>
           <div class="grid grid-cols-2 gap-2 text-xs">
-            <button onclick="setBrush('dot')" id="b-dot" class="p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-medium text-left flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span> Fluid Gel Dot
-            </button>
-            <button onclick="setBrush('swoosh')" id="b-swoosh" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
-              <span>〰️</span> Puree Swoosh
-            </button>
-            <button onclick="setBrush('protein')" id="b-protein" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
-              <span>🥩</span> Protein Medallion
-            </button>
-            <button onclick="setBrush('quenelle')" id="b-quenelle" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
-              <span>🥄</span> Caviar / Quenelle
-            </button>
-            <button onclick="setBrush('herb')" id="b-herb" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
-              <span>🌿</span> Tweezers Micro-Herb
-            </button>
-            <button onclick="setBrush('oil')" id="b-oil" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2">
-              <span>💧</span> Chive Oil Bead
-            </button>
+            <button onclick="setBrush('dot')" id="b-dot" class="p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-medium text-left">🟡 Fluid Gel Dot</button>
+            <button onclick="setBrush('swoosh')" id="b-swoosh" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left">〰️ Tapered Swoosh</button>
+            <button onclick="setBrush('protein')" id="b-protein" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left">🥩 Protein Medallion</button>
+            <button onclick="setBrush('quenelle')" id="b-quenelle" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left">🥄 Rocher Quenelle</button>
+            <button onclick="setBrush('tuile')" id="b-tuile" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left">🕸️ Coral Tuile Sail</button>
+            <button onclick="setBrush('oil')" id="b-oil" class="p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left">💧 Broken Oil Drops</button>
           </div>
         </div>
 
-        <!-- Color / Sauce Tint -->
         <div class="space-y-2">
-          <label class="text-[11px] font-mono uppercase text-stone-400">3. Pigment / Emulsion Hue</label>
+          <label class="text-[11px] font-mono uppercase text-stone-400">3. Emulsion & Pigment Palette</label>
           <div class="flex gap-2.5">
-            <button onclick="setColor('#d4af37')" class="w-7 h-7 rounded-full bg-[#d4af37] ring-2 ring-white" title="Beurre Monté / Gold"></button>
-            <button onclick="setColor('#881337')" class="w-7 h-7 rounded-full bg-[#881337]" title="Cherry / Port Gastrique"></button>
-            <button onclick="setColor('#10b981')" class="w-7 h-7 rounded-full bg-[#10b981]" title="Blanched Chive / Parsley Oil"></button>
-            <button onclick="setColor('#f8fafc')" class="w-7 h-7 rounded-full bg-[#f8fafc]" title="Parsnip / Celeriac Mousseline"></button>
-            <button onclick="setColor('#1e1b18')" class="w-7 h-7 rounded-full bg-[#1e1b18] border border-white/30" title="Black Winter Truffle / Caviar"></button>
-            <button onclick="setColor('#ea580c')" class="w-7 h-7 rounded-full bg-[#ea580c]" title="Sea Buckthorn / Carrot Reduction"></button>
+            <button onclick="setColor('#d4af37')" class="w-7 h-7 rounded-full bg-[#d4af37] ring-2 ring-white" title="Beurre Monté"></button>
+            <button onclick="setColor('#881337')" class="w-7 h-7 rounded-full bg-[#881337]" title="Cherry Port Gastrique"></button>
+            <button onclick="setColor('#10b981')" class="w-7 h-7 rounded-full bg-[#10b981]" title="Blanched Chive Oil"></button>
+            <button onclick="setColor('#f8fafc')" class="w-7 h-7 rounded-full bg-[#f8fafc]" title="Celeriac Mousseline"></button>
+            <button onclick="setColor('#1c1917')" class="w-7 h-7 rounded-full bg-[#1c1917] border border-white/40" title="Black Garlic / Caviar"></button>
+            <button onclick="setColor('#ea580c')" class="w-7 h-7 rounded-full bg-[#ea580c]" title="Sea Buckthorn Gel"></button>
           </div>
         </div>
 
-        <!-- Element Size Slider -->
         <div class="space-y-1">
           <div class="flex justify-between text-[11px] font-mono text-stone-400">
-            <span>Nozzle / Portion Scale</span>
-            <span id="brush-size-label" class="text-gold">18mm</span>
+            <span>Portion / Nozzle Diameter</span>
+            <span id="brush-size-label" class="text-gold">20mm</span>
           </div>
-          <input type="range" id="brush-size" min="6" max="55" value="18" oninput="document.getElementById('brush-size-label').textContent = this.value + 'mm'" class="w-full accent-gold cursor-pointer">
+          <input type="range" id="brush-size" min="6" max="55" value="20" oninput="document.getElementById('brush-size-label').textContent = this.value + 'mm'" class="w-full accent-gold cursor-pointer">
         </div>
 
         <div class="pt-3 border-t border-white/10 flex gap-2">
-          <button onclick="undoCanvas()" class="flex-1 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-stone-300 border border-white/10 transition">↩ Undo</button>
-          <button onclick="clearCanvas()" class="flex-1 py-2 rounded-xl bg-crimson/20 hover:bg-crimson/40 text-xs font-mono text-red-300 border border-crimson/40 transition">✕ Clear</button>
-          <button onclick="downloadPlatingPNG()" class="flex-1 py-2 rounded-xl bg-gold hover:bg-gold-light text-xs font-display font-bold text-black transition">⬇ Save PNG</button>
+          <button onclick="undoCanvas()" class="flex-1 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-stone-300 border border-white/10">↩ Undo</button>
+          <button onclick="clearCanvas()" class="flex-1 py-2 rounded-xl bg-crimson/20 hover:bg-crimson/40 text-xs font-mono text-red-300 border border-crimson/40">✕ Clear</button>
+          <button onclick="downloadPlatingPNG()" class="flex-1 py-2 rounded-xl bg-gold hover:bg-gold-light text-xs font-display font-bold text-black">⬇ PNG</button>
         </div>
       </div>
 
-      <!-- Right Interactive CAD Canvas -->
-      <div class="lg:col-span-8 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center relative grid-bg min-h-[540px]">
+      <div class="lg:col-span-8 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center relative grid-bg min-h-[560px] perspective-stage">
         <div class="w-full flex justify-between items-center mb-3 text-xs font-mono text-stone-400">
-          <span>INTERACTIVE VIEWPORT • CLICK OR DRAG TO PLATE</span>
+          <span>INTERACTIVE STONEWARE STAGE • CLICK OR DRAG</span>
           <span id="canvas-coords" class="text-gold">X: 000 | Y: 000</span>
         </div>
-        <canvas id="plating-canvas" width="520" height="520" class="rounded-2xl cursor-crosshair shadow-2xl border border-white/10 bg-[#07070b]"></canvas>
+        <canvas id="plating-canvas" width="520" height="520" class="rounded-full cursor-crosshair shadow-2xl border border-white/10 bg-[#07070b]"></canvas>
       </div>
     </section>
 
-    <!-- ================= MODULE 2: SENSORY TELEMETRY & RADAR ================= -->
-    <section id="view-telemetry" class="hidden space-y-8">
+    <!-- ================= MODULE 2: GC-MS VOLATILE COMPOUND AFFINITY MATRIX ================= -->
+    <section id="view-compounds" class="hidden space-y-6">
       <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Physicochemical Palate Modeling</span>
-          <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Degustation Sensory Telemetry</h2>
-          <p class="text-xs text-stone-400 mt-1">Real-time multi-axis radar and progression curves mapping lipid coating, pH sharpness, and glutamic umami across your active menu.</p>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Gas Chromatography–Mass Spectrometry (GC-MS)</span>
+          <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Volatile Aroma Compound Affinity Network</h2>
+          <p class="text-xs text-stone-400 mt-1">Click any primary hero node below to map its unexpected chemical bridges weighted by Odor Activity Value (OAV).</p>
         </div>
-        <button onclick="randomizeTelemetrySimulation()" class="px-4 py-2 rounded-xl bg-gold text-black font-display font-bold text-xs uppercase transition">
-          Recalculate Active Arc
-        </button>
+        <div id="compound-pills" class="flex flex-wrap gap-2"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7 glass-panel rounded-2xl p-4 flex flex-col items-center justify-center grid-bg">
+          <canvas id="compound-canvas" width="620" height="440" class="w-full max-w-[620px] rounded-xl"></canvas>
+        </div>
+
+        <div class="lg:col-span-5 glass-panel rounded-2xl p-6 space-y-5" id="compound-details-box">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 3: MAILLARD PAN KINETICS & 1D FOURIER THERMAL LAB ================= -->
+    <section id="view-kinetics" class="hidden space-y-6">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow">
+        <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Thermodynamics & Heat Transfer</span>
+        <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Maillard Pan Kinetics & Core Diffusion Simulator</h2>
+        <p class="text-xs text-stone-400 mt-1">Simulates pan thermal drop upon protein contact, the 100°C evaporative steam barrier, and 1D Fourier core diffusion ($\partial T/\partial t = \alpha \nabla^2 T$).</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <!-- 5-Axis Radar Canvas -->
-        <div class="lg:col-span-5 glass-panel rounded-2xl p-6 flex flex-col items-center justify-center">
-          <h3 class="text-xs font-mono uppercase tracking-widest text-gold mb-4">5-Axis Palate Equilibrium</h3>
-          <canvas id="radar-canvas" width="360" height="360"></canvas>
-        </div>
-
-        <!-- Course-by-Course Waveforms -->
-        <div class="lg:col-span-7 glass-panel rounded-2xl p-6 flex flex-col justify-between space-y-6">
+        <div class="lg:col-span-5 glass-panel rounded-2xl p-6 space-y-4 text-xs">
           <div>
-            <h3 class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Course Progression Harmonics (Acid vs. Lipid Weight)</h3>
-            <p class="text-xs text-stone-400">Prevents palate fatigue by ensuring high-lipid climax courses are immediately followed by a high-acid pre-dessert spike.</p>
-          </div>
-          <canvas id="wave-canvas" width="600" height="240" class="w-full bg-void/60 rounded-xl border border-white/5 p-2"></canvas>
-
-          <div class="grid grid-cols-3 gap-4 text-center pt-2">
-            <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-              <span class="text-[10px] font-mono text-stone-400 block">PEAK MAILLARD INDEX</span>
-              <span class="text-xl font-mono font-bold text-gold">Course 03 (9.4)</span>
-            </div>
-            <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-              <span class="text-[10px] font-mono text-stone-400 block">PALATE CLEANSING DELTA</span>
-              <span class="text-xl font-mono font-bold text-neonEmerald">+6.8 pH Shift</span>
-            </div>
-            <div class="p-3 rounded-xl bg-white/5 border border-white/10">
-              <span class="text-[10px] font-mono text-stone-400 block">THERMAL CONTRAST</span>
-              <span class="text-xl font-mono font-bold text-white">-5°C to 74°C</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= MODULE 3: HYDROCOLLOID & EMULSION LAB ================= -->
-    <section id="view-molecular" class="hidden space-y-8">
-      <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow">
-        <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Modernist Precision Formulation</span>
-        <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Hydrocolloid & Fluid Gel Calculator</h2>
-        <p class="text-xs text-stone-400 mt-1">Calculate exact metric weights to 0.01g accuracy for modernist gels, airs, spheres, and stable beurre monté emulsions.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Input Controls -->
-        <div class="glass-panel rounded-2xl p-6 space-y-5">
-          <div>
-            <label class="text-xs font-mono uppercase text-gold block mb-2">1. Base Liquid Volume / Weight (g or ml)</label>
-            <input type="number" id="hydro-base" value="500" oninput="calcHydro()" class="w-full bg-void border border-white/15 rounded-xl p-3 font-mono text-xl text-white focus:border-gold focus:outline-none">
-          </div>
-
-          <div>
-            <label class="text-xs font-mono uppercase text-gold block mb-2">2. Select Modernist Technique</label>
-            <select id="hydro-type" onchange="calcHydro()" class="w-full bg-void border border-white/15 rounded-xl p-3 text-sm text-white font-sans focus:border-gold focus:outline-none">
-              <option value="fluid_gel">Agar-Agar Sheared Fluid Gel (1.0% ratio)</option>
-              <option value="firm_gel">Agar-Agar Standing Sheet / Cube Gel (1.8% ratio)</option>
-              <option value="xanthan">Xanthan Gum Sauce Suspension / Vinaigrette (0.25% ratio)</option>
-              <option value="lecithin">Soy Lecithin Botanical Air / Foam (0.6% ratio)</option>
-              <option value="alginate">Sodium Alginate Direct Spherification Bath (0.5% ratio)</option>
-              <option value="pectin">High-Methoxyl Pectin Pate de Fruit (1.5% ratio)</option>
+            <label class="font-mono uppercase text-gold block mb-1">1. Cookware Metallurgy (Volumetric Heat Capacity)</label>
+            <select id="kin-pan" onchange="runKineticsSim()" class="w-full bg-void border border-white/15 rounded-xl p-2.5 text-white">
+              <option value="cast_iron">Heavy Seasoned Cast Iron (High Thermal Mass, Slow Recovery)</option>
+              <option value="copper">2.5mm Tin-Lined Copper (Ultra-Fast Diffusivity $\alpha$)</option>
+              <option value="clad">5-Ply Clad Stainless Steel (Balanced Flux)</option>
+              <option value="carbon">Blue Carbon Steel (Rapid Maillard Response)</option>
             </select>
           </div>
 
-          <div id="hydro-protocol" class="p-4 rounded-xl bg-white/5 border border-white/10 text-xs text-stone-300 space-y-1.5 leading-relaxed">
-            <!-- Dynamically updated -->
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="font-mono uppercase text-stone-400 block mb-1">Pre-Heat Pan Temp (°C)</label>
+              <input type="number" id="kin-pan-temp" value="215" oninput="runKineticsSim()" class="w-full bg-void border border-white/15 rounded-xl p-2.5 font-mono text-white">
+            </div>
+            <div>
+              <label class="font-mono uppercase text-stone-400 block mb-1">Surface Moisture (%)</label>
+              <input type="number" id="kin-moisture" value="3" min="0" max="25" oninput="runKineticsSim()" class="w-full bg-void border border-white/15 rounded-xl p-2.5 font-mono text-white" title="0-3% = Dry-brined overnight on wire rack; 15% = Wet out of package">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="font-mono uppercase text-stone-400 block mb-1">Protein Thickness (mm)</label>
+              <input type="number" id="kin-thick" value="38" min="10" max="90" oninput="runKineticsSim()" class="w-full bg-void border border-white/15 rounded-xl p-2.5 font-mono text-white">
+            </div>
+            <div>
+              <label class="font-mono uppercase text-stone-400 block mb-1">Target Core (°C)</label>
+              <input type="number" id="kin-target-core" value="53.5" step="0.5" oninput="runKineticsSim()" class="w-full bg-void border border-white/15 rounded-xl p-2.5 font-mono text-gold">
+            </div>
+          </div>
+
+          <div id="kin-readout" class="p-4 rounded-xl bg-void/90 border border-white/10 space-y-2 font-mono"></div>
+        </div>
+
+        <div class="lg:col-span-7 glass-panel rounded-2xl p-6 flex flex-col justify-between">
+          <div class="flex justify-between items-center text-xs font-mono">
+            <span class="text-gold">SURFACE CRUST vs. CORE TEMPERATURE CURVE</span>
+            <span class="text-stone-400">Gold = Surface (°C) | Emerald = Core (°C) | Red Dashed = 145°C Maillard Zone</span>
+          </div>
+          <canvas id="kinetics-canvas" width="620" height="320" class="w-full bg-void/70 rounded-xl border border-white/10 my-3"></canvas>
+          <p id="kin-advisory" class="text-xs text-stone-300 font-light"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 4: EQUILIBRIUM OSMOTIC BRINING & DRY-AGE LAB ================= -->
+    <section id="view-osmosis" class="hidden space-y-6">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow">
+        <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Osmotic Pressure & Proteolysis</span>
+        <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Equilibrium (EQ) Brining & Dry-Age Desiccation Matrix</h2>
+        <p class="text-xs text-stone-400 mt-1">Calculates exact metric salt & sugar weights across total system mass ($M_{\text{meat}} + M_{\text{water}}$) so over-salting is physically impossible.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-panel rounded-2xl p-6 space-y-4 text-xs">
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="font-mono uppercase text-gold block mb-1">Raw Protein Mass (g)</label>
+              <input type="number" id="eq-meat" value="1200" oninput="calcEQ()" class="w-full bg-void border border-white/15 rounded-xl p-3 font-mono text-lg text-white">
+            </div>
+            <div>
+              <label class="font-mono uppercase text-gold block mb-1">Water / Liquid Bath (g/ml)</label>
+              <input type="number" id="eq-water" value="400" oninput="calcEQ()" class="w-full bg-void border border-white/15 rounded-xl p-3 font-mono text-lg text-white" title="Set to 0 for dry-rub vacuum EQ brining">
+            </div>
+          </div>
+
+          <div>
+            <label class="font-mono uppercase text-gold block mb-1">Target Equilibrium Salinity (%)</label>
+            <select id="eq-salinity" onchange="calcEQ()" class="w-full bg-void border border-white/15 rounded-xl p-3 text-white">
+              <option value="0.008">0.80% — Delicate Flaky White Fish (Halibut, Cod, Turbot)</option>
+              <option value="0.0125" selected>1.25% — Michelin Standard Poultry & Duck Breast</option>
+              <option value="0.015">1.50% — Rich Pork Belly, Ribeye & Lamb Saddle</option>
+              <option value="0.0225">2.25% — Charcuterie Torchon / Rillettes Cure</option>
+              <option value="0.0275">2.75% — Whole-Muscle Duck Prosciutto (Dry-Cure)</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-3 pt-2">
+            <input type="checkbox" id="eq-nitrate" onchange="calcEQ()" class="w-4 h-4 accent-gold">
+            <label for="eq-nitrate" class="text-stone-300 font-mono">Include Prague Powder #1 (0.25% Instacure for pink myoglobin fixation)</label>
           </div>
         </div>
 
-        <!-- Precision Output Readout -->
         <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between gold-border-glow">
-          <div>
-            <span class="text-[10px] font-mono uppercase text-stone-400 block">Precision Jewelry Scale Target</span>
-            <h3 id="hydro-title-out" class="text-2xl font-serif font-bold text-white mt-1">Agar-Agar Sheared Fluid Gel</h3>
+          <div class="grid grid-cols-3 gap-3 text-center">
+            <div class="p-4 bg-void rounded-xl border border-white/10">
+              <span class="text-[10px] font-mono text-stone-400 block">PURE SEA SALT</span>
+              <span id="eq-salt-out" class="text-3xl font-mono font-bold text-gold">20.00 g</span>
+            </div>
+            <div class="p-4 bg-void rounded-xl border border-white/10">
+              <span class="text-[10px] font-mono text-stone-400 block">MAILLARD SUGAR (40%)</span>
+              <span id="eq-sugar-out" class="text-3xl font-mono font-bold text-white">8.00 g</span>
+            </div>
+            <div class="p-4 bg-void rounded-xl border border-white/10">
+              <span class="text-[10px] font-mono text-stone-400 block">PRAGUE POWDER #1</span>
+              <span id="eq-cure-out" class="text-3xl font-mono font-bold text-crimson">0.00 g</span>
+            </div>
           </div>
 
-          <div class="my-8 text-center py-8 bg-void/80 rounded-2xl border border-white/10">
-            <span class="text-xs font-mono text-stone-400 block mb-2">REQUIRED HYDROCOLLOID MASS</span>
+          <div class="my-4 p-4 rounded-xl bg-white/5 border border-white/10 text-xs font-mono space-y-1.5" id="eq-dryage-box"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 5: HYDROCOLLOID & CAVITATION LAB ================= -->
+    <section id="view-molecular" class="hidden space-y-6">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 gold-border-glow">
+        <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Rheology & Shear-Thinning Gels</span>
+        <h2 class="text-3xl font-serif font-bold text-white mt-0.5">Synergistic Hydrocolloid & Cavitation Calculator</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-panel rounded-2xl p-6 space-y-5">
+          <div>
+            <label class="text-xs font-mono uppercase text-gold block mb-2">1. Base Liquid Mass (g or ml)</label>
+            <input type="number" id="hydro-base" value="500" oninput="calcHydro()" class="w-full bg-void border border-white/15 rounded-xl p-3 font-mono text-xl text-white">
+          </div>
+          <div>
+            <label class="text-xs font-mono uppercase text-gold block mb-2">2. Select Modernist Formulation</label>
+            <select id="hydro-type" onchange="calcHydro()" class="w-full bg-void border border-white/15 rounded-xl p-3 text-sm text-white">
+              <option value="fluid_gel">Agar-Agar Sheared Fluid Gel (1.00% ratio)</option>
+              <option value="elastic_veil">Synergistic Agar (0.8%) + Locust Bean Gum (0.2%) Elastic Veil</option>
+              <option value="xanthan">Xanthan Gum Shear-Thinning Emulsion (0.25% ratio)</option>
+              <option value="lecithin">Soy Lecithin Botanical Air / Espuma (0.60% ratio)</option>
+              <option value="alginate">Sodium Alginate Reverse Spherification (0.50% ratio)</option>
+            </select>
+          </div>
+          <div id="hydro-protocol" class="p-4 rounded-xl bg-white/5 border border-white/10 text-xs text-stone-300 leading-relaxed"></div>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between gold-border-glow">
+          <div class="my-auto text-center py-10 bg-void/80 rounded-2xl border border-white/10">
+            <span class="text-xs font-mono text-stone-400 block mb-2">PRECISION JEWELRY SCALE TARGET</span>
             <span id="hydro-grams-out" class="text-6xl font-mono font-bold text-gold">5.00 g</span>
             <span id="hydro-pct-out" class="text-xs font-mono text-neonEmerald block mt-2">1.00% Hydration Ratio</span>
           </div>
-
-          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono mt-4">
             <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-              <span class="text-stone-400 block text-[10px]">HYDRATION TEMP</span>
-              <span id="hydro-temp-out" class="text-white font-bold text-sm">95°C – 100°C Boil</span>
+              <span class="text-stone-400 block text-[10px]">HYDRATION THRESHOLD</span>
+              <span id="hydro-temp-out" class="text-white font-bold">95°C – 100°C Boil</span>
             </div>
             <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-              <span class="text-stone-400 block text-[10px]">SET WINDOW</span>
-              <span id="hydro-set-out" class="text-white font-bold text-sm">35°C – 40°C</span>
+              <span class="text-stone-400 block text-[10px]">GELATION SET WINDOW</span>
+              <span id="hydro-set-out" class="text-white font-bold">35°C – 40°C</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= MODULE 4: LIVE PASS KDS (EXPEDITOR DISPLAY) ================= -->
+    <!-- ================= MODULE 6: LIVE PASS KDS ================= -->
     <section id="view-kds" class="hidden space-y-6">
       <div class="glass-panel rounded-2xl p-6 flex flex-wrap justify-between items-center gap-4 border-l-4 border-l-gold">
         <div>
-          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Back-Of-House Expeditor Screen</span>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold block">Synced to Active Menu</span>
           <h2 class="text-2xl font-serif font-bold text-white">Live Service Pass Monitor (KDS)</h2>
         </div>
         <div class="flex items-center gap-4">
@@ -313,19 +382,17 @@
         </div>
       </div>
 
-      <div id="kds-tickets-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        <!-- Injected dynamically -->
-      </div>
+      <div id="kds-tickets-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
     </section>
 
   </main>
 
-  <!-- COMMAND PALETTE (CTRL+K) -->
+  <!-- CTRL+K COMMAND PALETTE -->
   <div id="cmd-palette" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-start justify-center pt-24 p-4">
     <div class="glass-panel max-w-lg w-full rounded-2xl overflow-hidden shadow-2xl border border-gold/40">
       <div class="p-4 border-b border-white/10 flex items-center gap-3">
         <span class="text-gold font-mono">❯</span>
-        <input type="text" id="cmd-input" oninput="filterCommands()" placeholder="Type a studio command (e.g., 'Plating', 'Clear', 'KDS', 'Curator')..." class="w-full bg-transparent text-sm text-white focus:outline-none font-mono">
+        <input type="text" id="cmd-input" oninput="filterCommands()" placeholder="Type command (3D, Compounds, Maillard, Brine, KDS)..." class="w-full bg-transparent text-sm text-white focus:outline-none font-mono">
         <button onclick="toggleCmdPalette()" class="text-xs text-stone-500 font-mono">ESC</button>
       </div>
       <div id="cmd-list" class="p-2 max-h-64 overflow-y-auto space-y-1 text-xs font-mono"></div>
@@ -334,26 +401,25 @@
 
   <script>
     /* =========================================================
-       1. TAB NAVIGATION & KEYBOARD SHORTCUTS
+       1. MODULE NAVIGATION
        ========================================================= */
     function setStudioTab(tab) {
-      ['plating', 'telemetry', 'molecular', 'kds'].forEach(t => {
+      ['plating', 'compounds', 'kinetics', 'osmosis', 'molecular', 'kds'].forEach(t => {
         document.getElementById(`view-${t}`).classList.toggle('hidden', t !== tab);
         const btn = document.getElementById(`stab-${t}`);
         btn.className = t === tab 
-          ? "px-4 py-1.5 rounded-lg bg-gold text-black font-bold transition-all"
-          : "px-4 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all";
+          ? "px-3 py-1.5 rounded-lg bg-gold text-black font-bold transition-all"
+          : "px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all";
       });
-      if (tab === 'telemetry') {
-        drawRadarChart();
-        drawWaveChart();
-      }
+      if (tab === 'compounds') renderCompoundGraph(activeCompoundKey);
+      if (tab === 'kinetics') runKineticsSim();
+      if (tab === 'osmosis') calcEQ();
       if (tab === 'molecular') calcHydro();
-      if (tab === 'kds') renderKDSTickets();
+      if (tab === 'kds') syncAndRenderKDS();
     }
 
     /* =========================================================
-       2. INTERACTIVE PLATING CAD CANVAS
+       2. 3D STONEWARE PLATING CAD
        ========================================================= */
     const canvas = document.getElementById('plating-canvas');
     const ctx = canvas.getContext('2d');
@@ -362,6 +428,13 @@
     let currentColor = '#d4af37';
     let historyStack = [];
     let isDrawing = false;
+    let isTilted3D = false;
+
+    function toggle3DTilt() {
+      isTilted3D = !isTilted3D;
+      canvas.classList.toggle('plate-3d-tilt', isTilted3D);
+      document.getElementById('tilt-btn').textContent = isTilted3D ? "🔭 Top-Down Pass View" : "📐 45° Guest View";
+    }
 
     function saveCanvasState() {
       if (historyStack.length > 15) historyStack.shift();
@@ -374,46 +447,40 @@
       const cy = canvas.height / 2;
 
       if (currentVessel === 'coupe') {
-        // Dark matte ceramic coupe bowl
-        const grad = ctx.createRadialGradient(cx - 30, cy - 30, 20, cx, cy, 230);
-        grad.addColorStop(0, '#1e1e26');
-        grad.addColorStop(1, '#0e0e12');
+        canvas.className = `rounded-full cursor-crosshair shadow-2xl border border-white/10 bg-[#07070b] ${isTilted3D ? 'plate-3d-tilt' : ''}`;
+        const grad = ctx.createRadialGradient(cx - 40, cy - 40, 20, cx, cy, 240);
+        grad.addColorStop(0, '#20202a');
+        grad.addColorStop(1, '#0c0c12');
         ctx.fillStyle = grad;
-        ctx.beginPath();
-        ctx.arc(cx, cy, 225, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.strokeStyle = 'rgba(212, 175, 55, 0.25)';
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        // Inner well line
-        ctx.beginPath();
-        ctx.arc(cx, cy, 165, 0, Math.PI * 2);
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.06)';
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      } else if (currentVessel === 'slate') {
-        // Rectangular brushed basalt slate
-        ctx.fillStyle = '#141419';
-        ctx.fillRect(45, 70, 430, 380);
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
-        ctx.lineWidth = 2;
-        ctx.strokeRect(45, 70, 430, 380);
-      } else if (currentVessel === 'wide') {
-        // Wide rimmed French porcelain (off-white/bone dark mode)
-        ctx.fillStyle = '#181820';
         ctx.beginPath();
         ctx.arc(cx, cy, 235, 0, Math.PI * 2);
         ctx.fill();
-        ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.3)';
+        ctx.lineWidth = 2;
         ctx.stroke();
 
-        // Small off-center inner target well
-        ctx.fillStyle = '#101016';
+        // Rule of thirds subtle crosshairs
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
         ctx.beginPath();
-        ctx.arc(cx, cy, 115, 0, Math.PI * 2);
+        ctx.arc(cx, cy, 155, 0, Math.PI * 2);
+        ctx.stroke();
+      } else if (currentVessel === 'slate') {
+        canvas.className = `rounded-2xl cursor-crosshair shadow-2xl border border-white/10 bg-[#07070b] ${isTilted3D ? 'plate-3d-tilt' : ''}`;
+        ctx.fillStyle = '#14141c';
+        ctx.fillRect(35, 55, 450, 410);
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.18)';
+        ctx.strokeRect(35, 55, 450, 410);
+      } else if (currentVessel === 'wide') {
+        canvas.className = `rounded-full cursor-crosshair shadow-2xl border border-white/10 bg-[#07070b] ${isTilted3D ? 'plate-3d-tilt' : ''}`;
+        ctx.fillStyle = '#181822';
+        ctx.beginPath();
+        ctx.arc(cx, cy, 240, 0, Math.PI * 2);
         ctx.fill();
-        ctx.strokeStyle = 'rgba(212, 175, 55, 0.35)';
+        ctx.fillStyle = '#0d0d14';
+        ctx.beginPath();
+        ctx.arc(cx + 35, cy + 25, 110, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.4)';
         ctx.stroke();
       }
       saveCanvasState();
@@ -423,8 +490,8 @@
       currentVessel = v;
       ['coupe', 'slate', 'wide'].forEach(k => {
         document.getElementById(`v-${k}`).className = k === v
-          ? "p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-bold"
-          : "p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300";
+          ? "p-2 rounded-xl border border-gold bg-gold/15 text-gold font-bold"
+          : "p-2 rounded-xl border border-white/10 bg-white/5 text-stone-300";
       });
       historyStack = [];
       drawBaseVessel();
@@ -432,28 +499,26 @@
 
     function setBrush(b) {
       currentBrush = b;
-      ['dot', 'swoosh', 'protein', 'quenelle', 'herb', 'oil'].forEach(k => {
+      ['dot', 'swoosh', 'protein', 'quenelle', 'tuile', 'oil'].forEach(k => {
         document.getElementById(`b-${k}`).className = k === b
-          ? "p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-medium text-left flex items-center gap-2"
-          : "p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left flex items-center gap-2";
+          ? "p-2.5 rounded-xl border border-gold bg-gold/15 text-gold font-medium text-left"
+          : "p-2.5 rounded-xl border border-white/10 bg-white/5 text-stone-300 text-left";
       });
     }
 
-    function setColor(hex) {
-      currentColor = hex;
-    }
+    function setColor(hex) { currentColor = hex; }
 
     canvas.addEventListener('mousemove', e => {
       const rect = canvas.getBoundingClientRect();
-      const x = Math.round(e.clientX - rect.left);
-      const y = Math.round(e.clientY - rect.top);
+      const x = Math.round((e.clientX - rect.left) * (canvas.width / rect.width));
+      const y = Math.round((e.clientY - rect.top) * (canvas.height / rect.height));
       document.getElementById('canvas-coords').textContent = `X: ${x.toString().padStart(3, '0')} | Y: ${y.toString().padStart(3, '0')}`;
 
       if (isDrawing && currentBrush === 'swoosh') {
         const size = parseInt(document.getElementById('brush-size').value);
         ctx.fillStyle = currentColor;
         ctx.beginPath();
-        ctx.arc(x, y, size * 0.6, 0, Math.PI * 2);
+        ctx.arc(x, y, size * 0.55, 0, Math.PI * 2);
         ctx.fill();
       }
     });
@@ -462,57 +527,57 @@
       saveCanvasState();
       isDrawing = true;
       const rect = canvas.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+      const x = (e.clientX - rect.left) * (canvas.width / rect.width);
+      const y = (e.clientY - rect.top) * (canvas.height / rect.height);
       const size = parseInt(document.getElementById('brush-size').value);
 
       ctx.save();
       ctx.translate(x, y);
+      // Volumetric drop shadow for 3D realism
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.75)';
+      ctx.shadowBlur = 10;
+      ctx.shadowOffsetX = 4;
+      ctx.shadowOffsetY = 6;
 
       if (currentBrush === 'dot') {
-        // Glossy fluid gel dot with specular highlight
         ctx.fillStyle = currentColor;
         ctx.beginPath();
         ctx.arc(0, 0, size, 0, Math.PI * 2);
         ctx.fill();
-        ctx.fillStyle = 'rgba(255,255,255,0.45)';
+        ctx.shadowColor = 'transparent';
+        ctx.fillStyle = 'rgba(255,255,255,0.5)';
         ctx.beginPath();
         ctx.arc(-size * 0.3, -size * 0.3, size * 0.22, 0, Math.PI * 2);
         ctx.fill();
       } else if (currentBrush === 'protein') {
-        // Carved protein medallion
         ctx.rotate(-0.25);
-        ctx.fillStyle = '#5c2129';
-        ctx.strokeStyle = '#3b1508';
+        ctx.fillStyle = '#6b1d2f';
+        ctx.strokeStyle = '#3b1109';
         ctx.lineWidth = 4;
         ctx.beginPath();
         ctx.roundRect(-size * 1.6, -size, size * 3.2, size * 2, 12);
         ctx.fill();
         ctx.stroke();
       } else if (currentBrush === 'quenelle') {
-        // Classic 3-sided rocher/quenelle
         ctx.rotate(-0.4);
         ctx.fillStyle = currentColor;
         ctx.beginPath();
-        ctx.ellipse(0, 0, size * 1.4, size * 0.7, 0, 0, Math.PI * 2);
+        ctx.ellipse(0, 0, size * 1.45, size * 0.72, 0, 0, Math.PI * 2);
         ctx.fill();
-      } else if (currentBrush === 'herb') {
-        // Micro-herb leaf cluster
-        ctx.fillStyle = '#10b981';
-        for (let i = 0; i < 3; i++) {
-          ctx.rotate((Math.PI * 2) / 3);
+      } else if (currentBrush === 'tuile') {
+        ctx.strokeStyle = currentColor;
+        ctx.lineWidth = 1.5;
+        for (let i = 0; i < 18; i++) {
           ctx.beginPath();
-          ctx.ellipse(size * 0.5, 0, size * 0.5, size * 0.2, 0, 0, Math.PI * 2);
-          ctx.fill();
+          ctx.arc((Math.random() - 0.5) * size * 2, (Math.random() - 0.5) * size * 2, size * 0.4, 0, Math.PI * 2);
+          ctx.stroke();
         }
       } else if (currentBrush === 'oil') {
-        // Cluster of broken herb oil droplets
-        for (let i = 0; i < 6; i++) {
-          const ox = (Math.random() - 0.5) * size * 2.2;
-          const oy = (Math.random() - 0.5) * size * 2.2;
-          const r = Math.random() * (size * 0.3) + 2;
+        for (let i = 0; i < 7; i++) {
+          const ox = (Math.random() - 0.5) * size * 2.4;
+          const oy = (Math.random() - 0.5) * size * 2.4;
+          const r = Math.random() * (size * 0.28) + 2;
           ctx.fillStyle = currentColor;
-          ctx.globalAlpha = 0.85;
           ctx.beginPath();
           ctx.arc(ox, oy, r, 0, Math.PI * 2);
           ctx.fill();
@@ -533,174 +598,298 @@
         };
       }
     }
-
-    function clearCanvas() {
-      drawBaseVessel();
-    }
-
+    function clearCanvas() { drawBaseVessel(); }
     function downloadPlatingPNG() {
       const link = document.createElement('a');
-      link.download = 'latelier-plating-blueprint.png';
+      link.download = 'latelier-3d-plating.png';
       link.href = canvas.toDataURL();
       link.click();
     }
 
     /* =========================================================
-       3. SENSORY TELEMETRY (RADAR & WAVE CHARTS)
+       3. GC-MS VOLATILE COMPOUND AFFINITY NETWORK
        ========================================================= */
-    let radarStats = [8.5, 7.2, 9.1, 8.8, 7.9]; // Acid, Lipid, Umami, Thermal, Maillard
-
-    function drawRadarChart() {
-      const rc = document.getElementById('radar-canvas');
-      if (!rc) return;
-      const rctx = rc.getContext('2d');
-      rctx.clearRect(0, 0, rc.width, rc.height);
-
-      const cx = rc.width / 2;
-      const cy = rc.height / 2;
-      const maxR = 125;
-      const labels = ['ACIDITY', 'LIPID FAT', 'UMAMI', 'THERMAL', 'MAILLARD'];
-
-      // Draw concentric web rings
-      for (let level = 1; level <= 4; level++) {
-        const r = (maxR / 4) * level;
-        rctx.beginPath();
-        for (let i = 0; i < 5; i++) {
-          const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-          const x = cx + Math.cos(angle) * r;
-          const y = cy + Math.sin(angle) * r;
-          if (i === 0) rctx.moveTo(x, y);
-          else rctx.lineTo(x, y);
-        }
-        rctx.closePath();
-        rctx.strokeStyle = 'rgba(255,255,255,0.08)';
-        rctx.stroke();
+    const COMPOUND_DB = {
+      "Caviar": {
+        primaryChemistry: "Trimethylamine, Aliphatic Aldehydes & Glutamates",
+        nodes: [
+          { name: "White Chocolate", shared: "Trimethylamine & Lactones", oav: 96, note: "Cocoa butter lipids dissolve amine salinity seamlessly (Heston Blumenthal classic)." },
+          { name: "Caramelized Cauliflower", shared: "Dimethyl Sulfide & Methional", oav: 92, note: "Sulfurous brassica notes mirror sturgeon roe ocean floor minerality." },
+          { name: "Finger Lime", shared: "Limonene & Citral", oav: 88, note: "Popping citrus vesicles mirror roe texture while cutting lipid density." },
+          { name: "Smoked Potato Mousseline", shared: "Methional & Guaiacol", oav: 94, note: "Starchy methional acts as a thermal amplifier for cold roe." },
+          { name: "Cultured Crème Fraîche", shared: "Diacetyl & Butyric Acid", oav: 98, note: "Lactic acidity and diacetyl butteriness round sharp sea salt." }
+        ]
+      },
+      "Dry-Aged Duck": {
+        primaryChemistry: "2-Methyl-3-Furanthiol, Linalool & Strecker Aldehydes",
+        nodes: [
+          { name: "Tart Morello Cherry", shared: "Benzaldehyde & Linalool", oav: 97, note: "Almond-fruity benzaldehyde locks onto rendered duck fat lactones." },
+          { name: "Szechuan Peppercorn", shared: "Linalool & Sanshool", oav: 93, note: "Shared floral terpene linalool; paresthesia cuts subcutaneous fat." },
+          { name: "Lavender Blossom Honey", shared: "Linalool & Phenylacetaldehyde", oav: 95, note: "Herbaceous floral bridge immortalized by Eleven Madison Park." },
+          { name: "Roasted Cacao Nib", shared: "Tetramethylpyrazine", oav: 89, note: "Maillard pyrazines in roasted cacao deepen iron-rich duck myoglobin." },
+          { name: "Black Garlic", shared: "Furanones & Diallyl Disulfide", oav: 91, note: "Aged Maillard sugars amplify savoury crust." }
+        ]
+      },
+      "A5 Wagyu Beef": {
+        primaryChemistry: "2-Furfurylthiol, Pyrazines & Oleic Acid Lactones",
+        nodes: [
+          { name: "Espresso / Roasted Coffee", shared: "2-Furfurylthiol & Guaiacol", oav: 96, note: "Identical roasted thiol compound created during high-heat searing." },
+          { name: "Périgord Black Truffle", shared: "Dimethyl Sulfide & 2-Methylbutanal", oav: 98, note: "Volatile sulfur esters dissolve directly into warm oleic beef fat." },
+          { name: "Red Miso / Koji", shared: "4-Vinylguaiacol & Glutamate", oav: 94, note: "Synergistic nucleotide (IMP) + glutamate umami explosion." },
+          { name: "Smoked Bone Marrow", shared: "gamma-Nonalactone & Diacetyl", oav: 95, note: "Doubles lipid mouth-coating and lactone sweetness." },
+          { name: "Charred Scallion", shared: "Dipropyl Disulfide & Furfural", oav: 89, note: "Allium sulfurs slice through dense intramuscular marbling." }
+        ]
+      },
+      "Dark Chocolate": {
+        primaryChemistry: "Tetramethylpyrazine, Vanillin & Phenylethylamine",
+        nodes: [
+          { name: "Roquefort Blue Cheese", shared: "2-Heptanone & Methyl Ketones", oav: 95, note: "Fermented dairy ketones share a direct molecular bridge with fermented cacao." },
+          { name: "Saffron Threads", shared: "Safranal & Pyrazines", oav: 91, note: "Hay-floral safranal lifts dark chocolate's bitter tannic finish." },
+          { name: "Cardamom Pod", shared: "1,8-Cineole & Linalyl Acetate", oav: 93, note: "Cooling eucalyptus terpene brightens heavy ganache." },
+          { name: "Pedro Ximénez Sherry", shared: "Sotolon & Furaneol", oav: 96, note: "Oxidative walnut/caramel sotolon locks into roasted cocoa." },
+          { name: "Extra Virgin Olive Oil", shared: "(Z)-3-Hexenal & Polyphenols", oav: 90, note: "Grassy hexenal andshared bitter polyphenols." }
+        ]
+      },
+      "Diver Scallop": {
+        primaryChemistry: "Dimethyl Sulfide (DMS), Glycine & Trimethylamine",
+        nodes: [
+          { name: "Vanilla Bean", shared: "Vanillin & 4-Hydroxybenzaldehyde", oav: 92, note: "Scallop's natural free amino acid glycine pairs with aromatic vanillin." },
+          { name: "Yuzu Kosho", shared: "Limonene & Capsaicinoids", oav: 94, note: "High-volatile citrus terpenes cut sweet shellfish proteins." },
+          { name: "Brown Butter (Noisette)", shared: "Diacetyl & Filbertone", oav: 99, note: "Toasted milk solids mirror caramelized scallop Maillard crust." },
+          { name: "Green Apple", shared: "Hexyl Acetate & Malic Acid", oav: 90, note: "Crisp malic acid lifts raw scallop crudo." },
+          { name: "Cured Pork Belly / Lardo", shared: "Guaiacol & Gamma-Decalactone", oav: 93, note: "Smoky pork lipids baste lean shellfish." }
+        ]
       }
+    };
 
-      // Draw polygon data
-      rctx.beginPath();
-      for (let i = 0; i < 5; i++) {
-        const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-        const valR = (radarStats[i] / 10) * maxR;
-        const x = cx + Math.cos(angle) * valR;
-        const y = cy + Math.sin(angle) * valR;
-        if (i === 0) rctx.moveTo(x, y);
-        else rctx.lineTo(x, y);
-      }
-      rctx.closePath();
-      rctx.fillStyle = 'rgba(212, 175, 55, 0.25)';
-      rctx.fill();
-      rctx.strokeStyle = '#d4af37';
-      rctx.lineWidth = 2;
-      rctx.stroke();
+    let activeCompoundKey = "Caviar";
 
-      // Axis labels
-      rctx.fillStyle = '#a8a29e';
-      rctx.font = '10px "JetBrains Mono"';
-      rctx.textAlign = 'center';
-      for (let i = 0; i < 5; i++) {
-        const angle = (Math.PI * 2 * i) / 5 - Math.PI / 2;
-        const x = cx + Math.cos(angle) * (maxR + 24);
-        const y = cy + Math.sin(angle) * (maxR + 24);
-        rctx.fillText(`${labels[i]} (${radarStats[i]})`, x, y);
-      }
-    }
-
-    function drawWaveChart() {
-      const wc = document.getElementById('wave-canvas');
-      if (!wc) return;
-      const wctx = wc.getContext('2d');
-      wctx.clearRect(0, 0, wc.width, wc.height);
-
-      const courses = ['01 OPENER', '02 MID', '03 CLIMAX', '04 PRE-DESSERT', '05 FINALE'];
-      const acidPoints = [8.5, 5.5, 4.0, 9.5, 6.0];
-      const fatPoints = [3.0, 7.5, 9.5, 1.0, 7.0];
-
-      const stepX = wc.width / 5;
-
-      // Acid Line (Emerald)
-      wctx.beginPath();
-      acidPoints.forEach((val, i) => {
-        const x = i * stepX + 55;
-        const y = wc.height - (val / 10) * (wc.height - 50) - 25;
-        if (i === 0) wctx.moveTo(x, y);
-        else wctx.lineTo(x, y);
-      });
-      wctx.strokeStyle = '#10b981';
-      wctx.lineWidth = 3;
-      wctx.stroke();
-
-      // Fat Line (Gold)
-      wctx.beginPath();
-      fatPoints.forEach((val, i) => {
-        const x = i * stepX + 55;
-        const y = wc.height - (val / 10) * (wc.height - 50) - 25;
-        if (i === 0) wctx.moveTo(x, y);
-        else wctx.lineTo(x, y);
-      });
-      wctx.strokeStyle = '#d4af37';
-      wctx.lineWidth = 3;
-      wctx.stroke();
-
-      // Labels
-      wctx.fillStyle = '#a8a29e';
-      wctx.font = '10px "JetBrains Mono"';
-      courses.forEach((c, i) => {
-        wctx.fillText(c, i * stepX + 25, wc.height - 6);
+    function renderCompoundPills() {
+      const box = document.getElementById('compound-pills');
+      box.innerHTML = '';
+      Object.keys(COMPOUND_DB).forEach(k => {
+        const btn = document.createElement('button');
+        btn.className = k === activeCompoundKey
+          ? "px-3.5 py-1.5 rounded-xl bg-gold text-black font-display font-bold text-xs"
+          : "px-3.5 py-1.5 rounded-xl bg-white/5 border border-white/10 text-stone-300 text-xs hover:border-gold";
+        btn.textContent = k;
+        btn.onclick = () => {
+          activeCompoundKey = k;
+          renderCompoundPills();
+          renderCompoundGraph(k);
+        };
+        box.appendChild(btn);
       });
     }
 
-    function randomizeTelemetrySimulation() {
-      radarStats = radarStats.map(() => +(Math.random() * 3 + 6.8).toFixed(1));
-      drawRadarChart();
-      drawWaveChart();
+    function renderCompoundGraph(heroKey) {
+      renderCompoundPills();
+      const data = COMPOUND_DB[heroKey];
+      const cc = document.getElementById('compound-canvas');
+      const cctx = cc.getContext('2d');
+      cctx.clearRect(0, 0, cc.width, cc.height);
+
+      const cx = cc.width / 2;
+      const cy = cc.height / 2;
+      const radius = 155;
+
+      // Draw molecular bonds and outer nodes
+      data.nodes.forEach((node, i) => {
+        const angle = (Math.PI * 2 * i) / data.nodes.length - Math.PI / 2;
+        const nx = cx + Math.cos(angle) * radius;
+        const ny = cy + Math.sin(angle) * radius;
+
+        // Bond Line
+        cctx.beginPath();
+        cctx.moveTo(cx, cy);
+        cctx.lineTo(nx, ny);
+        cctx.strokeStyle = 'rgba(212, 175, 55, 0.45)';
+        cctx.lineWidth = (node.oav - 80) / 4;
+        cctx.stroke();
+
+        // Midpoint chemical label
+        const mx = (cx + nx) / 2;
+        const my = (cy + ny) / 2;
+        cctx.fillStyle = '#10b981';
+        cctx.font = '10px "JetBrains Mono"';
+        cctx.textAlign = 'center';
+        cctx.fillText(node.shared.split('&')[0].trim(), mx, my - 6);
+
+        // Satellite Node Circle
+        cctx.beginPath();
+        cctx.arc(nx, ny, 28, 0, Math.PI * 2);
+        cctx.fillStyle = '#12121c';
+        cctx.fill();
+        cctx.strokeStyle = '#10b981';
+        cctx.lineWidth = 2;
+        cctx.stroke();
+
+        cctx.fillStyle = '#ffffff';
+        cctx.font = 'bold 11px "Inter"';
+        cctx.fillText(node.name, nx, ny - 36);
+        cctx.fillStyle = '#d4af37';
+        cctx.font = '10px "JetBrains Mono"';
+        cctx.fillText(`${node.oav}%`, nx, ny + 4);
+      });
+
+      // Center Hero Node
+      cctx.beginPath();
+      cctx.arc(cx, cy, 44, 0, Math.PI * 2);
+      cctx.fillStyle = '#d4af37';
+      cctx.fill();
+      cctx.fillStyle = '#000000';
+      cctx.font = 'bold 12px "Cinzel"';
+      cctx.textAlign = 'center';
+      cctx.fillText(heroKey.toUpperCase(), cx, cy + 4);
+
+      // Populate Right Details Panel
+      document.getElementById('compound-details-box').innerHTML = `
+        <div>
+          <span class="text-[10px] font-mono uppercase text-gold">Primary Volatile Fingerprint</span>
+          <h3 class="text-2xl font-serif font-bold text-white">${heroKey}</h3>
+          <p class="text-xs font-mono text-neonEmerald mt-1">${data.primaryChemistry}</p>
+        </div>
+        <div class="space-y-3 pt-2 border-t border-white/10">
+          ${data.nodes.map(n => `
+            <div class="p-3 rounded-xl bg-void/80 border border-white/10">
+              <div class="flex justify-between text-xs font-bold text-white">
+                <span>× ${n.name}</span>
+                <span class="font-mono text-gold">${n.oav}% Match</span>
+              </div>
+              <span class="text-[10px] font-mono text-neonEmerald block mt-0.5">Bridge: ${n.shared}</span>
+              <p class="text-[11px] text-stone-400 mt-1 font-light">${n.note}</p>
+            </div>
+          `).join('')}
+        </div>
+      `;
     }
 
     /* =========================================================
-       4. HYDROCOLLOID & MODERNIST RATIO CALCULATOR
+       4. MAILLARD PAN KINETICS & 1D FOURIER THERMAL LAB
+       ========================================================= */
+    function runKineticsSim() {
+      const panType = document.getElementById('kin-pan').value;
+      const startTemp = parseFloat(document.getElementById('kin-pan-temp').value) || 210;
+      const moisture = parseFloat(document.getElementById('kin-moisture').value) || 3;
+      const thickMm = parseFloat(document.getElementById('kin-thick').value) || 38;
+      const targetCore = parseFloat(document.getElementById('kin-target-core').value) || 53.5;
+
+      const panMassFactor = { cast_iron: 0.88, copper: 0.94, clad: 0.82, carbon: 0.85 }[panType];
+      // Steam barrier duration in seconds based on surface moisture %
+      const steamBarrierSecs = Math.round(moisture * 14);
+      // Time to reach target core via 1D Fourier diffusion approximation (t ~ L^2 / alpha)
+      const totalCookMins = +((Math.pow(thickMm, 1.75) * 0.016) * (targetCore / 53.5)).toFixed(1);
+      const carryoverPeak = +(targetCore + (thickMm > 30 ? 3.5 : 2.0)).toFixed(1);
+
+      document.getElementById('kin-readout').innerHTML = `
+        <div class="flex justify-between"><span>STEAM BARRIER (100°C PLATEAU):</span><span class="text-amber-400 font-bold">${steamBarrierSecs}s</span></div>
+        <div class="flex justify-between"><span>MAILLARD CRUST ONSET (>145°C):</span><span class="text-neonEmerald font-bold">T + ${steamBarrierSecs + 25}s</span></div>
+        <div class="flex justify-between"><span>FOURIER CORE DIFFUSION TIME:</span><span class="text-gold font-bold">${totalCookMins} mins</span></div>
+        <div class="flex justify-between"><span>POST-REST EQUILIBRIUM CORE:</span><span class="text-white font-bold">${carryoverPeak}°C</span></div>
+      `;
+
+      // Draw Curves
+      const kc = document.getElementById('kinetics-canvas');
+      const kctx = kc.getContext('2d');
+      kctx.clearRect(0, 0, kc.width, kc.height);
+
+      // 145°C Maillard Threshold Line
+      const maillardY = kc.height - (145 / 250) * (kc.height - 40) - 20;
+      kctx.setLineDash([5, 5]);
+      kctx.beginPath();
+      kctx.moveTo(30, maillardY);
+      kctx.lineTo(kc.width - 20, maillardY);
+      kctx.strokeStyle = '#e11d48';
+      kctx.stroke();
+      kctx.setLineDash([]);
+
+      // Surface Temp Curve (Gold)
+      kctx.beginPath();
+      for (let i = 0; i <= 50; i++) {
+        const x = 30 + (i / 50) * (kc.width - 50);
+        let temp;
+        if (i === 0) temp = startTemp;
+        else if (i * 6 <= steamBarrierSecs) temp = 100 + (startTemp * panMassFactor - 100) * Math.exp(-i * 0.4);
+        else temp = Math.min(185, 115 + (i - steamBarrierSecs / 6) * 3.2 * panMassFactor);
+
+        const y = kc.height - (temp / 250) * (kc.height - 40) - 20;
+        if (i === 0) kctx.moveTo(x, y);
+        else kctx.lineTo(x, y);
+      }
+      kctx.strokeStyle = '#d4af37';
+      kctx.lineWidth = 3;
+      kctx.stroke();
+
+      // Core Temp Curve (Emerald)
+      kctx.beginPath();
+      for (let i = 0; i <= 50; i++) {
+        const x = 30 + (i / 50) * (kc.width - 50);
+        const coreT = 4 + (targetCore - 4) * Math.pow(i / 50, 1.35);
+        const y = kc.height - (coreT / 250) * (kc.height - 40) - 20;
+        if (i === 0) kctx.moveTo(x, y);
+        else kctx.lineTo(x, y);
+      }
+      kctx.strokeStyle = '#10b981';
+      kctx.lineWidth = 3;
+      kctx.stroke();
+
+      document.getElementById('kin-advisory').textContent = moisture > 8
+        ? "⚠️ High surface moisture detected: Pan energy is wasted boiling surface water at 100°C for " + steamBarrierSecs + "s, steaming the grey band before Maillard browning can begin. Dry-brine uncovered on a wire rack overnight."
+        : "✓ Low surface moisture: Rapid breakthrough past the 100°C steam plateau straight into the 145°C–175°C Maillard pyrazine window.";
+    }
+
+    /* =========================================================
+       5. EQUILIBRIUM OSMOTIC BRINING & DRY-AGE LAB
+       ========================================================= */
+    function calcEQ() {
+      const meat = parseFloat(document.getElementById('eq-meat').value) || 0;
+      const water = parseFloat(document.getElementById('eq-water').value) || 0;
+      const sal = parseFloat(document.getElementById('eq-salinity').value) || 0.0125;
+      const useNitrate = document.getElementById('eq-nitrate').checked;
+
+      const totalSystemMass = meat + water;
+      const saltGrams = (totalSystemMass * sal).toFixed(2);
+      const sugarGrams = (totalSystemMass * sal * 0.4).toFixed(2);
+      const cureGrams = useNitrate ? (meat * 0.0025).toFixed(2) : "0.00";
+
+      document.getElementById('eq-salt-out').textContent = `${saltGrams} g`;
+      document.getElementById('eq-sugar-out').textContent = `${sugarGrams} g`;
+      document.getElementById('eq-cure-out').textContent = `${cureGrams} g`;
+
+      const target7DayWeight = Math.round(meat * 0.88);
+      const target14DayWeight = Math.round(meat * 0.82);
+
+      document.getElementById('eq-dryage-box').innerHTML = `
+        <div class="text-gold font-bold">DRY-AGING DESICCATION & PROTEOLYSIS TARGETS:</div>
+        <div class="flex justify-between"><span> Total System Mass (Meat + Liquid):</span><span>${totalSystemMass} g</span></div>
+        <div class="flex justify-between"><span> 7-Day Crown Dry-Age Target (-12% H2O):</span><span class="text-neonEmerald">${target7DayWeight} g</span></div>
+        <div class="flex justify-between"><span> 14-Day Deep Enzyme Age Target (-18% H2O):</span><span class="text-gold">${target14DayWeight} g</span></div>
+      `;
+    }
+
+    /* =========================================================
+       6. HYDROCOLLOID & CAVITATION LAB
        ========================================================= */
     const HYDRO_SPECS = {
       fluid_gel: {
-        title: "Agar-Agar Sheared Fluid Gel",
-        ratio: 0.010,
-        temp: "95°C – 100°C Full Boil",
-        set: "35°C – 40°C",
-        protocol: "1. Cold-disperse agar powder into liquid base with immersion blender.\n2. Bring to a rolling boil for 90 seconds to fully hydrate polymers.\n3. Pour into shallow hotel pan and chill until solid.\n4. Cube the set gel and blend on high shear until glossy, pipeable fluid gel forms."
+        ratio: 0.010, temp: "95°C – 100°C Full Boil", set: "35°C – 40°C",
+        protocol: "1. Cold-disperse 1.0% agar into liquid with immersion blender.\n2. Boil 90 seconds to hydrate polymers.\n3. Chill in shallow hotel pan until solid.\n4. Cube gel and shear in blender until glossy fluid gel forms."
       },
-      firm_gel: {
-        title: "Agar-Agar Standing Sheet / Cube Gel",
-        ratio: 0.018,
-        temp: "100°C Boil (2 mins)",
-        set: "38°C Rapid Set",
-        protocol: "1. Whisk agar into cold liquid base.\n2. Boil for 2 minutes.\n3. Cast onto flat rimmed tray to 2mm thickness for veils or 1.5cm for cubes."
+      elastic_veil: {
+        ratio: 0.010, temp: "100°C Synergistic Boil", set: "42°C Elastic Set",
+        protocol: "Combine 0.80% Agar-Agar + 0.20% Locust Bean Gum (LBG). LBG cross-links with agar to eliminate brittle fracture and syneresis (weeping), allowing paper-thin flexible sheets draped over warm proteins."
       },
       xanthan: {
-        title: "Xanthan Gum Shear-Thinning Suspension",
-        ratio: 0.0025,
-        temp: "Cold or Warm (0°C – 85°C)",
-        set: "Instantaneous Viscosity",
-        protocol: "1. Slowly vortex xanthan into liquid using an immersion blender to prevent clumping.\n2. Pass through fine chinois or vacuum chamber to remove micro-air bubbles."
+        ratio: 0.0025, temp: "0°C – 85°C", set: "Instant Shear-Thinning",
+        protocol: "Vortex 0.25% xanthan gum into vinaigrettes or jus. Suspends herb oil droplets and particulate matter permanently while feeling light on the tongue during mastication."
       },
       lecithin: {
-        title: "Soy Lecithin Botanical Air / Espuma",
-        ratio: 0.006,
-        temp: "15°C – 45°C",
-        set: "Stable Surface Foam",
-        protocol: "1. Blend soy lecithin into watery aromatic liquid.\n2. Tilt wide container and skim surface with hand blender to incorporate air.\n3. Let foam stabilize 60 seconds, then spoon off dry aromatic cloud."
+        ratio: 0.006, temp: "15°C – 45°C", set: "Surface Air Cloud",
+        protocol: "Blend 0.60% soy lecithin into aqueous flavorful liquid. Tilt wide container and skim surface with hand blender to entrain air bubbles; rest 60 seconds and spoon off dry foam."
       },
       alginate: {
-        title: "Sodium Alginate Direct Spherification",
-        ratio: 0.005,
-        temp: "Cold Hydration (Rest 12h)",
-        set: "Chemical Calcium Cross-Link",
-        protocol: "1. Blend sodium alginate into low-calcium flavorful liquid.\n2. Rest 12 hours in fridge to purge air bubbles.\n3. Drop into 0.5% Calcium Chloride setting bath for 90 seconds; rinse in pure water."
-      },
-      pectin: {
-        title: "High-Methoxyl Pectin Fruit Gel",
-        ratio: 0.015,
-        temp: "106°C Brix Target",
-        set: "Acid-Triggered Set",
-        protocol: "1. Whisk HM pectin with 5x its weight in caster sugar so it disperses evenly.\n2. Boil with fruit puree to 106°C, then stir in citric acid solution immediately before casting."
+        ratio: 0.005, temp: "Cold Hydration (12h)", set: "Calcium Cross-Link",
+        protocol: "Blend 0.50% sodium alginate into low-calcium liquid; rest 12h to de-aerate. Drop into 0.5% Calcium Chloride bath for 90 seconds; rinse in pure water."
       }
     };
 
@@ -708,34 +897,42 @@
       const base = parseFloat(document.getElementById('hydro-base').value) || 0;
       const type = document.getElementById('hydro-type').value;
       const spec = HYDRO_SPECS[type];
-
-      const grams = (base * spec.ratio).toFixed(2);
-      document.getElementById('hydro-title-out').textContent = spec.title;
-      document.getElementById('hydro-grams-out').textContent = `${grams} g`;
-      document.getElementById('hydro-pct-out').textContent = `${(spec.ratio * 100).toFixed(2)}% Hydration Ratio`;
+      document.getElementById('hydro-grams-out').textContent = `${(base * spec.ratio).toFixed(2)} g`;
+      document.getElementById('hydro-pct-out').textContent = `${(spec.ratio * 100).toFixed(2)}% Ratio`;
       document.getElementById('hydro-temp-out').textContent = spec.temp;
       document.getElementById('hydro-set-out').textContent = spec.set;
       document.getElementById('hydro-protocol').innerText = spec.protocol;
     }
 
     /* =========================================================
-       5. LIVE PASS KDS (EXPEDITOR TICKETS)
+       7. LIVE PASS KDS (SYNCED WITH MAIN OS)
        ========================================================= */
-    let kdsCourses = [
-      { num: "01", slot: "OPENER", name: "Salmon Cornets / Red Onion Crème", status: "PLATED", color: "border-neonEmerald text-neonEmerald" },
-      { num: "02", slot: "MID", name: "Oysters & Pearls / Tapioca Sabayon", status: "FIRING NOW", color: "border-gold text-gold animate-pulse" },
-      { num: "03", slot: "CLIMAX", name: "Dry-Aged Duck / Cherry Gastrique", status: "RESTING (53°C)", color: "border-amber-500 text-amber-400" },
-      { num: "04", slot: "PRE-DESSERT", name: "Menton Lemon Granita / Rosemary", status: "ON DECK", color: "border-white/20 text-stone-400" },
-      { num: "05", slot: "FINALE", name: "Deconstructed Lemon Tart", status: "HOLD", color: "border-white/20 text-stone-400" }
-    ];
+    let kdsCourses = [];
 
-    function renderKDSTickets() {
+    function syncAndRenderKDS() {
+      const savedArc = JSON.parse(localStorage.getItem('latelier_active_arc') || '[]');
+      if (savedArc.length > 0 && kdsCourses.length === 0) {
+        kdsCourses = savedArc.map((c, idx) => ({
+          num: `0${idx + 1}`,
+          slot: (c.slot || 'COURSE').toUpperCase(),
+          name: c.dish,
+          status: idx === 0 ? "FIRING NOW" : "ON DECK",
+          color: idx === 0 ? "border-gold text-gold animate-pulse" : "border-white/20 text-stone-400"
+        }));
+      } else if (kdsCourses.length === 0) {
+        kdsCourses = [
+          { num: "01", slot: "OPENER", name: "Salmon Cornets / Red Onion Crème", status: "PLATED", color: "border-neonEmerald text-neonEmerald" },
+          { num: "02", slot: "MID", name: "Oysters & Pearls / Tapioca Sabayon", status: "FIRING NOW", color: "border-gold text-gold animate-pulse" },
+          { num: "03", slot: "CLIMAX", name: "Dry-Aged Duck / Cherry Gastrique", status: "ON DECK", color: "border-white/20 text-stone-400" }
+        ];
+      }
+
       const grid = document.getElementById('kds-tickets-grid');
       grid.innerHTML = kdsCourses.map((c, idx) => `
         <div class="glass-panel rounded-2xl p-5 border-t-4 ${c.color} flex flex-col justify-between space-y-4">
           <div>
             <div class="flex justify-between items-center text-[10px] font-mono">
-              <span>COURSE ${c.num}</span>
+              <span>COURSE ${c.num} • ${c.slot}</span>
               <span class="px-2 py-0.5 rounded bg-white/5">${c.status}</span>
             </div>
             <h4 class="text-lg font-serif font-bold text-white mt-2">${c.name}</h4>
@@ -753,7 +950,7 @@
       const next = states[(states.indexOf(cur) + 1) % states.length] || "PLATED";
       kdsCourses[idx].status = next;
       kdsCourses[idx].color = next === "PLATED" ? "border-neonEmerald text-neonEmerald" : "border-gold text-gold";
-      renderKDSTickets();
+      syncAndRenderKDS();
     }
 
     function fireNextCourseKDS() {
@@ -765,11 +962,10 @@
           kdsCourses[idx + 1].status = "FIRING NOW";
           kdsCourses[idx + 1].color = "border-gold text-gold animate-pulse";
         }
-        renderKDSTickets();
+        syncAndRenderKDS();
       }
     }
 
-    // Master KDS Clock
     let kdsSeconds = 0;
     setInterval(() => {
       kdsSeconds++;
@@ -781,15 +977,16 @@
     }, 1000);
 
     /* =========================================================
-       6. CTRL+K COMMAND PALETTE
+       8. CTRL+K COMMAND PALETTE
        ========================================================= */
     const COMMANDS = [
-      { label: "Switch to Interactive Plating CAD", action: () => setStudioTab('plating') },
-      { label: "Switch to Sensory Telemetry Radar", action: () => setStudioTab('telemetry') },
-      { label: "Switch to Hydrocolloid & Emulsion Lab", action: () => setStudioTab('molecular') },
-      { label: "Switch to Live Pass KDS Monitor", action: () => setStudioTab('kds') },
-      { label: "Clear Plating CAD Canvas", action: () => clearCanvas() },
-      { label: "Export Plating Blueprint as PNG", action: () => downloadPlatingPNG() },
+      { label: "1. Open 3D Stoneware Plating CAD", action: () => setStudioTab('plating') },
+      { label: "2. Open GC-MS Volatile Compound Graph", action: () => setStudioTab('compounds') },
+      { label: "3. Open Maillard & Fourier Thermal Lab", action: () => setStudioTab('kinetics') },
+      { label: "4. Open Equilibrium Brining & Dry-Age Lab", action: () => setStudioTab('osmosis') },
+      { label: "5. Open Synergistic Hydrocolloid Lab", action: () => setStudioTab('molecular') },
+      { label: "6. Open Live Pass KDS Monitor", action: () => setStudioTab('kds') },
+      { label: "Toggle 45° 3D Seated Guest Perspective", action: () => { setStudioTab('plating'); toggle3DTilt(); } },
       { label: "Return to Main Curator OS (index.html)", action: () => window.location.href = 'index.html' }
     ];
 
@@ -811,10 +1008,7 @@
         const btn = document.createElement('button');
         btn.className = "w-full text-left p-2.5 rounded-lg hover:bg-gold hover:text-black text-stone-300 transition flex justify-between items-center";
         btn.innerHTML = `<span>${cmd.label}</span><span class="text-[10px] opacity-60">↵ Enter</span>`;
-        btn.onclick = () => {
-          cmd.action();
-          toggleCmdPalette();
-        };
+        btn.onclick = () => { cmd.action(); toggleCmdPalette(); };
         list.appendChild(btn);
       });
     }
@@ -828,10 +1022,10 @@
       }
     });
 
-    // Initialize default view
     window.addEventListener('DOMContentLoaded', () => {
       drawBaseVessel();
       calcHydro();
+      calcEQ();
     });
   </script>
 </body>

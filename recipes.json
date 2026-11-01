@@ -74589,5 +74589,3047 @@
       "wine": "Sommelier Reserve Pairing",
       "zeroProof": "Infused Spiced Tea or Nectar"
     }
+  },
+  {
+    "id": "mol-hokkaido-sea-scallop-crudo-with-white-asparagus-",
+    "dish": "Hokkaido Sea Scallop Crudo with White Asparagus Ribbons",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Dimethyl Sulfide Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Scallop"
+    ],
+    "sensoryRole": "Engineered via Dimethyl Sulfide Bridge. Balances primary scallop lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Hokkaido Sea Scallop Crudo",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "White Asparagus Ribbons",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Sub-Zero Microplaned Horseradish Snow",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Hokkaido Sea Scallop Crudo under strict thermal control (verify core with needle probe). 2. Formulate White Asparagus Ribbons to activate the Dimethyl Sulfide Bridge volatile overlap. 3. Finish at the pass with Sub-Zero Microplaned Horseradish Snow for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Hokkaido Sea Scallop Crudo, arc White Asparagus Ribbons, and garnish with Sub-Zero Microplaned Horseradish Snow using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-hokkaido-sea-scallop-crudo-with-green-strawberry",
+    "dish": "Hokkaido Sea Scallop Crudo with Green Strawberry Aguachile",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Furaneol & Hexenal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Scallop"
+    ],
+    "sensoryRole": "Engineered via Furaneol & Hexenal Bridge. Balances primary scallop lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Hokkaido Sea Scallop Crudo",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Green Strawberry Aguachile",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Blanched Chive Blossom Emerald Oil",
+        "qty": 15.0,
+        "unit": "ml",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Hokkaido Sea Scallop Crudo under strict thermal control (verify core with needle probe). 2. Formulate Green Strawberry Aguachile to activate the Furaneol & Hexenal Bridge volatile overlap. 3. Finish at the pass with Blanched Chive Blossom Emerald Oil for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Hokkaido Sea Scallop Crudo, arc Green Strawberry Aguachile, and garnish with Blanched Chive Blossom Emerald Oil using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-hokkaido-sea-scallop-crudo-with-kaffir-lime-coco",
+    "dish": "Hokkaido Sea Scallop Crudo with Kaffir Lime & Coconut Lecithin Air",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Citronellal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Scallop"
+    ],
+    "sensoryRole": "Engineered via Linalool & Citronellal Bridge. Balances primary scallop lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Hokkaido Sea Scallop Crudo",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Kaffir Lime & Coconut Lecithin Air",
+        "qty": 35.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Blanched Chive Blossom Emerald Oil",
+        "qty": 15.0,
+        "unit": "ml",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Hokkaido Sea Scallop Crudo under strict thermal control (verify core with needle probe). 2. Formulate Kaffir Lime & Coconut Lecithin Air to activate the Linalool & Citronellal Bridge volatile overlap. 3. Finish at the pass with Blanched Chive Blossom Emerald Oil for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Hokkaido Sea Scallop Crudo, arc Kaffir Lime & Coconut Lecithin Air, and garnish with Blanched Chive Blossom Emerald Oil using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-hokkaido-sea-scallop-crudo-with-compressed-green",
+    "dish": "Hokkaido Sea Scallop Crudo with Compressed Green Apple & Celery Verjus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Hexyl Acetate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Scallop"
+    ],
+    "sensoryRole": "Engineered via Hexyl Acetate Bridge. Balances primary scallop lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Hokkaido Sea Scallop Crudo",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Compressed Green Apple & Celery Verjus",
+        "qty": 45.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Blanched Chive Blossom Emerald Oil",
+        "qty": 15.0,
+        "unit": "ml",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Hokkaido Sea Scallop Crudo under strict thermal control (verify core with needle probe). 2. Formulate Compressed Green Apple & Celery Verjus to activate the Hexyl Acetate Bridge volatile overlap. 3. Finish at the pass with Blanched Chive Blossom Emerald Oil for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Hokkaido Sea Scallop Crudo, arc Compressed Green Apple & Celery Verjus, and garnish with Blanched Chive Blossom Emerald Oil using precision tweezers.",
+    "pairing": {
+      "wine": "Weingut Keller G-Max Riesling",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-hokkaido-sea-scallop-crudo-with-charred-grapefru",
+    "dish": "Hokkaido Sea Scallop Crudo with Charred Grapefruit & Nootkatone Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone Terpene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Scallop"
+    ],
+    "sensoryRole": "Engineered via Nootkatone Terpene Bridge. Balances primary scallop lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Hokkaido Sea Scallop Crudo",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Charred Grapefruit & Nootkatone Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Hokkaido Sea Scallop Crudo under strict thermal control (verify core with needle probe). 2. Formulate Charred Grapefruit & Nootkatone Gel to activate the Nootkatone Terpene Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Hokkaido Sea Scallop Crudo, arc Charred Grapefruit & Nootkatone Gel, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-bluefin-toro-tartare-with-white-asparagus-ribbon",
+    "dish": "Bluefin Toro Tartare with White Asparagus Ribbons",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Dimethyl Sulfide Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Tuna"
+    ],
+    "sensoryRole": "Engineered via Dimethyl Sulfide Bridge. Balances primary tuna lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Bluefin Toro Tartare",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "White Asparagus Ribbons",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Bluefin Toro Tartare under strict thermal control (verify core with needle probe). 2. Formulate White Asparagus Ribbons to activate the Dimethyl Sulfide Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Bluefin Toro Tartare, arc White Asparagus Ribbons, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-bluefin-toro-tartare-with-green-strawberry-aguac",
+    "dish": "Bluefin Toro Tartare with Green Strawberry Aguachile",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Furaneol & Hexenal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Tuna"
+    ],
+    "sensoryRole": "Engineered via Furaneol & Hexenal Bridge. Balances primary tuna lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Bluefin Toro Tartare",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Green Strawberry Aguachile",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Regiis Ova Ossetra Caviar",
+        "qty": 18.0,
+        "unit": "g",
+        "dept": "seafood"
+      }
+    ],
+    "technique": "1. Prepare Bluefin Toro Tartare under strict thermal control (verify core with needle probe). 2. Formulate Green Strawberry Aguachile to activate the Furaneol & Hexenal Bridge volatile overlap. 3. Finish at the pass with Regiis Ova Ossetra Caviar for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Bluefin Toro Tartare, arc Green Strawberry Aguachile, and garnish with Regiis Ova Ossetra Caviar using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-bluefin-toro-tartare-with-kaffir-lime-coconut-le",
+    "dish": "Bluefin Toro Tartare with Kaffir Lime & Coconut Lecithin Air",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Citronellal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Tuna"
+    ],
+    "sensoryRole": "Engineered via Linalool & Citronellal Bridge. Balances primary tuna lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Bluefin Toro Tartare",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Kaffir Lime & Coconut Lecithin Air",
+        "qty": 35.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Regiis Ova Ossetra Caviar",
+        "qty": 18.0,
+        "unit": "g",
+        "dept": "seafood"
+      }
+    ],
+    "technique": "1. Prepare Bluefin Toro Tartare under strict thermal control (verify core with needle probe). 2. Formulate Kaffir Lime & Coconut Lecithin Air to activate the Linalool & Citronellal Bridge volatile overlap. 3. Finish at the pass with Regiis Ova Ossetra Caviar for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Bluefin Toro Tartare, arc Kaffir Lime & Coconut Lecithin Air, and garnish with Regiis Ova Ossetra Caviar using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-bluefin-toro-tartare-with-compressed-green-apple",
+    "dish": "Bluefin Toro Tartare with Compressed Green Apple & Celery Verjus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Hexyl Acetate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Tuna"
+    ],
+    "sensoryRole": "Engineered via Hexyl Acetate Bridge. Balances primary tuna lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Bluefin Toro Tartare",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Compressed Green Apple & Celery Verjus",
+        "qty": 45.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Bluefin Toro Tartare under strict thermal control (verify core with needle probe). 2. Formulate Compressed Green Apple & Celery Verjus to activate the Hexyl Acetate Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Bluefin Toro Tartare, arc Compressed Green Apple & Celery Verjus, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-bluefin-toro-tartare-with-charred-grapefruit-noo",
+    "dish": "Bluefin Toro Tartare with Charred Grapefruit & Nootkatone Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone Terpene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Tuna"
+    ],
+    "sensoryRole": "Engineered via Nootkatone Terpene Bridge. Balances primary tuna lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Bluefin Toro Tartare",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Charred Grapefruit & Nootkatone Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Bluefin Toro Tartare under strict thermal control (verify core with needle probe). 2. Formulate Charred Grapefruit & Nootkatone Gel to activate the Nootkatone Terpene Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Bluefin Toro Tartare, arc Charred Grapefruit & Nootkatone Gel, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-pacific-hamachi-sashimi-with-white-asparagus-rib",
+    "dish": "Pacific Hamachi Sashimi with White Asparagus Ribbons",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Dimethyl Sulfide Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Hamachi"
+    ],
+    "sensoryRole": "Engineered via Dimethyl Sulfide Bridge. Balances primary hamachi lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Pacific Hamachi Sashimi",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "White Asparagus Ribbons",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Pacific Hamachi Sashimi under strict thermal control (verify core with needle probe). 2. Formulate White Asparagus Ribbons to activate the Dimethyl Sulfide Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Pacific Hamachi Sashimi, arc White Asparagus Ribbons, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-pacific-hamachi-sashimi-with-green-strawberry-ag",
+    "dish": "Pacific Hamachi Sashimi with Green Strawberry Aguachile",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Furaneol & Hexenal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Hamachi"
+    ],
+    "sensoryRole": "Engineered via Furaneol & Hexenal Bridge. Balances primary hamachi lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Pacific Hamachi Sashimi",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Green Strawberry Aguachile",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Pacific Hamachi Sashimi under strict thermal control (verify core with needle probe). 2. Formulate Green Strawberry Aguachile to activate the Furaneol & Hexenal Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Pacific Hamachi Sashimi, arc Green Strawberry Aguachile, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Weingut Keller G-Max Riesling",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-pacific-hamachi-sashimi-with-kaffir-lime-coconut",
+    "dish": "Pacific Hamachi Sashimi with Kaffir Lime & Coconut Lecithin Air",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Citronellal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Hamachi"
+    ],
+    "sensoryRole": "Engineered via Linalool & Citronellal Bridge. Balances primary hamachi lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Pacific Hamachi Sashimi",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Kaffir Lime & Coconut Lecithin Air",
+        "qty": 35.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Blanched Chive Blossom Emerald Oil",
+        "qty": 15.0,
+        "unit": "ml",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Pacific Hamachi Sashimi under strict thermal control (verify core with needle probe). 2. Formulate Kaffir Lime & Coconut Lecithin Air to activate the Linalool & Citronellal Bridge volatile overlap. 3. Finish at the pass with Blanched Chive Blossom Emerald Oil for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Pacific Hamachi Sashimi, arc Kaffir Lime & Coconut Lecithin Air, and garnish with Blanched Chive Blossom Emerald Oil using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-pacific-hamachi-sashimi-with-compressed-green-ap",
+    "dish": "Pacific Hamachi Sashimi with Compressed Green Apple & Celery Verjus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Hexyl Acetate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Hamachi"
+    ],
+    "sensoryRole": "Engineered via Hexyl Acetate Bridge. Balances primary hamachi lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Pacific Hamachi Sashimi",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Compressed Green Apple & Celery Verjus",
+        "qty": 45.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Sub-Zero Microplaned Horseradish Snow",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Pacific Hamachi Sashimi under strict thermal control (verify core with needle probe). 2. Formulate Compressed Green Apple & Celery Verjus to activate the Hexyl Acetate Bridge volatile overlap. 3. Finish at the pass with Sub-Zero Microplaned Horseradish Snow for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Pacific Hamachi Sashimi, arc Compressed Green Apple & Celery Verjus, and garnish with Sub-Zero Microplaned Horseradish Snow using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-pacific-hamachi-sashimi-with-charred-grapefruit-",
+    "dish": "Pacific Hamachi Sashimi with Charred Grapefruit & Nootkatone Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone Terpene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Hamachi"
+    ],
+    "sensoryRole": "Engineered via Nootkatone Terpene Bridge. Balances primary hamachi lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Pacific Hamachi Sashimi",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Charred Grapefruit & Nootkatone Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Regiis Ova Ossetra Caviar",
+        "qty": 18.0,
+        "unit": "g",
+        "dept": "seafood"
+      }
+    ],
+    "technique": "1. Prepare Pacific Hamachi Sashimi under strict thermal control (verify core with needle probe). 2. Formulate Charred Grapefruit & Nootkatone Gel to activate the Nootkatone Terpene Bridge volatile overlap. 3. Finish at the pass with Regiis Ova Ossetra Caviar for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Pacific Hamachi Sashimi, arc Charred Grapefruit & Nootkatone Gel, and garnish with Regiis Ova Ossetra Caviar using precision tweezers.",
+    "pairing": {
+      "wine": "Weingut Keller G-Max Riesling",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-island-creek-oyster-poached-in-own-liquor-with-w",
+    "dish": "Island Creek Oyster Poached in Own Liquor with White Asparagus Ribbons",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Dimethyl Sulfide Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Oysters"
+    ],
+    "sensoryRole": "Engineered via Dimethyl Sulfide Bridge. Balances primary oysters lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Island Creek Oyster Poached in Own Liquor",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "White Asparagus Ribbons",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Regiis Ova Ossetra Caviar",
+        "qty": 18.0,
+        "unit": "g",
+        "dept": "seafood"
+      }
+    ],
+    "technique": "1. Prepare Island Creek Oyster Poached in Own Liquor under strict thermal control (verify core with needle probe). 2. Formulate White Asparagus Ribbons to activate the Dimethyl Sulfide Bridge volatile overlap. 3. Finish at the pass with Regiis Ova Ossetra Caviar for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Island Creek Oyster Poached in Own Liquor, arc White Asparagus Ribbons, and garnish with Regiis Ova Ossetra Caviar using precision tweezers.",
+    "pairing": {
+      "wine": "Weingut Keller G-Max Riesling",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-island-creek-oyster-poached-in-own-liquor-with-g",
+    "dish": "Island Creek Oyster Poached in Own Liquor with Green Strawberry Aguachile",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Furaneol & Hexenal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Oysters"
+    ],
+    "sensoryRole": "Engineered via Furaneol & Hexenal Bridge. Balances primary oysters lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Island Creek Oyster Poached in Own Liquor",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Green Strawberry Aguachile",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Sub-Zero Microplaned Horseradish Snow",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Island Creek Oyster Poached in Own Liquor under strict thermal control (verify core with needle probe). 2. Formulate Green Strawberry Aguachile to activate the Furaneol & Hexenal Bridge volatile overlap. 3. Finish at the pass with Sub-Zero Microplaned Horseradish Snow for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Island Creek Oyster Poached in Own Liquor, arc Green Strawberry Aguachile, and garnish with Sub-Zero Microplaned Horseradish Snow using precision tweezers.",
+    "pairing": {
+      "wine": "Weingut Keller G-Max Riesling",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-island-creek-oyster-poached-in-own-liquor-with-k",
+    "dish": "Island Creek Oyster Poached in Own Liquor with Kaffir Lime & Coconut Lecithin Air",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Citronellal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Oysters"
+    ],
+    "sensoryRole": "Engineered via Linalool & Citronellal Bridge. Balances primary oysters lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Island Creek Oyster Poached in Own Liquor",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Kaffir Lime & Coconut Lecithin Air",
+        "qty": 35.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Sub-Zero Microplaned Horseradish Snow",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Island Creek Oyster Poached in Own Liquor under strict thermal control (verify core with needle probe). 2. Formulate Kaffir Lime & Coconut Lecithin Air to activate the Linalool & Citronellal Bridge volatile overlap. 3. Finish at the pass with Sub-Zero Microplaned Horseradish Snow for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Island Creek Oyster Poached in Own Liquor, arc Kaffir Lime & Coconut Lecithin Air, and garnish with Sub-Zero Microplaned Horseradish Snow using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-island-creek-oyster-poached-in-own-liquor-with-c",
+    "dish": "Island Creek Oyster Poached in Own Liquor with Compressed Green Apple & Celery Verjus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Hexyl Acetate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Oysters"
+    ],
+    "sensoryRole": "Engineered via Hexyl Acetate Bridge. Balances primary oysters lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Island Creek Oyster Poached in Own Liquor",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Compressed Green Apple & Celery Verjus",
+        "qty": 45.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Finger Lime Caviar Vesicles",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Island Creek Oyster Poached in Own Liquor under strict thermal control (verify core with needle probe). 2. Formulate Compressed Green Apple & Celery Verjus to activate the Hexyl Acetate Bridge volatile overlap. 3. Finish at the pass with Finger Lime Caviar Vesicles for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Island Creek Oyster Poached in Own Liquor, arc Compressed Green Apple & Celery Verjus, and garnish with Finger Lime Caviar Vesicles using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-wild-king-salmon-mi-cuit-41-c-with-white-asparag",
+    "dish": "Wild King Salmon Mi-Cuit (41°C) with White Asparagus Ribbons",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Dimethyl Sulfide Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Salmon"
+    ],
+    "sensoryRole": "Engineered via Dimethyl Sulfide Bridge. Balances primary salmon lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Wild King Salmon Mi-Cuit (41°C)",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "White Asparagus Ribbons",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Regiis Ova Ossetra Caviar",
+        "qty": 18.0,
+        "unit": "g",
+        "dept": "seafood"
+      }
+    ],
+    "technique": "1. Prepare Wild King Salmon Mi-Cuit (41°C) under strict thermal control (verify core with needle probe). 2. Formulate White Asparagus Ribbons to activate the Dimethyl Sulfide Bridge volatile overlap. 3. Finish at the pass with Regiis Ova Ossetra Caviar for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Wild King Salmon Mi-Cuit (41°C), arc White Asparagus Ribbons, and garnish with Regiis Ova Ossetra Caviar using precision tweezers.",
+    "pairing": {
+      "wine": "Weingut Keller G-Max Riesling",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-wild-king-salmon-mi-cuit-41-c-with-green-strawbe",
+    "dish": "Wild King Salmon Mi-Cuit (41°C) with Green Strawberry Aguachile",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Furaneol & Hexenal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Salmon"
+    ],
+    "sensoryRole": "Engineered via Furaneol & Hexenal Bridge. Balances primary salmon lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Wild King Salmon Mi-Cuit (41°C)",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Green Strawberry Aguachile",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Blanched Chive Blossom Emerald Oil",
+        "qty": 15.0,
+        "unit": "ml",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Wild King Salmon Mi-Cuit (41°C) under strict thermal control (verify core with needle probe). 2. Formulate Green Strawberry Aguachile to activate the Furaneol & Hexenal Bridge volatile overlap. 3. Finish at the pass with Blanched Chive Blossom Emerald Oil for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Wild King Salmon Mi-Cuit (41°C), arc Green Strawberry Aguachile, and garnish with Blanched Chive Blossom Emerald Oil using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Saline Cucumber & Shiso Distillate"
+    }
+  },
+  {
+    "id": "mol-wild-king-salmon-mi-cuit-41-c-with-kaffir-lime-c",
+    "dish": "Wild King Salmon Mi-Cuit (41°C) with Kaffir Lime & Coconut Lecithin Air",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Citronellal Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Salmon"
+    ],
+    "sensoryRole": "Engineered via Linalool & Citronellal Bridge. Balances primary salmon lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Wild King Salmon Mi-Cuit (41°C)",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Kaffir Lime & Coconut Lecithin Air",
+        "qty": 35.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Blanched Chive Blossom Emerald Oil",
+        "qty": 15.0,
+        "unit": "ml",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Wild King Salmon Mi-Cuit (41°C) under strict thermal control (verify core with needle probe). 2. Formulate Kaffir Lime & Coconut Lecithin Air to activate the Linalool & Citronellal Bridge volatile overlap. 3. Finish at the pass with Blanched Chive Blossom Emerald Oil for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Wild King Salmon Mi-Cuit (41°C), arc Kaffir Lime & Coconut Lecithin Air, and garnish with Blanched Chive Blossom Emerald Oil using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Cold-Extracted White Peony & Yuzu Sparkler"
+    }
+  },
+  {
+    "id": "mol-wild-king-salmon-mi-cuit-41-c-with-compressed-gr",
+    "dish": "Wild King Salmon Mi-Cuit (41°C) with Compressed Green Apple & Celery Verjus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Hexyl Acetate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Salmon"
+    ],
+    "sensoryRole": "Engineered via Hexyl Acetate Bridge. Balances primary salmon lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Wild King Salmon Mi-Cuit (41°C)",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Compressed Green Apple & Celery Verjus",
+        "qty": 45.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Sub-Zero Microplaned Horseradish Snow",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Wild King Salmon Mi-Cuit (41°C) under strict thermal control (verify core with needle probe). 2. Formulate Compressed Green Apple & Celery Verjus to activate the Hexyl Acetate Bridge volatile overlap. 3. Finish at the pass with Sub-Zero Microplaned Horseradish Snow for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Wild King Salmon Mi-Cuit (41°C), arc Compressed Green Apple & Celery Verjus, and garnish with Sub-Zero Microplaned Horseradish Snow using precision tweezers.",
+    "pairing": {
+      "wine": "Krug Grande Cuvée Champagne",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-wild-king-salmon-mi-cuit-41-c-with-charred-grape",
+    "dish": "Wild King Salmon Mi-Cuit (41°C) with Charred Grapefruit & Nootkatone Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone Terpene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "opener",
+    "hero": [
+      "Salmon"
+    ],
+    "sensoryRole": "Engineered via Nootkatone Terpene Bridge. Balances primary salmon lipids/proteins against aromatic volatile compounds for the OPENER progression.",
+    "components": [
+      {
+        "name": "Wild King Salmon Mi-Cuit (41°C)",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Charred Grapefruit & Nootkatone Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Regiis Ova Ossetra Caviar",
+        "qty": 18.0,
+        "unit": "g",
+        "dept": "seafood"
+      }
+    ],
+    "technique": "1. Prepare Wild King Salmon Mi-Cuit (41°C) under strict thermal control (verify core with needle probe). 2. Formulate Charred Grapefruit & Nootkatone Gel to activate the Nootkatone Terpene Bridge volatile overlap. 3. Finish at the pass with Regiis Ova Ossetra Caviar for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Wild King Salmon Mi-Cuit (41°C), arc Charred Grapefruit & Nootkatone Gel, and garnish with Regiis Ova Ossetra Caviar using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Raveneau Chablis Grand Cru",
+      "zeroProof": "Clarified Celery & Green Apple Verjus"
+    }
+  },
+  {
+    "id": "mol-beurre-mont-poached-maine-lobster-tail-with-cara",
+    "dish": "Beurre Monté Poached Maine Lobster Tail with Caramelized Cauliflower & White Chocolate Velouté",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Trimethylamine & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Lobster"
+    ],
+    "sensoryRole": "Engineered via Trimethylamine & Vanillin Bridge. Balances primary lobster lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Beurre Monté Poached Maine Lobster Tail",
+        "qty": 110.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Caramelized Cauliflower & White Chocolate Velouté",
+        "qty": 65.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Crispy Chicken Skin Tuile",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare Beurre Monté Poached Maine Lobster Tail under strict thermal control (verify core with needle probe). 2. Formulate Caramelized Cauliflower & White Chocolate Velouté to activate the Trimethylamine & Vanillin Bridge volatile overlap. 3. Finish at the pass with Crispy Chicken Skin Tuile for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Beurre Monté Poached Maine Lobster Tail, arc Caramelized Cauliflower & White Chocolate Velouté, and garnish with Crispy Chicken Skin Tuile using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Warm Spelt, Pear & Saffron Nectar"
+    }
+  },
+  {
+    "id": "mol-beurre-mont-poached-maine-lobster-tail-with-blac",
+    "dish": "Beurre Monté Poached Maine Lobster Tail with Black Winter Truffle & Hazelnut Praline Emulsion",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Methylbutanal & Filbertone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Lobster"
+    ],
+    "sensoryRole": "Engineered via 2-Methylbutanal & Filbertone Bridge. Balances primary lobster lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Beurre Monté Poached Maine Lobster Tail",
+        "qty": 110.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Black Winter Truffle & Hazelnut Praline Emulsion",
+        "qty": 40.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Pickled Chanterelle Caps",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Beurre Monté Poached Maine Lobster Tail under strict thermal control (verify core with needle probe). 2. Formulate Black Winter Truffle & Hazelnut Praline Emulsion to activate the 2-Methylbutanal & Filbertone Bridge volatile overlap. 3. Finish at the pass with Pickled Chanterelle Caps for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Beurre Monté Poached Maine Lobster Tail, arc Black Winter Truffle & Hazelnut Praline Emulsion, and garnish with Pickled Chanterelle Caps using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Smoked Lapsang Souchong & Apple Reduction"
+    }
+  },
+  {
+    "id": "mol-beurre-mont-poached-maine-lobster-tail-with-roas",
+    "dish": "Beurre Monté Poached Maine Lobster Tail with Roasted Maitake & Miso-Butter Sabayon",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Diacetyl & 4-Vinylguaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Lobster"
+    ],
+    "sensoryRole": "Engineered via Diacetyl & 4-Vinylguaiacol Bridge. Balances primary lobster lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Beurre Monté Poached Maine Lobster Tail",
+        "qty": 110.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Roasted Maitake & Miso-Butter Sabayon",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Cultured Normandy Butter (84% Fat)",
+        "qty": 60.0,
+        "unit": "g",
+        "dept": "dairy"
+      }
+    ],
+    "technique": "1. Prepare Beurre Monté Poached Maine Lobster Tail under strict thermal control (verify core with needle probe). 2. Formulate Roasted Maitake & Miso-Butter Sabayon to activate the Diacetyl & 4-Vinylguaiacol Bridge volatile overlap. 3. Finish at the pass with Cultured Normandy Butter (84% Fat) for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Beurre Monté Poached Maine Lobster Tail, arc Roasted Maitake & Miso-Butter Sabayon, and garnish with Cultured Normandy Butter (84% Fat) using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Leflaive Puligny-Montrachet",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-beurre-mont-poached-maine-lobster-tail-with-swee",
+    "dish": "Beurre Monté Poached Maine Lobster Tail with Sweet Parsnip & Vanilla Bean Mousseline",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Anethole & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Lobster"
+    ],
+    "sensoryRole": "Engineered via Anethole & Vanillin Bridge. Balances primary lobster lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Beurre Monté Poached Maine Lobster Tail",
+        "qty": 110.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Sweet Parsnip & Vanilla Bean Mousseline",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Crispy Chicken Skin Tuile",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare Beurre Monté Poached Maine Lobster Tail under strict thermal control (verify core with needle probe). 2. Formulate Sweet Parsnip & Vanilla Bean Mousseline to activate the Anethole & Vanillin Bridge volatile overlap. 3. Finish at the pass with Crispy Chicken Skin Tuile for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Beurre Monté Poached Maine Lobster Tail, arc Sweet Parsnip & Vanilla Bean Mousseline, and garnish with Crispy Chicken Skin Tuile using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Warm Spelt, Pear & Saffron Nectar"
+    }
+  },
+  {
+    "id": "mol-beurre-mont-poached-maine-lobster-tail-with-saff",
+    "dish": "Beurre Monté Poached Maine Lobster Tail with Saffron & Orange Blossom Beurre Blanc",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Safranal & Linalool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Lobster"
+    ],
+    "sensoryRole": "Engineered via Safranal & Linalool Bridge. Balances primary lobster lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Beurre Monté Poached Maine Lobster Tail",
+        "qty": 110.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Saffron & Orange Blossom Beurre Blanc",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Cultured Normandy Butter (84% Fat)",
+        "qty": 60.0,
+        "unit": "g",
+        "dept": "dairy"
+      }
+    ],
+    "technique": "1. Prepare Beurre Monté Poached Maine Lobster Tail under strict thermal control (verify core with needle probe). 2. Formulate Saffron & Orange Blossom Beurre Blanc to activate the Safranal & Linalool Bridge volatile overlap. 3. Finish at the pass with Cultured Normandy Butter (84% Fat) for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Beurre Monté Poached Maine Lobster Tail, arc Saffron & Orange Blossom Beurre Blanc, and garnish with Cultured Normandy Butter (84% Fat) using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-alaskan-halibut-confit-in-smoked-butter-with-car",
+    "dish": "Alaskan Halibut Confit in Smoked Butter with Caramelized Cauliflower & White Chocolate Velouté",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Trimethylamine & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Halibut"
+    ],
+    "sensoryRole": "Engineered via Trimethylamine & Vanillin Bridge. Balances primary halibut lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Alaskan Halibut Confit in Smoked Butter",
+        "qty": 120.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Caramelized Cauliflower & White Chocolate Velouté",
+        "qty": 65.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Cultured Normandy Butter (84% Fat)",
+        "qty": 60.0,
+        "unit": "g",
+        "dept": "dairy"
+      }
+    ],
+    "technique": "1. Prepare Alaskan Halibut Confit in Smoked Butter under strict thermal control (verify core with needle probe). 2. Formulate Caramelized Cauliflower & White Chocolate Velouté to activate the Trimethylamine & Vanillin Bridge volatile overlap. 3. Finish at the pass with Cultured Normandy Butter (84% Fat) for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Alaskan Halibut Confit in Smoked Butter, arc Caramelized Cauliflower & White Chocolate Velouté, and garnish with Cultured Normandy Butter (84% Fat) using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Leflaive Puligny-Montrachet",
+      "zeroProof": "Warm Spelt, Pear & Saffron Nectar"
+    }
+  },
+  {
+    "id": "mol-alaskan-halibut-confit-in-smoked-butter-with-bla",
+    "dish": "Alaskan Halibut Confit in Smoked Butter with Black Winter Truffle & Hazelnut Praline Emulsion",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Methylbutanal & Filbertone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Halibut"
+    ],
+    "sensoryRole": "Engineered via 2-Methylbutanal & Filbertone Bridge. Balances primary halibut lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Alaskan Halibut Confit in Smoked Butter",
+        "qty": 120.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Black Winter Truffle & Hazelnut Praline Emulsion",
+        "qty": 40.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Shaved Périgord Black Truffle",
+        "qty": 12.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Alaskan Halibut Confit in Smoked Butter under strict thermal control (verify core with needle probe). 2. Formulate Black Winter Truffle & Hazelnut Praline Emulsion to activate the 2-Methylbutanal & Filbertone Bridge volatile overlap. 3. Finish at the pass with Shaved Périgord Black Truffle for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Alaskan Halibut Confit in Smoked Butter, arc Black Winter Truffle & Hazelnut Praline Emulsion, and garnish with Shaved Périgord Black Truffle using precision tweezers.",
+    "pairing": {
+      "wine": "Pierre-Yves Colin-Morey Meursault",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-alaskan-halibut-confit-in-smoked-butter-with-roa",
+    "dish": "Alaskan Halibut Confit in Smoked Butter with Roasted Maitake & Miso-Butter Sabayon",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Diacetyl & 4-Vinylguaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Halibut"
+    ],
+    "sensoryRole": "Engineered via Diacetyl & 4-Vinylguaiacol Bridge. Balances primary halibut lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Alaskan Halibut Confit in Smoked Butter",
+        "qty": 120.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Roasted Maitake & Miso-Butter Sabayon",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Pickled Chanterelle Caps",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Alaskan Halibut Confit in Smoked Butter under strict thermal control (verify core with needle probe). 2. Formulate Roasted Maitake & Miso-Butter Sabayon to activate the Diacetyl & 4-Vinylguaiacol Bridge volatile overlap. 3. Finish at the pass with Pickled Chanterelle Caps for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Alaskan Halibut Confit in Smoked Butter, arc Roasted Maitake & Miso-Butter Sabayon, and garnish with Pickled Chanterelle Caps using precision tweezers.",
+    "pairing": {
+      "wine": "Pierre-Yves Colin-Morey Meursault",
+      "zeroProof": "Smoked Lapsang Souchong & Apple Reduction"
+    }
+  },
+  {
+    "id": "mol-alaskan-halibut-confit-in-smoked-butter-with-swe",
+    "dish": "Alaskan Halibut Confit in Smoked Butter with Sweet Parsnip & Vanilla Bean Mousseline",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Anethole & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Halibut"
+    ],
+    "sensoryRole": "Engineered via Anethole & Vanillin Bridge. Balances primary halibut lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Alaskan Halibut Confit in Smoked Butter",
+        "qty": 120.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Sweet Parsnip & Vanilla Bean Mousseline",
+        "qty": 70.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Cultured Normandy Butter (84% Fat)",
+        "qty": 60.0,
+        "unit": "g",
+        "dept": "dairy"
+      }
+    ],
+    "technique": "1. Prepare Alaskan Halibut Confit in Smoked Butter under strict thermal control (verify core with needle probe). 2. Formulate Sweet Parsnip & Vanilla Bean Mousseline to activate the Anethole & Vanillin Bridge volatile overlap. 3. Finish at the pass with Cultured Normandy Butter (84% Fat) for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Alaskan Halibut Confit in Smoked Butter, arc Sweet Parsnip & Vanilla Bean Mousseline, and garnish with Cultured Normandy Butter (84% Fat) using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Warm Spelt, Pear & Saffron Nectar"
+    }
+  },
+  {
+    "id": "mol-alaskan-halibut-confit-in-smoked-butter-with-saf",
+    "dish": "Alaskan Halibut Confit in Smoked Butter with Saffron & Orange Blossom Beurre Blanc",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Safranal & Linalool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Halibut"
+    ],
+    "sensoryRole": "Engineered via Safranal & Linalool Bridge. Balances primary halibut lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Alaskan Halibut Confit in Smoked Butter",
+        "qty": 120.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Saffron & Orange Blossom Beurre Blanc",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Pickled Chanterelle Caps",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Alaskan Halibut Confit in Smoked Butter under strict thermal control (verify core with needle probe). 2. Formulate Saffron & Orange Blossom Beurre Blanc to activate the Safranal & Linalool Bridge volatile overlap. 3. Finish at the pass with Pickled Chanterelle Caps for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Alaskan Halibut Confit in Smoked Butter, arc Saffron & Orange Blossom Beurre Blanc, and garnish with Pickled Chanterelle Caps using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-acquerello-risotto-with-bone-marrow-emulsion-wit",
+    "dish": "Acquerello Risotto with Bone Marrow Emulsion with Caramelized Cauliflower & White Chocolate Velouté",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Trimethylamine & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Parmigiano"
+    ],
+    "sensoryRole": "Engineered via Trimethylamine & Vanillin Bridge. Balances primary parmigiano lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Acquerello Risotto with Bone Marrow Emulsion",
+        "qty": 95.0,
+        "unit": "g",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Caramelized Cauliflower & White Chocolate Velouté",
+        "qty": 65.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Crispy Chicken Skin Tuile",
+        "qty": 15.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare Acquerello Risotto with Bone Marrow Emulsion under strict thermal control (verify core with needle probe). 2. Formulate Caramelized Cauliflower & White Chocolate Velouté to activate the Trimethylamine & Vanillin Bridge volatile overlap. 3. Finish at the pass with Crispy Chicken Skin Tuile for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Acquerello Risotto with Bone Marrow Emulsion, arc Caramelized Cauliflower & White Chocolate Velouté, and garnish with Crispy Chicken Skin Tuile using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Leflaive Puligny-Montrachet",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-tajarin-pasta-with-36-month-parmigiano-fonduta-w",
+    "dish": "Tajarin Pasta with 36-Month Parmigiano Fonduta with Caramelized Cauliflower & White Chocolate Velouté",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Trimethylamine & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Truffle"
+    ],
+    "sensoryRole": "Engineered via Trimethylamine & Vanillin Bridge. Balances primary truffle lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Tajarin Pasta with 36-Month Parmigiano Fonduta",
+        "qty": 90.0,
+        "unit": "g",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Caramelized Cauliflower & White Chocolate Velouté",
+        "qty": 65.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Pickled Chanterelle Caps",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Tajarin Pasta with 36-Month Parmigiano Fonduta under strict thermal control (verify core with needle probe). 2. Formulate Caramelized Cauliflower & White Chocolate Velouté to activate the Trimethylamine & Vanillin Bridge volatile overlap. 3. Finish at the pass with Pickled Chanterelle Caps for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Tajarin Pasta with 36-Month Parmigiano Fonduta, arc Caramelized Cauliflower & White Chocolate Velouté, and garnish with Pickled Chanterelle Caps using precision tweezers.",
+    "pairing": {
+      "wine": "Pierre-Yves Colin-Morey Meursault",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-pan-roasted-diver-scallop-with-crustacean-jus-wi",
+    "dish": "Pan-Roasted Diver Scallop with Crustacean Jus with Caramelized Cauliflower & White Chocolate Velouté",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Trimethylamine & Vanillin Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "mid",
+    "hero": [
+      "Scallop"
+    ],
+    "sensoryRole": "Engineered via Trimethylamine & Vanillin Bridge. Balances primary scallop lipids/proteins against aromatic volatile compounds for the MID progression.",
+    "components": [
+      {
+        "name": "Pan-Roasted Diver Scallop with Crustacean Jus",
+        "qty": 115.0,
+        "unit": "g",
+        "dept": "seafood"
+      },
+      {
+        "name": "Caramelized Cauliflower & White Chocolate Velouté",
+        "qty": 65.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Cultured Normandy Butter (84% Fat)",
+        "qty": 60.0,
+        "unit": "g",
+        "dept": "dairy"
+      }
+    ],
+    "technique": "1. Prepare Pan-Roasted Diver Scallop with Crustacean Jus under strict thermal control (verify core with needle probe). 2. Formulate Caramelized Cauliflower & White Chocolate Velouté to activate the Trimethylamine & Vanillin Bridge volatile overlap. 3. Finish at the pass with Cultured Normandy Butter (84% Fat) for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Pan-Roasted Diver Scallop with Crustacean Jus, arc Caramelized Cauliflower & White Chocolate Velouté, and garnish with Cultured Normandy Butter (84% Fat) using precision tweezers.",
+    "pairing": {
+      "wine": "Billecart-Salmon Cuvée Nicolas François",
+      "zeroProof": "Roasted Barley & Kombu Dashi Infusion"
+    }
+  },
+  {
+    "id": "mol-14-day-dry-aged-pekin-duck-breast-with-tart-more",
+    "dish": "14-Day Dry-Aged Pekin Duck Breast with Tart Morello Cherry & Smoked Cacao Gastrique",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Benzaldehyde & Pyrazine Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Duck"
+    ],
+    "sensoryRole": "Engineered via Benzaldehyde & Pyrazine Bridge. Balances primary duck lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "14-Day Dry-Aged Pekin Duck Breast",
+        "qty": 180.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Tart Morello Cherry & Smoked Cacao Gastrique",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Maldon Smoked Sea Salt Flakes",
+        "qty": 4.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare 14-Day Dry-Aged Pekin Duck Breast under strict thermal control (verify core with needle probe). 2. Formulate Tart Morello Cherry & Smoked Cacao Gastrique to activate the Benzaldehyde & Pyrazine Bridge volatile overlap. 3. Finish at the pass with Maldon Smoked Sea Salt Flakes for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 14-Day Dry-Aged Pekin Duck Breast, arc Tart Morello Cherry & Smoked Cacao Gastrique, and garnish with Maldon Smoked Sea Salt Flakes using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-14-day-dry-aged-pekin-duck-breast-with-black-gar",
+    "dish": "14-Day Dry-Aged Pekin Duck Breast with Black Garlic, Espresso & Bordelaise Glacé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Furfurylthiol & Guaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Duck"
+    ],
+    "sensoryRole": "Engineered via 2-Furfurylthiol & Guaiacol Bridge. Balances primary duck lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "14-Day Dry-Aged Pekin Duck Breast",
+        "qty": 180.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Black Garlic, Espresso & Bordelaise Glacé",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare 14-Day Dry-Aged Pekin Duck Breast under strict thermal control (verify core with needle probe). 2. Formulate Black Garlic, Espresso & Bordelaise Glacé to activate the 2-Furfurylthiol & Guaiacol Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 14-Day Dry-Aged Pekin Duck Breast, arc Black Garlic, Espresso & Bordelaise Glacé, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-14-day-dry-aged-pekin-duck-breast-with-laminated",
+    "dish": "14-Day Dry-Aged Pekin Duck Breast with Laminated Celeriac & Duck Fat Pavé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Sotolon & Lipid Lactone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Duck"
+    ],
+    "sensoryRole": "Engineered via Sotolon & Lipid Lactone Bridge. Balances primary duck lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "14-Day Dry-Aged Pekin Duck Breast",
+        "qty": 180.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Laminated Celeriac & Duck Fat Pavé",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Maldon Smoked Sea Salt Flakes",
+        "qty": 4.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare 14-Day Dry-Aged Pekin Duck Breast under strict thermal control (verify core with needle probe). 2. Formulate Laminated Celeriac & Duck Fat Pavé to activate the Sotolon & Lipid Lactone Bridge volatile overlap. 3. Finish at the pass with Maldon Smoked Sea Salt Flakes for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 14-Day Dry-Aged Pekin Duck Breast, arc Laminated Celeriac & Duck Fat Pavé, and garnish with Maldon Smoked Sea Salt Flakes using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-14-day-dry-aged-pekin-duck-breast-with-szechuan-",
+    "dish": "14-Day Dry-Aged Pekin Duck Breast with Szechuan Peppercorn, Lavender & Honey Glaze",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Hydroxy-Alpha-Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Duck"
+    ],
+    "sensoryRole": "Engineered via Linalool & Hydroxy-Alpha-Sanshool Bridge. Balances primary duck lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "14-Day Dry-Aged Pekin Duck Breast",
+        "qty": 180.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Szechuan Peppercorn, Lavender & Honey Glaze",
+        "qty": 35.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Maldon Smoked Sea Salt Flakes",
+        "qty": 4.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare 14-Day Dry-Aged Pekin Duck Breast under strict thermal control (verify core with needle probe). 2. Formulate Szechuan Peppercorn, Lavender & Honey Glaze to activate the Linalool & Hydroxy-Alpha-Sanshool Bridge volatile overlap. 3. Finish at the pass with Maldon Smoked Sea Salt Flakes for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 14-Day Dry-Aged Pekin Duck Breast, arc Szechuan Peppercorn, Lavender & Honey Glaze, and garnish with Maldon Smoked Sea Salt Flakes using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-14-day-dry-aged-pekin-duck-breast-with-charred-a",
+    "dish": "14-Day Dry-Aged Pekin Duck Breast with Charred Allium, Bone Marrow & Red Miso Jus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Methional & Glutamate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Duck"
+    ],
+    "sensoryRole": "Engineered via Methional & Glutamate Bridge. Balances primary duck lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "14-Day Dry-Aged Pekin Duck Breast",
+        "qty": 180.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Charred Allium, Bone Marrow & Red Miso Jus",
+        "qty": 60.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare 14-Day Dry-Aged Pekin Duck Breast under strict thermal control (verify core with needle probe). 2. Formulate Charred Allium, Bone Marrow & Red Miso Jus to activate the Methional & Glutamate Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 14-Day Dry-Aged Pekin Duck Breast, arc Charred Allium, Bone Marrow & Red Miso Jus, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Château Latour Pauillac Grand Cru",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-a5-miyazaki-wagyu-ribeye-cap-calotte-with-tart-m",
+    "dish": "A5 Miyazaki Wagyu Ribeye Cap (Calotte) with Tart Morello Cherry & Smoked Cacao Gastrique",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Benzaldehyde & Pyrazine Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Wagyu"
+    ],
+    "sensoryRole": "Engineered via Benzaldehyde & Pyrazine Bridge. Balances primary wagyu lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "A5 Miyazaki Wagyu Ribeye Cap (Calotte)",
+        "qty": 140.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Tart Morello Cherry & Smoked Cacao Gastrique",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare A5 Miyazaki Wagyu Ribeye Cap (Calotte) under strict thermal control (verify core with needle probe). 2. Formulate Tart Morello Cherry & Smoked Cacao Gastrique to activate the Benzaldehyde & Pyrazine Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor A5 Miyazaki Wagyu Ribeye Cap (Calotte), arc Tart Morello Cherry & Smoked Cacao Gastrique, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-a5-miyazaki-wagyu-ribeye-cap-calotte-with-black-",
+    "dish": "A5 Miyazaki Wagyu Ribeye Cap (Calotte) with Black Garlic, Espresso & Bordelaise Glacé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Furfurylthiol & Guaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Wagyu"
+    ],
+    "sensoryRole": "Engineered via 2-Furfurylthiol & Guaiacol Bridge. Balances primary wagyu lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "A5 Miyazaki Wagyu Ribeye Cap (Calotte)",
+        "qty": 140.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Black Garlic, Espresso & Bordelaise Glacé",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Maldon Smoked Sea Salt Flakes",
+        "qty": 4.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare A5 Miyazaki Wagyu Ribeye Cap (Calotte) under strict thermal control (verify core with needle probe). 2. Formulate Black Garlic, Espresso & Bordelaise Glacé to activate the 2-Furfurylthiol & Guaiacol Bridge volatile overlap. 3. Finish at the pass with Maldon Smoked Sea Salt Flakes for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor A5 Miyazaki Wagyu Ribeye Cap (Calotte), arc Black Garlic, Espresso & Bordelaise Glacé, and garnish with Maldon Smoked Sea Salt Flakes using precision tweezers.",
+    "pairing": {
+      "wine": "Château Latour Pauillac Grand Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-a5-miyazaki-wagyu-ribeye-cap-calotte-with-lamina",
+    "dish": "A5 Miyazaki Wagyu Ribeye Cap (Calotte) with Laminated Celeriac & Duck Fat Pavé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Sotolon & Lipid Lactone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Wagyu"
+    ],
+    "sensoryRole": "Engineered via Sotolon & Lipid Lactone Bridge. Balances primary wagyu lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "A5 Miyazaki Wagyu Ribeye Cap (Calotte)",
+        "qty": 140.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Laminated Celeriac & Duck Fat Pavé",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare A5 Miyazaki Wagyu Ribeye Cap (Calotte) under strict thermal control (verify core with needle probe). 2. Formulate Laminated Celeriac & Duck Fat Pavé to activate the Sotolon & Lipid Lactone Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor A5 Miyazaki Wagyu Ribeye Cap (Calotte), arc Laminated Celeriac & Duck Fat Pavé, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Château Latour Pauillac Grand Cru",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-a5-miyazaki-wagyu-ribeye-cap-calotte-with-szechu",
+    "dish": "A5 Miyazaki Wagyu Ribeye Cap (Calotte) with Szechuan Peppercorn, Lavender & Honey Glaze",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Hydroxy-Alpha-Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Wagyu"
+    ],
+    "sensoryRole": "Engineered via Linalool & Hydroxy-Alpha-Sanshool Bridge. Balances primary wagyu lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "A5 Miyazaki Wagyu Ribeye Cap (Calotte)",
+        "qty": 140.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Szechuan Peppercorn, Lavender & Honey Glaze",
+        "qty": 35.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Crispy Salsify Baton",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare A5 Miyazaki Wagyu Ribeye Cap (Calotte) under strict thermal control (verify core with needle probe). 2. Formulate Szechuan Peppercorn, Lavender & Honey Glaze to activate the Linalool & Hydroxy-Alpha-Sanshool Bridge volatile overlap. 3. Finish at the pass with Crispy Salsify Baton for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor A5 Miyazaki Wagyu Ribeye Cap (Calotte), arc Szechuan Peppercorn, Lavender & Honey Glaze, and garnish with Crispy Salsify Baton using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-a5-miyazaki-wagyu-ribeye-cap-calotte-with-charre",
+    "dish": "A5 Miyazaki Wagyu Ribeye Cap (Calotte) with Charred Allium, Bone Marrow & Red Miso Jus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Methional & Glutamate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Wagyu"
+    ],
+    "sensoryRole": "Engineered via Methional & Glutamate Bridge. Balances primary wagyu lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "A5 Miyazaki Wagyu Ribeye Cap (Calotte)",
+        "qty": 140.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Charred Allium, Bone Marrow & Red Miso Jus",
+        "qty": 60.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare A5 Miyazaki Wagyu Ribeye Cap (Calotte) under strict thermal control (verify core with needle probe). 2. Formulate Charred Allium, Bone Marrow & Red Miso Jus to activate the Methional & Glutamate Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor A5 Miyazaki Wagyu Ribeye Cap (Calotte), arc Charred Allium, Bone Marrow & Red Miso Jus, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-prime-dry-aged-ny-strip-loin-with-tart-morello-c",
+    "dish": "Prime Dry-Aged NY Strip Loin with Tart Morello Cherry & Smoked Cacao Gastrique",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Benzaldehyde & Pyrazine Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Benzaldehyde & Pyrazine Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Prime Dry-Aged NY Strip Loin",
+        "qty": 175.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Tart Morello Cherry & Smoked Cacao Gastrique",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Prime Dry-Aged NY Strip Loin under strict thermal control (verify core with needle probe). 2. Formulate Tart Morello Cherry & Smoked Cacao Gastrique to activate the Benzaldehyde & Pyrazine Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Prime Dry-Aged NY Strip Loin, arc Tart Morello Cherry & Smoked Cacao Gastrique, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-prime-dry-aged-ny-strip-loin-with-black-garlic-e",
+    "dish": "Prime Dry-Aged NY Strip Loin with Black Garlic, Espresso & Bordelaise Glacé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Furfurylthiol & Guaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via 2-Furfurylthiol & Guaiacol Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Prime Dry-Aged NY Strip Loin",
+        "qty": 175.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Black Garlic, Espresso & Bordelaise Glacé",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Prime Dry-Aged NY Strip Loin under strict thermal control (verify core with needle probe). 2. Formulate Black Garlic, Espresso & Bordelaise Glacé to activate the 2-Furfurylthiol & Guaiacol Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Prime Dry-Aged NY Strip Loin, arc Black Garlic, Espresso & Bordelaise Glacé, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-prime-dry-aged-ny-strip-loin-with-laminated-cele",
+    "dish": "Prime Dry-Aged NY Strip Loin with Laminated Celeriac & Duck Fat Pavé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Sotolon & Lipid Lactone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Sotolon & Lipid Lactone Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Prime Dry-Aged NY Strip Loin",
+        "qty": 175.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Laminated Celeriac & Duck Fat Pavé",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare Prime Dry-Aged NY Strip Loin under strict thermal control (verify core with needle probe). 2. Formulate Laminated Celeriac & Duck Fat Pavé to activate the Sotolon & Lipid Lactone Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Prime Dry-Aged NY Strip Loin, arc Laminated Celeriac & Duck Fat Pavé, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Château Latour Pauillac Grand Cru",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-prime-dry-aged-ny-strip-loin-with-szechuan-peppe",
+    "dish": "Prime Dry-Aged NY Strip Loin with Szechuan Peppercorn, Lavender & Honey Glaze",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Hydroxy-Alpha-Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Linalool & Hydroxy-Alpha-Sanshool Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Prime Dry-Aged NY Strip Loin",
+        "qty": 175.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Szechuan Peppercorn, Lavender & Honey Glaze",
+        "qty": 35.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Crispy Salsify Baton",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Prime Dry-Aged NY Strip Loin under strict thermal control (verify core with needle probe). 2. Formulate Szechuan Peppercorn, Lavender & Honey Glaze to activate the Linalool & Hydroxy-Alpha-Sanshool Bridge volatile overlap. 3. Finish at the pass with Crispy Salsify Baton for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Prime Dry-Aged NY Strip Loin, arc Szechuan Peppercorn, Lavender & Honey Glaze, and garnish with Crispy Salsify Baton using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-prime-dry-aged-ny-strip-loin-with-charred-allium",
+    "dish": "Prime Dry-Aged NY Strip Loin with Charred Allium, Bone Marrow & Red Miso Jus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Methional & Glutamate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Methional & Glutamate Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Prime Dry-Aged NY Strip Loin",
+        "qty": 175.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Charred Allium, Bone Marrow & Red Miso Jus",
+        "qty": 60.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Prime Dry-Aged NY Strip Loin under strict thermal control (verify core with needle probe). 2. Formulate Charred Allium, Bone Marrow & Red Miso Jus to activate the Methional & Glutamate Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Prime Dry-Aged NY Strip Loin, arc Charred Allium, Bone Marrow & Red Miso Jus, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-herb-roasted-squab-breast-on-the-crown-with-tart",
+    "dish": "Herb-Roasted Squab Breast on the Crown with Tart Morello Cherry & Smoked Cacao Gastrique",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Benzaldehyde & Pyrazine Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Squab"
+    ],
+    "sensoryRole": "Engineered via Benzaldehyde & Pyrazine Bridge. Balances primary squab lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Herb-Roasted Squab Breast on the Crown",
+        "qty": 155.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Tart Morello Cherry & Smoked Cacao Gastrique",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare Herb-Roasted Squab Breast on the Crown under strict thermal control (verify core with needle probe). 2. Formulate Tart Morello Cherry & Smoked Cacao Gastrique to activate the Benzaldehyde & Pyrazine Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Herb-Roasted Squab Breast on the Crown, arc Tart Morello Cherry & Smoked Cacao Gastrique, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-herb-roasted-squab-breast-on-the-crown-with-blac",
+    "dish": "Herb-Roasted Squab Breast on the Crown with Black Garlic, Espresso & Bordelaise Glacé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Furfurylthiol & Guaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Squab"
+    ],
+    "sensoryRole": "Engineered via 2-Furfurylthiol & Guaiacol Bridge. Balances primary squab lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Herb-Roasted Squab Breast on the Crown",
+        "qty": 155.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Black Garlic, Espresso & Bordelaise Glacé",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Maldon Smoked Sea Salt Flakes",
+        "qty": 4.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Herb-Roasted Squab Breast on the Crown under strict thermal control (verify core with needle probe). 2. Formulate Black Garlic, Espresso & Bordelaise Glacé to activate the 2-Furfurylthiol & Guaiacol Bridge volatile overlap. 3. Finish at the pass with Maldon Smoked Sea Salt Flakes for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Herb-Roasted Squab Breast on the Crown, arc Black Garlic, Espresso & Bordelaise Glacé, and garnish with Maldon Smoked Sea Salt Flakes using precision tweezers.",
+    "pairing": {
+      "wine": "Château Latour Pauillac Grand Cru",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-herb-roasted-squab-breast-on-the-crown-with-lami",
+    "dish": "Herb-Roasted Squab Breast on the Crown with Laminated Celeriac & Duck Fat Pavé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Sotolon & Lipid Lactone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Squab"
+    ],
+    "sensoryRole": "Engineered via Sotolon & Lipid Lactone Bridge. Balances primary squab lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Herb-Roasted Squab Breast on the Crown",
+        "qty": 155.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Laminated Celeriac & Duck Fat Pavé",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Herb-Roasted Squab Breast on the Crown under strict thermal control (verify core with needle probe). 2. Formulate Laminated Celeriac & Duck Fat Pavé to activate the Sotolon & Lipid Lactone Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Herb-Roasted Squab Breast on the Crown, arc Laminated Celeriac & Duck Fat Pavé, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-herb-roasted-squab-breast-on-the-crown-with-szec",
+    "dish": "Herb-Roasted Squab Breast on the Crown with Szechuan Peppercorn, Lavender & Honey Glaze",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Hydroxy-Alpha-Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Squab"
+    ],
+    "sensoryRole": "Engineered via Linalool & Hydroxy-Alpha-Sanshool Bridge. Balances primary squab lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Herb-Roasted Squab Breast on the Crown",
+        "qty": 155.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Szechuan Peppercorn, Lavender & Honey Glaze",
+        "qty": 35.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Crispy Salsify Baton",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Herb-Roasted Squab Breast on the Crown under strict thermal control (verify core with needle probe). 2. Formulate Szechuan Peppercorn, Lavender & Honey Glaze to activate the Linalool & Hydroxy-Alpha-Sanshool Bridge volatile overlap. 3. Finish at the pass with Crispy Salsify Baton for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Herb-Roasted Squab Breast on the Crown, arc Szechuan Peppercorn, Lavender & Honey Glaze, and garnish with Crispy Salsify Baton using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-herb-roasted-squab-breast-on-the-crown-with-char",
+    "dish": "Herb-Roasted Squab Breast on the Crown with Charred Allium, Bone Marrow & Red Miso Jus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Methional & Glutamate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Squab"
+    ],
+    "sensoryRole": "Engineered via Methional & Glutamate Bridge. Balances primary squab lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "Herb-Roasted Squab Breast on the Crown",
+        "qty": 155.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Charred Allium, Bone Marrow & Red Miso Jus",
+        "qty": 60.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Herb-Roasted Squab Breast on the Crown under strict thermal control (verify core with needle probe). 2. Formulate Charred Allium, Bone Marrow & Red Miso Jus to activate the Methional & Glutamate Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Herb-Roasted Squab Breast on the Crown, arc Charred Allium, Bone Marrow & Red Miso Jus, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Tart Cherry, Smoked Cedar & Cacao Husk Infusion"
+    }
+  },
+  {
+    "id": "mol-48-hour-sous-vide-beef-short-rib-62-c-with-tart-",
+    "dish": "48-Hour Sous-Vide Beef Short Rib (62°C) with Tart Morello Cherry & Smoked Cacao Gastrique",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Benzaldehyde & Pyrazine Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Benzaldehyde & Pyrazine Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "48-Hour Sous-Vide Beef Short Rib (62°C)",
+        "qty": 170.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Tart Morello Cherry & Smoked Cacao Gastrique",
+        "qty": 50.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare 48-Hour Sous-Vide Beef Short Rib (62°C) under strict thermal control (verify core with needle probe). 2. Formulate Tart Morello Cherry & Smoked Cacao Gastrique to activate the Benzaldehyde & Pyrazine Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 48-Hour Sous-Vide Beef Short Rib (62°C), arc Tart Morello Cherry & Smoked Cacao Gastrique, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-48-hour-sous-vide-beef-short-rib-62-c-with-black",
+    "dish": "48-Hour Sous-Vide Beef Short Rib (62°C) with Black Garlic, Espresso & Bordelaise Glacé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Furfurylthiol & Guaiacol Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via 2-Furfurylthiol & Guaiacol Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "48-Hour Sous-Vide Beef Short Rib (62°C)",
+        "qty": 170.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Black Garlic, Espresso & Bordelaise Glacé",
+        "qty": 55.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare 48-Hour Sous-Vide Beef Short Rib (62°C) under strict thermal control (verify core with needle probe). 2. Formulate Black Garlic, Espresso & Bordelaise Glacé to activate the 2-Furfurylthiol & Guaiacol Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 48-Hour Sous-Vide Beef Short Rib (62°C), arc Black Garlic, Espresso & Bordelaise Glacé, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Dujac Morey-Saint-Denis 1er Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-48-hour-sous-vide-beef-short-rib-62-c-with-lamin",
+    "dish": "48-Hour Sous-Vide Beef Short Rib (62°C) with Laminated Celeriac & Duck Fat Pavé",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Sotolon & Lipid Lactone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Sotolon & Lipid Lactone Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "48-Hour Sous-Vide Beef Short Rib (62°C)",
+        "qty": 170.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Laminated Celeriac & Duck Fat Pavé",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Poached Beef Bone Marrow Dice",
+        "qty": 30.0,
+        "unit": "g",
+        "dept": "butchery"
+      }
+    ],
+    "technique": "1. Prepare 48-Hour Sous-Vide Beef Short Rib (62°C) under strict thermal control (verify core with needle probe). 2. Formulate Laminated Celeriac & Duck Fat Pavé to activate the Sotolon & Lipid Lactone Bridge volatile overlap. 3. Finish at the pass with Poached Beef Bone Marrow Dice for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 48-Hour Sous-Vide Beef Short Rib (62°C), arc Laminated Celeriac & Duck Fat Pavé, and garnish with Poached Beef Bone Marrow Dice using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-48-hour-sous-vide-beef-short-rib-62-c-with-szech",
+    "dish": "48-Hour Sous-Vide Beef Short Rib (62°C) with Szechuan Peppercorn, Lavender & Honey Glaze",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Linalool & Hydroxy-Alpha-Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Linalool & Hydroxy-Alpha-Sanshool Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "48-Hour Sous-Vide Beef Short Rib (62°C)",
+        "qty": 170.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Szechuan Peppercorn, Lavender & Honey Glaze",
+        "qty": 35.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Crispy Salsify Baton",
+        "qty": 40.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare 48-Hour Sous-Vide Beef Short Rib (62°C) under strict thermal control (verify core with needle probe). 2. Formulate Szechuan Peppercorn, Lavender & Honey Glaze to activate the Linalool & Hydroxy-Alpha-Sanshool Bridge volatile overlap. 3. Finish at the pass with Crispy Salsify Baton for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 48-Hour Sous-Vide Beef Short Rib (62°C), arc Szechuan Peppercorn, Lavender & Honey Glaze, and garnish with Crispy Salsify Baton using precision tweezers.",
+    "pairing": {
+      "wine": "Château Latour Pauillac Grand Cru",
+      "zeroProof": "Hibiscus, Oolong & Charred Oak Reduction"
+    }
+  },
+  {
+    "id": "mol-48-hour-sous-vide-beef-short-rib-62-c-with-charr",
+    "dish": "48-Hour Sous-Vide Beef Short Rib (62°C) with Charred Allium, Bone Marrow & Red Miso Jus",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Methional & Glutamate Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "climax",
+    "hero": [
+      "Beef"
+    ],
+    "sensoryRole": "Engineered via Methional & Glutamate Bridge. Balances primary beef lipids/proteins against aromatic volatile compounds for the CLIMAX progression.",
+    "components": [
+      {
+        "name": "48-Hour Sous-Vide Beef Short Rib (62°C)",
+        "qty": 170.0,
+        "unit": "g",
+        "dept": "butchery"
+      },
+      {
+        "name": "Charred Allium, Bone Marrow & Red Miso Jus",
+        "qty": 60.0,
+        "unit": "ml",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fermented Blackcurrant Fluid Gel",
+        "qty": 20.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare 48-Hour Sous-Vide Beef Short Rib (62°C) under strict thermal control (verify core with needle probe). 2. Formulate Charred Allium, Bone Marrow & Red Miso Jus to activate the Methional & Glutamate Bridge volatile overlap. 3. Finish at the pass with Fermented Blackcurrant Fluid Gel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor 48-Hour Sous-Vide Beef Short Rib (62°C), arc Charred Allium, Bone Marrow & Red Miso Jus, and garnish with Fermented Blackcurrant Fluid Gel using precision tweezers.",
+    "pairing": {
+      "wine": "Domaine Jamet Côte-Rôtie Syrah",
+      "zeroProof": "Blackberry, Roasted Chicory & Tellicherry Pepper"
+    }
+  },
+  {
+    "id": "mol-menton-meyer-lemon-bergamot-granita-with-pine-ne",
+    "dish": "Menton Meyer Lemon & Bergamot Granita with Pine Needle & Rosemary Siphon Espuma",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Alpha-Pinene & Limonene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Alpha-Pinene & Limonene Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Menton Meyer Lemon & Bergamot Granita",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pine Needle & Rosemary Siphon Espuma",
+        "qty": 40.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Crystallized Violet & Mint Leaf",
+        "qty": 6.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Menton Meyer Lemon & Bergamot Granita under strict thermal control (verify core with needle probe). 2. Formulate Pine Needle & Rosemary Siphon Espuma to activate the Alpha-Pinene & Limonene Bridge volatile overlap. 3. Finish at the pass with Crystallized Violet & Mint Leaf for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Menton Meyer Lemon & Bergamot Granita, arc Pine Needle & Rosemary Siphon Espuma, and garnish with Crystallized Violet & Mint Leaf using precision tweezers.",
+    "pairing": {
+      "wine": "Vietti Moscato d'Asti Cascinetta",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-menton-meyer-lemon-bergamot-granita-with-pink-gr",
+    "dish": "Menton Meyer Lemon & Bergamot Granita with Pink Grapefruit & Sichuan Tingle Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone & Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Nootkatone & Sanshool Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Menton Meyer Lemon & Bergamot Granita",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pink Grapefruit & Sichuan Tingle Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Menton Meyer Lemon & Bergamot Granita under strict thermal control (verify core with needle probe). 2. Formulate Pink Grapefruit & Sichuan Tingle Gel to activate the Nootkatone & Sanshool Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Menton Meyer Lemon & Bergamot Granita, arc Pink Grapefruit & Sichuan Tingle Gel, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Vietti Moscato d'Asti Cascinetta",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-menton-meyer-lemon-bergamot-granita-with-cold-pr",
+    "dish": "Menton Meyer Lemon & Bergamot Granita with Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Estragole & Anethole Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Estragole & Anethole Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Menton Meyer Lemon & Bergamot Granita",
+        "qty": 85.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+        "qty": 30.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Menton Meyer Lemon & Bergamot Granita under strict thermal control (verify core with needle probe). 2. Formulate Cold-Pressed Fennel Bulb & Tarragon Emulsion to activate the Estragole & Anethole Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Menton Meyer Lemon & Bergamot Granita, arc Cold-Pressed Fennel Bulb & Tarragon Emulsion, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Egon Müller Scharzhofberger Kabinett",
+      "zeroProof": "Iced Bergamot & Pine Needle Tonic"
+    }
+  },
+  {
+    "id": "mol-nitrogen-poached-green-apple-shiso-sorbet-with-p",
+    "dish": "Nitrogen-Poached Green Apple & Shiso Sorbet with Pine Needle & Rosemary Siphon Espuma",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Alpha-Pinene & Limonene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Alpha-Pinene & Limonene Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Nitrogen-Poached Green Apple & Shiso Sorbet",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pine Needle & Rosemary Siphon Espuma",
+        "qty": 40.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Nitrogen-Poached Green Apple & Shiso Sorbet under strict thermal control (verify core with needle probe). 2. Formulate Pine Needle & Rosemary Siphon Espuma to activate the Alpha-Pinene & Limonene Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Nitrogen-Poached Green Apple & Shiso Sorbet, arc Pine Needle & Rosemary Siphon Espuma, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Vietti Moscato d'Asti Cascinetta",
+      "zeroProof": "Iced Bergamot & Pine Needle Tonic"
+    }
+  },
+  {
+    "id": "mol-nitrogen-poached-green-apple-shiso-sorbet-with-c",
+    "dish": "Nitrogen-Poached Green Apple & Shiso Sorbet with Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Estragole & Anethole Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Estragole & Anethole Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Nitrogen-Poached Green Apple & Shiso Sorbet",
+        "qty": 80.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+        "qty": 30.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Nitrogen-Poached Green Apple & Shiso Sorbet under strict thermal control (verify core with needle probe). 2. Formulate Cold-Pressed Fennel Bulb & Tarragon Emulsion to activate the Estragole & Anethole Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Nitrogen-Poached Green Apple & Shiso Sorbet, arc Cold-Pressed Fennel Bulb & Tarragon Emulsion, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Egon Müller Scharzhofberger Kabinett",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-sudachi-champagne-vinegar-snow-with-pine-needle-",
+    "dish": "Sudachi & Champagne Vinegar Snow with Pine Needle & Rosemary Siphon Espuma",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Alpha-Pinene & Limonene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Lemon"
+    ],
+    "sensoryRole": "Engineered via Alpha-Pinene & Limonene Bridge. Balances primary lemon lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Sudachi & Champagne Vinegar Snow",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pine Needle & Rosemary Siphon Espuma",
+        "qty": 40.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Sudachi & Champagne Vinegar Snow under strict thermal control (verify core with needle probe). 2. Formulate Pine Needle & Rosemary Siphon Espuma to activate the Alpha-Pinene & Limonene Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Sudachi & Champagne Vinegar Snow, arc Pine Needle & Rosemary Siphon Espuma, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Egon Müller Scharzhofberger Kabinett",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-sudachi-champagne-vinegar-snow-with-pink-grapefr",
+    "dish": "Sudachi & Champagne Vinegar Snow with Pink Grapefruit & Sichuan Tingle Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone & Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Lemon"
+    ],
+    "sensoryRole": "Engineered via Nootkatone & Sanshool Bridge. Balances primary lemon lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Sudachi & Champagne Vinegar Snow",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pink Grapefruit & Sichuan Tingle Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Sudachi & Champagne Vinegar Snow under strict thermal control (verify core with needle probe). 2. Formulate Pink Grapefruit & Sichuan Tingle Gel to activate the Nootkatone & Sanshool Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Sudachi & Champagne Vinegar Snow, arc Pink Grapefruit & Sichuan Tingle Gel, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Vietti Moscato d'Asti Cascinetta",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-sudachi-champagne-vinegar-snow-with-cold-pressed",
+    "dish": "Sudachi & Champagne Vinegar Snow with Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Estragole & Anethole Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Lemon"
+    ],
+    "sensoryRole": "Engineered via Estragole & Anethole Bridge. Balances primary lemon lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Sudachi & Champagne Vinegar Snow",
+        "qty": 75.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+        "qty": 30.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Sudachi & Champagne Vinegar Snow under strict thermal control (verify core with needle probe). 2. Formulate Cold-Pressed Fennel Bulb & Tarragon Emulsion to activate the Estragole & Anethole Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Sudachi & Champagne Vinegar Snow, arc Cold-Pressed Fennel Bulb & Tarragon Emulsion, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Vietti Moscato d'Asti Cascinetta",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-blood-orange-campari-clarified-consomm-with-pine",
+    "dish": "Blood Orange & Campari Clarified Consommé with Pine Needle & Rosemary Siphon Espuma",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Alpha-Pinene & Limonene Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Alpha-Pinene & Limonene Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Blood Orange & Campari Clarified Consommé",
+        "qty": 90.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pine Needle & Rosemary Siphon Espuma",
+        "qty": 40.0,
+        "unit": "ml",
+        "dept": "dairy"
+      },
+      {
+        "name": "Crystallized Violet & Mint Leaf",
+        "qty": 6.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Blood Orange & Campari Clarified Consommé under strict thermal control (verify core with needle probe). 2. Formulate Pine Needle & Rosemary Siphon Espuma to activate the Alpha-Pinene & Limonene Bridge volatile overlap. 3. Finish at the pass with Crystallized Violet & Mint Leaf for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Blood Orange & Campari Clarified Consommé, arc Pine Needle & Rosemary Siphon Espuma, and garnish with Crystallized Violet & Mint Leaf using precision tweezers.",
+    "pairing": {
+      "wine": "Egon Müller Scharzhofberger Kabinett",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-blood-orange-campari-clarified-consomm-with-pink",
+    "dish": "Blood Orange & Campari Clarified Consommé with Pink Grapefruit & Sichuan Tingle Gel",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Nootkatone & Sanshool Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Nootkatone & Sanshool Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Blood Orange & Campari Clarified Consommé",
+        "qty": 90.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Pink Grapefruit & Sichuan Tingle Gel",
+        "qty": 25.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Candied Bergamot Zest Threads",
+        "qty": 10.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Blood Orange & Campari Clarified Consommé under strict thermal control (verify core with needle probe). 2. Formulate Pink Grapefruit & Sichuan Tingle Gel to activate the Nootkatone & Sanshool Bridge volatile overlap. 3. Finish at the pass with Candied Bergamot Zest Threads for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Blood Orange & Campari Clarified Consommé, arc Pink Grapefruit & Sichuan Tingle Gel, and garnish with Candied Bergamot Zest Threads using precision tweezers.",
+    "pairing": {
+      "wine": "Vietti Moscato d'Asti Cascinetta",
+      "zeroProof": "Iced Bergamot & Pine Needle Tonic"
+    }
+  },
+  {
+    "id": "mol-blood-orange-campari-clarified-consomm-with-cold",
+    "dish": "Blood Orange & Campari Clarified Consommé with Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (Estragole & Anethole Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "predessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via Estragole & Anethole Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the PREDESSERT progression.",
+    "components": [
+      {
+        "name": "Blood Orange & Campari Clarified Consommé",
+        "qty": 90.0,
+        "unit": "g",
+        "dept": "produce"
+      },
+      {
+        "name": "Cold-Pressed Fennel Bulb & Tarragon Emulsion",
+        "qty": 30.0,
+        "unit": "ml",
+        "dept": "produce"
+      },
+      {
+        "name": "Crystallized Violet & Mint Leaf",
+        "qty": 6.0,
+        "unit": "g",
+        "dept": "produce"
+      }
+    ],
+    "technique": "1. Prepare Blood Orange & Campari Clarified Consommé under strict thermal control (verify core with needle probe). 2. Formulate Cold-Pressed Fennel Bulb & Tarragon Emulsion to activate the Estragole & Anethole Bridge volatile overlap. 3. Finish at the pass with Crystallized Violet & Mint Leaf for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Blood Orange & Campari Clarified Consommé, arc Cold-Pressed Fennel Bulb & Tarragon Emulsion, and garnish with Crystallized Violet & Mint Leaf using precision tweezers.",
+    "pairing": {
+      "wine": "Egon Müller Scharzhofberger Kabinett",
+      "zeroProof": "Sparkling Verbena & Lime Leaf Hydrosol"
+    }
+  },
+  {
+    "id": "mol-valrhona-guanaja-70-dark-chocolate-cr-meux-with-",
+    "dish": "Valrhona Guanaja 70% Dark Chocolate Crémeux with Roquefort Blue Cheese & Salted Caramel Gelato",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Heptanone Methyl Ketone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "dessert",
+    "hero": [
+      "Chocolate"
+    ],
+    "sensoryRole": "Engineered via 2-Heptanone Methyl Ketone Bridge. Balances primary chocolate lipids/proteins against aromatic volatile compounds for the DESSERT progression.",
+    "components": [
+      {
+        "name": "Valrhona Guanaja 70% Dark Chocolate Crémeux",
+        "qty": 95.0,
+        "unit": "g",
+        "dept": "pantry"
+      },
+      {
+        "name": "Roquefort Blue Cheese & Salted Caramel Gelato",
+        "qty": 45.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "24K Edible Gold Leaf & Fleur de Sel",
+        "qty": 2.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Valrhona Guanaja 70% Dark Chocolate Crémeux under strict thermal control (verify core with needle probe). 2. Formulate Roquefort Blue Cheese & Salted Caramel Gelato to activate the 2-Heptanone Methyl Ketone Bridge volatile overlap. 3. Finish at the pass with 24K Edible Gold Leaf & Fleur de Sel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Valrhona Guanaja 70% Dark Chocolate Crémeux, arc Roquefort Blue Cheese & Salted Caramel Gelato, and garnish with 24K Edible Gold Leaf & Fleur de Sel using precision tweezers.",
+    "pairing": {
+      "wine": "Taylor Fladgate 30-Year Tawny Port",
+      "zeroProof": "Roasted Cacao Nib, Cherry & Vanilla Bean Cordial"
+    }
+  },
+  {
+    "id": "mol-caramelized-white-chocolate-brown-butter-ganache",
+    "dish": "Caramelized White Chocolate & Brown Butter Ganache with Roquefort Blue Cheese & Salted Caramel Gelato",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Heptanone Methyl Ketone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "dessert",
+    "hero": [
+      "Chocolate"
+    ],
+    "sensoryRole": "Engineered via 2-Heptanone Methyl Ketone Bridge. Balances primary chocolate lipids/proteins against aromatic volatile compounds for the DESSERT progression.",
+    "components": [
+      {
+        "name": "Caramelized White Chocolate & Brown Butter Ganache",
+        "qty": 90.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "Roquefort Blue Cheese & Salted Caramel Gelato",
+        "qty": 45.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "24K Edible Gold Leaf & Fleur de Sel",
+        "qty": 2.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Caramelized White Chocolate & Brown Butter Ganache under strict thermal control (verify core with needle probe). 2. Formulate Roquefort Blue Cheese & Salted Caramel Gelato to activate the 2-Heptanone Methyl Ketone Bridge volatile overlap. 3. Finish at the pass with 24K Edible Gold Leaf & Fleur de Sel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Caramelized White Chocolate & Brown Butter Ganache, arc Roquefort Blue Cheese & Salted Caramel Gelato, and garnish with 24K Edible Gold Leaf & Fleur de Sel using precision tweezers.",
+    "pairing": {
+      "wine": "Donnafugata Ben Ryé Passito di Pantelleria",
+      "zeroProof": "Spiced Chai, Star Anise & Burnt Honey Milk"
+    }
+  },
+  {
+    "id": "mol-roasted-tahitian-vanilla-bean-tonka-souffl-with-",
+    "dish": "Roasted Tahitian Vanilla Bean & Tonka Soufflé with Roquefort Blue Cheese & Salted Caramel Gelato",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Heptanone Methyl Ketone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "dessert",
+    "hero": [
+      "Vanilla"
+    ],
+    "sensoryRole": "Engineered via 2-Heptanone Methyl Ketone Bridge. Balances primary vanilla lipids/proteins against aromatic volatile compounds for the DESSERT progression.",
+    "components": [
+      {
+        "name": "Roasted Tahitian Vanilla Bean & Tonka Soufflé",
+        "qty": 110.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "Roquefort Blue Cheese & Salted Caramel Gelato",
+        "qty": 45.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "24K Edible Gold Leaf & Fleur de Sel",
+        "qty": 2.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Roasted Tahitian Vanilla Bean & Tonka Soufflé under strict thermal control (verify core with needle probe). 2. Formulate Roquefort Blue Cheese & Salted Caramel Gelato to activate the 2-Heptanone Methyl Ketone Bridge volatile overlap. 3. Finish at the pass with 24K Edible Gold Leaf & Fleur de Sel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Roasted Tahitian Vanilla Bean & Tonka Soufflé, arc Roquefort Blue Cheese & Salted Caramel Gelato, and garnish with 24K Edible Gold Leaf & Fleur de Sel using precision tweezers.",
+    "pairing": {
+      "wine": "Château d'Yquem Sauternes 1er Cru Supérieur",
+      "zeroProof": "Cold-Drip Bourbon-Oak Aged Espresso Tonic"
+    }
+  },
+  {
+    "id": "mol-deconstructed-yuzu-limoncello-sabayon-tart-with-",
+    "dish": "Deconstructed Yuzu & Limoncello Sabayon Tart with Roquefort Blue Cheese & Salted Caramel Gelato",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Heptanone Methyl Ketone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "dessert",
+    "hero": [
+      "Citrus"
+    ],
+    "sensoryRole": "Engineered via 2-Heptanone Methyl Ketone Bridge. Balances primary citrus lipids/proteins against aromatic volatile compounds for the DESSERT progression.",
+    "components": [
+      {
+        "name": "Deconstructed Yuzu & Limoncello Sabayon Tart",
+        "qty": 100.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "Roquefort Blue Cheese & Salted Caramel Gelato",
+        "qty": 45.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "Pâte Sablée Shattered Crust Shards",
+        "qty": 35.0,
+        "unit": "g",
+        "dept": "drygoods"
+      }
+    ],
+    "technique": "1. Prepare Deconstructed Yuzu & Limoncello Sabayon Tart under strict thermal control (verify core with needle probe). 2. Formulate Roquefort Blue Cheese & Salted Caramel Gelato to activate the 2-Heptanone Methyl Ketone Bridge volatile overlap. 3. Finish at the pass with Pâte Sablée Shattered Crust Shards for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Deconstructed Yuzu & Limoncello Sabayon Tart, arc Roquefort Blue Cheese & Salted Caramel Gelato, and garnish with Pâte Sablée Shattered Crust Shards using precision tweezers.",
+    "pairing": {
+      "wine": "Donnafugata Ben Ryé Passito di Pantelleria",
+      "zeroProof": "Cold-Drip Bourbon-Oak Aged Espresso Tonic"
+    }
+  },
+  {
+    "id": "mol-espresso-semifreddo-with-warm-brioche-beignets-w",
+    "dish": "Espresso Semifreddo with Warm Brioche Beignets with Roquefort Blue Cheese & Salted Caramel Gelato",
+    "restaurant": "L'Atelier Molecular Lab",
+    "chef": "GC-MS Synthesis (2-Heptanone Methyl Ketone Bridge)",
+    "location": "Avant-Garde Gastronomy",
+    "source": "Volatile Compound Matrix v5.0",
+    "slot": "dessert",
+    "hero": [
+      "Coffee"
+    ],
+    "sensoryRole": "Engineered via 2-Heptanone Methyl Ketone Bridge. Balances primary coffee lipids/proteins against aromatic volatile compounds for the DESSERT progression.",
+    "components": [
+      {
+        "name": "Espresso Semifreddo with Warm Brioche Beignets",
+        "qty": 115.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "Roquefort Blue Cheese & Salted Caramel Gelato",
+        "qty": 45.0,
+        "unit": "g",
+        "dept": "dairy"
+      },
+      {
+        "name": "24K Edible Gold Leaf & Fleur de Sel",
+        "qty": 2.0,
+        "unit": "g",
+        "dept": "pantry"
+      }
+    ],
+    "technique": "1. Prepare Espresso Semifreddo with Warm Brioche Beignets under strict thermal control (verify core with needle probe). 2. Formulate Roquefort Blue Cheese & Salted Caramel Gelato to activate the 2-Heptanone Methyl Ketone Bridge volatile overlap. 3. Finish at the pass with 24K Edible Gold Leaf & Fleur de Sel for textural and saline contrast.",
+    "plating": "Off-center negative-space assembly on pre-conditioned stoneware. Anchor Espresso Semifreddo with Warm Brioche Beignets, arc Roquefort Blue Cheese & Salted Caramel Gelato, and garnish with 24K Edible Gold Leaf & Fleur de Sel using precision tweezers.",
+    "pairing": {
+      "wine": "Taylor Fladgate 30-Year Tawny Port",
+      "zeroProof": "Roasted Cacao Nib, Cherry & Vanilla Bean Cordial"
+    }
   }
 ]

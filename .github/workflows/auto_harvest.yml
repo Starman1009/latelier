@@ -25,9 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: Run Super Harvester & Database Auditor
+    - name: Run Super Harvester, Molecular Synthesizer & Auditor
         run: |
           python super_harvest.py
+          python molecular_synthesizer.py
           python audit_database.py
 
       - name: Commit & Deploy Updated Catalog
