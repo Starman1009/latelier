@@ -258,7 +258,7 @@
     "dish": "Acaraje black-eyed pea fritters with shrimp filling",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -387,7 +387,7 @@
     "dish": "Achiote Oil (Aceite Achiotado) Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -645,7 +645,7 @@
     "dish": "Ají de Aguacate Recipe (Colombian Spicy Avocado Sauce)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -1146,7 +1146,7 @@
     "dish": "Almojábanas (Colombian Cheese Bread)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -1215,7 +1215,7 @@
     "dish": "Amok Trey – Cambodian Fish Curry",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -1308,7 +1308,7 @@
     "dish": "Antiguan Breakfast (Chop Up and ‘Saltfish’)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -1740,7 +1740,7 @@
     "dish": "Apple Pie",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -1803,7 +1803,7 @@
     "dish": "Apple pie pops",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -2076,7 +2076,7 @@
     "dish": "Arepa",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -2277,7 +2277,7 @@
     "dish": "Arnhemse meisjes",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -2328,7 +2328,7 @@
     "dish": "Arra të Mbushura me Fik Walnut Stuffed Figs (with Fig Syrup)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -2565,7 +2565,7 @@
     "dish": "Arroz con Leche Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -2880,7 +2880,7 @@
     "dish": "Authentic Laos Tapioca Pudding with Bananas",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -3261,7 +3261,7 @@
     "dish": "Baghlaw-e-Khanagi",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -3336,7 +3336,7 @@
     "dish": "Bahia-style Moqueca prawn stew",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -3435,7 +3435,7 @@
     "dish": "Bai Sach Chrouk – Grilled Pork with Rice",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -3544,7 +3544,7 @@
       },
       {
         "name": "Onion",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -3603,7 +3603,7 @@
     "dish": "Bajan Salt Bread Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -3660,7 +3660,7 @@
     "dish": "Bajan Sweet Bread",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -3747,7 +3747,7 @@
     "dish": "Baked brie with sorrel jam",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -3903,7 +3903,7 @@
     "dish": "Baked Yuca Fries",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -4164,7 +4164,7 @@
     "dish": "Balchi di Pisca",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "mid",
     "hero": [
@@ -4251,7 +4251,7 @@
     "dish": "Banana den Forno",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -4434,7 +4434,7 @@
     "dish": "Bangladeshi fish curry with daikon",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -4527,7 +4527,7 @@
     "dish": "Barbados Pepperpot",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -5125,7 +5125,7 @@
       },
       {
         "name": "Flour",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -6357,7 +6357,7 @@
     "dish": "BEEF LOK LAK (Lok Lak Sach Ko)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -6783,7 +6783,7 @@
     "dish": "Beef pumpkin Stew",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -7494,7 +7494,7 @@
     "dish": "Belgian Meatballs in Liège Syrup Sauce",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -7635,7 +7635,7 @@
     "dish": "Belgian Stoemp",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -7728,7 +7728,7 @@
     "dish": "Belgian Waterzooi Chicken",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -7839,7 +7839,7 @@
     "dish": "Bengali Chicken Curry with Potatoes",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -8295,7 +8295,7 @@
     "dish": "Biss Jaggery Modak",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -8496,7 +8496,7 @@
     "dish": "Black bean & meat stew - feijoada",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -8577,7 +8577,7 @@
     "dish": "Black Bean soup",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -8694,7 +8694,7 @@
     "dish": "Black Beans Hotpot",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -9006,7 +9006,7 @@
     "dish": "Bolani with Potato Filling",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -9069,7 +9069,7 @@
     "dish": "Bolita di Keshi",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -9642,7 +9642,7 @@
     "dish": "Brazilian carrot cake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -9717,7 +9717,7 @@
     "dish": "Brazilian cheese bread (pão de queijo)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -9780,7 +9780,7 @@
     "dish": "Brazilian chocolate truffles - brigadeiro",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -9957,7 +9957,7 @@
     "dish": "Breaded Steak Recipe (Lomo de Res Apanado)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -10038,7 +10038,7 @@
     "dish": "Breadfruit in Butter Sauce",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -10143,7 +10143,7 @@
     "dish": "Breadfruit in Butter Sauce Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -10248,7 +10248,7 @@
     "dish": "Breadfruit Tacos",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "mid",
     "hero": [
@@ -10842,7 +10842,7 @@
     "dish": "Bulgarian Green Salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -10917,7 +10917,7 @@
     "dish": "Bulgarian Honey Cookies",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -11148,7 +11148,7 @@
     "dish": "Cabbage with Ground Beef",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -11316,7 +11316,7 @@
     "dish": "CAFE LA LLAVE ESPRESSO ICE CREAM",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -11634,7 +11634,7 @@
     "dish": "Camaro Grelhado Com Molho Cru (Grilled Prawns with Green Onion Sauce)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -11697,7 +11697,7 @@
     "dish": "Cambodian Stir-fried Morning Glory with Pork, Fermented Soybeans, and Garlic",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -11766,7 +11766,7 @@
     "dish": "Cambodian Waffles (Num Poum)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -12000,7 +12000,7 @@
     "dish": "Carrot and Bean Fritters",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -12237,7 +12237,7 @@
     "dish": "Cassava bread",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -12282,7 +12282,7 @@
     "dish": "Cassava Cake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -12408,7 +12408,7 @@
     "dish": "Cayman Style Potato Salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -12495,7 +12495,7 @@
     "dish": "Cayman-Style Lobster",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -12894,7 +12894,7 @@
     "dish": "Cheese Sticks",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -13488,7 +13488,7 @@
     "dish": "Chicken and Potato Roti",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -14296,7 +14296,7 @@
       },
       {
         "name": "Vegetable oil",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -14338,7 +14338,7 @@
       },
       {
         "name": "Cream",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -14373,7 +14373,7 @@
     "dish": "Chicken in Orange Sauce Recipe (Pollo a la Naranja)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -14541,7 +14541,7 @@
     "dish": "Chicken Liver Pate Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -14616,7 +14616,7 @@
     "dish": "Chicken Lollipop",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -15057,7 +15057,7 @@
     "dish": "Chicken Salad With Mushrooms and Bacon",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -15585,7 +15585,7 @@
     "dish": "Chilean Dobladitas",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -15642,7 +15642,7 @@
     "dish": "Chilean Empanada",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -15759,7 +15759,7 @@
     "dish": "Chilean-Style Sopaipillas",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -17685,7 +17685,7 @@
     "dish": "Chorreadas",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -18102,7 +18102,7 @@
     "dish": "Chuletas de Cerdo a la Criolla (Pork Chops in Creole Sauce)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -18387,7 +18387,7 @@
     "dish": "Cinnamon Roll Cookies",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -18705,7 +18705,7 @@
     "dish": "Classic Potato Salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -18909,7 +18909,7 @@
     "dish": "Clear Soup with Semolina Dumplings",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -18978,7 +18978,7 @@
     "dish": "Coconut Natilla Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -19071,7 +19071,7 @@
     "dish": "Coconut quindim",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -19209,7 +19209,7 @@
     "dish": "Codfish deviled eggs",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "mid",
     "hero": [
@@ -19284,7 +19284,7 @@
     "dish": "Colombian Buñuelos Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -19365,7 +19365,7 @@
     "dish": "Colombian Style Stuffed Potatoes",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -19494,7 +19494,7 @@
     "dish": "Conch Fritters",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -19599,7 +19599,7 @@
     "dish": "Conch Stew",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -19938,7 +19938,7 @@
     "dish": "Corn on the cob with lime, green chilli and coconut butter",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -20325,7 +20325,7 @@
     "dish": "Cottage Cheese And Feta Stuffed Peppers",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -20481,7 +20481,7 @@
     "dish": "Creamy Aji green sauce",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -20550,7 +20550,7 @@
     "dish": "Creamy Corn Soup Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -20631,7 +20631,7 @@
     "dish": "Creamy mango smoothie",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -20676,7 +20676,7 @@
     "dish": "Creamy Mustard Chicken",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -21006,7 +21006,7 @@
     "dish": "Crispy fried fish with ginger and fermented soybeans (trey chien chuon)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -21423,7 +21423,7 @@
     "dish": "Cuban Sandwich",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -21708,7 +21708,7 @@
     "dish": "Curried Spinach from Botswana",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -21787,7 +21787,7 @@
       },
       {
         "name": "Water",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -21888,7 +21888,7 @@
     "dish": "Danish Rye Bread",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -22038,7 +22038,7 @@
     "dish": "Dolma Japrak Stuffed Vine Leaves",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -22131,7 +22131,7 @@
     "dish": "Dominica mastiff bread",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -22194,7 +22194,7 @@
     "dish": "Dominica’s coconut rough cake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -22287,7 +22287,7 @@
     "dish": "Dominican Bakes",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -22539,7 +22539,7 @@
     "dish": "Dulce de Leche Cheesecake with a Maria Cookie Crust.",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -22788,7 +22788,7 @@
     "dish": "Dutch doughnuts",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -23298,7 +23298,7 @@
     "dish": "Easy White Bean Soup",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "predessert",
     "hero": [
@@ -23985,7 +23985,7 @@
     "dish": "Empanadas Fritas de Queso",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -24342,7 +24342,7 @@
     "dish": "Extra crispy chicken wings",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -25257,7 +25257,7 @@
     "dish": "Firni",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -26082,7 +26082,7 @@
     "dish": "Flemish Hutsepot",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -26187,7 +26187,7 @@
     "dish": "Flija Layered Pancake / Crepe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -26700,7 +26700,7 @@
     "dish": "Fried cocoy banana",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -26751,7 +26751,7 @@
     "dish": "Fried Crab",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -26808,7 +26808,7 @@
     "dish": "Frikadeller - Danish Meatballs",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -26889,7 +26889,7 @@
     "dish": "Frog Legs Recipe in Garlic Butter",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -27252,7 +27252,7 @@
     "dish": "Gallo pinto",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -27801,7 +27801,7 @@
     "dish": "Gingerbread Waffles",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -28221,7 +28221,7 @@
     "dish": "Grilled corn with garlic mayo & grated cheese",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -28521,7 +28521,7 @@
     "dish": "Grits",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -28560,7 +28560,7 @@
     "dish": "Haft Mewa Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -28791,7 +28791,7 @@
     "dish": "Handesh – Bangladeshi rice flour and date molasses cakes",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -29061,7 +29061,7 @@
     "dish": "Honey Cookies",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -29266,7 +29266,7 @@
       },
       {
         "name": "Chicken Stock",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -29538,7 +29538,7 @@
     "dish": "Hveder - Danish Wheat Buns",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -29811,7 +29811,7 @@
     "dish": "Jajek",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "predessert",
     "hero": [
@@ -31881,7 +31881,7 @@
     "dish": "Kadu Borani",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -32181,7 +32181,7 @@
     "dish": "Kaspressknödel - Cheese Dumplings",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -32466,7 +32466,7 @@
     "dish": "Kelem dolmasi",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -32868,7 +32868,7 @@
     "dish": "Keto Banitsa",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -33000,7 +33000,7 @@
     "dish": "Khmer Banh Xeo – Cambodian Savory Pancake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -33516,7 +33516,7 @@
     "dish": "Koulenje",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -33696,7 +33696,7 @@
     "dish": "Kulaç Soda Bread",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -33996,7 +33996,7 @@
     "dish": "Kurabie Butter Cookies",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -34188,7 +34188,7 @@
     "dish": "Lakra me Mish Cabbage and Meat Stew",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -34275,7 +34275,7 @@
     "dish": "Lakror me Kungull Summer Squash Pie",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -34714,7 +34714,7 @@
       },
       {
         "name": "Full fat yogurt",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -35490,7 +35490,7 @@
     "dish": "Lao Naem Khao",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -35613,7 +35613,7 @@
     "dish": "Lao Som Pak Pickled Cabbage",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -35658,7 +35658,7 @@
     "dish": "Laos Plantain Coconut Bake (Flourless Muffin)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -35883,7 +35883,7 @@
     "dish": "Layered mango custard",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -36051,7 +36051,7 @@
     "dish": "Leche Asada",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -36102,7 +36102,7 @@
     "dish": "Leg of Lamb Armenian-Style",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -36282,7 +36282,7 @@
     "dish": "Liegeoise Salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -36579,7 +36579,7 @@
     "dish": "Macaroni Pie",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -36678,7 +36678,7 @@
     "dish": "Macaroni Pudding",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -36822,7 +36822,7 @@
     "dish": "Madombi: Dumplings from Botswana",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -36873,7 +36873,7 @@
     "dish": "Magwinya: Doughnut Bites from Botswana",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -36999,7 +36999,7 @@
     "dish": "Mango chow",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -37062,7 +37062,7 @@
     "dish": "Mango Tropical Salsa",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -37137,7 +37137,7 @@
     "dish": "Manjar (Dulce de Leche)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -37182,7 +37182,7 @@
     "dish": "Mantu Afghan Dumpling",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -37362,7 +37362,7 @@
     "dish": "Mastawa Lamb and Rice",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -37896,7 +37896,7 @@
     "dish": "Meang Nem",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -38502,7 +38502,7 @@
     "dish": "Mini butter buns",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -39057,7 +39057,7 @@
     "dish": "Muraba-E-Kadu (Pumpkin Jam)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -39927,7 +39927,7 @@
     "dish": "Nom Banh Chok – Cambodian Noodle Soup",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -40386,7 +40386,7 @@
     "dish": "Num Ansom – Sticky Rice Cake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -40443,7 +40443,7 @@
     "dish": "Num E (Sticky Rice Balls in Sugar Syrup and Coconut Cream)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -40536,7 +40536,7 @@
     "dish": "Num Pang – Cambodian Baguette Sandwich",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -40791,7 +40791,7 @@
     "dish": "Old-fashioned Danish Apple Trifle",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -40866,7 +40866,7 @@
     "dish": "Open-faced Sandwich With Potato",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -40957,7 +40957,7 @@
       },
       {
         "name": "Flour",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -41029,7 +41029,7 @@
       },
       {
         "name": "Chicken Stock",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -41169,7 +41169,7 @@
     "dish": "Oyster Mushroom Soup",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -41244,7 +41244,7 @@
     "dish": "Pa Amb Tomaquet (Bread with Tomato)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -41625,7 +41625,7 @@
     "dish": "Pan De Yucca",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -41997,7 +41997,7 @@
     "dish": "Papas Chorreadas Recipe (Potatoes with Cream and Cheese Sauce)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -42102,7 +42102,7 @@
     "dish": "Papaya salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -42171,7 +42171,7 @@
     "dish": "Paracuca (Roasted Peanuts)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -42348,7 +42348,7 @@
     "dish": "Pastel de Choclo",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -42465,7 +42465,7 @@
     "dish": "Pastel de Papas (Chilean Potato Pie)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -42778,7 +42778,7 @@
       },
       {
         "name": "Milk",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -43113,7 +43113,7 @@
     "dish": "Phaphatha Flatbreads",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -43164,7 +43164,7 @@
     "dish": "Picadillo de Vainicas (Green Beans Picadillo)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -44007,7 +44007,7 @@
     "dish": "plantain rolls",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -44466,7 +44466,7 @@
     "dish": "Pollo en Salsa",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -45018,7 +45018,7 @@
     "dish": "Porotos Granados (Chilean Bean Stew)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -45669,7 +45669,7 @@
     "dish": "Potato Moussaka Recipe",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "predessert",
     "hero": [
@@ -45901,7 +45901,7 @@
     "components": [
       {
         "name": "Butter",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -46104,7 +46104,7 @@
     "dish": "Prahok Ktis – Pork and Coconut Dip",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -46599,7 +46599,7 @@
     "dish": "Presh me Oriz Leek and Rice Bake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -46935,7 +46935,7 @@
     "dish": "Quark and Rhubarb Pie",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -47935,7 +47935,7 @@
       },
       {
         "name": "Parmesan",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       }
@@ -47952,7 +47952,7 @@
     "dish": "Rice and Beans",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -48736,7 +48736,7 @@
       },
       {
         "name": "Peanut Butter",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -48885,7 +48885,7 @@
     "dish": "Ropa Veija",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -49881,7 +49881,7 @@
     "dish": "Salt Beef and Beans",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -50241,7 +50241,7 @@
     "dish": "Samlar Kari – Khmer Red Curry",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -50346,7 +50346,7 @@
     "dish": "Samlar Machu Kreung – Cambodian Sour Stew",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -50544,7 +50544,7 @@
     "dish": "Satee",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -50631,7 +50631,7 @@
     "dish": "Sauerkraut and Fish Salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -51255,7 +51255,7 @@
     "dish": "Seswaa",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -51798,7 +51798,7 @@
     "dish": "Shendetlie Honey and Nut Cake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -51873,7 +51873,7 @@
     "dish": "Shopska Salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -52377,7 +52377,7 @@
     "dish": "Simple heart of palm & tomato salad",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -52644,7 +52644,7 @@
     "dish": "Slagroomtaart",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -52782,7 +52782,7 @@
     "dish": "Slow-cooked, Wadadli-spiced Cubano pork belly",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "climax",
     "hero": [
@@ -53373,7 +53373,7 @@
     "dish": "Smoky tomato pepper salsa",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -55831,13 +55831,13 @@
       },
       {
         "name": "Brandy",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
       {
         "name": "Heavy Cream",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -56296,7 +56296,7 @@
       },
       {
         "name": "Parsley",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       }
@@ -56469,7 +56469,7 @@
     "dish": "Strawberry tart",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -56685,7 +56685,7 @@
     "dish": "Stuffed Grape Leaves",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -56883,7 +56883,7 @@
     "dish": "Stuffed plantain cups",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "predessert",
     "hero": [
@@ -56932,7 +56932,7 @@
       },
       {
         "name": "Butter",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -56956,7 +56956,7 @@
       },
       {
         "name": "Plain Flour",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -57966,7 +57966,7 @@
     "dish": "Tafelspitz",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -58368,7 +58368,7 @@
     "dish": "Tamal De Maicena",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -58812,7 +58812,7 @@
     "dish": "Tavë Kosi Baked Lamb and Yogurt",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -58923,7 +58923,7 @@
     "dish": "Tavë me Presh ska Mish Meatless Leek Bake",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -59016,7 +59016,7 @@
     "dish": "Tendir Choreyi (Tandoori Bread)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -60556,7 +60556,7 @@
       },
       {
         "name": "Milk",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -60591,7 +60591,7 @@
     "dish": "Tirolean Dumplings",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -61194,7 +61194,7 @@
     "dish": "Torrijas",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -61650,7 +61650,7 @@
     "dish": "Traditional Dutch rice tart (rijstevlaai)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -61812,7 +61812,7 @@
     "dish": "Trinxat (Potato, Cabbage and Bacon Hash)",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "dessert",
     "hero": [
@@ -64228,7 +64228,7 @@
       },
       {
         "name": "Sugar",
-        "qty": 12000.0,
+        "qty": 50.0,
         "unit": "ml",
         "dept": "pantry"
       },
@@ -65598,7 +65598,7 @@
     "dish": "Zeeuwse bolussen",
     "restaurant": "None Heritage Bistro",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Global Repository",
     "slot": "opener",
     "hero": [
@@ -66547,7 +66547,7 @@
     "dish": "Apple Pie",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -66610,7 +66610,7 @@
     "dish": "Apple pie pops",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -66803,7 +66803,7 @@
     "dish": "Arnhemse meisjes",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -66854,7 +66854,7 @@
     "dish": "Arra të Mbushura me Fik Walnut Stuffed Figs (with Fig Syrup)",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -66899,7 +66899,7 @@
     "dish": "Acaraje black-eyed pea fritters with shrimp filling",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -67028,7 +67028,7 @@
     "dish": "Amok Trey – Cambodian Fish Curry",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -67202,7 +67202,7 @@
     "dish": "Bahia-style Moqueca prawn stew",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -67365,7 +67365,7 @@
     "dish": "Balchi di Pisca",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "mid",
     "hero": [
@@ -67521,7 +67521,7 @@
     "dish": "Bangladeshi fish curry with daikon",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -67782,7 +67782,7 @@
     "dish": "Camaro Grelhado Com Molho Cru (Grilled Prawns with Green Onion Sauce)",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -67845,7 +67845,7 @@
     "dish": "Cayman-Style Lobster",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -68265,7 +68265,7 @@
     "dish": "Barbados Pepperpot",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -69507,7 +69507,7 @@
     "dish": "Macaroni Pie",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -69606,7 +69606,7 @@
     "dish": "Macaroni Pudding",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -70044,7 +70044,7 @@
     "dish": "Baked brie with sorrel jam",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -70137,7 +70137,7 @@
     "dish": "Black Bean soup",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -70416,7 +70416,7 @@
     "dish": "Colombian Style Stuffed Potatoes",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -70737,7 +70737,7 @@
     "dish": "Dominican Bakes",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -70800,7 +70800,7 @@
     "dish": "Mantu Afghan Dumpling",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -70881,7 +70881,7 @@
     "dish": "Oyster Mushroom Soup",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -70956,7 +70956,7 @@
     "dish": "Paracuca (Roasted Peanuts)",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -71280,7 +71280,7 @@
     "dish": "Almojábanas (Colombian Cheese Bread)",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -71430,7 +71430,7 @@
     "dish": "Arepa",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -71550,7 +71550,7 @@
     "dish": "Bajan Salt Bread Recipe",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -71607,7 +71607,7 @@
     "dish": "Bajan Sweet Bread",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -71694,7 +71694,7 @@
     "dish": "Baked Yuca Fries",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -71832,7 +71832,7 @@
     "dish": "Bolani with Potato Filling",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "opener",
     "hero": [
@@ -72081,7 +72081,7 @@
     "dish": "Belgian Waterzooi Chicken",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -72192,7 +72192,7 @@
     "dish": "Bengali Chicken Curry with Potatoes",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "climax",
     "hero": [
@@ -72804,7 +72804,7 @@
     "dish": "Chicken and Potato Roti",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -73680,7 +73680,7 @@
     "dish": "Kelem dolmasi",
     "restaurant": "None Traditional Table",
     "chef": "Artisanal Kitchen",
-    "location": null,
+    "location": "Global",
     "source": "TheMealDB Archive",
     "slot": "dessert",
     "hero": [
@@ -74190,7 +74190,7 @@
         "dept": "pantry"
       },
       {
-        "name": "Any milk chocolate bar (, or leftover 70% or dark ",
+        "name": "Any milk chocolate bar (, or leftover 70% or dark",
         "qty": 50.0,
         "unit": "pcs",
         "dept": "pantry"
@@ -74223,7 +74223,7 @@
         "dept": "pantry"
       },
       {
-        "name": "1 1/2 cups mini pretzels (, or another 100g/3.5oz ",
+        "name": "1 1/2 cups mini pretzels (, or another 100g/3.5oz",
         "qty": 360.0,
         "unit": "ml",
         "dept": "pantry"
@@ -74235,7 +74235,7 @@
         "dept": "pantry"
       },
       {
-        "name": "1/2 tsp cayenne pepper ((faint background warmth, ",
+        "name": "1/2 tsp cayenne pepper ((faint background warmth,",
         "qty": 2.5,
         "unit": "ml",
         "dept": "pantry"
@@ -74292,7 +74292,7 @@
         "dept": "pantry"
       },
       {
-        "name": "1 tsp cooking salt / kosher salt (, divided (half ",
+        "name": "1 tsp cooking salt / kosher salt (, divided (half",
         "qty": 5.0,
         "unit": "ml",
         "dept": "pantry"
@@ -74370,7 +74370,7 @@
         "dept": "pantry"
       },
       {
-        "name": "3 x 400g / 14oz  cans cannellini beans (, drained ",
+        "name": "3 x 400g / 14oz  cans cannellini beans (, drained",
         "qty": 3.0,
         "unit": "pcs",
         "dept": "pantry"
@@ -74388,7 +74388,7 @@
         "dept": "pantry"
       },
       {
-        "name": "2 tbsp finely chopped parsley (, substitute 2 tsp ",
+        "name": "2 tbsp finely chopped parsley (, substitute 2 tsp",
         "qty": 30.0,
         "unit": "ml",
         "dept": "pantry"
@@ -74577,7 +74577,7 @@
         "dept": "pantry"
       },
       {
-        "name": "Salted table butter (, softened, for spreading on ",
+        "name": "Salted table butter (, softened, for spreading on",
         "qty": 50.0,
         "unit": "pcs",
         "dept": "pantry"

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "custom-wagyu-strip",
+    "dish": "A5 Wagyu Strip with Smoked Bone Marrow & Charred Scallion Glaze",
+    "restaurant": "Chef's Private Vault",
+    "chef": "Julian Caravantes",
+    "location": "Miami, USA",
+    "source": "Private Culinary Repertoire",
+    "slot": "climax",
+    "hero": ["Beef", "Wagyu"],
+    "sensoryRole": "Deep umami climax with intense intramuscular fat rendering cut by charred allium acidity.",
+    "components": [
+      { "name": "Japanese A5 Wagyu Strip", "qty": 200.0, "unit": "g", "dept": "butchery" },
+      { "name": "Smoked Bone Marrow Butter", "qty": 40.0, "unit": "g", "dept": "dairy" },
+      { "name": "Charred Scallion Reduction", "qty": 30.0, "unit": "ml", "dept": "pantry" },
+      { "name": "Maldon Smoked Sea Salt", "qty": 5.0, "unit": "g", "dept": "pantry" }
+    ],
+    "technique": "Sear in dry smoking cast iron 90 seconds per side. Rest 8 minutes on elevated wire rack. Top with cold smoked marrow butter.",
+    "plating": "Carve into 1cm batons, expose rosy interior, finish with sea salt flakes.",
+    "pairing": {
+      "wine": "Cabernet Sauvignon (Napa Valley Reserve)",
+      "zeroProof": "Smoked Black Cherry & Oak Infusion"
+    }
+  }
+]
