@@ -148,6 +148,8 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     switch (view) {
+      case "techniques": window.renderMastery(mainContent); break;
+      case "botanicals": window.renderBotanicals(mainContent); break;
       case "discovery":
         renderDiscoveryView(mainContent);
         break;
@@ -282,7 +284,7 @@
           <div class="bento-card" style="cursor:pointer;" onclick="window.AtelierApp.navigateTo('recipes')">
             <span class="card-badge">LIBRARY</span>
             <h3 class="card-title">108+ Master Recipes</h3>
-            <p class="card-desc">Complete, tested recipes from French classical mother sauces and authentic regional Italian pastas to Edomae sushi and Sichuan wok techniques.</p>
+            <p class="card-desc">Detailed recipes from French classical mother sauces and authentic regional Italian pastas to Edomae sushi and Sichuan wok techniques.</p>
             <span style="color:var(--gold-primary); font-size:0.85rem; font-weight:600;">Browse collection →</span>
           </div>
           <div class="bento-card" style="cursor:pointer;" onclick="window.AtelierApp.navigateTo('flavor')">
@@ -436,7 +438,7 @@
       <section style="margin-bottom:2rem;">
         <span class="card-badge">THE ARCHIVE</span>
         <h1 style="font-size:2.4rem; font-family:var(--font-serif); margin:0.25rem 0 0.5rem 0;">The Master Recipe Library</h1>
-        <p style="color:var(--text-secondary); max-width:720px;">108+ completely documented, gourmet recipes with accurate scalable yields, detailed mise en place, sensory doneness cues, scientific transformations, and flavor pairings.</p>
+        <p style="color:var(--text-secondary); max-width:720px;">A growing collection of recipes with stated yields, detailed mise en place, sensory doneness cues, scientific transformations, and flavor pairings.</p>
       </section>
 
       <!-- Search & Filters -->
@@ -506,6 +508,7 @@
 
       grid.innerHTML = filtered.map(r => `
         <article class="bento-card">
+          ${window.culinaryImage(r)}
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
             <span class="card-badge">${esc(r.cuisine)}</span>
             <span style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-muted);">${r.totalMins}m · ${esc(r.difficulty)}</span>
@@ -1340,7 +1343,6 @@
     }
 
     modal.innerHTML = `
-      ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
       <span class="card-badge">${esc(lesson.track.toUpperCase())} TRACK · ${lesson.durationMins} MINS</span>
       <h2 style="font-size:2.2rem; font-family:var(--font-serif); margin:0.5rem 0 1rem 0;">${esc(lesson.title)}</h2>
@@ -2068,7 +2070,6 @@
     }
 
     modal.innerHTML = `
-      ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
       <span class="card-badge">${esc(item.category.toUpperCase())} · ${esc(item.season)}</span>
       <h2 style="font-size:2.2rem; font-family:var(--font-serif); margin:0.5rem 0 1rem 0;">${esc(item.name)}</h2>
@@ -2332,6 +2333,7 @@
     const scaleFactor = AppState.activeRecipeServings / (recipe.yieldServings || 4);
 
     modal.innerHTML = `
+      ${window.culinaryImage(recipe)}
       ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
 
