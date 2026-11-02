@@ -13,7 +13,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 25,
     "yieldServings": 2,
-    "heroImage": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The archetypal French bistro preparation: delicate whole Dover sole dredged in flour, sautéed gently in clarified butter, and bathed in a foamy hazelnut-brown butter scented with fresh lemon juice, briny capers, and chopped flat-leaf parsley.",
     "dietary": [
       "pescatarian",
@@ -223,7 +223,7 @@ window.MASTER_RECIPES = [
     "cookMins": 3,
     "totalMins": 8,
     "yieldServings": 1,
-    "heroImage": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ultimate benchmark of culinary technique: an unbrowned, canary-yellow, cigar-shaped cylinder of gently folded egg, glossy with cold butter, enclosing a creamy, custard-like baveuse center.",
     "dietary": [
       "vegetarian",
@@ -404,7 +404,7 @@ window.MASTER_RECIPES = [
     "cookMins": 180,
     "totalMins": 210,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The crown jewel of Burgundian slow-cooking: succulent chunks of collagen-rich beef chuck seared to a mahogany crust, gently braised in a full bottle of Pinot Noir with aromatic mirepoix and veal stock until fork-tender, garnished with glazed pearl onions, sautéed cremini mushrooms, and crisp slab bacon lardons.",
     "dietary": [
       "nut-free",
@@ -672,7 +672,7 @@ window.MASTER_RECIPES = [
     "cookMins": 60,
     "totalMins": 85,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The timeless French farmhouse centerpiece: bone-in chicken thighs and drumsticks browned in smoky bacon lardons, simmered gently in rich Pinot Noir with garlic, mushrooms, and butter-glazed pearl onions until deeply stained purple-garnet and fall-apart tender.",
     "dietary": [
       "nut-free"
@@ -908,7 +908,7 @@ window.MASTER_RECIPES = [
     "cookMins": 180,
     "totalMins": 210,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1514944298352-78d12089060b?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Gascon culinary alchemy: whole duck legs cured overnight in coarse sea salt, garlic, and wild herbs, submerged in rendered duck fat and slow-cooked at a gentle 90°C until the meat is succulent and falling off the bone. Finished in a scorching skillet for crackling skin, served with duck-fat-crisped Sarladaise potatoes and a tart cherry-ruby port gastrique.",
     "dietary": [
       "dairy-free",
@@ -1147,7 +1147,7 @@ window.MASTER_RECIPES = [
     "cookMins": 14,
     "totalMins": 39,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pinnacle of French pastry drama: a rich Valrhona 70% dark chocolate pastry cream lightened with perfectly whipped French meringue, baked in sugar-coated ramekins until it rises majestically two inches above the rim, dusted with powdered sugar and cracked open tableside to receive cold vanilla bean crème anglaise.",
     "dietary": [
       "vegetarian",
@@ -1368,7 +1368,7 @@ window.MASTER_RECIPES = [
     "cookMins": 210,
     "totalMins": 240,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1621996346565-e3d5d6281033?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The authentic Accademia Italiana della Cucina recipe from Bologna: coarse-ground beef chuck and fatty pork belly gently browned with a fine battuto of onion, celery, and carrot, deglazed with dry white wine, braised in whole milk and gentle tomato passata for 3.5 hours, and tossed with silky fresh handmade egg tagliatelle.",
     "dietary": [
       "nut-free"
@@ -1617,7 +1617,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 17,
     "yieldServings": 2,
-    "heroImage": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Roman minimalism pushed to technical perfection: exactly three ingredients—spaghetti, aged Pecorino Romano DOP, and freshly cracked black peppercorns. Toasted whole peppercorns blooming in warm water meet starchy pasta water and microplaned cheese, forming a glossy, creamy emulsion without cream, butter, or oil.",
     "dietary": [
       "vegetarian",
@@ -1808,7 +1808,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 40,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The crown of Lombard cuisine: high-starch Carnaroli rice toasted in rendered beef bone marrow, quenched with dry white wine, gently simmered in simmering capon-veal stock infused with crimson saffron threads, and finished off heat with ice-cold butter and 24-month Parmigiano-Reggiano until it flows like an undulating golden wave (all'onda).",
     "dietary": [
       "gluten-free",
@@ -2031,7 +2031,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 25,
     "yieldServings": 2,
-    "heroImage": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pure, uncompromising Roman standard: thick artisanal spaghetti tossed with crispy cured pork jowl (guanciale), bathed in an unctuous, silky liaison of pasture-raised egg yolks, freshly grated Pecorino Romano, and an avalanche of toasted black pepper. Strictly zero cream, zero peas, zero garlic, and zero onions.",
     "dietary": [
       "nut-free"
@@ -2237,7 +2237,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 32,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The legendary Tokyo and Kyoto masterpiece popularized worldwide by Chef Nobu Matsuhisa: buttery, velvety Alaskan sablefish (black cod) steeped for 72 hours in a sweet Saikyo white miso, sake, and mirin marinade, then caramelized under high heat until blistered mahogany with a melting, succulent core.",
     "dietary": [
       "pescatarian",
@@ -2425,7 +2425,7 @@ window.MASTER_RECIPES = [
     "cookMins": 720,
     "totalMins": 765,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The holy grail of Japanese noodle craftsmanship from Fukuoka: pork femur bones and trotters blanched of impurities, then subjected to an aggressive 12 to 18-hour rolling boil until marrow, collagen, and fat violently emulsify into a milky-white, opaque, unctuous broth. Served with ultra-thin firm Hakata noodles, rolled pork belly chashu, ramen egg (ajitsuke tamago), wood-ear mushrooms, and black garlic oil (mayu).",
     "dietary": [
       "dairy-free",
@@ -2680,7 +2680,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The legendary pride of Chengdu: silken tofu cubes poached in gentle salted water, folded into a searing wok reduction of crispy minced beef, authentic Pixian fermented broad bean paste (Doubanjiang), fermented black beans (Douchi), and ground roasted green and red Sichuan peppercorns, creating the electrifying harmony of Mala (numbing and spicy).",
     "dietary": [
       "dairy-free",
@@ -2938,7 +2938,7 @@ window.MASTER_RECIPES = [
     "cookMins": 40,
     "totalMins": 70,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The authentic 1950s Moti Mahal classic from Delhi: tender chicken thighs marinated in Kashmiri chili yogurt, charred over high heat, then simmered in a velvety, satin-smooth sauce of reduced San Marzano tomatoes, cultured butter, cashew cream, and sun-dried kasuri methi (fenugreek leaves). Finished with the ancient Dhungar charcoal smoking technique.",
     "dietary": [
       "gluten-free"
@@ -3181,7 +3181,7 @@ window.MASTER_RECIPES = [
     "cookMins": 210,
     "totalMins": 240,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pride of Jalisco: beef chuck and bone-in short ribs braised until meltingly tender in an adobo of toasted Guajillo, Ancho, and Arbol chiles, roasted tomatoes, Mexican cinnamon, cloves, and cider vinegar. Served with a bowl of deep crimson consomé topped with raw white onions and cilantro, ready for dunking crispy corn tortillas.",
     "dietary": [
       "gluten-free",
@@ -3461,7 +3461,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 40,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The quintessential North African and Middle Eastern skillet feast: sweet red bell peppers and onions slowly stewed in fruity extra virgin olive oil with garlic, cumin, smoked paprika, and Tunisian rose harissa, reduced with ripe crushed tomatoes, into which fresh eggs are gently cracked and poached until whites are set and yolks are molten. Crowned with creamy sheep's milk feta and fresh cilantro.",
     "dietary": [
       "vegetarian",
@@ -3688,7 +3688,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 2,
-    "heroImage": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Toasted English muffin halves topped with thick-cut Canadian bacon, gently poached eggs with molten running yolks, and blanketed in warm, lemony, buttery Sauce Hollandaise.",
     "dietary": [
       "nut-free"
@@ -3877,7 +3877,7 @@ window.MASTER_RECIPES = [
     "cookMins": 8,
     "totalMins": 38,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The authentic Vera Pizza Napoletana: 65% hydration dough made with Italian Tipo 00 flour, cold-fermented for 48 hours for extraordinary digestibility and blistered cornicione leopard-spotting. Topped with hand-crushed San Marzano tomatoes, fresh Fior di Latte mozzarella, fragrant basil leaves, and peppery extra virgin olive oil.",
     "dietary": [
       "vegetarian",
@@ -4066,7 +4066,7 @@ window.MASTER_RECIPES = [
     "cookMins": 0,
     "totalMins": 30,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The authentic 1960s Treviso masterpiece: crisp Italian savoiardi ladyfingers soaked rapidly in dark espresso infused with Marsala wine, layered with a cloud-like sabayon cream of egg yolks, mascarpone, and whipped egg whites, dusted with an avalanche of bitter Dutch-process cocoa powder. Strictly zero gelatin, zero whipped cream, and zero liquor extracts.",
     "dietary": [
       "vegetarian",
@@ -4261,7 +4261,7 @@ window.MASTER_RECIPES = [
     "cookMins": 720,
     "totalMins": 760,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The soul of Hanoi: beef marrow bones and brisket blanched and simmered gently for 12 hours with charred ginger, charred yellow onions, toasted whole star anise, cassia bark, black cardamom, and coriander seeds. Poured boiling hot over silky flat rice noodles, thinly shaved raw eye of round steak, braised brisket, and finished with fresh Thai basil, cilantro, and lime.",
     "dietary": [
       "gluten-free",
@@ -4508,7 +4508,7 @@ window.MASTER_RECIPES = [
     "cookMins": 18,
     "totalMins": 33,
     "yieldServings": 2,
-    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ultimate steakhouse triumph: a 45-day dry-aged bone-in ribeye salted overnight, seared in smoking hot cast iron to forge a deeply caramelized, savory mahogany crust, and basted continuously (arroser) with foamy cultured butter, smashed garlic, and woody thyme. Served with melting bone marrow compound butter and golden thyme-braised Pommes Fondue.",
     "dietary": [
       "gluten-free",
@@ -4722,7 +4722,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 50,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Inspired by Chef Massimo Bottura's legendary 3-Michelin-star masterpiece from Osteria Francescana in Modena: a celebration of serendipity and deliberate imperfection. A velvety, sharp Limoncello-infused lemon curd sabayon splattered dramatically across an asymmetric plate, scattered with golden shards of baked Pâte Sablée crust, candied capers, bergamot fluid gel, and sweet basil oil.",
     "dietary": [
       "vegetarian",
@@ -4926,7 +4926,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The queen of classical French mother sauces: warm pasture-raised egg yolks whisked with a strained reduction of white wine vinegar, shallots, and cracked peppercorns over a gentle double-boiler, then slowly emulsified with warm clarified European butter into an opulent, velvety, lemon-scented pale-gold ribbon.",
     "dietary": [
       "vegetarian",
@@ -5109,7 +5109,7 @@ window.MASTER_RECIPES = [
     "cookMins": 480,
     "totalMins": 510,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The majestic cornerstone of classical French haute cuisine: veal knuckle and marrow bones roasted to deep mahogany, caramelized with mirepoix and tomato paste (pincé), deglazed with red wine, and simmered gently for 8 hours with aromatics until it yields a crystal-clear, deep amber, gelatin-dense nectar that solidifies into jelly when cooled.",
     "dietary": [
       "gluten-free",
@@ -5330,7 +5330,7 @@ window.MASTER_RECIPES = [
     "cookMins": 30,
     "totalMins": 75,
     "yieldServings": 2,
-    "heroImage": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pinnacle of Tokyo craftsmanship: warm Koshihikari sushi rice seasoned with aged red sake lees vinegar (akazu), hand-molded into airy pillow nigiri, crowned with aged bluefin tuna, sea urchin, and kobujime cured sea bass, brushed with nikiri shoyu glaze.",
     "dietary": [
       "pescatarian",
@@ -5520,7 +5520,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 75,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The immortal pride of Marseille: an aggressive rolling boil of rockfish, red mullet, sea bass, and wild langoustines in a golden saffron-infused court-bouillon with fennel, leeks, tomatoes, and orange zest. Served traditionally in two stages: first the fragrant boiling broth with garlic-rubbed croutons and fiery cayenne-garlic Rouille emulsion, followed by the carved fish on a platter.",
     "dietary": [
       "pescatarian",
@@ -5746,7 +5746,7 @@ window.MASTER_RECIPES = [
     "cookMins": 65,
     "totalMins": 85,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The timeless Parisian bistro comfort: three pounds of yellow onions slowly caramelized for 45 minutes until melting, dark mahogany, and sweet, deglazed with dry white wine and Cognac, simmered in rich beef bone stock with thyme, ladled into ovenproof crocks over toasted baguette rounds, blanketed in cave-aged Gruyère and broiled until blistered, bubbling, and deeply browned.",
     "dietary": [
       "nut-free"
@@ -5972,7 +5972,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 75,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The accidental 1880s masterpiece of the Tatin sisters in Lamotte-Beuvron: crisp, tart Reinette apples caramelized slowly in butter and sugar until mahogany and translucent, draped with all-butter puff pastry, baked crisp, and inverted warm onto porcelain.",
     "dietary": [
       "vegetarian",
@@ -6137,7 +6137,7 @@ window.MASTER_RECIPES = [
     "cookMins": 90,
     "totalMins": 125,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1572441713132-c542fc4fe282?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The elevated Provençal celebration of summer garden abundance made famous by Chef Thomas Keller: a foundation of roasted bell pepper, tomato, and onion Piperade, topped with razor-thin shingled spirals of zucchini, yellow summer squash, Japanese eggplant, and Roma tomatoes, slow-baked under parchment until tender and glossy with herb-infused olive oil.",
     "dietary": [
       "vegan",
@@ -6336,7 +6336,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Pacific Halibut gently poached in an aromatic court-bouillon, served in a puddle of gossamer-fine Beurre Blanc scented with fresh shallots, white wine reduction, and fresh chervil fronds.",
     "dietary": [
       "pescatarian",
@@ -6497,7 +6497,7 @@ window.MASTER_RECIPES = [
     "cookMins": 150,
     "totalMins": 170,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Cross-cut veal shanks seared in butter, braised tender in dry white wine and rich broth with mirepoix, topped with vibrant zesty gremolata (lemon zest, garlic, flat parsley).",
     "dietary": [
       "nut-free"
@@ -6694,7 +6694,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 27,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Fresh whole sea bass steamed with sliced ginger and scallions, doused in seasoned sweet soy sauce, and flash-scalded with sizzling smoking peanut and sesame oil.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -6839,7 +6839,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Springy alkaline noodles in a fiery, numbing Sichuan sesame paste broth, topped with crispy spiced minced pork (Yibin yacai) and scallions.",
     "dietary": [
       "nut-free"
@@ -6986,7 +6986,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 75,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Delicate, translucent pleated dumpling skins enclosing a juicy pork meatball and a pocket of molten, rich gelatinized bone broth.",
     "dietary": [
       "nut-free"
@@ -7133,7 +7133,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 70,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Pork shoulder strips marinated in fermented red bean curd, five-spice, and soy, roasted over high heat and glazed with gleaming maltose honey.",
     "dietary": [
       "nut-free"
@@ -7280,7 +7280,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 25,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Wok-tossed chicken thigh cubes with roasted peanuts, dried Sichuan chiles, and scallions in a sweet-sour-spicy (guaiwei) wok glaze.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -7425,7 +7425,7 @@ window.MASTER_RECIPES = [
     "cookMins": 90,
     "totalMins": 110,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Lush cubes of pork belly caramelized in rock sugar, braised in Shaoxing wine and star anise until the fat is melt-in-the-mouth unctuous.",
     "dietary": [
       "nut-free"
@@ -7572,7 +7572,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 55,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Jasmine rice cooked in an earthenware claypot with marinated chicken, lap cheong sausage, and shiitake, developing a golden crackling rice crust.",
     "dietary": [
       "nut-free"
@@ -7719,7 +7719,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 40,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Robust, spicy stew made with deeply fermented 6-month-aged napa cabbage kimchi, fatty pork shoulder, anchovy-kelp dashi, and silken tofu.",
     "dietary": [
       "nut-free"
@@ -7866,7 +7866,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Sizzling stone bowl layered with sesame rice forming a crackling crust, topped with seasoned vegetable namul, beef bulgogi, raw egg yolk, and gochujang.",
     "dietary": [
       "nut-free"
@@ -8013,7 +8013,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 40,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Ultra-crispy double-fried chicken wings coated in a feather-light potato starch batter, tossed in sweet-spicy gochujang and honey garlic glaze.",
     "dietary": [
       "nut-free"
@@ -8160,7 +8160,7 @@ window.MASTER_RECIPES = [
     "cookMins": 120,
     "totalMins": 145,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Tender beef short ribs braised in Asian pear puree, soy sauce, mirin, and sesame oil with daikon, carrots, and sweet chestnuts.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -8305,7 +8305,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 27,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Crispy, savory pancake studded with abundant whole scallions, squid, wild shrimp, and beaten egg, served with tangy soy-vinegar choganjang dip.",
     "dietary": [
       "nut-free"
@@ -8452,7 +8452,7 @@ window.MASTER_RECIPES = [
     "cookMins": 60,
     "totalMins": 80,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Whole tender young chicken stuffed with sweet glutinous rice, fresh Korean ginseng root, jujubes, and garlic, simmered into a restorative milky broth.",
     "dietary": [
       "nut-free"
@@ -8599,7 +8599,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Silky, savory Japanese egg custard steamed with pristine dashi broth, shiitake mushrooms, wild prawn, and fragrant mitsuba herb.",
     "dietary": [
       "nut-free"
@@ -8746,7 +8746,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 40,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Wild tiger prawns and seasonal vegetables dipped in an ice-cold minimal-gluten batter, fried in pure sesame oil until gossamer-crisp and lacy.",
     "dietary": [
       "nut-free"
@@ -8893,7 +8893,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Marbled A5 Wagyu beef simmered tableside in sweet soy warishita broth with grilled tofu, shirataki noodles, and dipped into raw whisked egg.",
     "dietary": [
       "nut-free"
@@ -9040,7 +9040,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 37,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Skewered chicken thigh and Tokyo scallion grilled over binchotan white charcoal, dipped repeatedly into a rich aged tare reduction.",
     "dietary": [
       "nut-free"
@@ -9187,7 +9187,7 @@ window.MASTER_RECIPES = [
     "cookMins": 2,
     "totalMins": 32,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "100% pure buckwheat noodles kneaded by hand, boiled briefly, chilled in ice water, and served on bamboo zaru with chilled bonito-kombu tsuyu.",
     "dietary": [
       "nut-free"
@@ -9334,7 +9334,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 27,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Bite-sized chicken thighs marinated in ginger, garlic, sake, and soy, dredged in potato starch, and fried into crackling golden nuggets.",
     "dietary": [
       "nut-free"
@@ -9481,7 +9481,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Towering, airy cloud pancakes leavened with whipped meringue, steamed gently in a covered griddle, and topped with salted honey butter.",
     "dietary": [
       "nut-free"
@@ -9628,7 +9628,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Chewy rice noodles wok-fried with wild prawns, pressed yellow tofu, sweet preserved radish, and a tart tamarind-palm sugar-fish sauce glaze.",
     "dietary": [
       "nut-free"
@@ -9775,7 +9775,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 27,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Intensely aromatic prawn broth infused with crushed lemongrass stalks, galangal slices, kaffir lime leaves, bird's eye chiles, and lime juice.",
     "dietary": [
       "nut-free"
@@ -9922,7 +9922,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 40,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Chicken simmered in fresh green chili paste and rich coconut cream cracked over heat, with Thai apple eggplants, bamboo, and sweet basil.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -10067,7 +10067,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Crispy, airy French-Vietnamese baguette stuffed with grilled lemongrass pork, chicken liver pâté, pickled daikon-carrot, and fresh cilantro.",
     "dietary": [
       "nut-free"
@@ -10214,7 +10214,7 @@ window.MASTER_RECIPES = [
     "cookMins": 210,
     "totalMins": 240,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Beef chuck slow-cooked in rich spiced coconut milk until all liquid evaporates and the beef fries in its own rendered coconut oil.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -10359,7 +10359,7 @@ window.MASTER_RECIPES = [
     "cookMins": 60,
     "totalMins": 105,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Marinated spiced lamb layered with parboiled saffron basmati rice, sealed with dough (dum), and slow-cooked in its own steam over embers.",
     "dietary": [
       "nut-free"
@@ -10506,7 +10506,7 @@ window.MASTER_RECIPES = [
     "cookMins": 360,
     "totalMins": 380,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Whole black urad dal and kidney beans slow-simmered for 12 hours with ginger, garlic, tomato puree, and copious amounts of cultured white butter.",
     "dietary": [
       "nut-free"
@@ -10653,7 +10653,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Fresh milk-curd paneer cheese simmered in a velvety, emerald-green spiced spinach purée tempered with cumin, garlic, and garam masala.",
     "dietary": [
       "nut-free"
@@ -10800,7 +10800,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Yogurt-leavened flatbread slapped onto a screaming-hot cast iron skillet, blistered over open gas flame, and brushed with garlic ghee.",
     "dietary": [
       "nut-free"
@@ -10947,7 +10947,7 @@ window.MASTER_RECIPES = [
     "cookMins": 90,
     "totalMins": 115,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Tender mutton braised in yogurt, Kashmiri dried red chiles, fennel powder, and dried ginger in authentic Kashmiri wazwan tradition.",
     "dietary": [
       "nut-free"
@@ -11094,7 +11094,7 @@ window.MASTER_RECIPES = [
     "cookMins": 180,
     "totalMins": 240,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The king of Mexican moles: 28 ingredients including charred Chilhuacle chiles, Mexican chocolate, plantains, raisins, and sesame seeds.",
     "dietary": [
       "nut-free"
@@ -11241,7 +11241,7 @@ window.MASTER_RECIPES = [
     "cookMins": 180,
     "totalMins": 200,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Pork shoulder and pork belly slowly confited in pure pork lard with sweet oranges, evaporated milk, and Mexican oregano until melt-in-mouth tender.",
     "dietary": [
       "nut-free"
@@ -11388,7 +11388,7 @@ window.MASTER_RECIPES = [
     "cookMins": 0,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Raw sea bass cubes flash-cured in fresh lime juice, garlic, ginger, and habanero Leche de Tigre, served with sweet potato and Andean choclo corn.",
     "dietary": [
       "nut-free"
@@ -11535,7 +11535,7 @@ window.MASTER_RECIPES = [
     "cookMins": 0,
     "totalMins": 15,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Ripe Hass avocados mashed in volcanic stone molcajete with charred serrano chiles, diced white onion, cilantro, and fresh lime juice.",
     "dietary": [
       "nut-free"
@@ -11682,7 +11682,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Crisp, fluted choux pastry batons fried golden, rolled in fragrant canela cinnamon sugar, served with thick, molten bittersweet chocolate.",
     "dietary": [
       "nut-free"
@@ -11829,7 +11829,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 55,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Thinly sliced pork shoulder marinated in achiote paste, guajillo chiles, and pineapple juice, seared with crispy edges and served on warm tortillas.",
     "dietary": [
       "nut-free"
@@ -11976,7 +11976,7 @@ window.MASTER_RECIPES = [
     "cookMins": 30,
     "totalMins": 50,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Peeled chickpeas whipped warm in food processor with Ethiopian sesame tahini, iced water, garlic, and lemon juice into an ultra-fluffy spread.",
     "dietary": [
       "nut-free"
@@ -12123,7 +12123,7 @@ window.MASTER_RECIPES = [
     "cookMins": 150,
     "totalMins": 175,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Lamb shanks braised in saffron, turmeric, and dried Persian limes (limoo omani), served with dill and fava bean basmati rice (Baghali Polo).",
     "dietary": [
       "nut-free"
@@ -12270,7 +12270,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 32,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Minced lamb and beef kneaded with grated onion, cumin, coriander, and Aleppo pepper, grilled over high heat and served with sumac red onions.",
     "dietary": [
       "nut-free"
@@ -12417,7 +12417,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 75,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Layers of paper-thin, crisp buttered phyllo pastry encasing a filling of sautéed wild spinach, leeks, scallions, fresh dill, and barrel-aged feta.",
     "dietary": [
       "nut-free"
@@ -12564,7 +12564,7 @@ window.MASTER_RECIPES = [
     "cookMins": 50,
     "totalMins": 95,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Forty micro-thin sheets of phyllo dough brushed with clarified butter, packed with crushed Antep green pistachios, and drenched in fragrant syrup.",
     "dietary": [
       "nut-free"
@@ -12711,7 +12711,7 @@ window.MASTER_RECIPES = [
     "cookMins": 8,
     "totalMins": 18,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Warm poached eggs nestled atop garlicky whipped labneh yogurt, bathed in sizzling foamy butter infused with mild, fruity Aleppo chili flakes.",
     "dietary": [
       "nut-free"
@@ -12858,7 +12858,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 50,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Buttermilk-marinated fried chicken with a shattering cornstarch crust, brushed hot with a fiery glaze of rendered lard, cayenne pepper, and brown sugar.",
     "dietary": [
       "nut-free"
@@ -13005,7 +13005,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Tender sea clams simmered in a velvety broth of salt pork, sweet onions, diced potatoes, and heavy cream, thickened lightly with flour roux.",
     "dietary": [
       "nut-free"
@@ -13152,7 +13152,7 @@ window.MASTER_RECIPES = [
     "cookMins": 720,
     "totalMins": 750,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Prime beef packer brisket rubbed exclusively with coarse 16-mesh black pepper and kosher salt, smoked low and slow over post oak wood for 12 hours.",
     "dietary": [
       "nut-free"
@@ -13299,7 +13299,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Cavatappi pasta enrobed in a rich Béchamel sauce melted with sharp Cheddar, Gruyère, and Fontina, perfumed with white truffle oil and brioche crumbs.",
     "dietary": [
       "nut-free"
@@ -13446,7 +13446,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 85,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Wild sourdough levain dough fermented for 24 hours, baked in a scorching Dutch oven until blistering, mahogany, and blistered with deep ear expansion.",
     "dietary": [
       "nut-free"
@@ -13593,7 +13593,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 47,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Thomas Keller's French Laundry opener: savory tuile cones coated in black sesame, piped with red onion crème fraîche, and crowned with King salmon tartare.",
     "dietary": [
       "nut-free"
@@ -13740,7 +13740,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Thomas Keller's signature: warm poached oysters in a creamy sabayon of small pearl tapioca, crowned with a generous quenelle of Regiis Ova Ossetra caviar.",
     "dietary": [
       "nut-free"
@@ -13887,7 +13887,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Pan-seared Pekin duck breast with diamond-scored crisp skin, glazed in lavender blossom honey, served with a tart ruby port cherry gastrique.",
     "dietary": [
       "nut-free"
@@ -14034,7 +14034,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 25,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Velvety white mother sauce of whole milk infused with onion piqué, thickened with equal parts flour and butter roux, and seasoned with grated nutmeg.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -14179,7 +14179,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Silky, luminous blonde mother sauce made by simmering blonde butter-flour roux with delicate white chicken or veal stock until glossy nappe consistency.",
     "dietary": [
       "nut-free"
@@ -14326,7 +14326,7 @@ window.MASTER_RECIPES = [
     "cookMins": 60,
     "totalMins": 80,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The grand brown mother sauce: rich brown veal stock thickened with brown roux, roasted mirepoix, tomato purée, and simmered into a concentrated glaze.",
     "dietary": [
       "nut-free"
@@ -14473,7 +14473,7 @@ window.MASTER_RECIPES = [
     "cookMins": 60,
     "totalMins": 75,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Auguste Escoffier's original tomato mother sauce: rendered salt pork sautéed with onions and carrots, simmered with tomatoes, blonde roux, and ham bone.",
     "dietary": [
       "nut-free"
@@ -14620,7 +14620,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 25,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The Loire Valley emulsion: reduced white wine, vinegar, and shallots emulsified off heat with cold European butter into a pale ivory sauce.",
     "dietary": [
       "nut-free"
@@ -14767,7 +14767,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The golden soul of Japanese cuisine: pristine filtered water steeped with giant ma-kombu kelp at 60°C, brought to a simmer, and steeped with bonito flakes.",
     "dietary": [
       "nut-free"
@@ -14914,7 +14914,7 @@ window.MASTER_RECIPES = [
     "cookMins": 180,
     "totalMins": 200,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Clear, golden foundational chicken stock simmered with whole chicken carcasses, leeks, onions, celery, and thyme without browning.",
     "dietary": [
       "nut-free"
@@ -15061,7 +15061,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 80,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Choux pastry ring baked crisp with sliced almonds, split horizontally, and filled with a piped ribbon of caramelized hazelnut praliné mousseline cream.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
@@ -15206,7 +15206,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 27,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Individual dark chocolate cakes with a set, cakey crust enclosing a warm, molten, flowing bittersweet chocolate ganache center.",
     "dietary": [
       "nut-free"
@@ -15353,7 +15353,7 @@ window.MASTER_RECIPES = [
     "cookMins": 55,
     "totalMins": 75,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Fluted copper-mold pastries with a deeply caramelized, shattering mahogany crust and a custard-soft, honeycomb interior scented with rum and vanilla.",
     "dietary": [
       "nut-free"
@@ -15500,7 +15500,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 60,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Silky, rich baked egg yolk and heavy cream custard flecked with vanilla bean seeds, topped with a paper-thin disc of brittle torched glass caramel.",
     "dietary": [
       "nut-free"
@@ -15647,7 +15647,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Thick-cut artisanal brioche soaked in spiced vanilla-cinnamon egg custard, browned in foamy butter, and drizzled with warm maple syrup and toasted pecans.",
     "dietary": [
       "nut-free"
@@ -15794,7 +15794,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Prime ribeye steak seared medium-rare, accompanied by hand-cut double-fried Belgian frites and freshly whisked warm Sauce Béarnaise with fresh tarragon.",
     "dietary": [
       "nut-free"
@@ -15941,7 +15941,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 27,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "King salmon fillet enclosed in parchment paper with julienned leeks, carrots, white wine, and butter, puffing up like a balloon in the oven.",
     "dietary": [
       "nut-free"
@@ -16088,7 +16088,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 55,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Flaky butter shortcrust pastry filled with smoky slab bacon lardons, rich custard of heavy cream and farm eggs, and cave-aged Swiss Comté cheese.",
     "dietary": [
       "nut-free"
@@ -16235,7 +16235,7 @@ window.MASTER_RECIPES = [
     "cookMins": 30,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The iconic Ritz-Carlton cold potage: pureed sweet white leeks, Russet potatoes, chicken stock, and heavy cream, served chilled with chives.",
     "dietary": [
       "nut-free"
@@ -16382,7 +16382,7 @@ window.MASTER_RECIPES = [
     "cookMins": 5,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Handcrafted thin egg pasta pillows stuffed with drained whole-milk ricotta and sautéed spinach, bathed in foaming golden sage brown butter.",
     "dietary": [
       "nut-free"
@@ -16529,7 +16529,7 @@ window.MASTER_RECIPES = [
     "cookMins": 30,
     "totalMins": 55,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Thinly shaved cold braised veal loin draped in a creamy, velvety sauce of Mediterranean tuna, salted capers, anchovies, and fresh lemon juice.",
     "dietary": [
       "nut-free"
@@ -16676,7 +16676,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "High-hydration Ligurian flatbread dimpled deeply by hand, washed with a saltwater-olive oil brine (salamoia), and baked with fresh rosemary.",
     "dietary": [
       "nut-free"
@@ -16823,7 +16823,7 @@ window.MASTER_RECIPES = [
     "cookMins": 5,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Silky, gently trembling vanilla bean cream set with minimal gelatin, contrasted by a sweet-tart reduction of wild strawberries and aged balsamic.",
     "dietary": [
       "nut-free"
@@ -16970,7 +16970,7 @@ window.MASTER_RECIPES = [
     "cookMins": 8,
     "totalMins": 18,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Tender veal cutlets topped with fresh sage leaves and Prosciutto di Parma, pinned with a toothpick, pan-fried in butter, and deglazed with dry Marsala.",
     "dietary": [
       "nut-free"
@@ -17117,7 +17117,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 25,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Two-inch-thick T-bone porterhouse steak grilled over glowing hardwood embers, carved rare, and dressed with fruity Tuscan extra virgin olive oil.",
     "dietary": [
       "nut-free"
@@ -17264,7 +17264,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 60,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Stone-ground coarse cornmeal simmered with mountain water, beaten vigorously with sweet Alpine Fontina cheese and foaming brown butter.",
     "dietary": [
       "nut-free"
@@ -17411,7 +17411,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 50,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Flaky carom-scented pastry cones filled with spiced potato and peas, crushed and topped with warm spiced chickpeas, sweet tamarind, and cool yogurt.",
     "dietary": [
       "nut-free"
@@ -17558,7 +17558,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Beer-battered crispy white cod in warm hand-pressed corn tortillas with shredded cabbage, fresh pico de gallo, and smoky chipotle crema.",
     "dietary": [
       "nut-free"
@@ -17705,7 +17705,7 @@ window.MASTER_RECIPES = [
     "cookMins": 0,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "An herbaceous salad dominated by massive mountains of razor-sliced flat-leaf parsley, fresh mint, diced tomatoes, a touch of fine bulgur, and olive oil.",
     "dietary": [
       "nut-free"
@@ -17852,7 +17852,7 @@ window.MASTER_RECIPES = [
     "cookMins": 0,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Direct calcium lactate reverse spherification of pure Alphonso mango nectar, bursting liquid on the tongue over chilled green cardamom cream.",
     "dietary": [
       "nut-free"
@@ -17999,7 +17999,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "assets/lomo-saltado.jpg",
+    "heroImage": "",
     "summary": "The premier Chifa dish of Peru: Prime beef tenderloin flash-seared in a screaming-hot wok with red onions, aji amarillo chilies, and ripe tomatoes, deglazed with pisco, soy sauce, and red wine vinegar, served over hand-cut twice-cooked fries and steamed rice.",
     "dietary": [
       "Dairy-Free"
@@ -18202,7 +18202,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 75,
     "yieldServings": 6,
-    "heroImage": "assets/paella.jpg",
+    "heroImage": "",
     "summary": "The true UNESCO-recognized Paella of the Valencian huerta: Bone-in chicken and rabbit browned in virgin olive oil with garrofó butter beans, flat green beans (ferraura), grated San Marzano tomatoes, rosemary, sweet pimentón, and saffron-infused Bomba rice cooked undisturbed until a crispy caramelized crust (socarrat) crackles along the wide steel pan.",
     "dietary": [
       "Gluten-Free",
@@ -18406,7 +18406,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 75,
     "yieldServings": 6,
-    "heroImage": "assets/images/creme-caramel.jpg",
+    "heroImage": "",
     "summary": "The pinnacle of French bistro pastry: a silky, glass-smooth whole milk and egg yolk custard inverted onto a plate with a pool of amber-bitter dry caramel sauce.",
     "dietary": [
       "vegetarian",
@@ -18596,7 +18596,7 @@ window.MASTER_RECIPES = [
     "cookMins": 5,
     "totalMins": 30,
     "yieldServings": 6,
-    "heroImage": "assets/images/mousse-chocolat.jpg",
+    "heroImage": "",
     "summary": "The definitive French bistro dessert: bittersweet 70% chocolate emulsified with egg yolks, folded into an airy web of stiff meringue, and chilled to a cloud-like mousse.",
     "dietary": [
       "vegetarian",
@@ -18772,7 +18772,7 @@ window.MASTER_RECIPES = [
     "cookMins": 55,
     "totalMins": 95,
     "yieldServings": 8,
-    "heroImage": "assets/images/bourbon-pecan-pie.jpg",
+    "heroImage": "",
     "summary": "The quintessential Southern dessert elevated with nutty beurre noisette, toasted Texas pecan halves, dark brown sugar, and barrel-aged Kentucky bourbon in an all-butter blind-baked crust.",
     "dietary": [
       "vegetarian"
@@ -18961,7 +18961,7 @@ window.MASTER_RECIPES = [
     "cookMins": 20,
     "totalMins": 65,
     "yieldServings": 8,
-    "heroImage": "assets/images/coconut-cream-pie.jpg",
+    "heroImage": "",
     "summary": "A restaurant pastry benchmark: a buttery crisp graham cracker shell loaded with scratch coconut pastry cream (crème pâtissière), topped with mountain peaks of stabilized Chantilly and toasted coconut shreds.",
     "dietary": [
       "vegetarian"
@@ -19167,7 +19167,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 40,
     "yieldServings": 8,
-    "heroImage": "assets/images/key-lime-pie.jpg",
+    "heroImage": "",
     "summary": "True Floridian Key Lime Pie featuring the chemical reaction between acidic key lime juice, sweetened condensed milk, and egg yolks in a crisp buttery graham crust.",
     "dietary": [
       "vegetarian"
@@ -19330,7 +19330,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 85,
     "yieldServings": 10,
-    "heroImage": "assets/images/eclairs-chocolat.jpg",
+    "heroImage": "",
     "summary": "The masterwork of French pastry: crisp, hollow choux shells piped to perfection, filled with rich dark chocolate pastry cream, and dipped in mirror-shine chocolate fondant glaze.",
     "dietary": [
       "vegetarian"
@@ -19520,7 +19520,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 32,
     "yieldServings": 12,
-    "heroImage": "assets/images/madeleines-commercy.jpg",
+    "heroImage": "",
     "summary": "The timeless French teacake of Commercy: golden scallop-shelled cakes with an iconic pronounced 'bump' (la bosse), enriched with nutty beurre noisette, lemon zest, and wildflower honey.",
     "dietary": [
       "vegetarian"
@@ -19704,7 +19704,7 @@ window.MASTER_RECIPES = [
     "cookMins": 90,
     "totalMins": 120,
     "yieldServings": 8,
-    "heroImage": "assets/images/passionfruit-pavlova.jpg",
+    "heroImage": "",
     "summary": "The show-stopping Antipodean celebration dessert: a delicate, crunchy snow-white meringue shell concealing a soft, pillowy marshmallow interior, crowned with tart passionfruit pulp and fresh berries.",
     "dietary": [
       "vegetarian",
@@ -19890,7 +19890,7 @@ window.MASTER_RECIPES = [
     "cookMins": 3,
     "totalMins": 13,
     "yieldServings": 1,
-    "heroImage": "assets/images/french-rolled-omelette.jpg",
+    "heroImage": "",
     "summary": "The ultimate test of a chef's hand: a flawless, pale golden almond-shaped omelette with zero browning, a creamy molten 'baveuse' center, and a mirror glaze of cold cultured butter.",
     "dietary": [
       "vegetarian",
@@ -20054,7 +20054,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "assets/images/chilaquiles-rojos.jpg",
+    "heroImage": "",
     "summary": "The ultimate Mexican breakfast: house-fried crispy corn tortilla triangles simmered in roasted salsa roja until semi-tender, topped with crispy spiced chorizo, sunny farm eggs, Mexican crema, and crumbled cotija.",
     "dietary": [
       "gluten_free"
@@ -20231,7 +20231,7 @@ window.MASTER_RECIPES = [
     "cookMins": 5,
     "totalMins": 35,
     "yieldServings": 4,
-    "heroImage": "assets/images/salmon-aburi-press.jpg",
+    "heroImage": "",
     "summary": "Vancouver's iconic pressed sushi: seasoned sushi rice molded in a wooden oshibako box, draped with sashimi-grade Atlantic salmon, glazed with dashi-miso mayo, and seared table-side with a blowtorch over binchotan.",
     "dietary": [
       "gluten_free",
@@ -20388,7 +20388,7 @@ window.MASTER_RECIPES = [
     "cookMins": 90,
     "totalMins": 135,
     "yieldServings": 6,
-    "heroImage": "assets/images/potato-pave.jpg",
+    "heroImage": "",
     "summary": "Thomas Keller's legendary French Laundry classic: hundreds of paper-thin mandoline-sliced Yukon gold potatoes layered with clarified butter and fresh thyme, slow-baked, compressed under weights for 24 hours, cut into neat geometric cobblestones, and pan-seared to a glass-shattering crispness.",
     "dietary": [
       "gluten_free"
@@ -20562,7 +20562,7 @@ window.MASTER_RECIPES = [
     "cookMins": 50,
     "totalMins": 70,
     "yieldServings": 10,
-    "heroImage": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The iconic crustless cheesecake of La Viña in San Sebastián. Baked at intense 425°F heat to develop an intensely caramelized, mahogany-blackened exterior while preserving a luxuriantly runny, custardy molten center.",
     "dietary": [
       "Vegetarian",
@@ -20739,7 +20739,7 @@ window.MASTER_RECIPES = [
     "cookMins": 75,
     "totalMins": 105,
     "yieldServings": 12,
-    "heroImage": "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The definitive skyscraper New York cheesecake: dense, satiny, ultra-smooth cream cheese custard on a spiced par-baked Graham cracker crust, crowned with a tangy sour cream glaze baked in a gentle water bath.",
     "dietary": [
       "Vegetarian"
@@ -20943,7 +20943,7 @@ window.MASTER_RECIPES = [
     "cookMins": 28,
     "totalMins": 43,
     "yieldServings": 16,
-    "heroImage": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ultimate restaurant-grade brownie: intense 70% Valrhona Guanaja chocolate, browned butter, shiny paper-thin crackly meringue top, and an intensely fudgy, truffle-dense core finished with Maldon sea salt.",
     "dietary": [
       "Vegetarian"
@@ -21147,7 +21147,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 32,
     "yieldServings": 14,
-    "heroImage": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The definitive bakery-style chocolate chip cookie: nutty browned butter, 48-hour cold aged dough, hand-chopped 70% dark chocolate pools, crisp rippled edges, and a gooey chewy center topped with fleur de sel.",
     "dietary": [
       "Vegetarian"
@@ -21358,7 +21358,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 95,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pinnacle of French pastry architecture: three crisp, razor-thin layers of caramelized inverted puff pastry (pâte feuilletée inversée) sandwiching silky Madagascar vanilla diplomat cream, finished with traditional feathered fondant glaze.",
     "dietary": [
       "Vegetarian"
@@ -21562,7 +21562,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 102,
     "yieldServings": 12,
-    "heroImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The Parisian classic created by Maison Dalloyau in 1955. Six distinct architectural tiers: almond biscuit Joconde soaked in concentrated espresso syrup, silky French coffee buttercream, dark chocolate ganache, and a flawless chocolate glaze (glaçage miroir) crowned with edible gold leaf.",
     "dietary": [
       "Vegetarian"
@@ -21774,7 +21774,7 @@ window.MASTER_RECIPES = [
     "cookMins": 16,
     "totalMins": 61,
     "yieldServings": 24,
-    "heroImage": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The holy grail of French confectionery: smooth satin shells with iconic ruffled ruffled feet (le pied), crisp delicate shells giving way to chewy almond centers, sandwiched with bittersweet 66% Valrhona Caraïbe chocolate ganache.",
     "dietary": [
       "Vegetarian",
@@ -21965,7 +21965,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 55,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The Parisian brasserie icon: crisp, golden choux pastry puffs hollowed and filled à la minute with artisanal Madagascar vanilla bean ice cream, draped in warm, glossy bittersweet 70% dark chocolate sauce and toasted sliced almonds.",
     "dietary": [
       "Vegetarian"
@@ -22169,7 +22169,7 @@ window.MASTER_RECIPES = [
     "cookMins": 14,
     "totalMins": 29,
     "yieldServings": 12,
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The miniature gold bars of French baking. Created near the Paris Stock Exchange in the late 19th century: tender, moist almond flour tea cakes infused with deeply caramelized hazelnut-browned butter (beurre noisette) and egg whites.",
     "dietary": [
       "Vegetarian"
@@ -22348,7 +22348,7 @@ window.MASTER_RECIPES = [
     "cookMins": 14,
     "totalMins": 39,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ethereal pinnacle of Parisian restaurant dining. A towering hot dessert soufflé infused with orange zest and Grand Marnier liqueur, rising 2 inches straight above the ramekin rim with a golden top and molten citrus cream core.",
     "dietary": [
       "Vegetarian"
@@ -22545,7 +22545,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 55,
     "yieldServings": 16,
-    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ultimate bakery bar: rich, buttery, melt-in-mouth sablé shortbread crust par-baked to golden perfection, topped with a thick, satiny, ultra-tart Meyer lemon curd baked gently until custardy and dusted with snowy confectioners' sugar.",
     "dietary": [
       "Vegetarian"
@@ -22735,7 +22735,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 70,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The crown jewel of French Quarter comfort: cubes of rich, buttery day-old brioche soaked in vanilla-cinnamon-nutmeg custard with plumped bourbon raisins, baked until puffed and golden with crisp caramelized edges, drowned in warm Kentucky bourbon hard sauce.",
     "dietary": [
       "Vegetarian"
@@ -22949,7 +22949,7 @@ window.MASTER_RECIPES = [
     "cookMins": 40,
     "totalMins": 65,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "Rustic summer perfection in a seasoned cast-iron skillet. Ripe peaches and wild plump blackberries tossed in brown sugar, bourbon, and lemon, topped with fluffy, golden-crusted cream buttermilk drop biscuits and raw turbinado sugar.",
     "dietary": [
       "Vegetarian"
@@ -23163,7 +23163,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 55,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ultimate autumn comfort dessert: crisp, tart Honeycrisp apples and wild blackberries spiced with green cardamom and cinnamon, buried beneath a thick blanket of buttery rolled oat, brown sugar, and toasted pecan crumble, served with thick clotted cream.",
     "dietary": [
       "Vegetarian"
@@ -23370,7 +23370,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 30,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The ultimate test of an authentic Italian gelatiere: Fior di Latte (flower of milk). No eggs, no vanilla, no distractions—pure, unadorned grass-fed milk and heavy cream churned to low-overrun silky dense perfection with natural locust bean gum.",
     "dietary": [
       "Vegetarian",
@@ -23547,7 +23547,7 @@ window.MASTER_RECIPES = [
     "cookMins": 10,
     "totalMins": 35,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The undisputed king of Italian gelaterias: authentic Sicilian Pistacchio di Bronte gelato. Made with 100% pure roasted emerald-green pistachio paste (no almond extracts, no green food dyes), balanced with Sicilian sea salt and churned to dense, luxurious perfection.",
     "dietary": [
       "Vegetarian",
@@ -23734,7 +23734,7 @@ window.MASTER_RECIPES = [
     "cookMins": 5,
     "totalMins": 20,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "A breathtaking ruby-crimson palate cleanser and modernist sorbet. Fresh Sicilian Moro blood orange juice calibrated to exactly 28° Brix with simple syrup and dextrose, infused with Campari bitter aperitivo and stabilized with cold-hydrating xanthan gum.",
     "dietary": [
       "Vegan",
@@ -23907,7 +23907,7 @@ window.MASTER_RECIPES = [
     "cookMins": 15,
     "totalMins": 30,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The quintessential Parisian cafe luxury: thick slices of golden toasted brioche stuffed with French cooked ham (jambon blanc) and aged Gruyère, smothered in bubbling, broiled Sauce Mornay and crowned with a sunny-side-up farm egg with a molten yolk.",
     "dietary": [],
     "sensoryRole": "Decadent toasted brioche crunch, bubbling cheesy Mornay blanket, molten runny yolk cascading over salty ham",
@@ -24098,7 +24098,7 @@ window.MASTER_RECIPES = [
     "cookMins": 210,
     "totalMins": 250,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The soul of Jalisco: bone-in beef shank and chuck roast slow-braised in a rich, velvety adobo of toasted Guajillo, Ancho, and Pasilla chilies, charred aromatics, Mexican cinnamon, cloves, and Mexican oregano. Served as shred-tender beef with steaming bowls of cilantro-flecked rich consomé and griddled quesabirria tacos.",
     "dietary": [
       "Gluten-Free"
@@ -24309,7 +24309,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 45,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The masterclass of Northern Italian grain cookery: superfino Carnaroli rice toasted in butter, deglazed with crisp dry white wine, and slow-nourished with steaming porcini mushroom broth, finished off the heat with the vigorous emulsification (mantecatura) of frozen cultured butter and 24-month Parmigiano-Reggiano into a flowing wave (all'onda).",
     "dietary": [
       "Vegetarian",
@@ -24496,7 +24496,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 105,
     "yieldServings": 10,
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The soul of the French countryside: a rustic high-hydration naturally leavened country sourdough boule. Crafted with wild levain, stoneground dark rye, whole wheat, and high-protein bread flour, cold-retarded for 18 hours and baked inside a blistering Dutch oven to achieve a singing, blistered, mahogany crust with an open, custard-like crumb.",
     "dietary": [
       "Vegan"
@@ -24672,7 +24672,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 115,
     "yieldServings": 10,
-    "heroImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The showpiece of modern French pastry architecture: multi-layered entremet featuring dark chocolate pain de gênes sponge, crispy hazelnut praliné feuilletine base, tart raspberry gelee insert, cloud-like 66% Valrhona dark chocolate mousse, and a flawless gleaming dark chocolate mirror glaze (glaçage miroir).",
     "dietary": [
       "Vegetarian"
@@ -24883,7 +24883,7 @@ window.MASTER_RECIPES = [
     "cookMins": 90,
     "totalMins": 110,
     "yieldServings": 12,
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pure art of sugar and egg albumin: Swiss method meringues gently heated over a water bath to dissolve all sugar crystals, whipped into a blindingly glossy, stiff marshmallow meringue, piped into elegant rosettes, dusted with freeze-dried raspberry powder, and dehydrated to porcelain-crisp perfection.",
     "dietary": [
       "Vegetarian",
@@ -25054,7 +25054,7 @@ window.MASTER_RECIPES = [
     "cookMins": 40,
     "totalMins": 70,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The beloved Parisian boulangerie masterpiece: a tall 2-inch slice of ultra-creamy, wobbly Madagascar vanilla custard baked inside a crisp, buttery pâte brisée until the top blisters into dark caramelized leopard spots.",
     "dietary": [
       "Vegetarian"
@@ -25247,7 +25247,7 @@ window.MASTER_RECIPES = [
     "cookMins": 45,
     "totalMins": 85,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The Parisian classic created on Rue Bourdaloue in the 19th century: sweet buttery pâte sucrée tart shell filled with rich almond frangipane cream, topped with tender vanilla-poached William pears fanned across the surface, baked until golden and glazed with warm apricot confiture and toasted sliced almonds.",
     "dietary": [
       "Vegetarian"
@@ -25447,7 +25447,7 @@ window.MASTER_RECIPES = [
     "cookMins": 35,
     "totalMins": 50,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The rustic soul of central France: sweet, plump dark cherries baked in a delicate flan-like batter of farm eggs, whole milk, heavy cream, Kirsch, and vanilla, served warm straight from a buttered ceramic dish dusted with powdered sugar.",
     "dietary": [
       "Vegetarian"
@@ -25643,7 +25643,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 70,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The Parisian showcase: a razor-thin, crisp, buttery pâte sablée shell filled with Pierre Hermé-style emulsified lemon curd, crowned with towering peaks of glossy Italian meringue torched to caramelized bronze perfection.",
     "dietary": [
       "Vegetarian"
@@ -25826,7 +25826,7 @@ window.MASTER_RECIPES = [
     "cookMins": 18,
     "totalMins": 108,
     "yieldServings": 10,
-    "heroImage": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The holy grail of French morning viennoiserie: hand-laminated yeast dough layered with 84% tournage butter, folded into 27 crisp shattering micro-layers around two parallel batons of bittersweet 44% Cacao Barry dark chocolate, proofed to trembling lightness and baked to deep golden-bronze perfection.",
     "dietary": [
       "Vegetarian"
@@ -26023,7 +26023,7 @@ window.MASTER_RECIPES = [
     "cookMins": 25,
     "totalMins": 85,
     "yieldServings": 8,
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The decadent hybrid of rich egg brioche and flaky croissant lamination: enriched buttery brioche dough laminated with French butter, rolled with cinnamon brown butter and Belgian pearl sugar, baked in butter-sugared molds until the exterior caramelizes into a crunchy toffee shell.",
     "dietary": [
       "Vegetarian"
@@ -26188,7 +26188,7 @@ window.MASTER_RECIPES = [
     "cookMins": 0,
     "totalMins": 20,
     "yieldServings": 4,
-    "heroImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pure national treasure of Peru: pristine fresh sashimi-grade white fish cured for only 90 seconds in ice-cold Leche de Tigre (lime juice, fish trim fumet, ají limo chili, red onion, garlic, ginger, and fresh cilantro), served with steamed sweet potato, giant choclo corn, and crunchy toasted canchita.",
     "dietary": [
       "Gluten-Free",
@@ -26385,7 +26385,7 @@ window.MASTER_RECIPES = [
     "cookMins": 12,
     "totalMins": 102,
     "yieldServings": 6,
-    "heroImage": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1200&q=80",
+    "heroImage": "",
     "summary": "The pinnacle of Jiangnan dim sum engineering: paper-thin translucent wrappers folded with 18-24 intricate pleats, encapsulating tender ginger-seasoned Kurobuta pork and a rich, gelatin-rich broth that liquefies into a volcanic explosion of savory soup upon steaming.",
     "dietary": [],
     "sensoryRole": "Translucent delicate wrapper, volcanic savory broth explosion, tender savory pork, zingy black vinegar ginger dip",

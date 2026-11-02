@@ -659,3 +659,5 @@ dialog::backdrop {
  #kitchen-mode-container > div:first-child > div:last-child{flex-wrap:wrap}
  #kitchen-mode-container h1{font-size:clamp(1.5rem,6vw,2.4rem)!important}
 }
+
+.culinary-image-empty{aspect-ratio:auto;min-height:120px;background:linear-gradient(120deg,var(--bg-elevated),var(--bg-card));border:1px solid var(--border-subtle);color:var(--text-secondary);place-items:start}.culinary-image-empty span{font-size:1.15rem;padding:1.2rem 1.2rem 2.8rem}.culinary-image-empty small{margin-top:.4rem;color:var(--text-muted)}

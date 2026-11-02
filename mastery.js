@@ -2,8 +2,13 @@
 (() => {
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  window.culinaryImage=r=>{
-  let src='';try{const u=new URL(r.heroImage,location.href);if(u.protocol==='https:'||u.origin===location.origin)src=u.href}catch{}
-  return `<figure class="culinary-image"><span>${esc(r.cuisine||'L’Atelier')}<small>Illustrative culinary imagery</small></span>${src?`<img src="${esc(src)}" alt="" loading="lazy" decoding="async" onload="this.classList.add('loaded')" onerror="this.remove()">`:''}<figcaption>${esc(r.category||'The culinary workshop')}</figcaption></figure>`;
+  // Display only an explicitly reviewed, recipe-specific image assignment.
+  const image=window.ATELIER_VERIFIED_IMAGES?.[r.id];
+  let src='';
+  if(image?.verified===true && image.src && image.alt && image.source){
+   try{const u=new URL(image.src,location.href);if(u.protocol==='https:'||u.origin===location.origin)src=u.href;}catch{}
+  }
+  return `<figure class="culinary-image ${src?'':'culinary-image-empty'}"><span>${esc(r.cuisine||'L’Atelier')}<small>${src?'Recipe-specific photograph':'No verified dish photograph'}</small></span>${src?`<img src="${esc(src)}" alt="${esc(image.alt)}" loading="lazy" decoding="async" onload="this.classList.add('loaded')" onerror="this.remove()">`:''}<figcaption>${esc(r.category||'The culinary workshop')}</figcaption></figure>`;
  };
  const cards=rows=>`<div class="mastery-grid">${rows.map(r=>`<details><summary>${esc(r[0])}</summary>${r.slice(1).map(p=>`<p>${esc(p)}</p>`).join('')}</details>`).join('')}</div>`;
  window.renderMastery=el=>{
