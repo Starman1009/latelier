@@ -1,3 +1,22 @@
+## Continuation audit — 2026-11-02
+
+- Retained 153 master records with exactly 28 top-level keys. Filled 472 missing nested structural fields using empty strings/nulls (and ordinal step numbers), without inventing recipe facts. Existing draft provenance moved to `recipe-provenance.json`.
+- Added five selectable kitchen station layouts and measured EP/AP calculator. Inputs reject nonpositive weights and yields outside (0,100]. Public mobile navigation now scrolls horizontally.
+- Extended voice commands: next, previous, repeat/read step, numeric/spelled-minute timers. Countdown uses a wall-clock deadline, survives step changes, replaces the prior timer, and stops when cooking mode exits. Voice end resets the visible control. Browser microphone recognition still needs live-device acceptance testing; background alarm delivery depends on browser scheduling.
+- Encrypted 30 source-derived prep transcriptions alongside 12 complete manuals / 757 pages / one duplicate alias. Public `data-prep-manual.js` is an empty compatibility stub. Private batch shopping stays in memory and clears on lock. Original PDFs and their embedded video links remain available. Previous public versions still exist in Git history; this was not a history purge.
+- Added 10 publisher recipe links in the catalog, including Eataly, Rick Bayless, Great British Chefs, James Beard Foundation and Just One Cookbook. These are external source references, NOT newly imported or verified master recipes.
+- Service worker v10 includes new public modules and evicts old app caches on activation. Private payloads remain outside the offline cache.
+- Validation now enforces nested keys, exact top-level field count, shell asset presence, private/public separation, and nonzero process exit on failure.
+- Browser-native logic suite: 10 passing checks for EP/AP, edge cases, timer phrases and accidental speech rejection. UI checked: station selection, yield output, private unlock/search/batch export/lock, catalog rendering, recipe modal, cooking timer and keyboard step navigation.
+
+### Remaining work (not claimed complete)
+
+- Reach 200–250 source-reviewed complete recipes; independently review existing catalog quantities, yields, safety statements and instructions. No invented source data was added to meet a count.
+- Verify private prep transcriptions against original PDF page references; integrate individual manual recipes with all advanced labs only after reliable structured extraction. Current private workspace preserves every page and offers menu, prep, notes, shopping and source videos.
+- Live microphone, audible alarm, background timer and offline device acceptance tests; persistent waste log; encrypted session-note backup.
+
+---
+
 # L’Atelier · Master Development Progress Log
 
 **Repository:** `Starman1009/latelier`  
@@ -31,46 +50,9 @@
 
 ---
 
-### 2. Professional Kitchen Prep & Station Manual (`data-prep-manual.js`)
-- **Origin:** Distilled directly from authentic restaurant training manuals (Sauce, Lineset, Protein, Produce, Bake, Brunch, Desserts, Panfry, Entrée, Salads, Appetizers).
-- **Dataset:** 30 comprehensive standardized operational cards:
-  - *Classical Emulsified Hollandaise (Vitamix & Handheld)*
-  - *Calabrian Chili Caesar Dressing*
-  - *Green Herb Chermoula*
-  - *Classical Sauce au Poivre (Green Peppercorn Flambé)*
-  - *House Black Truffle Butter & Glaze*
-  - *Shiro Miso Butter Glaze*
-  - *Dashi Mayo Emulsion*
-  - *Yuzu Kosho Broth & Ceviche Marinade*
-  - *Citrus Ahi Tuna 20s Blanch & Shock*
-  - *Atlantic Salmon Aburi Cut & Curing Spec*
-  - *Fresh Lobster Tail Split & Perch Technique*
-  - *Golden Rules of Protein Breading (Triple Dredge)*
-  - *Baja Cod 1.5-oz Tempura Cut*
-  - *Compart Duroc Pork Chop 24h Brine Standard*
-  - *Organic Chicken Breast Flapping & Uniformity*
-  - *Romaine Heart Core-Pumping & De-Sanding*
-  - *Produce Storage Law (Damp Linen vs. Dry Linen)*
-  - *Watermelon Radish & Fennel Mandoline Precision Cut*
-  - *Potato Pavé Sheet Lamination & Press Spec*
-  - *Classical Graham Cracker Crust Par-Bake*
-  - *Stabilized Chantilly Cream (Gelatin vs. Mascarpone)*
-  - *Scratch Bourbon Pecan Pie Custard & Assembly*
-  - *Key Lime Curd Par-Bake Limits*
-  - *Golden Rule: Reheating & Holding Soups (180°F to 165°F Ice Wand)*
-  - *Golden Rule: Oysters on the Half Shell & 90-Day Tag Custody*
-  - *Golden Rule: Squeeze Bottle Laws & FIFO Decanting*
-  - *Golden Rule: Precision Protein Portioning Cadence (5-7s Batch 10)*
-  - *Crispy Potato Starch Blanch & Surface Amylose Washing*
-  - *Par-Cooked Fresh Pasta Shocking & Oil Barrier Law*
-  - *6-Minute 15-Second Soft Boiled Egg (Onsen/Ramen Spec)*
-- **User Interface (`renderPrepManualView`):**
-  - Integrated into top navigation: `<span>📋</span> Kitchen Manual`.
-  - Category filters: All, Sauces & Emulsions, Protein & Seafood Specs, Produce & Precision Knife Work, Pastry & Baking Foundations, Lineset & Operational Standards, Compound Butters & Fats, Golden Rules & HACCP Protocols.
-  - Real-time search across titles, stations, steps, and ingredients.
-  - Interactive Batch Scaler: One-click yield switching (e.g. 1 Quart vs. 1 Gallon) with dynamic ingredient quantity recalculation.
-  - Critical Control Point (HACCP) safety callout with red/amber badges.
-  - Action buttons: "Add Batch Ingredients to Provisions" and "Copy Card".
+### 2. Private Kitchen Manuals
+
+Thirty existing operational transcriptions and all original manual pages are available in the password-encrypted workspace. Source-specific specifications are no longer copied into public JavaScript or generator scripts. Transcriptions require comparison with original documents before use.
 
 ---
 

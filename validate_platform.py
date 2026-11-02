@@ -9,8 +9,8 @@ errors = 0
 
 # 1. Encoding check
 files_to_check = [
-    'index.html', 'latelier.js', 'latelier.css', 'mastery.js',
-    'data-recipes.js', 'data-prep-manual.js', 'data-mastery.js',
+    'index.html', 'latelier.js', 'latelier.css', 'mastery.js', 'recipe-sources.js',
+    'data-recipes.js', 'kitchen-operations.js', 'data-mastery.js',
     'data-flavor.js', 'data-academy.js', 'data-science.js',
     'data-encyclopedia.js', 'sw.js', 'vault.html', 'vault.js'
 ]
@@ -63,6 +63,17 @@ else:
             errors += 1
         ids_seen.add(r['id'])
 
+        if len(r) != 28:
+            print(f"ERROR: Recipe {r.get('id')} must have exactly 28 top-level keys")
+            errors += 1
+        for field, keys in [('ingredients', {'name','qty','unit','prep','dept'}), ('equipment', {'name','type'}), ('steps', {'stepNum','text','sensoryCue','scienceNote','timerMins'})]:
+            items = r.get(field)
+            if not isinstance(items, list) or not items:
+                print(f"ERROR: {r.get('id')} has empty or invalid {field}")
+                errors += 1
+            elif any(not isinstance(item, dict) or keys - set(item) for item in items):
+                print(f"ERROR: {r.get('id')} has missing nested {field} keys")
+                errors += 1
         for req in REQUIRED_FIELDS:
             if req not in r:
                 print(f"❌ Recipe {r.get('id')} missing field: {req}")
@@ -70,7 +81,7 @@ else:
                 errors += 1
 
     if missing_fields_count == 0:
-        print("✓ All 153 recipes conform strictly to the 28-field schema.")
+        print(f"✓ All {len(recipes)} recipes contain the 28 required fields (not a culinary/source verification).")
 
 # 3. Prep manual verification
 with open('data-prep-manual.js', 'r', encoding='utf-8') as f:
@@ -89,16 +100,16 @@ else:
             if pk not in c:
                 print(f"❌ Prep card {c.get('id')} missing key: {pk}")
                 errors += 1
-    print("✓ All prep manual cards contain full brigade HACCP, yields, and procedures.")
+    print("✓ Public prep stub parsed; private cards are checked separately after decryption.")
 
 # 4. Service Worker verification
 with open('sw.js', 'r', encoding='utf-8') as f:
     sw_text = f.read()
 
-if 'data-prep-manual.js' in sw_text and 'atelier-kitchen-v9' in sw_text:
-    print("✓ Service Worker cache manifest updated to v9 and includes data-prep-manual.js.")
+if 'kitchen-operations.js' in sw_text and re.search(r'atelier-kitchen-v[0-9]+', sw_text):
+    print("✓ Service Worker includes kitchen operations with a versioned cache.")
 else:
-    print("❌ Service Worker cache needs data-prep-manual.js or v9.")
+    print("❌ Service Worker cache is missing kitchen operations or version.")
     errors += 1
 
 # 5. Index HTML navigation verification
@@ -113,15 +124,22 @@ for n in required_nav:
 
 print(f"✓ Navigation pills verified for all {len(required_nav)} active views.")
 
-if 'data-prep-manual.js' in html_text and 'data-recipes.js' in html_text:
-    print("✓ Script tags for data-recipes.js and data-prep-manual.js verified.")
+if 'kitchen-operations.js' in html_text and 'data-recipes.js' in html_text:
+    print("✓ Recipe and kitchen operations script tags verified.")
 else:
     print("❌ Missing script tags in index.html.")
     errors += 1
 
-print("--------------------------------------------------")
-if errors == 0:
-    print("🎉 ALL 5 AUDIT PHASES PASSED WITH ZERO ERRORS!")
-else:
-    print(f"⚠️ AUDIT FINISHED WITH {errors} ISSUES.")
-print("==================================================")
+# Confidential operational cards must not ship in the public data stub.
+if 'prep_items = [' in open('compile_prep_manual.py', encoding='utf-8').read():
+    print('ERROR: Private prep compiler contains public source data.')
+    errors += 1
+if prep_cards:
+    print('ERROR: Private prep cards found in public JavaScript.')
+    errors += 1
+for asset in re.findall(r"['\"](\./[^'\"]+)['\"]", sw_text.split('const LOCAL')[0]):
+    if not os.path.exists(asset):
+        print('ERROR: Missing shell asset:', asset)
+        errors += 1
+print(f'Validation finished: {errors} errors. Schema checks do not verify recipe accuracy.')
+sys.exit(1 if errors else 0)

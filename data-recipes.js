@@ -127,7 +127,8 @@ window.MASTER_RECIPES = [
         "text": "Carefully slide the flexible fish spatula underneath and flip the sole in a single confident stroke. Cook the reverse side for 2 to 3 minutes until flesh is opaque to the bone (core temp 52°C / 125°F). Transfer to warm warmed serving plates.",
         "timerMins": 2.5,
         "temperature": "52°C core",
-        "sensoryCue": "The flesh feels gently resilient when pressed lightly near the spine; edge flakes separate with faint fork pressure."
+        "sensoryCue": "The flesh feels gently resilient when pressed lightly near the spine; edge flakes separate with faint fork pressure.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
@@ -148,7 +149,8 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Spoon the sizzling beurre noisette evenly over the rested fish fillets. Garnish with a fluted lemon crown and serve immediately while the crust is crisp.",
         "timerMins": 0.5,
-        "sensoryCue": "The sauce foams gently across the crisp sole crust with an audible faint sizzle."
+        "sensoryCue": "The sauce foams gently across the crisp sole crust with an audible faint sizzle.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -314,19 +316,22 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Remove the pan from the heat. Tilt the pan away from you at a 45-degree angle. Use the spatula to gently fold the top third of the omelette down toward the middle, then roll the bottom third over to encase the center into a neat cylinder.",
         "timerMins": 0.5,
-        "sensoryCue": "The egg layer peels effortlessly from the pan like silk without tearing or browning."
+        "sensoryCue": "The egg layer peels effortlessly from the pan like silk without tearing or browning.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Tap the handle of the pan firmly with your fist to bounce the far lip of the omelette upward over the seam. Invert the pan directly over a warm plate so the omelette lands seam-side down in a perfect tapered spindle.",
         "timerMins": 0.5,
-        "sensoryCue": "A smooth, unbroken, golden-yellow almond shape resting on the porcelain."
+        "sensoryCue": "A smooth, unbroken, golden-yellow almond shape resting on the porcelain.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Rub the remaining 10g cold butter block directly over the hot surface of the omelette to create a mirror-like sheen. Garnish with a pinch of fresh chives and serve immediately.",
         "timerMins": 0.2,
-        "sensoryCue": "A glossy lacquer reflects light; a slit with a knife reveals the molten, custardy baveuse interior running slowly onto the plate."
+        "sensoryCue": "A glossy lacquer reflects light; a slit with a knife reveals the molten, custardy baveuse interior running slowly onto the plate.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -533,7 +538,8 @@ window.MASTER_RECIPES = [
         "text": "Render lardons in a large Dutch oven over medium heat for 8 minutes until crisp and golden. Remove lardons with a slotted spoon, leaving fragrant bacon fat in the pot.",
         "timerMins": 8,
         "temperature": "140°C",
-        "sensoryCue": "Lardons turn deep amber-gold and buoyant in their rendered clear fat with a distinct smoky, savory aroma."
+        "sensoryCue": "Lardons turn deep amber-gold and buoyant in their rendered clear fat with a distinct smoky, savory aroma.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -548,20 +554,23 @@ window.MASTER_RECIPES = [
         "text": "Add chopped onions and carrots to the remaining fat; cook over medium heat for 6 minutes until lightly caramelized. Stir in tomato paste and crushed garlic; cook 2 minutes until the paste turns brick red and fragrant.",
         "timerMins": 8,
         "temperature": "140°C",
-        "sensoryCue": "Tomato paste darkens from bright red to deep mahogany; sugars lightly toast against the pan base (pincer la tomate)."
+        "sensoryCue": "Tomato paste darkens from bright red to deep mahogany; sugars lightly toast against the pan base (pincer la tomate).",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Return the beef and its accumulated juices to the pot. Dust with 35g flour and toss well to coat. Cook for 2 minutes to cook out raw starch flavor.",
         "timerMins": 2,
-        "sensoryCue": "The flour toasts lightly and absorbs the surface fat, coating the meat in a matte sheen (singer)."
+        "sensoryCue": "The flour toasts lightly and absorbs the surface fat, coating the meat in a matte sheen (singer).",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Pour in the Cognac and scrape up the dark fond from the bottom of the pot. Pour in the full bottle of Pinot Noir and the brown veal stock. Add the bouquet garni and half of the reserved crispy lardons. Bring to a gentle simmer.",
         "timerMins": 5,
         "temperature": "95°C",
-        "sensoryCue": "Steam rises carrying intoxicating wine esters and roasted aromatics. The liquid turns a deep purple-red hue."
+        "sensoryCue": "Steam rises carrying intoxicating wine esters and roasted aromatics. The liquid turns a deep purple-red hue.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
@@ -575,19 +584,22 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "While beef braises, glaze the pearl onions in a small skillet with 20g butter, 50ml water, a pinch of sugar and salt, covered for 15 minutes, then uncover to caramelize. In a separate pan, sauté mushrooms in 20g butter over high heat until browned.",
         "timerMins": 20,
-        "sensoryCue": "Pearl onions turn glossy and golden-amber; mushrooms brown deeply and release rich earthy aromatics."
+        "sensoryCue": "Pearl onions turn glossy and golden-amber; mushrooms brown deeply and release rich earthy aromatics.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Remove Dutch oven from oven. Gently transfer beef to a dish. Strain the braising liquid through a chinois into a saucepan, pressing lightly on vegetables. Skim excess fat from the surface and simmer sauce for 10 minutes until it coats the back of a spoon (nappe).",
         "timerMins": 12,
-        "sensoryCue": "The sauce reduces to a lustrous, glossy deep mahogany sauce that coats a spoon cleanly without separating."
+        "sensoryCue": "The sauce reduces to a lustrous, glossy deep mahogany sauce that coats a spoon cleanly without separating.",
+        "scienceNote": ""
       },
       {
         "stepNum": 9,
         "text": "Recombine the beef, sauce, glazed pearl onions, sautéed mushrooms, and remaining crisp lardons in the Dutch oven. Warm gently for 5 minutes. Serve over velvety Pommes Purée.",
         "timerMins": 5,
-        "sensoryCue": "Glistening, rich braise with steam carrying deep red wine, herbs, and earthy mushroom perfume."
+        "sensoryCue": "Glistening, rich braise with steam carrying deep red wine, herbs, and earthy mushroom perfume.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -778,45 +790,52 @@ window.MASTER_RECIPES = [
         "text": "Crisp lardons in Dutch oven over medium heat for 6 minutes until browned. Transfer with slotted spoon to a paper-towel-lined plate.",
         "timerMins": 6,
         "temperature": "145°C",
-        "sensoryCue": "Lardons are crisp and fragrant; clear rendered pork fat fills the pan."
+        "sensoryCue": "Lardons are crisp and fragrant; clear rendered pork fat fills the pan.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Sear chicken skin-side down in the hot bacon fat over medium-high heat for 5 minutes until deep golden brown. Turn and cook 3 minutes on reverse. Transfer chicken to a platter.",
         "timerMins": 8,
         "temperature": "175°C",
-        "sensoryCue": "Chicken skin renders its fat and turns crispy and amber-gold; aroma of roasting poultry."
+        "sensoryCue": "Chicken skin renders its fat and turns crispy and amber-gold; aroma of roasting poultry.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Add minced garlic and tomato paste to the pot; stir for 1 minute until fragrant. Deglaze with Cognac, scraping up all brown fond.",
         "timerMins": 2,
-        "sensoryCue": "Flambé flame subsides leaving a glossy glaze on the bottom of the pot."
+        "sensoryCue": "Flambé flame subsides leaving a glossy glaze on the bottom of the pot.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Pour in Pinot Noir and chicken stock. Whisk in flour thoroughly. Add the herb sachet and return chicken pieces and half the lardons to the pot. Liquid should reach two-thirds up the chicken.",
         "timerMins": 3,
-        "sensoryCue": "The purple-red braising liquid comes to a gentle simmer with small lazy bubbles."
+        "sensoryCue": "The purple-red braising liquid comes to a gentle simmer with small lazy bubbles.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Cover partially and simmer gently over low heat for 35 to 40 minutes until chicken is tender and registers 74°C (165°F) internally.",
         "timerMins": 38,
         "temperature": "88°C braise",
-        "sensoryCue": "Chicken meat pulls easily from the bone; chicken skin absorbs the deep purple wine hue."
+        "sensoryCue": "Chicken meat pulls easily from the bone; chicken skin absorbs the deep purple wine hue.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Meanwhile, sauté pearl onions and mushrooms in 20g butter in a separate skillet for 10 minutes until deeply golden.",
         "timerMins": 10,
-        "sensoryCue": "Mushrooms squeak then sizzle; onions develop glistening golden caramelized edges."
+        "sensoryCue": "Mushrooms squeak then sizzle; onions develop glistening golden caramelized edges.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Transfer chicken to a warm platter. Simmer the sauce over medium-high heat for 6-8 minutes until reduced and silky. Whisk in remaining 10g cold butter. Add sautéed mushrooms, pearl onions, and reserved lardons. Pour over chicken.",
         "timerMins": 8,
-        "sensoryCue": "The sauce shines like lacquer; garnishes coat evenly in the rich Burgundian reduction."
+        "sensoryCue": "The sauce shines like lacquer; garnishes coat evenly in the rich Burgundian reduction.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -1010,7 +1029,8 @@ window.MASTER_RECIPES = [
         "text": "Place rinsed, dried duck legs snugly in a single layer inside a deep baking dish or Dutch oven. Pour melted duck fat over them until completely submerged.",
         "timerMins": 5,
         "temperature": "60°C fat",
-        "sensoryCue": "Duck legs are entirely immersed beneath a golden liquid sea of warm duck fat."
+        "sensoryCue": "Duck legs are entirely immersed beneath a golden liquid sea of warm duck fat.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -1024,32 +1044,37 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Check doneness: the meat should have shrunk slightly up the drumstick bone, and a toothpick should pierce the thickest part of the thigh with zero resistance.",
         "timerMins": 2,
-        "sensoryCue": "Meat pulls back from bone tips; texture is soft and supple."
+        "sensoryCue": "Meat pulls back from bone tips; texture is soft and supple.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Prepare Sarladaise potatoes: Heat 45g of the duck fat from the confit in a wide skillet over medium heat. Add sliced potatoes in an even layer. Sauté for 18 minutes, tossing periodically, until deeply browned and crisp at the edges. Toss with minced garlic and parsley.",
         "timerMins": 18,
         "temperature": "165°C",
-        "sensoryCue": "Potatoes sizzle merrily, transforming into crispy golden disks with soft, creamy centers."
+        "sensoryCue": "Potatoes sizzle merrily, transforming into crispy golden disks with soft, creamy centers.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Prepare Spiced Cherry Gastrique: In a small saucepan, bring honey and sherry vinegar to a vigorous boil until reduced and lightly caramelized (3 minutes). Add ruby port and tart cherries. Simmer 6 minutes until cherries burst and sauce is syrupy.",
         "timerMins": 9,
-        "sensoryCue": "Deep ruby red glossy syrup coating the spoon, with bright sweet-sour aroma cutting through the kitchen."
+        "sensoryCue": "Deep ruby red glossy syrup coating the spoon, with bright sweet-sour aroma cutting through the kitchen.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Finish duck: Place duck legs skin-side down in a dry, cold cast iron skillet over medium-low heat. Cook for 8-10 minutes without moving as remaining skin fat renders and skin crisps to a dark golden mahogany. Flip for 1 minute to warm the underside.",
         "timerMins": 10,
-        "sensoryCue": "Audible crackling like glass shattering; skin turns razor-thin, blistered, and deep golden brown."
+        "sensoryCue": "Audible crackling like glass shattering; skin turns razor-thin, blistered, and deep golden brown.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Plate the hot confit leg atop crisp Pommes Sarladaises and spoon the warm spiced cherry gastrique in an arc beside the duck.",
         "timerMins": 2,
-        "sensoryCue": "Steam rises as the knife edge crunches audibly through the skin."
+        "sensoryCue": "Steam rises as the knife edge crunches audibly through the skin.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -1234,7 +1259,8 @@ window.MASTER_RECIPES = [
         "text": "Prepare chocolate base: Whisk milk and cornstarch in a small saucepan over medium heat until thickened into a smooth cream (2 minutes). Remove from heat, whisk in chopped chocolate, salt, and vanilla until smooth and glossy. Whisk in the 4 egg yolks one by one.",
         "timerMins": 5,
         "temperature": "50°C",
-        "sensoryCue": "Rich, glossy mahogany chocolate cream with a mirror finish."
+        "sensoryCue": "Rich, glossy mahogany chocolate cream with a mirror finish.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
@@ -1247,7 +1273,8 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Fold: Whisk one-third of the whipped whites vigorously into the warm chocolate base to lighten its density (sacrifice fold). Then gently fold the remaining whites in two batches using a wide silicone spatula in wide sweeping J-motions until no white streaks remain.",
         "timerMins": 3,
-        "sensoryCue": "A homogenous, airy mousse that feels featherweight in the bowl."
+        "sensoryCue": "A homogenous, airy mousse that feels featherweight in the bowl.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
@@ -1268,7 +1295,8 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Dust tops immediately with powdered sugar. Serve within 90 seconds. At the table, pierce the center with a spoon and pour in cold vanilla bean crème anglaise.",
         "timerMins": 1,
-        "sensoryCue": "The spoon plunges into a warm, airy cloud, revealing a molten chocolate river that mingles with cold cream."
+        "sensoryCue": "The spoon plunges into a warm, airy cloud, revealing a molten chocolate river that mingles with cold cream.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -1479,20 +1507,23 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Pour in the dry white wine. Scrape up any fond and cook briskly over medium-high heat for 6 minutes until the smell of alcohol disappears and the liquid has completely evaporated into the meat.",
         "timerMins": 6,
-        "sensoryCue": "Sharp ethanol vapor gives way to a clean, fruity, acidic wine aroma; the bottom of the pot is dry."
+        "sensoryCue": "Sharp ethanol vapor gives way to a clean, fruity, acidic wine aroma; the bottom of the pot is dry.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Pour in 150ml of the warm milk. Simmer gently over medium-low heat until the milk is completely absorbed into the meat fibers (about 10 minutes).",
         "timerMins": 10,
-        "sensoryCue": "The meat absorbs the white dairy liquid, turning creamy and unctuous."
+        "sensoryCue": "The meat absorbs the white dairy liquid, turning creamy and unctuous.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Stir in tomato passata and remaining 150ml milk. Add a pinch of sea salt and black pepper. Bring to a faint simmer with tiny bubbles barely breaking the surface (sobollire). Partially cover with the lid.",
         "timerMins": 5,
         "temperature": "85°C",
-        "sensoryCue": "The sauce transforms into a rich terracotta orange hue with lazy, occasional bubbles."
+        "sensoryCue": "The sauce transforms into a rich terracotta orange hue with lazy, occasional bubbles.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
@@ -1505,13 +1536,15 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Boil fresh tagliatelle in salted water (10g salt per liter) for 2 to 3 minutes until al dente. Reserve 100ml pasta water.",
         "timerMins": 3,
-        "sensoryCue": "Fresh pasta floats to the surface and feels supple yet firm to the bite."
+        "sensoryCue": "Fresh pasta floats to the surface and feels supple yet firm to the bite.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Transfer cooked pasta directly into the ragù pan with a splash of pasta cooking water and 30g butter. Toss vigorously for 1 minute over medium heat to emulsify (mantecare). Serve immediately with grated Parmigiano-Reggiano.",
         "timerMins": 1.5,
-        "sensoryCue": "The sauce coats every strand of tagliatelle like silk; no watery pool left on the bottom of the bowl."
+        "sensoryCue": "The sauce coats every strand of tagliatelle like silk; no watery pool left on the bottom of the bowl.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -1657,19 +1690,22 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Ladle 100ml of hot boiling water into the skillet with the toasted pepper. The water will boil violently, harvesting the pepper oils. Turn off heat.",
         "timerMins": 1,
-        "sensoryCue": "Vigorous hissing steam and pepper extraction turns the liquid grey-amber."
+        "sensoryCue": "Vigorous hissing steam and pepper extraction turns the liquid grey-amber.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Drop spaghetti into boiling water with only 5g salt (half normal ratio). Cook for exactly half its package time (approx 5 minutes), keeping it very firm.",
         "timerMins": 5,
-        "sensoryCue": "Pasta is pliable but has an opaque, raw core."
+        "sensoryCue": "Pasta is pliable but has an opaque, raw core.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Transfer the half-cooked spaghetti directly with tongs into the pepper skillet over medium heat. Ladle in 150ml of starchy cooking water. Finish cooking the pasta directly in the skillet (risottare), tossing constantly for 3-4 minutes until al dente.",
         "timerMins": 4,
-        "sensoryCue": "The pasta starch leaches into the water, transforming the skillet liquid into a cloudy, viscous emulsion."
+        "sensoryCue": "The pasta starch leaches into the water, transforming the skillet liquid into a cloudy, viscous emulsion.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
@@ -1684,19 +1720,22 @@ window.MASTER_RECIPES = [
         "text": "CRITICAL STEP: Remove the skillet completely from heat. Wait 30 seconds for the pan to cool to approximately 60°C (140°F). Dump the Pecorino crema over the pasta.",
         "timerMins": 0.5,
         "temperature": "60°C pan",
-        "sensoryCue": "The pan stops hissing and sizzling; quiet steam replaces vigorous boiling."
+        "sensoryCue": "The pan stops hissing and sizzling; quiet steam replaces vigorous boiling.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Toss and stir the pasta violently with tongs and a wooden spoon for 45 seconds, adding a tablespoon of warm pasta water if needed, until the cheese crema marries the pepper starch into an ultra-creamy, glossy sauce.",
         "timerMins": 1,
-        "sensoryCue": "Audible slapping sound (schiaffo) as the sauce thickens into a glossy white velvet that coats every strand."
+        "sensoryCue": "Audible slapping sound (schiaffo) as the sauce thickens into a glossy white velvet that coats every strand.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Plate immediately in warm bowls. Dust with the remaining 40g grated Pecorino and an extra grind of coarsely cracked pepper.",
         "timerMins": 0.5,
-        "sensoryCue": "A gleaming, glossy nest of pasta with pepper flecks and no broken oil or clumping."
+        "sensoryCue": "A gleaming, glossy nest of pasta with pepper flecks and no broken oil or clumping.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -1883,37 +1922,43 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Pour in white wine. It will hiss violently and steam. Stir continuously until the wine has completely evaporated and the pan is almost dry.",
         "timerMins": 2,
-        "sensoryCue": "Sharp steam of evaporating alcohol, followed by clean grape acidity."
+        "sensoryCue": "Sharp steam of evaporating alcohol, followed by clean grape acidity.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Add two ladles of simmering broth (broth must be boiling-hot to maintain pan temperature). Simmer over medium heat, stirring regularly in a figure-eight pattern. As broth is absorbed by the rice, add another ladle.",
         "timerMins": 10,
-        "sensoryCue": "Steady, gentle bubbling; broth thickens as starch sloughs off the grain surfaces into the liquid."
+        "sensoryCue": "Steady, gentle bubbling; broth thickens as starch sloughs off the grain surfaces into the liquid.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "At minute 12 of cooking, pour in the steeped saffron infusion along with the threads. Stir well.",
         "timerMins": 2,
-        "sensoryCue": "The entire pan transforms instantly into a dazzling, luminous deep golden-canary color with intoxicating hay-like saffron aroma."
+        "sensoryCue": "The entire pan transforms instantly into a dazzling, luminous deep golden-canary color with intoxicating hay-like saffron aroma.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Continue simmering and ladling broth until rice is cooked to 16-17 minutes total. Taste: the grain should be tender on the exterior with a distinct firm tooth in the center (all'onda). Remove pan from heat.",
         "timerMins": 5,
-        "sensoryCue": "Grains are plump, suspended in a glossy golden emulsion."
+        "sensoryCue": "Grains are plump, suspended in a glossy golden emulsion.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "THE MANTECATURA: Let the risotto rest off-heat for 1 minute. Add the frozen 50g butter cubes and grated Parmigiano-Reggiano. Beat vigorously with the wooden spoon while shaking the pan back and forth to incorporate air and emulsify fat into the starch.",
         "timerMins": 2,
-        "sensoryCue": "The mixture whips into a creamy, shimmering suspension. Tipping the pan causes the risotto to flow forward in a gentle, rolling wave (all'onda)."
+        "sensoryCue": "The mixture whips into a creamy, shimmering suspension. Tipping the pan causes the risotto to flow forward in a gentle, rolling wave (all'onda).",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Spoon into flat warmed plates. Tap the bottom of the plate firmly with the palm of your hand; the risotto should spread smoothly into an even, glossy disc without puddling liquid.",
         "timerMins": 1,
-        "sensoryCue": "Luminous gold disc that quivers gently when nudged."
+        "sensoryCue": "Luminous gold disc that quivers gently when nudged.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -2075,26 +2120,30 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Remove the crispy guanciale with a slotted spoon to a small dish, leaving the fragrant rendered liquid fat in the skillet. Turn off the heat under the skillet.",
         "timerMins": 1,
-        "sensoryCue": "Lardons cool to glass-crisp bite; rendered liquid fat smells savory and cured."
+        "sensoryCue": "Lardons cool to glass-crisp bite; rendered liquid fat smells savory and cured.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Boil spaghetti in salted water until 1.5 minutes shy of al dente. Reserve 150ml of starchy pasta water.",
         "timerMins": 8,
-        "sensoryCue": "Pasta has a firm core when bitten."
+        "sensoryCue": "Pasta has a firm core when bitten.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Whisk 2 tablespoons of the warm rendered guanciale fat directly into the bowl of egg yolks and cheese. This tempers the yolks and infuses them with rich pork flavor.",
         "timerMins": 1,
         "temperature": "55°C",
-        "sensoryCue": "The egg paste turns glossy, silky, and unctuous."
+        "sensoryCue": "The egg paste turns glossy, silky, and unctuous.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Using tongs, transfer hot spaghetti directly into the skillet with the remaining rendered fat over low heat. Toss for 1 minute with 3 tablespoons of pasta water to coat the strands in a shiny fat-water emulsion.",
         "timerMins": 1,
-        "sensoryCue": "Pasta turns glistening and glossy as fat binds to starch."
+        "sensoryCue": "Pasta turns glistening and glossy as fat binds to starch.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
@@ -2108,13 +2157,15 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Fold in three-quarters of the crisp guanciale. If sauce is too thick, add a splash of reserved pasta water to loosen until it flows luxuriously.",
         "timerMins": 0.5,
-        "sensoryCue": "Velvety, rich yellow sauce coating every single strand."
+        "sensoryCue": "Velvety, rich yellow sauce coating every single strand.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Twirl into warm bowls. Top with remaining crisp guanciale lardons, an extra dusting of Pecorino, and a shower of cracked black pepper.",
         "timerMins": 0.5,
-        "sensoryCue": "Steam carries the scent of cured pork and toasted pepper; deep golden yellow presentation."
+        "sensoryCue": "Steam carries the scent of cured pork and toasted pepper; deep golden yellow presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -2277,7 +2328,8 @@ window.MASTER_RECIPES = [
         "text": "Preheat your oven to 200°C (400°F) and position the top rack 6 inches from the broiler element. Line a heavy baking sheet with parchment paper.",
         "timerMins": 10,
         "temperature": "200°C",
-        "sensoryCue": "Oven reaches uniform radiant heat."
+        "sensoryCue": "Oven reaches uniform radiant heat.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
@@ -2299,7 +2351,8 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Transfer carefully with a fish spatula to warmed ceramic plates. Rest for 2 minutes. Lay a pink-tipped pickled ginger shoot (hajikami) beside each fillet.",
         "timerMins": 2,
-        "sensoryCue": "The fish flakes separate into silky, snow-white tiers under the slightest fork pressure."
+        "sensoryCue": "The fish flakes separate into silky, snow-white tiers under the slightest fork pressure.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -2507,14 +2560,16 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Dump the bones into the sink and discard all blanching water. Scrub every bone under cold running water with a stiff brush, picking out all black marrow clots and brown coagulated blood. Scrub the pot completely clean.",
         "timerMins": 15,
-        "sensoryCue": "Bones are pristine ivory and pink with no brown scum."
+        "sensoryCue": "Bones are pristine ivory and pink with no brown scum.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Return clean bones, trotters, and pork back fat to the pot. Cover with 6 liters of fresh cold water. Bring to a violent, rolling boil over high heat.",
         "timerMins": 25,
         "temperature": "100°C",
-        "sensoryCue": "Turbulent boiling water tumbling the heavy bones violently against one another."
+        "sensoryCue": "Turbulent boiling water tumbling the heavy bones violently against one another.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
@@ -2528,27 +2583,31 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Strain the broth through a fine chinois, pressing firmly on bone marrow and aromatics to extract every drop of gelatinous richness. Keep hot at 85°C.",
         "timerMins": 10,
-        "sensoryCue": "Broth coats the ladle with an opaque, velvety white film that leaves a sticky sensation on the lips."
+        "sensoryCue": "Broth coats the ladle with an opaque, velvety white film that leaves a sticky sensation on the lips.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Cook Hakata noodles in vigorously boiling water for exactly 45 to 60 seconds (kata - firm). Shake vigorously in the tebo basket to remove all cooking starch water.",
         "timerMins": 1,
         "temperature": "100°C",
-        "sensoryCue": "Noodles are pale, thin, with a springy toothsome snap."
+        "sensoryCue": "Noodles are pale, thin, with a springy toothsome snap.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Assemble bowls: Pour 35ml hot Shoyu Tare into each warmed ramen bowl. Ladle in 350ml piping hot Tonkotsu broth. Fold in noodles with chopsticks, lifting once to seat them neatly.",
         "timerMins": 1,
         "temperature": "85°C",
-        "sensoryCue": "The tare blooms into the white broth, tinting it a warm ivory-tan."
+        "sensoryCue": "The tare blooms into the white broth, tinting it a warm ivory-tan.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Top with 2 slices of chashu, a halved soft ramen egg, wood-ear mushroom strips, chopped scallions, and a swirl of black garlic mayu.",
         "timerMins": 1,
-        "sensoryCue": "Steam rises carrying intoxicating aromas of garlic, roasted pork, and sesame; dark black mayu streaks float across creamy ivory broth."
+        "sensoryCue": "Steam rises carrying intoxicating aromas of garlic, roasted pork, and sesame; dark black mayu streaks float across creamy ivory broth.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -2776,7 +2835,8 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Add minced garlic and ginger; stir-fry 30 seconds until fragrant. Pour in Shaoxing wine around the wok rim, then add the warm chicken stock, light soy sauce, and sugar. Bring to a vigorous boil.",
         "timerMins": 1.5,
-        "sensoryCue": "Lively bubbling red broth carrying spicy, fermented, and allium perfumes."
+        "sensoryCue": "Lively bubbling red broth carrying spicy, fermented, and allium perfumes.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
@@ -2797,13 +2857,15 @@ window.MASTER_RECIPES = [
         "stepNum": 6,
         "text": "Drizzle remaining 10ml oil around the edges of the wok; cook 20 seconds on high to set the glaze. Pour into a heated serving bowl.",
         "timerMins": 0.5,
-        "sensoryCue": "Glossy red oil separates slightly to the surface, insulating the dish."
+        "sensoryCue": "Glossy red oil separates slightly to the surface, insulating the dish.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Immediately dust the top with a generous snow of freshly ground roasted Sichuan peppercorn powder. Serve piping hot with bowls of steamed jasmine rice.",
         "timerMins": 0.5,
-        "sensoryCue": "Intense floral citrus-pine aroma of Sichuan pepper releases instantly as the powder hits the hot red oil."
+        "sensoryCue": "Intense floral citrus-pine aroma of Sichuan pepper releases instantly as the powder hits the hot red oil.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -3002,7 +3064,8 @@ window.MASTER_RECIPES = [
         "text": "In the Dutch oven, heat 20g butter over medium heat. Add remaining ginger-garlic paste and stir-fry for 1 minute until raw pungency disappears.",
         "timerMins": 1,
         "temperature": "130°C",
-        "sensoryCue": "Fragrant allium sizzle without browning."
+        "sensoryCue": "Fragrant allium sizzle without browning.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
@@ -3015,32 +3078,37 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Stir in cashew cream and remaining 60g cold butter. Whisk vigorously until the sauce transforms into an ultra-silky, glowing orange-coral gravy (makhani means 'buttery').",
         "timerMins": 3,
-        "sensoryCue": "The sauce turns from red to luminous velvet coral; glossy mirror sheen."
+        "sensoryCue": "The sauce turns from red to luminous velvet coral; glossy mirror sheen.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Add the charred chicken pieces along with any accumulated pan juices into the simmering sauce. Stir in heavy cream, honey, and fresh garam masala. Simmer gently over low heat for 8 minutes until chicken is cooked through.",
         "timerMins": 8,
         "temperature": "85°C",
-        "sensoryCue": "Gentle simmering with sweet spice aromas of green cardamom and cinnamon filling the kitchen."
+        "sensoryCue": "Gentle simmering with sweet spice aromas of green cardamom and cinnamon filling the kitchen.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Rub toasted Kasuri Methi between your palms directly over the pot, scattering the fragrant green herb flakes. Stir gently.",
         "timerMins": 1,
-        "sensoryCue": "Sudden explosion of warm, maple-like, complex bitter-sweet fenugreek aroma—the signature aroma of authentic Delhi butter chicken."
+        "sensoryCue": "Sudden explosion of warm, maple-like, complex bitter-sweet fenugreek aroma—the signature aroma of authentic Delhi butter chicken.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "THE DHUNGAR SMOKE: Place a small stainless steel ramekin into the center of the pot above the curry. Using tongs, heat a lump of natural hardwood charcoal directly over the gas burner until glowing red-hot. Place coal into ramekin, pour 5ml ghee directly onto the hot coal, and immediately cover the pot tightly with the lid. Trap smoke for exactly 3 minutes.",
         "timerMins": 3,
-        "sensoryCue": "Dense white fragrant smoke billows from the coal, infusing the entire makhani gravy with authentic tandoor woodsmoke essence."
+        "sensoryCue": "Dense white fragrant smoke billows from the coal, infusing the entire makhani gravy with authentic tandoor woodsmoke essence.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Remove coal ramekin. Swirl an extra tablespoon of cream over the top. Serve immediately with warm handmade garlic naan and fragrant basmati rice.",
         "timerMins": 1,
-        "sensoryCue": "Gleaming coral curry laced with white cream swirls and green crushed fenugreek."
+        "sensoryCue": "Gleaming coral curry laced with white cream swirls and green crushed fenugreek.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -3274,26 +3342,30 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "In a blender, combine rehydrated chiles (with their soaking liquid), charred tomatoes, charred onion, peeled charred garlic, cider vinegar, Mexican canela, cloves, cumin, Mexican oregano, and 10g salt. Blend on high for 2 minutes until ultra-smooth.",
         "timerMins": 3,
-        "sensoryCue": "A thick, velvety, deep crimson-maroon chili paste (adobo) with complex sweet-tart, spicy aromatics."
+        "sensoryCue": "A thick, velvety, deep crimson-maroon chili paste (adobo) with complex sweet-tart, spicy aromatics.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Sear the beef chuck chunks and bone-in short ribs in the Dutch oven with 20ml oil over high heat for 3 minutes per side until deeply browned. Remove beef.",
         "timerMins": 10,
         "temperature": "190°C",
-        "sensoryCue": "Lively sizzling and deep roasted beef crust aroma."
+        "sensoryCue": "Lively sizzling and deep roasted beef crust aroma.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Pour the blended adobo directly into the hot Dutch oven (it will boil and splatter violently). Fry the adobo over medium heat for 5 minutes, stirring constantly, until it darkens and oil separates to the top (sofrito).",
         "timerMins": 5,
-        "sensoryCue": "Adobo darkens from bright red to deep mahogany; sugars lightly toast."
+        "sensoryCue": "Adobo darkens from bright red to deep mahogany; sugars lightly toast.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Return seared beef and bones to the pot. Add 1 liter of water and 2 bay leaves. Liquid should completely submerge the meat. Bring to a boil.",
         "timerMins": 3,
-        "sensoryCue": "Crimson broth simmers vigorously."
+        "sensoryCue": "Crimson broth simmers vigorously.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
@@ -3307,13 +3379,15 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Remove beef from pot and shred coarsely with two forks on a cutting board, discarding bones. Skim the radiant red spiced beef fat from the surface of the consomé into a small bowl (for dipping tortillas).",
         "timerMins": 10,
-        "sensoryCue": "Juicy, glistening shredded beef saturated in dark red adobo; pure ruby-red tallow collected in bowl."
+        "sensoryCue": "Juicy, glistening shredded beef saturated in dark red adobo; pure ruby-red tallow collected in bowl.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Ladle piping hot consomé into individual bowls. Top with raw white onion, cilantro, and fresh lime juice. Serve with shredded beef and warm tortillas dipped in the red fat and crisped on the comal.",
         "timerMins": 2,
-        "sensoryCue": "Steam rises carrying spicy Guajillo, Mexican cinnamon, and rich beef broth aromas."
+        "sensoryCue": "Steam rises carrying spicy Guajillo, Mexican cinnamon, and rich beef broth aromas.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -3503,26 +3577,30 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Add sliced garlic, ground cumin, smoked paprika, and rose harissa. Cook for 2 minutes, stirring continuously, to bloom the spices in hot olive oil.",
         "timerMins": 2,
-        "sensoryCue": "Intense aromatic plume of smoky paprika, earthy cumin, and chili-coriander from the harissa."
+        "sensoryCue": "Intense aromatic plume of smoky paprika, earthy cumin, and chili-coriander from the harissa.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Pour in crushed San Marzano tomatoes with their juices. Season with 4g sea salt and a pinch of black pepper. Bring to a lively simmer, then lower heat to medium-low and simmer uncovered for 10-12 minutes until the sauce has thickened and no longer looks watery.",
         "timerMins": 11,
         "temperature": "90°C",
-        "sensoryCue": "The sauce transforms into a rich, deep scarlet-orange ragout that leaves a clean trail when a wooden spoon is dragged across the pan bottom."
+        "sensoryCue": "The sauce transforms into a rich, deep scarlet-orange ragout that leaves a clean trail when a wooden spoon is dragged across the pan bottom.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Using the back of a large spoon, make four distinct shallow wells in the hot tomato-pepper stew, spaced evenly around the skillet.",
         "timerMins": 1,
-        "sensoryCue": "Four stable craters holding their shape in the thick stew."
+        "sensoryCue": "Four stable craters holding their shape in the thick stew.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Gently slip one raw egg into each well. Scatter crumbled sheep's milk feta all around the eggs into the sauce. Sprinkle a tiny pinch of salt and smoked paprika directly onto each egg yolk.",
         "timerMins": 1,
-        "sensoryCue": "Pristine white-and-yellow eggs nested snugly into bubbling red stew; white feta cubes melting slightly."
+        "sensoryCue": "Pristine white-and-yellow eggs nested snugly into bubbling red stew; white feta cubes melting slightly.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
@@ -3536,7 +3614,8 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Remove from heat immediately. Scatter fresh cilantro and flat-leaf parsley across the top. Drizzle with a thin ribbon of fresh olive oil. Bring the hot cast iron skillet directly to the table with warm crusty sourdough or za'atar pita.",
         "timerMins": 1,
-        "sensoryCue": "Sizzling skillet on the trivet; piercing an egg yolk with bread unleashes a warm river of golden yolk into the spicy red sauce."
+        "sensoryCue": "Sizzling skillet on the trivet; piercing an egg yolk with bread unleashes a warm river of golden yolk into the spicy red sauce.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -3706,32 +3785,37 @@ window.MASTER_RECIPES = [
         "text": "Prepare Hollandaise: Whisk 3 egg yolks, lemon juice, and 15ml water in a heatproof bowl over a double boiler of barely simmering water until pale, thick, and ribbon-like.",
         "timerMins": 4,
         "temperature": "60°C",
-        "sensoryCue": "Whisk leaves distinct tracks through the thickened yolks."
+        "sensoryCue": "Whisk leaves distinct tracks through the thickened yolks.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Slowly drizzle in warm clarified butter in a thin, steady thread while whisking continuously until a thick, glossy, spoonable emulsion forms. Season with salt and cayenne. Keep warm at 55°C.",
         "timerMins": 4,
-        "sensoryCue": "Sauce turns radiant golden yellow, coating the back of a spoon."
+        "sensoryCue": "Sauce turns radiant golden yellow, coating the back of a spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Poach eggs: Stir simmering water to create a gentle vortex. Slip eggs into the center one by one. Poach for 3 minutes until whites are completely set and yolks remain molten. Remove with slotted spoon to paper towels.",
         "timerMins": 3,
         "temperature": "88°C",
-        "sensoryCue": "Egg whites wrap cleanly around yolk; gentle wobble when touched."
+        "sensoryCue": "Egg whites wrap cleanly around yolk; gentle wobble when touched.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Brown Canadian bacon in a dry skillet for 1.5 minutes per side. Toast English muffins golden brown.",
         "timerMins": 3,
-        "sensoryCue": "Bacon edges sizzle; muffins are deeply toasted."
+        "sensoryCue": "Bacon edges sizzle; muffins are deeply toasted.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Assemble: Place muffin halves cut-side up on warm plates. Top each with Canadian bacon, a poached egg, and a generous ladle of warm Hollandaise. Garnish with minced chives and serve immediately.",
         "timerMins": 1,
-        "sensoryCue": "Hollandaise drapes luxuriously over the poached egg dome."
+        "sensoryCue": "Hollandaise drapes luxuriously over the poached egg dome.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -3890,32 +3974,37 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Dough shaping: Dust dough ball in semolina. Using fingertips, press gently from the center outward to push trapped CO2 gas into the outer rim, leaving a raised 2cm border (cornicione). Never use a rolling pin.",
         "timerMins": 2,
-        "sensoryCue": "Dough expands into a supple, translucent 12-inch disc with puffed airy edges."
+        "sensoryCue": "Dough expands into a supple, translucent 12-inch disc with puffed airy edges.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Sauce: Spread 75g hand-crushed San Marzano tomatoes in a thin, circular spiral starting from center outward, leaving the cornicione bare.",
         "timerMins": 1,
-        "sensoryCue": "Vibrant red sauce coats the pale dough evenly."
+        "sensoryCue": "Vibrant red sauce coats the pale dough evenly.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Cheese & herbs: Scatter 60g drained mozzarella and 3 fresh basil leaves across the sauce. Dust with a tablespoon of grated Parmigiano-Reggiano and drizzle with extra virgin olive oil in a figure-six motion.",
         "timerMins": 1,
-        "sensoryCue": "Classic Italian tricolore: red tomato, white mozzarella, green basil."
+        "sensoryCue": "Classic Italian tricolore: red tomato, white mozzarella, green basil.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Bake: Slide pizza off the wooden peel directly onto the scorching pizza steel. Bake for 5 to 6 minutes, switching oven to HIGH BROILER for the final 2 minutes, until the cornicione puffs into airy blisters with dark charred leopard spots.",
         "timerMins": 6,
         "temperature": "Broiler / 290°C steel",
-        "sensoryCue": "Crust balloons dramatically; bubbling mozzarella blisters golden; smoky wood-oven aroma fills the kitchen."
+        "sensoryCue": "Crust balloons dramatically; bubbling mozzarella blisters golden; smoky wood-oven aroma fills the kitchen.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Remove with peel. Top with fresh raw basil leaves and a final swirl of raw olive oil. Slice and eat immediately while crust crackles.",
         "timerMins": 1,
-        "sensoryCue": "Audible crunch when sliced; soft, light, airy honeycomb interior crumb."
+        "sensoryCue": "Audible crunch when sliced; soft, light, airy honeycomb interior crumb.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -4067,43 +4156,50 @@ window.MASTER_RECIPES = [
         "text": "Prepare yolk sabayon: Whisk egg yolks and 70g sugar in a bowl over a double boiler of simmering water for 5 minutes until pale, thick, and registering 65°C (safe pasteurization). Cool 5 minutes.",
         "timerMins": 5,
         "temperature": "65°C",
-        "sensoryCue": "Yolks triple in volume, turning pale ivory with a thick, glossy ribbon stage."
+        "sensoryCue": "Yolks triple in volume, turning pale ivory with a thick, glossy ribbon stage.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Gently fold room-temperature mascarpone into the yolk sabayon using a silicone spatula until completely smooth and lump-free.",
         "timerMins": 3,
-        "sensoryCue": "A dense, velvety custard of creamy pale yellow hue."
+        "sensoryCue": "A dense, velvety custard of creamy pale yellow hue.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Whip egg whites with 30g sugar and pinch of salt on medium-high speed until glossy medium-stiff peaks form.",
         "timerMins": 4,
-        "sensoryCue": "Snow-white peaks hold their shape with a slight tip curl when whisk is lifted."
+        "sensoryCue": "Snow-white peaks hold their shape with a slight tip curl when whisk is lifted.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Fold whipped egg whites into the mascarpone mixture in three gentle batches, folding in wide sweeping motions until homogenous and light as air.",
         "timerMins": 3,
-        "sensoryCue": "A billowy, cloud-like mousse that holds soft ripples."
+        "sensoryCue": "A billowy, cloud-like mousse that holds soft ripples.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Soak ladyfingers: Dip each Savoiardi biscuit into the espresso-Marsala mixture for exactly ONE second on each side (never soak or they turn into mush). Arrange in a tight single layer in the baking dish.",
         "timerMins": 3,
-        "sensoryCue": "Biscuits absorb coffee without disintegrating; cores remain firm."
+        "sensoryCue": "Biscuits absorb coffee without disintegrating; cores remain firm.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Spread half of the mascarpone cream evenly over the soaked biscuits. Dust with a thin layer of cocoa powder. Add a second layer of soaked ladyfingers running perpendicular to the first. Top with remaining cream and smooth the surface.",
         "timerMins": 5,
-        "sensoryCue": "Clean, distinct alternating layers of coffee biscuit and pale cream."
+        "sensoryCue": "Clean, distinct alternating layers of coffee biscuit and pale cream.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Refrigerate for at least 8 hours (ideally 24 hours). The biscuits soften into cake while the cream sets firmly. Right before serving, dust generously with dark cocoa powder.",
         "timerMins": 480,
-        "sensoryCue": "A dense, velvety matte chocolate snow covering the pale cream."
+        "sensoryCue": "A dense, velvety matte chocolate snow covering the pale cream.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -4306,7 +4402,8 @@ window.MASTER_RECIPES = [
         "text": "Place clean bones and brisket into clean stockpot. Cover with 6 liters of fresh cold water. Bring to a gentle simmer over medium-high heat, skimming off all rising foam and scum.",
         "timerMins": 30,
         "temperature": "95°C",
-        "sensoryCue": "Clear liquid comes to gentle simmer; white foam rises and is skimmed clean."
+        "sensoryCue": "Clear liquid comes to gentle simmer; white foam rises and is skimmed clean.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -4320,31 +4417,36 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "At hour 3, remove the cooked brisket. Submerge in cold water for 5 minutes (prevents darkening), then wrap and refrigerate until slicing.",
         "timerMins": 5,
-        "sensoryCue": "Brisket is fork-tender."
+        "sensoryCue": "Brisket is fork-tender.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Add the toasted spice sachet to the stockpot. Simmer for an additional 2 hours (do not leave spices in for more than 3 hours or broth turns bitter and muddy).",
         "timerMins": 120,
-        "sensoryCue": "Intoxicating fragrance of star anise, cinnamon, and black cardamom blooms."
+        "sensoryCue": "Intoxicating fragrance of star anise, cinnamon, and black cardamom blooms.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Remove bones and spices. Strain broth through a chinois lined with cheesecloth. Season with remaining fish sauce and salt to taste. Broth should taste slightly over-salted, as unseasoned noodles will dilute it in the bowl.",
         "timerMins": 10,
-        "sensoryCue": "Crystalline, shimmering amber broth with golden drops of clean beef oil."
+        "sensoryCue": "Crystalline, shimmering amber broth with golden drops of clean beef oil.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Assemble: Blanch rice noodles in boiling water for 10 seconds; shake dry and place in heated bowls. Top with thinly sliced cooked brisket and raw shaved eye of round steak.",
         "timerMins": 2,
-        "sensoryCue": "Silky white noodles topped with dark braised beef and delicate pink raw beef slices."
+        "sensoryCue": "Silky white noodles topped with dark braised beef and delicate pink raw beef slices.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Ladle boiling hot broth (approx 95°C) directly over the raw steak. The boiling broth will cook the shaved meat instantly to a tender pink-blush (tai). Serve with herb platter, bean sprouts, and lime wedges.",
         "timerMins": 1,
-        "sensoryCue": "Raw beef turns instantly opaque and tender; aromatic herbal steam rises from the bowl."
+        "sensoryCue": "Raw beef turns instantly opaque and tender; aromatic herbal steam rises from the bowl.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -4503,14 +4605,16 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare Pommes Fondue: In a medium skillet, brown potato cylinders in butter on both flat ends for 10 minutes until deep golden. Pour in chicken stock and thyme sprigs. Cover and braise over low heat for 20 minutes until tender as butter.",
         "timerMins": 30,
-        "sensoryCue": "Potatoes absorb stock, turning translucent, creamy, and golden with crisp ends."
+        "sensoryCue": "Potatoes absorb stock, turning translucent, creamy, and golden with crisp ends.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Preheat cast iron skillet over high heat for 6 minutes until smoking hot (approx 230°C / 450°F). Add 20ml beef tallow or avocado oil.",
         "timerMins": 6,
         "temperature": "230°C",
-        "sensoryCue": "Oil shimmers and smokes faintly; radiant heat hits your hand 6 inches above pan."
+        "sensoryCue": "Oil shimmers and smokes faintly; radiant heat hits your hand 6 inches above pan.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
@@ -4525,7 +4629,8 @@ window.MASTER_RECIPES = [
         "text": "Turn heat to medium. Drop in 60g cold butter, smashed garlic, thyme, and rosemary. The butter will melt and froth into a violent white foam.",
         "timerMins": 1,
         "temperature": "145°C",
-        "sensoryCue": "Roaring sizzle subsides into gentle nutty crackle; garlic and herbs fragrance fills the air."
+        "sensoryCue": "Roaring sizzle subsides into gentle nutty crackle; garlic and herbs fragrance fills the air.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
@@ -4539,7 +4644,8 @@ window.MASTER_RECIPES = [
         "text": "Check core temp with instant-read probe: pull at exactly 49°C (120°F) for medium-rare. Transfer steak to a warm wooden board or resting rack.",
         "timerMins": 1,
         "temperature": "49°C core pull temp",
-        "sensoryCue": "Thermometer glides smoothly into the center without resistance."
+        "sensoryCue": "Thermometer glides smoothly into the center without resistance.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
@@ -4552,7 +4658,8 @@ window.MASTER_RECIPES = [
         "stepNum": 8,
         "text": "Carve off the bone, slice into 1cm thick medallions, season cut faces with flaky Maldon sea salt, and serve with melting Pommes Fondue.",
         "timerMins": 2,
-        "sensoryCue": "Shattering crisp crust surrounding a ruby-pink, glistening succulent interior."
+        "sensoryCue": "Shattering crisp crust surrounding a ruby-pink, glistening succulent interior.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -4727,32 +4834,37 @@ window.MASTER_RECIPES = [
         "text": "Prepare Lemon-Limoncello Sabayon Curd: In a heatproof bowl set over simmering water, whisk egg yolks, whole eggs, lemon juice, lemon zest, and 120g sugar continuously for 8-10 minutes until thick, custardy, and registering 82°C (180°F).",
         "timerMins": 9,
         "temperature": "82°C",
-        "sensoryCue": "Whisk leaves clean ribbon trails; mixture thickens dramatically into custard."
+        "sensoryCue": "Whisk leaves clean ribbon trails; mixture thickens dramatically into custard.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Remove from heat. Let cool to 55°C. Add cold cubed butter piece by piece while blending with an immersion blender to shear butter into a silky micro-emulsion. Blend in Limoncello. Chill for 2 hours.",
         "timerMins": 4,
         "temperature": "55°C",
-        "sensoryCue": "Curd transforms into an ultra-glossy, luminous canary-yellow silk."
+        "sensoryCue": "Curd transforms into an ultra-glossy, luminous canary-yellow silk.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "THE PLATING PERFORMANCE: Take a large soup spoon of the cold lemon curd. Hold it 18 inches above the asymmetric matte plate, and drop it with deliberate force onto one corner of the plate to shatter and splatter naturally across the porcelain.",
         "timerMins": 1,
-        "sensoryCue": "A dramatic, dynamic yellow splash radiating across the dark canvas."
+        "sensoryCue": "A dramatic, dynamic yellow splash radiating across the dark canvas.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Scatter crisp golden Pâte Sablée crust shards deliberately across and around the splatter, as if the tart fell from the sky and shattered on impact.",
         "timerMins": 1,
-        "sensoryCue": "Golden geometric shards resting in the glossy curd."
+        "sensoryCue": "Golden geometric shards resting in the glossy curd.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Dot the plate with drops of translucent bergamot fluid gel, scatter crunchy candied capers, and drizzle beads of emerald green basil oil.",
         "timerMins": 1,
-        "sensoryCue": "Vibrant contrast: canary yellow, golden biscuit, black capers, emerald green drops."
+        "sensoryCue": "Vibrant contrast: canary yellow, golden biscuit, black capers, emerald green drops.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -4904,32 +5016,37 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Combine egg yolks, strained vinegar reduction, and 10ml cold water in the round-bottom bowl. Whisk vigorously for 1 minute before heating.",
         "timerMins": 1,
-        "sensoryCue": "Yolks turn frothy and lemon-yellow."
+        "sensoryCue": "Yolks turn frothy and lemon-yellow.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Set bowl over barely simmering water (the bowl bottom must NOT touch water). Whisk in a rapid figure-eight motion for 3-4 minutes until the sabayon thickens, triples in volume, and forms ribbons when lifted.",
         "timerMins": 3.5,
         "temperature": "62°C",
-        "sensoryCue": "The whisk leaves clear lines showing the bowl bottom; thick, creamy texture."
+        "sensoryCue": "The whisk leaves clear lines showing the bowl bottom; thick, creamy texture.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Remove bowl to the damp towel. Whisking continuously, begin drizzling in the warm clarified butter, literally drop by drop for the first 30 seconds to establish the emulsion.",
         "timerMins": 1,
-        "sensoryCue": "Drops of butter disappear seamlessly into the thick yolk base."
+        "sensoryCue": "Drops of butter disappear seamlessly into the thick yolk base.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Once established, pour the remaining butter in a thin, steady thread while whisking rhythmically until all butter is absorbed into an opulent, glossy ribbon.",
         "timerMins": 3,
-        "sensoryCue": "Sauce thickens into a pale golden velvet that coats a spoon luxuriously."
+        "sensoryCue": "Sauce thickens into a pale golden velvet that coats a spoon luxuriously.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Whisk in fresh lemon juice, sea salt, and a pinch of cayenne. Taste: balance should be rich yet distinctly bright and clean. Hold warm in a thermos or near the stove at 50°C.",
         "timerMins": 1,
-        "sensoryCue": "Gleaming pale gold sauce with a warm, tangy lemon aroma."
+        "sensoryCue": "Gleaming pale gold sauce with a warm, tangy lemon aroma.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -5106,26 +5223,30 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Caramelize mirepoix: Add onions, carrots, and celery to the roasting pan. Smear tomato paste over the bones and vegetables. Return to oven for 15 minutes until vegetables are golden and tomato paste is brick-red (pincer).",
         "timerMins": 15,
-        "sensoryCue": "Tomato paste darkens to deep mahogany without burning."
+        "sensoryCue": "Tomato paste darkens to deep mahogany without burning.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Transfer roasted bones and mirepoix to the tall stockpot using tongs. Pour off excess rendered fat from roasting pans.",
         "timerMins": 5,
-        "sensoryCue": "Pan bottom is coated in thick brown caramelized fond."
+        "sensoryCue": "Pan bottom is coated in thick brown caramelized fond.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Deglaze roasting pans: Place pans over burners on medium-high heat. Pour in red wine, scraping up all brown fond with a wooden spatula. Pour deglazed liquid into the stockpot.",
         "timerMins": 5,
-        "sensoryCue": "Wine boils vigorously, dissolving caramelized pan drippings into dark liquid."
+        "sensoryCue": "Wine boils vigorously, dissolving caramelized pan drippings into dark liquid.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Fill stockpot with 7 liters of cold filtered water (bones must be submerged by 3 inches). Bring to a gentle simmer over medium heat. Skim off all grey scum and rendered fat that rises to the surface.",
         "timerMins": 30,
         "temperature": "92°C",
-        "sensoryCue": "A dense foam cap forms; skim continuously until surface is clean."
+        "sensoryCue": "A dense foam cap forms; skim continuously until surface is clean.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
@@ -5139,13 +5260,15 @@ window.MASTER_RECIPES = [
         "stepNum": 7,
         "text": "Strain without pressing: Ladle stock gently through a chinois lined with damp cheesecloth into a clean pot. Do NOT press or squeeze bones/vegetables, which forces cloudiness into the stock.",
         "timerMins": 15,
-        "sensoryCue": "Crystal-clear amber liquid flows like liquid stained glass."
+        "sensoryCue": "Crystal-clear amber liquid flows like liquid stained glass.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Chill rapidly in an ice bath. When refrigerated overnight, it sets into a firm, glistening, jiggly block of pure gelatin with a solid fat cap on top that can be lifted off in one piece.",
         "timerMins": 10,
-        "sensoryCue": "Firm jelly that melts instantaneously into liquid upon touching a warm spoon."
+        "sensoryCue": "Firm jelly that melts instantaneously into liquid upon touching a warm spoon.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -5304,32 +5427,37 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Cook rice in an earthenware donabe with a square of kombu. Transfer piping hot into the wet cypress hangiri tub.",
         "timerMins": 30,
-        "sensoryCue": "Fragrant steam of sweet toasted rice."
+        "sensoryCue": "Fragrant steam of sweet toasted rice.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Drizzle warm akazu vinegar mixture evenly over the rice. Cut and fold with shamoji using rapid slicing motions while fanning vigorously with a flat fan (uchiwa) to cool rice quickly to body temperature (36°C) while setting a glass-like sheen.",
         "timerMins": 5,
         "temperature": "36°C body temp",
-        "sensoryCue": "Rice turns warm mahogany-amber and glossy without a single crushed grain."
+        "sensoryCue": "Rice turns warm mahogany-amber and glossy without a single crushed grain.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Nigiri molding: Moisten hands with tezu (vinegar water). Scoop 18g warm rice. Shape into an airy, boat-shaped cylinder with gentle fingertip pressure, leaving tiny air pockets in the core (airy honeycomb).",
         "timerMins": 1,
-        "sensoryCue": "Rice holds its shape firmly in the hand, but collapses effortlessly when placed in the mouth."
+        "sensoryCue": "Rice holds its shape firmly in the hand, but collapses effortlessly when placed in the mouth.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Dab a micro-speck of freshly grated wasabi onto the fish slice. Press fish against the rice pillow with index and thumb, roll 90 degrees, and set shape in two confident strokes (hon-tegaeshi).",
         "timerMins": 1,
-        "sensoryCue": "Fish drapes organically over the rice, following its curve."
+        "sensoryCue": "Fish drapes organically over the rice, following its curve.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Brush fish surface with a light stroke of warm nikiri glaze. Serve immediately directly onto the chef's wooden counter; eat with fingers within 10 seconds.",
         "timerMins": 0.5,
-        "sensoryCue": "Mirror-like sheen of nikiri; fish gently warms from the body-temperature rice."
+        "sensoryCue": "Mirror-like sheen of nikiri; fish gently warms from the body-temperature rice.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -5518,7 +5646,8 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Heat 40ml olive oil in a wide stockpot. Sauté sliced leeks, fennel, and tomatoes over medium heat for 8 minutes until softened.",
         "timerMins": 8,
-        "sensoryCue": "Vegetables soften and release sweet allium and licorice perfume."
+        "sensoryCue": "Vegetables soften and release sweet allium and licorice perfume.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -5532,25 +5661,29 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Add firm fish first (monkfish, gurnard) and cook at rolling boil for 6 minutes. Then add delicate fish (red mullet, sea bass) and langoustines; boil for 5 more minutes until fish is cooked through.",
         "timerMins": 11,
-        "sensoryCue": "Langoustines turn bright coral-pink; fish steaks turn opaque and tender."
+        "sensoryCue": "Langoustines turn bright coral-pink; fish steaks turn opaque and tender.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Lift fish and langoustines carefully with a slotted skimmer onto a large warmed serving platter. Keep warm with a ladle of broth.",
         "timerMins": 2,
-        "sensoryCue": "Bountiful seafood mountain steaming with saffron and sea aromas."
+        "sensoryCue": "Bountiful seafood mountain steaming with saffron and sea aromas.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Serve Stage 1: Ladle hot golden broth into deep bowls. Guests spread spicy garlic Rouille onto toasted croutons, float them in the boiling broth, and eat the soup.",
         "timerMins": 2,
-        "sensoryCue": "Golden croutons soak in red rouille and saffron broth."
+        "sensoryCue": "Golden croutons soak in red rouille and saffron broth.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Serve Stage 2: Present the platter of fish, carve tableside, and serve alongside additional hot broth.",
         "timerMins": 2,
-        "sensoryCue": "Flaky sweet fish bathed in fragrant saffron broth."
+        "sensoryCue": "Flaky sweet fish bathed in fragrant saffron broth.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -5724,7 +5857,8 @@ window.MASTER_RECIPES = [
         "text": "Melt butter and olive oil in Dutch oven over medium heat. Add all sliced onions and 1 teaspoon sea salt. Toss to coat evenly. Cover with lid and sweat for 10 minutes until onions collapse and release their water.",
         "timerMins": 10,
         "temperature": "120°C",
-        "sensoryCue": "Onions turn translucent and watery, reducing in volume by half."
+        "sensoryCue": "Onions turn translucent and watery, reducing in volume by half.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -5738,39 +5872,45 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Dust caramelized onions with 20g flour; stir constantly for 2 minutes to cook out raw starch flavor.",
         "timerMins": 2,
-        "sensoryCue": "Flour absorbs onion fat and turns toasty."
+        "sensoryCue": "Flour absorbs onion fat and turns toasty.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Deglaze with Cognac and dry white wine, scraping up every speck of brown fond. Cook for 3 minutes until liquid is reduced by three-quarters.",
         "timerMins": 3,
-        "sensoryCue": "Vigorous hissing steam of boiling alcohol, leaving a glossy wine-onion glaze."
+        "sensoryCue": "Vigorous hissing steam of boiling alcohol, leaving a glossy wine-onion glaze.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Pour in hot beef stock and add thyme/bay bouquet. Bring to a gentle simmer, partially cover, and simmer over low heat for 25 minutes. Season with salt and freshly cracked black pepper. Discard herb bouquet.",
         "timerMins": 25,
         "temperature": "88°C",
-        "sensoryCue": "Broth turns deep lustrous mahogany brown with sweet, rich savory perfume."
+        "sensoryCue": "Broth turns deep lustrous mahogany brown with sweet, rich savory perfume.",
+        "scienceNote": ""
       },
       {
         "stepNum": 6,
         "text": "Assembly & Gratinée: Place 4 ovenproof crocks on a heavy baking sheet. Ladle piping hot soup into each crock, filling 80% full. Float 2 garlic-rubbed dry croutons on top of each bowl.",
         "timerMins": 2,
-        "sensoryCue": "Croutons float securely on top of the broth."
+        "sensoryCue": "Croutons float securely on top of the broth.",
+        "scienceNote": ""
       },
       {
         "stepNum": 7,
         "text": "Mound shredded Gruyère generously over the bread, allowing cheese to drape over the lip of the bowl. Transfer under a preheated HIGH broiler for 4 to 5 minutes until cheese is molten, bubbling vigorously, and blistered with deep golden-brown spots.",
         "timerMins": 5,
         "temperature": "Broiler High (260°C)",
-        "sensoryCue": "Cheese bubbles and browns with an audible sizzle; edges form a crisp frico crust on ceramic."
+        "sensoryCue": "Cheese bubbles and browns with an audible sizzle; edges form a crisp frico crust on ceramic.",
+        "scienceNote": ""
       },
       {
         "stepNum": 8,
         "text": "Carefully remove crocks with oven mitts; rest 3 minutes before serving. Caution guests of molten temperature.",
         "timerMins": 3,
-        "sensoryCue": "Spoon breaks through crisp browned cheese crust, releasing a plume of fragrant onion steam."
+        "sensoryCue": "Spoon breaks through crisp browned cheese crust, releasing a plume of fragrant onion steam.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -5903,7 +6043,8 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Pack apple quarters into the buttered and sugared skillet on their sides in tight concentric rings. They will shrink by 30% during cooking, so wedge them as tightly as possible.",
         "timerMins": 10,
-        "sensoryCue": "Apples fit tightly with no gaps between quarters."
+        "sensoryCue": "Apples fit tightly with no gaps between quarters.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -5917,20 +6058,23 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Remove skillet from heat. Let cool 10 minutes so bubbling stops. Lay the cold puff pastry disc directly over the hot caramelized apples, tucking the edges down inside the rim of the pan (tucking the blanket).",
         "timerMins": 2,
-        "sensoryCue": "Pastry settles snugly over the apples."
+        "sensoryCue": "Pastry settles snugly over the apples.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Bake in a preheated 190°C (375°F) oven for 30 minutes until the puff pastry is deep golden brown and completely crisp throughout.",
         "timerMins": 30,
         "temperature": "190°C",
-        "sensoryCue": "Puff pastry rises in crisp, laminated golden layers; caramel bubbles up along the pan edges."
+        "sensoryCue": "Puff pastry rises in crisp, laminated golden layers; caramel bubbles up along the pan edges.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "THE INVERSION: Let rest for 15 minutes. Place a round serving platter over the skillet. Wearing heavy oven mitts, grip skillet and platter tightly together, and invert in one swift, confident, decisive motion. Tap pan bottom; lift skillet away.",
         "timerMins": 2,
-        "sensoryCue": "A gleaming, glistening mosaic of translucent, dark amber caramelized apples glistening atop a crisp pastry pedestal."
+        "sensoryCue": "A gleaming, glistening mosaic of translucent, dark amber caramelized apples glistening atop a crisp pastry pedestal.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -6099,13 +6243,15 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare Piperade: Heat 30ml olive oil in skillet. Sweat diced onion and garlic for 6 minutes until soft. Stir in minced roasted bell peppers, 2 crushed tomatoes, and thyme. Cook 10 minutes until thick. Spread evenly across the bottom of the gratin dish.",
         "timerMins": 16,
-        "sensoryCue": "Sweet, aromatic red vegetable foundation lining the dish."
+        "sensoryCue": "Sweet, aromatic red vegetable foundation lining the dish.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Shingle vegetables: Arrange alternating slices of zucchini, eggplant, yellow squash, and tomato in tight, overlapping concentric spirals over the piperade until the dish is completely filled.",
         "timerMins": 15,
-        "sensoryCue": "A breathtaking, mesmerizing spiral mosaic of alternating green, purple, yellow, and red vegetable disks."
+        "sensoryCue": "A breathtaking, mesmerizing spiral mosaic of alternating green, purple, yellow, and red vegetable disks.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
@@ -6119,13 +6265,15 @@ window.MASTER_RECIPES = [
         "text": "Bake in a 140°C (285°F) oven for 75 minutes until vegetables are completely tender. Remove parchment and bake uncovered for 15 minutes to concentrate juices.",
         "timerMins": 90,
         "temperature": "140°C",
-        "sensoryCue": "Vegetables slump slightly, glistening with concentrated sweet juices and fragrant herb oil."
+        "sensoryCue": "Vegetables slump slightly, glistening with concentrated sweet juices and fragrant herb oil.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Serve warm or at room temperature, drizzled with a vinaigrette of extra virgin olive oil, balsamic vinegar, and fresh chervil.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant colors deepen into rich jewel tones."
+        "sensoryCue": "Vibrant colors deepen into rich jewel tones.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -6263,7 +6411,8 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Simmer white wine, vinegar, and shallots in a small saucepan over medium heat until reduced to 1 tablespoon of syrupy glaze.",
         "timerMins": 5,
-        "sensoryCue": "Shallots soften; liquid glazes the bottom."
+        "sensoryCue": "Shallots soften; liquid glazes the bottom.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
@@ -6278,13 +6427,15 @@ window.MASTER_RECIPES = [
         "text": "Poach halibut fillets gently in a shallow bath of 75°C court-bouillon for 8 minutes until core registers 50°C (122°F). Drain gently on paper towels.",
         "timerMins": 8,
         "temperature": "75°C poaching",
-        "sensoryCue": "Fish turns opaque white; flakes separate with light touch."
+        "sensoryCue": "Fish turns opaque white; flakes separate with light touch.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Ladle warm Beurre Blanc into heated shallow bowls. Rest halibut fillet in the center; crown with fresh chervil leaves.",
         "timerMins": 1,
-        "sensoryCue": "Sleek, elegant presentation with aromatic anise-chervil perfume."
+        "sensoryCue": "Sleek, elegant presentation with aromatic anise-chervil perfume.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -6451,13 +6602,15 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Melt butter in Dutch oven over medium-high heat. Brown floured veal shanks for 4 minutes per side until rich golden crust forms. Remove shanks.",
         "timerMins": 9,
-        "sensoryCue": "Veal shanks brown with toasty butter aromas."
+        "sensoryCue": "Veal shanks brown with toasty butter aromas.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Add diced onion, carrot, and celery (soffritto) to the pot; cook for 8 minutes until soft and fragrant. Deglaze with white wine, scraping up all fond.",
         "timerMins": 10,
-        "sensoryCue": "Wine bubbles and reduces by half."
+        "sensoryCue": "Wine bubbles and reduces by half.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
@@ -6471,13 +6624,15 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Remove pot from oven. Plate shanks carefully onto warm plates. Simmer braising sauce on stove for 5 minutes until glossy nappe consistency. Ladle over veal.",
         "timerMins": 5,
-        "sensoryCue": "Glossy mahogany sauce clings to the tender meat."
+        "sensoryCue": "Glossy mahogany sauce clings to the tender meat.",
+        "scienceNote": ""
       },
       {
         "stepNum": 5,
         "text": "Shower the top of each shank generously with fresh Gremolata. Serve traditionally with saffron Risotto alla Milanese.",
         "timerMins": 1,
-        "sensoryCue": "Explosion of fresh lemon-garlic aromatics cutting through the rich braise."
+        "sensoryCue": "Explosion of fresh lemon-garlic aromatics cutting through the rich braise.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -6600,25 +6755,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -6743,25 +6902,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -6886,25 +7049,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7029,25 +7196,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 35,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7170,25 +7341,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 0,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7313,25 +7488,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 80,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7456,25 +7635,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 25,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7599,25 +7782,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 15,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7742,25 +7929,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -7885,25 +8076,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8026,25 +8221,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 110,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8169,25 +8368,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8312,25 +8515,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 50,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8455,25 +8662,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8598,25 +8809,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8741,25 +8956,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -8884,25 +9103,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9027,25 +9250,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -8,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9170,25 +9397,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9313,25 +9544,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9456,25 +9691,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 0,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9599,25 +9838,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9740,25 +9983,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -9883,25 +10130,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10024,25 +10275,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 200,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10167,25 +10422,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 50,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10310,25 +10569,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 350,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10453,25 +10716,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10596,25 +10863,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 0,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10739,25 +11010,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 80,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -10882,25 +11157,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 170,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11025,25 +11304,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 170,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11168,25 +11451,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11311,25 +11598,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11454,25 +11745,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11597,25 +11892,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 15,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11740,25 +12039,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 20,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -11883,25 +12186,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 140,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12026,25 +12333,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12169,25 +12480,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 35,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12312,25 +12627,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 40,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12455,25 +12774,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12598,25 +12921,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12741,25 +13068,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 15,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -12884,25 +13215,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 710,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13027,25 +13362,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 15,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13170,25 +13509,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 35,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13313,25 +13656,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13456,25 +13803,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13599,25 +13950,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13740,25 +14095,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -13883,25 +14242,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 15,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14026,25 +14389,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 50,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14169,25 +14536,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 50,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14312,25 +14683,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14455,25 +14830,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14598,25 +14977,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 170,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14739,25 +15122,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 25,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -14882,25 +15269,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15025,25 +15416,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 45,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15168,25 +15563,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 35,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15311,25 +15710,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 0,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15454,25 +15857,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15597,25 +16004,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15740,25 +16151,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 25,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -15883,25 +16298,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 20,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16026,25 +16445,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16169,25 +16592,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 20,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16312,25 +16739,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 15,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16455,25 +16886,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16598,25 +17033,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -2,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16741,25 +17180,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -16884,25 +17327,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 35,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -17027,25 +17474,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -17170,25 +17621,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": 5,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -17313,25 +17768,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -17456,25 +17915,29 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare and season core ingredients with fine sea salt; bring to room temperature before applying thermal heat.",
         "timerMins": 5,
-        "sensoryCue": "Ingredients look fresh and properly seasoned."
+        "sensoryCue": "Ingredients look fresh and properly seasoned.",
+        "scienceNote": ""
       },
       {
         "stepNum": 2,
         "text": "Heat cooking medium in pan until shimmering; sear or sweat aromatics to establish foundational flavor.",
         "timerMins": 5,
-        "sensoryCue": "Lively sizzling and aromatic development."
+        "sensoryCue": "Lively sizzling and aromatic development.",
+        "scienceNote": ""
       },
       {
         "stepNum": 3,
         "text": "Incorporate primary liquids and braising or simmering elements; cook to exact thermal doneness according to recipe parameters.",
         "timerMins": -10,
-        "sensoryCue": "Sauce reduces and coats back of spoon."
+        "sensoryCue": "Sauce reduces and coats back of spoon.",
+        "scienceNote": ""
       },
       {
         "stepNum": 4,
         "text": "Finish with fresh finishing acid, butter, or delicate herbs; taste and adjust seasoning balance before plating.",
         "timerMins": 2,
-        "sensoryCue": "Vibrant aroma and glistening presentation."
+        "sensoryCue": "Vibrant aroma and glistening presentation.",
+        "scienceNote": ""
       }
     ],
     "sensoryIndicators": {
@@ -17726,9 +18189,7 @@ window.MASTER_RECIPES = [
     "relatedTechniques": [
       "High-Heat Wok Searing",
       "Acid Deglazing"
-    ],
-    "reviewStatus": "Draft: source verification required",
-    "provenance": "user_created"
+    ]
   },
   {
     "id": "rec-paella-valenciana",
@@ -17932,9 +18393,7 @@ window.MASTER_RECIPES = [
     "relatedTechniques": [
       "Socarrat Development",
       "Starch Absorption Control"
-    ],
-    "reviewStatus": "Draft: source verification required",
-    "provenance": "user_created"
+    ]
   },
   {
     "id": "rec-creme-caramel",
@@ -18590,7 +19049,8 @@ window.MASTER_RECIPES = [
         "name": "Vanilla Bean Paste",
         "qty": 5,
         "unit": "ml",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       }
     ],
     "equipment": [
@@ -18725,7 +19185,8 @@ window.MASTER_RECIPES = [
         "name": "Sweetened Condensed Milk",
         "qty": 2,
         "unit": "cans (14 oz each)",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "Fresh Key Lime Juice",
@@ -19091,13 +19552,15 @@ window.MASTER_RECIPES = [
         "name": "Granulated Sugar",
         "qty": 80,
         "unit": "g",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "Wildflower Honey",
         "qty": 20,
         "unit": "g",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "Unsalted Butter (Browned)",
@@ -19124,7 +19587,8 @@ window.MASTER_RECIPES = [
         "name": "Fine Sea Salt",
         "qty": 1,
         "unit": "g",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       }
     ],
     "equipment": [
@@ -19281,7 +19745,8 @@ window.MASTER_RECIPES = [
         "name": "Pure Vanilla Extract",
         "qty": 5,
         "unit": "ml",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "Fresh Passionfruit",
@@ -19465,7 +19930,8 @@ window.MASTER_RECIPES = [
         "name": "Fine Sea Salt",
         "qty": 1.5,
         "unit": "g",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "White Pepper",
@@ -19954,13 +20420,15 @@ window.MASTER_RECIPES = [
         "name": "Fine Sea Salt",
         "qty": 12,
         "unit": "g",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "Freshly Ground White Pepper",
         "qty": 2,
         "unit": "g",
-        "dept": "pantry"
+        "dept": "pantry",
+        "prep": ""
       },
       {
         "name": "High-Smoke Neutral Oil",

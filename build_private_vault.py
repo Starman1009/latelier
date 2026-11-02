@@ -6,6 +6,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
 
+sys.stdout.reconfigure(encoding="utf-8")
 ROOT=Path(__file__).resolve().parent
 NAMES=['SAUCE','LINESET','PROTEIN','PRODUCE','BAKE','BRUNCH','DESSERTS','OVENS','PANFRY','ENTREE','SALADS','APPETIZERS']
 def build(password):
@@ -32,6 +33,8 @@ def build(password):
     if digest not in seen:raise ValueError('Dessert copies differ; must import both explicitly')
     aliases.append({'name':duplicate.name,'sameAs':seen[digest]})
     payload={'manuals':manuals,'aliases':aliases}
+    cards=ROOT/'.private-work/prep-cards.json'
+    if cards.exists():payload['prepCards']=json.loads(cards.read_text(encoding='utf-8'))
     seal(json.dumps(payload,ensure_ascii=False).encode(),out/'index.bin')
     (out/'config.json').write_text(json.dumps({'version':1,'salt':base64.b64encode(salt).decode(),'iterations':600000}),encoding='utf-8')
     print(json.dumps({'manuals':len(manuals),'duplicateAliases':len(aliases),'pages':sum(len(m['pages']) for m in manuals),'links':sum(len(p['links']) for m in manuals for p in m['pages'])}))

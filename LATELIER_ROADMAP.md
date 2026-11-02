@@ -1,3 +1,5 @@
+> Audit update — 2026-11-02: Recipe count is 153; 200–250 expansion remains open. Required nested fields are now checked; empty strings/nulls explicitly preserve missing information. Source verification is NOT established by schema compliance. Manual-derived cards were moved into the encrypted workspace; the public prep view contains general station planning and EP/AP tools. Earlier historical completion claims below describe implementation, not independent culinary verification.
+
 # L’Atelier · Long-Term Product Roadmap
 
 ## Vision
@@ -19,8 +21,9 @@ Transform **L’Atelier** into the world’s most comprehensive, scientifically 
 - [x] Phase 1: Distill 12 authentic restaurant manuals into standardized digital format (`data-prep-manual.js`).
 - [x] Phase 2: Build dedicated Kitchen Prep Manual view with station filters, real-time search, dynamic batch scaling, and HACCP critical limits.
 - [x] Phase 3: Connect batch ingredients to Provisions shopping list.
-- [ ] Phase 4: Line Station Map: Interactive graphical layout of hot line stations (Sauté, Grill, Broiler, Fry, Garde Manger, Pastry).
-- [ ] Phase 5: Waste tracking and yield loss calculator (EP vs. AP percentages for proteins and produce).
+- [x] Phase 4: Line Station Map: Interactive graphical layout of hot line stations (Sauté, Grill, Broiler, Fry, Garde Manger, Pastry).
+- [x] Phase 5a: Measured yield loss calculator (EP/AP); no ingredient yield defaults.
+- [ ] Phase 5b: Persistent waste tracking journal.
 - [ ] Phase 6: Temperature logging journal for HACCP compliance inspections.
 
 ---
@@ -49,7 +52,8 @@ Transform **L’Atelier** into the world’s most comprehensive, scientifically 
 - [x] Phase 2: Backward timeline calculation from T-0 service pickup.
 - [x] Phase 3: Interactive checklist with completion status.
 - [x] Phase 4: Full-screen distraction-free Kitchen Mode with timer audio alarms.
-- [ ] Phase 5: Hands-free voice recognition commands ("Next step", "Start 5 minute timer", "Read ingredients").
+- [x] Phase 5a: Hands-free next/previous/repeat step and spoken minute timers.
+- [ ] Phase 5b: Read ingredients command and live microphone/device acceptance tests.
 - [ ] Phase 6: Multi-device sync (tablet at station, smartphone for shopping).
 
 ---

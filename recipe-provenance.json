@@ -1,0 +1,13 @@
+{
+  "defaultStatus": "Needs source review",
+  "records": {
+    "rec-lomo-saltado": {
+      "reviewStatus": "Draft: source verification required",
+      "provenance": "user_created"
+    },
+    "rec-paella-valenciana": {
+      "reviewStatus": "Draft: source verification required",
+      "provenance": "user_created"
+    }
+  }
+}

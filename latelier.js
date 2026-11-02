@@ -509,6 +509,8 @@
         </span>
       </div>
 
+      <details class="bento-card" style="margin-bottom:1.5rem"><summary>Cook from published chef recipes · 10 source links</summary><p>Open the publisher’s complete recipe for its quantities, yield and method. These links are not imported recipes and are not counted in the local catalog.</p><div class="station-map">${(window.ATELIER_RECIPE_SOURCES || []).map(r=>`<a class="btn-secondary" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}<br><small>${esc(r.author)}</small></a>`).join('')}</div></details>
+      <p class="text-muted">Local catalog source verification is pending. Consult an authoritative recipe before cooking; structured fields alone do not certify accuracy.</p>
       <div id="recipe-catalog-grid" class="bento-grid">
         <!-- Recipe Cards -->
       </div>
@@ -1232,14 +1234,14 @@
           </div>
         ` : ''}
 
-        ${step.timerMins ? `
+        ${true ? `
           <div style="display:flex; align-items:center; gap:2rem; background:var(--bg-card); padding:1.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-active); margin-bottom:2rem; width:fit-content;">
             <div>
               <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Active Step Timer</span>
-              <div id="kitchen-timer-clock" class="kitchen-timer-display">${step.timerMins}:00</div>
+              <div id="kitchen-timer-clock" class="kitchen-timer-display">${step.timerMins || 5}:00</div>
             </div>
             <button id="btn-start-kitchen-timer" class="btn-primary" style="font-size:1.1rem; padding:0.8rem 1.6rem;">
-              ▶ Start Timer
+              ▶ Start ${step.timerMins || 5} Minute Timer
             </button>
           </div>
         ` : ''}
@@ -1250,7 +1252,7 @@
           ← Previous Step
         </button>
         <span style="font-family:var(--font-mono); color:var(--text-muted);">
-          Voice: Say "Next Step", "Previous Step", or "Read Step"
+          Voice: Next step · Previous step · Repeat step · Start 5 minute timer
         </span>
         <button id="btn-next-step" class="btn-primary" style="font-size:1.1rem; padding:0.8rem 1.8rem;">
           ${AppState.kitchenStepIndex === totalSteps - 1 ? 'Finish Cooking ✦' : 'Next Step →'}
@@ -1293,36 +1295,35 @@
     };
 
     $("#btn-toggle-voice", overlay).onclick = () => {
+      try { initAudio(); } catch {}
       toggleVoiceNavigation(overlay, recipe);
     };
 
     const timerBtn = $("#btn-start-kitchen-timer", overlay);
     if (timerBtn) {
       timerBtn.onclick = () => {
-        startStepTimer(step.timerMins);
+        try { initAudio(); } catch {}
+        startStepTimer(step.timerMins || 5);
         timerBtn.textContent = "Timer Running...";
         timerBtn.disabled = true;
       };
     }
   }
 
+  let kitchenTimerInterval = null;
+  let kitchenTimerDeadline = 0;
   function startStepTimer(minutes) {
-    let secondsLeft = Math.round(minutes * 60);
-    const clock = $("#kitchen-timer-clock");
-    const interval = setInterval(() => {
-      secondsLeft--;
-      if (clock) {
-        const m = Math.floor(secondsLeft / 60);
-        const s = secondsLeft % 60;
-        clock.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-      }
-      if (secondsLeft <= 0) {
-        clearInterval(interval);
-        playChime();
-        showNotification("Step timer finished! ✦");
-        if (clock) clock.textContent = "DONE ✦";
-      }
-    }, 1000);
+    if (!Number.isFinite(minutes) || minutes <= 0 || minutes > 1440) return;
+    clearInterval(kitchenTimerInterval);
+    kitchenTimerDeadline = Date.now() + minutes * 60000;
+    const tick = () => {
+      const remaining = Math.max(0, Math.ceil((kitchenTimerDeadline - Date.now()) / 1000));
+      const clock = $("#kitchen-timer-clock");
+      if (clock) clock.textContent = `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, '0')}`;
+      if (!remaining) { clearInterval(kitchenTimerInterval); kitchenTimerInterval = null; playChime(); showNotification("Kitchen timer finished!"); }
+    };
+    tick(); kitchenTimerInterval = setInterval(tick, 250);
+    showNotification(`${minutes} minute timer started. Replaces the previous kitchen timer.`);
   }
 
   function toggleVoiceNavigation(overlay, recipe) {
@@ -1345,26 +1346,30 @@
       rec.lang = "en-US";
       rec.onresult = (e) => {
         const transcript = e.results[e.results.length - 1][0].transcript.toLowerCase().trim();
-        if (transcript.includes("next")) {
+        const command = window.KitchenOperations.voiceCommand(transcript);
+        if (!command) return;
+        if (command.type === "next") {
           if (AppState.kitchenStepIndex < recipe.steps.length - 1) {
             AppState.kitchenStepIndex++;
             renderKitchenStep(overlay, recipe);
           }
-        } else if (transcript.includes("previous") || transcript.includes("back")) {
+        } else if (command.type === "previous") {
           if (AppState.kitchenStepIndex > 0) {
             AppState.kitchenStepIndex--;
             renderKitchenStep(overlay, recipe);
           }
-        } else if (transcript.includes("read")) {
+        } else if (command.type === "repeat") {
           $("#btn-read-aloud", overlay)?.click();
+        } else if (command.type === "timer") {
+          startStepTimer(command.minutes);
         }
       };
-      rec.onerror = () => { AppState.isVoiceActive = false; };
-      rec.onend = () => { AppState.isVoiceActive = false; };
+      rec.onerror = () => { AppState.isVoiceActive = false; showNotification("Voice stopped. Check microphone permission or use the step buttons."); };
+      rec.onend = () => { AppState.isVoiceActive = false; if (AppState.kitchenModeActive) renderKitchenStep(overlay, recipe); };
       rec.start();
       AppState.speechRecognition = rec;
       AppState.isVoiceActive = true;
-      showNotification("Voice navigation active: Say 'Next', 'Previous', or 'Read'.");
+      showNotification("Voice navigation active: Say 'Next step', 'Previous step', 'Repeat step', or 'Start 5 minute timer'.");
       renderKitchenStep(overlay, recipe);
     } catch (err) {
       showNotification("Could not start voice recognition.");
@@ -1373,6 +1378,7 @@
 
   function exitKitchenMode() {
     AppState.kitchenModeActive = false;
+    clearInterval(kitchenTimerInterval); kitchenTimerInterval = null;
     releaseWakeLock();
     if (AppState.speechRecognition) {
       AppState.speechRecognition.stop();
@@ -2452,7 +2458,7 @@
 
     modal.innerHTML = `
       ${window.culinaryImage(recipe)}
-      ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
+      <p class="card-badge">Needs source review</p>
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
 
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.75rem;">
@@ -2661,225 +2667,7 @@
   // VIEW: KITCHEN PREP MANUAL (AUTHENTIC RESTAURANT BRIGADE STANDARDS)
   // =========================================================================
   function renderPrepManualView(container) {
-    const manual = window.ATELIER_PREP_MANUAL || [];
-    const categories = [
-      "All",
-      "Sauces & Emulsions",
-      "Protein & Seafood Specs",
-      "Produce & Precision Knife Work",
-      "Pastry & Baking Foundations",
-      "Lineset & Operational Standards",
-      "Compound Butters & Fats",
-      "Golden Rules & HACCP Protocols"
-    ];
-    let activeCat = "All";
-    let searchQuery = "";
-    let activeYields = {};
-
-    function renderCards() {
-      let filtered = manual.filter(c => {
-        const matchesCat = activeCat === "All" || c.category === activeCat;
-        const q = searchQuery.toLowerCase();
-        const matchesSearch = !q || 
-          c.title.toLowerCase().includes(q) ||
-          (c.station && c.station.toLowerCase().includes(q)) ||
-          (c.scienceNote && c.scienceNote.toLowerCase().includes(q)) ||
-          (c.steps && c.steps.some(s => s.toLowerCase().includes(q))) ||
-          (c.yields && Object.values(c.yields).some(items => items.some(item => item.name.toLowerCase().includes(q))));
-        return matchesCat && matchesSearch;
-      });
-
-      const grid = $("#prep-cards-grid", container);
-      if (!grid) return;
-
-      if (!filtered.length) {
-        grid.innerHTML = `
-          <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
-            <p style="font-size: 1.5rem; font-family: var(--font-serif); margin-bottom: 0.5rem;">No Prep Cards Found</p>
-            <p style="font-size: 0.875rem;">Try adjusting your search terms or category filter.</p>
-          </div>
-        `;
-        return;
-      }
-
-      grid.innerHTML = filtered.map(card => {
-        const yieldKeys = card.yields ? Object.keys(card.yields) : [];
-        const currentYieldKey = activeYields[card.id] || (yieldKeys.length ? yieldKeys[0] : null);
-        const ingredients = currentYieldKey && card.yields[currentYieldKey] ? card.yields[currentYieldKey] : [];
-
-        return `
-          <article class="bento-card prep-card" data-id="${card.id}" style="display:flex; flex-direction:column; gap:1rem; border-top: 3px solid var(--gold-primary);">
-            <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:0.5rem;">
-              <div>
-                <span class="card-badge" style="color:var(--gold-primary); border-color:var(--gold-primary);">${esc(card.category.toUpperCase())}</span>
-                <h3 class="card-title" style="font-size:1.35rem; margin:0.35rem 0 0.25rem 0;">${esc(card.title)}</h3>
-                <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">
-                  STATION: <span style="color:var(--text-primary); font-weight:600;">${esc(card.station)}</span> · FREQUENCY: <span style="color:var(--gold-primary);">${esc(card.prepFrequency)}</span>
-                </p>
-              </div>
-              <span style="font-family:var(--font-mono); font-size:0.75rem; background:rgba(212,175,55,0.1); border:1px solid var(--gold-border); padding:0.25rem 0.6rem; border-radius:var(--radius-sm); color:var(--gold-primary);">
-                ⏱ ${esc(card.shelfLife)}
-              </span>
-            </div>
-
-            <!-- HACCP Critical Control Point Callout -->
-            <div style="background:rgba(239,68,68,0.08); border-left:3px solid #ef4444; border-radius:0 var(--radius-sm) var(--radius-sm) 0; padding:0.75rem 1rem;">
-              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
-                <span style="color:#ef4444; font-size:0.9rem;">⚠️</span>
-                <strong style="font-family:var(--font-mono); font-size:0.75rem; color:#ef4444; letter-spacing:0.05em; text-transform:uppercase;">HACCP Critical Control Standard</strong>
-              </div>
-              <p style="font-size:0.825rem; color:var(--text-secondary); line-height:1.45; margin:0;">${esc(card.haccp)}</p>
-            </div>
-
-            <!-- Ingredients & Yield Scaling -->
-            ${yieldKeys.length > 0 ? `
-              <div style="background:var(--bg-elevated); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1rem;">
-                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
-                  <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">
-                    BATCH SPECIFICATIONS:
-                  </span>
-                  <div style="display:flex; gap:0.35rem;">
-                    ${yieldKeys.map(yk => `
-                      <button class="btn-yield-toggle ${yk === currentYieldKey ? 'active' : ''}" data-card-id="${card.id}" data-yield="${esc(yk)}" style="font-family:var(--font-mono); font-size:0.75rem; padding:0.25rem 0.6rem; border-radius:var(--radius-sm); border:1px solid ${yk === currentYieldKey ? 'var(--gold-primary)' : 'var(--border-subtle)'}; background:${yk === currentYieldKey ? 'rgba(212,175,55,0.15)' : 'transparent'}; color:${yk === currentYieldKey ? 'var(--gold-primary)' : 'var(--text-muted)'}; cursor:pointer;">
-                        ${esc(yk)}
-                      </button>
-                    `).join('')}
-                  </div>
-                </div>
-
-                <div style="overflow-x:auto;">
-                  <table style="width:100%; border-collapse:collapse; font-size:0.85rem;">
-                    <thead>
-                      <tr style="border-bottom:1px solid var(--border-subtle); text-align:left;">
-                        <th style="padding:0.4rem 0.5rem; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); font-weight:500;">INGREDIENT</th>
-                        <th style="padding:0.4rem 0.5rem; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); font-weight:500; text-align:right;">PORTION</th>
-                        <th style="padding:0.4rem 0.5rem; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); font-weight:500;">PREP / CULINARY NOTES</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${ingredients.map(ing => `
-                        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
-                          <td style="padding:0.45rem 0.5rem; font-weight:600; color:var(--text-primary);">${esc(ing.name)}</td>
-                          <td style="padding:0.45rem 0.5rem; font-family:var(--font-mono); color:var(--gold-primary); text-align:right; font-weight:700;">${esc(ing.qty || '')}</td>
-                          <td style="padding:0.45rem 0.5rem; color:var(--text-muted); font-size:0.8rem;">${esc(ing.notes || '—')}</td>
-                        </tr>
-                      `).join('')}
-                    </tbody>
-                  </table>
-                </div>
-
-                <button class="btn-secondary btn-add-prep-shopping" data-card-id="${card.id}" data-yield="${esc(currentYieldKey)}" style="width:100%; margin-top:0.75rem; font-size:0.8rem; padding:0.45rem; border-color:var(--gold-border); color:var(--gold-primary);">
-                  🛒 Add ${esc(currentYieldKey)} Ingredients to Provisions
-                </button>
-              </div>
-            ` : ''}
-
-            <!-- Step-by-Step Culinary Procedure -->
-            <div>
-              <h4 style="font-family:var(--font-mono); font-size:0.8rem; color:var(--gold-primary); text-transform:uppercase; margin-bottom:0.6rem;">
-                Station Standard Operating Procedure (SOP)
-              </h4>
-              <ol style="margin:0; padding-left:1.25rem; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; line-height:1.5; color:var(--text-secondary);">
-                ${card.steps.map(step => `
-                  <li>${esc(step)}</li>
-                `).join('')}
-              </ol>
-            </div>
-
-            <!-- Food Science & Rheology Callout -->
-            ${card.scienceNote ? `
-              <div style="background:rgba(16,185,129,0.06); border-left:3px solid var(--emerald); border-radius:0 var(--radius-sm) var(--radius-sm) 0; padding:0.75rem 1rem; margin-top:auto;">
-                <strong style="font-family:var(--font-mono); font-size:0.75rem; color:var(--emerald); letter-spacing:0.05em; text-transform:uppercase; display:block; margin-bottom:0.25rem;">
-                  🔬 Brigade Science & Kitchen Rheology
-                </strong>
-                <p style="font-size:0.825rem; color:var(--text-secondary); line-height:1.45; margin:0;">
-                  ${esc(card.scienceNote)}
-                </p>
-              </div>
-            ` : ''}
-          </article>
-        `;
-      }).join('');
-
-      // Yield toggle listeners
-      $$(".btn-yield-toggle", grid).forEach(btn => {
-        btn.onclick = () => {
-          activeYields[btn.dataset.cardId] = btn.dataset.yield;
-          renderCards();
-        };
-      });
-
-      // Add to shopping listeners
-      $$(".btn-add-prep-shopping", grid).forEach(btn => {
-        btn.onclick = () => {
-          const cardId = btn.dataset.cardId;
-          const yk = btn.dataset.yield;
-          const card = manual.find(c => c.id === cardId);
-          if (card && card.yields && card.yields[yk]) {
-            card.yields[yk].forEach(ing => {
-              AppState.shoppingList.push({
-                name: `${ing.name} (${ing.qty || ''})`,
-                qty: ing.qty || "1 batch",
-                unit: "",
-                dept: "Pantry",
-                done: false
-              });
-            });
-            localStorage.setItem("atelier_shopping_v2", JSON.stringify(AppState.shoppingList));
-            showNotification(`Added ${card.title} (${yk}) to Provisions!`);
-          }
-        };
-      });
-    }
-
-    container.innerHTML = `
-      <section style="margin-bottom:2rem;">
-        <span class="card-badge">THE BRIGADE PREP & OPERATIONS MANUAL</span>
-        <h1 style="font-size:2.4rem; font-family:var(--font-serif); margin:0.25rem 0 0.5rem 0;">Kitchen Prep & Station Manual</h1>
-        <p style="color:var(--text-secondary); max-width:780px;">Authentic restaurant brigade standards: exact batch recipes, critical control points (HACCP), shelf life rules, temperature limits, precision knife cuts, and station line setups.</p>
-      </section>
-
-      <!-- Category Filter Pills -->
-      <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.5rem;">
-        ${categories.map(cat => `
-          <button class="nav-pill prep-cat-pill ${cat === activeCat ? 'active' : ''}" data-cat="${esc(cat)}">
-            ${esc(cat)}
-          </button>
-        `).join('')}
-      </div>
-
-      <!-- Search Toolbar -->
-      <div class="bento-card" style="margin-bottom:2rem; padding:1rem 1.25rem;">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-          <input type="text" id="prep-search-input" class="form-select" placeholder="Search 30 prep cards, knife cuts, sauces, HACCP specs, stations..." style="flex:1; min-width:280px; padding:0.6rem 1rem; font-size:0.9rem;" value="${esc(searchQuery)}">
-          <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
-            30 STANDARDIZED OPERATIONAL CARDS
-          </span>
-        </div>
-      </div>
-
-      <!-- Prep Cards Grid -->
-      <div id="prep-cards-grid" class="bento-grid" style="grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));">
-        <!-- Rendered by renderCards() -->
-      </div>
-    `;
-
-    // Wire Category Pills
-    $$(".prep-cat-pill", container).forEach(pill => {
-      pill.onclick = () => {
-        activeCat = pill.dataset.cat;
-        $$(".prep-cat-pill", container).forEach(p => p.classList.toggle("active", p === pill));
-        renderCards();
-      };
-    });
-
-    // Wire Search Input
-    $("#prep-search-input", container).oninput = (e) => {
-      searchQuery = e.target.value;
-      renderCards();
-    };
-
-    renderCards();
+    window.KitchenOperations.render(container);
   }
 
 

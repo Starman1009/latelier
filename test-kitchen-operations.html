@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kitchen operations checks</title><h1>Kitchen operations checks</h1><pre id="results"></pre><script src="kitchen-operations.js"></script><script>
+const results=[];
+function check(label,condition){results.push((condition?'PASS':'FAIL')+' '+label);if(!condition)throw Error(label);}
+try {
+ const {yieldCalculation:y,voiceCommand:v}=KitchenOperations;
+ check('EP 1000g at 80% requires AP 1250g',y(1000,80,'ep').ap===1250);
+ check('AP 1000g at 80% gives EP 800g',y(1000,80,'ap').ep===800);
+ check('100% yield has no trim',y(1,100,'ep').loss===0);
+ check('0%, >100%, negative and non-finite inputs rejected',!y(1,0,'ep')&&!y(1,101,'ep')&&!y(-1,80,'ep')&&!y(Infinity,80,'ep'));
+ check('Numeric timer',v('Start 5 minute timer').minutes===5);
+ check('Spelled timer',v('Start a five minute timer.').minutes===5);
+ check('Decimal timer preserved',v('Start 1.5 minute timer').minutes===1.5);
+ check('Zero and excessive timers rejected',!v('Start 0 minute timer')&&!v('Start 2000 minute timer'));
+ check('Repeat and previous commands',v('Repeat step').type==='repeat'&&v('Previous step').type==='previous');
+ check('Conversation not accidentally interpreted',!v('I think next time we should cook')&&!v('never start 5 minute timer'));
+} catch(e){results.push(e.message);}
+document.getElementById('results').textContent=results.join('\n');
+</script></html>
