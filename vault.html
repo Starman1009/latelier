@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="latelier.css?v=17">
-  <link rel="stylesheet" href="vault.css?v=17">
+  <link rel="stylesheet" href="latelier.css?v=18">
+  <link rel="stylesheet" href="vault.css?v=18">
 </head>
 <body class="vault-body-root">
   <main class="vault-shell">
@@ -31,6 +31,9 @@
           <span class="vault-pulse-dot"></span>
           <span>AES-256-GCM Hardware Encrypted</span>
         </div>
+        <button type="button" id="btn-vault-shortcuts" class="vault-nav-back" style="cursor:pointer;" title="View Keyboard Shortcuts (press ?)">
+          <span>⌨️</span> Shortcuts
+        </button>
         <a href="index.html" class="vault-nav-back">
           <span>←</span> Public Atelier
         </a>
@@ -90,9 +93,109 @@
 
     <!-- Main Private Workspace Canvas -->
     <section id="workspace" class="vault-workspace" hidden></section>
+
+    <!-- Scan Lightbox Viewer Modal -->
+    <div id="vault-lightbox" class="vault-modal-backdrop" hidden role="dialog" aria-modal="true" aria-label="Authentic Line Scan Inspection">
+      <div class="vault-lightbox-dialog">
+        <header class="vault-lightbox-header">
+          <div class="vault-lightbox-meta">
+            <span class="vault-manual-pill" id="vault-lightbox-tag">AUTHENTIC SCAN</span>
+            <span class="vault-lightbox-title" id="vault-lightbox-title">Source Document</span>
+          </div>
+          <div class="vault-lightbox-controls">
+            <button type="button" id="vault-zoom-out" class="vault-btn-tool" title="Zoom Out (-)">−</button>
+            <span id="vault-zoom-level" class="vault-zoom-indicator">100%</span>
+            <button type="button" id="vault-zoom-in" class="vault-btn-tool" title="Zoom In (+)">+</button>
+            <button type="button" id="vault-zoom-reset" class="vault-btn-tool" title="Fit to Screen (0)">Fit</button>
+            <a id="vault-lightbox-download" href="#" target="_blank" rel="noopener" class="vault-btn-tool" title="Open Full Raw Image in New Tab">↗</a>
+            <button type="button" id="vault-lightbox-close" class="vault-btn-tool vault-btn-close" title="Close Lightbox (Esc)">✕</button>
+          </div>
+        </header>
+        <div class="vault-lightbox-viewport" id="vault-lightbox-viewport">
+          <img id="vault-lightbox-img" src="" alt="Full resolution line scan" draggable="false">
+        </div>
+        <footer class="vault-lightbox-footer">
+          <span>💡 Click and drag to pan when zoomed · Scroll wheel zooms in/out · Press Esc to return</span>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Keyboard Shortcuts HUD Modal -->
+    <div id="vault-shortcuts-modal" class="vault-modal-backdrop" hidden role="dialog" aria-modal="true" aria-label="Salon Privé Keyboard Shortcuts">
+      <div class="vault-shortcuts-card">
+        <div class="vault-shortcuts-header">
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <span style="font-size:1.4rem;">⌨️</span>
+            <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:#FFFFFF; margin:0;">Salon Privé Keyboard Shortcuts</h3>
+          </div>
+          <button type="button" id="vault-shortcuts-close" class="vault-btn-tool vault-btn-close">✕</button>
+        </div>
+        <div class="vault-shortcuts-grid">
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">/</kbd>
+            <span>Focus universal search input across all 750 pages</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">[</kbd>
+            <span>Navigate to previous page within active manual</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">]</kbd>
+            <span>Navigate to next page within active manual</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">Alt + M</kbd>
+            <span>Add / remove current page to Tasting Menu</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">Alt + P</kbd>
+            <span>Decrypt and inspect full original PDF</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">Alt + T</kbd>
+            <span>Copy active ingredient table as TSV</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">?</kbd>
+            <span>Toggle this keyboard shortcuts guide</span>
+          </div>
+          <div class="vault-shortcut-row">
+            <kbd class="vault-kbd">Esc</kbd>
+            <span>Close open modals or unfocus active search input</span>
+          </div>
+        </div>
+        <div style="margin-top:1.25rem; text-align:right;">
+          <button type="button" id="vault-shortcuts-gotit" class="vault-submit-btn" style="display:inline-flex; width:auto; padding:0.5rem 1.25rem; font-size:0.85rem;">
+            Got it
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brigade Service Firing Sheet Modal -->
+    <div id="vault-brigade-sheet-modal" class="vault-modal-backdrop" hidden role="dialog" aria-modal="true" aria-label="Brigade Service Firing Sheet">
+      <div class="vault-sheet-card">
+        <div class="vault-sheet-header no-print">
+          <div>
+            <span class="vault-hero-badge">OPERATIONAL PASS SHEET</span>
+            <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:#FFFFFF; margin:0.25rem 0 0 0;">Brigade Service Firing Sheet</h3>
+          </div>
+          <div style="display:flex; gap:0.5rem; align-items:center;">
+            <button type="button" id="btn-print-brigade-sheet" class="vault-submit-btn" style="width:auto; padding:0.55rem 1.1rem; font-size:0.85rem;">
+              🖨️ Print Service Sheet
+            </button>
+            <button type="button" id="btn-copy-brigade-brief" class="vault-btn-tool" style="padding:0.55rem 0.9rem; font-size:0.825rem;" title="Copy clean text summary">
+              📋 Copy Brief
+            </button>
+            <button type="button" id="vault-sheet-close" class="vault-btn-tool vault-btn-close">✕</button>
+          </div>
+        </div>
+        <div id="vault-brigade-sheet-content" class="vault-sheet-body"></div>
+      </div>
+    </div>
   </main>
 
-  <script src="vault.js?v=17"></script>
+  <script src="vault.js?v=18"></script>
   <script>
     // Eye toggle for password visibility
     const pwdInput = document.getElementById('password');

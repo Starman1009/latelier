@@ -912,6 +912,490 @@
 /* --------------------------------------------------------------------------
    Responsive Media Queries
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   Enhanced Table Architecture & Dynamic Batch Scaling
+   -------------------------------------------------------------------------- */
+.source-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s var(--ease-spring);
+}
+
+.source-table th:hover {
+  background: rgba(212, 175, 55, 0.25);
+  color: #FFFFFF;
+}
+
+.source-table th.active-table-column {
+  background: rgba(212, 175, 55, 0.28);
+  color: #FFFFFF;
+  border-bottom: 2px solid var(--gold-primary);
+  box-shadow: inset 0 -3px 0 var(--gold-primary);
+}
+
+.source-table td.active-table-column {
+  background: rgba(212, 175, 55, 0.08) !important;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-left: 1px dashed rgba(212, 175, 55, 0.25);
+  border-right: 1px dashed rgba(212, 175, 55, 0.25);
+}
+
+.vault-scaling-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.75rem;
+  background: rgba(10, 10, 16, 0.6);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.vault-scaling-strip label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-right: 0.25rem;
+}
+
+.btn-vault-scale-pill {
+  padding: 0.25rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s var(--ease-spring);
+}
+
+.btn-vault-scale-pill:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.btn-vault-scale-pill.active {
+  background: var(--gold-primary);
+  color: #060609;
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.vault-scaled-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Line Scan Container & Controls
+   -------------------------------------------------------------------------- */
+.vault-scan-container {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-top: 0.75rem;
+}
+
+.vault-scan-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85);
+  cursor: zoom-in;
+  transition: transform 0.25s var(--ease-spring);
+}
+
+.vault-scan-img:hover {
+  filter: brightness(1.05);
+}
+
+.vault-scan-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-scan-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s var(--ease-spring);
+}
+
+.btn-scan-action:hover {
+  border-color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.12);
+  color: var(--gold-primary);
+}
+
+.btn-scan-zoom {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: rgba(212, 175, 55, 0.35);
+  color: var(--gold-primary);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Universal Modal Backdrop & Lightbox System
+   -------------------------------------------------------------------------- */
+.vault-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(4, 4, 7, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  animation: vault-fade-in 0.25s var(--ease-spring);
+}
+
+.vault-modal-backdrop[hidden] {
+  display: none !important;
+}
+
+.vault-btn-tool {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s var(--ease-spring);
+  text-decoration: none;
+}
+
+.vault-btn-tool:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+}
+
+.vault-btn-close {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.35);
+  color: #ff8888;
+  font-weight: bold;
+}
+
+.vault-btn-close:hover {
+  background: rgba(239, 68, 68, 0.3);
+  color: #FFFFFF;
+  border-color: #ef4444;
+}
+
+/* Lightbox Specifics */
+.vault-lightbox-dialog {
+  width: 100%;
+  max-width: 1400px;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background: #09090d;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+}
+
+.vault-lightbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  background: rgba(14, 14, 20, 0.95);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vault-lightbox-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.vault-lightbox-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.vault-lightbox-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vault-zoom-indicator {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--gold-primary);
+  min-width: 48px;
+  text-align: center;
+}
+
+.vault-lightbox-viewport {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  background: radial-gradient(circle at center, #111118 0%, #060609 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.vault-lightbox-viewport:active {
+  cursor: grabbing;
+}
+
+.vault-lightbox-viewport img {
+  max-height: 85%;
+  max-width: 85%;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+  transition: transform 0.15s ease-out;
+  transform-origin: center center;
+}
+
+.vault-lightbox-footer {
+  padding: 0.65rem 1.5rem;
+  background: rgba(10, 10, 15, 0.9);
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Keyboard Shortcuts HUD
+   -------------------------------------------------------------------------- */
+.vault-shortcuts-card {
+  width: 100%;
+  max-width: 620px;
+  background: #0d0d14;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+}
+
+.vault-shortcuts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.vault-shortcuts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vault-shortcut-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.vault-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  padding: 0.25rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   Brigade Service Firing Sheet & Print Architecture
+   -------------------------------------------------------------------------- */
+.vault-sheet-card {
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  background: #0d0d14;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+}
+
+.vault-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  background: rgba(14, 14, 20, 0.95);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vault-sheet-body {
+  padding: 2rem;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.brigade-pass-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--gold-primary);
+}
+
+.brigade-course-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.brigade-course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #vault-brigade-sheet-modal,
+  #vault-brigade-sheet-modal * {
+    visibility: visible;
+  }
+  #vault-brigade-sheet-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    padding: 0;
+  }
+  .vault-sheet-card {
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+    max-height: none;
+    background: #FFFFFF !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .vault-sheet-body {
+    padding: 1cm;
+    color: #000000 !important;
+  }
+  .brigade-course-item {
+    border: 1px solid #000000 !important;
+    background: #FFFFFF !important;
+    page-break-inside: avoid;
+  }
+  .vault-manual-pill {
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Chef's Notebook & Provisions Quick Action Bars
+   -------------------------------------------------------------------------- */
+.vault-action-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.btn-chip {
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s var(--ease-spring);
+}
+
+.btn-chip:hover {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+}
+
 @media (max-width: 900px) {
   .vault-grid {
     grid-template-columns: 1fr;

@@ -14,6 +14,179 @@
 
   let key, data, rows = [], menu = [], checks = new Set(), notes = '', shopping = '', urls = [], view = 'library', current = null, session = 0, readerVersion = 0;
   let filters = { q: '', manual: '', kind: 'all', page: 0 };
+  let lightboxZoom = 1;
+  let isPanning = false;
+  let panStart = { x: 0, y: 0 };
+  let panOffset = { x: 0, y: 0 };
+
+  function updateLightboxTransform() {
+    const img = $('#vault-lightbox-img');
+    const zoomText = $('#vault-zoom-level');
+    if (img) {
+      img.style.transform = `translate(${panOffset.x}px, ${panOffset.y}px) scale(${lightboxZoom})`;
+    }
+    if (zoomText) {
+      zoomText.textContent = `${Math.round(lightboxZoom * 100)}%`;
+    }
+  }
+
+  function openLightbox(src, title, tag) {
+    const modal = $('#vault-lightbox');
+    const img = $('#vault-lightbox-img');
+    const titleEl = $('#vault-lightbox-title');
+    const tagEl = $('#vault-lightbox-tag');
+    const download = $('#vault-lightbox-download');
+    if (!modal || !img) return;
+
+    lightboxZoom = 1;
+    panOffset = { x: 0, y: 0 };
+    img.src = src;
+    if (titleEl) titleEl.textContent = title;
+    if (tagEl) tagEl.textContent = tag;
+    if (download) download.href = src;
+    updateLightboxTransform();
+    modal.hidden = false;
+  }
+
+  function closeLightbox() {
+    const modal = $('#vault-lightbox');
+    if (modal) modal.hidden = true;
+    lightboxZoom = 1;
+    panOffset = { x: 0, y: 0 };
+    updateLightboxTransform();
+  }
+
+  function scaleNumberString(str, factor) {
+    if (factor === 1 || !str) return str;
+    const numRegex = /^(\d+\s+\d+\/\d+|\d+\/\d+|\d+(?:\.\d+)?)\s*(.*)$/;
+    const m = str.trim().match(numRegex);
+    if (!m) return str;
+    let numVal = 0;
+    const numPart = m[1];
+    const unitPart = m[2] ? ' ' + m[2] : '';
+
+    if (numPart.includes(' ')) {
+      const parts = numPart.split(' ');
+      const frac = parts[1].split('/');
+      numVal = parseFloat(parts[0]) + (parseFloat(frac[0]) / parseFloat(frac[1]));
+    } else if (numPart.includes('/')) {
+      const frac = numPart.split('/');
+      numVal = parseFloat(frac[0]) / parseFloat(frac[1]);
+    } else {
+      numVal = parseFloat(numPart);
+    }
+
+    if (isNaN(numVal) || numVal <= 0) return str;
+    const scaled = numVal * factor;
+    const formatted = scaled % 1 === 0 ? scaled.toFixed(0) : parseFloat(scaled.toFixed(2)).toString();
+    return `${formatted}${unitPart}`;
+  }
+
+  function syncToPublicProvisions() {
+    const raw = shopping.trim();
+    if (!raw) {
+      notifyVault('Private provisions list is empty. Add batch items from recipe tables first.', false);
+      return;
+    }
+    try {
+      const existing = JSON.parse(localStorage.getItem('atelier_shopping_v2') || '[]');
+      const lines = raw.split('\n').filter(l => l.trim() && !l.startsWith('/*'));
+      let addedCount = 0;
+      const seenNames = new Set(existing.map(i => (i.name || '').toLowerCase()));
+
+      lines.forEach(line => {
+        let name = line;
+        let qty = '';
+        if (line.includes('—')) {
+          const parts = line.split('—');
+          qty = parts[0].trim();
+          name = parts[1].trim();
+        }
+        if (!seenNames.has(name.toLowerCase())) {
+          existing.push({
+            id: 'priv-' + Math.random().toString(36).substring(2, 9),
+            name: name,
+            qty: qty,
+            unit: '',
+            category: 'Salon Privé Provisions',
+            checked: false,
+            timestamp: Date.now()
+          });
+          seenNames.add(name.toLowerCase());
+          addedCount++;
+        }
+      });
+
+      localStorage.setItem('atelier_shopping_v2', JSON.stringify(existing));
+      notifyVault(`Synced ${addedCount} private items into Public Atelier Provisions! (Available on your mobile device)`);
+    } catch (err) {
+      notifyVault('Could not sync to public provisions.', false);
+    }
+  }
+
+  function openBrigadeSheet() {
+    const modal = $('#vault-brigade-sheet-modal');
+    const content = $('#vault-brigade-sheet-content');
+    if (!modal || !content) return;
+
+    const bookmarkedPages = menu.map(id => rows.find(r => r.id === id)).filter(Boolean);
+    const dateStr = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+    content.innerHTML = `
+      <div class="brigade-pass-header">
+        <div>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.15em; color:var(--gold-primary); text-transform:uppercase;">
+            L'Atelier · Salon Privé Operations Pass
+          </span>
+          <h2 style="font-family:var(--font-serif); font-size:2rem; color:#FFFFFF; margin:0.35rem 0 0 0;">
+            Brigade Service Firing &amp; Pass Sheet
+          </h2>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0.25rem 0 0 0;">
+            Service Date: ${e(dateStr)} · Active Firing Sequence (${bookmarkedPages.length} Dishes)
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <span class="vault-manual-pill" style="font-size:0.85rem; padding:0.4rem 0.8rem;">
+            ${checks.size} / ${bookmarkedPages.length} STATIONS VERIFIED
+          </span>
+        </div>
+      </div>
+
+      <div style="margin-bottom:1.5rem;">
+        <h4 style="font-family:var(--font-mono); font-size:0.8rem; text-transform:uppercase; color:var(--gold-primary); margin-bottom:0.75rem;">
+          Firing Sequence &amp; Station Assignments
+        </h4>
+        ${bookmarkedPages.map((p, idx) => {
+          const isVerified = checks.has(p.id);
+          const tables = (p.content || []).filter(c => c.kind === 'table');
+          return `
+            <div class="brigade-course-item">
+              <div class="brigade-course-meta">
+                <div style="display:flex; align-items:center; gap:0.6rem;">
+                  <span style="font-family:var(--font-mono); font-size:0.85rem; font-weight:700; color:var(--gold-primary);">
+                    COURSE ${idx + 1}
+                  </span>
+                  <strong style="font-family:var(--font-serif); font-size:1.25rem; color:#FFFFFF;">${e(p.title)}</strong>
+                </div>
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                  <span class="vault-manual-pill">${e(p.manual)} · P. ${p.number}</span>
+                  <span style="font-family:var(--font-mono); font-size:0.75rem; color:${isVerified ? 'var(--emerald)' : 'var(--text-muted)'}; font-weight:600;">
+                    ${isVerified ? '✓ VERIFIED' : '⏱ PENDING'}
+                  </span>
+                </div>
+              </div>
+              <div style="font-size:0.85rem; color:var(--text-secondary); line-height:1.6;">
+                <p style="margin:0.25rem 0;"><strong>Operational Summary:</strong> ${e(p.text ? p.text.slice(0, 220) + '…' : 'Standard station preparation')}</p>
+                ${tables.length ? `<p style="margin:0.25rem 0; font-family:var(--font-mono); font-size:0.75rem; color:var(--gold-light);">✦ ${tables.length} Batch Formulation Table(s) Recorded</p>` : ''}
+              </div>
+            </div>
+          `;
+        }).join('') || '<p style="color:var(--text-muted);">No pages currently in Tasting Menu.</p>'}
+      </div>
+    `;
+
+    modal.hidden = false;
+  }
   const PAGE_SIZE = 40;
 
   async function decrypt(file, activeKey = key) {
@@ -341,13 +514,20 @@
     if (view === 'menu' || view === 'mise') {
       const isMise = view === 'mise';
       body.innerHTML = `
-        <div style="margin-bottom:2rem;">
-          <h2 style="font-family:var(--font-serif); font-size:2.2rem; color:#FFFFFF; margin-bottom:0.5rem;">
-            ${isMise ? 'Mise en Place Station Checklist' : 'Your Selected Degustation Menu'}
-          </h2>
-          <p style="color:var(--text-secondary); max-width:760px;">
-            ${isMise ? 'Review each station requirement, equipment setup, and ingredient staging before service firing.' : 'Curated collection of source pages for tonight\'s dinner service.'}
-          </p>
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h2 style="font-family:var(--font-serif); font-size:2.2rem; color:#FFFFFF; margin-bottom:0.5rem;">
+              ${isMise ? 'Mise en Place Station Checklist' : 'Your Selected Degustation Menu'}
+            </h2>
+            <p style="color:var(--text-secondary); max-width:760px; margin:0;">
+              ${isMise ? 'Review each station requirement, equipment setup, and ingredient staging before service firing.' : 'Curated collection of source pages for tonight\'s dinner service.'}
+            </p>
+          </div>
+          ${menu.length ? `
+            <button type="button" id="btn-generate-brigade-sheet" class="vault-submit-btn" style="width:auto; padding:0.6rem 1.25rem; font-size:0.85rem;">
+              🖨️ Brigade Service Sheet (${menu.length} Dishes)
+            </button>
+          ` : ''}
         </div>
 
         <div class="vault-grid">
@@ -391,6 +571,8 @@
           else checks.delete(b.dataset.check);
         };
       });
+      const genBrigadeBtn = $('#btn-generate-brigade-sheet');
+      if (genBrigadeBtn) genBrigadeBtn.onclick = openBrigadeSheet;
     }
 
     // VIEW: 5. PRIVATE PROVISIONS (SHOPPING) & 6. NOTEBOOK
@@ -407,6 +589,27 @@
         </div>
 
         <div class="vault-page">
+          ${shop ? `
+            <div class="vault-action-chips">
+              <button type="button" class="btn-chip" id="btn-sync-public-provisions" style="color:var(--gold-primary); border-color:rgba(212,175,55,0.4); background:rgba(212,175,55,0.1); font-weight:600;">
+                🛒 Sync to Public Provisions
+              </button>
+              <button type="button" class="btn-chip" id="btn-format-provisions-check">
+                ✓ Format as Checkbox List
+              </button>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-left:auto;">
+                ${(shopping.match(/\n/g) || []).length} items recorded
+              </span>
+            </div>
+          ` : `
+            <div class="vault-action-chips">
+              <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); text-transform:uppercase;">Quick Inserts:</span>
+              <button type="button" class="btn-chip" id="btn-ins-date">+ Service Timestamp</button>
+              <button type="button" class="btn-chip" id="btn-ins-yield">+ Yield Audit</button>
+              <button type="button" class="btn-chip" id="btn-ins-pair">+ Sommelier Pairing</button>
+              <button type="button" class="btn-chip" id="btn-ins-mise">+ Station Mise Setup</button>
+            </div>
+          `}
           <div class="vault-page-toolbar" style="margin-bottom:1rem;">
             <button id="btn-copy-vault-notes">📋 Copy to Clipboard</button>
             <button id="btn-clear-vault-notes" style="color:#ef4444;">🗑️ Clear</button>
@@ -438,6 +641,49 @@
           notifyVault('Notes cleared.');
         }
       };
+
+      if (shop) {
+        const syncBtn = $('#btn-sync-public-provisions');
+        if (syncBtn) syncBtn.onclick = syncToPublicProvisions;
+
+        const checkBtn = $('#btn-format-provisions-check');
+        if (checkBtn) {
+          checkBtn.onclick = () => {
+            const lines = shopping.split('\n');
+            shopping = lines.map(l => {
+              const trimmed = l.trim();
+              if (!trimmed || trimmed.startsWith('/*') || trimmed.startsWith('[ ]') || trimmed.startsWith('[x]')) return l;
+              return '[ ] ' + trimmed;
+            }).join('\n');
+            $('#writing').value = shopping;
+            notifyVault('Formatted provisions as checkbox checklist.');
+          };
+        }
+      } else {
+        const insertSnippet = (snippet) => {
+          const area = $('#writing');
+          const pos = area.selectionStart || area.value.length;
+          const before = area.value.substring(0, pos);
+          const after = area.value.substring(pos);
+          area.value = before + snippet + after;
+          notes = area.value;
+          area.focus();
+          area.selectionStart = area.selectionEnd = pos + snippet.length;
+          notifyVault('Snippet inserted.');
+        };
+
+        const insDate = $('#btn-ins-date');
+        if (insDate) insDate.onclick = () => {
+          const d = new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+          insertSnippet(`\n[SERVICE PASS · ${d}]\n`);
+        };
+        const insYield = $('#btn-ins-yield');
+        if (insYield) insYield.onclick = () => insertSnippet(`\n* [YIELD AUDIT] Stated Yield: _____ | Actual Yield: _____ | Variance: _____\n`);
+        const insPair = $('#btn-ins-pair');
+        if (insPair) insPair.onclick = () => insertSnippet(`\n* [SOMMELIER PAIRING] Varietal: _____ | Producer: _____ | Vintage: _____\n`);
+        const insMise = $('#btn-ins-mise');
+        if (insMise) insMise.onclick = () => insertSnippet(`\n* [STATION MISE & EQUIPMENT] Pans: _____ | Temp: _____ | Pickup Timing: _____\n`);
+      }
     }
 
     // VIEW: 7. VIDEO MASTERCLASSES
@@ -544,7 +790,7 @@
     if (nextBtn) nextBtn.disabled = filters.page === max || matches.length === 0;
   }
 
-  // Table Generator with Batch Column Selector
+  // Table Generator with Batch Column Selector & Dynamic Scaling
   function tableHTML(item, index) {
     const tableRows = item.rows;
     const width = Math.max(...tableRows.map(r => r.length));
@@ -552,19 +798,36 @@
     const ingredient = head.findIndex(c => /ingredients?/i.test(c || ''));
 
     return `
-      <section class="source-table" data-table-index="${index}">
+      <section class="source-table" data-table-index="${index}" data-ingredient-col="${ingredient}">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem; flex-wrap:wrap; gap:0.6rem;">
+          <div class="vault-scaling-strip" data-scale-strip="${index}">
+            <label>Yield Scale:</label>
+            <button type="button" class="btn-vault-scale-pill active" data-scale-val="1">1x</button>
+            <button type="button" class="btn-vault-scale-pill" data-scale-val="0.5">0.5x</button>
+            <button type="button" class="btn-vault-scale-pill" data-scale-val="1.5">1.5x</button>
+            <button type="button" class="btn-vault-scale-pill" data-scale-val="2">2x</button>
+            <button type="button" class="btn-vault-scale-pill" data-scale-val="3">3x</button>
+            <button type="button" class="btn-vault-scale-pill" data-scale-val="4">4x</button>
+          </div>
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted);">
+            ✦ Click column header to trace batch
+          </span>
+        </div>
         <div class="table-scroll" tabindex="0" role="region" aria-label="Source table ${index + 1}">
-          <table>
+          <table data-table-ref="${index}">
             <caption>Source Specification Table ${index + 1} · Quantities retained exactly as written</caption>
             <thead>
               <tr>
-                ${Array.from({ length: width }, (_, i) => `<th scope="col">${e(head[i] || '')}</th>`).join('')}
+                ${Array.from({ length: width }, (_, i) => `<th scope="col" data-col-idx="${i}" title="Click to highlight batch column">${e(head[i] || '')}</th>`).join('')}
               </tr>
             </thead>
             <tbody>
               ${tableRows.slice(1).map(row => `
                 <tr>
-                  ${Array.from({ length: width }, (_, i) => `<td>${e(row[i] || '')}</td>`).join('')}
+                  ${Array.from({ length: width }, (_, i) => {
+                    const cellVal = row[i] || '';
+                    return `<td data-col-idx="${i}" data-raw-val="${e(cellVal)}">${e(cellVal)}</td>`;
+                  }).join('')}
                 </tr>
               `).join('')}
             </tbody>
@@ -691,6 +954,51 @@
       openPage(id);
     };
 
+    // Column Highlighting on Table Header Click
+    el.querySelectorAll('.source-table th[data-col-idx]').forEach(th => {
+      th.onclick = () => {
+        const table = th.closest('table');
+        const colIdx = th.dataset.colIdx;
+        const isActive = th.classList.contains('active-table-column');
+        table.querySelectorAll('.active-table-column').forEach(cell => cell.classList.remove('active-table-column'));
+        if (!isActive) {
+          th.classList.add('active-table-column');
+          table.querySelectorAll(`td[data-col-idx="${colIdx}"]`).forEach(td => td.classList.add('active-table-column'));
+        }
+      };
+    });
+
+    // Dynamic Batch Scaling Pills
+    el.querySelectorAll('.btn-vault-scale-pill').forEach(btn => {
+      btn.onclick = () => {
+        const strip = btn.closest('.vault-scaling-strip');
+        const tableSec = btn.closest('.source-table');
+        const table = tableSec.querySelector('table');
+        const factor = parseFloat(btn.dataset.scaleVal) || 1;
+        const ingCol = parseInt(tableSec.dataset.ingredientCol, 10);
+
+        strip.querySelectorAll('.btn-vault-scale-pill').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        table.querySelectorAll('tbody td').forEach(td => {
+          const colIdx = parseInt(td.dataset.colIdx, 10);
+          const raw = td.dataset.rawVal;
+          if (colIdx === ingCol || !raw) return;
+          if (factor === 1) {
+            td.innerHTML = e(raw);
+          } else {
+            const scaled = scaleNumberString(raw, factor);
+            if (scaled !== raw) {
+              td.innerHTML = `${e(scaled)} <span class="vault-scaled-badge">${factor}x</span>`;
+            } else {
+              td.innerHTML = e(raw);
+            }
+          }
+        });
+        notifyVault(`Table quantities scaled to ${factor}x yield.`);
+      };
+    });
+
     // TSV Table Copy Listener
     el.querySelectorAll('[data-copy-table]').forEach(b => {
       b.onclick = () => {
@@ -786,18 +1094,98 @@
       const url = URL.createObjectURL(new Blob([bytes], { type: 'image/webp' }));
       urls.push(url);
       $('#page-image').innerHTML = `
-        <a href="${url}" target="_blank" rel="noopener" aria-label="Enlarge original page ${p.number}" style="display:block; cursor:zoom-in;">
-          <img src="${url}" alt="Original page ${p.number}: ${e(p.title)}" width="${p.width * 1.5}" height="${p.height * 1.5}" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,0.8);">
-        </a>
+        <div class="vault-scan-container">
+          <img src="${url}" alt="Original page ${p.number}: ${e(p.title)}" width="${p.width * 1.5}" height="${p.height * 1.5}" class="vault-scan-img" id="scan-img-${p.number}">
+          <div class="vault-scan-actions">
+            <button type="button" class="btn-scan-action btn-scan-zoom" id="btn-enlarge-lightbox">
+              🔍 Inspect High-Res Lightbox
+            </button>
+            <a href="${url}" target="_blank" rel="noopener" class="btn-scan-action">
+              ↗ Open Raw in New Tab
+            </a>
+          </div>
+        </div>
         <p style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); margin-top:0.6rem; text-align:center;">
-          ✦ Select image to view full-resolution uncompressed scan
+          ✦ Authentic Restaurant Scan · Click to inspect fine print & station diagrams
         </p>
       `;
+
+      const triggerLightbox = () => openLightbox(url, p.title, `${p.manual} · Page ${p.number}`);
+      const scanImg = $('#scan-img-' + p.number);
+      if (scanImg) scanImg.onclick = triggerLightbox;
+      const enlargeBtn = $('#btn-enlarge-lightbox');
+      if (enlargeBtn) enlargeBtn.onclick = triggerLightbox;
     } catch {
       if (ticket === readerVersion) {
         $('#page-image').textContent = 'Preview scan unavailable. Use "View Original PDF Scan" above.';
       }
     }
+  }
+
+  // Lightbox Viewport & Controls Setup
+  const lbViewport = $('#vault-lightbox-viewport');
+  if (lbViewport) {
+    lbViewport.onmousedown = ev => {
+      if (ev.button !== 0) return;
+      isPanning = true;
+      panStart = { x: ev.clientX - panOffset.x, y: ev.clientY - panOffset.y };
+    };
+    window.addEventListener('mousemove', ev => {
+      if (!isPanning) return;
+      panOffset = { x: ev.clientX - panStart.x, y: ev.clientY - panStart.y };
+      updateLightboxTransform();
+    });
+    window.addEventListener('mouseup', () => { isPanning = false; });
+    lbViewport.onwheel = ev => {
+      ev.preventDefault();
+      const delta = ev.deltaY < 0 ? 0.2 : -0.2;
+      lightboxZoom = Math.max(0.5, Math.min(5, lightboxZoom + delta));
+      updateLightboxTransform();
+    };
+  }
+
+  const zoomInBtn = $('#vault-zoom-in');
+  if (zoomInBtn) zoomInBtn.onclick = () => { lightboxZoom = Math.min(5, lightboxZoom + 0.25); updateLightboxTransform(); };
+  const zoomOutBtn = $('#vault-zoom-out');
+  if (zoomOutBtn) zoomOutBtn.onclick = () => { lightboxZoom = Math.max(0.5, lightboxZoom - 0.25); updateLightboxTransform(); };
+  const zoomResetBtn = $('#vault-zoom-reset');
+  if (zoomResetBtn) zoomResetBtn.onclick = () => { lightboxZoom = 1; panOffset = { x: 0, y: 0 }; updateLightboxTransform(); };
+  const lbCloseBtn = $('#vault-lightbox-close');
+  if (lbCloseBtn) lbCloseBtn.onclick = closeLightbox;
+  const lbBackdrop = $('#vault-lightbox');
+  if (lbBackdrop) lbBackdrop.onclick = ev => { if (ev.target.id === 'vault-lightbox') closeLightbox(); };
+
+  // Shortcuts Modal Setup
+  const shortcutsModal = $('#vault-shortcuts-modal');
+  const openShortcutsBtn = $('#btn-vault-shortcuts');
+  const closeShortcutsBtn = $('#vault-shortcuts-close');
+  const gotitShortcutsBtn = $('#vault-shortcuts-gotit');
+  const toggleShortcuts = () => {
+    if (!shortcutsModal) return;
+    shortcutsModal.hidden = !shortcutsModal.hidden;
+  };
+  if (openShortcutsBtn) openShortcutsBtn.onclick = toggleShortcuts;
+  if (closeShortcutsBtn) closeShortcutsBtn.onclick = () => { shortcutsModal.hidden = true; };
+  if (gotitShortcutsBtn) gotitShortcutsBtn.onclick = () => { shortcutsModal.hidden = true; };
+  if (shortcutsModal) shortcutsModal.onclick = ev => { if (ev.target.id === 'vault-shortcuts-modal') shortcutsModal.hidden = true; };
+
+  // Brigade Sheet Modal Setup
+  const sheetModal = $('#vault-brigade-sheet-modal');
+  const closeSheetBtn = $('#vault-sheet-close');
+  if (closeSheetBtn) closeSheetBtn.onclick = () => { sheetModal.hidden = true; };
+  if (sheetModal) sheetModal.onclick = ev => { if (ev.target.id === 'vault-brigade-sheet-modal') sheetModal.hidden = true; };
+  const printSheetBtn = $('#btn-print-brigade-sheet');
+  if (printSheetBtn) printSheetBtn.onclick = () => window.print();
+  const copyBriefBtn = $('#btn-copy-brigade-brief');
+  if (copyBriefBtn) {
+    copyBriefBtn.onclick = () => {
+      const bookmarked = menu.map(id => rows.find(r => r.id === id)).filter(Boolean);
+      const text = `L'ATELIER SALON PRIVÉ · BRIGADE SERVICE BRIEF\n` +
+        `Date: ${new Date().toLocaleDateString()}\n` +
+        `Total Dishes: ${bookmarked.length}\n\n` +
+        bookmarked.map((p, i) => `${i + 1}. ${p.title} (${p.manual} p.${p.number})`).join('\n');
+      navigator.clipboard.writeText(text).then(() => notifyVault('Copied brigade service brief to clipboard!'));
+    };
   }
 
   // Global Keyboard Shortcuts for Salon Privé
@@ -806,6 +1194,19 @@
       if (ev.key === 'Escape') document.activeElement.blur();
       return;
     }
+
+    if (ev.key === 'Escape') {
+      if (shortcutsModal && !shortcutsModal.hidden) { shortcutsModal.hidden = true; return; }
+      if (sheetModal && !sheetModal.hidden) { sheetModal.hidden = true; return; }
+      if (lbBackdrop && !lbBackdrop.hidden) { closeLightbox(); return; }
+    }
+
+    if (ev.key === '?') {
+      ev.preventDefault();
+      toggleShortcuts();
+      return;
+    }
+
     const ws = $('#workspace');
     if (!ws || ws.hidden) return;
 
@@ -827,6 +1228,24 @@
       if (nextBtn) {
         ev.preventDefault();
         nextBtn.click();
+      }
+    } else if (ev.altKey && (ev.key === 'm' || ev.key === 'M')) {
+      const addPageBtn = $('#add-page');
+      if (addPageBtn) {
+        ev.preventDefault();
+        addPageBtn.click();
+      }
+    } else if (ev.altKey && (ev.key === 'p' || ev.key === 'P')) {
+      const pdfBtn = $('#pdf');
+      if (pdfBtn) {
+        ev.preventDefault();
+        pdfBtn.click();
+      }
+    } else if (ev.altKey && (ev.key === 't' || ev.key === 'T')) {
+      const tsvBtn = document.querySelector('.btn-vault-copy-tsv');
+      if (tsvBtn) {
+        ev.preventDefault();
+        tsvBtn.click();
       }
     }
   });
