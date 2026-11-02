@@ -1403,6 +1403,99 @@ label.task-completed span {
   margin: -1.5rem -2rem 1.5rem -2rem;
 }
 
+
+
+/* ── Notebook stats bar ──────────────────────────────────────────────────── */
+.notebook-stats-bar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+}
+
+.notebook-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 80px;
+}
+
+.notebook-stat__num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  line-height: 1;
+}
+
+.notebook-stat__label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+/* ── Shopping list progress ──────────────────────────────────────────────── */
+.shopping-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+.shopping-progress-track {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.shopping-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-primary), var(--emerald));
+  border-radius: 999px;
+  transition: width 0.5s var(--ease-spring);
+}
+
+.shopping-progress-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── Discovery course card hover ─────────────────────────────────────────── */
+.discovery-course-card {
+  transition: transform 0.22s var(--ease-spring), box-shadow 0.22s var(--ease-spring);
+}
+
+.discovery-course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Notebook notes textarea focus ───────────────────────────────────────── */
+.user-notes-input {
+  resize: vertical;
+  min-height: 55px;
+  transition: border-color 0.2s var(--ease-spring), box-shadow 0.2s var(--ease-spring);
+}
+
+.user-notes-input:focus {
+  border-color: var(--gold-primary) !important;
+  box-shadow: 0 0 0 3px var(--gold-muted);
+}
+
 /* Print Styles */
 @media print {
   header.app-header, nav.primary-nav, .theme-toggle, .btn-primary, .btn-secondary, .occasion-bar, .app-footer {

@@ -1446,7 +1446,14 @@
     }
     window.speechSynthesis?.cancel();
     const overlay = $("#kitchen-mode-container");
-    if (overlay) overlay.style.display = "none";
+    if (overlay) {
+      overlay.style.display = "none";
+      // Clean up keyboard handler registered in renderKitchenStep
+      if (overlay._kitchenKeyHandler) {
+        document.removeEventListener('keydown', overlay._kitchenKeyHandler);
+        overlay._kitchenKeyHandler = null;
+      }
+    }
     document.body.style.overflow = "auto";
   }
 
