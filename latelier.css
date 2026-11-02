@@ -1675,6 +1675,98 @@ label.task-completed span {
   }
 }
 
+
+/* ==========================================================================
+   iOS SAFE AREAS, UNIT TOGGLES & CULINARY GLOSSARY TOOLTIPS
+   ========================================================================== */
+
+/* iOS Safe Areas on Root Shell */
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+header.app-header {
+  padding-top: max(0.75rem, env(safe-area-inset-top)) !important;
+  padding-left: max(clamp(1rem, 2.5vw, 2rem), env(safe-area-inset-left)) !important;
+  padding-right: max(clamp(1rem, 2.5vw, 2rem), env(safe-area-inset-right)) !important;
+}
+
+main.app-viewport {
+  padding-bottom: max(clamp(1.25rem, 3vw, 2.5rem), calc(env(safe-area-inset-bottom) + 1.75rem)) !important;
+  padding-left: max(clamp(1.25rem, 3vw, 2.5rem), env(safe-area-inset-left)) !important;
+  padding-right: max(clamp(1.25rem, 3vw, 2.5rem), env(safe-area-inset-right)) !important;
+}
+
+.kitchen-mode-overlay {
+  padding-top: max(2rem, env(safe-area-inset-top)) !important;
+  padding-bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1rem)) !important;
+  padding-left: max(2rem, env(safe-area-inset-left)) !important;
+  padding-right: max(2rem, env(safe-area-inset-right)) !important;
+}
+
+.app-footer {
+  padding-bottom: max(3rem, calc(env(safe-area-inset-bottom) + 2rem)) !important;
+}
+
+/* ── Unit Switcher Pill (Metric / Imperial) ─────────────────────────────── */
+.unit-toggle-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  padding: 2px;
+}
+
+.unit-toggle-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.18s var(--ease-spring);
+}
+
+.unit-toggle-btn:hover {
+  color: var(--text-primary);
+}
+
+.unit-toggle-btn.active {
+  background: var(--gold-primary);
+  color: #000000;
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Culinary Glossary Tooltip Tags ─────────────────────────────────────── */
+.culinary-term-tag {
+  border-bottom: 1.5px dotted var(--gold-primary);
+  color: inherit;
+  cursor: help;
+  text-decoration: none;
+  transition: color 0.18s, background-color 0.18s;
+  border-radius: 2px;
+}
+
+.culinary-term-tag:hover,
+.culinary-term-tag:focus {
+  color: var(--gold-primary);
+  background-color: var(--gold-muted);
+  outline: none;
+}
+
+/* iOS Touch Response Improvement */
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Print Styles */
 @media print {
   header.app-header, nav.primary-nav, .theme-toggle, .btn-primary, .btn-secondary, .occasion-bar, .app-footer {

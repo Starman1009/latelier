@@ -1,0 +1,19 @@
+{
+  "appId": "com.latelier.culinary",
+  "appName": "L'Atelier",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "always",
+    "backgroundColor": "#060609",
+    "preferredContentMode": "mobile",
+    "scheme": "LAtelier"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#060609",
+      "showSpinner": false
+    }
+  }
+}

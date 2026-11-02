@@ -1,0 +1,21 @@
+{
+  "name": "latelier",
+  "version": "2.0.0",
+  "description": "L’Atelier · The Digital Culinary Workshop, Academy & Gastronomy Platform",
+  "main": "index.html",
+  "scripts": {
+    "validate": "python validate_platform.py",
+    "ios:init": "npx @capacitor/cli add ios",
+    "ios:sync": "npx @capacitor/cli sync ios",
+    "ios:open": "npx @capacitor/cli open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  },
+  "author": "L'Atelier Culinary Workshop",
+  "license": "UNLICENSED"
+}

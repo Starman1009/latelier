@@ -44,8 +44,67 @@
     targetSalinity: 1.25,
     braiseTemp: 82,
     braiseHours: 4,
-    activeDietaryFilter: null
+    activeDietaryFilter: null,
+    unitSystem: localStorage.getItem("atelier_unit_system") || "metric"
   };
+
+
+  // French Culinary Glossary with Plain English Explanations
+  const CULINARY_GLOSSARY = {
+    "mise en place": "Everything in its place: measuring, chopping, and preparing all ingredients before heat is applied.",
+    "brunoise": "Ultra-fine dice (1/8 inch / 3mm), creating uniform miniature cubes for aromatics or garnishes.",
+    "chiffonade": "Finely sliced ribbons of leafy greens or tender herbs rolled tightly like a cigar before slicing.",
+    "deglaze": "Pouring cold liquid (wine, stock, vinegar) into a sizzling pan to dissolve the caramelized fond.",
+    "fond": "The intensely flavored, browned caramelized protein drippings adhering to the pan floor.",
+    "beurre monté": "Whisking cold butter cubes into warm liquid to build a rich, glossy suspended butter emulsion.",
+    "jus lié": "Meat juices or roasted bone stock lightly bound with arrowroot or potato starch for crystal clarity.",
+    "gastrique": "A reduction of caramelized sugar deglazed with vinegar, balancing rich meats with sweet-acid punch.",
+    "nappe": "Sauce consistency that smoothly coats the back of a spoon without running off.",
+    "sous-vide": "Cooking vacuum-sealed proteins or vegetables in an exact temperature-controlled circulating water bath.",
+    "concasse": "Peeled, seeded, and roughly chopped fresh tomatoes or stone fruits.",
+    "mirepoix": "Classical French aromatic foundation consisting of 2 parts onion, 1 part celery, and 1 part carrot.",
+    "roux": "Equal parts fat (typically butter) and flour cooked together as a thickening base for sauces.",
+    "velouté": "Classical French mother sauce produced by thickening a white stock with a blond roux.",
+    "maillard": "Complex chemical reaction (140°C+) between amino acids and sugars producing rich browning and savoriness."
+  };
+
+  function enrichCulinaryTerms(text) {
+    if (!text || typeof text !== 'string') return '';
+    let enriched = esc(text);
+    Object.entries(CULINARY_GLOSSARY).forEach(([term, explanation]) => {
+      const reg = new RegExp(`\\b(${term})\\b`, 'gi');
+      enriched = enriched.replace(reg, `<abbr class="culinary-term-tag" title="French Culinary Term · ${esc(explanation)}" tabindex="0">$1</abbr>`);
+    });
+    return enriched;
+  }
+
+  // Precision Metric / US Imperial Unit Converter
+  function formatIngredientQty(qty, unit, unitSystem) {
+    if (!qty || isNaN(qty)) return { qty: "", unit: unit || "" };
+    if (unitSystem !== "imperial") {
+      return { qty: +(qty).toFixed(qty % 1 === 0 ? 0 : 2), unit: unit || "" };
+    }
+    const u = (unit || "").toLowerCase().trim();
+    if (u === "g") {
+      if (qty >= 450) return { qty: +(qty / 453.592).toFixed(1), unit: "lbs" };
+      if (qty >= 28) return { qty: +(qty / 28.3495).toFixed(1), unit: "oz" };
+      if (qty >= 14) return { qty: +(qty / 14.175).toFixed(1), unit: "tbsp" };
+      return { qty: Math.max(0.25, +(qty / 5).toFixed(1)), unit: "tsp" };
+    }
+    if (u === "kg") {
+      return { qty: +(qty * 2.20462).toFixed(1), unit: "lbs" };
+    }
+    if (u === "ml") {
+      if (qty >= 946) return { qty: +(qty / 946.353).toFixed(1), unit: "qt" };
+      if (qty >= 240) return { qty: +(qty / 240).toFixed(1), unit: "cups" };
+      if (qty >= 15) return { qty: Math.round(qty / 15), unit: "tbsp" };
+      return { qty: Math.round(qty / 5), unit: "tsp" };
+    }
+    if (u === "l" || u === "liter") {
+      return { qty: +(qty * 1.05669).toFixed(1), unit: "qt" };
+    }
+    return { qty: +(qty).toFixed(qty % 1 === 0 ? 0 : 2), unit: unit };
+  }
 
   // Utilities
   const $ = (selector, parent = document) => parent.querySelector(selector);
@@ -486,7 +545,10 @@
       <div class="toolbar-container">
         <div class="form-group">
           <label class="form-label" for="search-input">Search Dishes or Ingredients</label>
-          <input type="search" id="search-input" class="form-input" placeholder="e.g. Salmon, duck, saffron, pasta, brown butter...">
+          <div style="position:relative; display:flex; align-items:center;">
+            <input type="search" id="search-input" class="form-input" style="padding-right:2.2rem;" placeholder="e.g. Salmon, duck, saffron, pasta, brown butter...">
+            <button type="button" id="btn-clear-search" style="position:absolute; right:10px; background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1rem; display:none;" title="Clear search">✕</button>
+          </div>
         </div>
         <div class="form-group">
           <label class="form-label" for="filter-cuisine">Cuisine Tradition</label>
@@ -603,7 +665,20 @@
       });
     }
 
-    $("#search-input", container).oninput = filterAndRender;
+        const searchEl = $("#search-input", container);
+    const clearBtn = $("#btn-clear-search", container);
+    if (searchEl && clearBtn) {
+      searchEl.oninput = () => {
+        clearBtn.style.display = searchEl.value ? "block" : "none";
+        filterAndRender();
+      };
+      clearBtn.onclick = () => {
+        searchEl.value = "";
+        clearBtn.style.display = "none";
+        searchEl.focus();
+        filterAndRender();
+      };
+    }
     $("#filter-cuisine", container).onchange = filterAndRender;
     $("#filter-category", container).onchange = filterAndRender;
     $("#filter-time", container).onchange = filterAndRender;
@@ -2560,16 +2635,28 @@
         <p style="font-size:0.95rem; color:var(--text-secondary); margin-top:0.25rem;">${esc(recipe.sensoryRole)}</p>
       </div>
 
-      <!-- Controls: Yield Scaler & Action Buttons -->
+      <!-- Controls: Yield Scaler, Unit Switcher & Action Buttons -->
       <div style="display:flex; justify-content:space-between; align-items:center; background:var(--bg-elevated); padding:1rem 1.25rem; border-radius:var(--radius-lg); margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
-        <div style="display:flex; align-items:center; gap:0.75rem;">
-          <label style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted); text-transform:uppercase;">Servings / Yield:</label>
-          <div style="display:flex; align-items:center; gap:0.35rem;">
-            <button id="btn-scale-down" class="btn-secondary" style="padding:0.2rem 0.6rem;">-</button>
-            <span id="disp-servings" style="font-family:var(--font-mono); font-weight:700; width:30px; text-align:center;">${AppState.activeRecipeServings}</span>
-            <button id="btn-scale-up" class="btn-secondary" style="padding:0.2rem 0.6rem;">+</button>
+        <div style="display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <label style="font-family:var(--font-mono); font-size:0.78rem; color:var(--text-muted); text-transform:uppercase;">Servings:</label>
+            <div style="display:flex; align-items:center; gap:0.35rem;">
+              <button id="btn-scale-down" class="btn-secondary" style="padding:0.2rem 0.6rem;">-</button>
+              <span id="disp-servings" style="font-family:var(--font-mono); font-weight:700; width:32px; text-align:center;">${AppState.activeRecipeServings}</span>
+              <button id="btn-scale-up" class="btn-secondary" style="padding:0.2rem 0.6rem;">+</button>
+            </div>
+          </div>
+
+          <!-- Metric / Imperial Toggle -->
+          <div style="display:flex; align-items:center; gap:0.4rem;">
+            <label style="font-family:var(--font-mono); font-size:0.78rem; color:var(--text-muted); text-transform:uppercase;">Units:</label>
+            <div class="unit-toggle-pill">
+              <button id="btn-unit-metric" class="unit-toggle-btn ${AppState.unitSystem === 'metric' ? 'active' : ''}">Metric (g/ml)</button>
+              <button id="btn-unit-imperial" class="unit-toggle-btn ${AppState.unitSystem === 'imperial' ? 'active' : ''}">US (oz/cups)</button>
+            </div>
           </div>
         </div>
+
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
           <button id="btn-modal-cook" class="btn-primary">▶ Cook in Kitchen Mode</button>
           <button id="btn-modal-add-shopping" class="btn-secondary">+ Add to Shopping List</button>
@@ -2588,12 +2675,12 @@
           </h3>
           <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.95rem;">
             ${recipe.ingredients.map(ing => {
-              const scaledQty = +(ing.qty * scaleFactor).toFixed(ing.qty % 1 === 0 ? 0 : 2);
+              const scaledRaw = +(ing.qty * scaleFactor);
+              const formatted = formatIngredientQty(scaledRaw, ing.unit, AppState.unitSystem);
               return `
-                <li style="padding-bottom:0.4rem; border-bottom:1px solid rgba(255,255,255,0.03);">
-                  <strong style="color:var(--gold-primary); font-family:var(--font-mono);">${scaledQty} ${esc(ing.unit)}</strong> 
-                  ${esc(ing.name)}
-                  ${ing.prep ? `<span style="color:var(--text-muted); font-size:0.85rem;">(${esc(ing.prep)})</span>` : ''}
+                <li style="padding-bottom:0.4rem; border-bottom:1px solid rgba(255,255,255,0.03); display:flex; align-items:baseline; gap:0.5rem;">
+                  <strong style="color:var(--gold-primary); font-family:var(--font-mono); min-width:70px;">${formatted.qty} ${esc(formatted.unit)}</strong> 
+                  <span>${esc(ing.name)} ${ing.prep ? `<span style="color:var(--text-muted); font-size:0.85rem;">(${esc(ing.prep)})</span>` : ''}</span>
                 </li>
               `;
             }).join('')}
@@ -2632,7 +2719,7 @@
                 ${String(s.stepNum).padStart(2, '0')}
               </div>
               <div style="flex:1;">
-                <p style="font-size:1rem; line-height:1.6; margin-bottom:0.5rem;">${esc(s.text)}</p>
+                <p style="font-size:1rem; line-height:1.6; margin-bottom:0.5rem;">${enrichCulinaryTerms(s.text)}</p>
                 ${s.sensoryCue ? `
                   <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">
                     <strong>Sensory Indicator:</strong> ${esc(s.sensoryCue)}
@@ -2702,6 +2789,26 @@
         renderRecipeModalContent(modal, recipe);
       }
     };
+
+    const metricBtn = $("#btn-unit-metric", modal);
+    if (metricBtn) {
+      metricBtn.onclick = () => {
+        AppState.unitSystem = "metric";
+        localStorage.setItem("atelier_unit_system", "metric");
+        renderRecipeModalContent(modal, recipe);
+        showNotification("Switched recipe to Metric units (grams/ml).");
+      };
+    }
+
+    const imperialBtn = $("#btn-unit-imperial", modal);
+    if (imperialBtn) {
+      imperialBtn.onclick = () => {
+        AppState.unitSystem = "imperial";
+        localStorage.setItem("atelier_unit_system", "imperial");
+        renderRecipeModalContent(modal, recipe);
+        showNotification("Switched recipe to US Imperial units (oz/cups).");
+      };
+    }
 
     $("#btn-modal-cook", modal).onclick = () => {
       modal.close();

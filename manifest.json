@@ -1,13 +1,19 @@
 {
   "id": "./",
-  "name": "L\u2019Atelier \u00b7 Menu & Chef\u2019s Lab",
+  "name": "L\u2019Atelier \u00b7 Culinary Workshop & Academy",
   "short_name": "L\u2019Atelier",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f5ef",
-  "theme_color": "#243d32",
-  "description": "Random coursed menus, mise en place, groceries, cooking mode, and a dedicated Chef\u2019s Lab.",
+  "orientation": "any",
+  "background_color": "#060609",
+  "theme_color": "#060609",
+  "description": "The Digital Culinary Workshop, Academy, Flavor Laboratory, and Interactive Gastronomy Workspace.",
+  "categories": [
+    "food",
+    "education",
+    "lifestyle"
+  ],
   "icons": [
     {
       "src": "icon-192.png",
