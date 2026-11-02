@@ -1,1 +1,92 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#243d32"><title>L’Atelier · Your kitchen companion</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="kitchen.css"><body><header><a class="brand" href="index.html">L’Atelier<span>THE EVERYDAY KITCHEN</span></a><nav aria-label="Main"><button id="menu-home">Your menu</button><button data-view="discover">Find recipes</button><button data-view="saved">Recipe box</button><button data-view="shopping">Shopping list</button><button id="lab-home">Chef’s Lab</button></nav></header><p id="timer-banner" class="timer-banner" role="status" hidden></p><div id="notice" class="notice" role="status" aria-live="polite" hidden></div><main><section class="intro"><p class="eyebrow">L’ATELIER · THE MENU STUDIO</p><h1>A whole meal.<br>A fresh surprise.</h1><p>Choose the occasion. Let us compose the courses. Then shop, prep, and cook your menu.</p></section><div class="toolbar" id="recipe-search" hidden><label>Find a dish or ingredient<input id="query" type="search" placeholder="Try salmon, lemon, or a favorite dish…"></label><label>Recipe collection<select id="collection"><option value="local">Your local archive</option><option value="online">Online · TheMealDB</option></select></label><label class="inline-check"><input id="fridge-mode" type="checkbox"> What’s in my fridge? (comma-separated ingredients, local collection)</label><label>Cuisine<input id="filter-cuisine" placeholder="Any cuisine"></label><label>Dietary metadata<select id="filter-diet"><option value="">Any / unknown</option><option value="vegetarian">Marked vegetarian</option><option value="vegan">Marked vegan</option></select></label><label>Total time<select id="filter-time"><option value="">Any / unknown</option><option value="30">Up to 30 minutes</option><option value="60">Up to 60 minutes</option></select></label><button id="search">Search recipes</button><button id="create" class="secondary">+ Your recipe</button></div><p id="status" role="status" aria-live="polite"></p><section id="content" aria-label="Recipes"></section><footer><p>Recipes carry their sources. Legacy archive entries need review before cooking.</p><p>Your recipe box and shopping list stay in this browser. Export a backup to keep them safe.</p><button id="export">Export backup</button> <label class="file">Restore backup<input id="restore" type="file" accept="application/json"></label> <button id="install" hidden>Install app</button><p>Online discovery uses TheMealDB’s development API. <a href="https://www.themealdb.com/api.php" target="_blank" rel="noopener">Source & production access</a></p></footer></main><dialog id="detail"><button class="close" aria-label="Close recipe">✕</button><div id="recipe"></div></dialog><dialog id="editor"><button class="close" aria-label="Close editor">✕</button><h2>Add your recipe</h2><form id="recipe-form"><label>Recipe title<input name="title" required maxlength="200"></label><label>Source URL (optional)<input name="source" type="url"></label><label>Original servings<input name="yield" type="number" min="1" max="100" step="1" required></label><label>Ingredients: one per line, quantity | unit | name<textarea name="ingredients" required placeholder="200 | g | pasta"></textarea></label><label>Steps: one per line<textarea name="steps" required></textarea></label><label>Total minutes (optional, from your recipe)<input name="totalMinutes" type="number" min="1" max="10080"></label><label>Cuisine (optional)<input name="cuisine"></label><label>Dietary label (only if you have checked all ingredients)<select name="diet"><option value="">Not specified</option><option value="vegetarian">Vegetarian</option><option value="vegan">Vegan</option></select></label><label>Equipment you need: one per line<textarea name="equipment"></textarea></label><button>Save recipe</button></form></dialog><dialog id="confirm-modal" aria-labelledby="confirm-title"><h2 id="confirm-title"></h2><p id="confirm-message"></p><div class="actions"><button id="confirm-no">Cancel</button><button id="confirm-yes">Continue</button></div></dialog><script src="culinary.js" defer></script><script src="kitchen.js" defer></script><script src="menu.js" defer></script><script src="cooking.js" defer></script><script src="tools.js" defer></script></body></html>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060609">
+  <meta name="description" content="L'Atelier · The Digital Culinary Workshop, Academy, Flavor Laboratory, and Interactive Gastronomy Workspace.">
+  <title>L’Atelier · The Digital Culinary Workshop & Academy</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="latelier.css">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <!-- Global Application Header -->
+  <header class="app-header">
+    <a href="index.html" class="brand-container" aria-label="L'Atelier Home">
+      <div class="brand-monogram">L</div>
+      <div class="brand-title">
+        <span class="brand-name">L’Atelier</span>
+        <span class="brand-tagline">Atelier Culinaire & Académie</span>
+      </div>
+    </a>
+
+    <!-- Primary Nav Pills -->
+    <nav class="primary-nav" aria-label="Main Culinary Navigation">
+      <button class="nav-pill active" data-view="discovery">
+        <span>✦</span> Discovery & Menu
+      </button>
+      <button class="nav-pill" data-view="recipes">
+        <span>📖</span> Recipe Library
+      </button>
+      <button class="nav-pill" data-view="flavor">
+        <span>🧪</span> The Flavor Lab
+      </button>
+      <button class="nav-pill" data-view="mise">
+        <span>⏱</span> Mise en Place
+      </button>
+      <button class="nav-pill" data-view="academy">
+        <span>🎓</span> Academy
+      </button>
+      <button class="nav-pill" data-view="science">
+        <span>🔬</span> Food Science
+      </button>
+      <button class="nav-pill" data-view="palate">
+        <span>🍏</span> Palate Cleansing
+      </button>
+      <button class="nav-pill" data-view="tools">
+        <span>🛠</span> Studio & Tools
+      </button>
+      <button class="nav-pill" data-view="notebook">
+        <span>★</span> Recipe Box
+      </button>
+      <button class="nav-pill" data-view="shopping">
+        <span>🛒</span> Provisions
+      </button>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" title="Toggle Obsidian/Ivory Theme" aria-label="Toggle Theme">
+        ☼
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Viewport -->
+  <main id="main-viewport" class="app-viewport" role="main">
+    <!-- Dynamic Views rendered by latelier.js -->
+  </main>
+
+  <!-- Culinary Datasets & Application Logic -->
+  <script src="data-recipes.js"></script>
+  <script src="data-flavor.js"></script>
+  <script src="data-academy.js"></script>
+  <script src="data-science.js"></script>
+  <script src="data-encyclopedia.js"></script>
+  <script src="latelier.js"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
