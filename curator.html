@@ -1307,7 +1307,7 @@
         showToast(`Heard: "${transcript}"`);
         if (transcript.includes("randomize")) { randomizeUnlockedCourses(); speakOut("Degustation randomized."); }
         else if (transcript.includes("brigade") || transcript.includes("mise")) { switchWorkspace('brigade'); speakOut("Mise en place brigade active."); }
-        else if (transcript.includes("studio") || transcript.includes("plating")) { switchWorkspace('studio'); speakOut("Exo studio labs open."); }
+        else if (transcript.includes("studio") || transcript.includes("plating")) { switchWorkspace('studio'); speakOut("L’Atelier laboratory open."); }
         else if (transcript.includes("provisions")) { switchWorkspace('provisions'); speakOut("Provisions matrix open."); }
         else if (transcript.includes("read course 1") && activeMenu[0]) { speakOut(`Course 1: ${activeMenu[0].dish}. ${activeMenu[0].technique}`); }
       };

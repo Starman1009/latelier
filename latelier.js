@@ -1340,6 +1340,7 @@
     }
 
     modal.innerHTML = `
+      ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
       <span class="card-badge">${esc(lesson.track.toUpperCase())} TRACK · ${lesson.durationMins} MINS</span>
       <h2 style="font-size:2.2rem; font-family:var(--font-serif); margin:0.5rem 0 1rem 0;">${esc(lesson.title)}</h2>
@@ -2067,6 +2068,7 @@
     }
 
     modal.innerHTML = `
+      ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
       <span class="card-badge">${esc(item.category.toUpperCase())} · ${esc(item.season)}</span>
       <h2 style="font-size:2.2rem; font-family:var(--font-serif); margin:0.5rem 0 1rem 0;">${esc(item.name)}</h2>
@@ -2330,6 +2332,7 @@
     const scaleFactor = AppState.activeRecipeServings / (recipe.yieldServings || 4);
 
     modal.innerHTML = `
+      ${recipe.reviewStatus?`<p class="card-badge">${esc(recipe.reviewStatus)}</p>`:""}
       <button class="modal-close-btn" onclick="this.closest('dialog').close()">✕</button>
 
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.75rem;">

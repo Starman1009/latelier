@@ -631,3 +631,5 @@ dialog::backdrop {
     border: 1px solid #CCCCCC !important;
   }
 }
+
+@media(max-width:600px){nav.primary-nav{flex-wrap:wrap;overflow:visible}.nav-pill{white-space:normal;flex:1 1 42%;min-height:44px}.atelier-modal{max-width:calc(100vw - 24px)}.atelier-modal div[style*="grid-template-columns"]{grid-template-columns:1fr!important}}

@@ -4,7 +4,7 @@
 window.MASTER_RECIPES = [
   {
     "id": "rec-sole-meuniere",
-    "title": "Classic Sole Meuni\u00e8re with Beurre Noisette & Capers",
+    "title": "Classic Sole Meunière with Beurre Noisette & Capers",
     "cuisine": "French Classical",
     "category": "dinner",
     "slot": "mid",
@@ -14,7 +14,7 @@ window.MASTER_RECIPES = [
     "totalMins": 25,
     "yieldServings": 2,
     "heroImage": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The archetypal French bistro preparation: delicate whole Dover sole dredged in flour, saut\u00e9ed gently in clarified butter, and bathed in a foamy hazelnut-brown butter scented with fresh lemon juice, briny capers, and chopped flat-leaf parsley.",
+    "summary": "The archetypal French bistro preparation: delicate whole Dover sole dredged in flour, sautéed gently in clarified butter, and bathed in a foamy hazelnut-brown butter scented with fresh lemon juice, briny capers, and chopped flat-leaf parsley.",
     "dietary": [
       "pescatarian",
       "nut-free"
@@ -80,7 +80,7 @@ window.MASTER_RECIPES = [
     ],
     "equipment": [
       {
-        "name": "12-inch heavy-gauge oval fish skillet or stainless steel saut\u00e9 pan",
+        "name": "12-inch heavy-gauge oval fish skillet or stainless steel sauté pan",
         "type": "everyday"
       },
       {
@@ -101,11 +101,11 @@ window.MASTER_RECIPES = [
     "steps": [
       {
         "stepNum": 1,
-        "text": "Heat clarified butter in a wide stainless steel or copper skillet over medium-high heat until shimmering and registering approximately 175\u00b0C (350\u00b0F).",
+        "text": "Heat clarified butter in a wide stainless steel or copper skillet over medium-high heat until shimmering and registering approximately 175°C (350°F).",
         "timerMins": 2,
-        "temperature": "175\u00b0C",
+        "temperature": "175°C",
         "sensoryCue": "The butter shimmers with faint ripples across the surface without smoking.",
-        "scienceNote": "Clarified butter has milk solids removed, raising its smoke point from 150\u00b0C to over 230\u00b0C, preventing burnt bitter off-flavors during initial high-heat pan contact."
+        "scienceNote": "Clarified butter has milk solids removed, raising its smoke point from 150°C to over 230°C, preventing burnt bitter off-flavors during initial high-heat pan contact."
       },
       {
         "stepNum": 2,
@@ -116,33 +116,33 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 3,
-        "text": "Lay the sole gently into the pan away from yourself. Saut\u00e9 undisturbed for 3 to 4 minutes until the underside is rich golden brown and releases freely from the pan.",
+        "text": "Lay the sole gently into the pan away from yourself. Sauté undisturbed for 3 to 4 minutes until the underside is rich golden brown and releases freely from the pan.",
         "timerMins": 3.5,
-        "temperature": "170\u00b0C",
+        "temperature": "170°C",
         "sensoryCue": "Listen for a steady, lively sizzle that softens slightly as surface moisture evaporates. The fish will release naturally once an even crust forms.",
         "scienceNote": "Do not pry the fish while sticking. The Maillard reaction creates crust detachment as surface proteins contract and moisture vaporizes."
       },
       {
         "stepNum": 4,
-        "text": "Carefully slide the flexible fish spatula underneath and flip the sole in a single confident stroke. Cook the reverse side for 2 to 3 minutes until flesh is opaque to the bone (core temp 52\u00b0C / 125\u00b0F). Transfer to warm warmed serving plates.",
+        "text": "Carefully slide the flexible fish spatula underneath and flip the sole in a single confident stroke. Cook the reverse side for 2 to 3 minutes until flesh is opaque to the bone (core temp 52°C / 125°F). Transfer to warm warmed serving plates.",
         "timerMins": 2.5,
-        "temperature": "52\u00b0C core",
+        "temperature": "52°C core",
         "sensoryCue": "The flesh feels gently resilient when pressed lightly near the spine; edge flakes separate with faint fork pressure."
       },
       {
         "stepNum": 5,
         "text": "Wipe residual oil from the pan with a kitchen towel. Return to medium heat and add the cold cubed butter. Swirl continuously as butter melts, foams vigorously, and begins to crackle.",
         "timerMins": 2,
-        "temperature": "145\u00b0C",
+        "temperature": "145°C",
         "sensoryCue": "The white foam subsides to fine champagne bubbles, and a deep, intoxicating aroma of roasted hazelnuts and toasted brioche fills the room.",
-        "scienceNote": "Beurre noisette forms when water boils away (100\u00b0C) and milk proteins (casein and whey) drop to pan bottom and undergo rapid Maillard browning and sugar caramelization at 130-145\u00b0C."
+        "scienceNote": "Beurre noisette forms when water boils away (100°C) and milk proteins (casein and whey) drop to pan bottom and undergo rapid Maillard browning and sugar caramelization at 130-145°C."
       },
       {
         "stepNum": 6,
         "text": "The second the milk solids turn hazelnut brown, immediately pour in the lemon juice, capers, and parsley. The sauce will violently hiss, froth, and halt further browning.",
         "timerMins": 0.5,
         "sensoryCue": "Vigorous thermal steam and a sharp release of aromatic citrus and briny vapor. The sauce emulsifies into a glistening golden veil.",
-        "scienceNote": "The cold lemon juice rapidly drops the pan temperature below the scorching point (155\u00b0C) and acts as an aqueous phase to temporarily suspend the browned lipids."
+        "scienceNote": "The cold lemon juice rapidly drops the pan temperature below the scorching point (155°C) and acts as an aqueous phase to temporarily suspend the browned lipids."
       },
       {
         "stepNum": 7,
@@ -158,18 +158,18 @@ window.MASTER_RECIPES = [
       "feel": "Velvety, unctuous sauce yielding to feather-light, silky, melting fish flakes."
     },
     "scienceNotes": [
-      "Fish muscle tissue contains very little collagen (approx 3% vs 15% in land mammals) and consists of short muscle fibers called myotomes separated by thin connective myocommata membranes. These membranes melt at merely 40-50\u00b0C, making delicate fish prone to drying out if overcooked past 55\u00b0C.",
+      "Fish muscle tissue contains very little collagen (approx 3% vs 15% in land mammals) and consists of short muscle fibers called myotomes separated by thin connective myocommata membranes. These membranes melt at merely 40-50°C, making delicate fish prone to drying out if overcooked past 55°C.",
       "Lactose in butter milk solids begins Maillard browning at lower temperatures than sucrose, yielding compounds like furans, maltol, and lactones which impart the quintessential nutty hazelnut profile."
     ],
     "troubleshooting": [
       {
         "issue": "Fish stuck to pan and tore during flip",
         "cause": "Pan was not hot enough or fish was moved before protein denaturation completed the natural release.",
-        "solution": "Ensure pan reaches 175\u00b0C before adding fish, and allow the crust to form completely before attempting to slide spatula beneath."
+        "solution": "Ensure pan reaches 175°C before adding fish, and allow the crust to form completely before attempting to slide spatula beneath."
       },
       {
         "issue": "Brown butter turned black and bitter",
-        "cause": "Pan remained on heat too long after foam subsided; milk solids scorched past 155\u00b0C.",
+        "cause": "Pan remained on heat too long after foam subsided; milk solids scorched past 155°C.",
         "solution": "Immediately remove pan from heat or add the cold lemon juice the second milk solids transition from golden to pale amber."
       }
     ],
@@ -206,13 +206,13 @@ window.MASTER_RECIPES = [
       "rec-bouillabaisse"
     ],
     "relatedTechniques": [
-      "lesson-saut\u00e9-deglaze",
+      "lesson-sauté-deglaze",
       "lesson-mother-sauces"
     ]
   },
   {
     "id": "rec-french-omelette",
-    "title": "L'Omelette Fran\u00e7aise Classique (Classic Rolled French Omelette)",
+    "title": "L'Omelette Française Classique (Classic Rolled French Omelette)",
     "cuisine": "French Classical",
     "category": "breakfast",
     "slot": "opener",
@@ -292,7 +292,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Place the non-stick pan over medium-low heat. Add 15g butter and let it melt. As it begins to foam gently without coloring, swirl to coat the bottom and sides thoroughly.",
         "timerMins": 1,
-        "temperature": "110\u00b0C",
+        "temperature": "110°C",
         "sensoryCue": "Gentle, lazy white bubbles form across the pan without browning or hissing.",
         "scienceNote": "High heat causes egg proteins (albumen and vitellin) to cross-link into tight, rubbery networks that squeeze out water. Low-to-moderate thermal energy allows loose, delicate gelation."
       },
@@ -305,7 +305,7 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 3,
-        "text": "When the eggs are 80% coagulated\u2014resembling soft, wet oatmeal with no pools of raw egg\u2014stop stirring. Smooth the top with the spatula and scatter the fines herbes over the center.",
+        "text": "When the eggs are 80% coagulated—resembling soft, wet oatmeal with no pools of raw egg—stop stirring. Smooth the top with the spatula and scatter the fines herbes over the center.",
         "timerMins": 0.5,
         "sensoryCue": "The surface looks glistening, wet, and creamy (baveuse) but holds its form when tilted.",
         "scienceNote": "Residual heat will continue cooking the interior during the rolling and plating steps (carryover cooking)."
@@ -336,7 +336,7 @@ window.MASTER_RECIPES = [
       "feel": "Pillowy, tender outer skin that yields instantly to a fork, giving way to a luxurious molten core."
     },
     "scienceNotes": [
-      "Egg white protein (ovalbumin) coagulates at 62-65\u00b0C, while egg yolk protein coagulates at 65-70\u00b0C. By keeping the pan below 120\u00b0C and stirring continuously, both proteins solidify in equilibrium without expressing moisture through syneresis (weeping).",
+      "Egg white protein (ovalbumin) coagulates at 62-65°C, while egg yolk protein coagulates at 65-70°C. By keeping the pan below 120°C and stirring continuously, both proteins solidify in equilibrium without expressing moisture through syneresis (weeping).",
       "Salt acts as a tenderizer when mixed into raw eggs: it dissolves into charged sodium and chloride ions that bind to protein charges, reducing repulsive forces and allowing a softer, more pliable gel network."
     ],
     "troubleshooting": [
@@ -390,7 +390,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-boeuf-bourguignon",
-    "title": "Boeuf Bourguignon Traditionnel with Glazed Pearl Onions & Pommes Pur\u00e9e",
+    "title": "Boeuf Bourguignon Traditionnel with Glazed Pearl Onions & Pommes Purée",
     "cuisine": "French Classical",
     "category": "dinner",
     "slot": "climax",
@@ -400,7 +400,7 @@ window.MASTER_RECIPES = [
     "totalMins": 210,
     "yieldServings": 6,
     "heroImage": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The crown jewel of Burgundian slow-cooking: succulent chunks of collagen-rich beef chuck seared to a mahogany crust, gently braised in a full bottle of Pinot Noir with aromatic mirepoix and veal stock until fork-tender, garnished with glazed pearl onions, saut\u00e9ed cremini mushrooms, and crisp slab bacon lardons.",
+    "summary": "The crown jewel of Burgundian slow-cooking: succulent chunks of collagen-rich beef chuck seared to a mahogany crust, gently braised in a full bottle of Pinot Noir with aromatic mirepoix and veal stock until fork-tender, garnished with glazed pearl onions, sautéed cremini mushrooms, and crisp slab bacon lardons.",
     "dietary": [
       "nut-free",
       "dairy-free-option"
@@ -532,22 +532,22 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Render lardons in a large Dutch oven over medium heat for 8 minutes until crisp and golden. Remove lardons with a slotted spoon, leaving fragrant bacon fat in the pot.",
         "timerMins": 8,
-        "temperature": "140\u00b0C",
+        "temperature": "140°C",
         "sensoryCue": "Lardons turn deep amber-gold and buoyant in their rendered clear fat with a distinct smoky, savory aroma."
       },
       {
         "stepNum": 2,
         "text": "Increase heat to high until the fat is shimmering. Sear the beef cubes in three uncrowded batches for 3 minutes per side until a dark mahogany Maillard crust forms. Transfer seared beef to a resting platter.",
         "timerMins": 12,
-        "temperature": "190\u00b0C",
+        "temperature": "190°C",
         "sensoryCue": "Violent sizzling and intense aroma of roasting meat. The meat develops a rich deep brown crust without turning grey.",
-        "scienceNote": "Crowding the pan causes meat juices to pool, dropping pan temperature below 100\u00b0C and boiling the meat. Searing in batches maintains 180\u00b0C+ needed for rapid Maillard browning."
+        "scienceNote": "Crowding the pan causes meat juices to pool, dropping pan temperature below 100°C and boiling the meat. Searing in batches maintains 180°C+ needed for rapid Maillard browning."
       },
       {
         "stepNum": 3,
         "text": "Add chopped onions and carrots to the remaining fat; cook over medium heat for 6 minutes until lightly caramelized. Stir in tomato paste and crushed garlic; cook 2 minutes until the paste turns brick red and fragrant.",
         "timerMins": 8,
-        "temperature": "140\u00b0C",
+        "temperature": "140°C",
         "sensoryCue": "Tomato paste darkens from bright red to deep mahogany; sugars lightly toast against the pan base (pincer la tomate)."
       },
       {
@@ -560,20 +560,20 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Pour in the Cognac and scrape up the dark fond from the bottom of the pot. Pour in the full bottle of Pinot Noir and the brown veal stock. Add the bouquet garni and half of the reserved crispy lardons. Bring to a gentle simmer.",
         "timerMins": 5,
-        "temperature": "95\u00b0C",
+        "temperature": "95°C",
         "sensoryCue": "Steam rises carrying intoxicating wine esters and roasted aromatics. The liquid turns a deep purple-red hue."
       },
       {
         "stepNum": 6,
-        "text": "Cover the Dutch oven with a tight-fitting lid, transfer to a 150\u00b0C (300\u00b0F) oven, and braise undisturbed for 2.5 to 3 hours until the beef yields completely to a fork.",
+        "text": "Cover the Dutch oven with a tight-fitting lid, transfer to a 150°C (300°F) oven, and braise undisturbed for 2.5 to 3 hours until the beef yields completely to a fork.",
         "timerMins": 160,
-        "temperature": "150\u00b0C oven / 85\u00b0C braise",
+        "temperature": "150°C oven / 85°C braise",
         "sensoryCue": "A paring knife slips into the center of a beef chunk with zero resistance; meat fibers separate like velvet.",
-        "scienceNote": "Between 70\u00b0C and 85\u00b0C, tough insoluble collagen triple-helices denature and hydrolyze into luscious soluble gelatin, turning fibrous chuck into meltingly tender meat while enriching the braising sauce."
+        "scienceNote": "Between 70°C and 85°C, tough insoluble collagen triple-helices denature and hydrolyze into luscious soluble gelatin, turning fibrous chuck into meltingly tender meat while enriching the braising sauce."
       },
       {
         "stepNum": 7,
-        "text": "While beef braises, glaze the pearl onions in a small skillet with 20g butter, 50ml water, a pinch of sugar and salt, covered for 15 minutes, then uncover to caramelize. In a separate pan, saut\u00e9 mushrooms in 20g butter over high heat until browned.",
+        "text": "While beef braises, glaze the pearl onions in a small skillet with 20g butter, 50ml water, a pinch of sugar and salt, covered for 15 minutes, then uncover to caramelize. In a separate pan, sauté mushrooms in 20g butter over high heat until browned.",
         "timerMins": 20,
         "sensoryCue": "Pearl onions turn glossy and golden-amber; mushrooms brown deeply and release rich earthy aromatics."
       },
@@ -585,26 +585,26 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 9,
-        "text": "Recombine the beef, sauce, glazed pearl onions, saut\u00e9ed mushrooms, and remaining crisp lardons in the Dutch oven. Warm gently for 5 minutes. Serve over velvety Pommes Pur\u00e9e.",
+        "text": "Recombine the beef, sauce, glazed pearl onions, sautéed mushrooms, and remaining crisp lardons in the Dutch oven. Warm gently for 5 minutes. Serve over velvety Pommes Purée.",
         "timerMins": 5,
         "sensoryCue": "Glistening, rich braise with steam carrying deep red wine, herbs, and earthy mushroom perfume."
       }
     ],
     "sensoryIndicators": {
-      "see": "Glossy mahogany braising sauce clinging to tender beef chunks, contrasted with golden pearl onions and dark saut\u00e9ed cremini.",
+      "see": "Glossy mahogany braising sauce clinging to tender beef chunks, contrasted with golden pearl onions and dark sautéed cremini.",
       "hear": "Gentle slow bubbling in the Dutch oven; silent silky spooning over hot mashed potatoes.",
       "smell": "Concentrated Pinot Noir reduction, earthy bay leaf and thyme, caramelized alliums, smoky bacon fat.",
       "feel": "Beef that dissolves on the tongue with no knife required; silky, gelatin-enriched sauce coating the palate."
     },
     "scienceNotes": [
       "Gelatin extraction: As collagen breaks down, it creates gelatin molecules that physically thicken the braising liquid, giving it an unctuous mouthfeel (body) without needing heavy flour or cornstarch slurry.",
-      "Alcohol reduction: Simmering wine drives off ethanol (boiling point 78.4\u00b0C) while concentrating tartaric and malic acids and volatile grape aroma compounds, creating the structural backbone of classic French sauces."
+      "Alcohol reduction: Simmering wine drives off ethanol (boiling point 78.4°C) while concentrating tartaric and malic acids and volatile grape aroma compounds, creating the structural backbone of classic French sauces."
     ],
     "troubleshooting": [
       {
         "issue": "Beef is tough and rubbery",
-        "cause": "Braise was pulled too early or oven temperature was too high (above 165\u00b0C), forcing moisture out before collagen melted.",
-        "solution": "Return to oven at 145\u00b0C for another 30-45 minutes; collagen requires prolonged low-temperature thermal exposure to dissolve."
+        "cause": "Braise was pulled too early or oven temperature was too high (above 165°C), forcing moisture out before collagen melted.",
+        "solution": "Return to oven at 145°C for another 30-45 minutes; collagen requires prolonged low-temperature thermal exposure to dissolve."
       },
       {
         "issue": "Sauce is overly sour or acidic",
@@ -615,7 +615,7 @@ window.MASTER_RECIPES = [
     "substitutions": [
       {
         "original": "Pinot Noir Burgundy",
-        "substitute": "C\u00f4tes du Rh\u00f4ne, Syrah, or dry Cabernet Sauvignon",
+        "substitute": "Côtes du Rhône, Syrah, or dry Cabernet Sauvignon",
         "culinaryConsequence": "Cabernet yields a heavier, more tannic sauce; Pinot Noir provides the authentic lighter, brighter Burgundian acidity."
       },
       {
@@ -628,7 +628,7 @@ window.MASTER_RECIPES = [
       "wine": "Gevrey-Chambertin, Pommard, or aged Bourgogne Rouge (mirrors the Pinot Noir notes in the sauce)",
       "zeroProof": "Tart cherry juice infused with lapsang souchong smoked tea and reduced with fresh rosemary",
       "complementarySides": [
-        "Robuchon-style Pommes Pur\u00e9e (silky potato pur\u00e9e with 50% butter)",
+        "Robuchon-style Pommes Purée (silky potato purée with 50% butter)",
         "Buttered egg tagliatelle"
       ]
     },
@@ -713,7 +713,7 @@ window.MASTER_RECIPES = [
         "qty": 25,
         "unit": "g",
         "name": "All-purpose flour",
-        "prep": "or beurre mani\u00e9 to finish",
+        "prep": "or beurre manié to finish",
         "dept": "drygoods"
       },
       {
@@ -758,7 +758,7 @@ window.MASTER_RECIPES = [
         "type": "everyday"
       },
       {
-        "name": "Saut\u00e9 pan for mushrooms and onions",
+        "name": "Sauté pan for mushrooms and onions",
         "type": "everyday"
       },
       {
@@ -777,21 +777,21 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Crisp lardons in Dutch oven over medium heat for 6 minutes until browned. Transfer with slotted spoon to a paper-towel-lined plate.",
         "timerMins": 6,
-        "temperature": "145\u00b0C",
+        "temperature": "145°C",
         "sensoryCue": "Lardons are crisp and fragrant; clear rendered pork fat fills the pan."
       },
       {
         "stepNum": 2,
         "text": "Sear chicken skin-side down in the hot bacon fat over medium-high heat for 5 minutes until deep golden brown. Turn and cook 3 minutes on reverse. Transfer chicken to a platter.",
         "timerMins": 8,
-        "temperature": "175\u00b0C",
+        "temperature": "175°C",
         "sensoryCue": "Chicken skin renders its fat and turns crispy and amber-gold; aroma of roasting poultry."
       },
       {
         "stepNum": 3,
         "text": "Add minced garlic and tomato paste to the pot; stir for 1 minute until fragrant. Deglaze with Cognac, scraping up all brown fond.",
         "timerMins": 2,
-        "sensoryCue": "Flamb\u00e9 flame subsides leaving a glossy glaze on the bottom of the pot."
+        "sensoryCue": "Flambé flame subsides leaving a glossy glaze on the bottom of the pot."
       },
       {
         "stepNum": 4,
@@ -801,20 +801,20 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 5,
-        "text": "Cover partially and simmer gently over low heat for 35 to 40 minutes until chicken is tender and registers 74\u00b0C (165\u00b0F) internally.",
+        "text": "Cover partially and simmer gently over low heat for 35 to 40 minutes until chicken is tender and registers 74°C (165°F) internally.",
         "timerMins": 38,
-        "temperature": "88\u00b0C braise",
+        "temperature": "88°C braise",
         "sensoryCue": "Chicken meat pulls easily from the bone; chicken skin absorbs the deep purple wine hue."
       },
       {
         "stepNum": 6,
-        "text": "Meanwhile, saut\u00e9 pearl onions and mushrooms in 20g butter in a separate skillet for 10 minutes until deeply golden.",
+        "text": "Meanwhile, sauté pearl onions and mushrooms in 20g butter in a separate skillet for 10 minutes until deeply golden.",
         "timerMins": 10,
         "sensoryCue": "Mushrooms squeak then sizzle; onions develop glistening golden caramelized edges."
       },
       {
         "stepNum": 7,
-        "text": "Transfer chicken to a warm platter. Simmer the sauce over medium-high heat for 6-8 minutes until reduced and silky. Whisk in remaining 10g cold butter. Add saut\u00e9ed mushrooms, pearl onions, and reserved lardons. Pour over chicken.",
+        "text": "Transfer chicken to a warm platter. Simmer the sauce over medium-high heat for 6-8 minutes until reduced and silky. Whisk in remaining 10g cold butter. Add sautéed mushrooms, pearl onions, and reserved lardons. Pour over chicken.",
         "timerMins": 8,
         "sensoryCue": "The sauce shines like lacquer; garnishes coat evenly in the rich Burgundian reduction."
       }
@@ -833,7 +833,7 @@ window.MASTER_RECIPES = [
       {
         "issue": "Sauce is thin and watery",
         "cause": "Lid was kept tightly sealed or liquid was not reduced after chicken was removed.",
-        "solution": "Remove chicken and boil sauce vigorously for 5 minutes, or whisk in 15g beurre mani\u00e9 (equal parts soft butter and flour kneaded together)."
+        "solution": "Remove chicken and boil sauce vigorously for 5 minutes, or whisk in 15g beurre manié (equal parts soft butter and flour kneaded together)."
       },
       {
         "issue": "Chicken skin is flabby and greasy",
@@ -844,7 +844,7 @@ window.MASTER_RECIPES = [
     "substitutions": [
       {
         "original": "Pinot Noir",
-        "substitute": "Beaujolais (Gamay) or C\u00f4tes du Rh\u00f4ne",
+        "substitute": "Beaujolais (Gamay) or Côtes du Rhône",
         "culinaryConsequence": "Gamay brings a lighter, fruit-forward acidity; perfect for farmhouse style."
       },
       {
@@ -874,7 +874,7 @@ window.MASTER_RECIPES = [
       "rec-duck-confit"
     ],
     "relatedTechniques": [
-      "lesson-saut\u00e9-deglaze",
+      "lesson-sauté-deglaze",
       "lesson-braising-collagen"
     ]
   },
@@ -890,7 +890,7 @@ window.MASTER_RECIPES = [
     "totalMins": 210,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1514944298352-78d12089060b?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Gascon culinary alchemy: whole duck legs cured overnight in coarse sea salt, garlic, and wild herbs, submerged in rendered duck fat and slow-cooked at a gentle 90\u00b0C until the meat is succulent and falling off the bone. Finished in a scorching skillet for crackling skin, served with duck-fat-crisped Sarladaise potatoes and a tart cherry-ruby port gastrique.",
+    "summary": "Gascon culinary alchemy: whole duck legs cured overnight in coarse sea salt, garlic, and wild herbs, submerged in rendered duck fat and slow-cooked at a gentle 90°C until the meat is succulent and falling off the bone. Finished in a scorching skillet for crackling skin, served with duck-fat-crisped Sarladaise potatoes and a tart cherry-ruby port gastrique.",
     "dietary": [
       "dairy-free",
       "gluten-free",
@@ -908,7 +908,7 @@ window.MASTER_RECIPES = [
       {
         "qty": 35,
         "unit": "g",
-        "name": "Coarse sea salt (Gros sel de Gu\u00e9rande)",
+        "name": "Coarse sea salt (Gros sel de Guérande)",
         "prep": "for dry curing",
         "dept": "pantry"
       },
@@ -1001,7 +1001,7 @@ window.MASTER_RECIPES = [
     "miseEnPlace": [
       "Rub duck legs with salt, smashed garlic, thyme, and cracked pepper; refrigerate for 12 to 24 hours to cure.",
       "Rinse cure thoroughly from duck legs with cold water and pat completely dry.",
-      "Preheat oven to 105\u00b0C (225\u00b0F).",
+      "Preheat oven to 105°C (225°F).",
       "Melt duck fat over low heat."
     ],
     "steps": [
@@ -1009,14 +1009,14 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Place rinsed, dried duck legs snugly in a single layer inside a deep baking dish or Dutch oven. Pour melted duck fat over them until completely submerged.",
         "timerMins": 5,
-        "temperature": "60\u00b0C fat",
+        "temperature": "60°C fat",
         "sensoryCue": "Duck legs are entirely immersed beneath a golden liquid sea of warm duck fat."
       },
       {
         "stepNum": 2,
-        "text": "Cover tightly with foil and a lid. Bake in a 105\u00b0C (225\u00b0F) oven for 3 hours. The fat should never boil, only releasing a single lazy bubble every few seconds.",
+        "text": "Cover tightly with foil and a lid. Bake in a 105°C (225°F) oven for 3 hours. The fat should never boil, only releasing a single lazy bubble every few seconds.",
         "timerMins": 180,
-        "temperature": "90\u00b0C internal fat",
+        "temperature": "90°C internal fat",
         "sensoryCue": "Subtle lazy bubbles rise through the clear fat; intoxicating perfume of herbs and roasting duck.",
         "scienceNote": "Confit is a sub-boiling lipid immersion method. Because duck fat contains virtually no water, meat moisture is retained while collagen hydrolyzes at low steady temperature without toughening proteins."
       },
@@ -1028,9 +1028,9 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 4,
-        "text": "Prepare Sarladaise potatoes: Heat 45g of the duck fat from the confit in a wide skillet over medium heat. Add sliced potatoes in an even layer. Saut\u00e9 for 18 minutes, tossing periodically, until deeply browned and crisp at the edges. Toss with minced garlic and parsley.",
+        "text": "Prepare Sarladaise potatoes: Heat 45g of the duck fat from the confit in a wide skillet over medium heat. Add sliced potatoes in an even layer. Sauté for 18 minutes, tossing periodically, until deeply browned and crisp at the edges. Toss with minced garlic and parsley.",
         "timerMins": 18,
-        "temperature": "165\u00b0C",
+        "temperature": "165°C",
         "sensoryCue": "Potatoes sizzle merrily, transforming into crispy golden disks with soft, creamy centers."
       },
       {
@@ -1070,8 +1070,8 @@ window.MASTER_RECIPES = [
       },
       {
         "issue": "Meat is dry and stringy",
-        "cause": "Confit fat boiled above 115\u00b0C during oven cooking.",
-        "solution": "Verify oven temperature with a thermometer; keep fat between 88\u00b0C and 93\u00b0C."
+        "cause": "Confit fat boiled above 115°C during oven cooking.",
+        "solution": "Verify oven temperature with a thermometer; keep fat between 88°C and 93°C."
       }
     ],
     "substitutions": [
@@ -1087,11 +1087,11 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Madiran, Cahors (Malbec), or Saint-\u00c9milion Grand Cru",
+      "wine": "Madiran, Cahors (Malbec), or Saint-Émilion Grand Cru",
       "zeroProof": "Spiced pomegranate tonic with bruised rosemary and Meyer lemon twist",
       "complementarySides": [
-        "Pommes Sarladaises (duck-fat saut\u00e9ed potatoes)",
-        "Fris\u00e9e salad with warm bacon vinaigrette"
+        "Pommes Sarladaises (duck-fat sautéed potatoes)",
+        "Frisée salad with warm bacon vinaigrette"
       ]
     },
     "advancedTechnique": "Long-term cellar preservation: Traditionally, confit was stored in ceramic crocks completely submerged under 2 inches of solidified duck fat in a cold cellar for up to 6 months without refrigeration. The fat forms an airtight barrier excluding oxygen and bacteria.",
@@ -1108,12 +1108,12 @@ window.MASTER_RECIPES = [
     ],
     "relatedTechniques": [
       "lesson-confit-fat",
-      "lesson-saut\u00e9-deglaze"
+      "lesson-sauté-deglaze"
     ]
   },
   {
     "id": "rec-souffle-chocolat",
-    "title": "Souffl\u00e9 Chaud au Chocolat Noir with Cr\u00e8me Anglaise",
+    "title": "Soufflé Chaud au Chocolat Noir with Crème Anglaise",
     "cuisine": "French Classical",
     "category": "dessert",
     "slot": "dessert",
@@ -1123,7 +1123,7 @@ window.MASTER_RECIPES = [
     "totalMins": 39,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The pinnacle of French pastry drama: a rich Valrhona 70% dark chocolate pastry cream lightened with perfectly whipped French meringue, baked in sugar-coated ramekins until it rises majestically two inches above the rim, dusted with powdered sugar and cracked open tableside to receive cold vanilla bean cr\u00e8me anglaise.",
+    "summary": "The pinnacle of French pastry drama: a rich Valrhona 70% dark chocolate pastry cream lightened with perfectly whipped French meringue, baked in sugar-coated ramekins until it rises majestically two inches above the rim, dusted with powdered sugar and cracked open tableside to receive cold vanilla bean crème anglaise.",
     "dietary": [
       "vegetarian",
       "nut-free"
@@ -1196,14 +1196,14 @@ window.MASTER_RECIPES = [
       {
         "qty": 200,
         "unit": "ml",
-        "name": "Cr\u00e8me anglaise (custard with heavy cream, yolks, sugar, vanilla bean)",
+        "name": "Crème anglaise (custard with heavy cream, yolks, sugar, vanilla bean)",
         "prep": "chilled, for service",
         "dept": "dairy"
       }
     ],
     "equipment": [
       {
-        "name": "Four 6-ounce ceramic souffl\u00e9 ramekins with straight vertical sides",
+        "name": "Four 6-ounce ceramic soufflé ramekins with straight vertical sides",
         "type": "everyday"
       },
       {
@@ -1219,7 +1219,7 @@ window.MASTER_RECIPES = [
       "Brush ramekins with softened butter using upward vertical strokes; coat evenly with granulated sugar, tapping out excess.",
       "Separate eggs with meticulous care; not a single speck of fat/yolk may contaminate the whites.",
       "Melt dark chocolate over a gentle bain-marie.",
-      "Preheat oven to 195\u00b0C (385\u00b0F) with a heavy baking sheet set on the middle rack."
+      "Preheat oven to 195°C (385°F) with a heavy baking sheet set on the middle rack."
     ],
     "steps": [
       {
@@ -1233,12 +1233,12 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Prepare chocolate base: Whisk milk and cornstarch in a small saucepan over medium heat until thickened into a smooth cream (2 minutes). Remove from heat, whisk in chopped chocolate, salt, and vanilla until smooth and glossy. Whisk in the 4 egg yolks one by one.",
         "timerMins": 5,
-        "temperature": "50\u00b0C",
+        "temperature": "50°C",
         "sensoryCue": "Rich, glossy mahogany chocolate cream with a mirror finish."
       },
       {
         "stepNum": 3,
-        "text": "Whip egg whites: In a clean bowl, whip 5 egg whites on medium speed until foamy. Gradually rain in the 30g sugar while increasing speed to high. Whip until medium-stiff peaks form\u2014glossy and holding their shape with a gentle curve at the very tip.",
+        "text": "Whip egg whites: In a clean bowl, whip 5 egg whites on medium speed until foamy. Gradually rain in the 30g sugar while increasing speed to high. Whip until medium-stiff peaks form—glossy and holding their shape with a gentle curve at the very tip.",
         "timerMins": 4,
         "sensoryCue": "Snow-white, glistening peaks that hold when the whisk is lifted, without looking dry or granular.",
         "scienceNote": "Over-whipped whites form dry, stiff curds that tear during folding. Medium-stiff peaks retain elastic protein films that expand smoothly when heated."
@@ -1258,15 +1258,15 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 6,
-        "text": "Place immediately onto the preheated baking sheet on the center rack. Bake at 195\u00b0C (385\u00b0F) undisturbed for 13 to 14 minutes. NEVER open the oven door during the first 12 minutes.",
+        "text": "Place immediately onto the preheated baking sheet on the center rack. Bake at 195°C (385°F) undisturbed for 13 to 14 minutes. NEVER open the oven door during the first 12 minutes.",
         "timerMins": 14,
-        "temperature": "195\u00b0C",
-        "sensoryCue": "Souffl\u00e9s rise dramatically 2 inches above the rim, straight and proud, with set crusts and trembling centers.",
-        "scienceNote": "Heat expands air bubbles trapped in the meringue while water vaporizes into steam (expanding 1,600 times its liquid volume), driving the souffl\u00e9 upward before protein coagulation locks the crumb."
+        "temperature": "195°C",
+        "sensoryCue": "Soufflés rise dramatically 2 inches above the rim, straight and proud, with set crusts and trembling centers.",
+        "scienceNote": "Heat expands air bubbles trapped in the meringue while water vaporizes into steam (expanding 1,600 times its liquid volume), driving the soufflé upward before protein coagulation locks the crumb."
       },
       {
         "stepNum": 7,
-        "text": "Dust tops immediately with powdered sugar. Serve within 90 seconds. At the table, pierce the center with a spoon and pour in cold vanilla bean cr\u00e8me anglaise.",
+        "text": "Dust tops immediately with powdered sugar. Serve within 90 seconds. At the table, pierce the center with a spoon and pour in cold vanilla bean crème anglaise.",
         "timerMins": 1,
         "sensoryCue": "The spoon plunges into a warm, airy cloud, revealing a molten chocolate river that mingles with cold cream."
       }
@@ -1279,16 +1279,16 @@ window.MASTER_RECIPES = [
     },
     "scienceNotes": [
       "Thermal expansion: Gay-Lussac's Law dictates that trapped air pockets expand proportionally with absolute temperature (V1/T1 = V2/T2). Combined with the boiling of water into steam, this generates tremendous upward hydrostatic pressure.",
-      "Egg white protein denaturation: Ovalbumin and conalbumin set at 65-80\u00b0C, solidifying the delicate bubble walls into an open cellular sponge before steam can escape."
+      "Egg white protein denaturation: Ovalbumin and conalbumin set at 65-80°C, solidifying the delicate bubble walls into an open cellular sponge before steam can escape."
     ],
     "troubleshooting": [
       {
-        "issue": "Souffl\u00e9 rose lopsided or tilted",
+        "issue": "Soufflé rose lopsided or tilted",
         "cause": "Ramekin was not buttered with vertical strokes or batter caught on the edge without a thumb gutter.",
         "solution": "Always brush butter vertically and clean the inner rim with your thumb before baking."
       },
       {
-        "issue": "Souffl\u00e9 collapsed immediately in oven",
+        "issue": "Soufflé collapsed immediately in oven",
         "cause": "Oven door was opened early, causing a sudden drop in ambient air temperature and pressure.",
         "solution": "Do not open oven door until the 13-minute mark."
       }
@@ -1300,21 +1300,21 @@ window.MASTER_RECIPES = [
         "culinaryConsequence": "Do not use chocolate chips as they contain stabilizers that impede smooth melting."
       },
       {
-        "original": "Cr\u00e8me anglaise",
+        "original": "Crème anglaise",
         "substitute": "Tahitian vanilla bean gelato or whipped heavy cream with sea salt",
         "culinaryConsequence": "Cold ice cream melting into the hot core provides stunning thermal contrast."
       }
     ],
     "flavorPairings": {
-      "wine": "Banyuls Grand Cru, 20-Year Tawny Port, or Pedro Xim\u00e9nez Sherry",
+      "wine": "Banyuls Grand Cru, 20-Year Tawny Port, or Pedro Ximénez Sherry",
       "zeroProof": "Chilled espresso tonic with blood orange reduction",
       "complementarySides": [
-        "Chilled vanilla bean cr\u00e8me anglaise",
+        "Chilled vanilla bean crème anglaise",
         "Fresh wild raspberries"
       ]
     },
     "advancedTechnique": "Core ganache sphere insertion: Freeze a small tablespoon-sized ball of dark chocolate truffle ganache and insert it into the center of the batter before baking; it melts into an ultra-luxurious hidden molten lava core.",
-    "storageAndReheating": "Souffl\u00e9s cannot be stored once baked; they deflate within 3 minutes as internal steam cools and contracts. However, filled raw ramekins can be held refrigerated for up to 3 hours before baking.",
+    "storageAndReheating": "Soufflés cannot be stored once baked; they deflate within 3 minutes as internal steam cools and contracts. However, filled raw ramekins can be held refrigerated for up to 3 hours before baking.",
     "nutritionEstimates": {
       "calories": 390,
       "proteinG": 10,
@@ -1331,7 +1331,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-ragu-bolognese",
-    "title": "Authentic Tagliatelle al Rag\u00f9 Bolognese Classico",
+    "title": "Authentic Tagliatelle al Ragù Bolognese Classico",
     "cuisine": "Italian Classical",
     "category": "dinner",
     "slot": "climax",
@@ -1464,7 +1464,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Heat olive oil in a Dutch oven over medium heat. Add pancetta and render for 5 minutes until fat is released. Add the finely minced onion, celery, and carrot (soffritto) and sweat gently for 10 minutes until soft and translucent without browning.",
         "timerMins": 15,
-        "temperature": "120\u00b0C",
+        "temperature": "120°C",
         "sensoryCue": "Vegetables soften into a sweet, translucent mirepoix; sweet aroma of cooked allium and celery.",
         "scienceNote": "Slow sweating without browning (suer) breaks down vegetal hemicellulose and releases simple sugars without generating Maillard bitterness."
       },
@@ -1473,7 +1473,7 @@ window.MASTER_RECIPES = [
         "text": "Increase heat to medium-high. Add ground beef and pork. Stir vigorously, breaking apart large chunks, and cook for 8-10 minutes until the meat turns grey-brown and all expelled water evaporates.",
         "timerMins": 10,
         "sensoryCue": "Initial hissing of boiling water transitions to a crackling sizzle as meat fries in its own rendered fat.",
-        "scienceNote": "Authentic rag\u00f9 does not sear the meat to a dark hard crust. Meat is lightly browned to maintain tender, delicate morsels that disperse smoothly throughout the sauce."
+        "scienceNote": "Authentic ragù does not sear the meat to a dark hard crust. Meat is lightly browned to maintain tender, delicate morsels that disperse smoothly throughout the sauce."
       },
       {
         "stepNum": 3,
@@ -1491,7 +1491,7 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Stir in tomato passata and remaining 150ml milk. Add a pinch of sea salt and black pepper. Bring to a faint simmer with tiny bubbles barely breaking the surface (sobollire). Partially cover with the lid.",
         "timerMins": 5,
-        "temperature": "85\u00b0C",
+        "temperature": "85°C",
         "sensoryCue": "The sauce transforms into a rich terracotta orange hue with lazy, occasional bubbles."
       },
       {
@@ -1509,7 +1509,7 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 8,
-        "text": "Transfer cooked pasta directly into the rag\u00f9 pan with a splash of pasta cooking water and 30g butter. Toss vigorously for 1 minute over medium heat to emulsify (mantecare). Serve immediately with grated Parmigiano-Reggiano.",
+        "text": "Transfer cooked pasta directly into the ragù pan with a splash of pasta cooking water and 30g butter. Toss vigorously for 1 minute over medium heat to emulsify (mantecare). Serve immediately with grated Parmigiano-Reggiano.",
         "timerMins": 1.5,
         "sensoryCue": "The sauce coats every strand of tagliatelle like silk; no watery pool left on the bottom of the bowl."
       }
@@ -1556,8 +1556,8 @@ window.MASTER_RECIPES = [
         "Warm crusty ciabatta"
       ]
     },
-    "advancedTechnique": "Traditional chicken liver enrichment: Finely chop 50g fresh chicken livers and saut\u00e9 with the meat during step 2; this is the secret historic Bolognese restaurant technique that imparts profound depth and umami.",
-    "storageAndReheating": "Rag\u00f9 stores in the refrigerator for up to 5 days and freezes for 3 months. Reheat gently in a saucepan with a splash of water before tossing with fresh pasta.",
+    "advancedTechnique": "Traditional chicken liver enrichment: Finely chop 50g fresh chicken livers and sauté with the meat during step 2; this is the secret historic Bolognese restaurant technique that imparts profound depth and umami.",
+    "storageAndReheating": "Ragù stores in the refrigerator for up to 5 days and freezes for 3 months. Reheat gently in a saucepan with a splash of water before tossing with fresh pasta.",
     "nutritionEstimates": {
       "calories": 650,
       "proteinG": 38,
@@ -1585,7 +1585,7 @@ window.MASTER_RECIPES = [
     "totalMins": 17,
     "yieldServings": 2,
     "heroImage": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Roman minimalism pushed to technical perfection: exactly three ingredients\u2014spaghetti, aged Pecorino Romano DOP, and freshly cracked black peppercorns. Toasted whole peppercorns blooming in warm water meet starchy pasta water and microplaned cheese, forming a glossy, creamy emulsion without cream, butter, or oil.",
+    "summary": "Roman minimalism pushed to technical perfection: exactly three ingredients—spaghetti, aged Pecorino Romano DOP, and freshly cracked black peppercorns. Toasted whole peppercorns blooming in warm water meet starchy pasta water and microplaned cheese, forming a glossy, creamy emulsion without cream, butter, or oil.",
     "dietary": [
       "vegetarian",
       "nut-free"
@@ -1641,7 +1641,7 @@ window.MASTER_RECIPES = [
     ],
     "miseEnPlace": [
       "Grate Pecorino Romano on the finest microplane; cheese must be fluffy and powdery like snow, not shredded, to dissolve without clumping.",
-      "Crack whole peppercorns coarsely in a mortar\u2014avoid fine pre-ground pepper.",
+      "Crack whole peppercorns coarsely in a mortar—avoid fine pre-ground pepper.",
       "Bring 2 liters of water to a boil in a wide pot (use less water than usual to concentrate starch)."
     ],
     "steps": [
@@ -1649,7 +1649,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Add cracked peppercorns to a dry, wide skillet over medium heat. Toast for 2 minutes, swirling constantly, until intensely fragrant and crackling faintly.",
         "timerMins": 2,
-        "temperature": "140\u00b0C",
+        "temperature": "140°C",
         "sensoryCue": "Pepper aroma intensifies dramatically from sharp heat to warm, floral, woody aromatics.",
         "scienceNote": "Thermal toasting volatilizes piperine and monoterpenes (pinene, limonene) in the black pepper corns, rounding harsh raw bite into complex floral spice."
       },
@@ -1673,17 +1673,17 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 5,
-        "text": "Meanwhile, prepare the cheese paste (la crema): Place 100g grated Pecorino in a small ceramic bowl. Whisk in 3-4 tablespoons of warm (approx 60\u00b0C) pasta water until a thick, smooth, spreadable paste forms with zero clumps.",
+        "text": "Meanwhile, prepare the cheese paste (la crema): Place 100g grated Pecorino in a small ceramic bowl. Whisk in 3-4 tablespoons of warm (approx 60°C) pasta water until a thick, smooth, spreadable paste forms with zero clumps.",
         "timerMins": 2,
-        "temperature": "60\u00b0C",
+        "temperature": "60°C",
         "sensoryCue": "A smooth, mayonnaise-like white paste with no melted rubbery strings.",
-        "scienceNote": "Pecorino Romano proteins (casein) coagulate and form stubborn rubbery clumps (filare) if heated above 65\u00b0C. Pre-tempering cheese below 60\u00b0C with starchy water ensures stable suspension."
+        "scienceNote": "Pecorino Romano proteins (casein) coagulate and form stubborn rubbery clumps (filare) if heated above 65°C. Pre-tempering cheese below 60°C with starchy water ensures stable suspension."
       },
       {
         "stepNum": 6,
-        "text": "CRITICAL STEP: Remove the skillet completely from heat. Wait 30 seconds for the pan to cool to approximately 60\u00b0C (140\u00b0F). Dump the Pecorino crema over the pasta.",
+        "text": "CRITICAL STEP: Remove the skillet completely from heat. Wait 30 seconds for the pan to cool to approximately 60°C (140°F). Dump the Pecorino crema over the pasta.",
         "timerMins": 0.5,
-        "temperature": "60\u00b0C pan",
+        "temperature": "60°C pan",
         "sensoryCue": "The pan stops hissing and sizzling; quiet steam replaces vigorous boiling."
       },
       {
@@ -1707,12 +1707,12 @@ window.MASTER_RECIPES = [
     },
     "scienceNotes": [
       "Amylose-casein synergy: Gelatinized amylose starch molecules from pasta water suspend fat globules from the cheese, preventing casein proteins from aggregating into a solid curd.",
-      "Temperature threshold: Above 65\u00b0C, Pecorino casein dehydrates and cross-links irreversibly into tough strands. Keeping the pan below this threshold is the scientific key to silk-smooth Cacio e Pepe."
+      "Temperature threshold: Above 65°C, Pecorino casein dehydrates and cross-links irreversibly into tough strands. Keeping the pan below this threshold is the scientific key to silk-smooth Cacio e Pepe."
     ],
     "troubleshooting": [
       {
         "issue": "Cheese clumped into a solid rubber ball (stracciatella effect)",
-        "cause": "The pan was too hot when the cheese was added (above 65\u00b0C).",
+        "cause": "The pan was too hot when the cheese was added (above 65°C).",
         "solution": "Always remove the pan from heat and allow it to cool for 30-45 seconds before adding the pre-tempered cheese paste."
       },
       {
@@ -1867,7 +1867,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Melt 30g butter and the diced beef marrow in a heavy risotto pan over medium-low heat. Add minced onion and sweat gently for 5 minutes without allowing any color.",
         "timerMins": 5,
-        "temperature": "115\u00b0C",
+        "temperature": "115°C",
         "sensoryCue": "Onions turn soft and clear; bone marrow renders into fragrant, clear beef lipid.",
         "scienceNote": "Bone marrow contains high levels of monounsaturated oleic acid and umami compounds that coat the rice grains, providing deep savory foundation."
       },
@@ -1875,7 +1875,7 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Add the raw Carnaroli rice. Toast (tostatura) over medium heat for 3 minutes, stirring constantly with a wooden spoon, until grains become translucent at the edges with a chalky center and feel hot to the touch.",
         "timerMins": 3,
-        "temperature": "130\u00b0C",
+        "temperature": "130°C",
         "sensoryCue": "Audible dry clattering sound like glass beads clicking; faint nutty aroma of toasted starch.",
         "scienceNote": "Tostatura gelatinizes the outer starch layer, creating a microscopic crust that prevents the grain from disintegrating into mush during simmering while retaining internal al dente core."
       },
@@ -2067,7 +2067,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Place guanciale lardons in a cold skillet with no added oil. Place over medium-low heat. Slowly render the pork jowl for 8-10 minutes, stirring occasionally, until the exterior is deeply crisp and amber-brown, but the interior retains a tender, yielding chew.",
         "timerMins": 9,
-        "temperature": "130\u00b0C",
+        "temperature": "130°C",
         "sensoryCue": "Lardons sizzle gently in a pool of clear, aromatic liquid pork fat; color is dark amber-gold.",
         "scienceNote": "Starting in a cold pan prevents the surface from burning before internal collagen and intramuscular fat can render out."
       },
@@ -2087,7 +2087,7 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Whisk 2 tablespoons of the warm rendered guanciale fat directly into the bowl of egg yolks and cheese. This tempers the yolks and infuses them with rich pork flavor.",
         "timerMins": 1,
-        "temperature": "55\u00b0C",
+        "temperature": "55°C",
         "sensoryCue": "The egg paste turns glossy, silky, and unctuous."
       },
       {
@@ -2098,11 +2098,11 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 6,
-        "text": "CRITICAL EMULSION STEP: Remove the skillet completely from the heat. Allow the pan to cool for 30 seconds (down to approximately 62\u00b0C). Pour the egg-cheese mixture over the pasta. Toss and stir rapidly with tongs without stopping.",
+        "text": "CRITICAL EMULSION STEP: Remove the skillet completely from the heat. Allow the pan to cool for 30 seconds (down to approximately 62°C). Pour the egg-cheese mixture over the pasta. Toss and stir rapidly with tongs without stopping.",
         "timerMins": 1,
-        "temperature": "62\u00b0C",
+        "temperature": "62°C",
         "sensoryCue": "The yellow egg mixture thickens instantly against the warm pasta, clinging in a creamy, velvety custard without a single speck of scrambled egg.",
-        "scienceNote": "Egg yolks set into custard between 65\u00b0C and 70\u00b0C. By tossing off heat, residual heat cooks the egg yolks to safe pasteurization (60\u00b0C+) while preventing egg coagulation."
+        "scienceNote": "Egg yolks set into custard between 65°C and 70°C. By tossing off heat, residual heat cooks the egg yolks to safe pasteurization (60°C+) while preventing egg coagulation."
       },
       {
         "stepNum": 7,
@@ -2158,7 +2158,7 @@ window.MASTER_RECIPES = [
         "Puntarelle alla Romana (chicory sprouts with anchovy garlic dressing)"
       ]
     },
-    "advancedTechnique": "Double boiler mantecatura: Place the heatproof mixing bowl directly over the pasta pot steam while tossing the pasta and eggs; this delivers foolproof, precise 65\u00b0C thermal control that guarantees a velvety restaurant consistency.",
+    "advancedTechnique": "Double boiler mantecatura: Place the heatproof mixing bowl directly over the pasta pot steam while tossing the pasta and eggs; this delivers foolproof, precise 65°C thermal control that guarantees a velvety restaurant consistency.",
     "storageAndReheating": "Carbonara cannot be reheated without curdling eggs. Eat immediately upon plating.",
     "nutritionEstimates": {
       "calories": 690,
@@ -2274,16 +2274,16 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 2,
-        "text": "Preheat your oven to 200\u00b0C (400\u00b0F) and position the top rack 6 inches from the broiler element. Line a heavy baking sheet with parchment paper.",
+        "text": "Preheat your oven to 200°C (400°F) and position the top rack 6 inches from the broiler element. Line a heavy baking sheet with parchment paper.",
         "timerMins": 10,
-        "temperature": "200\u00b0C",
+        "temperature": "200°C",
         "sensoryCue": "Oven reaches uniform radiant heat."
       },
       {
         "stepNum": 3,
         "text": "Arrange the cod fillets skin-side down with 2 inches of space between each piece. Transfer to oven and bake for 8 minutes until fish begins to flake.",
         "timerMins": 8,
-        "temperature": "200\u00b0C",
+        "temperature": "200°C",
         "sensoryCue": "Fish fat begins to render, glistening across the surface with sweet caramelizing aromas.",
         "scienceNote": "Black cod has extraordinary lipid content (over 15% fat), primarily heart-healthy monounsaturated and omega-3 fatty acids, making it practically impossible to dry out compared to lean cod."
       },
@@ -2293,7 +2293,7 @@ window.MASTER_RECIPES = [
         "timerMins": 2.5,
         "temperature": "Broiler high",
         "sensoryCue": "Audible sizzling and popping; aromatic billows of toasted caramelized sugars and fermented koji aroma; surface develops charred leopard spots.",
-        "scienceNote": "Reducing sugars from mirin and amino acids from fermented soy protein undergo intense pyrolytic and Maillard caramelization at 160-180\u00b0C under radiant broiler heat."
+        "scienceNote": "Reducing sugars from mirin and amino acids from fermented soy protein undergo intense pyrolytic and Maillard caramelization at 160-180°C under radiant broiler heat."
       },
       {
         "stepNum": 5,
@@ -2316,7 +2316,7 @@ window.MASTER_RECIPES = [
       {
         "issue": "Glaze burned to bitter black ash before fish was hot",
         "cause": "Too much thick miso paste was left on the surface, or fish was placed too close to the broiler element.",
-        "solution": "Wipe off thick paste with fingers before cooking and bake at 200\u00b0C first, using broiler only for the final 2 minutes."
+        "solution": "Wipe off thick paste with fingers before cooking and bake at 200°C first, using broiler only for the final 2 minutes."
       },
       {
         "issue": "Fish is watery and lacks flavor",
@@ -2499,7 +2499,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "THE BLANCH: Place pork bones and trotters in the stockpot, cover with cold water, and bring to a violent rolling boil for 15 minutes. A thick, grey, murky scum will rise to the surface.",
         "timerMins": 15,
-        "temperature": "100\u00b0C",
+        "temperature": "100°C",
         "sensoryCue": "Foul grey foam and scum accumulates rapidly on top; water turns dark and muddy.",
         "scienceNote": "Blanching coagulates surface blood proteins, residual marrow debris, and oxidized pigments so they can be completely washed away, which is critical for achieving a pristine, snow-white broth without foul odors."
       },
@@ -2513,20 +2513,20 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Return clean bones, trotters, and pork back fat to the pot. Cover with 6 liters of fresh cold water. Bring to a violent, rolling boil over high heat.",
         "timerMins": 25,
-        "temperature": "100\u00b0C",
+        "temperature": "100°C",
         "sensoryCue": "Turbulent boiling water tumbling the heavy bones violently against one another."
       },
       {
         "stepNum": 4,
         "text": "Cover with a tight lid and keep at a vigorous rolling boil for 10 to 12 hours. Check hourly, adding boiling water to keep bones fully submerged. At hour 10, add charred onion, garlic, and ginger. Boil for 2 more hours.",
         "timerMins": 720,
-        "temperature": "100\u00b0C rolling boil",
+        "temperature": "100°C rolling boil",
         "sensoryCue": "The turbulent churning liquid transforms from clear to cloudy, then to rich, opaque, creamy off-white milk; deep pork aroma without bitterness.",
         "scienceNote": "Violent kinetic energy is mandatory for tonkotsu: boiling water collides rendered fat globules with dissolved gelatin molecules, forming a permanent, milky oil-in-water emulsion that never separates."
       },
       {
         "stepNum": 5,
-        "text": "Strain the broth through a fine chinois, pressing firmly on bone marrow and aromatics to extract every drop of gelatinous richness. Keep hot at 85\u00b0C.",
+        "text": "Strain the broth through a fine chinois, pressing firmly on bone marrow and aromatics to extract every drop of gelatinous richness. Keep hot at 85°C.",
         "timerMins": 10,
         "sensoryCue": "Broth coats the ladle with an opaque, velvety white film that leaves a sticky sensation on the lips."
       },
@@ -2534,14 +2534,14 @@ window.MASTER_RECIPES = [
         "stepNum": 6,
         "text": "Cook Hakata noodles in vigorously boiling water for exactly 45 to 60 seconds (kata - firm). Shake vigorously in the tebo basket to remove all cooking starch water.",
         "timerMins": 1,
-        "temperature": "100\u00b0C",
+        "temperature": "100°C",
         "sensoryCue": "Noodles are pale, thin, with a springy toothsome snap."
       },
       {
         "stepNum": 7,
         "text": "Assemble bowls: Pour 35ml hot Shoyu Tare into each warmed ramen bowl. Ladle in 350ml piping hot Tonkotsu broth. Fold in noodles with chopsticks, lifting once to seat them neatly.",
         "timerMins": 1,
-        "temperature": "85\u00b0C",
+        "temperature": "85°C",
         "sensoryCue": "The tare blooms into the white broth, tinting it a warm ivory-tan."
       },
       {
@@ -2760,7 +2760,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Heat wok over high heat until smoking lightly. Swirl in 30ml oil to season (longyau). Add minced beef and stir-fry briskly over medium heat for 3 minutes until crisp, dark brown, and all moisture has evaporated.",
         "timerMins": 3,
-        "temperature": "180\u00b0C",
+        "temperature": "180°C",
         "sensoryCue": "Beef sizzles and turns deep reddish-brown and crispy (su-cui); savory aroma fills the air.",
         "scienceNote": "Traditional Chengdu mapo uses beef, not pork. Frying beef until completely dry concentrates umami and creates a crispy texture contrast to the silky tofu."
       },
@@ -2768,7 +2768,7 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Push beef to the side. Turn heat to medium-low and add minced Pixian Doubanjiang, Douchi black beans, and chili flakes into the pool of oil. Stir-fry for 1.5 minutes until the oil turns brilliant, luminous ruby-red.",
         "timerMins": 1.5,
-        "temperature": "130\u00b0C",
+        "temperature": "130°C",
         "sensoryCue": "The oil takes on a radiant crimson lacquer (hongyou); pungent fermented bean and chili aroma blooms.",
         "scienceNote": "Chili pigments (capsanthin) are lipid-soluble. Frying in warm oil dissolves carotenoids into the oil phase, giving authentic Sichuan dishes their dazzling red sheen."
       },
@@ -2782,7 +2782,7 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Using a spider, gently drain the warm tofu cubes and slide them into the boiling red sauce. Simmer gently over medium heat for 4 minutes, nudging the tofu gently with the back of the wok spatula to prevent breaking.",
         "timerMins": 4,
-        "temperature": "95\u00b0C",
+        "temperature": "95°C",
         "sensoryCue": "Tofu absorbs the spicy red liquid; sauce reduces slightly around the pristine white cubes.",
         "scienceNote": "Pre-poaching tofu in salted water expels excess internal moisture and strengthens calcium sulfate protein bonds, preventing the cubes from shattering in the wok."
       },
@@ -2814,7 +2814,7 @@ window.MASTER_RECIPES = [
     },
     "scienceNotes": [
       "Hydroxy-alpha-sanshool chemesthesis: Sichuan pepper does not create heat (capsaicin). Sanshool molecules bind directly to touch receptors (mechanoreceptors) on the tongue, firing at 50 Hertz, inducing a genuine physical tingling/numbing sensation (paresthesia) that refreshes the palate between spicy bites.",
-      "Potato starch translucency: Potato starch amylopectin swells at lower temperatures than cornstarch (65\u00b0C vs 75\u00b0C) and produces a crystal-clear, glossy glaze without dulling the fiery red color."
+      "Potato starch translucency: Potato starch amylopectin swells at lower temperatures than cornstarch (65°C vs 75°C) and produces a crystal-clear, glossy glaze without dulling the fiery red color."
     ],
     "troubleshooting": [
       {
@@ -2841,7 +2841,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Off-dry German Riesling Sp\u00e4tlese (residual sugar buffers capsaicin heat) or a fruity Gew\u00fcrztraminer",
+      "wine": "Off-dry German Riesling Spätlese (residual sugar buffers capsaicin heat) or a fruity Gewürztraminer",
       "zeroProof": "Chilled sweet soymilk (doujiang) or iced sour plum juice (suanmeitang)",
       "complementarySides": [
         "Steamed Koshihikari or Jasmine rice",
@@ -2993,15 +2993,15 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Thread marinated chicken onto skewers or lay onto a preheated cast iron grill pan over high heat. Sear for 8 minutes, turning once, until charred with blackened edges but still slightly raw in the center (it will finish in the sauce).",
         "timerMins": 8,
-        "temperature": "220\u00b0C",
+        "temperature": "220°C",
         "sensoryCue": "Deep smoky charring across yogurt coating; intoxicating aroma of toasted spices and caramelized poultry.",
-        "scienceNote": "Yogurt lactic acid tenderizes chicken muscle fibers, while milk sugars and spices rapidly undergo intense Maillard browning under high radiant heat, simulating a traditional 480\u00b0C tandoor clay oven."
+        "scienceNote": "Yogurt lactic acid tenderizes chicken muscle fibers, while milk sugars and spices rapidly undergo intense Maillard browning under high radiant heat, simulating a traditional 480°C tandoor clay oven."
       },
       {
         "stepNum": 2,
         "text": "In the Dutch oven, heat 20g butter over medium heat. Add remaining ginger-garlic paste and stir-fry for 1 minute until raw pungency disappears.",
         "timerMins": 1,
-        "temperature": "130\u00b0C",
+        "temperature": "130°C",
         "sensoryCue": "Fragrant allium sizzle without browning."
       },
       {
@@ -3021,14 +3021,14 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Add the charred chicken pieces along with any accumulated pan juices into the simmering sauce. Stir in heavy cream, honey, and fresh garam masala. Simmer gently over low heat for 8 minutes until chicken is cooked through.",
         "timerMins": 8,
-        "temperature": "85\u00b0C",
+        "temperature": "85°C",
         "sensoryCue": "Gentle simmering with sweet spice aromas of green cardamom and cinnamon filling the kitchen."
       },
       {
         "stepNum": 6,
         "text": "Rub toasted Kasuri Methi between your palms directly over the pot, scattering the fragrant green herb flakes. Stir gently.",
         "timerMins": 1,
-        "sensoryCue": "Sudden explosion of warm, maple-like, complex bitter-sweet fenugreek aroma\u2014the signature aroma of authentic Delhi butter chicken."
+        "sensoryCue": "Sudden explosion of warm, maple-like, complex bitter-sweet fenugreek aroma—the signature aroma of authentic Delhi butter chicken."
       },
       {
         "stepNum": 7,
@@ -3078,7 +3078,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Off-dry German Riesling, Viognier, or a fruity sparkling Cr\u00e9mant",
+      "wine": "Off-dry German Riesling, Viognier, or a fruity sparkling Crémant",
       "zeroProof": "Chilled Mango Lassi blended with Greek yogurt and green cardamom",
       "complementarySides": [
         "Handmade tandoori garlic naan with melted ghee",
@@ -3104,7 +3104,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-birria-res",
-    "title": "Birria de Res Tradicional with Rich Guajillo Consom\u00e9",
+    "title": "Birria de Res Tradicional with Rich Guajillo Consomé",
     "cuisine": "Mexican Jalisco",
     "category": "dinner",
     "slot": "climax",
@@ -3114,7 +3114,7 @@ window.MASTER_RECIPES = [
     "totalMins": 240,
     "yieldServings": 6,
     "heroImage": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The pride of Jalisco: beef chuck and bone-in short ribs braised until meltingly tender in an adobo of toasted Guajillo, Ancho, and Arbol chiles, roasted tomatoes, Mexican cinnamon, cloves, and cider vinegar. Served with a bowl of deep crimson consom\u00e9 topped with raw white onions and cilantro, ready for dunking crispy corn tortillas.",
+    "summary": "The pride of Jalisco: beef chuck and bone-in short ribs braised until meltingly tender in an adobo of toasted Guajillo, Ancho, and Arbol chiles, roasted tomatoes, Mexican cinnamon, cloves, and cider vinegar. Served with a bowl of deep crimson consomé topped with raw white onions and cilantro, ready for dunking crispy corn tortillas.",
     "dietary": [
       "gluten-free",
       "dairy-free",
@@ -3153,7 +3153,7 @@ window.MASTER_RECIPES = [
       {
         "qty": 4,
         "unit": "pcs",
-        "name": "Dried Chiles de \u00c1rbol",
+        "name": "Dried Chiles de Árbol",
         "prep": "for lively heat",
         "dept": "pantry"
       },
@@ -3280,7 +3280,7 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Sear the beef chuck chunks and bone-in short ribs in the Dutch oven with 20ml oil over high heat for 3 minutes per side until deeply browned. Remove beef.",
         "timerMins": 10,
-        "temperature": "190\u00b0C",
+        "temperature": "190°C",
         "sensoryCue": "Lively sizzling and deep roasted beef crust aroma."
       },
       {
@@ -3297,45 +3297,45 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 6,
-        "text": "Cover tightly with foil and lid. Transfer to a 150\u00b0C (300\u00b0F) oven for 3.5 hours until beef is completely fork-tender and falling off the bone.",
+        "text": "Cover tightly with foil and lid. Transfer to a 150°C (300°F) oven for 3.5 hours until beef is completely fork-tender and falling off the bone.",
         "timerMins": 210,
-        "temperature": "150\u00b0C oven",
+        "temperature": "150°C oven",
         "sensoryCue": "Beef pulls apart with zero resistance; a paring knife glides through short ribs like warm butter.",
-        "scienceNote": "Prolonged low-temperature braising converts collagen in beef chuck and short rib bones into luscious gelatin, transforming the braising liquid into a rich, mouth-coating consom\u00e9."
+        "scienceNote": "Prolonged low-temperature braising converts collagen in beef chuck and short rib bones into luscious gelatin, transforming the braising liquid into a rich, mouth-coating consomé."
       },
       {
         "stepNum": 7,
-        "text": "Remove beef from pot and shred coarsely with two forks on a cutting board, discarding bones. Skim the radiant red spiced beef fat from the surface of the consom\u00e9 into a small bowl (for dipping tortillas).",
+        "text": "Remove beef from pot and shred coarsely with two forks on a cutting board, discarding bones. Skim the radiant red spiced beef fat from the surface of the consomé into a small bowl (for dipping tortillas).",
         "timerMins": 10,
         "sensoryCue": "Juicy, glistening shredded beef saturated in dark red adobo; pure ruby-red tallow collected in bowl."
       },
       {
         "stepNum": 8,
-        "text": "Ladle piping hot consom\u00e9 into individual bowls. Top with raw white onion, cilantro, and fresh lime juice. Serve with shredded beef and warm tortillas dipped in the red fat and crisped on the comal.",
+        "text": "Ladle piping hot consomé into individual bowls. Top with raw white onion, cilantro, and fresh lime juice. Serve with shredded beef and warm tortillas dipped in the red fat and crisped on the comal.",
         "timerMins": 2,
         "sensoryCue": "Steam rises carrying spicy Guajillo, Mexican cinnamon, and rich beef broth aromas."
       }
     ],
     "sensoryIndicators": {
-      "see": "Deep mahogany-red shredded beef, glistening crimson consom\u00e9 with drops of ruby fat, bright green cilantro, sharp white diced onion.",
-      "hear": "Crisp sizzle of tortillas hitting the comal; slurping of hot consom\u00e9 from the bowl.",
+      "see": "Deep mahogany-red shredded beef, glistening crimson consomé with drops of ruby fat, bright green cilantro, sharp white diced onion.",
+      "hear": "Crisp sizzle of tortillas hitting the comal; slurping of hot consomé from the bowl.",
       "smell": "Warm Mexican canela, earthy toasted Guajillo chiles, roasted garlic, rich beef tallow, fresh zesty lime.",
       "feel": "Meltingly succulent, juicy shredded beef with gelatin-rich broth that coats the lips."
     },
     "scienceNotes": [
-      "Capsaicin-lipid binding: Red beef tallow floating on top of the consom\u00e9 dissolves chili capsaicin and essential oils from canela and oregano, concentrating the aromatic punch into the surface fat layer.",
-      "Acidity balancing collagen: Cider vinegar provides acetic acid that cleaves the heavy lipid richness of beef marrow, ensuring the consom\u00e9 remains drinkable and refreshing rather than greasy."
+      "Capsaicin-lipid binding: Red beef tallow floating on top of the consomé dissolves chili capsaicin and essential oils from canela and oregano, concentrating the aromatic punch into the surface fat layer.",
+      "Acidity balancing collagen: Cider vinegar provides acetic acid that cleaves the heavy lipid richness of beef marrow, ensuring the consomé remains drinkable and refreshing rather than greasy."
     ],
     "troubleshooting": [
       {
-        "issue": "Consom\u00e9 is bitter",
+        "issue": "Consomé is bitter",
         "cause": "Chiles were scorched during toasting or seeds/stems were left in.",
         "solution": "Always remove seeds and toast chiles for strictly 15-20 seconds until fragrant; if burned, discard and restart."
       },
       {
         "issue": "Beef is tough",
-        "cause": "Oven temperature was too high or cooking was stopped before collagen reached 75\u00b0C breakdown.",
-        "solution": "Return to 145\u00b0C oven for another 45 minutes; short ribs require full time to dissolve connective tissue."
+        "cause": "Oven temperature was too high or cooking was stopped before collagen reached 75°C breakdown.",
+        "solution": "Return to 145°C oven for another 45 minutes; short ribs require full time to dissolve connective tissue."
       }
     ],
     "substitutions": [
@@ -3359,7 +3359,7 @@ window.MASTER_RECIPES = [
         "Lime wedges"
       ]
     },
-    "advancedTechnique": "Quesabirria taco transformation: Dip fresh corn tortillas into the skimmed red surface fat, lay onto a smoking hot comal, top with shredded Oaxaca cheese and shredded beef, fold in half, and fry until cheese forms a crispy browned frico crust. Serve immediately with a bowl of hot consom\u00e9 for dipping.",
+    "advancedTechnique": "Quesabirria taco transformation: Dip fresh corn tortillas into the skimmed red surface fat, lay onto a smoking hot comal, top with shredded Oaxaca cheese and shredded beef, fold in half, and fry until cheese forms a crispy browned frico crust. Serve immediately with a bowl of hot consomé for dipping.",
     "storageAndReheating": "Birria improves dramatically after an overnight rest in the refrigerator. Keeps refrigerated for 5 days; freezes for 4 months. Reheat gently in a covered pot on low heat.",
     "nutritionEstimates": {
       "calories": 670,
@@ -3448,7 +3448,7 @@ window.MASTER_RECIPES = [
       {
         "qty": 5,
         "unit": "g",
-        "name": "Smoked Spanish paprika (Piment\u00f3n de la Vera)",
+        "name": "Smoked Spanish paprika (Pimentón de la Vera)",
         "prep": "sweet or bittersweet",
         "dept": "pantry"
       },
@@ -3495,7 +3495,7 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Heat 45ml extra virgin olive oil in a 12-inch cast iron skillet over medium heat. Add sliced onions and bell peppers. Cook for 12-14 minutes, stirring regularly, until the vegetables are completely soft, sweet, and collapsing into a tender tangle with light golden caramelized edges.",
         "timerMins": 13,
-        "temperature": "135\u00b0C",
+        "temperature": "135°C",
         "sensoryCue": "Bell peppers soften and collapse; kitchen fills with sweet, sugary allium and pepper perfume.",
         "scienceNote": "Slowly sweating peppers and onions hydrolyzes complex polysaccharides into sweet fructose and glucose, creating natural sweetness to counterbalance tomato acidity."
       },
@@ -3509,7 +3509,7 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Pour in crushed San Marzano tomatoes with their juices. Season with 4g sea salt and a pinch of black pepper. Bring to a lively simmer, then lower heat to medium-low and simmer uncovered for 10-12 minutes until the sauce has thickened and no longer looks watery.",
         "timerMins": 11,
-        "temperature": "90\u00b0C",
+        "temperature": "90°C",
         "sensoryCue": "The sauce transforms into a rich, deep scarlet-orange ragout that leaves a clean trail when a wooden spoon is dragged across the pan bottom."
       },
       {
@@ -3546,7 +3546,7 @@ window.MASTER_RECIPES = [
       "feel": "Crusty bread dipped into rich, chunky tomato pepper stew coated in velvety liquid yolk."
     },
     "scienceNotes": [
-      "Convective steam setting: Egg whites require 62-65\u00b0C to coagulate. By trapping steam under the lid, ambient moisture reaches 95\u00b0C and cooks the delicate upper white layer within minutes while the yolk stays below 65\u00b0C.",
+      "Convective steam setting: Egg whites require 62-65°C to coagulate. By trapping steam under the lid, ambient moisture reaches 95°C and cooks the delicate upper white layer within minutes while the yolk stays below 65°C.",
       "Sheep's milk feta stability: High-calcium sheep's feta softens and becomes creamy when heated, but does not melt into a puddle like cow's mozzarella, maintaining distinct salty, tangy pockets throughout the hot sauce."
     ],
     "troubleshooting": [
@@ -3569,12 +3569,12 @@ window.MASTER_RECIPES = [
       },
       {
         "original": "Sheep's milk feta",
-        "substitute": "Goat cheese (ch\u00e8vre) or labneh dolloped on after cooking",
+        "substitute": "Goat cheese (chèvre) or labneh dolloped on after cooking",
         "culinaryConsequence": "Labneh provides a cooler, tangier dairy contrast."
       }
     ],
     "flavorPairings": {
-      "wine": "Dry Provence Ros\u00e9, crisp Greek Assyrtiko, or a light fruity Beaujolais",
+      "wine": "Dry Provence Rosé, crisp Greek Assyrtiko, or a light fruity Beaujolais",
       "zeroProof": "Freshly brewed iced mint tea sweetened with honey, or sparkling lemonade with bruised mint",
       "complementarySides": [
         "Warm hand-stretched za'atar pita bread",
@@ -3648,7 +3648,7 @@ window.MASTER_RECIPES = [
         "qty": 150,
         "unit": "g",
         "name": "Clarified butter",
-        "prep": "warm (60\u00b0C)",
+        "prep": "warm (60°C)",
         "dept": "dairy"
       },
       {
@@ -3696,8 +3696,8 @@ window.MASTER_RECIPES = [
     ],
     "miseEnPlace": [
       "Crack each egg into an individual fine-mesh strainer over a bowl to drain watery outer albumen.",
-      "Bring 3 inches of water with vinegar to a bare simmer (88\u00b0C).",
-      "Melt clarified butter and keep warm at 60\u00b0C.",
+      "Bring 3 inches of water with vinegar to a bare simmer (88°C).",
+      "Melt clarified butter and keep warm at 60°C.",
       "Split English muffins with a fork to create nooks and crannies."
     ],
     "steps": [
@@ -3705,12 +3705,12 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Prepare Hollandaise: Whisk 3 egg yolks, lemon juice, and 15ml water in a heatproof bowl over a double boiler of barely simmering water until pale, thick, and ribbon-like.",
         "timerMins": 4,
-        "temperature": "60\u00b0C",
+        "temperature": "60°C",
         "sensoryCue": "Whisk leaves distinct tracks through the thickened yolks."
       },
       {
         "stepNum": 2,
-        "text": "Slowly drizzle in warm clarified butter in a thin, steady thread while whisking continuously until a thick, glossy, spoonable emulsion forms. Season with salt and cayenne. Keep warm at 55\u00b0C.",
+        "text": "Slowly drizzle in warm clarified butter in a thin, steady thread while whisking continuously until a thick, glossy, spoonable emulsion forms. Season with salt and cayenne. Keep warm at 55°C.",
         "timerMins": 4,
         "sensoryCue": "Sauce turns radiant golden yellow, coating the back of a spoon."
       },
@@ -3718,7 +3718,7 @@ window.MASTER_RECIPES = [
         "stepNum": 3,
         "text": "Poach eggs: Stir simmering water to create a gentle vortex. Slip eggs into the center one by one. Poach for 3 minutes until whites are completely set and yolks remain molten. Remove with slotted spoon to paper towels.",
         "timerMins": 3,
-        "temperature": "88\u00b0C",
+        "temperature": "88°C",
         "sensoryCue": "Egg whites wrap cleanly around yolk; gentle wobble when touched."
       },
       {
@@ -3747,14 +3747,14 @@ window.MASTER_RECIPES = [
     "troubleshooting": [
       {
         "issue": "Hollandaise separated into liquid butter and curd",
-        "cause": "Butter was added too quickly or bowl became hotter than 68\u00b0C.",
+        "cause": "Butter was added too quickly or bowl became hotter than 68°C.",
         "solution": "Whisk 1 tablespoon boiling water into a clean bowl, then slowly whisk the broken sauce back in off heat."
       }
     ],
     "substitutions": [
       {
         "original": "Canadian bacon",
-        "substitute": "Smoked salmon (Eggs Royale) or buttered saut\u00e9ed spinach (Eggs Florentine)",
+        "substitute": "Smoked salmon (Eggs Royale) or buttered sautéed spinach (Eggs Florentine)",
         "culinaryConsequence": "Salmon provides luxurious omega-3 richness; spinach provides earthy vegetal contrast."
       }
     ],
@@ -3771,7 +3771,7 @@ window.MASTER_RECIPES = [
       "carbsG": 32,
       "fatG": 44
     },
-    "storageAndReheating": "Clarified butter temperature precision: Keep butter strictly between 55\u00b0C and 62\u00b0C when emulsifying; cold butter hardens, while boiling butter curdles yolk protein.",
+    "storageAndReheating": "Clarified butter temperature precision: Keep butter strictly between 55°C and 62°C when emulsifying; cold butter hardens, while boiling butter curdles yolk protein.",
     "nutritionEstimates": "Eat immediately. Hollandaise cannot be refrigerated and reheated safely.",
     "relatedRecipes": [
       "rec-french-omelette",
@@ -3812,7 +3812,7 @@ window.MASTER_RECIPES = [
         "qty": 325,
         "unit": "ml",
         "name": "Cold filtered water (65% hydration)",
-        "prep": "18\u00b0C",
+        "prep": "18°C",
         "dept": "pantry"
       },
       {
@@ -3881,8 +3881,8 @@ window.MASTER_RECIPES = [
     ],
     "miseEnPlace": [
       "Knead dough, bulk ferment 2 hours at room temp, shape into 250g dough balls, and cold ferment in refrigerator for 48 hours.",
-      "Remove dough balls from fridge 2 hours before baking to reach room temperature (20\u00b0C).",
-      "Preheat oven with pizza steel on the highest rack at 260\u00b0C (500\u00b0F) or 290\u00b0C (550\u00b0F) for at least 60 minutes.",
+      "Remove dough balls from fridge 2 hours before baking to reach room temperature (20°C).",
+      "Preheat oven with pizza steel on the highest rack at 260°C (500°F) or 290°C (550°F) for at least 60 minutes.",
       "Drain sliced mozzarella thoroughly; wet cheese creates a soggy pizza lake."
     ],
     "steps": [
@@ -3908,7 +3908,7 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Bake: Slide pizza off the wooden peel directly onto the scorching pizza steel. Bake for 5 to 6 minutes, switching oven to HIGH BROILER for the final 2 minutes, until the cornicione puffs into airy blisters with dark charred leopard spots.",
         "timerMins": 6,
-        "temperature": "Broiler / 290\u00b0C steel",
+        "temperature": "Broiler / 290°C steel",
         "sensoryCue": "Crust balloons dramatically; bubbling mozzarella blisters golden; smoky wood-oven aroma fills the kitchen."
       },
       {
@@ -3968,7 +3968,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-tiramisu",
-    "title": "Traditional Tiramis\u00f9 Classico (Treviso Style with Mascarpone Sabayon)",
+    "title": "Traditional Tiramisù Classico (Treviso Style with Mascarpone Sabayon)",
     "cuisine": "Italian Veneto",
     "category": "dessert",
     "slot": "dessert",
@@ -4064,9 +4064,9 @@ window.MASTER_RECIPES = [
     "steps": [
       {
         "stepNum": 1,
-        "text": "Prepare yolk sabayon: Whisk egg yolks and 70g sugar in a bowl over a double boiler of simmering water for 5 minutes until pale, thick, and registering 65\u00b0C (safe pasteurization). Cool 5 minutes.",
+        "text": "Prepare yolk sabayon: Whisk egg yolks and 70g sugar in a bowl over a double boiler of simmering water for 5 minutes until pale, thick, and registering 65°C (safe pasteurization). Cool 5 minutes.",
         "timerMins": 5,
-        "temperature": "65\u00b0C",
+        "temperature": "65°C",
         "sensoryCue": "Yolks triple in volume, turning pale ivory with a thick, glossy ribbon stage."
       },
       {
@@ -4114,11 +4114,11 @@ window.MASTER_RECIPES = [
     },
     "scienceNotes": [
       "Mascarpone is high in milk fat (approx 75%), which acts as a stabilizing structural matrix that solidifies when chilled without requiring gelatin.",
-      "Egg white proteins trap air bubbles that give traditional tiramis\u00f9 its ethereal lightness; heavy cream makes tiramis\u00f9 heavy and greasy."
+      "Egg white proteins trap air bubbles that give traditional tiramisù its ethereal lightness; heavy cream makes tiramisù heavy and greasy."
     ],
     "troubleshooting": [
       {
-        "issue": "Tiramis\u00f9 is watery and collapsed into soup",
+        "issue": "Tiramisù is watery and collapsed into soup",
         "cause": "Ladyfingers were soaked too long in the coffee, or mascarpone curdled from violent over-whipping.",
         "solution": "Dip ladyfingers for strictly 1 second per side; fold mascarpone gently by hand."
       }
@@ -4240,7 +4240,7 @@ window.MASTER_RECIPES = [
       {
         "qty": 60,
         "unit": "ml",
-        "name": "Authentic Vietnamese fish sauce (Phu Quoc 40\u00b0N)",
+        "name": "Authentic Vietnamese fish sauce (Phu Quoc 40°N)",
         "prep": "high protein",
         "dept": "pantry"
       },
@@ -4305,14 +4305,14 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Place clean bones and brisket into clean stockpot. Cover with 6 liters of fresh cold water. Bring to a gentle simmer over medium-high heat, skimming off all rising foam and scum.",
         "timerMins": 30,
-        "temperature": "95\u00b0C",
+        "temperature": "95°C",
         "sensoryCue": "Clear liquid comes to gentle simmer; white foam rises and is skimmed clean."
       },
       {
         "stepNum": 2,
         "text": "Add charred onions, charred ginger, rock sugar, and 30ml fish sauce. Lower heat so liquid maintains lazy, gentle bubbles (never a violent boil, which turns broth cloudy). Simmer uncovered for 3 hours.",
         "timerMins": 180,
-        "temperature": "88\u00b0C",
+        "temperature": "88°C",
         "sensoryCue": "Broth turns clear golden amber; sweet aroma of charred allium and ginger fills the air.",
         "scienceNote": "Gentle sub-boiling temperature prevents lipids and proteins from emulsifying into an opaque broth, keeping the broth crystalline and clear (unlike tonkotsu)."
       },
@@ -4342,7 +4342,7 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 7,
-        "text": "Ladle boiling hot broth (approx 95\u00b0C) directly over the raw steak. The boiling broth will cook the shaved meat instantly to a tender pink-blush (tai). Serve with herb platter, bean sprouts, and lime wedges.",
+        "text": "Ladle boiling hot broth (approx 95°C) directly over the raw steak. The boiling broth will cook the shaved meat instantly to a tender pink-blush (tai). Serve with herb platter, bean sprouts, and lime wedges.",
         "timerMins": 1,
         "sensoryCue": "Raw beef turns instantly opaque and tender; aromatic herbal steam rises from the bowl."
       }
@@ -4361,7 +4361,7 @@ window.MASTER_RECIPES = [
       {
         "issue": "Broth turned murky and cloudy",
         "cause": "Broth was boiled vigorously instead of gently simmered, emulsifying bone fat.",
-        "solution": "Always simmer at 88-90\u00b0C with gentle lazy bubbles; never cover with tight lid while simmering."
+        "solution": "Always simmer at 88-90°C with gentle lazy bubbles; never cover with tight lid while simmering."
       }
     ],
     "substitutions": [
@@ -4432,7 +4432,7 @@ window.MASTER_RECIPES = [
         "qty": 60,
         "unit": "g",
         "name": "European cultured butter",
-        "prep": "for pan basting (arros\u00e9)",
+        "prep": "for pan basting (arrosé)",
         "dept": "dairy"
       },
       {
@@ -4507,16 +4507,16 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 2,
-        "text": "Preheat cast iron skillet over high heat for 6 minutes until smoking hot (approx 230\u00b0C / 450\u00b0F). Add 20ml beef tallow or avocado oil.",
+        "text": "Preheat cast iron skillet over high heat for 6 minutes until smoking hot (approx 230°C / 450°F). Add 20ml beef tallow or avocado oil.",
         "timerMins": 6,
-        "temperature": "230\u00b0C",
+        "temperature": "230°C",
         "sensoryCue": "Oil shimmers and smokes faintly; radiant heat hits your hand 6 inches above pan."
       },
       {
         "stepNum": 3,
         "text": "Lay steak gently into pan away from yourself. Sear undisturbed for 2.5 minutes until a deep, dark mahogany Maillard crust forms. Flip and cook reverse side for 2.5 minutes.",
         "timerMins": 5,
-        "temperature": "230\u00b0C",
+        "temperature": "230°C",
         "sensoryCue": "Violent, roaring sizzle; intense nutty, blue-cheese dry-aged roasting aroma.",
         "scienceNote": "Dry-brining evaporates surface water into a dehydrated pellicle. Pan thermal energy goes 100% into Maillard browning immediately without wasting energy boiling water."
       },
@@ -4524,26 +4524,26 @@ window.MASTER_RECIPES = [
         "stepNum": 4,
         "text": "Turn heat to medium. Drop in 60g cold butter, smashed garlic, thyme, and rosemary. The butter will melt and froth into a violent white foam.",
         "timerMins": 1,
-        "temperature": "145\u00b0C",
+        "temperature": "145°C",
         "sensoryCue": "Roaring sizzle subsides into gentle nutty crackle; garlic and herbs fragrance fills the air."
       },
       {
         "stepNum": 5,
-        "text": "THE ARROS\u00c9 BASTE: Tilt the skillet toward yourself. Use the large spoon to rapidly scoop the bubbling, herb-infused browned butter and pour it continuously over the top of the steak for 3 to 4 minutes.",
+        "text": "THE ARROSÉ BASTE: Tilt the skillet toward yourself. Use the large spoon to rapidly scoop the bubbling, herb-infused browned butter and pour it continuously over the top of the steak for 3 to 4 minutes.",
         "timerMins": 3.5,
         "sensoryCue": "Foaming butter cascades over steak; edges turn dark amber; herbs crisp up against meat.",
-        "scienceNote": "Basting transfers heat from foaming butterfat (145\u00b0C) to the top of the steak via convective conduction, cooking the meat evenly from both sides without flipping continuously."
+        "scienceNote": "Basting transfers heat from foaming butterfat (145°C) to the top of the steak via convective conduction, cooking the meat evenly from both sides without flipping continuously."
       },
       {
         "stepNum": 6,
-        "text": "Check core temp with instant-read probe: pull at exactly 49\u00b0C (120\u00b0F) for medium-rare. Transfer steak to a warm wooden board or resting rack.",
+        "text": "Check core temp with instant-read probe: pull at exactly 49°C (120°F) for medium-rare. Transfer steak to a warm wooden board or resting rack.",
         "timerMins": 1,
-        "temperature": "49\u00b0C core pull temp",
+        "temperature": "49°C core pull temp",
         "sensoryCue": "Thermometer glides smoothly into the center without resistance."
       },
       {
         "stepNum": 7,
-        "text": "THE REST: Top the hot steak with a thick disc of bone marrow butter. Rest for 10 minutes undisturbed. Carryover heat will gently elevate internal core temp to a perfect 54\u00b0C (130\u00b0F) medium-rare while muscle fibers relax.",
+        "text": "THE REST: Top the hot steak with a thick disc of bone marrow butter. Rest for 10 minutes undisturbed. Carryover heat will gently elevate internal core temp to a perfect 54°C (130°F) medium-rare while muscle fibers relax.",
         "timerMins": 10,
         "sensoryCue": "Bone marrow butter melts across the crusted surface into a glistening savory glaze.",
         "scienceNote": "During cooking, heat contracts muscle fibers, forcing water toward the cooler center. Resting allows muscle fibers to relax and reabsorb juices throughout the steak so it doesn't bleed out when cut."
@@ -4563,7 +4563,7 @@ window.MASTER_RECIPES = [
     },
     "scienceNotes": [
       "Dry aging evaporates up to 15% water and activates endogenous proteolytic enzymes (calpains and cathepsins) that break down collagen and muscle proteins into savory glutamates and nutty aroma esters.",
-      "Resting steak allows denatured actin-myosin fibers to cool below 50\u00b0C, increasing cellular capillary pressure to retain intracellular meat juices."
+      "Resting steak allows denatured actin-myosin fibers to cool below 50°C, increasing cellular capillary pressure to retain intracellular meat juices."
     ],
     "troubleshooting": [
       {
@@ -4576,7 +4576,7 @@ window.MASTER_RECIPES = [
       {
         "original": "Bone-in ribeye",
         "substitute": "New York strip, Porterhouse, or bone-in rib pork chop",
-        "culinaryConsequence": "Strip steak has firmer texture and cleaner beef flavor; cook pork chop to 60\u00b0C core."
+        "culinaryConsequence": "Strip steak has firmer texture and cleaner beef flavor; cook pork chop to 60°C core."
       }
     ],
     "flavorPairings": {
@@ -4593,7 +4593,7 @@ window.MASTER_RECIPES = [
       "carbsG": 22,
       "fatG": 64
     },
-    "storageAndReheating": "Reverse-sear adaptation for thick cuts (>2.5 inches): Bake on a wire rack at 105\u00b0C (225\u00b0F) until core reaches 43\u00b0C (110\u00b0F), then flash-sear in smoking cast iron with butter for 60 seconds per side. Zero grey band, edge-to-edge pink perfection.",
+    "storageAndReheating": "Reverse-sear adaptation for thick cuts (>2.5 inches): Bake on a wire rack at 105°C (225°F) until core reaches 43°C (110°F), then flash-sear in smoking cast iron with butter for 60 seconds per side. Zero grey band, edge-to-edge pink perfection.",
     "nutritionEstimates": "Eat immediately after resting. Leftover cold sliced ribeye is extraordinary in sandwiches.",
     "relatedRecipes": [
       "rec-steak-bearnaise",
@@ -4616,12 +4616,12 @@ window.MASTER_RECIPES = [
     "totalMins": 50,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Inspired by Chef Massimo Bottura's legendary 3-Michelin-star masterpiece from Osteria Francescana in Modena: a celebration of serendipity and deliberate imperfection. A velvety, sharp Limoncello-infused lemon curd sabayon splattered dramatically across an asymmetric plate, scattered with golden shards of baked P\u00e2te Sabl\u00e9e crust, candied capers, bergamot fluid gel, and sweet basil oil.",
+    "summary": "Inspired by Chef Massimo Bottura's legendary 3-Michelin-star masterpiece from Osteria Francescana in Modena: a celebration of serendipity and deliberate imperfection. A velvety, sharp Limoncello-infused lemon curd sabayon splattered dramatically across an asymmetric plate, scattered with golden shards of baked Pâte Sablée crust, candied capers, bergamot fluid gel, and sweet basil oil.",
     "dietary": [
       "vegetarian",
       "nut-free"
     ],
-    "sensoryRole": "Electrifying lemon acidity tempered by sweet sabl\u00e9 biscuit, floral limoncello, and surprising savory pops of candied caper.",
+    "sensoryRole": "Electrifying lemon acidity tempered by sweet sablé biscuit, floral limoncello, and surprising savory pops of candied caper.",
     "ingredients": [
       {
         "qty": 200,
@@ -4668,7 +4668,7 @@ window.MASTER_RECIPES = [
       {
         "qty": 150,
         "unit": "g",
-        "name": "P\u00e2te Sabl\u00e9e dough (flour, butter, powdered sugar, yolk)",
+        "name": "Pâte Sablée dough (flour, butter, powdered sugar, yolk)",
         "prep": "baked crisp until golden brown",
         "dept": "drygoods"
       },
@@ -4716,24 +4716,24 @@ window.MASTER_RECIPES = [
       }
     ],
     "miseEnPlace": [
-      "Bake P\u00e2te Sabl\u00e9e crust at 175\u00b0C until deep golden brown; cool and break by hand into rustic, jagged geometric shards.",
-      "Desalt capers in warm water for 2 hours, then simmer in 50% sugar syrup and bake at 100\u00b0C until crisp and shiny.",
+      "Bake Pâte Sablée crust at 175°C until deep golden brown; cool and break by hand into rustic, jagged geometric shards.",
+      "Desalt capers in warm water for 2 hours, then simmer in 50% sugar syrup and bake at 100°C until crisp and shiny.",
       "Boil bergamot tea with agar-agar for 1 minute; chill to a firm gel, then blend on high speed until a silky, glistening fluid gel forms.",
       "Zest Meyer lemons fine."
     ],
     "steps": [
       {
         "stepNum": 1,
-        "text": "Prepare Lemon-Limoncello Sabayon Curd: In a heatproof bowl set over simmering water, whisk egg yolks, whole eggs, lemon juice, lemon zest, and 120g sugar continuously for 8-10 minutes until thick, custardy, and registering 82\u00b0C (180\u00b0F).",
+        "text": "Prepare Lemon-Limoncello Sabayon Curd: In a heatproof bowl set over simmering water, whisk egg yolks, whole eggs, lemon juice, lemon zest, and 120g sugar continuously for 8-10 minutes until thick, custardy, and registering 82°C (180°F).",
         "timerMins": 9,
-        "temperature": "82\u00b0C",
+        "temperature": "82°C",
         "sensoryCue": "Whisk leaves clean ribbon trails; mixture thickens dramatically into custard."
       },
       {
         "stepNum": 2,
-        "text": "Remove from heat. Let cool to 55\u00b0C. Add cold cubed butter piece by piece while blending with an immersion blender to shear butter into a silky micro-emulsion. Blend in Limoncello. Chill for 2 hours.",
+        "text": "Remove from heat. Let cool to 55°C. Add cold cubed butter piece by piece while blending with an immersion blender to shear butter into a silky micro-emulsion. Blend in Limoncello. Chill for 2 hours.",
         "timerMins": 4,
-        "temperature": "55\u00b0C",
+        "temperature": "55°C",
         "sensoryCue": "Curd transforms into an ultra-glossy, luminous canary-yellow silk."
       },
       {
@@ -4744,7 +4744,7 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 4,
-        "text": "Scatter crisp golden P\u00e2te Sabl\u00e9e crust shards deliberately across and around the splatter, as if the tart fell from the sky and shattered on impact.",
+        "text": "Scatter crisp golden Pâte Sablée crust shards deliberately across and around the splatter, as if the tart fell from the sky and shattered on impact.",
         "timerMins": 1,
         "sensoryCue": "Golden geometric shards resting in the glossy curd."
       },
@@ -4757,18 +4757,18 @@ window.MASTER_RECIPES = [
     ],
     "sensoryIndicators": {
       "see": "Avant-garde splatter of radiant yellow curd on dark slate, broken biscuit shards, emerald green oil dots, glistening candied capers.",
-      "hear": "Sharp crunch of sabl\u00e9 crust and crisp capers.",
+      "hear": "Sharp crunch of sablé crust and crisp capers.",
       "smell": "Intense volatile lemon oil, floral bergamot, sweet toasted butter crust, fresh basil.",
       "feel": "Silky, melting tart curd contrasted by brittle buttery biscuit and surprising sweet-briny crunch."
     },
     "scienceNotes": [
-      "Immersion blending at 55\u00b0C creates tiny butterfat droplets that refract light, giving the lemon curd its luminous, pale yellow sheen while preventing butter separation.",
+      "Immersion blending at 55°C creates tiny butterfat droplets that refract light, giving the lemon curd its luminous, pale yellow sheen while preventing butter separation.",
       "Candied capers contain sinigrin and sulfur compounds that mimic umami-rich citrus notes when tempered by simple sugar syrup."
     ],
     "troubleshooting": [
       {
         "issue": "Curd was runny and failed to hold shape on plate",
-        "cause": "Curd was pulled from heat before reaching the 82\u00b0C egg coagulation threshold.",
+        "cause": "Curd was pulled from heat before reaching the 82°C egg coagulation threshold.",
         "solution": "Cook until thick enough to coat a spoon heavily before chilling."
       }
     ],
@@ -4780,7 +4780,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Moscato d'Asti, Limoncello di Capri, or Franciacorta Ros\u00e9",
+      "wine": "Moscato d'Asti, Limoncello di Capri, or Franciacorta Rosé",
       "zeroProof": "Chilled sparkling Earl Grey iced tea with fresh lemon zest and candied lemon peel",
       "complementarySides": [
         "Fresh wild blackberries"
@@ -4834,7 +4834,7 @@ window.MASTER_RECIPES = [
         "qty": 200,
         "unit": "g",
         "name": "Clarified butter (beurre noisette option)",
-        "prep": "warm (58\u00b0C)",
+        "prep": "warm (58°C)",
         "dept": "dairy"
       },
       {
@@ -4896,7 +4896,7 @@ window.MASTER_RECIPES = [
     ],
     "miseEnPlace": [
       "Simmer white wine, vinegar, shallot, and peppercorns until reduced to 1 tablespoon; strain and cool.",
-      "Clarify butter: melt gently, skim milk solids, and keep clear liquid fat warm at 58\u00b0C.",
+      "Clarify butter: melt gently, skim milk solids, and keep clear liquid fat warm at 58°C.",
       "Have a folded damp kitchen towel ready on the counter to anchor the bowl while whisking."
     ],
     "steps": [
@@ -4910,7 +4910,7 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Set bowl over barely simmering water (the bowl bottom must NOT touch water). Whisk in a rapid figure-eight motion for 3-4 minutes until the sabayon thickens, triples in volume, and forms ribbons when lifted.",
         "timerMins": 3.5,
-        "temperature": "62\u00b0C",
+        "temperature": "62°C",
         "sensoryCue": "The whisk leaves clear lines showing the bowl bottom; thick, creamy texture."
       },
       {
@@ -4927,7 +4927,7 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 5,
-        "text": "Whisk in fresh lemon juice, sea salt, and a pinch of cayenne. Taste: balance should be rich yet distinctly bright and clean. Hold warm in a thermos or near the stove at 50\u00b0C.",
+        "text": "Whisk in fresh lemon juice, sea salt, and a pinch of cayenne. Taste: balance should be rich yet distinctly bright and clean. Hold warm in a thermos or near the stove at 50°C.",
         "timerMins": 1,
         "sensoryCue": "Gleaming pale gold sauce with a warm, tangy lemon aroma."
       }
@@ -4945,7 +4945,7 @@ window.MASTER_RECIPES = [
     "troubleshooting": [
       {
         "issue": "Hollandaise broke into oily separated liquid",
-        "cause": "Butter was added too hot (>68\u00b0C) or too quickly before emulsion was stable.",
+        "cause": "Butter was added too hot (>68°C) or too quickly before emulsion was stable.",
         "solution": "Whisk 1 teaspoon of warm water and 1 raw egg yolk in a clean bowl, then slowly whisk the broken sauce into it."
       }
     ],
@@ -4970,7 +4970,7 @@ window.MASTER_RECIPES = [
       "carbsG": 1,
       "fatG": 42
     },
-    "storageAndReheating": "Thermos holding hack: In high-volume fine dining kitchens, freshly emulsified Hollandaise is transferred immediately into a pre-warmed stainless thermos flask, keeping it at a safe 52\u00b0C for up to 2 hours without breaking.",
+    "storageAndReheating": "Thermos holding hack: In high-volume fine dining kitchens, freshly emulsified Hollandaise is transferred immediately into a pre-warmed stainless thermos flask, keeping it at a safe 52°C for up to 2 hours without breaking.",
     "nutritionEstimates": "Hollandaise cannot be refrigerated. Discard after 2 hours for food safety.",
     "relatedRecipes": [
       "rec-eggs-benedict",
@@ -4993,7 +4993,7 @@ window.MASTER_RECIPES = [
     "totalMins": 510,
     "yieldServings": 8,
     "heroImage": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The majestic cornerstone of classical French haute cuisine: veal knuckle and marrow bones roasted to deep mahogany, caramelized with mirepoix and tomato paste (pinc\u00e9), deglazed with red wine, and simmered gently for 8 hours with aromatics until it yields a crystal-clear, deep amber, gelatin-dense nectar that solidifies into jelly when cooled.",
+    "summary": "The majestic cornerstone of classical French haute cuisine: veal knuckle and marrow bones roasted to deep mahogany, caramelized with mirepoix and tomato paste (pincé), deglazed with red wine, and simmered gently for 8 hours with aromatics until it yields a crystal-clear, deep amber, gelatin-dense nectar that solidifies into jelly when cooled.",
     "dietary": [
       "gluten-free",
       "dairy-free",
@@ -5040,7 +5040,7 @@ window.MASTER_RECIPES = [
         "qty": 60,
         "unit": "g",
         "name": "Tomato paste",
-        "prep": "for caramelization (pinc\u00e9)",
+        "prep": "for caramelization (pincé)",
         "dept": "pantry"
       },
       {
@@ -5091,14 +5091,14 @@ window.MASTER_RECIPES = [
       "Rinse bones in cold water; dry thoroughly on towels.",
       "Chop onions, carrots, and celery into uniform 3cm mirepoix chunks.",
       "Tie bouquet garni tightly with butcher's twine.",
-      "Preheat oven to 220\u00b0C (425\u00b0F)."
+      "Preheat oven to 220°C (425°F)."
     ],
     "steps": [
       {
         "stepNum": 1,
-        "text": "Roast bones: Place veal bones and meat trimmings in roasting pans without crowding. Roast at 220\u00b0C for 45-50 minutes, turning once, until deeply browned and caramelized on all sides.",
+        "text": "Roast bones: Place veal bones and meat trimmings in roasting pans without crowding. Roast at 220°C for 45-50 minutes, turning once, until deeply browned and caramelized on all sides.",
         "timerMins": 50,
-        "temperature": "220\u00b0C",
+        "temperature": "220°C",
         "sensoryCue": "Bones turn dark mahogany; kitchen fills with rich roasted meat aroma.",
         "scienceNote": "High dry heat induces Maillard browning and sugar caramelization, generating pyrazines and furans that give brown stock its color and roasted depth."
       },
@@ -5124,16 +5124,16 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Fill stockpot with 7 liters of cold filtered water (bones must be submerged by 3 inches). Bring to a gentle simmer over medium heat. Skim off all grey scum and rendered fat that rises to the surface.",
         "timerMins": 30,
-        "temperature": "92\u00b0C",
+        "temperature": "92°C",
         "sensoryCue": "A dense foam cap forms; skim continuously until surface is clean."
       },
       {
         "stepNum": 6,
-        "text": "Add bouquet garni, garlic, and black peppercorns. Lower heat to the lowest setting: the surface should show only gentle, lazy ripples (88\u00b0C\u201392\u00b0C). Never allow a rolling boil. Simmer undisturbed for 8 hours, skimming hourly.",
+        "text": "Add bouquet garni, garlic, and black peppercorns. Lower heat to the lowest setting: the surface should show only gentle, lazy ripples (88°C–92°C). Never allow a rolling boil. Simmer undisturbed for 8 hours, skimming hourly.",
         "timerMins": 480,
-        "temperature": "88\u00b0C - 92\u00b0C",
+        "temperature": "88°C - 92°C",
         "sensoryCue": "Liquid reduces slowly, concentrating into a crystal-clear, glistening dark amber stock.",
-        "scienceNote": "Veal knuckle bones contain immature type-I collagen that hydrolyzes into gelatin at 70-85\u00b0C. Boiling turbulently would shatter fat into droplets, clouding the stock."
+        "scienceNote": "Veal knuckle bones contain immature type-I collagen that hydrolyzes into gelatin at 70-85°C. Boiling turbulently would shatter fat into droplets, clouding the stock."
       },
       {
         "stepNum": 7,
@@ -5162,7 +5162,7 @@ window.MASTER_RECIPES = [
       {
         "issue": "Stock is cloudy and grey instead of clear amber",
         "cause": "Stock was allowed to boil vigorously, emulsifying bone marrow fat and proteins.",
-        "solution": "Clarify using a classical egg-white raft (consomm\u00e9 technique) or accept a slightly cloudy rustic stock."
+        "solution": "Clarify using a classical egg-white raft (consommé technique) or accept a slightly cloudy rustic stock."
       }
     ],
     "substitutions": [
@@ -5308,9 +5308,9 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 2,
-        "text": "Drizzle warm akazu vinegar mixture evenly over the rice. Cut and fold with shamoji using rapid slicing motions while fanning vigorously with a flat fan (uchiwa) to cool rice quickly to body temperature (36\u00b0C) while setting a glass-like sheen.",
+        "text": "Drizzle warm akazu vinegar mixture evenly over the rice. Cut and fold with shamoji using rapid slicing motions while fanning vigorously with a flat fan (uchiwa) to cool rice quickly to body temperature (36°C) while setting a glass-like sheen.",
         "timerMins": 5,
-        "temperature": "36\u00b0C body temp",
+        "temperature": "36°C body temp",
         "sensoryCue": "Rice turns warm mahogany-amber and glossy without a single crushed grain."
       },
       {
@@ -5364,7 +5364,7 @@ window.MASTER_RECIPES = [
         "Aka dashi (red miso soup with clams)"
       ]
     },
-    "advancedTechnique": "The Ten-Second Rule: Traditional Edomae nigiri is served at precisely 36\u00b0C (human body temperature). After 30 seconds on the counter, the rice cools, the fish fat oxidizes, and the temperature contrast is lost; always eat nigiri within 10 seconds of placement.",
+    "advancedTechnique": "The Ten-Second Rule: Traditional Edomae nigiri is served at precisely 36°C (human body temperature). After 30 seconds on the counter, the rice cools, the fish fat oxidizes, and the temperature contrast is lost; always eat nigiri within 10 seconds of placement.",
     "storageAndReheating": "Nigiri must be eaten within 15 minutes of assembly. Never refrigerate finished nigiri as cold temperatures crystallize rice starch into hard, chalky grains.",
     "nutritionEstimates": {
       "calories": 440,
@@ -5384,7 +5384,7 @@ window.MASTER_RECIPES = [
   {
     "id": "rec-bouillabaisse",
     "title": "Traditional Bouillabaisse Marseillaise with Spicy Rouille & Baguette",
-    "cuisine": "French Proven\u00e7al",
+    "cuisine": "French Provençal",
     "category": "dinner",
     "slot": "climax",
     "difficulty": "Advanced",
@@ -5454,7 +5454,7 @@ window.MASTER_RECIPES = [
         "qty": 1,
         "unit": "strip",
         "name": "Dried orange peel",
-        "prep": "essential Proven\u00e7al aromatic",
+        "prep": "essential Provençal aromatic",
         "dept": "produce"
       },
       {
@@ -5503,7 +5503,7 @@ window.MASTER_RECIPES = [
         "type": "everyday"
       },
       {
-        "name": "Food mill (moulin \u00e0 l\u00e9gumes)",
+        "name": "Food mill (moulin à légumes)",
         "type": "specialty"
       }
     ],
@@ -5516,7 +5516,7 @@ window.MASTER_RECIPES = [
     "steps": [
       {
         "stepNum": 1,
-        "text": "Heat 40ml olive oil in a wide stockpot. Saut\u00e9 sliced leeks, fennel, and tomatoes over medium heat for 8 minutes until softened.",
+        "text": "Heat 40ml olive oil in a wide stockpot. Sauté sliced leeks, fennel, and tomatoes over medium heat for 8 minutes until softened.",
         "timerMins": 8,
         "sensoryCue": "Vegetables soften and release sweet allium and licorice perfume."
       },
@@ -5524,9 +5524,9 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Deglaze with Pastis. Pour in 2.5 liters of the strained rockfish broth, orange peel, and steeped saffron infusion. Bring to a violent rolling boil.",
         "timerMins": 5,
-        "temperature": "100\u00b0C rolling boil",
+        "temperature": "100°C rolling boil",
         "sensoryCue": "Vibrant golden-orange broth bubbles vigorously.",
-        "scienceNote": "The name bouillabaisse comes from 'quand \u00e7a bouille, tu baisses' (when it boils, lower it). An initial violent rolling boil emulsifies olive oil into the gelatinous fish stock, giving the soup its golden opacity."
+        "scienceNote": "The name bouillabaisse comes from 'quand ça bouille, tu baisses' (when it boils, lower it). An initial violent rolling boil emulsifies olive oil into the gelatinous fish stock, giving the soup its golden opacity."
       },
       {
         "stepNum": 3,
@@ -5578,7 +5578,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Cassis Blanc (Proven\u00e7al white with salinity and herbal garrigue notes) or Bandol Ros\u00e9",
+      "wine": "Cassis Blanc (Provençal white with salinity and herbal garrigue notes) or Bandol Rosé",
       "zeroProof": "Chilled sparkling mineral water with fresh fennel fronds and orange twist",
       "complementarySides": [
         "Garlic-rubbed baguette croutons",
@@ -5604,7 +5604,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-french-onion-soup",
-    "title": "Soupe \u00e0 l'Oignon Gratin\u00e9e (Classical French Onion Soup with Gruy\u00e8re)",
+    "title": "Soupe à l'Oignon Gratinée (Classical French Onion Soup with Gruyère)",
     "cuisine": "French Classical",
     "category": "lunch",
     "slot": "opener",
@@ -5614,11 +5614,11 @@ window.MASTER_RECIPES = [
     "totalMins": 85,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The timeless Parisian bistro comfort: three pounds of yellow onions slowly caramelized for 45 minutes until melting, dark mahogany, and sweet, deglazed with dry white wine and Cognac, simmered in rich beef bone stock with thyme, ladled into ovenproof crocks over toasted baguette rounds, blanketed in cave-aged Gruy\u00e8re and broiled until blistered, bubbling, and deeply browned.",
+    "summary": "The timeless Parisian bistro comfort: three pounds of yellow onions slowly caramelized for 45 minutes until melting, dark mahogany, and sweet, deglazed with dry white wine and Cognac, simmered in rich beef bone stock with thyme, ladled into ovenproof crocks over toasted baguette rounds, blanketed in cave-aged Gruyère and broiled until blistered, bubbling, and deeply browned.",
     "dietary": [
       "nut-free"
     ],
-    "sensoryRole": "Deep, savory-sweet caramelized allium broth contrasting sharp, nutty melted Gruy\u00e8re cheese crust and wine-soaked bread.",
+    "sensoryRole": "Deep, savory-sweet caramelized allium broth contrasting sharp, nutty melted Gruyère cheese crust and wine-soaked bread.",
     "ingredients": [
       {
         "qty": 1400,
@@ -5686,7 +5686,7 @@ window.MASTER_RECIPES = [
       {
         "qty": 250,
         "unit": "g",
-        "name": "Cave-aged Swiss Gruy\u00e8re or Comt\u00e9 AOP",
+        "name": "Cave-aged Swiss Gruyère or Comté AOP",
         "prep": "shredded coarse",
         "dept": "dairy"
       },
@@ -5714,8 +5714,8 @@ window.MASTER_RECIPES = [
     ],
     "miseEnPlace": [
       "Slice onions pole to pole for uniform melting without stringiness.",
-      "Bake baguette slices at 150\u00b0C for 15 minutes until bone-dry and crisp like rusks (prevents crouton from turning to mush in soup).",
-      "Shred Gruy\u00e8re cheese coarse.",
+      "Bake baguette slices at 150°C for 15 minutes until bone-dry and crisp like rusks (prevents crouton from turning to mush in soup).",
+      "Shred Gruyère cheese coarse.",
       "Heat beef stock to gentle simmer on back burner."
     ],
     "steps": [
@@ -5723,14 +5723,14 @@ window.MASTER_RECIPES = [
         "stepNum": 1,
         "text": "Melt butter and olive oil in Dutch oven over medium heat. Add all sliced onions and 1 teaspoon sea salt. Toss to coat evenly. Cover with lid and sweat for 10 minutes until onions collapse and release their water.",
         "timerMins": 10,
-        "temperature": "120\u00b0C",
+        "temperature": "120°C",
         "sensoryCue": "Onions turn translucent and watery, reducing in volume by half."
       },
       {
         "stepNum": 2,
         "text": "Uncover. Cook over medium-low heat for 35 to 45 minutes, stirring every few minutes. As fond browns on the bottom of the pot, scrape it up with a wooden spoon so it incorporates into the onions. Onions will progress from blonde to golden, then to deep amber, and finally to dark mahogany-brown.",
         "timerMins": 40,
-        "temperature": "135\u00b0C",
+        "temperature": "135°C",
         "sensoryCue": "Onions collapse into a rich, sweet, jammy dark mahogany paste; kitchen smells intoxicatingly of caramelized sugar.",
         "scienceNote": "Thermal caramelization breaks down sucrose into maltol and furans, while Maillard reactions between onion amino acids and reducing sugars create hundreds of savory melanoidin pigments."
       },
@@ -5750,20 +5750,20 @@ window.MASTER_RECIPES = [
         "stepNum": 5,
         "text": "Pour in hot beef stock and add thyme/bay bouquet. Bring to a gentle simmer, partially cover, and simmer over low heat for 25 minutes. Season with salt and freshly cracked black pepper. Discard herb bouquet.",
         "timerMins": 25,
-        "temperature": "88\u00b0C",
+        "temperature": "88°C",
         "sensoryCue": "Broth turns deep lustrous mahogany brown with sweet, rich savory perfume."
       },
       {
         "stepNum": 6,
-        "text": "Assembly & Gratin\u00e9e: Place 4 ovenproof crocks on a heavy baking sheet. Ladle piping hot soup into each crock, filling 80% full. Float 2 garlic-rubbed dry croutons on top of each bowl.",
+        "text": "Assembly & Gratinée: Place 4 ovenproof crocks on a heavy baking sheet. Ladle piping hot soup into each crock, filling 80% full. Float 2 garlic-rubbed dry croutons on top of each bowl.",
         "timerMins": 2,
         "sensoryCue": "Croutons float securely on top of the broth."
       },
       {
         "stepNum": 7,
-        "text": "Mound shredded Gruy\u00e8re generously over the bread, allowing cheese to drape over the lip of the bowl. Transfer under a preheated HIGH broiler for 4 to 5 minutes until cheese is molten, bubbling vigorously, and blistered with deep golden-brown spots.",
+        "text": "Mound shredded Gruyère generously over the bread, allowing cheese to drape over the lip of the bowl. Transfer under a preheated HIGH broiler for 4 to 5 minutes until cheese is molten, bubbling vigorously, and blistered with deep golden-brown spots.",
         "timerMins": 5,
-        "temperature": "Broiler High (260\u00b0C)",
+        "temperature": "Broiler High (260°C)",
         "sensoryCue": "Cheese bubbles and browns with an audible sizzle; edges form a crisp frico crust on ceramic."
       },
       {
@@ -5776,7 +5776,7 @@ window.MASTER_RECIPES = [
     "sensoryIndicators": {
       "see": "Blistered golden-brown bubbling cheese crust draping over crock edges, dark mahogany onion broth beneath.",
       "hear": "Audible bubbling sizzle of molten cheese straight from the broiler.",
-      "smell": "Nutty roasted Gruy\u00e8re cheese, sweet caramelized alliums, wine reduction, fresh thyme.",
+      "smell": "Nutty roasted Gruyère cheese, sweet caramelized alliums, wine reduction, fresh thyme.",
       "feel": "Stretchy, elastic cheese pull, followed by savory broth-soaked bread and melting sweet onions."
     },
     "scienceNotes": [
@@ -5792,20 +5792,20 @@ window.MASTER_RECIPES = [
     ],
     "substitutions": [
       {
-        "original": "Swiss Gruy\u00e8re",
-        "substitute": "French Comt\u00e9 AOP, Emmental, or Fontina Valdostana",
-        "culinaryConsequence": "Comt\u00e9 provides a sweeter, fruitier profile; Fontina melts into an ultra-stretchy blanket."
+        "original": "Swiss Gruyère",
+        "substitute": "French Comté AOP, Emmental, or Fontina Valdostana",
+        "culinaryConsequence": "Comté provides a sweeter, fruitier profile; Fontina melts into an ultra-stretchy blanket."
       }
     ],
     "flavorPairings": {
-      "wine": "Dry white C\u00f4tes du Rh\u00f4ne, Cru Beaujolais (Morgon), or a rich Saint-\u00c9milion",
+      "wine": "Dry white Côtes du Rhône, Cru Beaujolais (Morgon), or a rich Saint-Émilion",
       "zeroProof": "Chilled sparkling apple cider with a dash of Angostura bitters and lemon peel",
       "complementarySides": [
         "Salade verte with Dijon vinaigrette"
       ]
     },
-    "advancedTechnique": "The Double-Cheese Layer: Line the bottom of the empty crock with a slice of bread and a pinch of cheese before ladling soup, then add the top crouton and cheese layer for an decadent multi-tiered gratin\u00e9e.",
-    "storageAndReheating": "The soup base keeps refrigerated for 5 days and freezes for 3 months. Always gratin\u00e9e with fresh cheese right before serving.",
+    "advancedTechnique": "The Double-Cheese Layer: Line the bottom of the empty crock with a slice of bread and a pinch of cheese before ladling soup, then add the top crouton and cheese layer for an decadent multi-tiered gratinée.",
+    "storageAndReheating": "The soup base keeps refrigerated for 5 days and freezes for 3 months. Always gratinée with fresh cheese right before serving.",
     "nutritionEstimates": {
       "calories": 520,
       "proteinG": 26,
@@ -5823,7 +5823,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-tarte-tatin",
-    "title": "Classical Tarte Tatin with Cr\u00e8me Fra\u00eeche",
+    "title": "Classical Tarte Tatin with Crème Fraîche",
     "cuisine": "French Classical",
     "category": "dessert",
     "slot": "dessert",
@@ -5838,7 +5838,7 @@ window.MASTER_RECIPES = [
       "vegetarian",
       "nut-free"
     ],
-    "sensoryRole": "Deep, buttery, bittersweet caramel enrobing melting, pectin-rich apples, contrasted by crisp, flaky puff pastry and tart cr\u00e8me fra\u00eeche.",
+    "sensoryRole": "Deep, buttery, bittersweet caramel enrobing melting, pectin-rich apples, contrasted by crisp, flaky puff pastry and tart crème fraîche.",
     "ingredients": [
       {
         "qty": 2000,
@@ -5864,14 +5864,14 @@ window.MASTER_RECIPES = [
       {
         "qty": 1,
         "unit": "sheet",
-        "name": "All-butter puff pastry (p\u00e2te feuillet\u00e9e)",
+        "name": "All-butter puff pastry (pâte feuilletée)",
         "prep": "rolled to 3mm thickness, cut to 26cm disc",
         "dept": "dairy"
       },
       {
         "qty": 200,
         "unit": "g",
-        "name": "French Cr\u00e8me Fra\u00eeche",
+        "name": "French Crème Fraîche",
         "prep": "chilled, for service",
         "dept": "dairy"
       },
@@ -5909,7 +5909,7 @@ window.MASTER_RECIPES = [
         "stepNum": 2,
         "text": "Place skillet over medium heat. As butter and sugar melt, they begin to boil and bubble vigorously around the apples. Cook for 25 to 30 minutes, basting apple tops occasionally with the foaming caramel.",
         "timerMins": 30,
-        "temperature": "140\u00b0C",
+        "temperature": "140°C",
         "sensoryCue": "Liquid transforms from clear sweet foam into a thick, bubbly, dark amber-mahogany caramel; aroma of roasted apples and toffee.",
         "scienceNote": "Thermal caramelization breaks sucrose into maltol and furans, while apple pectin hydrolyzes into soft gelatinous fruit flesh."
       },
@@ -5921,9 +5921,9 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 4,
-        "text": "Bake in a preheated 190\u00b0C (375\u00b0F) oven for 30 minutes until the puff pastry is deep golden brown and completely crisp throughout.",
+        "text": "Bake in a preheated 190°C (375°F) oven for 30 minutes until the puff pastry is deep golden brown and completely crisp throughout.",
         "timerMins": 30,
-        "temperature": "190\u00b0C",
+        "temperature": "190°C",
         "sensoryCue": "Puff pastry rises in crisp, laminated golden layers; caramel bubbles up along the pan edges."
       },
       {
@@ -5934,7 +5934,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "sensoryIndicators": {
-      "see": "Lustrous, glass-like amber caramelized apples in concentric spirals atop golden pastry, white dollop of cr\u00e8me fra\u00eeche.",
+      "see": "Lustrous, glass-like amber caramelized apples in concentric spirals atop golden pastry, white dollop of crème fraîche.",
       "hear": "Shattering flake of puff pastry under the cake server.",
       "smell": "Rich toffee caramel, baked cinnamon-like apples, browned dairy butter.",
       "feel": "Melting, jammy, unctuous apples yielding to crisp, flaky, shattering pastry."
@@ -5953,7 +5953,7 @@ window.MASTER_RECIPES = [
     "substitutions": [
       {
         "original": "Puff pastry",
-        "substitute": "P\u00e2te Bris\u00e9e (all-butter shortcrust pastry)",
+        "substitute": "Pâte Brisée (all-butter shortcrust pastry)",
         "culinaryConsequence": "Shortcrust provides a denser, sandier biscuit crunch than airy laminated puff pastry."
       }
     ],
@@ -5961,12 +5961,12 @@ window.MASTER_RECIPES = [
       "wine": "Sauternes, Coteaux du Layon, or Calvados apple brandy",
       "zeroProof": "Chilled sparkling apple cider with a dash of vanilla",
       "complementarySides": [
-        "Cold French Cr\u00e8me Fra\u00eeche",
+        "Cold French Crème Fraîche",
         "Tahitian vanilla bean ice cream"
       ]
     },
     "advancedTechnique": "Pre-caramelization dry method: Cook sugar to a dry amber caramel first in the skillet, whisk in butter, then arrange apples and bake for cleaner jewel-like clarity.",
-    "storageAndReheating": "Best served warm 30 minutes after inversion. Leftovers can be reheated in a 160\u00b0C oven for 10 minutes to recrisp pastry.",
+    "storageAndReheating": "Best served warm 30 minutes after inversion. Leftovers can be reheated in a 160°C oven for 10 minutes to recrisp pastry.",
     "nutritionEstimates": {
       "calories": 420,
       "proteinG": 4,
@@ -5984,8 +5984,8 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-ratatouille-byaldi",
-    "title": "Ratatouille Ni\u00e7oise Traditionnelle (Confit Byaldi Presentation)",
-    "cuisine": "French Proven\u00e7al",
+    "title": "Ratatouille Niçoise Traditionnelle (Confit Byaldi Presentation)",
+    "cuisine": "French Provençal",
     "category": "dinner",
     "slot": "mid",
     "difficulty": "Intermediate",
@@ -5994,7 +5994,7 @@ window.MASTER_RECIPES = [
     "totalMins": 125,
     "yieldServings": 6,
     "heroImage": "https://images.unsplash.com/photo-1572441713132-c542fc4fe282?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The elevated Proven\u00e7al celebration of summer garden abundance made famous by Chef Thomas Keller: a foundation of roasted bell pepper, tomato, and onion Piperade, topped with razor-thin shingled spirals of zucchini, yellow summer squash, Japanese eggplant, and Roma tomatoes, slow-baked under parchment until tender and glossy with herb-infused olive oil.",
+    "summary": "The elevated Provençal celebration of summer garden abundance made famous by Chef Thomas Keller: a foundation of roasted bell pepper, tomato, and onion Piperade, topped with razor-thin shingled spirals of zucchini, yellow summer squash, Japanese eggplant, and Roma tomatoes, slow-baked under parchment until tender and glossy with herb-infused olive oil.",
     "dietary": [
       "vegan",
       "vegetarian",
@@ -6091,7 +6091,7 @@ window.MASTER_RECIPES = [
     ],
     "miseEnPlace": [
       "Roast, peel, and mince red bell peppers.",
-      "Saut\u00e9 onion, garlic, minced peppers, and tomato paste into a smooth Piperade; spread across bottom of gratin dish.",
+      "Sauté onion, garlic, minced peppers, and tomato paste into a smooth Piperade; spread across bottom of gratin dish.",
       "Slice zucchini, squash, eggplant, and tomatoes into identical 1.5mm disks."
     ],
     "steps": [
@@ -6116,9 +6116,9 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 4,
-        "text": "Bake in a 140\u00b0C (285\u00b0F) oven for 75 minutes until vegetables are completely tender. Remove parchment and bake uncovered for 15 minutes to concentrate juices.",
+        "text": "Bake in a 140°C (285°F) oven for 75 minutes until vegetables are completely tender. Remove parchment and bake uncovered for 15 minutes to concentrate juices.",
         "timerMins": 90,
-        "temperature": "140\u00b0C",
+        "temperature": "140°C",
         "sensoryCue": "Vegetables slump slightly, glistening with concentrated sweet juices and fragrant herb oil."
       },
       {
@@ -6153,7 +6153,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Bandol Ros\u00e9, C\u00f4tes de Provence, or a light Chinon (Cabernet Franc)",
+      "wine": "Bandol Rosé, Côtes de Provence, or a light Chinon (Cabernet Franc)",
       "zeroProof": "Chilled sparkling water with bruised rosemary and cucumber slice",
       "complementarySides": [
         "Crusty country sourdough bread",
@@ -6241,7 +6241,7 @@ window.MASTER_RECIPES = [
     ],
     "equipment": [
       {
-        "name": "Heavy stainless saut\u00e9 pan",
+        "name": "Heavy stainless sauté pan",
         "type": "everyday"
       },
       {
@@ -6267,17 +6267,17 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 2,
-        "text": "Turn heat to dead low. Whisk in cold butter cubes two at a time, whisking continuously in circles. As each piece melts into a creamy sauce, add the next. Never let the sauce boil (keep at 55\u00b0C). Strain through a fine sieve.",
+        "text": "Turn heat to dead low. Whisk in cold butter cubes two at a time, whisking continuously in circles. As each piece melts into a creamy sauce, add the next. Never let the sauce boil (keep at 55°C). Strain through a fine sieve.",
         "timerMins": 6,
-        "temperature": "55\u00b0C",
+        "temperature": "55°C",
         "sensoryCue": "Transforms into a pale ivory, velvety, opaque emulsion (Beurre Blanc).",
         "scienceNote": "Milk solids in whole butter act as a natural surfactant that traps butterfat droplets into the reduced wine liquid."
       },
       {
         "stepNum": 3,
-        "text": "Poach halibut fillets gently in a shallow bath of 75\u00b0C court-bouillon for 8 minutes until core registers 50\u00b0C (122\u00b0F). Drain gently on paper towels.",
+        "text": "Poach halibut fillets gently in a shallow bath of 75°C court-bouillon for 8 minutes until core registers 50°C (122°F). Drain gently on paper towels.",
         "timerMins": 8,
-        "temperature": "75\u00b0C poaching",
+        "temperature": "75°C poaching",
         "sensoryCue": "Fish turns opaque white; flakes separate with light touch."
       },
       {
@@ -6294,12 +6294,12 @@ window.MASTER_RECIPES = [
       "feel": "Firm yet tender fish flaking effortlessly into silk-smooth warm butter sauce."
     },
     "scienceNotes": [
-      "Halibut has dense, lean muscle fibers with low fat; poaching at 75\u00b0C prevents protein toughening while Beurre Blanc provides rich lipid lubrication on the palate."
+      "Halibut has dense, lean muscle fibers with low fat; poaching at 75°C prevents protein toughening while Beurre Blanc provides rich lipid lubrication on the palate."
     ],
     "troubleshooting": [
       {
         "issue": "Beurre Blanc separated into clear yellow oil",
-        "cause": "Pan got too hot (over 65\u00b0C), melting butterfat out of its emulsion.",
+        "cause": "Pan got too hot (over 65°C), melting butterfat out of its emulsion.",
         "solution": "Whisk in 1 tablespoon of ice-cold cream or ice water off heat to snap the emulsion back together."
       }
     ],
@@ -6311,7 +6311,7 @@ window.MASTER_RECIPES = [
       }
     ],
     "flavorPairings": {
-      "wine": "Sancerre, Premier Cru Chablis, or Pouilly-Fum\u00e9",
+      "wine": "Sancerre, Premier Cru Chablis, or Pouilly-Fumé",
       "zeroProof": "Chilled sparkling mineral water with fresh lemon zest and tarragon",
       "complementarySides": [
         "Pommes vapeurs (steamed new potatoes with sea salt)",
@@ -6461,11 +6461,11 @@ window.MASTER_RECIPES = [
       },
       {
         "stepNum": 3,
-        "text": "Return veal shanks to pot. Pour in warm veal stock until liquid reaches two-thirds up the meat. Bring to a simmer, cover with tight lid, and braise in a 160\u00b0C (325\u00b0F) oven for 2 hours.",
+        "text": "Return veal shanks to pot. Pour in warm veal stock until liquid reaches two-thirds up the meat. Bring to a simmer, cover with tight lid, and braise in a 160°C (325°F) oven for 2 hours.",
         "timerMins": 120,
-        "temperature": "160\u00b0C oven",
+        "temperature": "160°C oven",
         "sensoryCue": "Meat shrinks back from bone; rich aroma fills the kitchen.",
-        "scienceNote": "Veal shank is dense with collagen membranes; 2 hours at 85\u00b0C dissolves connective tissue into gelatin while preserving marrow inside the bone cylinder."
+        "scienceNote": "Veal shank is dense with collagen membranes; 2 hours at 85°C dissolves connective tissue into gelatin while preserving marrow inside the bone cylinder."
       },
       {
         "stepNum": 4,
@@ -6525,7 +6525,7 @@ window.MASTER_RECIPES = [
     ],
     "relatedTechniques": [
       "lesson-braising-collagen",
-      "lesson-saut\u00e9-deglaze"
+      "lesson-sauté-deglaze"
     ]
   },
   {
@@ -9241,7 +9241,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-souffle-pancakes",
-    "title": "Japanese Fluffy Souffl\u00e9 Pancakes with Honey Butter",
+    "title": "Japanese Fluffy Soufflé Pancakes with Honey Butter",
     "cuisine": "Japanese Modern",
     "category": "breakfast",
     "slot": "opener",
@@ -9821,7 +9821,7 @@ window.MASTER_RECIPES = [
     "totalMins": 35,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Crispy, airy French-Vietnamese baguette stuffed with grilled lemongrass pork, chicken liver p\u00e2t\u00e9, pickled daikon-carrot, and fresh cilantro.",
+    "summary": "Crispy, airy French-Vietnamese baguette stuffed with grilled lemongrass pork, chicken liver pâté, pickled daikon-carrot, and fresh cilantro.",
     "dietary": [
       "nut-free"
     ],
@@ -10391,7 +10391,7 @@ window.MASTER_RECIPES = [
     "totalMins": 45,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Fresh milk-curd paneer cheese simmered in a velvety, emerald-green spiced spinach pur\u00e9e tempered with cumin, garlic, and garam masala.",
+    "summary": "Fresh milk-curd paneer cheese simmered in a velvety, emerald-green spiced spinach purée tempered with cumin, garlic, and garam masala.",
     "dietary": [
       "nut-free"
     ],
@@ -10953,8 +10953,8 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-carnitas",
-    "title": "Traditional Carnitas Michoac\u00e1n with Orange & Lard",
-    "cuisine": "Mexican Michoac\u00e1n",
+    "title": "Traditional Carnitas Michoacán with Orange & Lard",
+    "cuisine": "Mexican Michoacán",
     "category": "dinner",
     "slot": "climax",
     "difficulty": "Intermediate",
@@ -11096,7 +11096,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-ceviche-clasico",
-    "title": "Peruvian Ceviche Cl\u00e1sico with Catch of the Day & Leche de Tigre",
+    "title": "Peruvian Ceviche Clásico with Catch of the Day & Leche de Tigre",
     "cuisine": "Peruvian Coastal",
     "category": "lunch",
     "slot": "opener",
@@ -11954,7 +11954,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-turkish-kofte",
-    "title": "Charred Turkish Lamb K\u00f6fte with Sumac Onions & Labneh",
+    "title": "Charred Turkish Lamb Köfte with Sumac Onions & Labneh",
     "cuisine": "Turkish Classical",
     "category": "dinner",
     "slot": "mid",
@@ -12107,7 +12107,7 @@ window.MASTER_RECIPES = [
     "totalMins": 75,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Layers of paper-thin, crisp buttered phyllo pastry encasing a filling of saut\u00e9ed wild spinach, leeks, scallions, fresh dill, and barrel-aged feta.",
+    "summary": "Layers of paper-thin, crisp buttered phyllo pastry encasing a filling of sautéed wild spinach, leeks, scallions, fresh dill, and barrel-aged feta.",
     "dietary": [
       "nut-free"
     ],
@@ -12383,7 +12383,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-cilbir-turkish-eggs",
-    "title": "Turkish \u00c7\u0131lb\u0131r (Garlic Yogurt with Poached Eggs & Aleppo Butter)",
+    "title": "Turkish Çılbır (Garlic Yogurt with Poached Eggs & Aleppo Butter)",
     "cuisine": "Turkish Breakfast",
     "category": "breakfast",
     "slot": "opener",
@@ -12965,7 +12965,7 @@ window.MASTER_RECIPES = [
     "totalMins": 45,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Cavatappi pasta enrobed in a rich B\u00e9chamel sauce melted with sharp Cheddar, Gruy\u00e8re, and Fontina, perfumed with white truffle oil and brioche crumbs.",
+    "summary": "Cavatappi pasta enrobed in a rich Béchamel sauce melted with sharp Cheddar, Gruyère, and Fontina, perfumed with white truffle oil and brioche crumbs.",
     "dietary": [
       "nut-free"
     ],
@@ -13241,7 +13241,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-salmon-cornets",
-    "title": "Salmon Cornets with Sweet Red Onion Cr\u00e8me Fra\u00eeche",
+    "title": "Salmon Cornets with Sweet Red Onion Crème Fraîche",
     "cuisine": "Modern American Haute",
     "category": "appetizer",
     "slot": "opener",
@@ -13251,7 +13251,7 @@ window.MASTER_RECIPES = [
     "totalMins": 47,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Thomas Keller's French Laundry opener: savory tuile cones coated in black sesame, piped with red onion cr\u00e8me fra\u00eeche, and crowned with King salmon tartare.",
+    "summary": "Thomas Keller's French Laundry opener: savory tuile cones coated in black sesame, piped with red onion crème fraîche, and crowned with King salmon tartare.",
     "dietary": [
       "nut-free"
     ],
@@ -13670,7 +13670,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-sauce-bechamel",
-    "title": "Classical Sauce B\u00e9chamel with Fresh Nutmeg & White Roux",
+    "title": "Classical Sauce Béchamel with Fresh Nutmeg & White Roux",
     "cuisine": "French Classical",
     "category": "sauce_stock",
     "slot": "accompaniment",
@@ -13680,7 +13680,7 @@ window.MASTER_RECIPES = [
     "totalMins": 25,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Velvety white mother sauce of whole milk infused with onion piqu\u00e9, thickened with equal parts flour and butter roux, and seasoned with grated nutmeg.",
+    "summary": "Velvety white mother sauce of whole milk infused with onion piqué, thickened with equal parts flour and butter roux, and seasoned with grated nutmeg.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
     "ingredients": [
@@ -13811,7 +13811,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-sauce-veloute",
-    "title": "Classical Sauce Velout\u00e9 (Blonde Roux & White Veal Stock)",
+    "title": "Classical Sauce Velouté (Blonde Roux & White Veal Stock)",
     "cuisine": "French Classical",
     "category": "sauce_stock",
     "slot": "accompaniment",
@@ -13964,7 +13964,7 @@ window.MASTER_RECIPES = [
     "totalMins": 80,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The grand brown mother sauce: rich brown veal stock thickened with brown roux, roasted mirepoix, tomato pur\u00e9e, and simmered into a concentrated glaze.",
+    "summary": "The grand brown mother sauce: rich brown veal stock thickened with brown roux, roasted mirepoix, tomato purée, and simmered into a concentrated glaze.",
     "dietary": [
       "nut-free"
     ],
@@ -14107,7 +14107,7 @@ window.MASTER_RECIPES = [
     "totalMins": 75,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Auguste Escoffier's original tomato mother sauce: rendered salt pork saut\u00e9ed with onions and carrots, simmered with tomatoes, blonde roux, and ham bone.",
+    "summary": "Auguste Escoffier's original tomato mother sauce: rendered salt pork sautéed with onions and carrots, simmered with tomatoes, blonde roux, and ham bone.",
     "dietary": [
       "nut-free"
     ],
@@ -14393,7 +14393,7 @@ window.MASTER_RECIPES = [
     "totalMins": 20,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "The golden soul of Japanese cuisine: pristine filtered water steeped with giant ma-kombu kelp at 60\u00b0C, brought to a simmer, and steeped with bonito flakes.",
+    "summary": "The golden soul of Japanese cuisine: pristine filtered water steeped with giant ma-kombu kelp at 60°C, brought to a simmer, and steeped with bonito flakes.",
     "dietary": [
       "nut-free"
     ],
@@ -14669,7 +14669,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-paris-brest",
-    "title": "Classical Paris-Brest with Pralin\u00e9 Mousseline Cream",
+    "title": "Classical Paris-Brest with Praliné Mousseline Cream",
     "cuisine": "French Classical",
     "category": "dessert",
     "slot": "dessert",
@@ -14679,7 +14679,7 @@ window.MASTER_RECIPES = [
     "totalMins": 80,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Choux pastry ring baked crisp with sliced almonds, split horizontally, and filled with a piped ribbon of caramelized hazelnut pralin\u00e9 mousseline cream.",
+    "summary": "Choux pastry ring baked crisp with sliced almonds, split horizontally, and filled with a piped ribbon of caramelized hazelnut praliné mousseline cream.",
     "dietary": [],
     "sensoryRole": "Deeply balanced, aromatic culinary expression highlighting authentic techniques and regional seasoning.",
     "ingredients": [
@@ -14953,7 +14953,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-caneles-bordeaux",
-    "title": "Canel\u00e9s de Bordeaux with Rum & Crunchy Beeswax Crust",
+    "title": "Canelés de Bordeaux with Rum & Crunchy Beeswax Crust",
     "cuisine": "French Classical",
     "category": "dessert",
     "slot": "dessert",
@@ -15096,7 +15096,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-creme-brulee",
-    "title": "Cr\u00e8me Br\u00fbl\u00e9e with Madagascar Vanilla Bean & Glass Caramel",
+    "title": "Crème Brûlée with Madagascar Vanilla Bean & Glass Caramel",
     "cuisine": "French Classical",
     "category": "dessert",
     "slot": "dessert",
@@ -15382,7 +15382,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-steak-frites",
-    "title": "Entrec\u00f4te Steak Frites with Sauce B\u00e9arnaise",
+    "title": "Entrecôte Steak Frites with Sauce Béarnaise",
     "cuisine": "French Classical",
     "category": "dinner",
     "slot": "climax",
@@ -15392,7 +15392,7 @@ window.MASTER_RECIPES = [
     "totalMins": 30,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Prime ribeye steak seared medium-rare, accompanied by hand-cut double-fried Belgian frites and freshly whisked warm Sauce B\u00e9arnaise with fresh tarragon.",
+    "summary": "Prime ribeye steak seared medium-rare, accompanied by hand-cut double-fried Belgian frites and freshly whisked warm Sauce Béarnaise with fresh tarragon.",
     "dietary": [
       "nut-free"
     ],
@@ -15668,7 +15668,7 @@ window.MASTER_RECIPES = [
   },
   {
     "id": "rec-quiche-lorraine",
-    "title": "Traditional Quiche Lorraine with Lardons & Comt\u00e9",
+    "title": "Traditional Quiche Lorraine with Lardons & Comté",
     "cuisine": "French Classical",
     "category": "lunch",
     "slot": "opener",
@@ -15678,7 +15678,7 @@ window.MASTER_RECIPES = [
     "totalMins": 55,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Flaky butter shortcrust pastry filled with smoky slab bacon lardons, rich custard of heavy cream and farm eggs, and cave-aged Swiss Comt\u00e9 cheese.",
+    "summary": "Flaky butter shortcrust pastry filled with smoky slab bacon lardons, rich custard of heavy cream and farm eggs, and cave-aged Swiss Comté cheese.",
     "dietary": [
       "nut-free"
     ],
@@ -15964,7 +15964,7 @@ window.MASTER_RECIPES = [
     "totalMins": 45,
     "yieldServings": 4,
     "heroImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80",
-    "summary": "Handcrafted thin egg pasta pillows stuffed with drained whole-milk ricotta and saut\u00e9ed spinach, bathed in foaming golden sage brown butter.",
+    "summary": "Handcrafted thin egg pasta pillows stuffed with drained whole-milk ricotta and sautéed spinach, bathed in foaming golden sage brown butter.",
     "dietary": [
       "nut-free"
     ],
@@ -17524,6 +17524,417 @@ window.MASTER_RECIPES = [
       "lesson-heat-control",
       "lesson-seasoning-osmosis"
     ]
+  },
+  {
+    "id": "rec-lomo-saltado",
+    "title": "Lomo Saltado Criollo (Chifa Beef Tenderloin Stir-Fry)",
+    "cuisine": "Peruvian / Chifa",
+    "category": "dinner",
+    "slot": "climax",
+    "difficulty": "Intermediate",
+    "prepMins": 25,
+    "cookMins": 10,
+    "totalMins": 35,
+    "yieldServings": 4,
+    "heroImage": "assets/lomo-saltado.jpg",
+    "summary": "The premier Chifa dish of Peru: Prime beef tenderloin flash-seared in a screaming-hot wok with red onions, aji amarillo chilies, and ripe tomatoes, deglazed with pisco, soy sauce, and red wine vinegar, served over hand-cut twice-cooked fries and steamed rice.",
+    "dietary": [
+      "Dairy-Free"
+    ],
+    "sensoryRole": "Wok-hei smoky char, sharp vinegar punch, savory umami glaze, succulent tenderloin, and crisp potato contrast.",
+    "ingredients": [
+      {
+        "name": "Prime Beef Tenderloin (Filet Mignon), cut into 2.5cm strips",
+        "qty": 600,
+        "unit": "g",
+        "prep": "sliced thick against grain",
+        "dept": "meat"
+      },
+      {
+        "name": "Red Onion, cut into 1cm wedges",
+        "qty": 2,
+        "unit": "large",
+        "prep": "cut into thick petals",
+        "dept": "produce"
+      },
+      {
+        "name": "Roma Tomatoes, seeded and cut into thick wedges",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "wedged",
+        "dept": "produce"
+      },
+      {
+        "name": "Fresh Ají Amarillo Chili, seeded and julienned",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "julienned",
+        "dept": "produce"
+      },
+      {
+        "name": "Garlic Cloves",
+        "qty": 4,
+        "unit": "cloves",
+        "prep": "finely grated",
+        "dept": "produce"
+      },
+      {
+        "name": "Fresh Ginger Root",
+        "qty": 15,
+        "unit": "g",
+        "prep": "microplaned",
+        "dept": "produce"
+      },
+      {
+        "name": "Koikuchi Soy Sauce",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "measured",
+        "dept": "pantry"
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "qty": 30,
+        "unit": "ml",
+        "prep": "measured",
+        "dept": "pantry"
+      },
+      {
+        "name": "Peruvian Pisco (Quebranta)",
+        "qty": 30,
+        "unit": "ml",
+        "prep": "measured",
+        "dept": "pantry"
+      },
+      {
+        "name": "High-Smoke-Point Neutral Oil",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "measured",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fresh Cilantro Leaves",
+        "qty": 20,
+        "unit": "g",
+        "prep": "coarsely torn",
+        "dept": "produce"
+      },
+      {
+        "name": "Yukon Gold Potatoes, cut into batons for fries",
+        "qty": 500,
+        "unit": "g",
+        "prep": "par-boiled and fried crisp",
+        "dept": "produce"
+      },
+      {
+        "name": "Steamed Jasmine Rice",
+        "qty": 400,
+        "unit": "g",
+        "prep": "warm for serving",
+        "dept": "pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Carbon Steel Wok or 32cm Heavy Cast Iron Skillet",
+        "type": "essential"
+      },
+      {
+        "name": "Deep-Fryer or Heavy Dutch Oven for Fries",
+        "type": "essential"
+      },
+      {
+        "name": "High-BTU Burner",
+        "type": "recommended"
+      }
+    ],
+    "miseEnPlace": [
+      "Cut beef tenderloin into uniform thick fingers and season with salt and freshly cracked black pepper 15 minutes before cooking.",
+      "Cut red onions into thick petals that will maintain crunch in high heat.",
+      "Mix soy sauce, red wine vinegar, and pisco in a small bowl ready for instantaneous pan deglazing.",
+      "Fry potato batons at 180°C until exterior is shatteringly crisp and drain on paper towels."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Set a carbon steel wok over maximum flame until wisps of grey smoke billow continuously. Swirl in 2 tablespoons of oil.",
+        "sensoryCue": "Wok smoking intensely, oil shimmering instantly.",
+        "scienceNote": "High heat (above 250°C) is required for Leidenfrost effect and pyrolysis that generates wok hei (breath of the wok).",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 2,
+        "text": "Add beef tenderloin strips in a single sparse layer. Sear undisturbed for 60 seconds until a deep charred crust forms, toss vigorously, and sear for another 45 seconds. Meat should be medium-rare. Transfer to a warm plate immediately.",
+        "sensoryCue": "Violent crackling hiss and dark mahogany charred edges.",
+        "scienceNote": "Crowding the wok would lower temperature below 100°C, causing tenderloin to steam grey in its juices rather than searing.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 3,
+        "text": "Add remaining tablespoon of oil to scorching wok. Drop in red onion petals and ají amarillo strips. Stir-fry aggressively for 45 seconds so edges char while centers remain crunchy.",
+        "sensoryCue": "Blistered onion edges with vibrant purple translucency.",
+        "scienceNote": "Brief cooking softens onion alliin while preserving cellular pectin rigidity.",
+        "timerMins": 1
+      },
+      {
+        "stepNum": 4,
+        "text": "Add grated garlic, ginger, and tomato wedges. Toss for 30 seconds. Return seared beef and all resting juices to the wok.",
+        "sensoryCue": "Intense fragrant ginger-garlic aroma blooming.",
+        "scienceNote": "Tomatoes must only warm through to prevent releasing water that would turn the stir-fry into stew.",
+        "timerMins": 1
+      },
+      {
+        "stepNum": 5,
+        "text": "Pour the pisco, soy sauce, and red wine vinegar around the glowing perimeter walls of the wok. Flambé if safe, toss vigorously for 30 seconds as the glaze reduces and coats the meat. Kill heat, fold in crispy fries and cilantro.",
+        "sensoryCue": "Volatile vinegar flash, glossy savory dark sauce clinging to meat and crisp fries.",
+        "scienceNote": "Vaporizing vinegar against screaming wok steel strips harsh acetic acid sharpness, leaving concentrated fruitiness and savory umami.",
+        "timerMins": 1
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Charred beef, roasted chili, pisco aromatics, and tangy vinegar glaze.",
+      "texture": "Tender succulent beef, crunchy blistered onions, and crisp fried potato batons."
+    },
+    "scienceNotes": [
+      "High-heat wok searing creates volatile pyrazines while pisco alcohol extracts fat-soluble chili terpenes.",
+      "Soy sauce amino acids react instantly with meat surface glucose for Maillard glaze."
+    ],
+    "troubleshooting": [
+      {
+        "issue": "Beef is chewy and grey",
+        "solution": "Wok was overcrowded or not hot enough; sear beef in two separate rapid batches."
+      }
+    ],
+    "substitutions": "Can use Prime sirloin cap (Picanha) or ribeye in place of tenderloin.",
+    "flavorPairings": {
+      "wine": "Peruvian Malbec or Chilean Carménère",
+      "zeroProof": "Chicha Morada (spiced purple corn drink with lime)"
+    },
+    "advancedTechnique": "Flambéing the pisco creates caramelization of grape sugars against the wok rim.",
+    "storageAndReheating": "Best enjoyed immediately; fries lose crispness upon reheating.",
+    "nutritionEstimates": {
+      "calories": 680,
+      "protein": 44,
+      "carbs": 58,
+      "fat": 28
+    },
+    "relatedRecipes": [
+      "rec-boeuf-bourguignon",
+      "rec-tonkotsu-ramen"
+    ],
+    "relatedTechniques": [
+      "High-Heat Wok Searing",
+      "Acid Deglazing"
+    ],
+    "reviewStatus": "Draft: source verification required",
+    "provenance": "user_created"
+  },
+  {
+    "id": "rec-paella-valenciana",
+    "title": "Authentic Paella Valenciana with Rabbit, Chicken & Socarrat",
+    "cuisine": "Spanish Classical",
+    "category": "dinner",
+    "slot": "climax",
+    "difficulty": "Advanced",
+    "prepMins": 30,
+    "cookMins": 45,
+    "totalMins": 75,
+    "yieldServings": 6,
+    "heroImage": "assets/paella.jpg",
+    "summary": "The true UNESCO-recognized Paella of the Valencian huerta: Bone-in chicken and rabbit browned in virgin olive oil with garrofó butter beans, flat green beans (ferraura), grated San Marzano tomatoes, rosemary, sweet pimentón, and saffron-infused Bomba rice cooked undisturbed until a crispy caramelized crust (socarrat) crackles along the wide steel pan.",
+    "dietary": [
+      "Gluten-Free",
+      "Dairy-Free"
+    ],
+    "sensoryRole": "Smoky wood fire aroma, saffron honey notes, tender browned poultry, and crackling crunchy socarrat rice bottom.",
+    "ingredients": [
+      {
+        "name": "Free-Range Chicken, cut into small bone-in pieces",
+        "qty": 500,
+        "unit": "g",
+        "prep": "bone-in, skin-on",
+        "dept": "meat"
+      },
+      {
+        "name": "Farm Rabbit, cut into small pieces",
+        "qty": 400,
+        "unit": "g",
+        "prep": "bone-in",
+        "dept": "meat"
+      },
+      {
+        "name": "Spanish Bomba Rice (Arroz Bomba DOP)",
+        "qty": 400,
+        "unit": "g",
+        "prep": "measured, unrinsed",
+        "dept": "pantry"
+      },
+      {
+        "name": "Garrofó Beans (or large butter lima beans)",
+        "qty": 120,
+        "unit": "g",
+        "prep": "cooked tender",
+        "dept": "pantry"
+      },
+      {
+        "name": "Flat Green Beans (Ferraura or Romano beans), snapped",
+        "qty": 180,
+        "unit": "g",
+        "prep": "in 5cm pieces",
+        "dept": "produce"
+      },
+      {
+        "name": "Ripe Tomatoes, grated without skin",
+        "qty": 2,
+        "unit": "large",
+        "prep": "grated to pulp",
+        "dept": "produce"
+      },
+      {
+        "name": "Smoked Spanish Pimentón Dulce DOP",
+        "qty": 8,
+        "unit": "g",
+        "prep": "measured",
+        "dept": "spices"
+      },
+      {
+        "name": "Spanish Saffron Stigmas (Hebras de Azafrán)",
+        "qty": 0.5,
+        "unit": "g",
+        "prep": "toasted and bloomed",
+        "dept": "spices"
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "qty": 80,
+        "unit": "ml",
+        "prep": "measured",
+        "dept": "pantry"
+      },
+      {
+        "name": "Fresh Rosemary Sprig",
+        "qty": 1,
+        "unit": "sprig",
+        "prep": "fresh",
+        "dept": "produce"
+      },
+      {
+        "name": "Rich Poultry Broth or Hot Spring Water",
+        "qty": 1200,
+        "unit": "ml",
+        "prep": "steaming hot",
+        "dept": "pantry"
+      },
+      {
+        "name": "Maldon Sea Salt",
+        "qty": 12,
+        "unit": "g",
+        "prep": "to taste",
+        "dept": "spices"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Authentic 40cm Polished Carbon Steel Paella Pan (Paellera)",
+        "type": "essential"
+      },
+      {
+        "name": "Wide Gas Paella Burner or Wood Fire Grill",
+        "type": "essential"
+      },
+      {
+        "name": "Flat Wooden Spatula",
+        "type": "essential"
+      }
+    ],
+    "miseEnPlace": [
+      "Rub chicken and rabbit with salt 30 minutes before cooking.",
+      "Grate tomatoes on box grater, discarding tough skins.",
+      "Toast saffron threads gently on a piece of foil, crush in mortar, and steep in 100ml warm broth.",
+      "Set paellera perfectly level so liquid depth is identical across entire surface."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Heat olive oil in the center of the paella pan over medium-high flame with a circle of coarse salt around rim. Add chicken and rabbit pieces. Fry slowly for 15-18 minutes until thoroughly bronzed, deep golden, and crispy on all sides.",
+        "sensoryCue": "Aggressive sizzle and intense roasted poultry Maillard perfume.",
+        "scienceNote": "Prolonged slow browning builds the foundational fond in the pan that colors and flavors the rice.",
+        "timerMins": 18
+      },
+      {
+        "stepNum": 2,
+        "text": "Push browned meat to the perimeter edges of the pan. In the center oil, add the green beans and garrofó beans. Sauté for 4-5 minutes until blistered.",
+        "sensoryCue": "Vegetables blister and take on golden meat oil.",
+        "scienceNote": "High oil temperature in the center extracts lipophilic carotenoids from vegetables.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Create an empty circle in the center. Add grated tomato pulp and fry until water evaporates into a thick jam. Add smoked pimentón and stir for 20 seconds, immediately incorporating with tomato to avoid burning the paprika.",
+        "sensoryCue": "Tomato darkens to mahogany paste, sweet smoky paprika blooms.",
+        "scienceNote": "Sugars in tomato paste buffer pimentón against scorching above 130°C.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 4,
+        "text": "Pour in 1200ml boiling broth and bloomed saffron. Stir all meat and vegetables together across the pan. Bring to roaring boil and cook for 10 minutes to extract meat flavor into broth (caldo). Taste broth: it should taste slightly saltier than pleasant, as rice will absorb it.",
+        "sensoryCue": "Roaring golden-red liquid bubbling furiously across wide steel pan.",
+        "scienceNote": "Rapid boiling dissolves fond and creates uniform golden emulsion.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 5,
+        "text": "Distribute Bomba rice evenly across pan in a cross pattern, then smooth with spatula so rice is submerged. Lay rosemary sprig on top. DO NOT STIR AGAIN. Boil violently for 8 minutes on high, then drop heat to low and simmer for 10 minutes.",
+        "sensoryCue": "Rice absorbs broth, starch swell visible, lazy bubbles popping.",
+        "scienceNote": "Stirring releases amylose into the liquid, turning paella into sticky risotto; paella requires distinct, un-ruptured al dente grains.",
+        "timerMins": 18
+      },
+      {
+        "stepNum": 6,
+        "text": "To create the socarrat (the golden crust): When liquid is fully absorbed, turn heat to medium-high for 2-3 minutes. Listen closely for a distinct crackling, popping sound and the smell of toasted (not burnt) caramelizing rice. Remove from flame, cover with clean kitchen towel, and rest 5 minutes.",
+        "sensoryCue": "Sharp rhythmic crackle like frying bacon; toasted hazelnut perfume.",
+        "scienceNote": "Residual rendered olive oil fries the bottom layer of starch against 160°C steel, undergoing pyrolytic dextrinization into crunchy socarrat.",
+        "timerMins": 3
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Saffron, rosemary wood smoke, toasted chicken crackling, and sweet pimentón.",
+      "texture": "Firm, plump individual rice grains and shatteringly crisp bottom socarrat crust."
+    },
+    "scienceNotes": [
+      "Bomba rice expands 3x in volume by length rather than width, absorbing double the broth of standard long-grain rice.",
+      "Socarrat forms only when free water evaporates completely, allowing fat temperature to rise above 140°C."
+    ],
+    "troubleshooting": [
+      {
+        "issue": "Socarrat is charred black instead of golden crisp",
+        "solution": "High heat was held too long; kill heat the instant the crackling rhythm intensifies."
+      }
+    ],
+    "substitutions": "Can use duck or pork ribs if rabbit is unavailable.",
+    "flavorPairings": {
+      "wine": "Spanish Rioja Crianza or Garnacha from Priorat",
+      "zeroProof": "Chilled sparkling water with blood orange and rosemary"
+    },
+    "advancedTechnique": "Tapping the bottom of the pan with a metal spoon: a hollow dull sound indicates socarrat has detached cleanly.",
+    "storageAndReheating": "Reheat in dry cast-iron skillet over medium heat to recrisp socarrat.",
+    "nutritionEstimates": {
+      "calories": 640,
+      "protein": 38,
+      "carbs": 62,
+      "fat": 24
+    },
+    "relatedRecipes": [
+      "rec-sole-meuniere",
+      "rec-boeuf-bourguignon"
+    ],
+    "relatedTechniques": [
+      "Socarrat Development",
+      "Starch Absorption Control"
+    ],
+    "reviewStatus": "Draft: source verification required",
+    "provenance": "user_created"
   }
 ];
 
