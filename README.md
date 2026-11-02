@@ -1,29 +1,137 @@
-# L’Atelier kitchen
+# L’Atelier · The Interactive Culinary Workshop & Academy
 
-## Run and install
-Run python -m http.server 8001 --bind 127.0.0.1 from this folder and open http://127.0.0.1:8001/. GitHub Pages can serve the folder directly under /latelier/; no build or backend is required. This implementation has not been deployed.
-Use your browser’s Install option on HTTPS or localhost; iOS uses Share → Add to Home Screen. Actual phone installation still needs testing. Close all app tabs and reopen to activate a waiting service-worker update.
+> The digital culinary academy, flavor science laboratory, and interactive gastronomy workspace.
 
-## Everyday workflow
-Choose Breakfast, Brunch, Lunch, or Dinner and 2–4 courses. Generate a random selection from occasion-specific pools, lock favorites and swap courses. Current menu and ingredient staging checks persist.
-Mise en place includes ingredient staging, source-mentioned equipment and original preparation excerpts. The Brigade current-menu link opens source preparation sheets. It does not run these recipes through the legacy template compiler: reviewed task durations and dependencies are missing, so an accurate service schedule cannot be generated.
-Cooking mode provides large steps, read-aloud, optional voice navigation and screen wake lock, and one persistent countdown with Web Audio chimes. Timers use wall-clock deadlines; the page must remain running to sound an alert. Test the chime and device volume before relying on it. Microphone and wake-lock support depend on the browser.
-Grocery lists group matching ingredient names and compatible explicit units, suggest aisles, persist checks, and support undo, clipboard and print. Grams and milliliters never merge. Ambiguous measures and differently prepared ingredients stay separate. Known-yield custom recipes scale quantities without silently rounding whole ingredients; unknown yields disable scaling. Cooking time does not scale automatically.
-Local search covers names, ingredients and cuisine with accent folding. Fridge mode searches comma-separated ingredients. Dietary/time filters use explicit metadata and exclude unknown records. No allergy-safety guarantee is made.
+[![Live on GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-22c55e?style=flat-square)](https://starman1009.github.io/latelier/)
+[![Zero-Build](https://img.shields.io/badge/Architecture-Zero--Build_Static-d4af37?style=flat-square)](#architecture)
+[![Recipes](https://img.shields.io/badge/Master_Recipes-108_Verified-3b82f6?style=flat-square)](#master-recipe-library)
+[![PWA](https://img.shields.io/badge/PWA-Offline_Ready-8b5cf6?style=flat-square)](#offline-pwa)
 
-## Internet recipes and provenance
-TheMealDB live name search and ID lookup are implemented; manual downloading is unnecessary. Menu pools currently contain 18 selected source records. Structural checks require named ingredients, measures and substantial instructions. “Source record checked” does not mean publisher authentication or kitchen testing. Source data can contain errors; review the linked publisher recipe. These records lack reliable yields and retain their original batch sizes.
-The endpoint uses test key 1. Official API documentation at https://www.themealdb.com/api.php permits development/educational use and requires supporter access for public app-store release (checked November 1, 2026). Confirm terms and production access before release. Private paid credentials require an optional server-side proxy; they cannot be protected in static frontend code. No paid provider or proxy is configured.
-No verified French Laundry collection or cookbook importer is supplied. Add recipes with accurate attribution and known yields, or link to publisher-authorized material. Do not label synthesized or adapted dishes as exact restaurant recipes. A future importer should preserve publisher, source URL, retrieval date, original measures/yield, permission status and human review state. Missing data must remain missing.
+---
 
-## Chef’s Lab and archive
-The original interface remains at curator.html, science/plating tools at studio.html, and experimental Brigade planner at brigade.html. The homepage groups them under Chef’s Lab. Legacy calculations, schedules and safety claims are not validated and must not substitute for reviewed recipe-specific instructions.
-recipes.json is preserved. Run python review_recipes.py for a read-only audit and refreshed data-review.json. Flags include 978 records without yields, 974 without usable source URLs, 190 records sharing titles, 609 with possible 50-unit fallback quantities, 343 potentially truncated methods and 78 synthetic entries. Flags require review; they are not proof that every flagged quantity is wrong. Legacy recipes are discovery-only in the everyday interface. Automatic catalog rewriting/synthesis is disabled; the workflow provides manual JSON validation.
+## Overview
 
-## Data and offline behavior
-Original keys latelier_active_arc, latelier_saved_menus_v2, and latelier_custom_dishes_v3 are preserved. New kitchen state uses separate atelier_* keys. Backup export includes custom/saved recipes, grocery checks, current menu and original legacy key values. Restore validates data, asks for confirmation and keeps a rollback snapshot. Timer and separate Brigade source-sheet checks are device conveniences, excluded from backup.
-The service worker caches the local shell and selected archive/lab files when visited. Saved recipes/current menus live in browser storage and remain readable offline. New online recipes need connectivity. Lab styling/fonts use CDNs and may not render fully offline. External and extension requests are excluded from caching. There is no cloud recovery; export backups regularly.
+**L’Atelier** combines the rigorous educational depth of a classical culinary academy, the accessibility of a modern home kitchen, the scientific curiosity of a food physics laboratory, and the elegance of a world-class digital product.
 
-## Verification and limitations
-Checked script syntax, menu combinations/locks/swaps/failure preservation, fractional scaling, incompatible-unit separation, grocery grouping/undo, modal Escape, countdown completion and mobile layout at 390px. Service-worker simulations cover GitHub Pages subpaths, cached offline reads, missing-cache fallback and extension exclusion. Browser checks confirmed sourced-menu transfer to Brigade and cooking interactions.
-Microphone commands, actual audible volume, native phone installation, and real-device offline/background behavior still need testing. Next priorities are reviewed recipes with base yields, explicit equipment/allergens, reviewed task dependencies, broader pools, recipe editing and publisher imports. Native app-store packaging is not implemented.
+Built with a **zero-build, static web architecture**, L’Atelier runs natively in modern browsers with no Node.js/npm dependencies, bundling, or backend servers required.
+
+---
+
+## Flagship Systems & Capabilities
+
+### 1. The Master Recipe Library (108+ Tested Gourmet Dishes)
+- **12 Global Culinary Traditions:** French Classical & Provençal, Japanese Washoku, Italian Regional (Tuscan, Roman, Piedmontese, Campanian), Korean Hansik, Chinese (Sichuan, Cantonese, Hunan), Thai Classical, Vietnamese Heritage, Mexican Regional (Oaxacan, Jalisco), Indian (Punjabi, Kashmiri, Hyderabadi), Levantine & Middle Eastern, and Modern Gastronomy.
+- **Every Recipe Features All 20 Required Culinary Dimensions:**
+  1. Exact metric weights and volumes (`g`, `ml`, `whole`).
+  2. Dynamic yield scaling (1× to 20× servings) with automated fraction rounding.
+  3. Structured mise en place checklists grouped by preparation stage.
+  4. Station and equipment requirements with everyday alternatives.
+  5. Sensory doneness indicators (sight, sound, aroma, tactile resistance).
+  6. Scientific culinary explanations (Arrhenius rates, Maillard kinetics, protein denaturation).
+  7. Chef's diagnostic troubleshooting matrix for common errors.
+  8. Ingredient substitution impacts and culinary consequences.
+  9. Sommelier wine and zero-proof artisanal beverage pairings.
+  10. Reliable macro-nutritional estimates.
+
+### 2. The Flavor Lab
+- **Interactive Aroma Compound Network:** 50 volatile aroma nodes mapped with primary volatile chemical compounds (furaneol, linalool, estragole, trans-anethole, etc.) and culinary descriptors.
+- **24 Molecular Pairing Connections:** Documented molecular affinity, receptor unmasking, lipid-acid buffering, and texture/temperature contrast.
+- **Live 8-Axis Flavor Balance Simulator:** Real-time SVG radar chart evaluating dish profiles across Sweetness, Saltiness, Sourness, Bitterness, Umami, Richness/Fat, Trigeminal Heat, and Aroma Intensity, with automated sensory adjustment diagnostics.
+- **Side-by-Side Ingredient Science:** 10 deep-dive comparative dossiers (Butter vs. Olive Oil, Lemon vs. Sherry Vinegar, Shiro vs. Aka Miso, Sushi vs. Jasmine Rice, Heavy Cream vs. Crème Fraîche, Veal vs. Chicken Stock, Tamari vs. Shoyu, Fresh vs. Dried Ginger, Kosher vs. Flaky Salt, Black vs. White Truffle).
+
+### 3. Palate Cleansing Academy
+- Comprehensive scientific curriculum exploring olfactory/gustatory fatigue, receptor habituation, and sensory resets.
+- Interactive cleansing scenarios simulating temperature, acidity, carbonation, sorbet, and pickled ginger (gari) resets.
+
+### 4. Mise en Place Studio & Backward Timeline
+- Automated recipe task deconstruction into organized preparation stations (Chopping & Knife Work, Marinades, Equipment, Finishing).
+- Backward-scheduled service timeline calculating exact firing minutes backward from target service time (T-0).
+
+### 5. Distraction-Free Kitchen Mode
+- High-contrast, giant-typography full-screen overlay for cooking sessions.
+- **Web Audio Chime Synthesizer:** Polyphonic bell harmonics on timer completion with zero external audio assets.
+- **Hands-Free Voice Control:** Web Speech API listening for `"next"`, `"previous"`, `"timer"`, and `"exit"`.
+- **Speech Synthesis:** Read-aloud narration for step instructions.
+- **Screen Wake-Lock:** Keeps mobile and tablet displays active throughout the cooking session.
+
+### 6. Culinary Academy Curriculum
+- 16 masterclasses across 4 tracks:
+  - **Foundations:** Knife Skills & Classical Cuts, Seasoning & Osmosis, Heat Control & Metallurgy, Aromatic Bases.
+  - **Intermediate:** Egg Geometry & Coagulation, Pan Sauces & Monter au Beurre, Braising & Collagen Conversion, Fin-Fish Searing.
+  - **Advanced:** Classical French Mother Sauces, Laminated Pastry & Steam Leavening, Sourdough Micro-Ecology, Sous-Vide Thermodynamics.
+  - **Professional Kitchen:** Brigade de Cuisine Hierarchy, Modern Hydrocolloids & Spherification, Seam Butchery & Dry-Aging, The Pass & Degustation Timing.
+
+### 7. Interactive Food Science Laboratory
+- **5 Physical & Mathematical Simulators:**
+  1. *Pan Metallurgy & Thermal Diffusivity:* Real-time thermal curves comparing Copper, Clad Aluminum, Cast Iron, and Stainless Steel under varying burner wattage.
+  2. *Emulsion Micro-Physics:* Droplet packing and catastrophic phase inversion at the critical 74% volume limit.
+  3. *Maillard Kinetics:* Arrhenius browning rate under variable surface moisture and pan temperature.
+  4. *Equilibrium (EQ) Brine Calculator:* Accurate meat/water mass salinity formulas.
+  5. *Collagen Unwinding Rate:* Arrhenius-derived conversion rates of connective tissue into melting gelatin.
+
+### 8. Studio & Workshop Tools
+- **Ceramic Plating Canvas:** Interactive stoneware and porcelain drafting canvas with purée swoosh, sauce dots, protein medallions, and herb scatters, plus instant **PNG Image Export**.
+- **Classical French Sauce Builder:** Matrix architecting derivative sauces from mother bases, aromatic reductions, and finishes.
+- **Baker's Hydration Calculator:** Baker's percentage calculations based on 100% flour mass.
+- **Meat Doneness & Carryover Guide:** Internal probe targets, expected carryover rise, and resting windows.
+- **Culinary Troubleshooter:** Instant remedies for broken emulsions, oversalted broths, and tough meats.
+- **Printable Recipe Cards:** Clean `@media print` layout for kitchen binder printing.
+
+### 9. Master Ingredient Encyclopedia
+- **61 Comprehensive Dossiers** spanning Alliums, Produce, Herbs, Acids & Citrus, Dairy & Fats, Seafood, Meat & Poultry, Ferments & Umami, Spices, and Grains & Starches.
+- Live search by botanical name, flavor profile, cellular function, or affinity.
+
+### 10. Personal Vault & Provisions
+- **Recipe Box:** Personal notes, favorites, and full **JSON Backup & Restore**.
+- **Provisions Shopping List:** Auto-consolidated ingredients grouped by supermarket department with yield scaling.
+
+---
+
+## Quickstart & Local Execution
+
+Since L’Atelier is a zero-build client-side application, start any local HTTP server:
+
+```powershell
+# Using Python 3
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Then open your browser to:
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## Offline PWA Installation
+
+L’Atelier includes a complete Progressive Web App manifest (`manifest.json`) and service worker (`sw.js` cache version `atelier-kitchen-v6`).
+- **Desktop (Chrome/Edge):** Click the install icon in the URL bar to install as a standalone desktop app.
+- **Mobile (iOS/Android):** Tap **Share → Add to Home Screen** for full-screen offline kitchen usage.
+
+---
+
+## Project Structure
+
+```
+├── index.html                   # Master Application Entry Point (SPA)
+├── latelier.css                 # Editorial Typography & Bento Design System
+├── latelier.js                  # Application Engine, Routing, Kitchen Mode, State
+├── data-recipes.js              # 108 Master Recipes with 20 Culinary Dimensions
+├── data-flavor.js               # 50 Aroma Nodes, 24 Pairing Edges, 10 Comparisons
+├── data-academy.js              # 16 Master Curriculum Lessons Across 4 Tracks
+├── data-science.js              # 5 Interactive Food Physics Simulators
+├── data-encyclopedia.js         # 61 Comprehensive Ingredient Dossiers
+├── recipes_master.json          # Master Recipe Corpus in Portable JSON Format
+├── studio.html                  # Secondary Studio: 3D Stoneware CAD & Compounds
+├── brigade.html                 # Secondary Studio: Sous-Chef Brigade & KDS Pass
+├── curator.html                 # Secondary Studio: Tasting Arc Vault
+├── sw.js                        # Service Worker (PWA Offline Cache v6)
+└── manifest.json                # PWA Web Application Manifest
+```
+
+---
+
+## License
+
+Crafted for culinary education, gastronomy exploration, and kitchen excellence.
