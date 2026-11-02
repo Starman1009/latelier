@@ -1075,7 +1075,10 @@
             <span class="card-badge">STATION CHECKLIST</span>
             <span id="mise-progress-label" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--gold-primary);">0 / ${allPrepTasks.length} Ready</span>
           </div>
-          <h2 style="font-size:1.6rem; font-family:var(--font-serif); margin:0.25rem 0 1rem 0;">Pre-Service Preparation</h2>
+          <h2 style="font-size:1.6rem; font-family:var(--font-serif); margin:0.25rem 0 0.5rem 0;">Pre-Service Preparation</h2>
+          <div class="mise-progress-track" role="progressbar" aria-label="Prep completion progress">
+            <div id="mise-progress-bar" class="mise-progress-fill"></div>
+          </div>
 
           ${menu.map((c, i) => `
             <div style="margin-bottom:1.5rem; background:var(--bg-elevated); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1rem;">
@@ -1136,11 +1139,22 @@
         const checkedCount = $$(".mise-check:checked", container).length;
         const total = checkBoxes.length;
         const label = $("#mise-progress-label", container);
+        const bar = $("#mise-progress-bar", container);
+        const parentLabel = cb.closest("label");
+        if (parentLabel) {
+          parentLabel.classList.toggle("task-completed", cb.checked);
+        }
+        const pct = total > 0 ? (checkedCount / total) * 100 : 0;
+        if (bar) {
+          bar.style.width = `${pct}%`;
+        }
         if (label) {
-          label.textContent = `${checkedCount} / ${total} Ready`;
+          label.textContent = `${checkedCount} / ${total} Ready (${Math.round(pct)}%)`;
           if (checkedCount === total) {
             label.textContent = `★ ALL ${total} TASKS READY!`;
             label.style.color = "var(--emerald)";
+          } else {
+            label.style.color = "var(--gold-primary)";
           }
         }
       };

@@ -1,1 +1,109 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>L’Atelier · Private workspace</title><link rel="stylesheet" href="latelier.css?v=12"><link rel="stylesheet" href="vault.css?v=12"></head><body><main class="vault-shell"><header><a href="index.html">L’Atelier</a><button id="lock" hidden>Lock workspace</button></header><section id="login"><p class="vault-kicker">PRIVATE COLLECTION</p><h1>Your kitchen. Your manuals.</h1><p>Unlock the encrypted manual collection on this device.</p><form id="unlock"><label>Password<input id="password" type="password" autocomplete="current-password" required></label><button>Unlock collection</button><p id="message" role="status"></p></form></section><section id="workspace" hidden></section></main><script src="vault.js?v=12"></script></body></html>
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#060609">
+  <title>L’Atelier · Salon Privé & Confidential Archives</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="latelier.css?v=13">
+  <link rel="stylesheet" href="vault.css?v=13">
+</head>
+<body class="vault-body-root">
+  <main class="vault-shell">
+    <!-- Top Executive Header -->
+    <header class="vault-app-header">
+      <a href="index.html" class="vault-brand" aria-label="Return to Public L'Atelier">
+        <div class="vault-monogram">L</div>
+        <div class="vault-brand-meta">
+          <span class="vault-brand-name">L’Atelier</span>
+          <span class="vault-brand-sub">Salon Privé · Confidential Archives</span>
+        </div>
+      </a>
+
+      <div class="vault-header-actions">
+        <div class="vault-security-pill" id="vault-security-indicator">
+          <span class="vault-pulse-dot"></span>
+          <span>AES-256-GCM Hardware Encrypted</span>
+        </div>
+        <a href="index.html" class="vault-nav-back">
+          <span>←</span> Public Atelier
+        </a>
+        <button id="lock" class="btn-lock-vault" hidden title="Wipe session memory and lock vault">
+          <span>🔒</span> Lock &amp; Wipe Session
+        </button>
+      </div>
+    </header>
+
+    <!-- Gatekeeper Authentication Portal -->
+    <section id="login" class="vault-gatekeeper">
+      <div class="vault-gate-card">
+        <div class="vault-gate-emblem">
+          <div class="vault-emblem-inner">L</div>
+        </div>
+        
+        <span class="vault-kicker">CONFIDENTIAL BRIGADE ARCHIVES</span>
+        <h1 class="vault-gate-title">The Executive Culinary Vault</h1>
+        <p class="vault-gate-desc">
+          Client-side in-memory decryption. Access all 12 authentic restaurant kitchen manuals, 750 high-resolution page scans, operational lineset specs, and master batch recipes.
+        </p>
+
+        <form id="unlock" class="vault-gate-form">
+          <div class="vault-input-group">
+            <label for="password" class="vault-input-label">Master Passphrase</label>
+            <div class="vault-input-wrapper">
+              <span class="vault-input-icon">🔑</span>
+              <input id="password" type="password" autocomplete="current-password" placeholder="Enter master passphrase..." required autofocus>
+              <button type="button" id="toggle-pwd-visibility" class="btn-toggle-eye" aria-label="Toggle password visibility">👁</button>
+            </div>
+          </div>
+          
+          <button type="submit" class="vault-submit-btn">
+            <span>Unlock Private Archives</span>
+            <span class="vault-arrow">✦</span>
+          </button>
+          
+          <div id="message" class="vault-status-message" role="status"></div>
+        </form>
+
+        <div class="vault-trust-strip">
+          <div class="vault-trust-item">
+            <span class="vault-trust-icon">🛡️</span>
+            <span>Zero-Knowledge Decryption</span>
+          </div>
+          <div class="vault-trust-item">
+            <span class="vault-trust-icon">⚡</span>
+            <span>RAM-Only Ephemeral Cache</span>
+          </div>
+          <div class="vault-trust-item">
+            <span class="vault-trust-icon">🚫</span>
+            <span>Zero Plaintext Transmission</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Private Workspace Canvas -->
+    <section id="workspace" class="vault-workspace" hidden></section>
+  </main>
+
+  <script src="vault.js?v=13"></script>
+  <script>
+    // Eye toggle for password visibility
+    const pwdInput = document.getElementById('password');
+    const eyeBtn = document.getElementById('toggle-pwd-visibility');
+    if (eyeBtn && pwdInput) {
+      eyeBtn.onclick = () => {
+        const isPassword = pwdInput.type === 'password';
+        pwdInput.type = isPassword ? 'text' : 'password';
+        eyeBtn.textContent = isPassword ? '🙈' : '👁';
+      };
+    }
+  </script>
+</body>
+</html>
