@@ -1237,7 +1237,7 @@
         ${true ? `
           <div style="display:flex; align-items:center; gap:2rem; background:var(--bg-card); padding:1.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-active); margin-bottom:2rem; width:fit-content;">
             <div>
-              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Active Step Timer</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">${step.timerMins ? "Step timer" : "Optional timer — not a recipe duration"}</span>
               <div id="kitchen-timer-clock" class="kitchen-timer-display">${step.timerMins || 5}:00</div>
             </div>
             <button id="btn-start-kitchen-timer" class="btn-primary" style="font-size:1.1rem; padding:0.8rem 1.6rem;">
