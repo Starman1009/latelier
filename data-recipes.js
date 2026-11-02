@@ -20082,6 +20082,6024 @@ window.MASTER_RECIPES = [
       "Starch retrogradation lamination",
       "Cast-iron pan searing"
     ]
+  },
+  {
+    "id": "rec-basque-cheesecake",
+    "title": "Basque Burnt Cheesecake (Tarta de Queso de San Sebastián)",
+    "cuisine": "Spanish / Basque",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 20,
+    "cookMins": 50,
+    "totalMins": 70,
+    "yieldServings": 10,
+    "heroImage": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The iconic crustless cheesecake of La Viña in San Sebastián. Baked at intense 425°F heat to develop an intensely caramelized, mahogany-blackened exterior while preserving a luxuriantly runny, custardy molten center.",
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Friendly Option"
+    ],
+    "sensoryRole": "Rich, caramelized, dairy-forward decadence with bitter-sweet Maillard crust and silky cream center",
+    "ingredients": [
+      {
+        "name": "Philadelphia Cream Cheese",
+        "qty": 900,
+        "unit": "g",
+        "prep": "softened at room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 350,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 6,
+        "unit": "whole",
+        "prep": "room temperature (approx 300g)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Heavy Cream (36-40% Milkfat)",
+        "qty": 450,
+        "unit": "ml",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Unbleached Pastry Flour",
+        "qty": 20,
+        "unit": "g",
+        "prep": "sifted (or cornstarch for gluten-free)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Madagascar Vanilla Bean Paste",
+        "qty": 10,
+        "unit": "ml",
+        "prep": "pure extract or paste",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Flaky Sea Salt (Fleur de Sel)",
+        "qty": 4,
+        "unit": "g",
+        "prep": "fine pinch",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "10-inch Springform Pan (or 9-inch Deep Cake Pan)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Parchment Paper (2 large sheets crumpled)",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Stand Mixer with Paddle Attachment (or large bowl & whisk)",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Digital Probe Thermometer",
+        "type": "Precision Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Ensure cream cheese, eggs, and heavy cream are at 68-72°F (room temp) for at least 2 hours before blending to prevent curdling or lumps.",
+      "Preheat oven to 425°F (220°C) with rack in center position.",
+      "Grease the 10-inch springform pan lightly with butter. Press two overlapping sheets of crumpled parchment paper into the pan, allowing 2 inches of paper to overhang the rim."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "In the bowl of a stand mixer fitted with the paddle attachment, beat the softened cream cheese and sugar on medium-low speed for 3 to 4 minutes until completely smooth, satiny, and free of lumps. Scrape down bowl sides and paddle thoroughly.",
+        "sensoryCue": "Cream cheese looks glossy, ivory, and fully homogenized without trapping excess aerated bubbles.",
+        "scienceNote": "We use the paddle instead of a whisk to minimize air incorporation; excess air pockets cause soufflé-like rising followed by violent collapse and cracked surfaces.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 2,
+        "text": "Add eggs one at a time on low speed, beating until each egg is fully emulsified before adding the next. Stop and scrape down bottom of bowl.",
+        "sensoryCue": "Batter turns pale primrose yellow and ribbons off the paddle.",
+        "scienceNote": "Egg yolk lecithin naturally encapsulates the dispersed fat globules from the cream cheese, building a stable colloidal suspension.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Add heavy cream, vanilla paste, and fine sea salt. Mix on low speed for 30 seconds. Sift in the 20g pastry flour and mix just until barely incorporated (15-20 seconds). Tap bowl firmly on counter 3 times to dislodge micro-bubbles.",
+        "sensoryCue": "Fluid, velvety batter resembles pancake batter consistency.",
+        "scienceNote": "The minimal flour (under 2%) provides just enough amylose/amylopectin starch network to bind free whey water without masking the dairy silkiness.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Pour the batter into the prepared parchment-lined pan. Bake at 425°F (220°C) for 50 to 55 minutes, until the top is deeply caramelized to a dark chestnut-black tone, the edges are puffed and set, but the center 3 inches still jiggles dramatically like loose custard when gently nudged.",
+        "sensoryCue": "Dark burnished mahogany crown with aroma of toasted milk solids and caramel; center wobbles like panna cotta.",
+        "scienceNote": "High radiant heat triggers rapid non-enzymatic browning (Maillard reaction between milk proteins and lactose/sucrose) on the surface while thermal conduction to the dense interior remains slow, stopping core coagulated temperature at 150-155°F.",
+        "timerMins": 52
+      },
+      {
+        "stepNum": 5,
+        "text": "Transfer pan to a wire cooling rack and let cool at room temperature undisturbed for 4 hours. As it cools, the puffed exterior gently settles. For a molten center, serve at room temperature. For a firmer custard, chill 4 hours then bring back to room temp 45 minutes prior to slicing.",
+        "sensoryCue": "Creased rustic parchment folds release cleanly; knife glides through molten core.",
+        "scienceNote": "As cooling progresses, egg proteins stabilize into a delicate gel matrix without expelling water (syneresis).",
+        "timerMins": 240
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Burnished caramel, toasted milk powder, warm vanilla bean, slight lactic tang",
+      "texture": "Caramelized tender top skin transitioning into silky, ultra-creamy, molten core",
+      "finish": "Balanced richness cut by gentle acidity and mineral sea salt flakes"
+    },
+    "scienceNotes": "Unlike New York style cheesecakes which rely on low-and-slow 225°F water baths to avoid any browning, Basque cheesecake intentionally leverages extreme heat gradient. The 425°F convection current browns the surface through lactose caramelization and Maillard interactions before the center eggs can fully denature past 160°F, creating a gradient from set cake to molten cream.",
+    "troubleshooting": {
+      "Too dry or cakey": "Overbaked. Remove from oven when center 3-4 inches still wobbles violently; it will carry-over cook as it rests.",
+      "Batter has white lumps": "Cream cheese was too cold when beaten. Cream cheese must be at least 70°F before starting.",
+      "Burnt taste without sweetness": "Oven temperature was calibrated too high or sugar crystallized; use castor sugar for even dispersion."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Pastry Flour",
+        "substitute": "Cornstarch or Sweet Rice Flour",
+        "ratio": "1:1 for 100% gluten-free"
+      },
+      {
+        "ingredient": "Heavy Cream",
+        "substitute": "Double Cream (48%) mixed with whole milk",
+        "ratio": "350ml double cream + 100ml milk"
+      }
+    ],
+    "flavorPairings": [
+      "Pedro Ximénez Sherry",
+      "Espresso Macchiato",
+      "Tart Blackberry Compote",
+      "Roasted Figs"
+    ],
+    "advancedTechnique": "Flambéed Cognac or Pedro Ximénez reduction brushed onto the warm crust right out of the oven for aromatic depth.",
+    "storageAndReheating": "Store tightly wrapped in parchment in refrigerator up to 5 days. Do not freeze (breaks custard emulsion). Always bring to room temp 1 hour before serving.",
+    "nutritionEstimates": {
+      "calories": 480,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 36
+    },
+    "relatedRecipes": [
+      "rec-creme-brulee",
+      "rec-panna-cotta",
+      "rec-tarte-tatin"
+    ],
+    "relatedTechniques": [
+      "Maillard caramelization gradient",
+      "Egg protein emulsification",
+      "Crustless high-heat baking"
+    ]
+  },
+  {
+    "id": "rec-ny-cheesecake",
+    "title": "Classical New York Cheesecake with Graham Crust & Sour Cream Crown",
+    "cuisine": "American / Classical",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 30,
+    "cookMins": 75,
+    "totalMins": 105,
+    "yieldServings": 12,
+    "heroImage": "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The definitive skyscraper New York cheesecake: dense, satiny, ultra-smooth cream cheese custard on a spiced par-baked Graham cracker crust, crowned with a tangy sour cream glaze baked in a gentle water bath.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Ultra-dense, velvety, tang-balanced classic dessert with crunchy buttery spiced base",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "qty": 200,
+        "unit": "g",
+        "prep": "finely pulverized",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted Butter",
+        "qty": 85,
+        "unit": "g",
+        "prep": "melted",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Brown Sugar",
+        "qty": 30,
+        "unit": "g",
+        "prep": "packed",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Full-Fat Cream Cheese (Block)",
+        "qty": 1000,
+        "unit": "g",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated White Sugar",
+        "qty": 260,
+        "unit": "g",
+        "prep": "superfine",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Sour Cream",
+        "qty": 240,
+        "unit": "g",
+        "prep": "divided: 160g in batter, 80g for crown",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Yolks",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Cornstarch",
+        "qty": 25,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fresh Lemon Juice & Zest",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "freshly microplaned",
+        "dept": "Produce"
+      },
+      {
+        "name": "Vanilla Bean Extract",
+        "qty": 15,
+        "unit": "ml",
+        "prep": "pure bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "9-inch or 10-inch Leakproof Springform Pan",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Heavy-Duty Wide Aluminum Foil",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Roasting Pan (for Bain-Marie water bath)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Food Processor or Stand Mixer",
+        "type": "Small Appliance"
+      }
+    ],
+    "miseEnPlace": [
+      "Bring cream cheese, sour cream, and eggs to exactly 70°F room temperature.",
+      "Preheat oven to 350°F (175°C) for crust par-bake; prepare kettle with 2 liters of boiling water for water bath.",
+      "Wrap the outside bottom and sides of the springform pan with 3 layers of heavy-duty aluminum foil to create a 100% watertight seal."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Combine Graham crumbs, melted butter, and brown sugar. Press firmly into bottom and 1 inch up the sides of the springform pan using flat bottom of a glass. Par-bake at 350°F (175°C) for 10 minutes. Cool completely. Lower oven to 300°F (150°C).",
+        "sensoryCue": "Crust is fragrant, nutty, toasted golden brown, and set.",
+        "scienceNote": "Par-baking gelatinizes starches in the crust and melts the butter-sugar binder, creating a hydrophobic moisture barrier against the wet cheesecake batter.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 2,
+        "text": "Beat cream cheese and granulated sugar on low speed for 3 minutes until perfectly creamy and free of granules. Blend in cornstarch, vanilla, lemon zest, and lemon juice. Add sour cream (160g) and mix on low.",
+        "sensoryCue": "Silky, ivory emulsion with micro-flecks of lemon zest.",
+        "scienceNote": "Cornstarch buffers egg protein coagulation, raising the curdling threshold temperature and preventing syneresis (weeping).",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 3,
+        "text": "Add whole eggs and extra yolks one at a time, mixing on slowest speed just until incorporated. Do not whip. Pour batter over cooled crust.",
+        "sensoryCue": "Heavy, luxurious batter levels smoothly into pan.",
+        "scienceNote": "Extra yolks increase phospholipid lecithin and fat content, yielding dense New York mouthfeel rather than fluffy sponge.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 4,
+        "text": "Place foil-wrapped springform into the large roasting pan. Pour boiling water into roasting pan until it reaches halfway up sides of springform. Bake at 300°F (150°C) for 65-75 minutes until edges are set but center 2 inches has a gentle slow tremor.",
+        "sensoryCue": "Pale ivory surface with no cracking, gentle wobble in center.",
+        "scienceNote": "Bain-marie water bath caps ambient pan temperature at 212°F (100°C), eliminating edge scorching and preventing temperature-shock fissure cracks.",
+        "timerMins": 70
+      },
+      {
+        "stepNum": 5,
+        "text": "Whisk remaining 80g sour cream with 15g sugar and 1 tsp lemon juice. Spread gently over warm top. Turn oven off, crack door open 2 inches with a wooden spoon, and leave cheesecake inside to cool slowly for 1 hour. Chill in refrigerator at least 8 hours before unmolding.",
+        "sensoryCue": "Glossy porcelain-smooth sour cream crown; clean slice with hot knife.",
+        "scienceNote": "Slow cooling prevents thermal contraction cracking. Extended chill allows milkfat crystallization network to lock into firm New York texture.",
+        "timerMins": 60
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Tangy cream cheese, toasted honey graham, bright lemon blossom, bourbon vanilla",
+      "texture": "Dense, fudgy, melt-in-mouth richness with crunchy buttery crust",
+      "finish": "Refreshing lactic acidity from sour cream crown that cuts the decadence"
+    },
+    "scienceNotes": "New York style cheesecake demands density (high fat, low air). Incorporating air via high-speed whipping produces an airy soufflé that collapses into deep central craters upon cooling. Low-speed paddle work plus cornstarch protein buffering ensures pristine, level, uncracked perfection.",
+    "troubleshooting": {
+      "Cracks across surface": "Oven cooled too rapidly or cake was overbaked past 160°F core temp. Always cool in cracked oven.",
+      "Soggy bottom crust": "Water leaked through foil. Use silicone springform protector sleeve or double-ply extra-wide foil.",
+      "Grainy curdled texture": "Ingredients were too cold or oven temperature was above 325°F."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Graham Crackers",
+        "substitute": "Speculoos Biscoff or Digestive Biscuits",
+        "ratio": "1:1 by weight"
+      },
+      {
+        "ingredient": "Sour Cream",
+        "substitute": "Crème Fraîche or Greek Full-Fat Yogurt",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Fresh Raspberry Coulis",
+      "Espresso",
+      "Macerated Strawberries",
+      "Meyer Lemon Marmalade"
+    ],
+    "advancedTechnique": "Silicone pan wrap technique to eliminate water bath leakage risk 100%.",
+    "storageAndReheating": "Keep refrigerated up to 7 days covered. Can freeze well for up to 2 months; thaw overnight in fridge.",
+    "nutritionEstimates": {
+      "calories": 520,
+      "protein": 9,
+      "carbs": 42,
+      "fat": 38
+    },
+    "relatedRecipes": [
+      "rec-basque-cheesecake",
+      "rec-bourbon-pecan-pie",
+      "rec-shattered-lemon-tart"
+    ],
+    "relatedTechniques": [
+      "Bain-marie thermal buffering",
+      "Cornstarch protein stabilization",
+      "Par-baked crust sealing"
+    ]
+  },
+  {
+    "id": "rec-valrhona-brownies",
+    "title": "Valrhona Dark Chocolate Fudge Brownies with Flaky Sea Salt",
+    "cuisine": "French / American Modern",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 15,
+    "cookMins": 28,
+    "totalMins": 43,
+    "yieldServings": 16,
+    "heroImage": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The ultimate restaurant-grade brownie: intense 70% Valrhona Guanaja chocolate, browned butter, shiny paper-thin crackly meringue top, and an intensely fudgy, truffle-dense core finished with Maldon sea salt.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Bittersweet chocolate intensity, nutty browned butter, crackly top and fudgy truffle center",
+    "ingredients": [
+      {
+        "name": "Valrhona Guanaja 70% Dark Chocolate",
+        "qty": 250,
+        "unit": "g",
+        "prep": "chopped into small chunks",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted European Butter (82% fat)",
+        "qty": 180,
+        "unit": "g",
+        "prep": "cubed for browning",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Dutch Process Cocoa Powder (Valrhona)",
+        "qty": 35,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Yolk",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated White Sugar",
+        "qty": 180,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Dark Muscovado / Brown Sugar",
+        "qty": 100,
+        "unit": "g",
+        "prep": "packed",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Flour",
+        "qty": 90,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Espresso Powder",
+        "qty": 3,
+        "unit": "g",
+        "prep": "instant fine",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Pure Vanilla Bean Extract",
+        "qty": 8,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Flaky Sea Salt (Maldon)",
+        "qty": 4,
+        "unit": "g",
+        "prep": "for finishing",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "8x8-inch Square Metal Baking Pan",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Parchment Paper Sling",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Saucepan for Beurre Noisette",
+        "type": "Cookware"
+      },
+      {
+        "name": "Electric Hand Mixer or Whisk",
+        "type": "Small Appliance"
+      }
+    ],
+    "miseEnPlace": [
+      "Line an 8x8 metal pan with criss-cross parchment paper leaving 2-inch overhang handles; butter lightly.",
+      "Preheat oven to 350°F (175°C).",
+      "Chop chocolate into uniform small pieces so it melts instantly in hot butter."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "In a saucepan over medium heat, melt the cubed butter. Swirl as it foams, bubbles, and subsides until hazelnut-colored milk solids brown at the bottom (beurre noisette, 4-5 mins). Remove from heat, immediately add chopped Valrhona chocolate, cocoa powder, and espresso powder. Whisk until silky and melted.",
+        "sensoryCue": "Nutty toasty aroma with deep dark glossy melted chocolate sheen.",
+        "scienceNote": "Blooming cocoa powder in hot 250°F browned butter dissolves fat-soluble flavor pyrazines and releases latent cacao volatile aromatics.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "In a separate bowl, whip eggs, extra yolk, white sugar, and brown sugar with an electric mixer on medium-high speed for full 5 minutes until pale, tripled in volume, and forms a thick ribbon trail.",
+        "sensoryCue": "Pale coffee-crema color, aerated foam that holds ribbon for 3 seconds.",
+        "scienceNote": "Dissolving and aerating sucrose with egg albumin creates a micro-meringue foam. As the brownie bakes, this foam floats to the surface and dries out, forming the signature glossy paper-thin crinkly skin.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Gently stream the warm melted chocolate-butter mixture down side of egg bowl while folding with a silicone spatula until homogeneous.",
+        "sensoryCue": "Glossy, thick mahogany ribbon batter.",
+        "scienceNote": "Folding preserves the aerated egg emulsion without deflating delicate air cells.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Sift in the flour and fine salt. Fold just until no dry flour streaks remain (approx 20 folds). Spread evenly into prepared pan. Tap pan twice on counter.",
+        "sensoryCue": "Fudge-thick batter levels out smoothly in pan corners.",
+        "scienceNote": "Minimal flour and minimal folding prevents gluten development, ensuring dense truffle fudginess rather than cakey crumb.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 5,
+        "text": "Bake at 350°F (175°C) for 26 to 28 minutes, until edges are set and a toothpick inserted in the center comes out with moist, fudgy crumbs (not wet batter). Immediately sprinkle Maldon sea salt flakes across top. Cool completely in pan, then chill 2 hours before slicing into sharp squares.",
+        "sensoryCue": "Crinkled tissue-paper top, glossy flakes of sea salt, deep fudgy interior.",
+        "scienceNote": "Chilling crystallizes the cocoa butter and milkfat matrix, allowing laser-sharp knife cuts without tearing.",
+        "timerMins": 28
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Intense dark cocoa, brown butter hazelnut, roasted espresso, vanilla bean",
+      "texture": "Crisp paper-thin shattering crust yielding into dense, chewy, molten truffle center",
+      "finish": "Lingering bittersweet cacao balanced by bright saline crunch of Maldon salt"
+    },
+    "scienceNotes": "The secret to the coveted crackly brownie top is two-fold: high ratio of dissolved sugar in aerated egg proteins (forming a microscopic surface meringue) and baking in an aluminum/metal pan rather than glass (glass is an insulator that slows bottom heat conduction, causing soggy overbaked edges).",
+    "troubleshooting": {
+      "No shiny crackly skin": "Eggs and sugar were not whipped long enough; sugar was undissolved.",
+      "Cakey dry texture": "Too much flour or overbaked. Toothpick should never come out completely clean for fudge brownies.",
+      "Greasy separation": "Melted butter was too hot when added to eggs, breaking the emulsion."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Valrhona Guanaja 70%",
+        "substitute": "Guittard 72% or Callebaut 70-30-38",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Muscovado Sugar",
+        "substitute": "Dark Brown Sugar",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Bourbon Vanilla Bean Gelato",
+      "Fresh Raspberries",
+      "Single Malt Scotch",
+      "Café au Lait"
+    ],
+    "advancedTechnique": "Infusing browned butter with roasted crushed cocoa nibs and filtering through cheesecloth before combining with chocolate.",
+    "storageAndReheating": "Store in airtight container at room temperature for up to 5 days, or refrigerate for dense cold truffle texture.",
+    "nutritionEstimates": {
+      "calories": 340,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 21
+    },
+    "relatedRecipes": [
+      "rec-chocolate-lava",
+      "rec-mousse-chocolat",
+      "rec-souffle-chocolat"
+    ],
+    "relatedTechniques": [
+      "Beurre noisette browning",
+      "Egg-sugar ribbon aeration",
+      "Cocoa fat blooming"
+    ]
+  },
+  {
+    "id": "rec-chocolate-chunk-cookies",
+    "title": "Brown Butter 70% Chocolate Chunk Sea Salt Cookies",
+    "cuisine": "American / Modern Bakery",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 20,
+    "cookMins": 12,
+    "totalMins": 32,
+    "yieldServings": 14,
+    "heroImage": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The definitive bakery-style chocolate chip cookie: nutty browned butter, 48-hour cold aged dough, hand-chopped 70% dark chocolate pools, crisp rippled edges, and a gooey chewy center topped with fleur de sel.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Deep butterscotch and toffee notes, pools of molten dark chocolate, chewy interior and crispy edge",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "qty": 225,
+        "unit": "g",
+        "prep": "browned down to approx 180g net fat",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "qty": 180,
+        "unit": "g",
+        "prep": "firmly packed",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 90,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Egg",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Large Egg Yolk",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Pure Vanilla Bean Paste",
+        "qty": 10,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Unbleached Bread Flour (12.7% protein)",
+        "qty": 260,
+        "unit": "g",
+        "prep": "sifted (bread flour ensures chew)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Baking Soda (Sodium Bicarbonate)",
+        "qty": 4,
+        "unit": "g",
+        "prep": "fine powder",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Baking Powder",
+        "qty": 2,
+        "unit": "g",
+        "prep": "double acting",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 5,
+        "unit": "g",
+        "prep": "dissolved in dough",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Valrhona 70% Dark Chocolate Feves / Bar",
+        "qty": 220,
+        "unit": "g",
+        "prep": "coarsely hand-chopped into shards and blocks",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Flaky Sea Salt (Maldon)",
+        "qty": 4,
+        "unit": "g",
+        "prep": "finishing pinch",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy Gauge Rimmed Half-Sheet Baking Pans",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Silpat Baking Mats or Parchment Paper",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Large Cookie Scoop (approx 65g / 2.5 oz)",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Round Biscuit Cutter (for pan-banging swirl)",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Brown butter in a light-colored saucepan until golden amber with nutty toasted specks. Pour into bowl and cool to room temp paste (approx 30 mins).",
+      "Chop chocolate by hand rather than using chocolate chips (chips contain stabilizers that prevent pool formation).",
+      "Weigh dry ingredients and whisk together thoroughly."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Whisk the cooled browned butter with dark brown sugar and castor sugar for 2 minutes until glossy and smooth like wet sand. Whisk in whole egg, extra yolk, and vanilla paste until emulsified and slightly lightened in color.",
+        "sensoryCue": "Rich butterscotch aroma, smooth emulsified batter without oily separation.",
+        "scienceNote": "High proportion of brown sugar contributes hygroscopic molasses fructose, ensuring chewy moisture retention and accelerated caramelization.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 2,
+        "text": "Fold in the flour, baking soda, baking powder, and fine salt with a wooden spoon or spatula just until halfway combined. Add chopped chocolate chunks and fold until no dry flour pockets remain. Do not overmix.",
+        "sensoryCue": "Dense, studded dough with prominent chocolate chunks distributed throughout.",
+        "scienceNote": "Using higher-protein bread flour promotes gluten network elasticity, yielding a substantive chew that balances molten chocolate chunks.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 3,
+        "text": "Scoop into 14 large balls (approx 65g each). Place onto a tray, wrap airtight in plastic film, and chill in refrigerator for 24 to 48 hours (minimum 12 hours).",
+        "sensoryCue": "Dough turns firm, deep golden caramel color as flour hydrates.",
+        "scienceNote": "48-hour cold aging allows endogenous enzymes to hydrolyze starches into simple sugars, amplifying toffee/butterscotch complexity while drying surface moisture for crisp outer edges.",
+        "timerMins": 1440
+      },
+      {
+        "stepNum": 4,
+        "text": "Preheat oven to 350°F (175°C). Space 6 dough balls per half-sheet lined with parchment. Bake for 10-12 minutes until edges are golden bronze and set, but centers are still pale and soft.",
+        "sensoryCue": "Rippled golden edges, molten chocolate pools, aroma filling the kitchen.",
+        "scienceNote": "Baking soda alkaline pH promotes rapid surface browning and horizontal spread.",
+        "timerMins": 11
+      },
+      {
+        "stepNum": 5,
+        "text": "Immediately upon removing pan from oven, swirl a large round cookie cutter or bowl over each hot cookie in a circular motion to shape into perfect concentric circles with rippled edges. Sprinkle each with flaky sea salt. Cool on pan 10 minutes, then transfer to rack.",
+        "sensoryCue": "Picture-perfect circular cookies with glistening salt crystals and chocolate pools.",
+        "scienceNote": "Hot molten cookies remain malleable for 30 seconds out of oven; the cutter technique pushes edge ripples into high-density crispy ruffles.",
+        "timerMins": 10
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Toffee, caramelized brown butter, rich roasted cacao, toasted grains",
+      "texture": "Crisp golden edge ripples giving way to dense, soft, chewy dough and molten chocolate rivers",
+      "finish": "Sweet butterscotch rounded by mineral salinity from Maldon flakes"
+    },
+    "scienceNotes": "Cold aging dough is the single biggest difference between amateur and professional cookies. During 24-48 hours chilling, flour proteins and starches fully absorb available egg and butter water. This reduces spreading in the oven, retains moisture in the center, and allows flavor precursors to develop.",
+    "troubleshooting": {
+      "Cookies spread into thin puddle": "Brown butter was melted/hot when mixed, or dough was baked without chilling.",
+      "Puffy and dry": "Too much flour used (measure by grams) or all-purpose flour substituted with too much baking powder.",
+      "No chocolate pools": "Commercial chocolate chips used instead of hand-chopped bar chocolate."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Bread Flour",
+        "substitute": "All-Purpose Flour",
+        "ratio": "1:1 (cookie will be slightly more tender and less chewy)"
+      },
+      {
+        "ingredient": "70% Dark Chocolate",
+        "substitute": "Mix of 70% Dark and 40% Milk Chocolate",
+        "ratio": "1:1 for sweeter profile"
+      }
+    ],
+    "flavorPairings": [
+      "Cold Whole Milk",
+      "Espresso Cortado",
+      "Bourbon",
+      "Earl Grey Tea"
+    ],
+    "advancedTechnique": "Pan-banging technique (dropping sheet pan firmly onto oven rack at minute 8 and 10) to create concentric accordion ripple waves.",
+    "storageAndReheating": "Dough balls freeze beautifully for up to 3 months; bake directly from frozen at 350°F for 13-14 minutes.",
+    "nutritionEstimates": {
+      "calories": 370,
+      "protein": 5,
+      "carbs": 44,
+      "fat": 20
+    },
+    "relatedRecipes": [
+      "rec-valrhona-brownies",
+      "rec-madeleines-commercy",
+      "rec-caneles-bordeaux"
+    ],
+    "relatedTechniques": [
+      "Cold dough enzymatic aging",
+      "Beurre noisette butterscotch development",
+      "Pan-banging ripple acoustics"
+    ]
+  },
+  {
+    "id": "rec-mille-feuille",
+    "title": "Classical Mille-Feuille (Caramelized Puff Pastry & Vanilla Diplomat Cream)",
+    "cuisine": "French / Classical Haute Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Advanced",
+    "prepMins": 60,
+    "cookMins": 35,
+    "totalMins": 95,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The pinnacle of French pastry architecture: three crisp, razor-thin layers of caramelized inverted puff pastry (pâte feuilletée inversée) sandwiching silky Madagascar vanilla diplomat cream, finished with traditional feathered fondant glaze.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Ultra-crisp shattering caramelized lamination alternating with cloud-like velvety vanilla cream",
+    "ingredients": [
+      {
+        "name": "All-Butter Puff Pastry (Pâte Feuilletée)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "chilled block (or scratch 6-turn inverted)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Icing / Powdered Sugar",
+        "qty": 80,
+        "unit": "g",
+        "prep": "sifted for pastry caramelization",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Whole Milk (3.5% fat)",
+        "qty": 500,
+        "unit": "ml",
+        "prep": "farm fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Madagascar Bourbon Vanilla Bean",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "split and seeds scraped",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Egg Yolks",
+        "qty": 6,
+        "unit": "whole",
+        "prep": "approx 110g",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Sugar",
+        "qty": 100,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cornstarch (Maizena)",
+        "qty": 45,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 50,
+        "unit": "g",
+        "prep": "cold, cubed",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Gelatin Sheets (Silver 160 Bloom)",
+        "qty": 4,
+        "unit": "g",
+        "prep": "bloomed in cold ice water",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Heavy Whipping Cream (36% fat)",
+        "qty": 200,
+        "unit": "ml",
+        "prep": "chilled at 38°F",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "White Fondant Glaze & Dark Chocolate",
+        "qty": 150,
+        "unit": "g",
+        "prep": "for feathered top",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy Rimmed Baking Sheets (2 matched sheets)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Parchment Paper & Silpat",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Serrated Bread Knife (offset)",
+        "type": "Cutlery"
+      },
+      {
+        "name": "Piping Bag with 12mm Round Tip",
+        "type": "Pâtisserie Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Roll puff pastry between parchment to 3mm uniform thickness (approx 12x16 inches). Chill 1 hour.",
+      "Bloom gelatin sheet in ice water for 10 minutes.",
+      "Preheat oven to 375°F (190°C)."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Dock the rolled puff pastry thoroughly with a fork. Place on parchment-lined sheet pan. Cover with second sheet of parchment and top with a second heavy baking sheet (weighting prevents uncontrolled puffing). Bake at 375°F (190°C) for 25 minutes until deep golden.",
+        "sensoryCue": "Pastry is compressed, golden-brown, and wafer-crisp.",
+        "scienceNote": "Weighting the pastry restricts vertical expansion, forcing steam to laminate the 729 microscopic butter-dough leaves into razor-thin, shatteringly crisp layers.",
+        "timerMins": 25
+      },
+      {
+        "stepNum": 2,
+        "text": "Remove top pan and top parchment. Dust pastry generously with sifted powdered sugar. Return uncovered to 425°F (220°C) oven for 4-5 minutes until sugar melts into a gleaming, glassy, amber caramel sheen. Remove and cool completely on wire rack.",
+        "sensoryCue": "Gleaming mirror-like caramel glaze that protects pastry from absorbing moisture.",
+        "scienceNote": "The caramelized sugar layer acts as an impermeable hydrophobic seal, preventing cream moisture from softening the crisp pastry leaves.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Make Crème Pâtissière: Scald milk with vanilla bean and seeds. Whisk yolks, sugar, and cornstarch. Temper hot milk into yolks, return to pan, and boil 2 minutes vigorously while whisking until thickened. Off heat, whisk in bloomed gelatin and cold butter. Cool to 68°F (20°C).",
+        "sensoryCue": "Thick, glossy, fragrant pastry cream with dense flecks of vanilla seeds.",
+        "scienceNote": "Gelatin and cornstarch dual gelling network provides structural rigidity needed to support piped pastry tiers.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 4,
+        "text": "Whip heavy cream to medium peaks. Gently fold into the cooled pastry cream in two batches to create Crème Diplomate. Transfer to piping bag with round tip; chill 30 minutes to set slightly.",
+        "sensoryCue": "Lighter than pastry cream, velvety, aerated yet piped peaks hold shape.",
+        "scienceNote": "Folding whipped cream creates an aerated mousse emulsion with delicate dairy mouthfeel.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 5,
+        "text": "Trim cooled caramelized pastry into 3 identical 4x12-inch rectangles using a gentle sawing motion with an offset serrated knife. Pipe uniform spheres of diplomat cream across bottom layer. Place middle pastry layer, pipe second layer of cream. Crown with top glazed pastry (glazed with white fondant and feathered chocolate). Chill 1 hour before portioning into individual 4x2-inch slices.",
+        "sensoryCue": "Pristine architectural lines, visible caramel gleam, crisp crack as serrated knife enters.",
+        "scienceNote": "Chilling allows diplomat cream fats to solidify, preventing cream from extruding out the sides when sliced.",
+        "timerMins": 60
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Caramelized sugar, toasted puff pastry butter, floral Madagascar vanilla, scalding milk",
+      "texture": "Dramatic shattering crispness of pastry followed instantly by melting, cloud-like cream",
+      "finish": "Clean vanilla bean finish without excessive cloying sweetness"
+    },
+    "scienceNotes": "The traditional challenge with mille-feuille is sogginess and squishing during slicing. Double-pan weighted baking forces moisture out and aligns gluten sheets; high-heat sugar caramelization creates a hydrophobic varnish that repels water from the crème diplomate for up to 8 hours.",
+    "troubleshooting": {
+      "Pastry puffs unevenly into pillow": "Top baking sheet was not heavy enough; add an extra sheet or cast iron pan on top.",
+      "Cream squishes out sides when sliced": "Diplomat cream was not chilled enough, or chef pressed down instead of using a sawing serrated knife.",
+      "Pastry gets soft within 1 hour": "Pastry was under-caramelized; sugar glaze must melt into a glassy continuous seal."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Crème Diplomate",
+        "substitute": "Crème Mousseline (whipped butter-pastry cream)",
+        "ratio": "1:1 for firmer hold"
+      },
+      {
+        "ingredient": "Fondant Glaze",
+        "substitute": "Simple dusting of Powdered Sugar and Cocoa powder",
+        "ratio": "Rustic alternative"
+      }
+    ],
+    "flavorPairings": [
+      "Champagne Brut",
+      "Café Crème",
+      "Fresh Raspberries",
+      "Earl Grey Tea"
+    ],
+    "advancedTechnique": "Assembling the mille-feuille on its side (vertical lamination) so that when sliced, the knife cuts between pastry layers rather than crushing them.",
+    "storageAndReheating": "Best enjoyed within 6 hours of assembly for peak crispness. Keep refrigerated. Do not freeze.",
+    "nutritionEstimates": {
+      "calories": 440,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 25
+    },
+    "relatedRecipes": [
+      "rec-eclairs-chocolat",
+      "rec-paris-brest",
+      "rec-creme-brulee"
+    ],
+    "relatedTechniques": [
+      "Weighted puff pastry compression",
+      "Sugar caramel hydrophobic sealing",
+      "Crème diplomate folding"
+    ]
+  },
+  {
+    "id": "rec-opera-cake",
+    "title": "Classical Gâteau Opéra (Joconde Sponge, Coffee Syrup & Bittersweet Ganache)",
+    "cuisine": "French / Classical Haute Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Advanced",
+    "prepMins": 90,
+    "cookMins": 12,
+    "totalMins": 102,
+    "yieldServings": 12,
+    "heroImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The Parisian classic created by Maison Dalloyau in 1955. Six distinct architectural tiers: almond biscuit Joconde soaked in concentrated espresso syrup, silky French coffee buttercream, dark chocolate ganache, and a flawless chocolate glaze (glaçage miroir) crowned with edible gold leaf.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Intense coffee roast, bittersweet chocolate, nutty almond sponge, silky layered elegance",
+    "ingredients": [
+      {
+        "name": "Almond Flour (Superfine)",
+        "qty": 150,
+        "unit": "g",
+        "prep": "sifted blanched almonds",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Powdered / Icing Sugar",
+        "qty": 150,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Whole Eggs",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "approx 200g, room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Whites",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "approx 140g, room temp",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Sugar",
+        "qty": 30,
+        "unit": "g",
+        "prep": "for meringue",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Cake Flour",
+        "qty": 40,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted Butter",
+        "qty": 30,
+        "unit": "g",
+        "prep": "melted and cooled",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Fresh Brewed Espresso & Coffee Extract",
+        "qty": 250,
+        "unit": "ml",
+        "prep": "reduced with 80g sugar syrup and 15ml dark rum",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Valrhona Guanaja 70% Dark Chocolate",
+        "qty": 200,
+        "unit": "g",
+        "prep": "for ganache and glaze",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 180,
+        "unit": "ml",
+        "prep": "scalded",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "French Coffee Buttercream (Crème au Beurre)",
+        "qty": 350,
+        "unit": "g",
+        "prep": "pâte à bombe base with Trablit coffee extract",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Edible 24k Gold Leaf",
+        "qty": 2,
+        "unit": "sheets",
+        "prep": "for delicate centerpiece garniture",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Half-Sheet Baking Pan (12x17 inch)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Silpat Baking Mat or Silicone Liner",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Adjustable Rectangular Cake Ring (8x8 or 8x10 inch)",
+        "type": "Pâtisserie Tool"
+      },
+      {
+        "name": "Long Offset Pastry Spatula",
+        "type": "Pâtisserie Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Bake the Joconde sponge in half-sheet pan at 425°F (220°C) for 8 minutes; cool and cut into 3 identical 8x8-inch squares.",
+      "Prepare coffee soaking syrup by simmering espresso, sugar syrup, and rum.",
+      "Make dark chocolate ganache by pouring scalded cream over chopped 70% chocolate; cool to spreadable paste.",
+      "Prepare coffee French buttercream using egg yolk pâte à bombe and European butter."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Bake Biscuit Joconde: Whip almond flour, powdered sugar, and whole eggs for 8 minutes until light and voluminous. Whip egg whites and sugar to glossy stiff peaks. Gently fold meringue, sifted flour, and melted butter into almond batter. Spread evenly across Silpat-lined half sheet and bake at 425°F (220°C) for 8 minutes. Cool and divide into three 8x8-inch squares.",
+        "sensoryCue": "Golden, springy, pliable sponge that absorbs syrup without falling apart.",
+        "scienceNote": "Almond flour provides fat that maintains moisture, while whipped whole eggs and meringue give structure to hold heavy syrup absorption.",
+        "timerMins": 8
+      },
+      {
+        "stepNum": 2,
+        "text": "Bottom Seal: Melt 50g dark chocolate. Brush a razor-thin layer of chocolate across one side of the first Joconde layer. Chill 5 minutes until set. Flip chocolate-side down onto parchment (this forms an impermeable base that prevents the cake from sticking to the cake board when served).",
+        "sensoryCue": "Thin matte chocolate barrier.",
+        "scienceNote": "The tempered chocolate base prevents coffee syrup from leaking onto the presentation platter.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Soak bottom sponge thoroughly with espresso syrup. Spread half of the coffee buttercream in an immaculate 3mm layer using an offset spatula. Place second Joconde sponge on top; press gently. Soak with espresso syrup. Spread dark chocolate ganache in an even 3mm layer.",
+        "sensoryCue": "Syrup glistens on sponge surface; layers are level and calibrated.",
+        "scienceNote": "Uniform layer height is critical to Opéra architecture; uneven cream produces sloping top glaze.",
+        "timerMins": 15
+      },
+      {
+        "stepNum": 4,
+        "text": "Place third Joconde sponge, soak generously with coffee syrup. Spread remaining coffee buttercream over top, smoothing with a warm bench scraper until glass-flat. Chill cake in freezer for 30 minutes until buttercream is firm as stone.",
+        "sensoryCue": "Pristine level top surface with zero spatula marks.",
+        "scienceNote": "Freezer chilling hardens the butter emulsion so hot glaze can flow across without melting the buttercream.",
+        "timerMins": 30
+      },
+      {
+        "stepNum": 5,
+        "text": "Pour warm chocolate glaze (at exactly 90-95°F / 32-35°C) across the chilled cake in one fluid motion; smooth with one swipe of an offset spatula. Chill 1 hour. Trim all 4 perimeter edges by 1/4 inch with a hot chef's knife dipped in boiling water to reveal pristine multi-colored horizontal stripes. Garnish center with gold leaf.",
+        "sensoryCue": "Mirror-reflective chocolate crown; sharp geometric horizontal strata of black, cream, and almond sponge.",
+        "scienceNote": "Glaze temperature of 95°F allows smooth sheet flow without dissolving the underlying buttercream.",
+        "timerMins": 60
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Dark roasted espresso, bittersweet cocoa, almond marzipan, dark rum",
+      "texture": "Multi-tiered harmony: syrupy sponge melting with silky buttercream and snapping glaze",
+      "finish": "Persistent roasted coffee and cocoa tannins balanced by smooth dairy richness"
+    },
+    "scienceNotes": "Opéra cake depends on precise thermodynamic assembly: each layer must be chilled to solidify fats before the next tier is added. The pâte à bombe coffee buttercream provides structural firmness when chilled due to saturated dairy triglycerides, yet melts at body temperature (98.6°F) on the palate.",
+    "troubleshooting": {
+      "Glaze melts buttercream and mixes": "Buttercream was not chilled enough or glaze was too hot (over 100°F).",
+      "Edges rip or smear when trimming": "Knife was cold; dip knife in hot water and wipe dry between every single cut.",
+      "Dry cake texture": "Joconde was under-soaked; sponge must absorb almost its entire weight in coffee syrup."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Trablit Coffee Extract",
+        "substitute": "Triple-strength reduced espresso",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Dark Rum",
+        "substitute": "Cognac, Grand Marnier, or additional espresso",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Double Espresso",
+      "Single Malt Islay Scotch",
+      "Tawny Port",
+      "Raspberry Coulis"
+    ],
+    "advancedTechnique": "Calligraphic chocolate piping: piping the word 'Opéra' across the center mirror glaze with a paper cornet.",
+    "storageAndReheating": "Store covered in refrigerator up to 5 days. Remove 20 minutes before serving so buttercream softens slightly.",
+    "nutritionEstimates": {
+      "calories": 490,
+      "protein": 7,
+      "carbs": 46,
+      "fat": 31
+    },
+    "relatedRecipes": [
+      "rec-mille-feuille",
+      "rec-tiramisu",
+      "rec-paris-brest"
+    ],
+    "relatedTechniques": [
+      "Pâte à bombe emulsion",
+      "Biscuit Joconde lamination",
+      "Mirror glaze temperature calibration"
+    ]
+  },
+  {
+    "id": "rec-french-macarons",
+    "title": "French Macarons au Chocolat Noir (Pied Formed Shells with 66% Ganache)",
+    "cuisine": "French / Classical Haute Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Advanced",
+    "prepMins": 45,
+    "cookMins": 16,
+    "totalMins": 61,
+    "yieldServings": 24,
+    "heroImage": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The holy grail of French confectionery: smooth satin shells with iconic ruffled ruffled feet (le pied), crisp delicate shells giving way to chewy almond centers, sandwiched with bittersweet 66% Valrhona Caraïbe chocolate ganache.",
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "sensoryRole": "Delicate shattering crisp shell, chewy almond interior, intense bittersweet ganache core",
+    "ingredients": [
+      {
+        "name": "Superfine Blanched Almond Flour",
+        "qty": 150,
+        "unit": "g",
+        "prep": "ground extra fine and sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Pure Powdered Sugar (without cornstarch)",
+        "qty": 150,
+        "unit": "g",
+        "prep": "sifted twice with almond flour (tant pour tant)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Aged Egg Whites",
+        "qty": 110,
+        "unit": "g",
+        "prep": "separated 24h prior, room temp (divided: 55g + 55g)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 150,
+        "unit": "g",
+        "prep": "for Italian sugar syrup",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Mineral Spring Water",
+        "qty": 38,
+        "unit": "ml",
+        "prep": "for syrup",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Dutch Cocoa Powder (Extra Brute)",
+        "qty": 15,
+        "unit": "g",
+        "prep": "sifted with tant pour tant",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Valrhona Caraïbe 66% Dark Chocolate",
+        "qty": 160,
+        "unit": "g",
+        "prep": "finely chopped",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 140,
+        "unit": "ml",
+        "prep": "scalded",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 25,
+        "unit": "g",
+        "prep": "softened at 68°F",
+        "dept": "Dairy & Fats"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Digital Candy Thermometer",
+        "type": "Precision Tool"
+      },
+      {
+        "name": "Piping Bag with #804 (10mm) Plain Round Tip",
+        "type": "Pâtisserie Tool"
+      },
+      {
+        "name": "Heavy Rimmed Baking Sheets (Doubled)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Teflon / Silpat Macaron Mats with Printed Guides",
+        "type": "Baking Supply"
+      }
+    ],
+    "miseEnPlace": [
+      "Age egg whites for 24-48 hours in refrigerator to relax protein bonds; bring to 70°F room temp before whipping.",
+      "Pulse almond flour, powdered sugar, and cocoa powder in food processor for 10 seconds; sift twice through medium mesh.",
+      "Fit piping bag with 10mm round tip and prepare baking sheets with Silpat mats."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Tant Pour Tant Paste: Mix the first 55g of raw egg whites directly into the sifted almond flour, powdered sugar, and cocoa powder with a stiff spatula until a dense, uniform paste forms. Cover with plastic wrap.",
+        "sensoryCue": "Thick marzipan-like chocolate paste.",
+        "scienceNote": "Coating the dry almond particles in raw egg whites shields fat from destabilizing the Italian meringue whipped in the next step.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Italian Meringue: Heat castor sugar and water in a small pan to 244°F (118°C). When syrup hits 230°F, begin whipping the remaining 55g egg whites on medium speed to soft peaks. Once syrup reaches 244°F, stream it slowly down inside of the mixer bowl while beating on high speed until glossy, stiff, and cooled to 110°F (43°C).",
+        "sensoryCue": "Blindingly shiny, dense meringue with stiff 'bird's beak' (bec d'oiseau) tip.",
+        "scienceNote": "The 244°F sugar syrup cooks the ovalbumin proteins, producing a remarkably stable micro-bubble foam far less prone to overmixing than French meringue.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 3,
+        "text": "Macaronage: Fold 1/3 of the Italian meringue into the almond paste to lighten it. Add remaining meringue and perform macaronage: scrape bottom, fold up and over, and flatten batter against sides of bowl with spatula. Continue until batter flows off spatula in an unbroken ribbon that slowly re-incorporates into itself over 20-25 seconds (lava stage).",
+        "sensoryCue": "Glossy molten magma consistency; ribbons flatten smooth after 25 seconds.",
+        "scienceNote": "Macaronage intentionally deflates a calculated percentage of air bubbles. Under-macaronage leaves peaked nipples; over-macaronage creates flat puddles without feet.",
+        "timerMins": 6
+      },
+      {
+        "stepNum": 4,
+        "text": "Pipe 3.5cm (1.4-inch) circles onto Silpat mats holding piping bag perpendicular at 90°. Rap baking sheets firmly onto counter 4 times to release trapped air bubbles; pop any stubborn surface bubbles with a toothpick. Let rest uncovered at room temp for 25-35 minutes until a dull, dry, non-sticky skin forms on touch.",
+        "sensoryCue": "A clean finger touched gently to shell surface picks up zero moisture.",
+        "scienceNote": "The dry skin forces steam to escape horizontally around the bottom perimeter during baking, producing the signature ruffled 'pied' (feet).",
+        "timerMins": 30
+      },
+      {
+        "stepNum": 5,
+        "text": "Bake on doubled sheet pans at 300°F (150°C) for 14-16 minutes. Cool completely on mats before peeling shells away. Pipe 66% dark chocolate ganache between matched shells. Transfer assembled macarons to an airtight container and mature in refrigerator for 24-48 hours before eating.",
+        "sensoryCue": "Shells peel cleanly off mat; ruffled feet 3mm tall; interior completely full without hollow gaps.",
+        "scienceNote": "24-48 hour maturation allows ganache moisture to migrate into the interior almond crumb, creating the iconic chewy center inside a brittle shell.",
+        "timerMins": 1440
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Toasted almond marzipan, bittersweet dark chocolate, caramelized sugar",
+      "texture": "Crisp paper-delicate shell crack giving way instantly to dense, chewy, melt-in-mouth ganache core",
+      "finish": "Persistent 66% cacao richness balanced by sweet almond finish"
+    },
+    "scienceNotes": "The Italian meringue method provides far greater batch-to-batch consistency than the French method because hot sugar syrup denatures and sets the egg white protein matrix before baking. The double baking pan protects delicate bottom bases from scorch.",
+    "troubleshooting": {
+      "No feet formed / cracked tops": "Batter did not rest long enough to form a dry skin, or oven temperature was too high.",
+      "Hollow shells": "Meringue was overwhipped or oven had uneven airflow; ensure oven vents steam properly.",
+      "Lopsided shells": "Piping bag was tilted at an angle instead of strict 90° vertical, or oven convection fan was too strong."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Almond Flour",
+        "substitute": "Pistachio Flour or Hazelnut Flour (extra fine)",
+        "ratio": "1:1 by weight"
+      },
+      {
+        "ingredient": "Dark Chocolate Ganache",
+        "substitute": "Passionfruit White Chocolate Ganache or Salted Butter Caramel",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Darjeeling First Flush Tea",
+      "Champagne Rosé",
+      "Espresso",
+      "Cognac"
+    ],
+    "advancedTechnique": "Dusting raw piped shells with freeze-dried raspberry powder or gold luster dust through a stencil before baking.",
+    "storageAndReheating": "Must mature 24h in fridge before eating! Keep refrigerated up to 7 days, or freeze airtight up to 3 months.",
+    "nutritionEstimates": {
+      "calories": 140,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 7
+    },
+    "relatedRecipes": [
+      "rec-opera-cake",
+      "rec-madeleines-commercy",
+      "rec-paris-brest"
+    ],
+    "relatedTechniques": [
+      "Italian meringue sugar calibration",
+      "Macaronage lava ribbon stage",
+      "Maturation moisture osmosis"
+    ]
+  },
+  {
+    "id": "rec-profiteroles",
+    "title": "Profiteroles au Chocolat Noir & Glace Vanille (Warm Ganache Pour)",
+    "cuisine": "French / Classical Bistro",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 30,
+    "cookMins": 25,
+    "totalMins": 55,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The Parisian brasserie icon: crisp, golden choux pastry puffs hollowed and filled à la minute with artisanal Madagascar vanilla bean ice cream, draped in warm, glossy bittersweet 70% dark chocolate sauce and toasted sliced almonds.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Contrast of crisp warm pastry, freezing vanilla cream, and cascading hot bittersweet chocolate sauce",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "cold",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Water",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "filtered",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 55,
+        "unit": "g",
+        "prep": "cubed",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Sugar",
+        "qty": 5,
+        "unit": "g",
+        "prep": "for dough color",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 2,
+        "unit": "g",
+        "prep": "fine pinch",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Bread Flour (High Protein)",
+        "qty": 70,
+        "unit": "g",
+        "prep": "sifted (bread flour ensures hollow puff)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "beaten (approx 100-110g)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Artisanal Madagascar Vanilla Bean Ice Cream",
+        "qty": 500,
+        "unit": "g",
+        "prep": "firm scoops",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Valrhona Guanaja 70% Chocolate",
+        "qty": 150,
+        "unit": "g",
+        "prep": "finely chopped",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 150,
+        "unit": "ml",
+        "prep": "for warm sauce",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Toasted Sliced Almonds",
+        "qty": 30,
+        "unit": "g",
+        "prep": "golden roasted",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Piping Bag with 12mm Round Tip",
+        "type": "Pâtisserie Tool"
+      },
+      {
+        "name": "Heavy Baking Sheet with Silpat",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Small Copper Saucepan for Ganache",
+        "type": "Cookware"
+      },
+      {
+        "name": "Serrated Paring Knife",
+        "type": "Cutlery"
+      }
+    ],
+    "miseEnPlace": [
+      "Preheat oven to 400°F (200°C).",
+      "Prepare choux panades by boiling milk, water, butter, sugar, and salt.",
+      "Pre-scoop 18 small perfect spheres of vanilla ice cream onto a parchment tray and hold in deep freeze."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Choux Panade: Bring milk, water, butter, sugar, and salt to a rolling boil in a heavy saucepan. Dump in all flour at once. Stir vigorously with a wooden spoon over medium heat for 2 full minutes until the dough forms a smooth mass and leaves a thin starch film on bottom of pan.",
+        "sensoryCue": "Dough pulls away cleanly from pan sides; thin white haze lines pan bottom.",
+        "scienceNote": "Cooking the panade gelatinizes wheat starches (amylose and amylopectin) allowing them to absorb maximum water, which converts to steam in the oven to expand the hollow cavern.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 2,
+        "text": "Transfer hot panade to a stand mixer bowl (or cool 3 mins by hand). Beat on low 1 minute to release steam. Slowly add beaten eggs in 4 additions, beating until each is absorbed. Batter is ready when it falls off spatula in a glossy V-shaped hanging ribbon.",
+        "sensoryCue": "Shiny, satiny dough that forms a smooth hanging triangle from spatula tip.",
+        "scienceNote": "Adding eggs too quickly breaks the emulsion. Egg albumin sets the outer shell structure while yolk lecithin stabilizes trapped water.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 3,
+        "text": "Pipe 18 uniform 3.5cm mounds onto Silpat-lined sheet. Dampen finger with water and flatten any pointed tips. Bake at 400°F (200°C) for 15 minutes without opening oven door; reduce to 350°F (175°C) and bake 10 more minutes until deeply golden and bone-dry. Poke small steam hole in base of each puff with a skewer and cool on wire rack.",
+        "sensoryCue": "Lightweight, golden-amber hollow spheres with hollow resonance when tapped.",
+        "scienceNote": "Never open the oven door during the first 15 minutes; sudden temperature drop condenses steam before egg proteins set, causing catastrophic puff collapse.",
+        "timerMins": 25
+      },
+      {
+        "stepNum": 4,
+        "text": "Prepare Warm Chocolate Sauce: Scald heavy cream with a pinch of sea salt. Pour over chopped 70% chocolate in a bowl. Let sit 1 minute, then stir from center outward until velvety, glossy, and fluid. Keep warm at 115-120°F (46°C).",
+        "sensoryCue": "Deep glossy dark chocolate sauce with zero air bubbles.",
+        "scienceNote": "Maintaining sauce temperature at 115°F ensures smooth cascading viscosity without melting the ice cream immediately upon table delivery.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 5,
+        "text": "Assembly (à la minute): Slice top third off each choux puff with a serrated knife. Place a frozen scoop of vanilla bean ice cream inside bottom cavity. Replace pastry cap. Arrange 3 filled profiteroles per chilled coupe or plate. Cascade hot chocolate sauce generously over tops at tableside; scatter toasted almonds.",
+        "sensoryCue": "Dramatic tableside pour; steam from hot chocolate rising against frozen ice cream.",
+        "scienceNote": "Dynamic contrast: sensory receptors detect concurrent hot chocolate (115°F), room-temp crisp choux (70°F), and freezing ice cream (10°F).",
+        "timerMins": 3
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Warm dark cocoa, toasted butter pastry, chilled vanilla bean cream, roasted almonds",
+      "texture": "Crisp dry pastry crunch, freezing silky ice cream melt, warm velvety ganache blanket",
+      "finish": "Classic Parisian balance of bitter dark cacao and pure sweet cream"
+    },
+    "scienceNotes": "Profiteroles showcase temperature and moisture contrast. The hollow choux structure acts as an insulating chamber: its low thermal conductivity keeps the ice cream cold while supporting the warm chocolate drape.",
+    "troubleshooting": {
+      "Puffs collapse into flat disks": "Oven door was opened too early, or puffs were removed before moisture baked out of walls.",
+      "Puffs are dense inside, not hollow": "Panade was not cooked long enough on stovetop, or too much egg was incorporated.",
+      "Chocolate sauce splits or seizes": "Cream boiled too violently or water dripped into melting chocolate."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Vanilla Ice Cream",
+        "substitute": "Pistachio Gelato, Hazelnut Gelato, or Crème Diplomat",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "70% Dark Chocolate",
+        "substitute": "Gianduja Chocolate (hazelnut milk chocolate)",
+        "ratio": "1:1 for sweeter profile"
+      }
+    ],
+    "flavorPairings": [
+      "Espresso",
+      "Cognac VSOP",
+      "Amaretto di Saronno",
+      "Fresh Raspberries"
+    ],
+    "advancedTechnique": "Craquelin topping: topping choux mounds with a thin disc of brown sugar-butter dough before baking for crunchy crackled surface.",
+    "storageAndReheating": "Choux puffs can be baked ahead and stored airtight for 2 days; re-crisp at 350°F for 4 mins before filling. Must assemble immediately before serving.",
+    "nutritionEstimates": {
+      "calories": 420,
+      "protein": 7,
+      "carbs": 38,
+      "fat": 26
+    },
+    "relatedRecipes": [
+      "rec-eclairs-chocolat",
+      "rec-paris-brest",
+      "rec-chocolate-lava"
+    ],
+    "relatedTechniques": [
+      "Choux panade starch gelatinization",
+      "Steam cavern expansion",
+      "Dynamic temperature plating"
+    ]
+  },
+  {
+    "id": "rec-financiers-amandes",
+    "title": "Financiers aux Amandes et Beurre Noisette (Golden Almond Tea Cakes)",
+    "cuisine": "French / Classical Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 15,
+    "cookMins": 14,
+    "totalMins": 29,
+    "yieldServings": 12,
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The miniature gold bars of French baking. Created near the Paris Stock Exchange in the late 19th century: tender, moist almond flour tea cakes infused with deeply caramelized hazelnut-browned butter (beurre noisette) and egg whites.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Deeply aromatic nutty browned butter, moist chewy almond crumb, crisp caramelized perimeter",
+    "ingredients": [
+      {
+        "name": "Unsalted European Butter",
+        "qty": 130,
+        "unit": "g",
+        "prep": "browned down to approx 100g net hazelnut fat",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Superfine Blanched Almond Flour",
+        "qty": 60,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Icing / Powdered Sugar",
+        "qty": 120,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Pastry Flour",
+        "qty": 45,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Egg Whites",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "approx 100g, room temp, unbeaten",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Pure Vanilla Bean Paste",
+        "qty": 5,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 2,
+        "unit": "g",
+        "prep": "fine pinch",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Flaked Almonds",
+        "qty": 20,
+        "unit": "g",
+        "prep": "for top garniture",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Traditional Rectangular Financier Mold (or mini muffin tin)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Small Light-Bottom Saucepan",
+        "type": "Cookware"
+      },
+      {
+        "name": "Fine Mesh Sieve",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Brown butter until foaming subsides and milk solids turn deep chestnut brown with hazelnut aroma; strain through fine sieve and cool to lukewarm (110°F).",
+      "Preheat oven to 390°F (200°C).",
+      "Butter rectangular financier molds thoroughly with melted butter and dust with flour (or use nonstick silicone)."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Beurre Noisette: Melt butter in small saucepan over medium heat. Whisk as it crackles and foams. Watch as foam subsides and toasted golden-brown specks collect at bottom of pan with intense roasted hazelnut aroma. Immediately pour into a clean bowl to stop cooking.",
+        "sensoryCue": "Deep amber hue with nutty, toasty perfume.",
+        "scienceNote": "Maillard reaction occurs between milk lactose sugars and milk proteins at 265-285°F, synthesizing aromatic lactones, pyrazines, and furans.",
+        "timerMins": 6
+      },
+      {
+        "stepNum": 2,
+        "text": "In a medium bowl, whisk together sifted almond flour, powdered sugar, flour, and fine salt. Add unbeaten egg whites and vanilla paste. Whisk gently just until a smooth batter forms (do not whip or incorporate air).",
+        "sensoryCue": "Smooth, pale ivory batter.",
+        "scienceNote": "Financiers rely on dense moisture rather than leavening; keeping egg whites unwhipped prevents cake from doming and cracking.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Gradually pour the lukewarm browned butter into batter in a steady stream while whisking gently until completely emulsified and glossy.",
+        "sensoryCue": "Liquid gold emulsion with golden specks.",
+        "scienceNote": "Lukewarm butter (110°F) emulsifies seamlessly with egg whites without cooking them or separating.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Divide batter evenly among prepared financier molds filling 80% full. Scatter a few flaked almonds across tops. Rest batter in molds for 10 minutes at room temp.",
+        "sensoryCue": "Level batter with glistening almond flakes.",
+        "scienceNote": "Resting allows starch granules to hydrate, yielding tender crumb.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 5,
+        "text": "Bake at 390°F (200°C) for 12 to 14 minutes until edges are crisp and golden-bronze and centers spring back when lightly touched with fingertip. Cool in molds 5 minutes, then turn out onto a wire rack to cool completely.",
+        "sensoryCue": "Crisp golden rectangular bars with golden edges and tender springy center.",
+        "scienceNote": "High heat creates crisp caramelized outer edges while high fat content retains moist interior.",
+        "timerMins": 13
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Nutty browned butter, toasted sweet almond, floral vanilla, warm caramel",
+      "texture": "Crisp, crackly outer edge yielding to moist, chewy, buttery almond crumb",
+      "finish": "Rich buttery finish with clean roasted nut aftertaste"
+    },
+    "scienceNotes": "Unlike madeleines which whip whole eggs to generate a towering hump, financiers intentionally use unwhipped egg whites. The egg white proteins coagulate into a firm yet moist matrix that suspends the high concentration of browned butter fat.",
+    "troubleshooting": {
+      "Greasy or heavy cake": "Brown butter was too hot when added, or batter was under-mixed.",
+      "Cakes stick to pan": "Molds were insufficiently buttered; use softened butter brushed in upward strokes and chilled.",
+      "Financiers are pale and soft": "Oven temperature was too low; high heat (390°F) is required for caramelized crust."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Almond Flour",
+        "substitute": "Pistachio Flour or Hazelnut Flour",
+        "ratio": "1:1 for stunning color/flavor"
+      },
+      {
+        "ingredient": "Rectangular Molds",
+        "substitute": "Standard Mini Muffin Pan",
+        "ratio": "Bake 10-12 minutes"
+      }
+    ],
+    "flavorPairings": [
+      "Espresso",
+      "Green Sencha Tea",
+      "Fresh Blackberries",
+      "Calvados"
+    ],
+    "advancedTechnique": "Studding each unbaked financier with two fresh raspberries for tart acid bursts against the rich butter crumb.",
+    "storageAndReheating": "Store airtight at room temperature for up to 4 days. Crisp in 350°F oven for 2 minutes before enjoying.",
+    "nutritionEstimates": {
+      "calories": 160,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 11
+    },
+    "relatedRecipes": [
+      "rec-madeleines-commercy",
+      "rec-caneles-bordeaux",
+      "rec-french-macarons"
+    ],
+    "relatedTechniques": [
+      "Beurre noisette caramelization",
+      "Unwhipped albumin emulsion",
+      "High-heat perimeter crusting"
+    ]
+  },
+  {
+    "id": "rec-grand-marnier-souffle",
+    "title": "Soufflé Chaud au Grand Marnier (Warm Citrus Cloud with Powdered Sugar)",
+    "cuisine": "French / Classical Haute Cuisine",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Advanced",
+    "prepMins": 25,
+    "cookMins": 14,
+    "totalMins": 39,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The ethereal pinnacle of Parisian restaurant dining. A towering hot dessert soufflé infused with orange zest and Grand Marnier liqueur, rising 2 inches straight above the ramekin rim with a golden top and molten citrus cream core.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Airy, cloud-like lightness with fragrant citrus orange liqueur, warm vanilla, and powdered sugar melt",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "qty": 180,
+        "unit": "ml",
+        "prep": "farm fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Grand Marnier Cordon Rouge Liqueur",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "cognac & bitter orange",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Fresh Navel Orange Zest",
+        "qty": 5,
+        "unit": "g",
+        "prep": "finely microplaned",
+        "dept": "Produce"
+      },
+      {
+        "name": "Egg Yolks",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "approx 55g",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Whites",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "approx 140g, room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 65,
+        "unit": "g",
+        "prep": "divided: 35g base, 30g meringue",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cornstarch (Maizena)",
+        "qty": 20,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Flour",
+        "qty": 10,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Softened Butter & Granulated Sugar",
+        "qty": 30,
+        "unit": "g",
+        "prep": "for ramekin preparation",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Powdered Sugar",
+        "qty": 15,
+        "unit": "g",
+        "prep": "for tableside dusting",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Four 6-oz Straight-Sided Ceramic Soufflé Ramekins",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Pastry Brush",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Copper or Stainless Steel Whisking Bowl",
+        "type": "Cookware"
+      },
+      {
+        "name": "Baking Sheet",
+        "type": "Bakeware"
+      }
+    ],
+    "miseEnPlace": [
+      "Preheat oven to 390°F (200°C) with baking sheet on center rack.",
+      "Ramekin Prep: Brush softened butter in vertical upward strokes along interior walls. Chill 5 mins, apply second vertical butter layer, then coat with granulated sugar, tapping out excess.",
+      "Separate eggs cleanly; egg whites must have zero traces of yolk or fat."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Orange Pastry Cream Base: Scald milk with orange zest. In a bowl, whisk yolks, 35g castor sugar, cornstarch, and flour until pale. Temper hot milk into yolks, return to pan, and whisk constantly over medium heat until it bubbles and thickens into a dense pastry cream (2 mins). Remove from heat, whisk in Grand Marnier liqueur. Transfer to bowl and cool to lukewarm (100°F).",
+        "sensoryCue": "Thick, fragrant orange pastry cream with glossy sheen.",
+        "scienceNote": "Cornstarch and flour starch granules gelatinize, creating a stabilized matrix that suspends liqueur and prevents water weeping.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Whip French Meringue: Whip room temperature egg whites on medium speed until foamy. Gradually rain in 30g castor sugar, increasing speed to medium-high. Whip until glossy medium-firm peaks form with gentle curled tip (do not whip to dry stiff peaks).",
+        "sensoryCue": "Gleaming white cloud; tip droops slightly when whisk is inverted.",
+        "scienceNote": "Medium-firm peaks retain elasticity; overwhipping stretches egg albumin protein bonds too thin, causing premature collapse and ragged expansion.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 3,
+        "text": "Fold: Whisk 1/4 of the meringue aggressively into the lukewarm pastry cream base to lighten its density. Then gently fold in the remaining meringue in two additions with a flexible silicone spatula, cutting down the center, sweeping along bottom, and folding over.",
+        "sensoryCue": "Fluffy, uniform, pale apricot-tinted aerated mousse.",
+        "scienceNote": "Lightening the base first prevents the heavy pastry cream from deflating delicate air cells in the second fold.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 4,
+        "text": "Fill & Crown: Divide batter among the 4 prepared ramekins, filling slightly above the rim. Level flat across the top with a straight metal spatula. Run thumb around inner top edge of each ramekin to create a 2mm moat/gap between batter and rim.",
+        "sensoryCue": "Immaculate flat surface with clean recessed perimeter groove.",
+        "scienceNote": "The thumb groove decouples the rising soufflé from the rim, preventing it from catching and tilting, ensuring a straight vertical rise.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 5,
+        "text": "Place ramekins on the preheated baking sheet. Bake at 390°F (200°C) for 13 to 14 minutes without opening oven door. Soufflés will rise 1.5 to 2 inches straight above the rim with golden crowns. Immediately dust with powdered sugar and serve within 90 seconds.",
+        "sensoryCue": "Towering vertical cylinder, trembling gently, fragrant citrus aroma.",
+        "scienceNote": "Thermal expansion of trapped air bubbles combined with water turning to steam lifts the elastic coagulating egg protein walls.",
+        "timerMins": 14
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Sweet orange blossom, Grand Marnier cognac, caramelized sugar, vanilla",
+      "texture": "Ethereal, melting cloud texture with molten warm citrus cream center",
+      "finish": "Warm cognac liqueur hum and bright citrus oil acidity"
+    },
+    "scienceNotes": "Charles's Law dictates that gas volume expands proportionally with temperature. Millions of micro-bubbles trapped in the meringue expand rapidly as they reach 160-180°F, while egg ovalbumin proteins denature and solidify around them, creating a self-supporting edible foam skyscraper.",
+    "troubleshooting": {
+      "Soufflé rises lopsided or tilts": "Ramekin was not buttered in vertical upward strokes, or thumb groove was skipped.",
+      "Soufflé deflates instantly upon leaving oven": "Normal after 3-4 minutes, but if it collapses within 30 seconds it was underbaked in center.",
+      "Dense rubbery texture": "Meringue was over-folded or over-whipped to dry stiff peaks."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Grand Marnier",
+        "substitute": "Cointreau, Triple Sec, or Dark Rum",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Orange Zest",
+        "substitute": "Meyer Lemon Zest or Passionfruit Puree",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Crème Anglaise Pour",
+      "Dark Espresso",
+      "Champagne Demi-Sec",
+      "Candied Orange Peel"
+    ],
+    "advancedTechnique": "Cracking center tableside with two spoons and pouring warm vanilla bean crème anglaise directly into the molten core.",
+    "storageAndReheating": "Must be baked and served immediately. Unbaked ramekins can be held in refrigerator for up to 30 minutes before baking.",
+    "nutritionEstimates": {
+      "calories": 230,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 8
+    },
+    "relatedRecipes": [
+      "rec-souffle-chocolat",
+      "rec-creme-brulee",
+      "rec-creme-caramel"
+    ],
+    "relatedTechniques": [
+      "Vertical upward ramekin buttering",
+      "French meringue elasticity control",
+      "Thumb perimeter groove release"
+    ]
+  },
+  {
+    "id": "rec-lemon-curd-bars",
+    "title": "French Meyer Lemon Curd Shortbread Bars (Tartelette Bars)",
+    "cuisine": "French / Classical Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 20,
+    "cookMins": 35,
+    "totalMins": 55,
+    "yieldServings": 16,
+    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The ultimate bakery bar: rich, buttery, melt-in-mouth sablé shortbread crust par-baked to golden perfection, topped with a thick, satiny, ultra-tart Meyer lemon curd baked gently until custardy and dusted with snowy confectioners' sugar.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Vibrant electrifying citrus acidity balanced by buttery crumbly shortbread base",
+    "ingredients": [
+      {
+        "name": "Unsalted European Butter (82% fat)",
+        "qty": 225,
+        "unit": "g",
+        "prep": "softened at room temp",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Powdered / Icing Sugar",
+        "qty": 80,
+        "unit": "g",
+        "prep": "sifted for crust",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Pastry Flour",
+        "qty": 260,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 3,
+        "unit": "g",
+        "prep": "divided: 2g crust, 1g curd",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fresh Meyer Lemons (Juice & Zest)",
+        "qty": 180,
+        "unit": "ml",
+        "prep": "freshly squeezed (approx 4-5 lemons) + 10g zest",
+        "dept": "Produce"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 300,
+        "unit": "g",
+        "prep": "fine crystals for curd",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 6,
+        "unit": "whole",
+        "prep": "room temperature (approx 300g)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "All-Purpose Flour",
+        "qty": 45,
+        "unit": "g",
+        "prep": "sifted (stabilizer for curd)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Powdered Sugar",
+        "qty": 20,
+        "unit": "g",
+        "prep": "for finishing dust",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "9x13-inch Rectangular Metal Baking Pan",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Parchment Paper with Overhang Slings",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Microplane Zester",
+        "type": "Cutlery"
+      },
+      {
+        "name": "Fine Mesh Sieve",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Line a 9x13 metal pan with parchment paper, leaving 2-inch overhangs on all sides; butter lightly.",
+      "Preheat oven to 350°F (175°C).",
+      "Zest Meyer lemons before squeezing juice; strain juice to remove seeds and pulp."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Sablé Shortbread Crust: In a bowl, cream softened butter and sifted powdered sugar for 2 minutes until pale and creamy. Add flour and sea salt; mix on low speed just until dough comes together into moist clumps. Press evenly into bottom of prepared pan using flat bottom of measuring cup.",
+        "sensoryCue": "Even, flat, buttery dough base filling pan corners.",
+        "scienceNote": "Powdered sugar contains finely pulverized starch and dissolves immediately, creating a delicate melt-in-mouth crumb (sablé) rather than a tough cracker.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Par-bake crust at 350°F (175°C) for 20 minutes until edges are light golden brown and surface is dry to the touch.",
+        "sensoryCue": "Buttery, toasted biscuit aroma and light golden edges.",
+        "scienceNote": "Par-baking sets crust starch network so hot lemon curd batter cannot penetrate and create a soggy base.",
+        "timerMins": 20
+      },
+      {
+        "stepNum": 3,
+        "text": "Make Meyer Lemon Curd: Rub fresh lemon zest into granulated sugar with fingertips for 1 minute to express citrus essential oils. Whisk in whole eggs until smooth. Whisk in sifted 45g flour and 1g salt until no lumps remain. Slowly whisk in fresh lemon juice.",
+        "sensoryCue": "Intense fragrant citrus oil aroma; smooth golden liquid.",
+        "scienceNote": "Abrading lemon zest with sucrose crystals bursts microscopic oil sacs, extracting terpene aromatics (limonene and citral) directly into the sugar matrix.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 4,
+        "text": "Pour curd mixture directly onto the warm par-baked crust. Lower oven temperature to 325°F (165°C). Bake for 20 to 22 minutes until curd is set around edges and center has just a slight jiggle (probe reads 170°F / 77°C).",
+        "sensoryCue": "Matte yellow surface with slight gentle wobble in center.",
+        "scienceNote": "Baking at lower 325°F prevents egg proteins from scrambling or forming air blisters, producing a glass-smooth custard.",
+        "timerMins": 22
+      },
+      {
+        "stepNum": 5,
+        "text": "Cool completely in pan on wire rack for 1 hour, then refrigerate for at least 2 hours until firm. Use parchment sling to lift slab out onto cutting board. Dust heavily with sifted powdered sugar. Slice with a hot clean chef's knife into 16 bars.",
+        "sensoryCue": "Crisp straight cuts; glistening bright yellow curd against snow-white powdered sugar.",
+        "scienceNote": "Chilling solidifies butterfat in the crust and gelatinizes egg proteins in the curd for clean, non-smearing edges.",
+        "timerMins": 120
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Fresh zesty lemon oil, rich caramelized butter shortbread, powdered sugar",
+      "texture": "Crisp, crumbly buttery base meeting silky, luscious, melt-in-mouth citrus curd",
+      "finish": "Electrifying lemon tartness that refreshes the palate, rounded by sweet butter"
+    },
+    "scienceNotes": "Meyer lemons have higher sugar content and lower acidity (pH ~2.5-3.0) than standard Eureka lemons, with floral, herbal notes reminiscent of mandarin orange and thyme. The flour in the curd gelatinizes at 165°F, preventing egg syneresis even with high lemon acid concentrations.",
+    "troubleshooting": {
+      "Curd separates or forms air bubbles": "Oven was too hot; curd boiled and scrambled. Bake strictly at 325°F.",
+      "Soggy crust bottom": "Crust was under-baked during par-bake, or curd was poured onto cold crust.",
+      "Powdered sugar melts into puddles": "Sugar was dusted while bars were still warm; dust only immediately before serving."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Meyer Lemons",
+        "substitute": "Standard Eureka Lemons mixed with 20% Fresh Orange Juice",
+        "ratio": "1:1 total liquid"
+      },
+      {
+        "ingredient": "Meyer Lemon Juice",
+        "substitute": "Fresh Key Lime Juice or Passionfruit Pulp",
+        "ratio": "1:1 for tropical twist"
+      }
+    ],
+    "flavorPairings": [
+      "Earl Grey Tea",
+      "Iced Espresso",
+      "Fresh Raspberries",
+      "Elderflower Spritz"
+    ],
+    "advancedTechnique": "Infusing lemon juice with fresh lemon verbena leaves before whisking into curd.",
+    "storageAndReheating": "Store bars in airtight container in refrigerator up to 5 days. Re-dust with powdered sugar just before serving.",
+    "nutritionEstimates": {
+      "calories": 280,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 13
+    },
+    "relatedRecipes": [
+      "rec-shattered-lemon-tart",
+      "rec-key-lime-pie",
+      "rec-madeleines-commercy"
+    ],
+    "relatedTechniques": [
+      "Zest sucrose abrasion",
+      "Par-baked sablé sealing",
+      "Low-temperature curd coagulation"
+    ]
+  },
+  {
+    "id": "rec-bread-pudding-bourbon",
+    "title": "New Orleans Brioche Bread Pudding with Bourbon Crème Anglaise",
+    "cuisine": "American / Creole Classical",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 25,
+    "cookMins": 45,
+    "totalMins": 70,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The crown jewel of French Quarter comfort: cubes of rich, buttery day-old brioche soaked in vanilla-cinnamon-nutmeg custard with plumped bourbon raisins, baked until puffed and golden with crisp caramelized edges, drowned in warm Kentucky bourbon hard sauce.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Warm, custardy interior, crisp caramelized top crust, heady oaky bourbon and brown sugar richness",
+    "ingredients": [
+      {
+        "name": "Day-Old Artisanal Brioche Loaf",
+        "qty": 450,
+        "unit": "g",
+        "prep": "cut into 1-inch cubes",
+        "dept": "Bakery"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 350,
+        "unit": "ml",
+        "prep": "fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Whole Milk",
+        "qty": 250,
+        "unit": "ml",
+        "prep": "farm fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Yolks",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "room temp",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "qty": 150,
+        "unit": "g",
+        "prep": "packed",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Granulated White Sugar",
+        "qty": 50,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Kentucky Straight Bourbon Whiskey",
+        "qty": 80,
+        "unit": "ml",
+        "prep": "divided: 30ml soaking, 50ml sauce",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Golden Thompson Raisins",
+        "qty": 90,
+        "unit": "g",
+        "prep": "plumped in warm bourbon",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Ground Cinnamon & Fresh Grated Nutmeg",
+        "qty": 6,
+        "unit": "g",
+        "prep": "freshly grated",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Pure Vanilla Bean Paste",
+        "qty": 10,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 85,
+        "unit": "g",
+        "prep": "for bourbon sauce",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Powdered Sugar",
+        "qty": 100,
+        "unit": "g",
+        "prep": "for sauce emulsion",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "9x9-inch Ceramic or Cast Iron Baking Dish",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Large Mixing Bowl",
+        "type": "Cookware"
+      },
+      {
+        "name": "Small Saucepan for Bourbon Sauce",
+        "type": "Cookware"
+      }
+    ],
+    "miseEnPlace": [
+      "Cut brioche into 1-inch cubes; spread on baking sheet and toast at 300°F for 10 minutes to dry out (dry bread absorbs maximum custard).",
+      "Macerate raisins in 30ml warm bourbon for 20 minutes.",
+      "Butter baking dish generously with softened butter."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Whisk whole eggs, extra yolks, dark brown sugar, granulated sugar, vanilla paste, cinnamon, grated nutmeg, and fine salt in a large bowl until sugar dissolves. Whisk in heavy cream and whole milk until smooth and uniform.",
+        "sensoryCue": "Fragrant spice-flecked custard batter with caramel tones.",
+        "scienceNote": "High proportion of egg yolks and cream fat (approx 20% milkfat) prevents the bread pudding from turning spongy or rubbery.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 2,
+        "text": "Add dried brioche cubes and plumped bourbon raisins (with soaking liquid) to the bowl. Gently press bread down into custard so every cube is submerged. Let stand undisturbed for 20 minutes at room temperature.",
+        "sensoryCue": "Bread cubes drink up liquid, swelling into soft pillowy sponges.",
+        "scienceNote": "Capillary action draws custard into the open crumb pores of dried bread; resting ensures center of bread cubes are fully saturated, avoiding dry pockets.",
+        "timerMins": 20
+      },
+      {
+        "stepNum": 3,
+        "text": "Transfer soaked bread and all remaining custard into the buttered baking dish, gently arranging top cubes with peaks and edges sticking up (these will crisp into crunchy golden croutons). Dot top with 20g butter and sprinkle with coarse sugar.",
+        "sensoryCue": "Irregular textured surface with glistening sugar crystals.",
+        "scienceNote": "Exposed peaks undergo rapid surface dehydration and caramelization, creating contrast against the moist pudding beneath.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake at 350°F (175°C) for 42 to 45 minutes until puffed like a soufflé, deeply bronzed, and a knife inserted in center emerges hot and clean (custard temp 175°F / 80°C).",
+        "sensoryCue": "Towering puffed pudding with crackly caramelized peaks and rich bourbon spice aroma.",
+        "scienceNote": "Egg proteins coagulate between 160-175°F, locking the custard and swollen brioche into a cohesive, trembling pudding.",
+        "timerMins": 45
+      },
+      {
+        "stepNum": 5,
+        "text": "Make Warm Bourbon Hard Sauce: Melt 85g butter in saucepan over low heat. Whisk in powdered sugar and pinch of salt. Whisk in 50ml bourbon and 30ml heavy cream. Simmer gently 2 minutes until glossy and emulsified. Pour warm sauce over warm sliced pudding at service.",
+        "sensoryCue": "Silky, golden amber sauce cascading over puffed brioche.",
+        "scienceNote": "Alcohol volatile esters vaporize upon meeting hot pudding, delivering an intoxicating aromatic burst at the table.",
+        "timerMins": 5
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Kentucky oak bourbon, brown sugar molasses, toasted brioche butter, grated nutmeg",
+      "texture": "Crisp crunchy toasted peaks yielding to ultra-moist, creamy, melt-in-mouth custard",
+      "finish": "Warming bourbon alcohol notes balanced by sweet dairy cream and raisins"
+    },
+    "scienceNotes": "Bread pudding relies on stale or toasted bread because fresh bread collapses into gluey paste when wet. Starch retrogradation in dried bread maintains cellular structure, allowing the egg custard to fill microscopic air voids without destroying the crumb architecture.",
+    "troubleshooting": {
+      "Soggy mushy center": "Too much custard for bread volume, or pudding was under-baked. Probe center to 175°F.",
+      "Dry and chalky": "Bread was soaked insufficiently or over-baked past 185°F, causing egg curdling.",
+      "Sauce breaks oily": "Sauce boiled too vigorously; keep heat low and whisk constantly."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Brioche",
+        "substitute": "Challah, Croissants, or Panettone",
+        "ratio": "1:1 by weight"
+      },
+      {
+        "ingredient": "Kentucky Bourbon",
+        "substitute": "Dark Spiced Rum or Cognac",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Dark Chicory Coffee",
+      "Vanilla Bean Gelato",
+      "Pecan Pralines",
+      "Rye Whiskey"
+    ],
+    "advancedTechnique": "Flambéing the bourbon in a copper saucepan before whisking into the butter sauce for toasted caramelized notes.",
+    "storageAndReheating": "Refrigerate up to 4 days covered. Reheat individual portions in 350°F oven for 8 minutes to restore crisp peaks.",
+    "nutritionEstimates": {
+      "calories": 460,
+      "protein": 8,
+      "carbs": 52,
+      "fat": 24
+    },
+    "relatedRecipes": [
+      "rec-bourbon-pecan-pie",
+      "rec-brioche-french-toast",
+      "rec-creme-caramel"
+    ],
+    "relatedTechniques": [
+      "Starch retrogradation absorption",
+      "Custard coagulation monitoring",
+      "Spirits volatile emulsification"
+    ]
+  },
+  {
+    "id": "rec-peach-blackberry-cobbler",
+    "title": "Cast-Iron Bourbon Peach & Blackberry Cobbler with Buttermilk Biscuits",
+    "cuisine": "American / Southern Classical",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 25,
+    "cookMins": 40,
+    "totalMins": 65,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "summary": "Rustic summer perfection in a seasoned cast-iron skillet. Ripe peaches and wild plump blackberries tossed in brown sugar, bourbon, and lemon, topped with fluffy, golden-crusted cream buttermilk drop biscuits and raw turbinado sugar.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Bubbling sweet-tart fruit juices, fragrant bourbon and peach perfume, flaky tender buttermilk biscuits",
+    "ingredients": [
+      {
+        "name": "Ripe Yellow Peaches",
+        "qty": 900,
+        "unit": "g",
+        "prep": "sliced 1/2-inch thick (approx 6 peaches)",
+        "dept": "Produce"
+      },
+      {
+        "name": "Fresh Wild Blackberries",
+        "qty": 250,
+        "unit": "g",
+        "prep": "rinsed and dried",
+        "dept": "Produce"
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "qty": 100,
+        "unit": "g",
+        "prep": "packed",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 50,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cornstarch (Maizena)",
+        "qty": 25,
+        "unit": "g",
+        "prep": "for fruit thickening",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fresh Lemon Juice & Zest",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "for brightness",
+        "dept": "Produce"
+      },
+      {
+        "name": "Bourbon Whiskey",
+        "qty": 30,
+        "unit": "ml",
+        "prep": "straight bourbon",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Ground Cinnamon & Ginger",
+        "qty": 4,
+        "unit": "g",
+        "prep": "ground fine",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "All-Purpose Pastry Flour",
+        "qty": 220,
+        "unit": "g",
+        "prep": "sifted for biscuits",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Baking Powder",
+        "qty": 10,
+        "unit": "g",
+        "prep": "aluminum-free",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cold Unsalted Butter",
+        "qty": 100,
+        "unit": "g",
+        "prep": "cubed small and chilled",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Cold Cultured Buttermilk",
+        "qty": 180,
+        "unit": "ml",
+        "prep": "full-fat",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Turbinado / Demerara Raw Sugar",
+        "qty": 25,
+        "unit": "g",
+        "prep": "for crunchy biscuit topping",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "10 or 12-inch Seasoned Cast-Iron Skillet",
+        "type": "Cookware"
+      },
+      {
+        "name": "Pastry Cutter or Food Processor",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Large Cookie Scoop (for drop biscuits)",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Preheat oven to 375°F (190°C).",
+      "Slice peaches and toss with lemon juice, zest, brown sugar, castor sugar, cornstarch, bourbon, and spices in cast-iron skillet.",
+      "Cut butter into flour and baking powder until pea-sized crumbs form; hold in freezer for 10 minutes."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Place cast-iron skillet with fruit mixture on stovetop over medium heat for 4 minutes, stirring gently until fruit juices begin to release and brown sugar melts into an aromatic syrup. Remove from heat; fold in fresh blackberries.",
+        "sensoryCue": "Glossy crimson-amber fruit juices beginning to simmer; sweet bourbon peach aroma.",
+        "scienceNote": "Pre-warming the fruit in the skillet jumpstarts starch gelatinization so fruit juices thicken simultaneously with biscuit baking, avoiding soggy biscuit bottoms.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 2,
+        "text": "Make Buttermilk Biscuit Dough: Add cold cultured buttermilk to the chilled butter-flour mixture. Stir with a fork just until a shaggy, wet dough forms (do not knead or overwork).",
+        "sensoryCue": "Tender, moist dough studded with visible butter shards.",
+        "scienceNote": "Minimal mixing limits gluten formation, while butter pieces melt in the oven leaving steam pockets that puff the biscuits into flaky layers.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Drop 8 large mounds of biscuit dough over the hot fruit using a scoop, leaving small cobblestone gaps for fruit juices to bubble up. Brush biscuit tops lightly with buttermilk and sprinkle heavily with raw turbinado sugar.",
+        "sensoryCue": "Chunky rustic dough mounds crowned with amber sugar crystals.",
+        "scienceNote": "Turbinado sugar has high melting point (365°F), preserving crunchy glass-like texture on top of tender biscuits.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake in cast-iron skillet at 375°F (190°C) for 38 to 42 minutes until biscuits are deep golden-bronze and fruit filling is bubbling aggressively throughout center (not just around edges).",
+        "sensoryCue": "Violently bubbling magenta fruit syrup; rich aroma of toasted butter and peaches.",
+        "scienceNote": "Cornstarch requires bubbling at 205°F to achieve complete gelatinization; if taken out before bubbling in the center, juices will remain runny upon cooling.",
+        "timerMins": 40
+      },
+      {
+        "stepNum": 5,
+        "text": "Let rest for 15 minutes before serving so thickened fruit juices stabilize into luscious jammy consistency. Serve warm directly from skillet with generous scoops of vanilla bean ice cream.",
+        "sensoryCue": "Melting ice cream rivers swirling into hot purple blackberry juices.",
+        "scienceNote": "Resting allows retrograded starch to increase sauce viscosity while retaining warmth in heat-retaining cast iron.",
+        "timerMins": 15
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Warm spiced peaches, tart bubbling blackberries, toasted buttermilk biscuit, bourbon",
+      "texture": "Crunchy turbinado sugar crunch on fluffy tender biscuit; jammy warm fruit",
+      "finish": "Bright fruit acidity cutting rich biscuit butter, lingering floral stone fruit finish"
+    },
+    "scienceNotes": "Seasoned cast-iron provides radiant thermal mass from below, cooking the underside of the drop biscuits through direct conduction so they never end up gummy or underdone.",
+    "troubleshooting": {
+      "Biscuits are gummy on bottom": "Fruit wasn't pre-warmed on stovetop, or cobbler was pulled before center bubbled.",
+      "Filling is watery and runny": "Cornstarch was under-measured or filling didn't reach full 205°F boil.",
+      "Biscuits browned too fast before cooking through": "Tent skillet loosely with aluminum foil for the final 15 minutes."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Yellow Peaches",
+        "substitute": "Nectarines, Plums, or Dark Sweet Cherries",
+        "ratio": "1:1 by weight"
+      },
+      {
+        "ingredient": "Cultured Buttermilk",
+        "substitute": "Heavy Cream with 1 tsp lemon juice",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Bourbon Vanilla Gelato",
+      "Fresh Mint Leaves",
+      "Sweet Iced Tea",
+      "Riesling Spätlese"
+    ],
+    "advancedTechnique": "Infusing peach slices with bruised fresh lemon thyme sprigs before baking.",
+    "storageAndReheating": "Cover loosely and keep at room temp 2 days or refrigerate 4 days. Re-warm in 350°F oven for 10 minutes.",
+    "nutritionEstimates": {
+      "calories": 380,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 15
+    },
+    "relatedRecipes": [
+      "rec-apple-cardamom-crumble",
+      "rec-bourbon-pecan-pie",
+      "rec-tarte-tatin"
+    ],
+    "relatedTechniques": [
+      "Cast-iron thermal conduction",
+      "Drop biscuit steam aeration",
+      "Starch gelatinization boiling point"
+    ]
+  },
+  {
+    "id": "rec-apple-cardamom-crumble",
+    "title": "Honeycrisp Apple & Blackberry Crumble with Rolled Oats & Clotted Cream",
+    "cuisine": "British / Classical Modern",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 20,
+    "cookMins": 35,
+    "totalMins": 55,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The ultimate autumn comfort dessert: crisp, tart Honeycrisp apples and wild blackberries spiced with green cardamom and cinnamon, buried beneath a thick blanket of buttery rolled oat, brown sugar, and toasted pecan crumble, served with thick clotted cream.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Warm spiced baked apples, tart blackberry bursts, deeply crunchy oat streusel, silky clotted cream",
+    "ingredients": [
+      {
+        "name": "Honeycrisp or Bramley Apples",
+        "qty": 800,
+        "unit": "g",
+        "prep": "peeled, cored, and sliced into 1/2-inch wedges",
+        "dept": "Produce"
+      },
+      {
+        "name": "Wild Blackberries",
+        "qty": 150,
+        "unit": "g",
+        "prep": "fresh or frozen",
+        "dept": "Produce"
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "qty": 120,
+        "unit": "g",
+        "prep": "divided: 40g fruit, 80g crumble",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fresh Lemon Juice",
+        "qty": 15,
+        "unit": "ml",
+        "prep": "freshly squeezed",
+        "dept": "Produce"
+      },
+      {
+        "name": "Ground Green Cardamom & Cinnamon",
+        "qty": 5,
+        "unit": "g",
+        "prep": "freshly ground",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "All-Purpose Flour",
+        "qty": 120,
+        "unit": "g",
+        "prep": "sifted for crumble",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Old Fashioned Rolled Oats",
+        "qty": 80,
+        "unit": "g",
+        "prep": "whole grain",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Pecan Pieces",
+        "qty": 60,
+        "unit": "g",
+        "prep": "toasted and chopped",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cold European Butter (82% fat)",
+        "qty": 115,
+        "unit": "g",
+        "prep": "cubed small and chilled",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "qty": 3,
+        "unit": "g",
+        "prep": "in crumble topping",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cornstarch",
+        "qty": 15,
+        "unit": "g",
+        "prep": "for fruit thickening",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "English Clotted Cream",
+        "qty": 150,
+        "unit": "g",
+        "prep": "thick dollops for serving",
+        "dept": "Dairy & Fats"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "9-inch Ceramic or Stoneware Pie Dish",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Large Mixing Bowl",
+        "type": "Cookware"
+      },
+      {
+        "name": "Pastry Blender or Fingers",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Preheat oven to 375°F (190°C).",
+      "Toss sliced apples with lemon juice, 40g brown sugar, cornstarch, cinnamon, and half the ground cardamom.",
+      "Butter the ceramic pie dish."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Transfer spiced apple slices into the buttered dish and scatter blackberries evenly throughout the apples.",
+        "sensoryCue": "Vibrant purple blackberries nestled between pale gold apple slices.",
+        "scienceNote": "Apple pectin and lemon citric acid interact with cornstarch to create a clear, glossy glaze as juices express during baking.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 2,
+        "text": "Make Cardamom Oat Streusel: In a bowl, combine flour, rolled oats, pecans, 80g dark brown sugar, remaining cardamom, and flaky sea salt. Rub the cold cubed butter into dry ingredients with fingertips until clumpy streusel clusters form ranging from pea to walnut size.",
+        "sensoryCue": "Uneven clusters that hold shape when squeezed in fist.",
+        "scienceNote": "Keeping butter cold ensures defined crunchy clusters form; melted butter would create a greasy paste that bakes flat.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Scatter the crumble clusters evenly over the fruit in a thick, generous layer, making sure fruit is completely covered to trap steam inside.",
+        "sensoryCue": "Thick, textured blanket of oats, pecans, and brown sugar clusters.",
+        "scienceNote": "The crumble topping acts as a thermal blanket, trapping steam underneath to tenderize the apples while radiant top heat toasts the oats.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake at 375°F (190°C) for 32 to 35 minutes until crumble is deep golden-brown and fragrant, and fruit juices bubble up around perimeter.",
+        "sensoryCue": "Nutty toasted aroma of roasted pecans and oats; thick amber syrup bubbling.",
+        "scienceNote": "Oat starches toast and brown sugars caramelize at 320°F, generating nutty pyrazines.",
+        "timerMins": 35
+      },
+      {
+        "stepNum": 5,
+        "text": "Cool 10 minutes. Spoon into bowls while piping hot and top each serving with a large quenelle of cold, dense English clotted cream.",
+        "sensoryCue": "Rich clotted cream slowly melting into the warm spiced fruit and crunchy oats.",
+        "scienceNote": "The 55% fat content in clotted cream provides an insulating dairy barrier that balances the tart fruit acids on the palate.",
+        "timerMins": 10
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Toasted rolled oats, warm green cardamom, caramelized apples, roasted pecans",
+      "texture": "Tremendous contrast: shatteringly crunchy oat crumble against tender, juicy apples and melting clotted cream",
+      "finish": "Exotic floral cardamom notes lingering behind rich dairy fat"
+    },
+    "scienceNotes": "Cardamom contains high concentrations of 1,8-cineole and terpinyl acetate, aromatic compounds that synergize chemically with the malic acid in tart apples, transforming a pedestrian apple bake into an extraordinary sensory experience.",
+    "troubleshooting": {
+      "Crumble turns soggy": "Oats were pulverized into powder, or butter was warm when rubbed in.",
+      "Apples are still crunchy": "Apples were sliced too thick or were a dry baking variety; use Honeycrisp, Braeburn, or Bramley.",
+      "Topping burns before apples cook": "Tent top loosely with foil for the first 20 minutes of baking."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Honeycrisp Apples",
+        "substitute": "Bramley, Honeygold, or Granny Smith",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "English Clotted Cream",
+        "substitute": "Crème Fraîche or Vanilla Bean Ice Cream",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "English Breakfast Tea",
+      "Calvados",
+      "Cheddar Cheese Slice",
+      "Hard Apple Cider"
+    ],
+    "advancedTechnique": "Pre-caramelizing apple slices in browned butter on high heat for 3 minutes before topping with crumble.",
+    "storageAndReheating": "Store at room temp up to 2 days covered with foil. Re-crisp in 350°F oven for 8 minutes to restore crunchy oat texture.",
+    "nutritionEstimates": {
+      "calories": 360,
+      "protein": 5,
+      "carbs": 48,
+      "fat": 17
+    },
+    "relatedRecipes": [
+      "rec-peach-blackberry-cobbler",
+      "rec-tarte-tatin",
+      "rec-bourbon-pecan-pie"
+    ],
+    "relatedTechniques": [
+      "Cold butter streusel cluster rub",
+      "Terpene spice synergy",
+      "Steam entrapment fruit baking"
+    ]
+  },
+  {
+    "id": "rec-fior-di-latte-gelato",
+    "title": "Gelato Fior di Latte (Pure Emulsified Sweet Cream Churn)",
+    "cuisine": "Italian / Classical Gelateria",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 20,
+    "cookMins": 10,
+    "totalMins": 30,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The ultimate test of an authentic Italian gelatiere: Fior di Latte (flower of milk). No eggs, no vanilla, no distractions—pure, unadorned grass-fed milk and heavy cream churned to low-overrun silky dense perfection with natural locust bean gum.",
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "sensoryRole": "Purity of fresh sweet pasture milk, silky smooth tongue-coating density, clean refreshing melt",
+    "ingredients": [
+      {
+        "name": "Whole Farm Fresh Milk (Grass-Fed)",
+        "qty": 650,
+        "unit": "ml",
+        "prep": "unhomogenized preferred",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Heavy Cream (36-40% fat)",
+        "qty": 200,
+        "unit": "ml",
+        "prep": "fresh sweet cream",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Nonfat Dry Milk Powder",
+        "qty": 35,
+        "unit": "g",
+        "prep": "adds milk solids-not-fat (MSNF)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 140,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Dextrose / Atomized Glucose",
+        "qty": 30,
+        "unit": "g",
+        "prep": "lowers freezing point",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Locust Bean Gum (Carob Bean Gum)",
+        "qty": 2,
+        "unit": "g",
+        "prep": "natural ice crystal inhibitor",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 1,
+        "unit": "g",
+        "prep": "micro pinch",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Compressor Gelato / Ice Cream Maker",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Digital Gram Scale (0.1g precision)",
+        "type": "Precision Tool"
+      },
+      {
+        "name": "Immersion Blender",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Instant Read Thermometer",
+        "type": "Precision Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Blend dry ingredients: dry milk powder, castor sugar, dextrose, locust bean gum, and salt together in a small bowl to disperse gum evenly.",
+      "Chill compressor gelato machine bowl.",
+      "Prepare an ice bath to rapid-cool pasteurized base."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "In a heavy saucepan, combine whole milk and heavy cream. Warm over medium heat to 105°F (40°C). Whisk in the blended dry ingredients in a steady rain so locust bean gum doesn't clump.",
+        "sensoryCue": "Smooth milky liquid with no sediment.",
+        "scienceNote": "Dispersing locust bean gum with dry sugar prevents 'fish eyes' (undissolved hydrocolloid gel lumps).",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 2,
+        "text": "Heat mixture while stirring constantly to 185°F (85°C). Hold at 185°F for 2 full minutes to pasteurize and fully hydrate the locust bean gum. Remove from heat.",
+        "sensoryCue": "Subtle thickening; base coats back of spoon with satiny milk sheen.",
+        "scienceNote": "Locust bean gum requires 185°F to fully solubilize its galactomannan polymer chains, which bind free water molecules and inhibit ice crystal growth during freezing.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Emulsify with an immersion blender on high speed for 60 seconds to homogenize fat globules. Transfer base to bowl set inside ice water bath; stir until chilled below 50°F (10°C).",
+        "sensoryCue": "Froth-free, glistening, snowy white emulsion.",
+        "scienceNote": "High shear immersion blending reduces milkfat globule size, improving tongue-coating lubricity and mouthfeel.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 4,
+        "text": "Cover and age base in refrigerator at 38°F (4°C) for 6 to 12 hours (overnight maturation).",
+        "sensoryCue": "Viscous, thick, ivory liquid cream.",
+        "scienceNote": "Maturation allows milk proteins to fully hydrate and milkfats to partially crystallize, which stabilizes the air cell walls during churning.",
+        "timerMins": 480
+      },
+      {
+        "stepNum": 5,
+        "text": "Churn in gelato machine for 20 to 25 minutes until thick, dense, and ribboning off the paddle at 21-23°F (-5°C). Transfer into a chilled metal pan and harden in freezer for 2 hours before serving at true gelato temperature (12-14°F / -10°C).",
+        "sensoryCue": "Ultra-creamy, shiny, dense gelato waves with minimal air overrun.",
+        "scienceNote": "Italian gelato features low overrun (20-30% air vs 80-100% in industrial ice cream) and is served warmer (14°F vs 0°F) so taste buds aren't numbed by cold.",
+        "timerMins": 25
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Fresh pasture milk, sweet cream, subtle lactic sweetness",
+      "texture": "Dense, ultra-silky, velvety melt without a single grain of ice; luxurious mouth-coating",
+      "finish": "Clean, refreshing dairy finish with zero cloying heaviness"
+    },
+    "scienceNotes": "Fior di Latte is the ultimate formulation science dish. Dextrose has 1.9x the freezing point depression of sucrose with only 70% of the sweetness, allowing the gelato to stay scoopable and soft at 14°F without tasting excessively sweet.",
+    "troubleshooting": {
+      "Icy crunchy texture": "Base was not aged long enough, or churn speed was too slow; freeze churn bowl colder.",
+      "Greasy buttery film on roof of mouth": "Fat content was too high (above 12%) or base was over-churned, causing butter churning.",
+      "Gelato is too hard to scoop": "Freezer is at 0°F (standard ice cream temp); temper gelato in fridge for 15 mins before scooping."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Locust Bean Gum",
+        "substitute": "Guar Gum or Xanthan Gum",
+        "ratio": "Use 1.5g (note: guar gum hydrates cold)"
+      },
+      {
+        "ingredient": "Dextrose",
+        "substitute": "Corn Syrup or additional sugar",
+        "ratio": "1:1 (gelato will be slightly firmer)"
+      }
+    ],
+    "flavorPairings": [
+      "Fresh Espresso (Affogato)",
+      "Aged Balsamico Tradizionale",
+      "Extra Virgin Olive Oil & Sea Salt",
+      "Wild Strawberries"
+    ],
+    "advancedTechnique": "Affogato al Caffè: dropping a dense quenelle of Fior di Latte into a preheated porcelain cup and pulling a hot double espresso shot directly over it.",
+    "storageAndReheating": "Store in airtight container with parchment pressed to surface in freezer up to 2 weeks. Best eaten within 3 days.",
+    "nutritionEstimates": {
+      "calories": 210,
+      "protein": 5,
+      "carbs": 24,
+      "fat": 11
+    },
+    "relatedRecipes": [
+      "rec-pistachio-gelato",
+      "rec-blood-orange-sorbet",
+      "rec-panna-cotta"
+    ],
+    "relatedTechniques": [
+      "Freezing point depression balancing",
+      "Hydrocolloid hot activation",
+      "Low-overrun churn rheology"
+    ]
+  },
+  {
+    "id": "rec-pistachio-gelato",
+    "title": "Bronte Pistachio Gelato (100% Roasted Sicilian Pistachio Paste)",
+    "cuisine": "Italian / Sicilian Classical",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 25,
+    "cookMins": 10,
+    "totalMins": 35,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The undisputed king of Italian gelaterias: authentic Sicilian Pistacchio di Bronte gelato. Made with 100% pure roasted emerald-green pistachio paste (no almond extracts, no green food dyes), balanced with Sicilian sea salt and churned to dense, luxurious perfection.",
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "sensoryRole": "Intensely nutty, roasted, savory-sweet emerald perfection with silky dense churn texture",
+    "ingredients": [
+      {
+        "name": "Whole Farm Milk (3.5% fat)",
+        "qty": 600,
+        "unit": "ml",
+        "prep": "cold",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 120,
+        "unit": "ml",
+        "prep": "fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Pure Sicilian Bronte Pistachio Paste (100%)",
+        "qty": 140,
+        "unit": "g",
+        "prep": "unsweetened, roasted (Pasta di Pistacchio)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Nonfat Dry Milk Powder",
+        "qty": 35,
+        "unit": "g",
+        "prep": "for milk solids",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 135,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Dextrose Powder",
+        "qty": 30,
+        "unit": "g",
+        "prep": "for scoopability",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Locust Bean Gum",
+        "qty": 2.5,
+        "unit": "g",
+        "prep": "stabilizer",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Trapani Sea Salt (Fine)",
+        "qty": 2.5,
+        "unit": "g",
+        "prep": "amplifies nut sweetness",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Roasted Pistachios",
+        "qty": 30,
+        "unit": "g",
+        "prep": "coarsely crushed for garnish",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Compressor Gelato Maker",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "High-Power Immersion Blender",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Digital Scale (0.1g)",
+        "type": "Precision Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Whisk dry sugar, dextrose, milk powder, locust bean gum, and sea salt together in a bowl.",
+      "Ensure 100% pure pistachio paste is stirred well to homogenize natural oil separation.",
+      "Prepare ice bath."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Heat milk and cream in saucepan to 105°F (40°C). Whisk in the blended dry ingredients in a steady stream. Heat to 185°F (85°C) while stirring continuously; hold at 185°F for 2 minutes to activate the locust bean gum.",
+        "sensoryCue": "Smooth ivory base, lightly thickened.",
+        "scienceNote": "Thermal activation of locust bean gum creates a 3D network that stabilizes both free water and free pistachio nut oils.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Remove base from heat. Add the 140g pure Sicilian pistachio paste. Emulsify with high-power immersion blender for 90 seconds until the paste is completely dispersed and the base turns a rich, olive-moss green.",
+        "sensoryCue": "Fragrant roasted pistachio aroma; uniform sage-green silky emulsion.",
+        "scienceNote": "Pistachios contain 45-50% monounsaturated fat; high-shear immersion blending shears the oil droplets down to 1-2 microns, integrating them into the milk protein matrix.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Cool base rapidly in ice water bath below 50°F (10°C). Transfer to refrigerator and mature for 8 to 12 hours.",
+        "sensoryCue": "Thick, fragrant green custard base.",
+        "scienceNote": "Cold maturation allows pistachio aromatics to permeate the dairy fat phase while triglycerides solidify.",
+        "timerMins": 480
+      },
+      {
+        "stepNum": 4,
+        "text": "Re-blend base with immersion blender for 20 seconds. Pour into chilled gelato machine. Churn for 20-25 minutes until dense, thick, and pulling away in glossy waves from paddle at 22°F (-5°C).",
+        "sensoryCue": "Voluptuous, dense green ribbon waves with velvet sheen.",
+        "scienceNote": "Nut fats have lower melting points than butterfat, requiring precise churn temperature to prevent fat agglomeration.",
+        "timerMins": 25
+      },
+      {
+        "stepNum": 5,
+        "text": "Layer gelato into chilled container, scattering crushed roasted pistachios between layers. Freeze 2 hours before serving at 14°F (-10°C).",
+        "sensoryCue": "Smooth, elastic scoop with dark green pistachio flecks.",
+        "scienceNote": "Serving at 14°F allows the high unsaturated fat content of pistachios to melt cleanly on tongue receptors.",
+        "timerMins": 120
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Intensely roasted pistachio, warm toasted sesame nuances, sweet dairy, mineral salt",
+      "texture": "Incredible density and elasticity; coats the tongue like liquid silk with crunch of chopped nuts",
+      "finish": "Persistent savory-sweet nut complexity that lasts for minutes"
+    },
+    "scienceNotes": "Cheap pistachio ice creams use almond oil and artificial benzaldehyde flavoring (which tastes like marzipan) because authentic Bronte pistachios cost over $60/kg. Authentic pistachio has an earthy, savory, slightly mineral profile without cherry or almond overtones.",
+    "troubleshooting": {
+      "Gelato tastes like artificial almond": "Cheap commercial pistachio paste with almond extract was used; look for 100% Bronte D.O.P. paste.",
+      "Oily separation": "Immersion blending step was skipped; nut oils must be mechanically sheared into emulsion.",
+      "Too soft or soupy": "Pistachio nut oils lower freezing point; reduce cream slightly if necessary."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Pistachio Paste",
+        "substitute": "Piedmont Hazelnut Paste (Nocciola del Piemonte I.G.P.)",
+        "ratio": "1:1 for world-class Hazelnut Gelato"
+      },
+      {
+        "ingredient": "Dextrose",
+        "substitute": "Invert Sugar Syrup",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Espresso Ristretto",
+      "Dark Chocolate Sorbet",
+      "Brioche col Tuppo",
+      "Sicilian Cannoli"
+    ],
+    "advancedTechnique": "Brioche con Gelato: slicing a warm Sicilian sweet brioche in half and filling with two massive scoops of pistachio gelato.",
+    "storageAndReheating": "Keep in freezer up to 10 days covered with parchment. Temper in refrigerator for 10 minutes before scooping.",
+    "nutritionEstimates": {
+      "calories": 260,
+      "protein": 6,
+      "carbs": 26,
+      "fat": 15
+    },
+    "relatedRecipes": [
+      "rec-fior-di-latte-gelato",
+      "rec-baklava-pistachio",
+      "rec-paris-brest"
+    ],
+    "relatedTechniques": [
+      "Nut oil high-shear emulsification",
+      "Galactomannan heat hydration",
+      "Gelato overrun calibration"
+    ]
+  },
+  {
+    "id": "rec-blood-orange-sorbet",
+    "title": "Blood Orange & Campari Sorbet (Refractometer Brix-Balanced)",
+    "cuisine": "Italian / Modernist Sorbetteria",
+    "category": "dessert",
+    "slot": "predessert",
+    "difficulty": "Easy",
+    "prepMins": 15,
+    "cookMins": 5,
+    "totalMins": 20,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=80",
+    "summary": "A breathtaking ruby-crimson palate cleanser and modernist sorbet. Fresh Sicilian Moro blood orange juice calibrated to exactly 28° Brix with simple syrup and dextrose, infused with Campari bitter aperitivo and stabilized with cold-hydrating xanthan gum.",
+    "dietary": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "sensoryRole": "Electric citrus acidity, bitter botanical complexity, melting jewel-like ruby silkiness",
+    "ingredients": [
+      {
+        "name": "Fresh Squeezed Blood Orange Juice (Moro or Tarocco)",
+        "qty": 600,
+        "unit": "ml",
+        "prep": "strained of seeds and heavy pulp",
+        "dept": "Produce"
+      },
+      {
+        "name": "Mineral Water",
+        "qty": 150,
+        "unit": "ml",
+        "prep": "filtered",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 130,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Dextrose Powder",
+        "qty": 35,
+        "unit": "g",
+        "prep": "lowers freezing point without excess sweetness",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Campari Bitter Liqueur",
+        "qty": 25,
+        "unit": "ml",
+        "prep": "adds botanical bitterness & antifreeze effect",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Fresh Lemon Juice",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "sharpens pH balance",
+        "dept": "Produce"
+      },
+      {
+        "name": "Xanthan Gum (or Locust Bean)",
+        "qty": 0.8,
+        "unit": "g",
+        "prep": "molecular stabilizer for creaminess",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Digital Optical Brix Refractometer (optional but recommended)",
+        "type": "Precision Tool"
+      },
+      {
+        "name": "Compressor Gelato / Ice Cream Maker",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Immersion Blender",
+        "type": "Small Appliance"
+      }
+    ],
+    "miseEnPlace": [
+      "Squeeze fresh blood oranges and pass juice through fine sieve; measure 600ml.",
+      "Whisk dry sugar, dextrose, and xanthan gum together in a cup.",
+      "Chill blood orange juice in refrigerator to 38°F."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Base Syrup: Combine 150ml water and the dry sugar/dextrose/xanthan blend in small saucepan. Bring just to a simmer for 60 seconds while whisking until completely clear and dissolved. Remove from heat and cool in ice bath.",
+        "sensoryCue": "Clear, slightly viscous sugar syrup.",
+        "scienceNote": "Xanthan gum hydrates instantly in warm water, creating a pseudoplastic shear-thinning fluid that prevents large ice crystals from aggregating.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 2,
+        "text": "Combine chilled syrup, fresh blood orange juice, lemon juice, and Campari in a pitcher. Blend with immersion blender on high for 30 seconds. Check sugar concentration with refractometer: target is exactly 28-30° Brix (or float a raw clean egg in shell; egg should float leaving a quarter-sized patch exposed above liquid).",
+        "sensoryCue": "Vibrant fluorescent crimson-ruby liquid with citrus botanical aroma.",
+        "scienceNote": "Sorbet texture is governed entirely by sugar concentration (Brix). At 28° Brix, exactly 72% of water freezes into microscopic ice crystals while 28% remains as liquid sugar syrup, creating spoonable silk without dairy.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Chill base in refrigerator for 2 hours until thoroughly cold (under 40°F / 4°C).",
+        "sensoryCue": "Viscous ruby nectar.",
+        "scienceNote": "Pouring warm base into a churner causes slow freezing and coarse, crunchy ice needles.",
+        "timerMins": 120
+      },
+      {
+        "stepNum": 4,
+        "text": "Pour into gelato machine and churn for 18-20 minutes until firm, satiny, and pulling away from paddle in dense ribbon folds.",
+        "sensoryCue": "Gleaming ruby-red ribboning sorbet with frosty sheen.",
+        "scienceNote": "Campari contains 24% ABV alcohol; alcohol significantly depresses the freezing point of water, boosting sorbet softness.",
+        "timerMins": 20
+      },
+      {
+        "stepNum": 5,
+        "text": "Transfer into a chilled shallow pan and freeze for 1 hour. Scoop into chilled glasses; garnish with candied blood orange wheel or fresh mint sprig.",
+        "sensoryCue": "Spoon glides through like butter; jewel-toned ruby sphere.",
+        "scienceNote": "Melts rapidly on tongue, releasing intense fruit terpenes and volatile aromatic esters.",
+        "timerMins": 60
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Floral blood orange zest, bitter gentian root, ruby grapefruit, campari herbal aromatics",
+      "texture": "Ultra-smooth, velvety, grain-free melt withzero iciness",
+      "finish": "Electrifying tart-bitter-sweet finish that completely resets and cleanses the palate"
+    },
+    "scienceNotes": "Sorbets contain zero milkfat, meaning ice crystal inhibition depends 100% on sugar physics and small concentrations of hydrocolloids. Dextrose provides freezing point depression without excess cloying sweetness, while Campari adds both flavor complexity and ethanol antifreeze properties.",
+    "troubleshooting": {
+      "Sorbet is a hard rock ice block": "Not enough sugar (Brix was under 24°); add 2-3 tbsp simple syrup.",
+      "Sorbet won't freeze / remains slush": "Too much sugar or too much alcohol (Brix over 32° or over 35ml Campari); dilute with more juice.",
+      "Icy, coarse texture": "Base was churned warm or lacked stabilizer; use exact 0.8g xanthan gum."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Blood Orange Juice",
+        "substitute": "Ruby Red Grapefruit Juice, Pomegranate Juice, or Passionfruit",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Campari",
+        "substitute": "Aperol (sweeter) or Gin",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Prosecco Pour",
+      "Fresh Basil Leaves",
+      "Dark Chocolate Tuile",
+      "Fennel Pollen"
+    ],
+    "advancedTechnique": "Sgropino Moderno: whisking two scoops of blood orange sorbet with 60ml chilled Prosecco and 15ml vodka into an airy effervescent cocktail coupe.",
+    "storageAndReheating": "Store airtight in freezer up to 2 weeks. Best texture within first 3 days.",
+    "nutritionEstimates": {
+      "calories": 140,
+      "protein": 1,
+      "carbs": 33,
+      "fat": 0
+    },
+    "relatedRecipes": [
+      "rec-fior-di-latte-gelato",
+      "rec-shattered-lemon-tart",
+      "rec-mango-spheres"
+    ],
+    "relatedTechniques": [
+      "Refractometer Brix balancing",
+      "Ethanol freezing point depression",
+      "Hydrocolloid ice crystal inhibition"
+    ]
+  },
+  {
+    "id": "rec-croque-madame",
+    "title": "Croque Madame Parisienne (Brioche, Jambon de Paris, Sauce Mornay & Fried Egg)",
+    "cuisine": "French / Classical Bistro",
+    "category": "breakfast",
+    "slot": "opener",
+    "difficulty": "Easy",
+    "prepMins": 15,
+    "cookMins": 15,
+    "totalMins": 30,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The quintessential Parisian cafe luxury: thick slices of golden toasted brioche stuffed with French cooked ham (jambon blanc) and aged Gruyère, smothered in bubbling, broiled Sauce Mornay and crowned with a sunny-side-up farm egg with a molten yolk.",
+    "dietary": [],
+    "sensoryRole": "Decadent toasted brioche crunch, bubbling cheesy Mornay blanket, molten runny yolk cascading over salty ham",
+    "ingredients": [
+      {
+        "name": "Artisanal Brioche or Pain de Mie",
+        "qty": 8,
+        "unit": "slices",
+        "prep": "cut 3/4-inch thick",
+        "dept": "Bakery"
+      },
+      {
+        "name": "Jambon de Paris (French Cooked Ham)",
+        "qty": 250,
+        "unit": "g",
+        "prep": "thinly sliced",
+        "dept": "Meat & Poultry"
+      },
+      {
+        "name": "Aged Gruyère A.O.P. or Comté Cheese",
+        "qty": 200,
+        "unit": "g",
+        "prep": "grated",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Dijon Mustard (Edmond Fallot)",
+        "qty": 30,
+        "unit": "g",
+        "prep": "smooth spicy",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 60,
+        "unit": "g",
+        "prep": "divided: 40g Mornay, 20g frying",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "All-Purpose Flour",
+        "qty": 40,
+        "unit": "g",
+        "prep": "for blond roux",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Whole Milk",
+        "qty": 400,
+        "unit": "ml",
+        "prep": "warmed",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Fresh Grated Whole Nutmeg",
+        "qty": 2,
+        "unit": "g",
+        "prep": "fine pinch",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Large Farm Fresh Eggs",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "sunny side up frying",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Fresh Chives",
+        "qty": 10,
+        "unit": "g",
+        "prep": "finely minced",
+        "dept": "Produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy Cast-Iron Skillet",
+        "type": "Cookware"
+      },
+      {
+        "name": "Small Saucepan for Mornay",
+        "type": "Cookware"
+      },
+      {
+        "name": "Baking Sheet with Parchment",
+        "type": "Bakeware"
+      }
+    ],
+    "miseEnPlace": [
+      "Grate Gruyère cheese; slice ham and bread.",
+      "Warm milk in small saucepan.",
+      "Preheat oven broiler to High."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Sauce Mornay: In a small saucepan over medium heat, melt 40g butter. Add flour and cook whisking for 2 minutes to form a blond roux (do not brown). Slowly whisk in warm milk in 3 additions until smooth. Simmer 3 minutes until thick and bubbling. Remove from heat; whisk in 80g grated Gruyère, grated nutmeg, salt, and black pepper until silky smooth.",
+        "sensoryCue": "Rich, velvety ivory cheese sauce that heavily coats a spoon.",
+        "scienceNote": "Starch granules swell and gelatinize at 180°F, while melted Gruyère fat is suspended by casein proteins into a stable emulsion.",
+        "timerMins": 6
+      },
+      {
+        "stepNum": 2,
+        "text": "Toast Bread: Brush both sides of brioche slices lightly with melted butter. Toast in a hot cast-iron skillet over medium heat for 2 minutes per side until golden brown and crisp.",
+        "sensoryCue": "Golden-amber buttery toast with toasty brioche perfume.",
+        "scienceNote": "Pre-toasting creates a rigid starch exterior that prevents the wet cheese sauce from turning the sandwich soggy.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 3,
+        "text": "Assemble Sandwiches: Lay 4 toasted slices on a parchment-lined baking sheet. Spread each with 1 tsp Dijon mustard. Layer generously with sliced jambon de Paris and 20g grated Gruyère. Top with remaining bread slices.",
+        "sensoryCue": "Plump sandwiches stacked with savory ham and cheese.",
+        "scienceNote": "Dijon mustard contains vinegar and sinigrin glucosinolate, providing an acidic counterpoint to rich dairy fats.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Broil Mornay: Spoon generous ladle of warm Sauce Mornay over top of each sandwich, spreading to edges. Sprinkle remaining grated Gruyère over the sauce. Place under broiler for 3 to 4 minutes until cheese is vigorously bubbling with blistered deep brown spots.",
+        "sensoryCue": "Bubbling golden-brown volcanic crust with toasted cheese aroma.",
+        "scienceNote": "Direct intense radiant broiler heat caramelizes milk sugars and proteins via rapid Maillard reactions.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 5,
+        "text": "Fry Eggs & Crown: In the skillet, melt 20g butter over medium-low heat. Crack 4 eggs gently; fry until whites are set and edges are crisp, with yolks remaining liquid and warm. Crown each broiled sandwich with a fried egg; garnish with minced chives and cracked black pepper.",
+        "sensoryCue": "Glossy golden yolk perched atop blistered cheese; yolk breaks and rivers down sandwich.",
+        "scienceNote": "Egg yolk at 145°F acts as a rich self-saucing sauce, combining with Mornay to create luxury mouthfeel.",
+        "timerMins": 3
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Toasted brioche, melted nutty Gruyère, smoked cured ham, brown butter, fried egg",
+      "texture": "Crisp buttery toast crunch giving way to tender ham, molten creamy Mornay, and liquid yolk burst",
+      "finish": "Spicy Dijon mustard punch balancing rich, bubbling cheese"
+    },
+    "scienceNotes": "A Croque Monsieur becomes a Croque Madame with the addition of the fried egg (named for resembling an Edwardian lady's wide-brimmed hat). The combination of Sauce Mornay (béchamel + cheese) on top provides a protective moisture seal during high-heat broiling.",
+    "troubleshooting": {
+      "Soggy sandwich": "Bread was not pre-toasted in skillet before assembly.",
+      "Sauce splits oily under broiler": "Roux was under-cooked or sauce was boiled too hard before spreading.",
+      "Hard rubbery egg yolk": "Egg was cooked on high heat or covered with lid; fry on gentle heat uncovered."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Jambon de Paris",
+        "substitute": "Prosciutto Cotto, Rosemary Ham, or Smoked Turkey",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Brioche",
+        "substitute": "Country Sourdough or Pullman White",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Café au Lait",
+      "Mâche Salad with Champagne Vinaigrette",
+      "Bloody Mary",
+      "Pilsner Beer"
+    ],
+    "advancedTechnique": "Infusing milk for Mornay with a bay leaf, shallot, and black peppercorn sachet before making béchamel.",
+    "storageAndReheating": "Best enjoyed immediately. Un-broiled sandwiches can be assembled and refrigerated for up to 24 hours.",
+    "nutritionEstimates": {
+      "calories": 620,
+      "protein": 32,
+      "carbs": 38,
+      "fat": 38
+    },
+    "relatedRecipes": [
+      "rec-quiche-lorraine",
+      "rec-french-rolled-omelette",
+      "rec-eggs-benedict"
+    ],
+    "relatedTechniques": [
+      "Sauce Mornay starch emulsion",
+      "Blond roux formulation",
+      "Sunny-side egg baste"
+    ]
+  },
+  {
+    "id": "rec-birria-de-res",
+    "title": "Birria de Res con Consomé (Slow-Braised Guajillo Beef Shank & Quesabirria)",
+    "cuisine": "Mexican / Jalisco Classical",
+    "category": "dinner",
+    "slot": "climax",
+    "difficulty": "Intermediate",
+    "prepMins": 40,
+    "cookMins": 210,
+    "totalMins": 250,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The soul of Jalisco: bone-in beef shank and chuck roast slow-braised in a rich, velvety adobo of toasted Guajillo, Ancho, and Pasilla chilies, charred aromatics, Mexican cinnamon, cloves, and Mexican oregano. Served as shred-tender beef with steaming bowls of cilantro-flecked rich consomé and griddled quesabirria tacos.",
+    "dietary": [
+      "Gluten-Free"
+    ],
+    "sensoryRole": "Deep earthy chili warmth, melt-in-mouth beef collagen, rich glistening chili fat, crispy griddled corn tortilla",
+    "ingredients": [
+      {
+        "name": "Bone-In Beef Shank (with Marrow)",
+        "qty": 1000,
+        "unit": "g",
+        "prep": "thick cut (supplies rich collagen & broth body)",
+        "dept": "Meat & Poultry"
+      },
+      {
+        "name": "Beef Chuck Roast",
+        "qty": 1000,
+        "unit": "g",
+        "prep": "cut into 3-inch cubes",
+        "dept": "Meat & Poultry"
+      },
+      {
+        "name": "Dried Guajillo Chilies",
+        "qty": 8,
+        "unit": "pods",
+        "prep": "stemmed and seeded",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Dried Ancho Chilies",
+        "qty": 4,
+        "unit": "pods",
+        "prep": "stemmed and seeded",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Dried Pasilla / Cascabel Chilies",
+        "qty": 2,
+        "unit": "pods",
+        "prep": "stemmed and seeded",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Fire-Roasted Roma Tomatoes",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "charred in skillet",
+        "dept": "Produce"
+      },
+      {
+        "name": "White Onion & Garlic Head",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "onion quartered, garlic unpeeled and charred",
+        "dept": "Produce"
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "for adobo acid balance",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Mexican Cinnamon (Canela)",
+        "qty": 1,
+        "unit": "stick",
+        "prep": "true Ceylon cinnamon",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Mexican Oregano, Cumin, Cloves, Allspice",
+        "qty": 12,
+        "unit": "g",
+        "prep": "toasted and ground",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Corn Tortillas & Oaxaca Cheese",
+        "qty": 16,
+        "unit": "tortillas",
+        "prep": "for quesabirria assembly",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Finely Minced White Onion & Fresh Cilantro",
+        "qty": 80,
+        "unit": "g",
+        "prep": "for consomé garnish",
+        "dept": "Produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Large Enameled Cast-Iron Dutch Oven (7-8 quart)",
+        "type": "Cookware"
+      },
+      {
+        "name": "High-Speed Blender",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Fine Mesh Chinois Strainer",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Flat Comal / Cast Iron Griddle",
+        "type": "Cookware"
+      }
+    ],
+    "miseEnPlace": [
+      "Toast dried chilies in dry skillet for 30 seconds until fragrant (do not burn); soak in 500ml boiling water for 15 minutes.",
+      "Char onion, garlic, and tomatoes on comal until blackened in spots.",
+      "Season beef shank and chuck generously with coarse salt."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Sear Beef: In large Dutch oven, heat 2 tbsp oil over high heat. Sear beef shank and chuck cubes in batches for 8-10 minutes until deeply browned with dark crust. Remove beef to a platter.",
+        "sensoryCue": "Deep sizzling fond coating Dutch oven bottom; roasted beef aroma.",
+        "scienceNote": "Intense Maillard browning produces flavor compounds that dissolve into the adobo during the slow braise.",
+        "timerMins": 12
+      },
+      {
+        "stepNum": 2,
+        "text": "Blend Adobo: In high-speed blender, combine soaked rehydrated chilies (with their soaking water), charred tomatoes, peeled charred garlic, charred onion, apple cider vinegar, canela stick, Mexican oregano, cumin, cloves, allspice, and 1 tbsp salt. Blend on high for 2 full minutes until velvety smooth. Strain adobo through fine mesh directly into Dutch oven.",
+        "sensoryCue": "Vibrant brick-red, fragrant, silky chili puree.",
+        "scienceNote": "Straining removes fibrous chili skins, ensuring the consomé is velvety smooth rather than grainy.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "The Slow Braise: Return seared beef, marrow bones, and bay leaves to the Dutch oven. Add 1.5 liters beef stock or water (liquid should just cover meat). Bring to a simmer, cover tightly with foil and lid. Transfer to 300°F (150°C) oven for 3.5 hours until beef is fall-apart tender.",
+        "sensoryCue": "Beef shreds effortlessly with a fork; rich red chili fat pools at surface.",
+        "scienceNote": "Slow 300°F convection allows tough collagen in beef shank to slowly hydrolyze into gelatin without drying out muscle fibers.",
+        "timerMins": 210
+      },
+      {
+        "stepNum": 4,
+        "text": "Skim Fat & Shred: Transfer tender beef to cutting board; shred with two forks, discarding bones and gristle. Skim the gleaming orange-red chili beef fat (grasa) from top of broth into a small bowl (this fat is used to fry the tortillas!). Keep broth hot on stove.",
+        "sensoryCue": "Shredded beef glistening with spices; rich red dipping broth.",
+        "scienceNote": "Chili pigments (capsanthin and capsorubin) are fat-soluble, migrating into the beef fat during cooking, creating the intensely red frying fat.",
+        "timerMins": 15
+      },
+      {
+        "stepNum": 5,
+        "text": "Make Quesabirria Tacos: Dip corn tortillas into the reserved red birria fat. Place on hot griddle over medium heat. Top with shredded Oaxaca cheese and shredded beef. Fold in half into a taco. Griddle 2 minutes per side until tortilla is crackling-crisp and cheese is melted and bubbling. Serve immediately with a bowl of hot consomé garnished with minced onion, cilantro, and lime.",
+        "sensoryCue": "Crisp red-lacquered tortilla shell; stretchy melted cheese; dipping taco into steaming consomé.",
+        "scienceNote": "Dipping the taco into the hot consomé creates instant contrast: crisp tortilla softening in rich gelatinous broth.",
+        "timerMins": 8
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Toasted guajillo earthiness, Mexican oregano, canela clove warmth, rich beef marrow broth, crispy corn",
+      "texture": "Shattering griddled taco shell, stretchy molten cheese, succulent melting beef, velvety rich consomé",
+      "finish": "Warming chili hum balanced by bright lime acidity and fresh cilantro"
+    },
+    "scienceNotes": "Birria consomé achieves its luxurious viscosity through gelatin extracted from beef shank bones and marrow. Apple cider vinegar balances the rich gelatin and melted tallow, cutting the fat on the palate.",
+    "troubleshooting": {
+      "Consomé tastes bitter": "Chilies were scorched/burned during dry toasting; toast for only 20-30 seconds until pliable.",
+      "Beef is tough and chewy": "Braise was not cooked long enough; connective tissue requires full 3-3.5 hours at 300°F.",
+      "Tortillas tear when dipped": "Use quality corn tortillas, or double-stack two tortillas per quesabirria."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Beef Shank & Chuck",
+        "substitute": "Bone-In Goat Shoulder (Chivo) or Lamb Shank",
+        "ratio": "Traditional Jalisco style"
+      },
+      {
+        "ingredient": "Oaxaca Cheese",
+        "substitute": "Queso Asadero, Mozzarella, or Monterey Jack",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Ice-Cold Mexican Cerveza (Negra Modelo)",
+      "Agua de Horchata",
+      "Pickled Red Onions",
+      "Lime Wedges"
+    ],
+    "advancedTechnique": "Using a combination of bone marrow and roasted beef knuckles to enrich the consomé with maximum natural collagen body.",
+    "storageAndReheating": "Birria improves dramatically after overnight chilling. Keeps refrigerated up to 5 days, or freeze 3 months.",
+    "nutritionEstimates": {
+      "calories": 640,
+      "protein": 44,
+      "carbs": 32,
+      "fat": 38
+    },
+    "relatedRecipes": [
+      "rec-chilaquiles-rojos",
+      "rec-lomo-saltado",
+      "rec-tonkotsu-ramen"
+    ],
+    "relatedTechniques": [
+      "Chili rehydration adobo blending",
+      "Collagen braise hydrolysis",
+      "Fat-soluble carotenoid skimming"
+    ]
+  },
+  {
+    "id": "rec-risotto-porcini",
+    "title": "Risotto ai Funghi Porcini (Carnaroli Rice, Wild Porcini & Parmigiano Mantecatura)",
+    "cuisine": "Italian / Piedmontese Classical",
+    "category": "dinner",
+    "slot": "mid",
+    "difficulty": "Intermediate",
+    "prepMins": 20,
+    "cookMins": 25,
+    "totalMins": 45,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The masterclass of Northern Italian grain cookery: superfino Carnaroli rice toasted in butter, deglazed with crisp dry white wine, and slow-nourished with steaming porcini mushroom broth, finished off the heat with the vigorous emulsification (mantecatura) of frozen cultured butter and 24-month Parmigiano-Reggiano into a flowing wave (all'onda).",
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "sensoryRole": "Unctuous creamy wave, deep earthy forest umami, nutty cheese savoriness, al dente rice bite",
+    "ingredients": [
+      {
+        "name": "Carnaroli Superfino Rice (or Vialone Nano)",
+        "qty": 320,
+        "unit": "g",
+        "prep": "the 'king of risotto rices', never washed",
+        "dept": "Grains & Starches"
+      },
+      {
+        "name": "Dried Porcini Mushrooms (Boletus Edulis)",
+        "qty": 35,
+        "unit": "g",
+        "prep": "rehydrated in 500ml boiling water, liquid reserved",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Fresh Cremini or Wild Chanterelle Mushrooms",
+        "qty": 200,
+        "unit": "g",
+        "prep": "sliced and sautéed golden",
+        "dept": "Produce"
+      },
+      {
+        "name": "Shallot",
+        "qty": 2,
+        "unit": "medium",
+        "prep": "minced into microscopic brunoise",
+        "dept": "Produce"
+      },
+      {
+        "name": "Crisp Dry White Wine (Pinot Grigio or Gavi)",
+        "qty": 120,
+        "unit": "ml",
+        "prep": "chilled",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Rich Vegetable or Chicken Stock",
+        "qty": 1000,
+        "unit": "ml",
+        "prep": "simmering hot (combined with strained porcini soaking broth)",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Unsalted European Butter (82% fat)",
+        "qty": 80,
+        "unit": "g",
+        "prep": "divided: 30g toasting, 50g frozen cubes for mantecatura",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Parmigiano-Reggiano D.O.P. (24-Month)",
+        "qty": 70,
+        "unit": "g",
+        "prep": "finely microplaned",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Fresh Flat-Leaf Italian Parsley",
+        "qty": 15,
+        "unit": "g",
+        "prep": "finely chopped",
+        "dept": "Produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Wide Heavy Copper Sauté Pan or Saucier",
+        "type": "Cookware"
+      },
+      {
+        "name": "Wooden Risotto Spoon (with center hole)",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Small Ladle",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Rehydrate dried porcini in boiling water for 20 minutes; strain soaking liquid through coffee filter to remove grit and add to stockpot.",
+      "Keep mushroom stock at a bare simmer on adjacent burner.",
+      "Freeze 50g diced butter cubes for mantecatura; grate Parmigiano finely."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Soffritto & Tostatura: Melt 30g butter in wide saucier over medium-low heat. Add shallot brunoise and pinch of salt; cook 3 minutes until translucent without browning. Add Carnaroli rice. Toast rice (tostatura) for 2 to 3 minutes, stirring constantly, until edges turn translucent and grains feel hot to the touch and emit a nutty toasted aroma.",
+        "sensoryCue": "Grains click against pan like pebbles; warm nutty toasted perfume.",
+        "scienceNote": "Tostatura par-cooks surface starches, hardening the outer grain perimeter to prevent it from turning to mush during simmering while preserving an al dente core.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Sfumatura (Deglaze): Pour in the 120ml dry white wine. It will hiss violently. Stir continuously for 90 seconds until alcohol aroma cooks off and wine is completely absorbed by the rice.",
+        "sensoryCue": "Vigorous hissing steam cloud; sharp wine aroma gives way to rich fruit acidity.",
+        "scienceNote": "Tartaric and malic acids from wine brighten the dish and lower pH, regulating starch breakdown.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 3,
+        "text": "Cottura (The Simmer): Add chopped rehydrated porcini. Begin adding simmering mushroom broth 1-2 ladles at a time, maintaining a constant lively simmer. Stir frequently with wooden spoon. Only add more broth when the previous addition has been almost completely absorbed. Continue for 15 to 17 minutes until rice is al dente (tender exterior with subtle firm white core when bitten).",
+        "sensoryCue": "Creamy starch sauce begins to form around plump grains; rich earthy woodland aroma.",
+        "scienceNote": "Frequent stirring creates mechanical friction between grains, sloughing off amylopectin starch into the broth to form a natural creamy emulsion.",
+        "timerMins": 16
+      },
+      {
+        "stepNum": 4,
+        "text": "Riposo (The Rest): Remove saucier completely from heat. Fold in sautéed fresh mushrooms. Let rest undisturbed for 1 full minute off heat.",
+        "sensoryCue": "Bubbling subsides; temperature drops slightly to 160-170°F.",
+        "scienceNote": "Resting lowers temperature just enough so the cheese and butterfat will emulsify rather than melt into an oily grease slick.",
+        "timerMins": 1
+      },
+      {
+        "stepNum": 5,
+        "text": "Mantecatura (The Emulsion): Add frozen butter cubes and microplaned Parmigiano-Reggiano. Using the wooden spoon and a rapid back-and-forth flick of the wrist, beat and agitate the risotto violently for 90 seconds (la mantecatura) until a gleaming, velvety, creamy sauce coats every grain. Add a splash of hot broth if needed to achieve 'all'onda' (flowing wave). Plate immediately onto flat warm plates; rap bottom of plate with palm so risotto settles into an even sheet.",
+        "sensoryCue": "Gleaming glossy sheen; risotto waves gently when pan is shaken; aroma of aged cheese and porcini.",
+        "scienceNote": "Beating frozen butter into warm starch forces dairy fat and water into a stable emulsion with cheese proteins, without breaking into oil.",
+        "timerMins": 2
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Earthy wild porcini, 24-month Parmigiano-Reggiano, sweet toasted shallots, white wine acidity, rich butter",
+      "texture": "Perfect al dente bite to each distinct grain suspended in an ultra-creamy, wave-like emulsion",
+      "finish": "Persistent forest umami and savory Parmigiano depth"
+    },
+    "scienceNotes": "Carnaroli rice is considered superior to Arborio because it has higher amylose content (approx 24% vs 18%). Amylose maintains structural rigidity at the grain core, while outer amylopectin starches dissolve into the cooking broth to create the signature luxurious cream.",
+    "troubleshooting": {
+      "Risotto is stiff and stands in a mound": "Risotto is too dry; add 2 ladles hot broth during mantecatura to make it flow like a wave (all'onda).",
+      "Oily melted butter separates": "Butter was added while pan was still on the flame; always perform mantecatura OFF the heat.",
+      "Grains are mushy with broken centers": "Rice was overcooked past 18 minutes, or low-quality rice was used."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Carnaroli Rice",
+        "substitute": "Vialone Nano or Superfino Arborio",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Parmigiano-Reggiano",
+        "substitute": "Grana Padano or Pecorino Romano",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Barolo or Nebbiolo",
+      "Sautéed Duck Breast",
+      "Shaved Black Truffle",
+      "Roasted Hazelnuts"
+    ],
+    "advancedTechnique": "Infusing finishing butter with freshly grated nutmeg and porcini powder for ultra-concentrated woodland depth.",
+    "storageAndReheating": "Risotto cannot be properly reheated without losing al dente texture; use leftovers to make crispy Arancini (fried stuffed rice balls).",
+    "nutritionEstimates": {
+      "calories": 480,
+      "protein": 12,
+      "carbs": 58,
+      "fat": 22
+    },
+    "relatedRecipes": [
+      "rec-paella-valenciana",
+      "rec-potato-pave",
+      "rec-peppercorn-sauce"
+    ],
+    "relatedTechniques": [
+      "Mantecatura off-heat emulsion",
+      "Tostatura starch hardening",
+      "All'onda fluid wave rheology"
+    ]
+  },
+  {
+    "id": "rec-pain-de-campagne",
+    "title": "Artisan Sourdough Pain de Campagne (80% Hydration French Country Boule)",
+    "cuisine": "French / Classical Boulangerie",
+    "category": "bread",
+    "slot": "accompaniment",
+    "difficulty": "Advanced",
+    "prepMins": 60,
+    "cookMins": 45,
+    "totalMins": 105,
+    "yieldServings": 10,
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The soul of the French countryside: a rustic high-hydration naturally leavened country sourdough boule. Crafted with wild levain, stoneground dark rye, whole wheat, and high-protein bread flour, cold-retarded for 18 hours and baked inside a blistering Dutch oven to achieve a singing, blistered, mahogany crust with an open, custard-like crumb.",
+    "dietary": [
+      "Vegan"
+    ],
+    "sensoryRole": "Deep crackling mahogany crust, blistered ears, complex wild lactic acidity, open glossy custard crumb",
+    "ingredients": [
+      {
+        "name": "Unbleached Bread Flour (12.7% protein)",
+        "qty": 400,
+        "unit": "g",
+        "prep": "hard red spring wheat",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "qty": 70,
+        "unit": "g",
+        "prep": "stoneground",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Stoneground Dark Rye Flour",
+        "qty": 30,
+        "unit": "g",
+        "prep": "adds enzymatic activity & earthy notes",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Filtered Water (90°F / 32°C)",
+        "qty": 400,
+        "unit": "ml",
+        "prep": "divided: 375ml autolyse, 25ml with salt (80% hydration)",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Active Ripe Sourdough Starter (Levain)",
+        "qty": 100,
+        "unit": "g",
+        "prep": "fed 100% hydration, used at peak rise",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 11,
+        "unit": "g",
+        "prep": "2.2% baker's percentage",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Rice Flour (50/50 with All-Purpose)",
+        "qty": 30,
+        "unit": "g",
+        "prep": "for dusting banneton proofing basket",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy 5 to 6-Quart Cast-Iron Dutch Oven (or Combo Cooker)",
+        "type": "Cookware"
+      },
+      {
+        "name": "Round Cane Banneton (Proofing Basket, 9-inch)",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Baker's Lame (Curved Razor Blade)",
+        "type": "Cutlery"
+      },
+      {
+        "name": "Digital Scale & Bench Knife",
+        "type": "Precision Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Feed wild sourdough starter 4-5 hours prior; ensure it passes float test in water.",
+      "Dust round proofing banneton generously with rice flour-wheat blend.",
+      "Preheat Dutch oven inside oven at 500°F (260°C) for 60 minutes."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Autolyse: In a large bowl, mix bread flour, whole wheat flour, and dark rye with 375ml warm water until no dry flour remains. Cover and rest for 60 minutes.",
+        "sensoryCue": "Shaggy dough mass; relaxes into supple cohesive dough over 60 mins.",
+        "scienceNote": "Autolyse allows water to hydrate flour proteins and activates endogenous protease enzymes that relax gluten bonds, making high-hydration dough pliable without mechanical kneading.",
+        "timerMins": 60
+      },
+      {
+        "stepNum": 2,
+        "text": "Incorporate Levain & Salt: Spread 100g active levain across top of dough; dimple in with fingertips. Perform slap-and-fold for 3 minutes. Rest 20 minutes. Sprinkle 11g sea salt and remaining 25ml water over dough; pinch and fold until salt grains dissolve completely and dough turns glossy.",
+        "sensoryCue": "Dough tightens and becomes smooth, silky, and elastic.",
+        "scienceNote": "Salt draws out water, strengthens gluten bonds, and regulates wild yeast and lactic acid bacteria fermentation speed.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 3,
+        "text": "Bulk Fermentation with Coil Folds: Place dough in transparent container. Keep at 78°F (26°C) for 4 to 5 hours. Perform 4 sets of stretch-and-folds / coil folds spaced 30 minutes apart during first 2 hours. Rest dough undisturbed for remaining time until it increases 40-50% in volume, exhibits aerated domed top, and bubbles are visible on surface.",
+        "sensoryCue": "Dough wobbles like jello when container is shaken; airy, pillowy, dome-shaped top.",
+        "scienceNote": "Gentle coil folds align gluten sheets around expanding carbon dioxide gas cells without degassing the delicate interior alveoli.",
+        "timerMins": 270
+      },
+      {
+        "stepNum": 4,
+        "text": "Pre-Shape, Final Shape & Cold Retard: Turn dough onto lightly floured bench. Pre-shape into round ball with bench knife; rest 20 mins uncovered. Shape into a taut boule by folding edges into center and rolling gently against counter to create high surface tension. Transfer seam-side UP into rice-flour dusted banneton. Place in plastic bag; refrigerate at 38°F (3°C) for 14 to 18 hours.",
+        "sensoryCue": "Taut, smooth outer dough skin with visible gas bubbles underneath.",
+        "scienceNote": "Cold retardation halts yeast fermentation while allowing hetero-fermentative lactic acid bacteria (L. sanfranciscensis) to produce acetic acid, imparting classic sourdough tang.",
+        "timerMins": 960
+      },
+      {
+        "stepNum": 5,
+        "text": "Score & Dutch Oven Bake: Turn cold dough directly from fridge onto parchment sheet. Score top with curved baker's lame at a 30° angle in a single fluid crescent stroke. Lower into preheated 500°F Dutch oven. Drop 2 ice cubes under parchment (steam generation), cover immediately with lid. Bake covered at 450°F (230°C) for 22 minutes. Remove lid; bake uncovered for 20-22 minutes until crust is deep mahogany chestnut with blistered bubbles. Cool on wire rack for minimum 2 hours before slicing.",
+        "sensoryCue": "Dramatic 2-inch oven spring 'ear'; crust 'sings' (crackles) as it cools; open translucent custard crumb.",
+        "scienceNote": "Trapped steam keeps the outer dough skin elastic during the first 15 minutes, allowing maximum vertical oven spring expansion before starches gelatinize into a glass-like blistered crust.",
+        "timerMins": 45
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Toasted grain, hazelnut malt, dark roasted crust, tangy lactic wild sourdough aroma",
+      "texture": "Deafeningly crunchy shattering blistered crust giving way to open, glossy, custardy, tender chewy crumb",
+      "finish": "Complex wheaty sweetness followed by clean, refreshing wild lactic and acetic acidity"
+    },
+    "scienceNotes": "The 'ear' forms because the 30° angled razor cut creates a flap of skin. When extreme bottom heat hits the wet dough, steam rushes to the path of least resistance (the score line), peeling the flap back and upward into a razor-sharp blistered crest.",
+    "troubleshooting": {
+      "Bread is dense and gummy inside": "Loaf was sliced while still hot; starches require 2 hours of cooling to set. Or bulk fermentation was under-proofed.",
+      "Dough spreads into a flat pancake": "Shaping lacked surface tension, gluten was over-fermented, or starter was too acidic.",
+      "No blistered ear": "Dutch oven was not hot enough, steam escaped, or score was too vertical instead of angled 30°."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Dark Rye Flour",
+        "substitute": "Spelt Flour, Khorasan (Kamut), or Einkorn",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "High-Protein Bread Flour",
+        "substitute": "French T65 Flour",
+        "ratio": "1:1 for authentic Parisian texture"
+      }
+    ],
+    "flavorPairings": [
+      "Salted Cultured French Butter",
+      "Raw Milk Comté",
+      "Charcuterie Board",
+      "Boeuf Bourguignon"
+    ],
+    "advancedTechnique": "Spritzing the cold dough surface with fine water mist immediately before scoring to maximize micro-blister formation on the crust.",
+    "storageAndReheating": "Store cut-side down on cutting board for 3 days, or in paper bag. Re-crisp whole loaf in 375°F oven for 8 minutes.",
+    "nutritionEstimates": {
+      "calories": 210,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 1
+    },
+    "relatedRecipes": [
+      "rec-croque-madame",
+      "rec-french-rolled-omelette",
+      "rec-quiche-lorraine"
+    ],
+    "relatedTechniques": [
+      "Autolyse enzymatic relaxation",
+      "Cold overnight acid retard",
+      "Dutch oven steam entrapment"
+    ]
+  },
+  {
+    "id": "rec-chocolate-entremet",
+    "title": "Dark Chocolate & Raspberry Mirror Glaze Entremet (Glaçage Miroir)",
+    "cuisine": "French / Modern Haute Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Advanced",
+    "prepMins": 90,
+    "cookMins": 25,
+    "totalMins": 115,
+    "yieldServings": 10,
+    "heroImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The showpiece of modern French pastry architecture: multi-layered entremet featuring dark chocolate pain de gênes sponge, crispy hazelnut praliné feuilletine base, tart raspberry gelee insert, cloud-like 66% Valrhona dark chocolate mousse, and a flawless gleaming dark chocolate mirror glaze (glaçage miroir).",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Ultra-glossy mirror reflection, crisp praline crunch, vibrant tart raspberry acid, silky melt-in-mouth mousse",
+    "ingredients": [
+      {
+        "name": "Valrhona Caraïbe 66% Dark Chocolate",
+        "qty": 280,
+        "unit": "g",
+        "prep": "chopped fine for mousse & glaze",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Heavy Whipping Cream (36% fat)",
+        "qty": 450,
+        "unit": "ml",
+        "prep": "chilled (whipped to soft peaks)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Whole Milk",
+        "qty": 150,
+        "unit": "ml",
+        "prep": "for custard base",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Yolks",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 180,
+        "unit": "g",
+        "prep": "divided for sponge, gelee, glaze",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Pure Raspberry Puree (Boiron)",
+        "qty": 200,
+        "unit": "g",
+        "prep": "100% fruit seedless",
+        "dept": "Produce"
+      },
+      {
+        "name": "Silver Gelatin Sheets (160 Bloom)",
+        "qty": 14,
+        "unit": "g",
+        "prep": "bloomed in cold ice water (divided)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Hazelnut Praline Paste",
+        "qty": 80,
+        "unit": "g",
+        "prep": "50% hazelnut caramel paste",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Crêpes Dentelles (Feuilletine Flakes)",
+        "qty": 50,
+        "unit": "g",
+        "prep": "crispy wafer flakes",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Glucose Syrup / Corn Syrup",
+        "qty": 100,
+        "unit": "g",
+        "prep": "prevents glaze crystallization",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "qty": 100,
+        "unit": "g",
+        "prep": "for mirror glaze opacity",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Gold Luster Dust & Fresh Raspberries",
+        "qty": 1,
+        "unit": "pack",
+        "prep": "for final presentation",
+        "dept": "Produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Silicone Eclipse or Silikomart 7-inch Dome Entremet Mold",
+        "type": "Pâtisserie Tool"
+      },
+      {
+        "name": "6-inch Round Cake Ring (for insert)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Digital Probe Thermometer",
+        "type": "Precision Tool"
+      },
+      {
+        "name": "Immersion Blender (without aerating head)",
+        "type": "Small Appliance"
+      }
+    ],
+    "miseEnPlace": [
+      "Bloom gelatin sheets in ice-cold water.",
+      "Make raspberry gelee insert: heat raspberry puree with 30g sugar, stir in 4g bloomed gelatin, pour into 6-inch ring and freeze solid for 3 hours.",
+      "Mix melted chocolate, praline paste, and feuilletine; press into thin 6-inch disc and chill."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Bake Chocolate Biscuit: Whip whole eggs with sugar until pale ribbons form. Fold in sifted flour, cocoa powder, and melted butter. Bake 6-inch round at 350°F (175°C) for 10 minutes. Cool and place crunchy feuilletine disc directly on top.",
+        "sensoryCue": "Tender sponge topped with a brittle, wafer-crisp praline layer.",
+        "scienceNote": "Feuilletine flakes coated in fat (cocoa butter/praline) remain crisp because fat prevents moisture from migrating from the mousse.",
+        "timerMins": 12
+      },
+      {
+        "stepNum": 2,
+        "text": "Make Dark Chocolate Bavarian Mousse: Scald milk and pour over whisked egg yolks and 25g sugar; cook over low heat to 180°F (82°C) to form crème anglaise. Strain over chopped 66% chocolate and 4g bloomed gelatin; whisk until silky. Cool to 88°F (31°C). Gently fold in 450ml soft-whipped cream.",
+        "sensoryCue": "Velvety, airy, glossy chocolate mousse.",
+        "scienceNote": "Folding whipped cream into chocolate at exactly 88-90°F prevents premature cocoa butter solidification (grainy mousse) while preventing the hot base from deflating cream air bubbles.",
+        "timerMins": 15
+      },
+      {
+        "stepNum": 3,
+        "text": "Assembly (Upside Down): Pour 2/3 of the mousse into the 7-inch silicone mold. Press frozen raspberry gelee insert into center. Cover with remaining mousse. Top with biscuit-feuilletine disc (sponge side facing up, level with mold rim). Freeze solid at 0°F (-18°C) for minimum 8 hours (or overnight).",
+        "sensoryCue": "Level base with zero air gaps.",
+        "scienceNote": "Entremets must be frozen rock-hard to unmold from silicone without tearing delicate edges.",
+        "timerMins": 480
+      },
+      {
+        "stepNum": 4,
+        "text": "Make Mirror Glaze (Glaçage Miroir): In a saucepan, boil water, sugar, and glucose syrup to 218°F (103°C). Off heat, stir in 6g bloomed gelatin. Pour hot syrup over condensed milk and 120g chopped chocolate. Emulsify with immersion blender kept strictly submerged on bottom of pitcher (do not lift or pump, to avoid bubbles). Cool to exactly 89-91°F (32-33°C).",
+        "sensoryCue": "Gleaming, mirror-reflective, bubble-free dark chocolate glaze.",
+        "scienceNote": "Keeping the immersion blender blade below liquid level eliminates air bubbles; temperature window of 89-91°F gives ideal viscosity to coat frozen dome without running off completely.",
+        "timerMins": 15
+      },
+      {
+        "stepNum": 5,
+        "text": "The Glaze Pour: Unmold frozen entremet onto a wire rack set over a rimmed baking sheet. Pour mirror glaze in one smooth continuous pour over top center, allowing it to sheet effortlessly down curved sides. Let drip 5 minutes; trim bottom drips with palette knife. Transfer to presentation platter and refrigerate 4 hours to thaw before slicing with a warm knife.",
+        "sensoryCue": "Breathtaking mirror reflection showing room interior; flawless glassy black dome with fresh raspberries and gold leaf.",
+        "scienceNote": "Thermal shock between 90°F glaze and 0°F frozen dome instantly sets gelatin, creating a 1mm uniform glossy shell.",
+        "timerMins": 10
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Intense dark cocoa roast, bright fresh raspberry perfume, toasted hazelnut praline",
+      "texture": "Multi-textural symphony: glossy mirror slip, melting airy mousse, tart firm gelee, and shattering praline crunch",
+      "finish": "Bittersweet 66% cacao tannins illuminated by vibrant raspberry acidity"
+    },
+    "scienceNotes": "Mirror glazes rely on a precise balance of sucrose, glucose, and gelatin. Glucose prevents sucrose recrystallization into matte grains, while gelatin and condensed milk provide cohesive tensile strength and light opacity.",
+    "troubleshooting": {
+      "Glaze has micro air bubbles": "Immersion blender was pumped or lifted above liquid; tap pitcher on counter and strain through fine mesh.",
+      "Glaze slides off leaving bald patches": "Glaze was too hot (above 95°F) or entremet surface was frosted with ice crystals; wipe frost off before glazing.",
+      "Torn edges when unmolding": "Entremet was not frozen solid; must freeze at least 8 hours."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Raspberry Puree",
+        "substitute": "Passionfruit Puree or Mango Puree",
+        "ratio": "1:1 for tropical profile"
+      },
+      {
+        "ingredient": "Feuilletine Flakes",
+        "substitute": "Crushed Cornflakes or Puffed Rice with Praline",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Vintage Champagne",
+      "Single Malt Scotch",
+      "Espresso Ristretto",
+      "Fresh Mint"
+    ],
+    "advancedTechnique": "Spiderweb effect: dropping 1 tbsp neutral white glaze on offset spatula and swiping across hot dark glaze for marble webs.",
+    "storageAndReheating": "Store in refrigerator up to 3 days. Do not refreeze once thawed.",
+    "nutritionEstimates": {
+      "calories": 480,
+      "protein": 7,
+      "carbs": 52,
+      "fat": 28
+    },
+    "relatedRecipes": [
+      "rec-mousse-chocolat",
+      "rec-opera-cake",
+      "rec-panna-cotta"
+    ],
+    "relatedTechniques": [
+      "Mirror glaze rheology temperature window",
+      "Immersion blender air bubble elimination",
+      "Upside-down silicone mold assembly"
+    ]
+  },
+  {
+    "id": "rec-french-meringues",
+    "title": "Meringues Suisses aux Baies Sauvages (Crisp Swiss Shells with Raspberry Powder & Chantilly)",
+    "cuisine": "French / Classical Pâtisserie",
+    "category": "dessert",
+    "slot": "predessert",
+    "difficulty": "Easy",
+    "prepMins": 20,
+    "cookMins": 90,
+    "totalMins": 110,
+    "yieldServings": 12,
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The pure art of sugar and egg albumin: Swiss method meringues gently heated over a water bath to dissolve all sugar crystals, whipped into a blindingly glossy, stiff marshmallow meringue, piped into elegant rosettes, dusted with freeze-dried raspberry powder, and dehydrated to porcelain-crisp perfection.",
+    "dietary": [
+      "Vegetarian",
+      "Gluten-Free",
+      "Dairy-Free Option"
+    ],
+    "sensoryRole": "Porcelain-crisp exterior that melts into sweet spun sugar on the tongue, tart berry dust contrast",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "qty": 150,
+        "unit": "g",
+        "prep": "approx 5 large eggs, room temp, no yolk traces",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Superfine Castor Sugar",
+        "qty": 300,
+        "unit": "g",
+        "prep": "strict 1:2 ratio to egg whites",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cream of Tartar (Potassium Bitartrate)",
+        "qty": 1.5,
+        "unit": "g",
+        "prep": "acid protein stabilizer",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Pure Vanilla Bean Paste",
+        "qty": 5,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Freeze-Dried Raspberry Powder",
+        "qty": 15,
+        "unit": "g",
+        "prep": "pulverized for dusting",
+        "dept": "Produce"
+      },
+      {
+        "name": "Stabilized Vanilla Chantilly Cream",
+        "qty": 200,
+        "unit": "ml",
+        "prep": "for sandwiching (optional)",
+        "dept": "Dairy & Fats"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Stand Mixer with Whisk Attachment",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Heatproof Glass or Copper Whisking Bowl",
+        "type": "Cookware"
+      },
+      {
+        "name": "Piping Bag with French Star Tip (866)",
+        "type": "Pâtisserie Tool"
+      },
+      {
+        "name": "Silpat Baking Mats",
+        "type": "Baking Supply"
+      }
+    ],
+    "miseEnPlace": [
+      "Wipe mixer bowl and whisk with lemon juice or white vinegar to remove all traces of fat.",
+      "Preheat oven to 200°F (95°C) with convection fan on low.",
+      "Line baking sheets with Silpat mats."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Bain-Marie Heating: Combine egg whites, castor sugar, and cream of tartar in heatproof bowl set over a pot of barely simmering water (water must not touch bowl). Whisk constantly for 4-5 minutes until sugar is completely dissolved and mixture reaches 140-145°F (60-63°C). Rub between fingers: it must feel completely smooth without a single sugar grain.",
+        "sensoryCue": "Frothy, warm liquid with zero gritty texture.",
+        "scienceNote": "Heating to 140°F dissolves 100% of sucrose crystals while denaturing egg ovalbumin proteins, allowing them to stretch around air pockets with unprecedented tensile strength.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Whip to Glossy Peaks: Transfer hot bowl immediately to stand mixer fitted with whisk attachment. Whip on high speed for 7 to 8 minutes until meringue is stiff, blindingly glossy, holds razor-sharp peaks, and bowl has cooled to room temperature. Whisk in vanilla paste.",
+        "sensoryCue": "Brilliant porcelain gleam; peaks stand straight up like marble sculptures.",
+        "scienceNote": "Swiss meringue creates a far more stable, dense micro-foam than French meringue, completely resistant to weeping or collapse.",
+        "timerMins": 8
+      },
+      {
+        "stepNum": 3,
+        "text": "Pipe Rosettes: Transfer meringue into piping bag fitted with French star tip. Pipe uniform 2-inch rosettes onto Silpat-lined baking sheets holding tip perpendicular. Dust lightly through a fine sieve with freeze-dried raspberry powder.",
+        "sensoryCue": "Sharp fluted ridges holding crisp architectural definition; dusting of ruby raspberry powder.",
+        "scienceNote": "Freeze-dried fruit powder provides intense natural acid and color without introducing water that would dissolve the sugar matrix.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 4,
+        "text": "Dehydrate: Bake at 200°F (95°C) for 90 minutes. (Do not allow oven to exceed 210°F, or meringues will turn yellow). Turn oven off, prop door open 1 inch with a wooden spoon, and let meringues cool completely inside the dry oven for 2 hours.",
+        "sensoryCue": "Pristine snowy white shells that lift cleanly off the Silpat with zero sticking.",
+        "scienceNote": "Meringues are not baked; they are dehydrated. Low temperature evaporates water while preserving white color and solidifying sugar-protein walls.",
+        "timerMins": 90
+      },
+      {
+        "stepNum": 5,
+        "text": "Serve or Store: Serve standalone as crisp sweet kisses, or sandwich two shells with stabilized vanilla Chantilly cream and fresh wild berries.",
+        "sensoryCue": "Shattering dry crunch followed instantly by melting sweet silk.",
+        "scienceNote": "Pure sucrose-protein matrix dissolves instantly upon saliva contact via rapid sugar solubilization.",
+        "timerMins": 2
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Sweet vanilla bean, spun sugar, tart fruity raspberry notes",
+      "texture": "Porcelain-brittle snap, wafer-light hollow lightness, dissolving like cotton candy on the tongue",
+      "finish": "Clean sweet finish cut by the sharp electric tang of raspberry powder"
+    },
+    "scienceNotes": "Cream of tartar supplies tartaric acid, lowering egg white pH to ~4.5. This optimal acidic environment stabilizes the egg ovalbumin and conalbumin proteins against excessive coagulation, preventing the meringue from weeping liquid (syneresis).",
+    "troubleshooting": {
+      "Meringues turn beige or yellow": "Oven was too hot (over 215°F), causing sugar caramelization; bake at strictly 200°F.",
+      "Sticky chewy center": "Meringues were not dried long enough, or room humidity was high; leave in dry oven longer.",
+      "Beads of syrup weep onto surface": "Undissolved sugar crystals; heat over water bath until completely dissolved in step 1."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Raspberry Powder",
+        "substitute": "Matcha Green Tea Powder, Cocoa Powder, or Passionfruit Powder",
+        "ratio": "1:1 for stunning color contrasts"
+      },
+      {
+        "ingredient": "Cream of Tartar",
+        "substitute": "1/2 tsp fresh lemon juice",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Earl Grey Tea",
+      "Champagne Rosé",
+      "Fresh Strawberries",
+      "Espresso"
+    ],
+    "advancedTechnique": "Painting interior lines of piping bag with gel food color before filling with meringue for two-tone striped ribbon rosettes.",
+    "storageAndReheating": "Store in an airtight container with silica gel packets at room temperature for up to 3 weeks. Do not refrigerate (humidity ruins meringue).",
+    "nutritionEstimates": {
+      "calories": 65,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 0
+    },
+    "relatedRecipes": [
+      "rec-passionfruit-pavlova",
+      "rec-french-macarons",
+      "rec-shattered-lemon-tart"
+    ],
+    "relatedTechniques": [
+      "Swiss meringue water bath dissolution",
+      "Oven dehydration desiccation",
+      "Acid protein stabilization"
+    ]
+  },
+  {
+    "id": "rec-flan-patissier",
+    "title": "Parisian Flan Pâtissier (Custard Tart with Madagascar Vanilla Bean in Crisp Shortcrust)",
+    "cuisine": "French / Classical Boulangerie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 30,
+    "cookMins": 40,
+    "totalMins": 70,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The beloved Parisian boulangerie masterpiece: a tall 2-inch slice of ultra-creamy, wobbly Madagascar vanilla custard baked inside a crisp, buttery pâte brisée until the top blisters into dark caramelized leopard spots.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Deep Madagascar vanilla perfume, unctuous wobbling custard cream, caramelized top blister, buttery crisp crust",
+    "ingredients": [
+      {
+        "name": "Pâte Brisée (Flaky French Pastry)",
+        "qty": 300,
+        "unit": "g",
+        "prep": "chilled all-butter dough",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Whole Farm Milk (3.5% fat)",
+        "qty": 700,
+        "unit": "ml",
+        "prep": "fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 300,
+        "unit": "ml",
+        "prep": "fresh dairy",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Madagascar Bourbon Vanilla Beans",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "split and seeds scraped",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Egg Yolks",
+        "qty": 5,
+        "unit": "whole",
+        "prep": "approx 90g",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Whole Eggs",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 180,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cornstarch (Maizena)",
+        "qty": 90,
+        "unit": "g",
+        "prep": "sifted starch binder",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 40,
+        "unit": "g",
+        "prep": "cubed cold",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Fleur de Sel",
+        "qty": 2,
+        "unit": "g",
+        "prep": "fine pinch",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Deep 8-inch Springform Pan or Pastry Ring (2-inch deep)",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Heavy Stainless Steel Saucier / Pot",
+        "type": "Cookware"
+      },
+      {
+        "name": "Balloon Whisk",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Roll pâte brisée to 3.5mm thickness; line the deep 8-inch ring/pan, pressing into corners; freeze 30 minutes.",
+      "Infuse milk, cream, vanilla pod, and scraped seeds in saucepan over medium heat; bring to gentle simmer and let steep 20 minutes.",
+      "Preheat oven to 350°F (175°C) to blind-bake crust."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Blind-Bake Shell: Line frozen pastry shell with parchment and pie weights. Bake at 350°F (175°C) for 20 minutes. Remove weights; bake 8 more minutes until pale golden and dry. Cool completely. Raise oven to 390°F (200°C).",
+        "sensoryCue": "Pastry is crisp, pale gold, and buttery.",
+        "scienceNote": "Blind-baking prevents the massive 1-liter liquid custard volume from turning the bottom crust into soggy raw dough.",
+        "timerMins": 28
+      },
+      {
+        "stepNum": 2,
+        "text": "Make Vanilla Custard: Reheat vanilla milk/cream to a simmer. In a large bowl, whisk egg yolks, whole eggs, sugar, and cornstarch until smooth and pale. Temper hot milk into egg mixture while whisking. Return to pan; bring to a full boil over medium heat while whisking vigorously for 2 minutes until very thick and glossy.",
+        "sensoryCue": "Thick, satiny custard densely peppered with black vanilla bean seeds.",
+        "scienceNote": "Boiling for 2 minutes activates cornstarch amylose gelatinization and deactivates alpha-amylase enzymes in egg yolks that would otherwise liquefy the starch custard.",
+        "timerMins": 6
+      },
+      {
+        "stepNum": 3,
+        "text": "Off heat, whisk cold butter and fleur de sel into hot custard until completely emulsified and glossy.",
+        "sensoryCue": "Velvety sheen; buttery vanilla aroma.",
+        "scienceNote": "Whisking cold butter into hot starch creates a micro-emulsion that imparts luxurious mouthfeel.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Pour hot custard immediately into the par-baked pastry shell, smoothing top with spatula. Bake at 390°F (200°C) for 35 to 40 minutes until top develops dark caramelized blistered spots and center has a firm wobble.",
+        "sensoryCue": "Golden-bronzed top with dark leopard patches of caramelized milk sugar.",
+        "scienceNote": "High 390°F heat caramelizes surface lactose and sucrose (creating the signature Paris boulangerie blistered crown) while the dense interior sets gently.",
+        "timerMins": 38
+      },
+      {
+        "stepNum": 5,
+        "text": "Cool completely at room temperature for 3 hours, then refrigerate for at least 4 hours (or overnight) before slicing with a clean sharp chef's knife.",
+        "sensoryCue": "Pristine tall 2-inch slices; silky wobbly custard texture that holds clean shape.",
+        "scienceNote": "Cornstarch retrogradation and butterfat solidification require full chilling to build a sliceable yet wobbly gel matrix.",
+        "timerMins": 240
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Intense bourbon vanilla bean, caramelized milk skin, toasted butter shortcrust",
+      "texture": "Crisp flaky pastry base meeting dense, silky, ultra-smooth wobbly custard",
+      "finish": "Persistent vanilla bean sweetness balanced by clean dairy richness"
+    },
+    "scienceNotes": "Flan Pâtissier is the gold standard of starch-thickened custards. Unlike crème brûlée (pure egg yolk coagulation), Flan Pâtissier relies on a high concentration of cornstarch (90g/liter) which sets into a rigid, freestanding gel that can be sliced cleanly at room temperature.",
+    "troubleshooting": {
+      "Custard liquefies after cooling": "Custard was not boiled for full 2 minutes; egg yolk amylase digested the cornstarch.",
+      "Soggy bottom crust": "Crust was not blind-baked sufficiently before filling.",
+      "Custard curdles or splits": "Too much butter was added or custard was scorched on pan bottom; whisk continuously during boiling."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Madagascar Vanilla",
+        "substitute": "Pistachio Paste (80g) or Melted Dark Chocolate (150g)",
+        "ratio": "For Flan Pistache or Flan Chocolat"
+      },
+      {
+        "ingredient": "Pâte Brisée",
+        "substitute": "Pâte Feuilletée (Puff Pastry)",
+        "ratio": "1:1 for flaky layered rim"
+      }
+    ],
+    "flavorPairings": [
+      "Espresso",
+      "Café Crème",
+      "Fresh Red Berries",
+      "Earl Grey Tea"
+    ],
+    "advancedTechnique": "Cold-infusing split vanilla beans in milk in refrigerator for 24 hours prior to simmering for maximum extraction of delicate vanillin compounds.",
+    "storageAndReheating": "Store in refrigerator covered up to 4 days. Serve chilled or slightly tempered 20 minutes before enjoying.",
+    "nutritionEstimates": {
+      "calories": 390,
+      "protein": 7,
+      "carbs": 44,
+      "fat": 21
+    },
+    "relatedRecipes": [
+      "rec-creme-brulee",
+      "rec-creme-caramel",
+      "rec-eclairs-chocolat"
+    ],
+    "relatedTechniques": [
+      "Cornstarch amylase deactivation boil",
+      "High-heat lactose surface blistering",
+      "Deep-ring tart blind-baking"
+    ]
+  },
+  {
+    "id": "rec-tarte-bourdaloue",
+    "title": "Tarte Bourdaloue (French Poached Pear & Almond Frangipane Tart)",
+    "cuisine": "French / Classical Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 40,
+    "cookMins": 45,
+    "totalMins": 85,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The Parisian classic created on Rue Bourdaloue in the 19th century: sweet buttery pâte sucrée tart shell filled with rich almond frangipane cream, topped with tender vanilla-poached William pears fanned across the surface, baked until golden and glazed with warm apricot confiture and toasted sliced almonds.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Floral juicy poached pears, rich nutty almond frangipane, buttery crumbly crust, shiny apricot glaze",
+    "ingredients": [
+      {
+        "name": "Pâte Sucrée (French Sweet Tart Dough)",
+        "qty": 300,
+        "unit": "g",
+        "prep": "chilled all-butter sweet crust",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Firm William or Bosc Pears",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "peeled, cored, poached in vanilla syrup, halved",
+        "dept": "Produce"
+      },
+      {
+        "name": "Blanched Almond Flour",
+        "qty": 120,
+        "unit": "g",
+        "prep": "superfine sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 100,
+        "unit": "g",
+        "prep": "softened at room temp",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 100,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Eggs",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "room temperature (approx 100g)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Poire Williams Eau-de-Vie or Dark Rum",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "pear brandy",
+        "dept": "Pantry"
+      },
+      {
+        "name": "All-Purpose Pastry Flour",
+        "qty": 15,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Pure Vanilla Bean Paste",
+        "qty": 5,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Apricot Jam / Confiture",
+        "qty": 60,
+        "unit": "g",
+        "prep": "warmed and strained for pastry glaze",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Toasted Sliced Almonds",
+        "qty": 30,
+        "unit": "g",
+        "prep": "golden roasted",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "9-inch Fluted Tart Pan with Removable Bottom",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Pastry Brush",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Chef's Knife for Pear Fanning",
+        "type": "Cutlery"
+      }
+    ],
+    "miseEnPlace": [
+      "Poach pear halves in simple syrup with vanilla bean and lemon peel for 15 minutes; drain thoroughly on paper towels.",
+      "Blind-bake pâte sucrée shell at 350°F (175°C) for 15 minutes; cool.",
+      "Preheat oven to 350°F (175°C)."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Crème Frangipane: In a stand mixer fitted with paddle, beat softened butter and sugar for 2 minutes until creamy. Add eggs one at a time, beating until emulsified. Fold in almond flour, 15g pastry flour, vanilla paste, and Poire Williams brandy until smooth.",
+        "sensoryCue": "Fluffy, pale ivory almond cream with rich perfume of toasted nuts and brandy.",
+        "scienceNote": "Adding a tiny amount of flour (15g) binds free water, preventing the almond butter emulsion from separating into grease during baking.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Spread Frangipane: Spread the frangipane evenly into the cooled par-baked tart shell, smoothing with offset spatula to within 1/4-inch of the rim.",
+        "sensoryCue": "Even, fragrant bed of almond cream.",
+        "scienceNote": "Frangipane puffs during baking; leaving 1/4-inch space prevents it from spilling over tart walls.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 3,
+        "text": "Fan & Arrange Pears: Slice poached pear halves crosswise into thin 1/8-inch slices, keeping the pear shape intact. Gently press pear half with hand to fan slices outward. Use spatula to transfer 5-6 fanned pear halves onto frangipane in a pinwheel star pattern, pressing lightly into the cream.",
+        "sensoryCue": "Elegant symmetrical pinwheel of poached pear fans across almond cream.",
+        "scienceNote": "Draining pears thoroughly prevents excess syrup from making the frangipane soggy around the fruit.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake: Bake at 350°F (175°C) for 40 to 45 minutes until frangipane is puffed, set in center, and deep golden-brown between pear slices.",
+        "sensoryCue": "Golden-bronzed almond cake surrounding succulent translucent pears; toasted nut aroma.",
+        "scienceNote": "Almond fats and egg proteins coagulate into a tender cake crumb while pear juices concentrate and caramelize slightly.",
+        "timerMins": 42
+      },
+      {
+        "stepNum": 5,
+        "text": "Glaze & Finish: Warm apricot jam with 1 tbsp water; strain. Brush warm glaze over warm pears and frangipane to create a brilliant glassy sheen. Scatter toasted sliced almonds around tart perimeter. Cool to room temp before serving.",
+        "sensoryCue": "Gleaming golden tart with glossy apricot shine and crunchy almond border.",
+        "scienceNote": "Apricot glaze seals exposed fruit from oxidation and imparts professional patisserie luster.",
+        "timerMins": 5
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Poached sweet pears, roasted almonds, Poire Williams eau-de-vie, buttery shortcrust",
+      "texture": "Crisp sweet shortbread base, tender moist almond cake, and silky melting juicy pears",
+      "finish": "Subtle fruit acidity from apricot glaze balancing sweet almond marzipan richness"
+    },
+    "scienceNotes": "Pears and almonds share natural chemical flavor affinities: both contain benzaldehyde precursors and stone-fruit volatile ketones, which amplify each other when baked together in frangipane.",
+    "troubleshooting": {
+      "Soggy frangipane around pears": "Pears were not drained on paper towels before placing onto frangipane.",
+      "Frangipane separates into greasy butter slick": "Eggs were too cold when added to butter, breaking emulsion; use room temp ingredients.",
+      "Tart edges burn": "Shield fluted tart perimeter with aluminum foil ring if browning too quickly."
+    },
+    "substitutions": [
+      {
+        "ingredient": "William Pears",
+        "substitute": "Bosc Pears, Ripe Apricots, or Poached Figs",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Poire Williams",
+        "substitute": "Calvados, Cognac, or Amaretto",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Crème Fraîche",
+      "Poire Williams Digestif",
+      "Earl Grey Tea",
+      "Sauternes"
+    ],
+    "advancedTechnique": "Poaching pears in a spiced Riesling syrup with star anise and lemon verbena before fanning.",
+    "storageAndReheating": "Keep at room temp for 2 days covered with foil, or refrigerate up to 4 days.",
+    "nutritionEstimates": {
+      "calories": 420,
+      "protein": 8,
+      "carbs": 46,
+      "fat": 24
+    },
+    "relatedRecipes": [
+      "rec-tarte-tatin",
+      "rec-financiers-amandes",
+      "rec-shattered-lemon-tart"
+    ],
+    "relatedTechniques": [
+      "Pear crosswise fanning pinwheel",
+      "Frangipane fat emulsion stabilization",
+      "Apricot confiture glazing"
+    ]
+  },
+  {
+    "id": "rec-clafoutis-cerises",
+    "title": "Clafoutis Limousin aux Cerises Noires (Whole Dark Cherry Custard Cake)",
+    "cuisine": "French / Limousin Classical",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Easy",
+    "prepMins": 15,
+    "cookMins": 35,
+    "totalMins": 50,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The rustic soul of central France: sweet, plump dark cherries baked in a delicate flan-like batter of farm eggs, whole milk, heavy cream, Kirsch, and vanilla, served warm straight from a buttered ceramic dish dusted with powdered sugar.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Warm juicy cherry bursts, delicate custardy pancake-flan crumb, sweet almond and Kirsch perfume",
+    "ingredients": [
+      {
+        "name": "Fresh Sweet Dark Cherries (Burlat or Bing)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "stemmed (traditionally unpitted for almond flavor, or pitted)",
+        "dept": "Produce"
+      },
+      {
+        "name": "Large Whole Eggs",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "room temperature",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Yolk",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "adds tenderness",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Whole Milk",
+        "qty": 200,
+        "unit": "ml",
+        "prep": "farm fresh",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Heavy Cream (36% fat)",
+        "qty": 100,
+        "unit": "ml",
+        "prep": "fresh cream",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 100,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Pastry Flour",
+        "qty": 70,
+        "unit": "g",
+        "prep": "sifted (low flour ensures flan texture)",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Kirschwasser (Cherry Brandy)",
+        "qty": 25,
+        "unit": "ml",
+        "prep": "adds classic stone-fruit aroma",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Pure Vanilla Bean Paste",
+        "qty": 5,
+        "unit": "ml",
+        "prep": "bourbon vanilla",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Unsalted European Butter",
+        "qty": 30,
+        "unit": "g",
+        "prep": "melted and cooled",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Powdered Sugar",
+        "qty": 15,
+        "unit": "g",
+        "prep": "for dusting",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "10-inch Oval Ceramic Gratin Dish or Cast Iron Skillet",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Whisk & Mixing Bowl",
+        "type": "Cookware"
+      }
+    ],
+    "miseEnPlace": [
+      "Butter baking dish heavily and coat with granulated sugar, tapping out excess.",
+      "Preheat oven to 375°F (190°C).",
+      "Macerate cherries in Kirsch and 1 tbsp sugar for 15 minutes."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Arrange Cherries: Spread macerated dark cherries in a single dense layer across bottom of prepared ceramic dish.",
+        "sensoryCue": "Glossy crimson cherries glistening with sugar and Kirsch.",
+        "scienceNote": "Traditional purists leave pits intact because cherry pits contain amygdalin, releasing a delicate bitter almond aroma during baking.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 2,
+        "text": "Make Crêpe Batter: Whisk whole eggs, extra yolk, and sugar in a bowl for 1 minute. Whisk in sifted flour and pinch of salt until smooth paste forms. Slowly pour in milk, heavy cream, melted butter, vanilla paste, and remaining Kirsch from maceration until a smooth, thin batter forms.",
+        "sensoryCue": "Thin, fluid batter similar to French crêpe batter.",
+        "scienceNote": "Low flour-to-liquid ratio (70g flour to 300ml dairy) ensures a delicate baked flan texture rather than a heavy cake.",
+        "timerMins": 4
+      },
+      {
+        "stepNum": 3,
+        "text": "Pour Batter: Pour batter gently over cherries in the dish.",
+        "sensoryCue": "Cherries peek out through the ivory batter.",
+        "scienceNote": "Cherries stay anchored on the bottom while the light batter surrounds them, puffing slightly during baking.",
+        "timerMins": 1
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake: Bake at 375°F (190°C) for 32 to 36 minutes until edges are puffed and golden brown, and center is set with a tender custard wobble.",
+        "sensoryCue": "Puffed golden rim, dark glistening cherries, warm aroma of vanilla and roasted stone fruit.",
+        "scienceNote": "Egg and dairy proteins coagulate at 170-175°F, locking the cherries inside a custardy matrix.",
+        "timerMins": 35
+      },
+      {
+        "stepNum": 5,
+        "text": "Rest & Serve Warm: Rest 10 minutes (it will gently settle as it cools). Dust heavily with sifted powdered sugar. Serve warm directly from dish.",
+        "sensoryCue": "Snowy powdered sugar melting against warm purple cherries; warm custard melt.",
+        "scienceNote": "Clafoutis is best served warm (110-120°F) when the custard fats are soft and supple on the palate.",
+        "timerMins": 10
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Warm roasted cherries, Kirschwasser brandy, vanilla bean, caramelized butter crust",
+      "texture": "Juicy sweet-tart cherry bursts against velvety, tender, melt-in-mouth custardy crumb",
+      "finish": "Lingering almond and cherry blossom notes with clean dairy sweetness"
+    },
+    "scienceNotes": "In French culinary law, a clafoutis can only be named 'Clafoutis' if made with cherries; if made with other fruits (plums, pears, berries), it is technically a 'Flognarde'.",
+    "troubleshooting": {
+      "Rubbery texture": "Too much flour was added or batter was over-whipped; whisk just until flour dissolves.",
+      "Watery puddle around cherries": "Frozen cherries were used without thawing and draining; use fresh dry cherries.",
+      "Batter didn't set in center": "Baking time was too short; center should feel springy and custardy to the touch."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Dark Sweet Cherries",
+        "substitute": "Sour Morello Cherries (increase sugar by 20g) or Blackberries",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Kirschwasser",
+        "substitute": "Amaretto or Cognac",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Cold Whole Milk",
+      "Riesling Demi-Sec",
+      "Vanilla Bean Ice Cream",
+      "Café au Lait"
+    ],
+    "advancedTechnique": "Lightly roasting pitted cherries in a hot pan with butter for 2 minutes to concentrate sugars before baking in custard.",
+    "storageAndReheating": "Best enjoyed day of baking. Refrigerate leftovers up to 3 days; re-warm in 325°F oven for 8 minutes.",
+    "nutritionEstimates": {
+      "calories": 240,
+      "protein": 6,
+      "carbs": 32,
+      "fat": 10
+    },
+    "relatedRecipes": [
+      "rec-creme-caramel",
+      "rec-tarte-bourdaloue",
+      "rec-madeleines-commercy"
+    ],
+    "relatedTechniques": [
+      "Low-hydration crêpe batter baking",
+      "Kirsch fruit maceration",
+      "Ceramic gratin heat retention"
+    ]
+  },
+  {
+    "id": "rec-tarte-citron-meringuee",
+    "title": "Tarte au Citron Meringuée (French Lemon Curd Tart with Torched Italian Meringue)",
+    "cuisine": "French / Classical Haute Pâtisserie",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Intermediate",
+    "prepMins": 45,
+    "cookMins": 25,
+    "totalMins": 70,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The Parisian showcase: a razor-thin, crisp, buttery pâte sablée shell filled with Pierre Hermé-style emulsified lemon curd, crowned with towering peaks of glossy Italian meringue torched to caramelized bronze perfection.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Electric citrus acidity, silky unctuous lemon butter curd, crisp sweet shell, marshmallow torched meringue",
+    "ingredients": [
+      {
+        "name": "Pâte Sablée (French Sweet Shortcrust)",
+        "qty": 300,
+        "unit": "g",
+        "prep": "chilled all-butter shortcrust",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fresh Squeezed Eureka Lemons (Juice & Zest)",
+        "qty": 180,
+        "unit": "ml",
+        "prep": "freshly squeezed + 12g zest from 4 lemons",
+        "dept": "Produce"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 200,
+        "unit": "g",
+        "prep": "divided: 150g curd, 150g Italian meringue",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Large Whole Eggs",
+        "qty": 4,
+        "unit": "whole",
+        "prep": "room temperature (approx 200g)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Unsalted European Butter (82% fat)",
+        "qty": 180,
+        "unit": "g",
+        "prep": "chilled and cubed (for mounting)",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Egg Whites",
+        "qty": 3,
+        "unit": "whole",
+        "prep": "approx 100g, room temp for Italian meringue",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Water",
+        "qty": 40,
+        "unit": "ml",
+        "prep": "for sugar syrup",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Fleur de Sel",
+        "qty": 2,
+        "unit": "g",
+        "prep": "fine pinch",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "9-inch Fluted Tart Pan with Removable Bottom",
+        "type": "Bakeware"
+      },
+      {
+        "name": "High-Power Immersion Blender",
+        "type": "Small Appliance"
+      },
+      {
+        "name": "Piping Bag with Saint-Honoré or French Star Tip",
+        "type": "Pâtisserie Tool"
+      },
+      {
+        "name": "Butane Kitchen Blowtorch",
+        "type": "Precision Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Blind-bake pâte sablée tart shell at 350°F (175°C) until deep golden and crisp; cool completely.",
+      "Zest lemons directly into sugar and rub with fingers to release citrus oils.",
+      "Cut butter into small cubes and chill in refrigerator."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Cook Lemon Base: In a heatproof bowl set over simmering water, whisk eggs, lemon sugar, and lemon juice. Cook whisking continuously until the mixture thickens and coats the back of a spoon, reaching exactly 180°F (82°C). Remove bowl from heat; cool to 140°F (60°C).",
+        "sensoryCue": "Thick, glossy yellow curd holding whisk lines.",
+        "scienceNote": "Cooking egg proteins to 180°F coagulates ovotransferrin and ovalbumin without scrambling, creating the primary thickening network.",
+        "timerMins": 8
+      },
+      {
+        "stepNum": 2,
+        "text": "Mount the Butter (The Hermé Method): When curd cools to 140°F (60°C), add cold butter cubes a few at a time while blending with high-power immersion blender. Continue blending for full 2 minutes until an ultra-creamy, pale, velvety emulsion forms.",
+        "sensoryCue": "Color lightens to pale lemon yellow; satiny mirror sheen.",
+        "scienceNote": "High-shear blending breaks butterfat into micro-droplets under 2 microns, creating an unctuous emulsion that sets into a velvety texture when chilled without requiring cornstarch.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Fill Tart & Chill: Pour lemon curd into the baked, cooled tart shell, smoothing flat with an offset spatula. Chill in refrigerator for 2 hours until curd is firm and set.",
+        "sensoryCue": "Glass-smooth porcelain yellow surface.",
+        "scienceNote": "Chilling crystallizes the butterfat matrix, locking the curd into clean sliceable form.",
+        "timerMins": 120
+      },
+      {
+        "stepNum": 4,
+        "text": "Make Italian Meringue: Boil 150g sugar and 40ml water to 244°F (118°C). Whip egg whites to soft peaks. Stream 244°F syrup into whipping egg whites; whip on high until stiff, glossy, and cooled to room temp.",
+        "sensoryCue": "Blindingly shiny white meringue holding stiff sculpted peaks.",
+        "scienceNote": "Italian meringue syrup cooks egg whites to 160°F+, sterilizing them and producing a micro-foam that never weeps or shrinks.",
+        "timerMins": 8
+      },
+      {
+        "stepNum": 5,
+        "text": "Pipe & Torch: Pipe decorative peaks, swirls, or Saint-Honoré petals across top of lemon tart. Torch lightly with butane blowtorch until peak ridges turn toasted chestnut brown.",
+        "sensoryCue": "Toasted marshmallow aroma; bronze ridges contrasting against snow-white valleys and bright yellow curd.",
+        "scienceNote": "Direct torch flame caramelizes sucrose on peak tips via rapid thermal pyrolysis, creating toasted flavor contrast.",
+        "timerMins": 4
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Intense fresh lemon oil, toasted marshmallow sugar, rich browned butter shortcrust",
+      "texture": "Crisp shattering pastry crust, ultra-creamy melting lemon curd, and pillowy cloud-soft meringue",
+      "finish": "Vibrant lemon acidity perfectly counterbalanced by sweet toasted meringue"
+    },
+    "scienceNotes": "Pierre Hermé's legendary lemon tart breakthrough was eliminating starch entirely. By relying on egg coagulation combined with high-shear cold butter emulsification, the tart avoids all gummy mouthfeel, delivering pure explosive citrus flavor.",
+    "troubleshooting": {
+      "Curd is runny and won't set": "Butter was added while curd was boiling hot (over 150°F), destroying emulsion, or curd didn't reach 180°F.",
+      "Meringue weeps syrup onto curd": "French meringue was used instead of Italian; Italian meringue with 244°F cooked syrup is mandatory.",
+      "Soggy tart shell": "Shell was under-baked during blind bake; must be baked to full golden-brown crispness."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Eureka Lemons",
+        "substitute": "Yuzu Juice or Calamansi Juice",
+        "ratio": "1:1 for extraordinary Japanese/Filipino profile"
+      },
+      {
+        "ingredient": "Italian Meringue",
+        "substitute": "Simple dusting of Powdered Sugar and Lemon Zest",
+        "ratio": "Tarte au Citron Pur style"
+      }
+    ],
+    "flavorPairings": [
+      "Champagne Extra Brut",
+      "Cold Earl Grey Tea",
+      "Fresh Blackberries",
+      "Limoncello"
+    ],
+    "advancedTechnique": "Infusing lemon juice with fresh lemon verbena leaves before cooking curd for herbal citrus complexity.",
+    "storageAndReheating": "Store in refrigerator up to 2 days. Best eaten within 24 hours of torched meringue assembly.",
+    "nutritionEstimates": {
+      "calories": 410,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 22
+    },
+    "relatedRecipes": [
+      "rec-shattered-lemon-tart",
+      "rec-lemon-curd-bars",
+      "rec-key-lime-pie"
+    ],
+    "relatedTechniques": [
+      "High-shear butter mounting (Hermé method)",
+      "Italian meringue sugar syrup calibration",
+      "Butane torch caramelization"
+    ]
+  },
+  {
+    "id": "rec-pain-au-chocolat",
+    "title": "Artisanal Pains au Chocolat (27-Layer Laminated Viennoiserie with Cacao Barry Batons)",
+    "cuisine": "French / Classical Boulangerie",
+    "category": "breakfast",
+    "slot": "opener",
+    "difficulty": "Advanced",
+    "prepMins": 90,
+    "cookMins": 18,
+    "totalMins": 108,
+    "yieldServings": 10,
+    "heroImage": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The holy grail of French morning viennoiserie: hand-laminated yeast dough layered with 84% tournage butter, folded into 27 crisp shattering micro-layers around two parallel batons of bittersweet 44% Cacao Barry dark chocolate, proofed to trembling lightness and baked to deep golden-bronze perfection.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Deafeningly crisp shattering laminated crust, honeycomb buttery interior crumb, bittersweet molten chocolate core",
+    "ingredients": [
+      {
+        "name": "French T55 or Unbleached Bread Flour (12% protein)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Cold Whole Milk",
+        "qty": 140,
+        "unit": "ml",
+        "prep": "38°F",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Cold Water",
+        "qty": 140,
+        "unit": "ml",
+        "prep": "filtered, 38°F",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Granulated Castor Sugar",
+        "qty": 55,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 10,
+        "unit": "g",
+        "prep": "2% baker's percentage",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Instant Dry Yeast (SAF-Instant Gold)",
+        "qty": 7,
+        "unit": "g",
+        "prep": "osmotolerant yeast",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Unsalted European Butter for Dough (Détrempe)",
+        "qty": 40,
+        "unit": "g",
+        "prep": "softened",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Beurre de Tournage (Dry Butter 84% fat)",
+        "qty": 250,
+        "unit": "g",
+        "prep": "beaten into flat 7x7-inch square slab",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Boulangerie Chocolate Batons (44% Cacao Barry)",
+        "qty": 20,
+        "unit": "batons",
+        "prep": "8cm baking-stable chocolate batons",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Egg Wash (Egg Yolk + 1 tsp Cream + Pinch Salt)",
+        "qty": 1,
+        "unit": "whole",
+        "prep": "whisked and strained",
+        "dept": "Dairy & Fats"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy French Rolling Pin (Non-Tapered)",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Parchment Paper Sheets",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Heavy Rimmed Baking Sheets",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Ruler & Pastry Pizza Wheel",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Prepare détrempe dough; knead lightly for 4 minutes and chill overnight (12h) in refrigerator.",
+      "Beat dry butter with rolling pin inside parchment into an even 7x7-inch square block (beurre de tournage); chill to 55°F (13°C).",
+      "Prepare egg wash and chill."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "The Lock-In (Enbriblage): Roll cold détrempe dough into a 10x10-inch square. Place 7x7-inch butter block at 45° angle like a diamond in center. Fold dough corners inward like an envelope, pinching seams tightly to seal butter inside completely.",
+        "sensoryCue": "Smooth dough package with butter completely enclosed and no exposed edges.",
+        "scienceNote": "Both dough and butter must be at the identical temperature (55°F / 13°C) and plasticity; if butter is too cold it shatters, if too warm it melts into the dough.",
+        "timerMins": 5
+      },
+      {
+        "stepNum": 2,
+        "text": "Lamination (1 Double Turn + 1 Single Turn = 27 Layers): Roll packet smoothly into a 24x8-inch rectangle. Perform a Double Turn (book fold): fold ends inward to meet off-center, then fold in half. Rest 45 minutes in refrigerator. Roll out again into 24x8-inch rectangle. Perform a Single Turn (letter fold): fold into thirds. Chill 2 hours.",
+        "sensoryCue": "Pliable, elastic striped dough slab with zero butter leakage.",
+        "scienceNote": "The mathematical progression (4 layers x 3 layers = 12 butter layers alternating with 13 dough layers, totaling 25-27 strata) creates the ideal honeycomb alveolar structure.",
+        "timerMins": 120
+      },
+      {
+        "stepNum": 3,
+        "text": "Roll, Cut & Shape: Roll laminated dough to 4mm thickness (approx 10x18 inches). Trim edges with pizza wheel to expose raw laminated layers. Cut into 10 rectangles measuring 3.5x4.5 inches. Place one chocolate baton 1/2-inch from short edge; roll dough over baton. Place second chocolate baton; roll dough completely into a cylinder, finishing with seam on the bottom.",
+        "sensoryCue": "Tightly rolled cylinders showing clearly visible horizontal butter-dough strata on exposed ends.",
+        "scienceNote": "Trimming edges exposes laminated layers so trapped steam can expand freely during baking.",
+        "timerMins": 20
+      },
+      {
+        "stepNum": 4,
+        "text": "The Proof (The Critical Window): Place on parchment-lined baking sheets spaced 3 inches apart. Brush lightly with egg wash (avoiding exposed laminated side edges). Proof in a humid 78-80°F (26°C) environment for 2 to 2.5 hours until doubled in size, extremely wobbly, and individual laminated layers separate like playing cards.",
+        "sensoryCue": "Pastries jiggle dramatically when pan is tapped; light as feathers.",
+        "scienceNote": "Proofing temperature MUST NEVER exceed 82°F (28°C), or the 84% butter will melt out of the layers, turning the pastry into a greasy pancake.",
+        "timerMins": 150
+      },
+      {
+        "stepNum": 5,
+        "text": "Bake: Apply second coat of egg wash gently. Bake at 390°F (200°C) for 16 to 18 minutes until deeply caramelized to a dark amber-bronze with visible golden laminated ridges. Cool 15 minutes on wire rack before serving.",
+        "sensoryCue": "Loud crackling sound; shattering flaky shards; aroma of roasted butter and dark chocolate.",
+        "scienceNote": "High radiant heat vaporizes water in the butter layers into steam, lifting each dough leaf upward while butterfat fries the dough from within.",
+        "timerMins": 18
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Caramelized 84% butter, roasted yeast wheat, melting bittersweet cacao, toasted milk solids",
+      "texture": "Deafeningly crisp shattering exterior yielding to open, buttery honeycomb web and soft chocolate batons",
+      "finish": "Rich butter sweetness balanced by bittersweet 44% dark chocolate tannins"
+    },
+    "scienceNotes": "Beurre de tournage (dry butter) contains 84% milkfat and only 14% water (compared to 18-20% water in American table butter). The lower moisture content prevents dough water absorption, ensuring clean, continuous, razor-thin fat barriers that create explosive oven spring.",
+    "troubleshooting": {
+      "Butter pools in baking pan": "Proofing temperature was too high (above 82°F) and butter melted before baking, or oven was too cool.",
+      "Dense bread-like interior with no honeycomb": "Butter shattered during lamination (was too cold) and blended into the dough.",
+      "Pastries are pale and heavy": "Under-proofed; pastries must double in volume and jiggle like gelatin before baking."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Chocolate Batons",
+        "substitute": "High-Quality 50-60% Dark Chocolate cut into 8cm sticks",
+        "ratio": "2 batons per pastry"
+      },
+      {
+        "ingredient": "Beurre de Tournage",
+        "substitute": "Kerrygold or Plugrá Unsalted Butter (82-83% fat)",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Café au Lait",
+      "Double Espresso",
+      "Fresh Orange Juice",
+      "Earl Grey Tea"
+    ],
+    "advancedTechnique": "Bi-color lamination: laminating a 1mm sheet of chocolate-dyed dough across the final dough sheet for striped zebra viennoiserie.",
+    "storageAndReheating": "Best eaten warm within 4 hours. Reheat at 350°F for 4 minutes to restore shattering crispness. Never microwave.",
+    "nutritionEstimates": {
+      "calories": 380,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 23
+    },
+    "relatedRecipes": [
+      "rec-mille-feuille",
+      "rec-brioche-french-toast",
+      "rec-croque-madame"
+    ],
+    "relatedTechniques": [
+      "Tournage butter plasticity calibration",
+      "27-layer mathematical folding",
+      "Sub-82°F proofing control"
+    ]
+  },
+  {
+    "id": "rec-brioche-feuilletee",
+    "title": "Brioche Feuilletée au Sucre Perlé (Laminated Caramelized French Sugar Brioche)",
+    "cuisine": "French / Classical Haute Boulangerie",
+    "category": "bread",
+    "slot": "accompaniment",
+    "difficulty": "Advanced",
+    "prepMins": 60,
+    "cookMins": 25,
+    "totalMins": 85,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The decadent hybrid of rich egg brioche and flaky croissant lamination: enriched buttery brioche dough laminated with French butter, rolled with cinnamon brown butter and Belgian pearl sugar, baked in butter-sugared molds until the exterior caramelizes into a crunchy toffee shell.",
+    "dietary": [
+      "Vegetarian"
+    ],
+    "sensoryRole": "Crunchy caramelized toffee exterior, melting soft pillowy buttery interior, popping sugar pearls",
+    "ingredients": [
+      {
+        "name": "Brioche Dough Base (Flour, Eggs, Butter, Yeast)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "chilled overnight détrempe",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "European Butter (82% fat) for Lamination",
+        "qty": 200,
+        "unit": "g",
+        "prep": "beaten into flat block",
+        "dept": "Dairy & Fats"
+      },
+      {
+        "name": "Belgian Pearl Sugar (Nib Sugar)",
+        "qty": 120,
+        "unit": "g",
+        "prep": "high-melting sugar pearls",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Dark Muscovado / Brown Sugar",
+        "qty": 60,
+        "unit": "g",
+        "prep": "fine crystals",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Ground Cinnamon",
+        "qty": 3,
+        "unit": "g",
+        "prep": "fine ground",
+        "dept": "Spices & Botanicals"
+      },
+      {
+        "name": "Softened Butter & Granulated Sugar",
+        "qty": 50,
+        "unit": "g",
+        "prep": "for lining baking molds heavily",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Round Metal Cake Rings or Deep Brioche Molds",
+        "type": "Bakeware"
+      },
+      {
+        "name": "Rolling Pin",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Parchment Paper",
+        "type": "Baking Supply"
+      }
+    ],
+    "miseEnPlace": [
+      "Prepare brioche dough; cold-ferment 12 hours.",
+      "Butter baking molds heavily and coat generously with granulated sugar (this forms the caramelized exterior).",
+      "Flatten butter block into 6x6-inch square."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Laminate Brioche: Roll chilled brioche dough to 10x10 inches. Place butter block in center. Enclose butter and roll out into 20x8-inch rectangle. Perform one Single Turn (letter fold). Chill 30 minutes. Perform second Single Turn. Chill 1 hour.",
+        "sensoryCue": "Pliable, enriched golden dough with buttery laminated interior.",
+        "scienceNote": "Enriched brioche dough contains eggs and fat in the base, making it softer than croissant dough; brief chills between turns are critical.",
+        "timerMins": 90
+      },
+      {
+        "stepNum": 2,
+        "text": "Fill & Roll: Roll dough to 12x16 inches. Brush with melted butter; sprinkle evenly with brown sugar, cinnamon, and Belgian pearl sugar. Roll tightly into a log from the long edge.",
+        "sensoryCue": "Dense spiral log studded with glistening white sugar pearls.",
+        "scienceNote": "Belgian pearl sugar has high compaction and does not dissolve during proofing, providing crunchy sugar pops in the baked crumb.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 3,
+        "text": "Portion & Proof: Slice log into 8 thick rounds. Place each round spiral-side up into the heavily sugared buttered rings set on a parchment-lined baking sheet. Proof at 78°F (26°C) for 90 minutes until puffed and filling the rings.",
+        "sensoryCue": "Puffed pillowy spiral coils with sugar pearls nestled between folds.",
+        "scienceNote": "The sugar-butter mold coating creates a thermal syrup buffer that fries the exterior into caramel.",
+        "timerMins": 90
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake & Caramelize: Bake at 375°F (190°C) for 22 to 25 minutes until deep mahogany-brown and the bottom sugar has melted into bubbling amber toffee.",
+        "sensoryCue": "Violently bubbling golden caramel around mold edges; intoxicating aroma of toasted butter and cinnamon.",
+        "scienceNote": "Sucrose caramelizes at 320-340°F, creating a crunchy, glassy toffee shell around the soft brioche.",
+        "timerMins": 24
+      },
+      {
+        "stepNum": 5,
+        "text": "Demold Immediately: Remove from oven and immediately unmold onto wire rack (if left in pan to cool, the hard caramel will glue the brioche permanently to the metal!). Cool 15 minutes before serving warm.",
+        "sensoryCue": "Glassy amber toffee glaze snapping audibly; soft, melting, pulling-apart flaky center.",
+        "scienceNote": "Hot caramel stays fluid for 60 seconds out of oven, allowing clean release.",
+        "timerMins": 2
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Caramelized toffee, warm cinnamon, brown butter, sweet yeast brioche",
+      "texture": "Crunchy shattering toffee crust, feather-light flaky buttery interior crumb, and crunchy sugar pearl bursts",
+      "finish": "Decadent butterscotch finish with warm cinnamon aroma"
+    },
+    "scienceNotes": "Brioche Feuilletée is one of the richest pastries in classical boulangerie, combining 50% butter within the brioche crumb and another 40% butter during lamination, achieving over 70% total butterfat by baker's percentage.",
+    "troubleshooting": {
+      "Glued to pan": "Was not demolded immediately while caramel was liquid; reheat pan on burner for 30s to melt caramel.",
+      "Butter leaks excessively": "Proofing temperature was too warm; keep proofing room under 80°F.",
+      "Dough tore during lamination": "Brioche dough was not chilled long enough; chill dough thoroughly before rolling."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Pearl Sugar",
+        "substitute": "Coarse Turbinado Sugar or Crushed Sugar Cubes",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Cinnamon",
+        "substitute": "Cardamom or Orange Blossom Water",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Double Espresso",
+      "Chicory Coffee",
+      "Cold Whole Milk",
+      "Salted Butter Caramel Spread"
+    ],
+    "advancedTechnique": "Coating the base of the baking rings with fleur de sel caramel before placing the dough for a salted butter kouign-amann hybrid.",
+    "storageAndReheating": "Best eaten day of baking. Re-crisp in 350°F oven for 5 minutes.",
+    "nutritionEstimates": {
+      "calories": 440,
+      "protein": 6,
+      "carbs": 46,
+      "fat": 26
+    },
+    "relatedRecipes": [
+      "rec-pain-au-chocolat",
+      "rec-madeleines-commercy",
+      "rec-caneles-bordeaux"
+    ],
+    "relatedTechniques": [
+      "Enriched dough lamination",
+      "Belgian pearl sugar retention",
+      "Hot toffee pan demolding"
+    ]
+  },
+  {
+    "id": "rec-ceviche-clasico-peruano",
+    "title": "Ceviche Clásico Peruano con Leche de Tigre (Catch of the Day, Canchita, Sweet Potato & Choclo)",
+    "cuisine": "Peruvian / Classical Costeño",
+    "category": "lunch",
+    "slot": "opener",
+    "difficulty": "Easy",
+    "prepMins": 20,
+    "cookMins": 0,
+    "totalMins": 20,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The pure national treasure of Peru: pristine fresh sashimi-grade white fish cured for only 90 seconds in ice-cold Leche de Tigre (lime juice, fish trim fumet, ají limo chili, red onion, garlic, ginger, and fresh cilantro), served with steamed sweet potato, giant choclo corn, and crunchy toasted canchita.",
+    "dietary": [
+      "Gluten-Free",
+      "Dairy-Free"
+    ],
+    "sensoryRole": "Electric citrus shock, searing ají limo heat, ultra-fresh tender fish, sweet starchy sweet potato balance",
+    "ingredients": [
+      {
+        "name": "Ultra-Fresh Sashimi-Grade Corvina, Fluke, or Sea Bass",
+        "qty": 500,
+        "unit": "g",
+        "prep": "cut into 3/4-inch uniform cubes, bone-cold",
+        "dept": "Seafood"
+      },
+      {
+        "name": "Fresh Squeezed Key Limes or Peruvian Limes",
+        "qty": 120,
+        "unit": "ml",
+        "prep": "squeezed gently by hand (never pressed hard)",
+        "dept": "Produce"
+      },
+      {
+        "name": "Fresh Ají Limo Chili",
+        "qty": 2,
+        "unit": "whole",
+        "prep": "seeded and finely minced (red and yellow)",
+        "dept": "Produce"
+      },
+      {
+        "name": "Red Onion",
+        "qty": 1,
+        "unit": "medium",
+        "prep": "sliced razor-thin, rinsed in ice water 10 mins",
+        "dept": "Produce"
+      },
+      {
+        "name": "Fresh Cilantro Leaves",
+        "qty": 15,
+        "unit": "g",
+        "prep": "finely chopped",
+        "dept": "Produce"
+      },
+      {
+        "name": "Garlic Clove & Fresh Ginger",
+        "qty": 10,
+        "unit": "g",
+        "prep": "bruised for bowl rubbing and Leche de Tigre",
+        "dept": "Produce"
+      },
+      {
+        "name": "Concentrated Fish Fumet / Ice Cubes",
+        "qty": 50,
+        "unit": "ml",
+        "prep": "cold fish trim stock",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Peruvian Giant Choclo Corn",
+        "qty": 150,
+        "unit": "g",
+        "prep": "steamed tender giant kernels",
+        "dept": "Produce"
+      },
+      {
+        "name": "Camote (Peruvian Sweet Potato)",
+        "qty": 200,
+        "unit": "g",
+        "prep": "steamed in spiced citrus water, sliced into rounds",
+        "dept": "Produce"
+      },
+      {
+        "name": "Canchita (Toasted Peruvian Chulpe Corn)",
+        "qty": 80,
+        "unit": "g",
+        "prep": "fried in oil until puffed and crunchy",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Fine Sea Salt",
+        "qty": 8,
+        "unit": "g",
+        "prep": "dissolved directly onto fish",
+        "dept": "Baking & Pantry"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Chilled Ceramic or Glass Mixing Bowl",
+        "type": "Cookware"
+      },
+      {
+        "name": "Wooden or Silicone Spoon",
+        "type": "Small Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Keep fish on crushed ice until the exact second of assembly.",
+      "Rinse thinly sliced red onions in ice water for 10 minutes to remove sulfur harshness.",
+      "Cut a garlic clove and rub interior of chilled mixing bowl."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Season the Fish: Place ice-cold fish cubes into the chilled, garlic-rubbed bowl. Sprinkle with 8g fine sea salt and minced ají limo chili. Toss gently for 30 seconds with a spoon. Drop in 2 clean ice cubes to maintain near-freezing temperature.",
+        "sensoryCue": "Fish cubes glisten; aroma of fresh ocean and spicy chili.",
+        "scienceNote": "Salting the fish first draws out surface proteins and tightens muscle fibers before acid is introduced, preventing the fish from turning mushy.",
+        "timerMins": 1
+      },
+      {
+        "stepNum": 2,
+        "text": "The Gentle Lime Squeeze: Cut limes and squeeze gently by hand into a separate cup, extracting only the first 60% of juice. (Never squeeze to the rind, which releases bitter limonene and astringent white pith tannins).",
+        "sensoryCue": "Pure, fragrant, bright green lime juice with zero bitterness.",
+        "scienceNote": "Over-squeezing ruptures oil glands in the lime flavedo and albedo, releasing bitter terpene oils that destroy delicate fish flavor.",
+        "timerMins": 3
+      },
+      {
+        "stepNum": 3,
+        "text": "Cure in Leche de Tigre (90-Second Rule): Pour fresh lime juice and cold fish fumet over seasoned fish. Stir continuously for 60 to 90 seconds. Watch as the translucent fish turns opaque white on the outer 1mm perimeter while the liquid emulsifies into milky Leche de Tigre.",
+        "sensoryCue": "Broth turns opaque milky white (leche de tigre); fish edges turn bright white while center stays raw and succulent.",
+        "scienceNote": "Modern Peruvian ceviche cures for under 2 minutes (unlike 1970s recipes that marinated for hours). Citric acid denatures fish muscle proteins (myosin and actin) on the surface, creating a firm exterior while preserving raw, tender sashimi core.",
+        "timerMins": 2
+      },
+      {
+        "stepNum": 4,
+        "text": "Add Aromatics: Fold in drained crisp red onion slices and fresh chopped cilantro. Remove the melting ice cubes.",
+        "sensoryCue": "Brilliant purple onions and vibrant green cilantro contrasting with white fish and milky broth.",
+        "scienceNote": "Adding onions at the end preserves their crisp cellular turgor and sharp snap.",
+        "timerMins": 1
+      },
+      {
+        "stepNum": 5,
+        "text": "Plate & Serve: Arrange fish mound in center of chilled shallow bowl; ladle generous pool of milky Leche de Tigre around it. Garnish with a slice of sweet orange camote, a cluster of giant choclo kernels, and a handful of crunchy toasted canchita. Drink remaining Leche de Tigre from the bowl at the end.",
+        "sensoryCue": "Vibrant colors; electric aroma of lime, chili, and cilantro; crunch of canchita against succulent fish.",
+        "scienceNote": "Sweet potato and choclo corn provide essential sweet starch buffer that protects the palate against intense citric acidity.",
+        "timerMins": 2
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Electric fresh lime, spicy floral ají limo, pungent red onion, fresh cilantro, ocean breeze",
+      "texture": "Firm yet tender melting raw fish, crunchy crisp red onion, sweet starchy sweet potato, and explosive crunchy corn",
+      "finish": "Electrifying acid and chili shock followed by savory umami and sweet potato comfort"
+    },
+    "scienceNotes": "Leche de Tigre (Tiger's Milk) turns white not because of milk, but because fish myofibrillar proteins and lipids dissolve into the acidic lime juice and salt, forming a spontaneous, opaque white cold emulsion.",
+    "troubleshooting": {
+      "Fish turns dry, chalky, and rubbery": "Marinated too long; ceviche must be served within 2 minutes of adding lime juice.",
+      "Bitter broth": "Limes were squeezed too hard or mechanically; squeeze gently by hand only.",
+      "Fish is mushy": "Fish was warm during prep or salt step was skipped; keep everything ice cold."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Corvina / Fluke",
+        "substitute": "Wild Sea Bass, Hamachi, Halibut, or Snapper",
+        "ratio": "1:1"
+      },
+      {
+        "ingredient": "Ají Limo",
+        "substitute": "Habanero or Fresno chili (minced microscopic)",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Pisco Sour",
+      "Ice-Cold Peruvian Cerveza Cusqueña",
+      "Inca Kola",
+      "Ceviche Juice Shot (Leche de Pantera)"
+    ],
+    "advancedTechnique": "Blending fish trimmings, a touch of celery, ginger, garlic, and lime juice in blender and straining to create a turbo-charged Leche de Tigre base.",
+    "storageAndReheating": "Cannot be stored! Must be prepared and consumed immediately. Leftovers turn rubbery.",
+    "nutritionEstimates": {
+      "calories": 260,
+      "protein": 32,
+      "carbs": 24,
+      "fat": 3
+    },
+    "relatedRecipes": [
+      "rec-lomo-saltado",
+      "rec-salmon-aburi-press",
+      "rec-tom-yum-goong"
+    ],
+    "relatedTechniques": [
+      "Acid protein denaturation curing",
+      "Gentle lime squeeze extraction",
+      "Leche de tigre cold emulsification"
+    ]
+  },
+  {
+    "id": "rec-shanghai-xiao-long-bao",
+    "title": "Shanghai Xiao Long Bao (Soup Dumplings with Jelled Pork Aspic Broth)",
+    "cuisine": "Chinese / Shanghainese Classical",
+    "category": "lunch",
+    "slot": "opener",
+    "difficulty": "Advanced",
+    "prepMins": 90,
+    "cookMins": 12,
+    "totalMins": 102,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1200&q=80",
+    "summary": "The pinnacle of Jiangnan dim sum engineering: paper-thin translucent wrappers folded with 18-24 intricate pleats, encapsulating tender ginger-seasoned Kurobuta pork and a rich, gelatin-rich broth that liquefies into a volcanic explosion of savory soup upon steaming.",
+    "dietary": [],
+    "sensoryRole": "Translucent delicate wrapper, volcanic savory broth explosion, tender savory pork, zingy black vinegar ginger dip",
+    "ingredients": [
+      {
+        "name": "Pork Skin & Trotters (for Jelled Aspic)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "blanched and scraped clean (rich collagen source)",
+        "dept": "Meat & Poultry"
+      },
+      {
+        "name": "Chicken Stock & Shaoxing Wine",
+        "qty": 800,
+        "unit": "ml",
+        "prep": "simmered with ginger and scallions into gelatin jelly",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Ground Kurobuta Pork Belly (70/30 meat-to-fat)",
+        "qty": 400,
+        "unit": "g",
+        "prep": "finely minced",
+        "dept": "Meat & Poultry"
+      },
+      {
+        "name": "Fresh Ginger Juice & Scallion Water",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "extracted by bruising ginger/scallions in water",
+        "dept": "Produce"
+      },
+      {
+        "name": "Light Soy Sauce & Toasted Sesame Oil",
+        "qty": 30,
+        "unit": "ml",
+        "prep": "for meat seasoning",
+        "dept": "Pantry"
+      },
+      {
+        "name": "White Pepper & Sugar",
+        "qty": 6,
+        "unit": "g",
+        "prep": "fine balance",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "All-Purpose Wheat Flour (Medium Gluten)",
+        "qty": 250,
+        "unit": "g",
+        "prep": "sifted for wrapper dough",
+        "dept": "Baking & Pantry"
+      },
+      {
+        "name": "Warm Water (130°F / 55°C)",
+        "qty": 135,
+        "unit": "ml",
+        "prep": "for hot water dough hydration",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Chinkiang Black Vinegar (Aged)",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "for dipping sauce",
+        "dept": "Pantry"
+      },
+      {
+        "name": "Fresh Ginger Matchsticks",
+        "qty": 30,
+        "unit": "g",
+        "prep": "cut into razor-thin needles",
+        "dept": "Produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Bamboo Steamer Baskets with Lids (10-inch)",
+        "type": "Cookware"
+      },
+      {
+        "name": "Perforated Silicone Steamer Liners or Cabbage Leaves",
+        "type": "Baking Supply"
+      },
+      {
+        "name": "Small Wooden XLB Rolling Pin",
+        "type": "Small Tool"
+      },
+      {
+        "name": "Digital Gram Scale",
+        "type": "Precision Tool"
+      }
+    ],
+    "miseEnPlace": [
+      "Make pork aspic broth: simmer pig skin, chicken stock, ginger, and Shaoxing wine for 3 hours; strain, chill overnight into firm jelly, and finely dice into 3mm cubes.",
+      "Mix ground pork with seasonings and ginger-scallion water until sticky; fold in equal volume of diced cold aspic jelly.",
+      "Cut ginger into microscopic matchsticks and place in Chinkiang vinegar."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make Hot-Water Wrapper Dough: Mix flour with warm water (130°F). Knead for 8-10 minutes until smooth, supple, and non-sticky. Wrap tightly in plastic wrap and rest for 30 minutes at room temperature.",
+        "sensoryCue": "Silky, elastic dough that indents cleanly when pressed.",
+        "scienceNote": "Warm water gelatinizes a fraction of the wheat starch, relaxing the gluten network so the dough can be rolled paper-thin without snapping back.",
+        "timerMins": 10
+      },
+      {
+        "stepNum": 2,
+        "text": "Roll Wrappers (Thick Center, Paper-Thin Edges): Divide dough into small 10g pieces. Using a small rolling pin, roll from outer edge inward while rotating the dough disc with your other hand. Result should be a 3.5-inch round with a thicker 1.5mm center and a paper-thin 0.5mm translucent perimeter.",
+        "sensoryCue": "Translucent ruffled outer rim with supportive thicker center base.",
+        "scienceNote": "A thicker center supports the heavy weight of meat and broth during steaming, while the thin perimeter creates delicate pleats without doughy knots.",
+        "timerMins": 25
+      },
+      {
+        "stepNum": 3,
+        "text": "Fill & Pleat (18+ Pleats): Place 18g cold pork-aspic filling in center. Hold wrapper in left palm. Using right thumb and index finger, pinch the outer edge into small accordion folds, rotating counter-clockwise to form at least 18 tight pleats. Twist the top slightly to seal the center crown completely.",
+        "sensoryCue": "Graceful pleated pouch resembling a closed chrysanthemum blossom.",
+        "scienceNote": "A complete hermetic seal is mandatory; any gap allows boiling broth to escape into the steamer, leaving a dry meatball.",
+        "timerMins": 30
+      },
+      {
+        "stepNum": 4,
+        "text": "The High-Steam Blast: Arrange dumplings in bamboo steamer basket lined with perforated silicone, leaving 1.5 inches space between each. Place over a wok of rapidly boiling water on maximum high heat. Cover and steam for exactly 6 to 7 minutes.",
+        "sensoryCue": "Steam billows violently; wrappers turn translucent, sagging plumply with trapped hot liquid.",
+        "scienceNote": "High-intensity steam cooks the thin dough in 6 minutes while the solid collagen aspic melts completely at 100°F into liquid broth inside the dumpling.",
+        "timerMins": 7
+      },
+      {
+        "stepNum": 5,
+        "text": "The Ritual Tasting: Lift dumpling gently by the pleated top crown with chopsticks onto a Chinese soup spoon. Nibble a tiny hole in the side of the wrapper to release steam. Slurp the rich, scalding broth from the spoon. Top dumpling with 2 ginger needles dipped in Chinkiang black vinegar, and eat in one bite.",
+        "sensoryCue": "Scalding rich pork broth floods the mouth; tender meatball and melting wrapper.",
+        "scienceNote": "Aged Chinkiang vinegar has 5% acetic acid and malty notes that cut the gelatinous pork collagen fat.",
+        "timerMins": 2
+      }
+    ],
+    "sensoryIndicators": {
+      "aroma": "Steaming pork bone broth, Shaoxing wine, fresh ginger, toasted sesame, malty black vinegar",
+      "texture": "Delicate elastic wrapper giving way to a volcanic burst of hot liquid broth and tender savory pork filling",
+      "finish": "Malty sour vinegar brightness balancing rich savory pork broth"
+    },
+    "scienceNotes": "The magic of Xiao Long Bao is a thermodynamic phase change: gelatin is a reversible hydrocolloid that forms a solid gel below 68°F (allowing it to be diced and mixed with cold meat) but melts completely into liquid water at human body temperature (98.6°F) and turns into volcanic soup at steaming temperatures (212°F).",
+    "troubleshooting": {
+      "Dumplings break and leak soup when picked up": "Dough was rolled too thin in the center, or dumplings were overcooked past 8 minutes.",
+      "Dumplings have no soup inside": "Aspic was omitted, ratio was too low, or top pleats were not sealed airtight.",
+      "Tough, thick pleats on top": "Dough edges were rolled too thick; edges must be paper-thin (0.5mm)."
+    },
+    "substitutions": [
+      {
+        "ingredient": "Kurobuta Pork",
+        "substitute": "Mix of 70% Pork and 30% Blue Crab Meat (Hairy Crab Roe XLB)",
+        "ratio": "Luxury seasonal Shanghai variant"
+      },
+      {
+        "ingredient": "Pig Skin Aspic",
+        "substitute": "Concentrated Chicken Foot Gelatin Stock",
+        "ratio": "1:1"
+      }
+    ],
+    "flavorPairings": [
+      "Chinkiang Black Vinegar",
+      "Shredded Young Ginger",
+      "Dragon Well (Longjing) Green Tea",
+      "Tsingtao Beer"
+    ],
+    "advancedTechnique": "Infusing pork aspic broth with sautéed hairy crab roe and ginger before chilling into jelly.",
+    "storageAndReheating": "Uncooked dumplings can be frozen solid on a tray and stored in bags up to 1 month; steam directly from frozen for 9-10 minutes.",
+    "nutritionEstimates": {
+      "calories": 65,
+      "protein": 4,
+      "carbs": 6,
+      "fat": 3
+    },
+    "relatedRecipes": [
+      "rec-tonkotsu-ramen",
+      "rec-haemul-pajeon",
+      "rec-shakshuka-royale"
+    ],
+    "relatedTechniques": [
+      "Reversible collagen phase transition",
+      "Hot-water dough starch pre-gelatinization",
+      "Hermetic 18-pleat crown sealing"
+    ]
   }
 ];
 

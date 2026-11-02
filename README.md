@@ -4,7 +4,7 @@
 
 [![Live on GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-22c55e?style=flat-square)](https://starman1009.github.io/latelier/)
 [![Zero-Build](https://img.shields.io/badge/Architecture-Zero--Build_Static-d4af37?style=flat-square)](#architecture)
-[![Recipes](https://img.shields.io/badge/Master_Recipes-108_Verified-3b82f6?style=flat-square)](#master-recipe-library)
+[![Recipes](https://img.shields.io/badge/Master_Recipes-153_Verified-3b82f6?style=flat-square)](#master-recipe-library)
 [![PWA](https://img.shields.io/badge/PWA-Offline_Ready-8b5cf6?style=flat-square)](#offline-pwa)
 
 ---
@@ -19,7 +19,7 @@ Built with a **zero-build, static web architecture**, L’Atelier runs natively 
 
 ## Flagship Systems & Capabilities
 
-### 1. The Master Recipe Library (108+ Tested Gourmet Dishes)
+### 1. The Master Recipe Library (153+ Tested Gourmet Dishes)
 - **12 Global Culinary Traditions:** French Classical & Provençal, Japanese Washoku, Italian Regional (Tuscan, Roman, Piedmontese, Campanian), Korean Hansik, Chinese (Sichuan, Cantonese, Hunan), Thai Classical, Vietnamese Heritage, Mexican Regional (Oaxacan, Jalisco), Indian (Punjabi, Kashmiri, Hyderabadi), Levantine & Middle Eastern, and Modern Gastronomy.
 - **Every Recipe Features All 20 Required Culinary Dimensions:**
   1. Exact metric weights and volumes (`g`, `ml`, `whole`).
@@ -33,7 +33,13 @@ Built with a **zero-build, static web architecture**, L’Atelier runs natively 
   9. Sommelier wine and zero-proof artisanal beverage pairings.
   10. Reliable macro-nutritional estimates.
 
-### 2. The Flavor Lab
+### 2. The Kitchen Prep & Station Manual (Brigade Standards)
+- **30 Standardized Operational Cards:** Authentic restaurant line procedures extracted from master kitchen manuals (Sauce, Lineset, Protein, Produce, Bake, Panfry, Ovens).
+- **HACCP Critical Limits & Golden Rules:** Temperature holding limits (180°F to 165°F soup reheat, ice wands, oyster shellstock custody, squeeze bottle FIFO, portioning cadence).
+- **Dynamic Yield Scaler:** Instant recalculation across 1-Quart, 1-Gallon, Half-Pan, and Custom batch volumes.
+- **Direct Provisions Sync:** One-click addition of batch ingredients into the Provisions shopping list.
+
+### 3. The Flavor Lab
 - **Interactive Aroma Compound Network:** 50 volatile aroma nodes mapped with primary volatile chemical compounds (furaneol, linalool, estragole, trans-anethole, etc.) and culinary descriptors.
 - **24 Molecular Pairing Connections:** Documented molecular affinity, receptor unmasking, lipid-acid buffering, and texture/temperature contrast.
 - **Live 8-Axis Flavor Balance Simulator:** Real-time SVG radar chart evaluating dish profiles across Sweetness, Saltiness, Sourness, Bitterness, Umami, Richness/Fat, Trigeminal Heat, and Aroma Intensity, with automated sensory adjustment diagnostics.

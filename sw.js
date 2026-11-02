@@ -1,5 +1,5 @@
-const CACHE = 'atelier-kitchen-v8';
-const SHELL = ['./','./index.html','./latelier.css','./latelier.js','./mastery.js','./data-mastery.js','./data-recipes.js','./data-flavor.js','./data-academy.js','./data-science.js','./data-encyclopedia.js','./kitchen.css','./culinary.js','./kitchen.js','./menu.js','./cooking.js','./tools.js','./manifest.json','./icon-192.png','./icon-512.png'];
+const CACHE = 'atelier-kitchen-v9';
+const SHELL = ['./','./index.html','./latelier.css','./latelier.js','./mastery.js','./data-mastery.js','./data-recipes.js','./data-prep-manual.js','./data-flavor.js','./data-academy.js','./data-science.js','./data-encyclopedia.js','./kitchen.css','./culinary.js','./kitchen.js','./menu.js','./cooking.js','./tools.js','./manifest.json','./icon-192.png','./icon-512.png'];
 const LOCAL = [...SHELL,'./recipes_master.json','./recipes.json','./data-review.json','./brigade.html','./studio.html','./curator.html'].map(path=>new URL(path,self.registration.scope).href);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>(key.startsWith('atelier-kitchen-')||key.startsWith('latelier-os-'))&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
