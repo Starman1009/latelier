@@ -1496,6 +1496,185 @@ label.task-completed span {
   box-shadow: 0 0 0 3px var(--gold-muted);
 }
 
+
+/* ==========================================================================
+   MODERNIST MASTERY, HYDROCOLLOID WORKBENCH & BOTANICAL GUIDE
+   ========================================================================== */
+
+.mastery-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.mastery-card,
+.botanical-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s var(--ease-spring);
+}
+
+.mastery-card:hover,
+.botanical-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--border-active);
+}
+
+.mastery-callout {
+  background: var(--bg-elevated);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--gold-primary);
+}
+
+.mastery-controls-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  background: var(--bg-elevated);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.mastery-control-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.mastery-control-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mastery-control-val {
+  font-family: var(--font-sans);
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mastery-accordion {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.mastery-accordion:hover {
+  border-color: var(--border-active);
+}
+
+.mastery-accordion-summary {
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.02);
+  user-select: none;
+}
+
+.mastery-accordion-body {
+  padding: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+}
+
+/* ── Hydrocolloid Workbench ── */
+.dose-panel-lux {
+  background: linear-gradient(145deg, var(--bg-card), var(--bg-elevated));
+  border: 1px solid var(--border-active);
+  box-shadow: var(--shadow-lg), 0 0 35px -10px rgba(212, 175, 55, 0.15);
+}
+
+.dose-grid-lux {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.dose-result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-elevated);
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-active);
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.dose-result-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dose-result-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--gold-primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dose-result-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.dose-result-value strong {
+  color: var(--gold-primary);
+}
+
+.dose-scale-pill {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid currentColor;
+}
+
+.dose-guidance-box {
+  background: var(--bg-elevated);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--gold-primary);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.botanical-safety-card {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), rgba(18, 18, 26, 0.9));
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  box-shadow: 0 0 25px -5px rgba(220, 38, 38, 0.15);
+}
+
+@media (max-width: 768px) {
+  .mastery-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .mastery-controls-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Print Styles */
 @media print {
   header.app-header, nav.primary-nav, .theme-toggle, .btn-primary, .btn-secondary, .occasion-bar, .app-footer {

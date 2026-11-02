@@ -767,7 +767,26 @@
 }
 
 .source-table tr:hover td {
-  background: rgba(212, 175, 55, 0.04);
+  background: rgba(212, 175, 55, 0.08) !important;
+}
+
+.source-table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.source-table td:first-child {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.btn-vault-copy-tsv {
+  transition: all 0.2s var(--ease-spring);
+}
+
+.btn-vault-copy-tsv:hover {
+  border-color: var(--gold-primary) !important;
+  color: var(--gold-primary) !important;
+  background: rgba(212, 175, 55, 0.1) !important;
 }
 
 .vault-table-controls {

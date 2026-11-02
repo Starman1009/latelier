@@ -552,7 +552,7 @@
     const ingredient = head.findIndex(c => /ingredients?/i.test(c || ''));
 
     return `
-      <section class="source-table">
+      <section class="source-table" data-table-index="${index}">
         <div class="table-scroll" tabindex="0" role="region" aria-label="Source table ${index + 1}">
           <table>
             <caption>Source Specification Table ${index + 1} · Quantities retained exactly as written</caption>
@@ -570,19 +570,26 @@
             </tbody>
           </table>
         </div>
-        ${ingredient >= 0 ? `
-          <div class="vault-table-controls">
-            <div style="display:flex; align-items:center; gap:0.5rem;">
-              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Select Batch:</span>
-              <select data-column="${index}">
-                ${head.map((h, i) => h && i !== ingredient && !/custom/i.test(h) ? `<option value="${i}">${e(h)}</option>` : '').join('')}
-              </select>
-            </div>
+        <div class="vault-table-controls">
+          <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+            <button class="btn-vault-copy-tsv" data-copy-table="${index}" style="font-family:var(--font-mono); font-size:0.72rem; padding:0.4rem 0.8rem; background:rgba(255,255,255,0.05); border:1px solid var(--border-subtle); border-radius:var(--radius-md); color:var(--text-secondary); cursor:pointer;">
+              📋 Copy TSV (Excel / Sheets)
+            </button>
+            ${ingredient >= 0 ? `
+              <div style="display:flex; align-items:center; gap:0.4rem;">
+                <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); text-transform:uppercase;">Select Batch:</span>
+                <select data-column="${index}">
+                  ${head.map((h, i) => h && i !== ingredient && !/custom/i.test(h) ? `<option value="${i}">${e(h)}</option>` : '').join('')}
+                </select>
+              </div>
+            ` : ''}
+          </div>
+          ${ingredient >= 0 ? `
             <button data-shop-table="${index}" data-ingredient="${ingredient}">
               🛒 Add Batch to Private Provisions
             </button>
-          </div>
-        ` : ''}
+          ` : ''}
+        </div>
       </section>
     `;
   }
@@ -616,8 +623,8 @@
         <h2 class="vault-reader-title" tabindex="-1">${e(p.title)}</h2>
         
         <div class="vault-page-toolbar">
-          ${previous ? `<button data-open="${e(previous.id)}">← Prev Page (${previous.number})</button>` : ''}
-          ${next ? `<button data-open="${e(next.id)}">Next Page (${next.number}) →</button>` : ''}
+          ${previous ? `<button data-open="${e(previous.id)}" data-prev-nav="true" title="Shortcut: [ or Alt+Left">← Prev Page (${previous.number}) <kbd style="font-size:0.65rem;opacity:0.6;background:rgba(0,0,0,0.4);padding:1px 4px;border-radius:3px;">[</kbd></button>` : ''}
+          ${next ? `<button data-open="${e(next.id)}" data-next-nav="true" title="Shortcut: ] or Alt+Right">Next Page (${next.number}) → <kbd style="font-size:0.65rem;opacity:0.6;background:rgba(0,0,0,0.4);padding:1px 4px;border-radius:3px;">]</kbd></button>` : ''}
           <button id="add-page" style="${isBookmarked ? 'border-color:var(--emerald); color:var(--emerald); background:rgba(16,185,129,0.1);' : ''}">
             ${isBookmarked ? '✓ In Menu (Remove)' : '★ Add Page to Menu'}
           </button>
@@ -683,6 +690,29 @@
       if (statMenu) statMenu.textContent = menu.length;
       openPage(id);
     };
+
+    // TSV Table Copy Listener
+    el.querySelectorAll('[data-copy-table]').forEach(b => {
+      b.onclick = () => {
+        const idx = Number(b.dataset.copyTable);
+        const t = tables[idx].rows;
+        const tsv = t.map(row => row.join('\t')).join('\n');
+        navigator.clipboard.writeText(tsv).then(() => {
+          notifyVault('Table data copied to clipboard as TSV for spreadsheet paste!');
+          const orig = b.textContent;
+          b.textContent = '✓ Copied TSV!';
+          b.style.borderColor = 'var(--emerald)';
+          b.style.color = 'var(--emerald)';
+          setTimeout(() => {
+            b.textContent = orig;
+            b.style.borderColor = '';
+            b.style.color = '';
+          }, 2500);
+        }).catch(() => {
+          notifyVault('Could not copy table to clipboard.', false);
+        });
+      };
+    });
 
     // Table Batch Add Listeners
     el.querySelectorAll('[data-shop-table]').forEach(b => {
@@ -770,4 +800,34 @@
     }
   }
 
+  // Global Keyboard Shortcuts for Salon Privé
+  document.addEventListener('keydown', (ev) => {
+    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) {
+      if (ev.key === 'Escape') document.activeElement.blur();
+      return;
+    }
+    const ws = $('#workspace');
+    if (!ws || ws.hidden) return;
+
+    if (ev.key === '/' && !ev.ctrlKey && !ev.metaKey) {
+      const qInput = $('#q');
+      if (qInput) {
+        ev.preventDefault();
+        qInput.focus();
+        qInput.select();
+      }
+    } else if (ev.key === '[' || (ev.key === 'ArrowLeft' && ev.altKey)) {
+      const prevBtn = document.querySelector('[data-prev-nav="true"]');
+      if (prevBtn) {
+        ev.preventDefault();
+        prevBtn.click();
+      }
+    } else if (ev.key === ']' || (ev.key === 'ArrowRight' && ev.altKey)) {
+      const nextBtn = document.querySelector('[data-next-nav="true"]');
+      if (nextBtn) {
+        ev.preventDefault();
+        nextBtn.click();
+      }
+    }
+  });
 })();
