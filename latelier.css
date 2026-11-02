@@ -1219,6 +1219,190 @@ label.task-completed span {
   }
 }
 
+
+
+/* ==========================================================================
+   UX UPGRADE — View Transitions, Toast, Recipe Cards, Kitchen Mode
+   ========================================================================== */
+
+/* View transition animation */
+@keyframes atelier-view-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#main-viewport.view-entering {
+  animation: atelier-view-in 0.3s var(--ease-spring) both;
+}
+
+/* ── Toast notification system ───────────────────────────────────────────── */
+.atelier-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-active);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 360px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.25s var(--ease-spring), transform 0.25s var(--ease-spring);
+  pointer-events: none;
+}
+
+.atelier-toast--show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.atelier-toast__icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.atelier-toast--success { border-color: rgba(16, 185, 129, 0.5); }
+.atelier-toast--success .atelier-toast__icon { color: var(--emerald); }
+.atelier-toast--error { border-color: rgba(225, 29, 72, 0.5); }
+.atelier-toast--error .atelier-toast__icon { color: var(--crimson); }
+.atelier-toast--warning { border-color: rgba(245, 158, 11, 0.5); }
+.atelier-toast--warning .atelier-toast__icon { color: var(--amber); }
+.atelier-toast--info .atelier-toast__icon { color: var(--gold-primary); }
+
+/* ── Dietary filter pills ────────────────────────────────────────────────── */
+.dietary-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.dietary-pill {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.18s var(--ease-spring);
+}
+
+.dietary-pill:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  background: var(--gold-muted);
+}
+
+.dietary-pill.active {
+  border-color: var(--emerald);
+  color: var(--emerald);
+  background: rgba(16, 185, 129, 0.1);
+  font-weight: 600;
+}
+
+/* ── Recipe card dietary tags ───────────────────────────────────────────── */
+.recipe-dietary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.recipe-diet-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--emerald);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.recipe-diet-tag--lg {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.78rem;
+}
+
+/* Recipe time badge */
+.recipe-time-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+}
+
+/* ── Kitchen Mode step progress bar ─────────────────────────────────────── */
+.kitchen-step-progress-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--bg-elevated);
+  z-index: 1;
+  border-radius: 0;
+}
+
+.kitchen-step-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-primary), var(--emerald));
+  border-radius: 0 2px 2px 0;
+  transition: width 0.4s var(--ease-spring);
+  min-width: 4px;
+}
+
+/* Ensure kitchen overlay is relatively positioned for the progress bar */
+.kitchen-mode-overlay {
+  position: relative;
+}
+
+/* ── Recipe card hover polish ────────────────────────────────────────────── */
+.recipe-card {
+  cursor: default;
+  transition: transform 0.22s var(--ease-spring), box-shadow 0.22s var(--ease-spring);
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--border-active);
+}
+
+/* ── Modal reading progress indicator ───────────────────────────────────── */
+.atelier-modal::before {
+  content: '';
+  display: block;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-primary) var(--scroll-pct, 0%), var(--bg-elevated) 0%);
+  z-index: 10;
+  margin: -1.5rem -2rem 1.5rem -2rem;
+}
+
 /* Print Styles */
 @media print {
   header.app-header, nav.primary-nav, .theme-toggle, .btn-primary, .btn-secondary, .occasion-bar, .app-footer {

@@ -43,7 +43,8 @@
     brineWater: 800,
     targetSalinity: 1.25,
     braiseTemp: 82,
-    braiseHours: 4
+    braiseHours: 4,
+    activeDietaryFilter: null
   };
 
   // Utilities
@@ -57,13 +58,16 @@
     if (!toast) {
       toast = document.createElement("div");
       toast.id = "atelier-toast";
-      toast.style.cssText = "position:fixed;bottom:24px;right:24px;z-index:9999;padding:12px 20px;border-radius:10px;background:var(--bg-elevated);color:var(--text-primary);border:1px solid var(--border-active);box-shadow:var(--shadow-lg);font-size:0.875rem;display:flex;align-items:center;gap:8px;transition:opacity 0.3s var(--ease-spring);";
       document.body.appendChild(toast);
     }
-    toast.innerHTML = `<span style="color:var(--gold-primary)">✦</span> ${esc(message)}`;
-    toast.style.opacity = "1";
+    const icons = { success: "✦", error: "✕", info: "✦", warning: "⚠" };
+    const icon = icons[type] || "✦";
+    toast.className = `atelier-toast atelier-toast--${type} atelier-toast--show`;
+    toast.innerHTML = `<span class="atelier-toast__icon">${icon}</span><span>${esc(message)}</span>`;
     clearTimeout(showNotification._timeout);
-    showNotification._timeout = setTimeout(() => { toast.style.opacity = "0"; }, 4000);
+    showNotification._timeout = setTimeout(() => {
+      toast.classList.remove("atelier-toast--show");
+    }, 4000);
   }
 
   // Audio Chime Synthesizer
@@ -145,6 +149,9 @@
     const mainContent = $("#main-viewport");
     if (!mainContent) return;
 
+    // Animate out, then in
+    mainContent.classList.remove("view-entering");
+    void mainContent.offsetWidth; // reflow
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     switch (view) {
@@ -186,6 +193,10 @@
       default:
         renderDiscoveryView(mainContent);
     }
+    // Trigger enter animation after render
+    requestAnimationFrame(() => {
+      mainContent.classList.add("view-entering");
+    });
   }
 
   // =========================================================================
@@ -503,6 +514,12 @@
         <button id="btn-reset-filters" class="btn-secondary" style="height:38px;">Reset</button>
       </div>
 
+      <div class="dietary-filter-row" id="dietary-filter-row">
+        ${['All', 'Vegetarian', 'Vegan', 'Gluten-Free', 'Dairy-Free', 'Pescatarian'].map(d => `
+          <button class="dietary-pill${AppState.activeDietaryFilter === (d === 'All' ? null : d.toLowerCase()) ? ' active' : ''}" data-diet="${d === 'All' ? '' : d.toLowerCase()}">${d}</button>
+        `).join('')}
+      </div>
+
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
         <span id="results-count" style="font-size:0.85rem; font-family:var(--font-mono); color:var(--gold-primary);">
           Showing ${allRecipes.length} recipes
@@ -522,12 +539,14 @@
       const cat = $("#filter-category", container).value;
       const maxTime = parseInt($("#filter-time", container).value) || Infinity;
 
+      const diet = AppState.activeDietaryFilter;
       const filtered = allRecipes.filter(r => {
         const matchesQ = !q || r.title.toLowerCase().includes(q) || r.cuisine.toLowerCase().includes(q) || r.summary.toLowerCase().includes(q) || (r.ingredients || []).some(i => i.name.toLowerCase().includes(q));
         const matchesCui = !cui || r.cuisine === cui;
         const matchesCat = !cat || r.category === cat;
         const matchesTime = r.totalMins <= maxTime;
-        return matchesQ && matchesCui && matchesCat && matchesTime;
+        const matchesDiet = !diet || (r.dietary || []).map(d => d.toLowerCase()).includes(diet);
+        return matchesQ && matchesCui && matchesCat && matchesTime && matchesDiet;
       });
 
       $("#results-count", container).textContent = `Showing ${filtered.length} of ${allRecipes.length} recipes`;
@@ -538,18 +557,27 @@
         return;
       }
 
-      grid.innerHTML = filtered.map(r => `
-        <article class="bento-card">
+      const diffColors = { beginner: 'var(--emerald)', intermediate: 'var(--amber)', advanced: 'var(--gold-primary)', professional: 'var(--crimson)' };
+      grid.innerHTML = filtered.map(r => {
+        const diffColor = diffColors[(r.difficulty||'').toLowerCase()] || 'var(--text-muted)';
+        const dietTags = (r.dietary || []).slice(0, 3).map(d =>
+          `<span class="recipe-diet-tag">${esc(d)}</span>`
+        ).join('');
+        return `
+        <article class="bento-card recipe-card">
           ${window.culinaryImage(r)}
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
             <span class="card-badge">${esc(r.cuisine)}</span>
-            <span style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-muted);">${r.totalMins}m · ${esc(r.difficulty)}</span>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span class="recipe-time-badge">⏱ ${r.totalMins}m</span>
+              <span style="font-size:0.72rem; font-family:var(--font-mono); color:${diffColor}; text-transform:uppercase; font-weight:600;">${esc(r.difficulty)}</span>
+            </div>
           </div>
           <h3 class="card-title">${esc(r.title)}</h3>
           <p class="card-desc">${esc(r.summary)}</p>
-          
+          ${dietTags ? `<div class="recipe-dietary-tags">${dietTags}</div>` : ''}
           <div class="card-meta">
-            <span>${r.ingredients.length} ingredients · ${r.steps.length} steps</span>
+            <span style="font-size:0.78rem; color:var(--text-muted);">${r.ingredients.length} ingredients · ${r.steps.length} steps</span>
             <div style="display:flex; gap:0.5rem;">
               <button class="btn-icon btn-star-recipe" data-id="${r.id}" title="Save to Recipe Box">
                 ${AppState.savedRecipeIds.includes(r.id) ? '★' : '☆'}
@@ -560,7 +588,7 @@
             </div>
           </div>
         </article>
-      `).join('');
+      `}).join('');
 
       $$(".btn-open-recipe", grid).forEach(b => {
         b.onclick = () => openRecipeModal(b.dataset.id);
@@ -586,6 +614,20 @@
       $("#filter-time", container).value = "";
       filterAndRender();
     };
+
+    // Dietary filter pill click handling
+    const dietRow = $("#dietary-filter-row", container);
+    if (dietRow) {
+      dietRow.querySelectorAll(".dietary-pill").forEach(pill => {
+        pill.onclick = () => {
+          const val = pill.dataset.diet || null;
+          AppState.activeDietaryFilter = val;
+          dietRow.querySelectorAll(".dietary-pill").forEach(p => p.classList.remove("active"));
+          pill.classList.add("active");
+          filterAndRender();
+        };
+      });
+    }
 
     filterAndRender();
   }
@@ -1215,7 +1257,11 @@
     const step = recipe.steps[AppState.kitchenStepIndex];
     const totalSteps = recipe.steps.length;
 
+    const kitchenProgress = ((AppState.kitchenStepIndex + 1) / totalSteps * 100).toFixed(1);
     overlay.innerHTML = `
+      <div class="kitchen-step-progress-track">
+        <div class="kitchen-step-progress-fill" style="width:${kitchenProgress}%"></div>
+      </div>
       <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-subtle); padding-bottom:1rem; margin-bottom:2rem;">
         <div>
           <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--gold-primary);">L'ATELIER · KITCHEN MODE</span>
@@ -1237,7 +1283,7 @@
 
       <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:1000px; margin:0 auto; width:100%;">
         <span style="font-family:var(--font-mono); font-size:1.1rem; color:var(--gold-primary); margin-bottom:0.75rem; font-weight:600;">
-          STEP 0${AppState.kitchenStepIndex + 1} OF 0${totalSteps}
+          STEP ${String(AppState.kitchenStepIndex + 1).padStart(2, '0')} OF ${String(totalSteps).padStart(2, '0')}
         </span>
         <h1 class="kitchen-step-title">${esc(step.text)}</h1>
 
@@ -1248,14 +1294,14 @@
           </div>
         ` : ''}
 
-        ${true ? `
+        ${step.timerMins ? `
           <div style="display:flex; align-items:center; gap:2rem; background:var(--bg-card); padding:1.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-active); margin-bottom:2rem; width:fit-content;">
             <div>
-              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">${step.timerMins ? "Step timer" : "Optional timer — not a recipe duration"}</span>
-              <div id="kitchen-timer-clock" class="kitchen-timer-display">${step.timerMins || 5}:00</div>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Step Timer</span>
+              <div id="kitchen-timer-clock" class="kitchen-timer-display">${step.timerMins}:00</div>
             </div>
             <button id="btn-start-kitchen-timer" class="btn-primary" style="font-size:1.1rem; padding:0.8rem 1.6rem;">
-              ▶ Start ${step.timerMins || 5} Minute Timer
+              ▶ Start ${step.timerMins} Minute Timer
             </button>
           </div>
         ` : ''}
@@ -2465,6 +2511,14 @@
 
     renderRecipeModalContent(modal, recipe);
     modal.showModal();
+
+    // Keyboard: Escape handled natively by <dialog>; also support clicking backdrop
+    modal.onclick = (e) => {
+      const rect = modal.getBoundingClientRect();
+      if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
+        modal.close();
+      }
+    };
   }
 
   function renderRecipeModalContent(modal, recipe) {
@@ -2479,7 +2533,12 @@
         <span class="card-badge">${esc(recipe.cuisine)}</span>
         <span class="card-badge">${recipe.totalMins} MINS TOTAL</span>
         <span class="card-badge">${esc(recipe.difficulty.toUpperCase())}</span>
+        ${recipe.category ? `<span class="card-badge">${esc(recipe.category.replace('_',' ').toUpperCase())}</span>` : ''}
       </div>
+      ${(recipe.dietary && recipe.dietary.length) ? `
+      <div class="recipe-dietary-tags" style="margin-bottom:1rem;">
+        ${(recipe.dietary || []).map(d => `<span class="recipe-diet-tag recipe-diet-tag--lg">${esc(d)}</span>`).join('')}
+      </div>` : ''}
 
       <h1 style="font-size:clamp(2rem, 3.5vw, 2.8rem); font-family:var(--font-serif); margin-bottom:0.5rem; line-height:1.15;">
         ${esc(recipe.title)}
@@ -2563,7 +2622,7 @@
           ${recipe.steps.map(s => `
             <div style="display:flex; gap:1.25rem; background:var(--bg-elevated); padding:1.25rem; border-radius:var(--radius-lg); border:1px solid var(--border-subtle);">
               <div style="font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:var(--gold-primary); width:32px;">
-                0${s.stepNum}
+                ${String(s.stepNum).padStart(2, '0')}
               </div>
               <div style="flex:1;">
                 <p style="font-size:1rem; line-height:1.6; margin-bottom:0.5rem;">${esc(s.text)}</p>
