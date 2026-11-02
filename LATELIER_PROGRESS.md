@@ -1,5 +1,37 @@
 ## Master Continuation & Accomplishments Milestone — 2026-11-02
 
+- **Secret Site (Salon Privé) Executive Overhaul (`vault.html`, `vault.css`, `vault.js`):**
+  - Interactive Fullscreen Scan Inspection Lightbox (`#vault-lightbox`): High-resolution image canvas with pan-drag cursor, mouse wheel zoom, zoom controls (+ / - / fit), and full-bleed backdrop blur.
+  - Live Dynamic Batch Scaling Pills: Source tables now feature real-time yield multipliers (`0.5x`, `1x`, `1.5x`, `2x`, `3x`, `4x`) recalculating all batch quantities on the fly with golden scaled badges.
+  - Interactive Table Column Tracing: Clicking any column header highlights the full column down the table with an `.active-table-column` gold tracer glow.
+  - Brigade Service Firing Sheet: One-click generation of the operational pass sheet from active tasting menus with station assignments, verification checkmarks, and dedicated `@media print` black-and-white formatting.
+  - Public Provisions Sync Bridge: One-click export syncing private batch items into `atelier_shopping_v2` in LocalStorage for seamless mobile shopping.
+  - Chef's Notebook Quick Inserts: Instant insertion of service timestamps, yield audit logs, sommelier pairings, and station mise notes.
+  - Keyboard Shortcuts HUD Modal: Accessible via `?` key or header button with full keyboard navigation (`/`, `[`, `]`, `Alt+M`, `Alt+P`, `Alt+T`, `Esc`).
+- **Recipe Library Expansion (168 Master Recipes in `data-recipes.js`):**
+  - Expanded from 153 to **168 master recipes**, 100% compliant with the 28-field schema.
+  - Added 15 culinary masterworks:
+    - *Pâté en Croûte Richelieu Traditionnel* (Classical hot-water crust, pork/veal/duck farce, Madeira port aspic)
+    - *Terrine de Campagne Traditionnelle aux Pistaches* (Bain-marie pork and poultry liver terrine weighted for 48h)
+    - *Steak Tartare Classique au Couteau* (Hand-diced prime tenderloin with egg yolk emulsion, cornichons, and capers)
+    - *Soupe à l'Oignon Gratinée Classique* (Slow-caramelized onions, rich beef consommé, broiled aged Gruyère AOP)
+    - *Canard à l'Orange Classique* (Crisp duck breast with Sauce Bigarade, Grand Marnier gastrique, and citrus zest)
+    - *Blanquette de Veau à l'Ancienne* (Gently poached veal in ivory velouté with egg yolk-crème fraîche liaison)
+    - *Spaghetti all'Amatriciana Tradizionale* (Guanciale croccante, San Marzano tomatoes, Peperoncino, Pecorino Romano)
+    - *Agnolotti del Plin Piemontesi* (0.8mm pinched egg pasta with three-meat braise and hazelnut sage brown butter)
+    - *Ossobuco alla Milanese con Gremolata* (Cross-cut veal shanks braised in white wine with marrow bone and fresh gremolata)
+    - *Mole Poblano Tradicional con Pollo* (4 sun-dried chilies, charred aromatics, Mexican chocolate, and sesame seeds)
+    - *Pad Thai Boran Tradicional* (Tamarind palm-sugar syrup, dried shrimp, yellow tofu, sen lek noodles, and wok hei)
+    - *Baba au Rhum Traditionnel* (Enriched brioche sponge soaked in Martinique dark rum syrup with vanilla Chantilly)
+    - *Gravlax Scandinave Traditionnel* (Wild salmon cured with sea salt, demerara sugar, aquavit, and fresh dill with Hovmästarsås)
+    - *Moules Marinières Classiques au Vin Blanc* (Bouchot mussels steamed in Muscadet white wine with butter-mounted sea nectar)
+    - *Soufflé Chaud au Grand Marnier* (Vertical rise orange soufflé with Grand Marnier crème pâtissière and French meringue)
+- **Culinary Progression Skill Tree Expanded (`data-roadmap.js`):**
+  - Expanded from 24 to **31 milestone nodes** across all 6 tracks. Every node strictly verified against active master recipe IDs with difficulty ratings and prerequisite chains.
+- **Authentic Dish Photo Gallery & Progression Filtering (`latelier.js`):**
+  - Added Tab 4: `📸 Dish Photo Gallery` in Notebook View showing all authentic user-cooked dish photographs in a responsive masonry grid with star ratings and cooking reflections.
+  - Added Progression Status filter pills in Catalog View: `[ All Dishes ] [ ★ Mastered ] [ ✓ Accomplished ] [ ⏱ In Progress ] [ Uncooked ]`.
+  - Added Capacitor native haptic feedback bridge (`triggerHaptic`).
 - **Recipe Accomplishment & Cooking Journal System (`latelier.js`, `latelier.css`):**
   - Implemented dual-score accomplishment tracking (`atelier_accomplishments` in LocalStorage) separating Recipe Formulation Quality (1–5 stars) from Personal Execution Result (1–5 stars).
   - Modal prompt with canvas-compressed (800px, 0.82 JPEG) base64 dish photography, structured reflection ("What went well" / "To elevate next time"), actual cook duration, and ingredient substitutions.

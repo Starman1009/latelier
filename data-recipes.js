@@ -1,6 +1,3 @@
-// L'Atelier Grand Master Recipe Collection
-// 108 meticulously documented, fully-cookable, scientifically annotated recipes.
-
 window.MASTER_RECIPES = [
   {
     "id": "rec-sole-meuniere",
@@ -26568,22 +26565,3336 @@ window.MASTER_RECIPES = [
       "Hot-water dough starch pre-gelatinization",
       "Hermetic 18-pleat crown sealing"
     ]
+  },
+  {
+    "id": "rec-pate-en-croute",
+    "title": "Pâté en Croûte Richelieu Traditionnel",
+    "cuisine": "French",
+    "category": "appetizer",
+    "slot": "lunch",
+    "difficulty": "Master",
+    "prepMins": 120,
+    "cookMins": 90,
+    "totalMins": 210,
+    "yieldServings": 12,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The pinnacle of French charcuterie: a golden, crisp hot-water crust pastry encasing a seasoned farce of pork shoulder, veal breast, marinated duck breast inlays, and roasted pistachios, finished with an aromatic Madeira port aspic.",
+    "dietary": [],
+    "sensoryRole": "Rich, savory mosaic of cured and roasted meats balanced by crisp lard pastry and melting wine aspic.",
+    "ingredients": [
+      {
+        "name": "Pork shoulder (lean and fat balanced 70/30)",
+        "qty": 600,
+        "unit": "g",
+        "prep": "chilled to 0°C and ground coarse 6mm",
+        "dept": "meat"
+      },
+      {
+        "name": "Veal shoulder or breast",
+        "qty": 400,
+        "unit": "g",
+        "prep": "chilled and ground medium 4mm",
+        "dept": "meat"
+      },
+      {
+        "name": "Duck breast meat",
+        "qty": 300,
+        "unit": "g",
+        "prep": "cut into 1.5cm square batonnet inlays",
+        "dept": "poultry"
+      },
+      {
+        "name": "Pork back fat (bardes)",
+        "qty": 150,
+        "unit": "g",
+        "prep": "thinly sliced to line the mold",
+        "dept": "meat"
+      },
+      {
+        "name": "Pistachios (shelled, raw)",
+        "qty": 60,
+        "unit": "g",
+        "prep": "blanched, peeled, and toasted",
+        "dept": "produce"
+      },
+      {
+        "name": "Cognac or Armagnac",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "for marinating the meats",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Port wine (Tawny or Ruby)",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "for marinade reduction",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fine sea salt",
+        "qty": 22,
+        "unit": "g",
+        "prep": "precisely weighed at 1.8% meat weight",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Curing salt #1 (Prague Powder #1)",
+        "qty": 3,
+        "unit": "g",
+        "prep": "for pink color preservation and food safety",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Freshly ground white pepper & quatre épices",
+        "qty": 5,
+        "unit": "g",
+        "prep": "finely milled",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Egg whites",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "chilled for farce emulsification",
+        "dept": "dairy"
+      },
+      {
+        "name": "Heavy cream (36%)",
+        "qty": 80,
+        "unit": "ml",
+        "prep": "ice cold",
+        "dept": "dairy"
+      },
+      {
+        "name": "All-purpose unbleached flour (T55)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "sifted",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Rendered leaf lard (saindoux)",
+        "qty": 125,
+        "unit": "g",
+        "prep": "melted warm at 45°C",
+        "dept": "dairy"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 125,
+        "unit": "g",
+        "prep": "melted warm with the lard",
+        "dept": "dairy"
+      },
+      {
+        "name": "Water (lukewarm 40°C)",
+        "qty": 180,
+        "unit": "ml",
+        "prep": "for dough hydration",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Egg yolks",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "whisked with 10ml cream for golden egg wash",
+        "dept": "dairy"
+      },
+      {
+        "name": "Clear gelatinized veal and poultry consommé",
+        "qty": 350,
+        "unit": "ml",
+        "prep": "perfumed with Madeira wine",
+        "dept": "sauce_stock"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Traditional fluted pâté en croûte tin with removable hinge latches (30cm)",
+        "type": "specialty"
+      },
+      {
+        "name": "Meat grinder with 4mm and 6mm dies",
+        "type": "specialty"
+      },
+      {
+        "name": "Probe digital stem thermometer",
+        "type": "everyday"
+      },
+      {
+        "name": "Pastry rolling pin and fluted pastry cutter wheel",
+        "type": "everyday"
+      },
+      {
+        "name": "Parchment paper chimneys",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Marinate the duck batonnets in Cognac, Port, salt, and spices for 12 hours chilled at 2°C.",
+      "Chill all meat grinder blades and bowls in the freezer 45 minutes prior to grinding.",
+      "Prepare hot-water crust pastry dough 24 hours in advance and rest refrigerated wrapped in plastic.",
+      "Bring rich veal stock to a simmer, season with Madeira, Bloom sheet gelatin (or reduce natural collagen), and cool to 35°C."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Prepare the hot-water crust: combine flour and 10g salt in a bowl. Whisk melted lard, warm butter, and warm water together, then pour into flour. Knead rapidly until smooth, pliable, and satin-finished (about 3 minutes). Wrap tightly and chill 12-24 hours.",
+        "timerMins": 15,
+        "sensoryCue": "Dough is warm, remarkably smooth, elastic, and does not stick to fingertips.",
+        "scienceNote": "Warm liquid gelatinizes a small fraction of the flour starch and softens gluten bonds, creating an extraordinarily malleable pastry that holds vertical walls during baking without shrinking."
+      },
+      {
+        "stepNum": 2,
+        "text": "Mix the farce: grind pork and veal into an ice-cold bowl. Add curing salt, sea salt, spices, egg whites, and ice cream. Mix vigorously by hand or paddle for 90 seconds until a sticky myosin protein network develops. Fold in toasted pistachios.",
+        "timerMins": 10,
+        "sensoryCue": "Meat changes from loose ground pieces into a tacky, cohesive paste that sticks to the bowl.",
+        "scienceNote": "Mechanical agitation in the presence of 1.8% salt extracts salt-soluble myosin filaments, which cross-link into a thermal gel during baking that traps water and fat droplets."
+      },
+      {
+        "stepNum": 3,
+        "text": "Roll 2/3 of the pastry to 4mm thickness. Line the buttered hinged mold, pressing into fluted corners without tearing. Pack half the farce firmly, lay the marinated duck batonnets down the center line, and top with remaining farce, pressing out all air pockets.",
+        "timerMins": 25,
+        "sensoryCue": "Pastry lines corners cleanly with 1cm overhang; farce is dense without air bubbles.",
+        "scienceNote": "Eliminating air pockets is vital: pockets expand during baking, rupture the crust, and prevent the post-bake gelatin from completely sealing the mosaic."
+      },
+      {
+        "stepNum": 4,
+        "text": "Roll remaining dough for the lid. Crimp lid to the rim with fingertips or pastry pinchers. Cut two 1.5cm holes in lid and insert rolled foil or parchment chimneys. Decorate with dough cutouts. Brush thoroughly with egg wash.",
+        "timerMins": 15,
+        "sensoryCue": "Tight crimped border; shiny golden wash; rigid chimneys standing straight.",
+        "scienceNote": "Chimneys vent internal steam so internal pressure doesn't blow out side pastry seams."
+      },
+      {
+        "stepNum": 5,
+        "text": "Bake at 200°C (400°F) for 20 minutes to set crust, then reduce oven to 160°C (320°F) and bake until core registers 68°C (155°F) on digital probe (approx 65-75 minutes).",
+        "timerMins": 85,
+        "sensoryCue": "Crust turns deep burnished mahogany; clear juices bubble gently inside chimneys.",
+        "scienceNote": "Gentle core heating coagulates meat proteins at 65-68°C without squeezing out excessive moisture, which preserves tenderness in dense charcuterie."
+      },
+      {
+        "stepNum": 6,
+        "text": "Cool at room temperature for 3 hours. Pour warm (35°C) Madeira aspic through the chimneys until completely full. Chill 24 hours at 4°C, topping up aspic after 4 hours as it absorbs into meat crevices. Slice cold with a razor-sharp serrated knife.",
+        "timerMins": 180,
+        "sensoryCue": "Glistening crystal-clear amber jelly fills the gap between crust and meat perfectly.",
+        "scienceNote": "Meat shrinks slightly upon cooling, leaving an air gap. Filling this gap with gelatinized wine stock excludes oxygen, prevents oxidation, and provides luscious mouthfeel."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Intricate mosaic cross-section of pink cured pork, deep burgundy duck, emerald pistachios, amber clear jelly, and crisp golden-brown fluted crust.",
+      "hear": "Crisp pastry crackle when pierced by the knife blade.",
+      "smell": "Warm Cognac, toasted lard pastry, sweet baking spices, roasted nuts, and savory aged stock.",
+      "feel": "Crisp flaky short pastry yielding to dense, moist, velvety charcuterie and melting cold aspic."
+    },
+    "scienceNotes": [
+      "Hot water crusts rely on retrograded starch and high fat content (50% of flour weight) to remain completely crisp even when resting against moist meat fillings.",
+      "Nitrite curing salt prevents Clostridium botulinum in dense, low-oxygen baked meat structures while binding myoglobin to preserve vibrant roseate coloration."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Pastry cracked during baking",
+        "cause": "Oven temperature too hot or chimneys blocked",
+        "solution": "Always verify chimney holes remain completely unobstructed during baking."
+      },
+      {
+        "problem": "Aspic leaks out bottom when poured",
+        "cause": "Pastry had tiny pinhole tear in bottom corners",
+        "solution": "Ensure pastry is minimum 4mm thick and seal seams carefully when rolling into tin."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Duck breast",
+        "substitute": "Pheasant breast, rabbit loin, or pork tenderloin"
+      },
+      {
+        "ingredient": "Leaf lard",
+        "substitute": "Clarified duck fat or all European high-fat butter"
+      }
+    ],
+    "flavorPairings": [
+      "Cornichons",
+      "Dijon mustard",
+      "Pickled shallots",
+      "Pinot Noir de Bourgogne",
+      "Crusty baguette"
+    ],
+    "advancedTechnique": "Farce protein extraction and post-bake hot aspic funneling.",
+    "storageAndReheating": "Keep refrigerated wrapped in butcher paper for up to 7 days. Serve strictly chilled (12-14°C) to prevent aspic from melting.",
+    "nutritionEstimates": {
+      "calories": 520,
+      "proteinG": 28,
+      "carbsG": 32,
+      "fatG": 36
+    },
+    "relatedRecipes": [
+      "rec-terrine-campagne",
+      "rec-duck-confit"
+    ],
+    "relatedTechniques": [
+      "Charcuterie Farce Emulsification",
+      "Hot Water Crust Pastry",
+      "Aspic Clarification"
+    ]
+  },
+  {
+    "id": "rec-terrine-campagne",
+    "title": "Terrine de Campagne Traditionnelle aux Pistaches",
+    "cuisine": "French",
+    "category": "appetizer",
+    "slot": "lunch",
+    "difficulty": "Advanced",
+    "prepMins": 60,
+    "cookMins": 90,
+    "totalMins": 150,
+    "yieldServings": 10,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "Classic French country pork and poultry liver terrine studded with pistachios and wrapped in caul fat, baked gently in a bain-marie and weighted for 48 hours for dense, luxurious texture.",
+    "dietary": [],
+    "sensoryRole": "Rustic, robust, mineral-rich pork and liver profile with sweet nutty crunch and herbal depth.",
+    "ingredients": [
+      {
+        "name": "Pork shoulder (coarsely ground 8mm)",
+        "qty": 500,
+        "unit": "g",
+        "prep": "chilled",
+        "dept": "meat"
+      },
+      {
+        "name": "Pork belly (fatty, ground 6mm)",
+        "qty": 350,
+        "unit": "g",
+        "prep": "chilled",
+        "dept": "meat"
+      },
+      {
+        "name": "Chicken livers (trimmed, soaked in milk)",
+        "qty": 200,
+        "unit": "g",
+        "prep": "pureed smooth or finely chopped",
+        "dept": "poultry"
+      },
+      {
+        "name": "Fresh pork caul fat (crépine) or thin bacon strips",
+        "qty": 150,
+        "unit": "g",
+        "prep": "soaked in cold water with vinegar",
+        "dept": "meat"
+      },
+      {
+        "name": "Shallots",
+        "qty": 80,
+        "unit": "g",
+        "prep": "finely minced and sweated in butter",
+        "dept": "produce"
+      },
+      {
+        "name": "Garlic cloves",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "microplaned",
+        "dept": "produce"
+      },
+      {
+        "name": "Shelled pistachios",
+        "qty": 50,
+        "unit": "g",
+        "prep": "raw, unsalted",
+        "dept": "produce"
+      },
+      {
+        "name": "Cognac or Calvados",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "for deglazing shallots",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fresh thyme & rosemary leaves",
+        "qty": 8,
+        "unit": "g",
+        "prep": "finely chopped",
+        "dept": "produce"
+      },
+      {
+        "name": "Bay leaves",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "fresh, for terrine top",
+        "dept": "produce"
+      },
+      {
+        "name": "Fine sea salt",
+        "qty": 18,
+        "unit": "g",
+        "prep": "1.7% of meat mass",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Coarsely ground black pepper",
+        "qty": 4,
+        "unit": "g",
+        "prep": "mignonette",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Large whole eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "beaten lightly",
+        "dept": "dairy"
+      },
+      {
+        "name": "Heavy cream",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "chilled",
+        "dept": "dairy"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Enameled cast iron or stoneware terrine dish with lid (1.5L capacity)",
+        "type": "specialty"
+      },
+      {
+        "name": "Deep roasting pan for water bath",
+        "type": "everyday"
+      },
+      {
+        "name": "Probe thermometer",
+        "type": "everyday"
+      },
+      {
+        "name": "Terrine press plate or cardboard wrapped in foil plus 1kg weight",
+        "type": "specialty"
+      }
+    ],
+    "miseEnPlace": [
+      "Soak chicken livers in milk 2 hours to remove metallic bitterness, then drain thoroughly.",
+      "Sweat minced shallots and garlic in butter until soft; deglaze with Cognac and chill.",
+      "Soak caul fat in cold water with a splash of white vinegar until supple, then rinse and pat dry."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Line the terrine dish with drained caul fat, letting generous flaps drape over the sides. In a large chilled bowl, combine ground pork shoulder, pork belly, processed livers, sweated shallots, eggs, cream, salt, pepper, herbs, and pistachios.",
+        "timerMins": 15,
+        "sensoryCue": "Farce is thoroughly combined, uniform, and slightly sticky.",
+        "scienceNote": "Farce requires sufficient fat (35-40%) to remain moist after slow baking; pork belly provides slow-rendering fat that binds with liver proteins."
+      },
+      {
+        "stepNum": 2,
+        "text": "Pack the meat mixture into the lined terrine dish, pressing down firmly to remove air bubbles. Fold the caul fat flaps over the top to encase the meat completely. Top with 3 fresh bay leaves and fresh thyme sprigs.",
+        "timerMins": 10,
+        "sensoryCue": "Top is neatly wrapped like a gift package; bay leaves sit centered on top.",
+        "scienceNote": "Caul fat melts almost entirely during baking, basting the exterior with pure fat while holding the coarse meat grains tightly in form."
+      },
+      {
+        "stepNum": 3,
+        "text": "Cover terrine with lid. Place in a deep roasting pan, transfer to oven, and pour boiling water into the pan until it reaches 2/3 up the sides of the terrine dish.",
+        "timerMins": 5,
+        "sensoryCue": "Water bath is steaming; lid is firmly seated.",
+        "scienceNote": "A bain-marie buffers radiant oven heat, maintaining a steady 90-95°C water boundary that prevents the terrine edges from curdling or separating."
+      },
+      {
+        "stepNum": 4,
+        "text": "Bake at 150°C (300°F) for approximately 80 to 95 minutes, until internal core temperature reaches 68°C (155°F) on digital thermometer probe.",
+        "timerMins": 90,
+        "sensoryCue": "Clear golden fat has rendered around edges; aroma of roasted pork, brandy, and thyme fills the kitchen.",
+        "scienceNote": "68°C is the sweet spot: collagen begins to soften and gelatinize, while liver and muscle proteins remain supple rather than gritty or chalky."
+      },
+      {
+        "stepNum": 5,
+        "text": "Remove from water bath and cool at room temperature for 1 hour. Place a press plate or cardboard wrapped in foil on top of the terrine and set a 1kg weight (e.g. food cans). Chill under weight for 24 hours, then mature in fridge for 48 hours before serving.",
+        "timerMins": 60,
+        "sensoryCue": "Terrine compresses evenly; excess air is expelled; top fat solidifies into a protective seal.",
+        "scienceNote": "Weighting forces liquid collagen into voids and compacts meat grains, allowing clean, razor-sharp slices that do not crumble when cut."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Rustic pink-flecked charcuterie slice with vibrant green pistachio gems and glistening thin border of white fat.",
+      "hear": "Firm, silent slice under a chef's knife.",
+      "smell": "Rich cured pork, savory liver, herbs, roasted pistachios, and Cognac.",
+      "feel": "Substantial, coarse-grained yet melting texture with pleasant toothsome crunch from nuts."
+    },
+    "scienceNotes": [
+      "Aging charcuterie 48-72 hours post-bake allows curing salts, spices, and melted fats to equilibrate throughout the matrix, mellowing aggressive liver notes."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Terrine crumbled when sliced",
+        "cause": "Not weighted properly or sliced while too warm",
+        "solution": "Always press with 1kg weight and chill minimum 24 hours before slicing cold with a wet sharp blade."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Caul fat",
+        "substitute": "Thin sliced unsmoked streaky bacon or prosciutto"
+      },
+      {
+        "ingredient": "Chicken livers",
+        "substitute": "Duck livers or calf liver"
+      }
+    ],
+    "flavorPairings": [
+      "Cornichons",
+      "Coarse Dijon mustard",
+      "Rustic sourdough toast",
+      "Gamay / Beaujolais Villages"
+    ],
+    "advancedTechnique": "Bain-marie thermal buffering and weighted cold compaction.",
+    "storageAndReheating": "Keep refrigerated wrapped tightly in foil for up to 10 days. Always slice and serve chilled (10-14°C).",
+    "nutritionEstimates": {
+      "calories": 420,
+      "proteinG": 24,
+      "carbsG": 4,
+      "fatG": 34
+    },
+    "relatedRecipes": [
+      "rec-pate-en-croute",
+      "rec-duck-confit"
+    ],
+    "relatedTechniques": [
+      "Charcuterie Farce Emulsification",
+      "Bain-Marie Roasting"
+    ]
+  },
+  {
+    "id": "rec-steak-tartare",
+    "title": "Steak Tartare Classique au Couteau",
+    "cuisine": "French",
+    "category": "lunch",
+    "slot": "dinner",
+    "difficulty": "Intermediate",
+    "prepMins": 30,
+    "cookMins": 0,
+    "totalMins": 30,
+    "yieldServings": 2,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The Parisian bistro standard: prime beef tenderloin hand-diced precisely with a sharp knife, folded à la minute into a tangy emulsion of egg yolk, Dijon mustard, capers, shallots, cornichons, and Worcestershire.",
+    "dietary": [
+      "gluten_free"
+    ],
+    "sensoryRole": "Bright, mineral, unctuous raw beef with sharp acid, brine, and mustard pungency.",
+    "ingredients": [
+      {
+        "name": "Prime beef tenderloin (filet mignon) or flat iron",
+        "qty": 350,
+        "unit": "g",
+        "prep": "chilled in freezer 20 mins, hand-cut into 3mm cubes",
+        "dept": "meat"
+      },
+      {
+        "name": "Pasture-raised egg yolks",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "freshest possible, unbroken",
+        "dept": "dairy"
+      },
+      {
+        "name": "French Dijon mustard",
+        "qty": 20,
+        "unit": "g",
+        "prep": "smooth sharp mustard",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Nonpareil capers",
+        "qty": 25,
+        "unit": "g",
+        "prep": "drained, rinsed, and finely minced",
+        "dept": "produce"
+      },
+      {
+        "name": "French cornichons",
+        "qty": 30,
+        "unit": "g",
+        "prep": "finely brunoised 2mm",
+        "dept": "produce"
+      },
+      {
+        "name": "French shallot",
+        "qty": 25,
+        "unit": "g",
+        "prep": "finely brunoised 2mm",
+        "dept": "produce"
+      },
+      {
+        "name": "Flat-leaf Italian parsley",
+        "qty": 10,
+        "unit": "g",
+        "prep": "finely chiffonaded",
+        "dept": "produce"
+      },
+      {
+        "name": "Worcestershire sauce (Lea & Perrins)",
+        "qty": 10,
+        "unit": "ml",
+        "prep": "for umami balance",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Tabasco sauce",
+        "qty": 5,
+        "unit": "dash",
+        "prep": "to taste",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Extra-virgin olive oil",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "fruity, mild",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Flaky sea salt (Fleur de Sel) & fresh black pepper",
+        "qty": 4,
+        "unit": "g",
+        "prep": "freshly cracked",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy razor-sharp 8-inch chef's knife or slicing knife",
+        "type": "everyday"
+      },
+      {
+        "name": "Stainless steel mixing bowl nested over a bowl of ice",
+        "type": "everyday"
+      },
+      {
+        "name": "Ring mold (8cm) for plating",
+        "type": "specialty"
+      }
+    ],
+    "miseEnPlace": [
+      "Trim all exterior silverskin and oxidized fat from tenderloin.",
+      "Chill beef in freezer for 15-20 minutes until firm (not frozen) to facilitate razor-clean hand dicing.",
+      "Set up a stainless steel bowl resting on crushed ice to keep meat at <4°C throughout prep."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Cut the chilled beef into 3mm sheets, then into 3mm batonnets, and finally crosscut into 3mm tiny uniform cubes ('au couteau'). Never grind or food-process the beef. Keep in iced bowl.",
+        "timerMins": 15,
+        "sensoryCue": "Clean, sparkling ruby cubes of beef; no mashed or torn meat fibers.",
+        "scienceNote": "Grinding beef ruptures muscle cell walls and releases intracellular water, resulting in a mushy paste. Hand-dicing preserves cell integrity and gives clean, bouncy mouthfeel."
+      },
+      {
+        "stepNum": 2,
+        "text": "In a separate small bowl, whisk 1 egg yolk with Dijon mustard, Worcestershire, Tabasco, olive oil, salt, and pepper until a smooth, shiny dressing forms.",
+        "timerMins": 3,
+        "sensoryCue": "Golden-amber unctuous dressing that coats the back of a spoon.",
+        "scienceNote": "Lecithin in egg yolk emulsifies olive oil and acidic sauces, creating a protective coating that binds beef cubes without separating."
+      },
+      {
+        "stepNum": 3,
+        "text": "Immediately before serving, add the minced capers, cornichons, shallots, and parsley to the beef. Pour the dressing over and fold gently with a fork for 30 seconds until evenly glossed.",
+        "timerMins": 2,
+        "sensoryCue": "Glistening ruby beef flecked with bright emerald parsley and yellow mustard.",
+        "scienceNote": "Acid from mustard and capers denatures raw beef proteins ('cooks' them), turning meat gray if allowed to sit. Mixing must occur strictly à la minute."
+      },
+      {
+        "stepNum": 4,
+        "text": "Place ring mold on a chilled plate. Pack half the tartare into mold, smooth the top, create a slight well, and slide the remaining fresh egg yolk gently into center. Remove ring mold and serve immediately with hot pommes frites and toasted baguette.",
+        "timerMins": 5,
+        "sensoryCue": "Proud cylindrical tower with a gleaming raw yolk resting like a golden jewel on top.",
+        "scienceNote": "Serving on chilled plates maintains beef beneath 5°C safety zone and enhances crisp texture."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Glistening ruby red tartare tower topped with a vibrant golden yolk and flecks of green herbs and pickles.",
+      "hear": "Crisp crunch when toast points break; gentle fork yield.",
+      "smell": "Clean mineral beef, tangy vinegar capers, piquant mustard, and fresh parsley.",
+      "feel": "Silky, melting beef cubes with clean textural integrity and unctuous yolk emulsion."
+    },
+    "scienceNotes": [
+      "Food safety: Surface bacteria are eliminated by trimming exterior meat surfaces; interior muscle of intact whole primal cuts is sterile when fresh."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Meat turned brown/gray",
+        "cause": "Dressed too far in advance; acid oxidized myoglobin",
+        "solution": "Always mix dressing and beef within 60 seconds of table service."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Beef tenderloin",
+        "substitute": "Top sirloin cap (picanha) or prime flat iron"
+      },
+      {
+        "ingredient": "Cornichons",
+        "substitute": "Pickled green tomatoes or caperberries"
+      }
+    ],
+    "flavorPairings": [
+      "Pommes frites",
+      "Toasted country sourdough",
+      "Crisp green salad with vinaigrette",
+      "Gamay or Côtes du Rhône"
+    ],
+    "advancedTechnique": "Hand-knife precision dicing (au couteau) and cold-bowl emulsion assembly.",
+    "storageAndReheating": "Must be consumed immediately upon assembly. Do not store dressed raw meat leftovers.",
+    "nutritionEstimates": {
+      "calories": 380,
+      "proteinG": 38,
+      "carbsG": 6,
+      "fatG": 22
+    },
+    "relatedRecipes": [
+      "rec-steak-frites",
+      "rec-pan-seared-ribeye"
+    ],
+    "relatedTechniques": [
+      "Knife Skills: Brunoise & Fine Dicing",
+      "Cold Emulsion Stability"
+    ]
+  },
+  {
+    "id": "rec-soupe-a-loignon",
+    "title": "Soupe à l'Oignon Gratinée Classique",
+    "cuisine": "French",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Intermediate",
+    "prepMins": 25,
+    "cookMins": 90,
+    "totalMins": 115,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The legendary Parisian comfort dish: sweet yellow onions caramelized slowly for an hour until deep mahogany, simmered in rich beef consommé and dry white wine, ladled into ceramic crocks over toasted sourdough, and broiled under a bubbly, blistered helmet of aged Gruyère AOP.",
+    "dietary": [],
+    "sensoryRole": "Deep savory umami, sweet caramelized sugars, rich wine acidity, and molten nutty cheese pull.",
+    "ingredients": [
+      {
+        "name": "Yellow sweet onions (e.g. Vidalia or Spanish)",
+        "qty": 1200,
+        "unit": "g",
+        "prep": "peeled, halved, and sliced 4mm pole-to-pole",
+        "dept": "produce"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 50,
+        "unit": "g",
+        "prep": "for sweating and caramelization",
+        "dept": "dairy"
+      },
+      {
+        "name": "Extra-virgin olive oil",
+        "qty": 15,
+        "unit": "ml",
+        "prep": "prevents butter from scorching",
+        "dept": "drygoods"
+      },
+      {
+        "name": "All-purpose flour",
+        "qty": 25,
+        "unit": "g",
+        "prep": "singer to slightly thicken broth",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Dry white wine (Sauvignon Blanc or Chardonnay)",
+        "qty": 200,
+        "unit": "ml",
+        "prep": "for fond deglazing",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Rich brown beef stock or consommé",
+        "qty": 1500,
+        "unit": "ml",
+        "prep": "hot, gelatinous",
+        "dept": "sauce_stock"
+      },
+      {
+        "name": "French Cognac or dry sherry",
+        "qty": 30,
+        "unit": "ml",
+        "prep": "for final aroma lift",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fresh thyme bundle & 1 bay leaf",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "tied with butcher's twine",
+        "dept": "produce"
+      },
+      {
+        "name": "Crusty artisan sourdough baguette",
+        "qty": 8,
+        "unit": "slice",
+        "prep": "cut 2cm thick and toasted hard in oven",
+        "dept": "bread"
+      },
+      {
+        "name": "Aged Gruyère AOP or Comté (18 months)",
+        "qty": 250,
+        "unit": "g",
+        "prep": "freshly grated coarse",
+        "dept": "dairy"
+      },
+      {
+        "name": "Garlic clove",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "cut in half to rub toasted bread",
+        "dept": "produce"
+      },
+      {
+        "name": "Fine sea salt and freshly cracked black pepper",
+        "qty": 8,
+        "unit": "g",
+        "prep": "to taste",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy 6-quart enameled cast-iron Dutch oven",
+        "type": "everyday"
+      },
+      {
+        "name": "Wooden flat-edge spatula for deglazing",
+        "type": "everyday"
+      },
+      {
+        "name": "4 traditional oven-safe ceramic French onion soup crocks (lion's head)",
+        "type": "specialty"
+      },
+      {
+        "name": "Oven with top broiler element",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Slice onions evenly pole-to-pole to retain structural shape during long caramelization.",
+      "Toast baguette slices at 180°C for 12 minutes until bone dry throughout (croûtons). Rub hot crusts with garlic.",
+      "Heat beef stock to a gentle simmer in a separate pot so it doesn't drop Dutch oven temp."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Melt butter with olive oil in the Dutch oven over medium heat. Add all sliced onions and 1 tsp salt. Cook uncovered, stirring occasionally, until onions release liquid, collapse in volume, and turn translucent (about 15 minutes).",
+        "timerMins": 15,
+        "sensoryCue": "Onions dramatically reduce to 1/3 original volume; sweet vegetal steam rises.",
+        "scienceNote": "Salt draws out onion moisture via osmotic pressure, allowing cell walls to soften before Maillard caramelization begins."
+      },
+      {
+        "stepNum": 2,
+        "text": "Reduce heat to medium-low. Cook onions for 50-60 minutes, stirring every 4-5 minutes and scraping up the brown fond from bottom. If bottom darkens too quickly, add 2 tbsp water to dissolve fond. Continue until onions are deep chestnut mahogany.",
+        "timerMins": 55,
+        "sensoryCue": "Onions transform into an intensely fragrant, jammy, dark mahogany paste with sweet roasted aroma.",
+        "scienceNote": "Pyrolysis of sugars and Maillard reactions between amino acids and reducing sugars create hundreds of new volatile flavor compounds including furans, pyrazines, and thiols."
+      },
+      {
+        "stepNum": 3,
+        "text": "Sprinkle flour over onions ('singer') and stir for 2 minutes to cook out raw starch taste. Pour in white wine and scrape up all caramelized fond from bottom and sides. Simmer until wine reduces by half.",
+        "timerMins": 5,
+        "sensoryCue": "Wine bubbles vigorously and deglazes the pan cleanly; thick saucy base forms.",
+        "scienceNote": "Tartaric and malic acids in dry white wine dissolve insoluble browned proteins from pan steel, incorporating rich glutamate umami directly into broth."
+      },
+      {
+        "stepNum": 4,
+        "text": "Pour in hot beef stock, add herb bundle, salt, and pepper. Bring to a boil, then reduce heat to low and simmer gently uncovered for 30 minutes. Stir in Cognac and adjust seasoning.",
+        "timerMins": 30,
+        "sensoryCue": "Broth is deep amber, richly aromatic, and slightly velvety.",
+        "scienceNote": "Long simmering allows onion pectin and beef gelatin to fuse into a harmonized, silky liquid without feeling heavy."
+      },
+      {
+        "stepNum": 5,
+        "text": "Preheat broiler to high. Ladle hot soup into 4 ovenproof crocks. Float 2 bone-dry toasted bread slices on each. Mound grated Gruyère generously over bread, overlapping onto crock rims to form a seal.",
+        "timerMins": 5,
+        "sensoryCue": "Cheese completely blankets the crock, draping over edges.",
+        "scienceNote": "Dry croutons absorb soup like sponges while remaining structurally intact; moisture would cause soft bread to dissolve into sludge."
+      },
+      {
+        "stepNum": 6,
+        "text": "Place crocks on a sheet pan under the broiler 10cm from heat element. Broil for 4-6 minutes until cheese is vigorously bubbling, molten, and studded with deep golden-brown blisters. Let rest 5 minutes before serving.",
+        "timerMins": 6,
+        "sensoryCue": "Violently bubbling, blistered cheese crust with irresistible toasted nutty aroma.",
+        "scienceNote": "Broiler heat melts milk fats and triggers rapid Maillard browning on milk proteins, creating the famous cheesy gratin seal that traps boiling steam beneath."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Blistered, bubbling golden-brown Gruyère crown draping over dark ceramic crocks; dark mahogany broth beneath.",
+      "hear": "Hiss and sizzle as molten cheese crust is broken with a spoon.",
+      "smell": "Intense toasted Gruyère, caramelized sweet onions, Cognac, and rich beef broth.",
+      "feel": "Chewy, stretchy molten cheese giving way to wine-soaked savory bread and piping hot, silky broth."
+    },
+    "scienceNotes": [
+      "Low-and-slow caramelization breaks down onion inulin into free fructose and glucose, increasing sweetness eightfold compared to raw onions."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Onions burned instead of caramelizing",
+        "cause": "Heat was too high or pan left unattended",
+        "solution": "Keep heat medium-low and deglaze pan with a splash of water as soon as fond turns dark brown."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Gruyère AOP",
+        "substitute": "Comté, Emmental, or Fontina"
+      },
+      {
+        "ingredient": "Beef stock",
+        "substitute": "Rich roasted vegetable stock and mushroom broth for vegetarian version"
+      }
+    ],
+    "flavorPairings": [
+      "Light green salad with Dijon vinaigrette",
+      "Beaujolais Cru",
+      "Dry cider",
+      "Côtes du Rhône"
+    ],
+    "advancedTechnique": "Long-duration deglazed caramelization and salamander gratinée sealing.",
+    "storageAndReheating": "Soup base keeps refrigerated up to 5 days. Reheat soup boiling hot before ladling into crocks and broiling cheese fresh.",
+    "nutritionEstimates": {
+      "calories": 540,
+      "proteinG": 28,
+      "carbsG": 42,
+      "fatG": 26
+    },
+    "relatedRecipes": [
+      "rec-fond-brun-veau",
+      "rec-croque-madame"
+    ],
+    "relatedTechniques": [
+      "Maillard Browning Kinetics",
+      "Fond Deglazing",
+      "Salamander Gratinée"
+    ]
+  },
+  {
+    "id": "rec-canard-orange",
+    "title": "Canard à l'Orange Classique (Duck Breast with Sauce Bigarade)",
+    "cuisine": "French",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Advanced",
+    "prepMins": 25,
+    "cookMins": 35,
+    "totalMins": 60,
+    "yieldServings": 2,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "Crisp-skinned seared duck breast finished in the grand French classical tradition: a glossy Sauce Bigarade built on a caramelized sugar-and-sherry-vinegar gastrique, fresh Seville orange juice, gelatinous duck stock, and bitter orange peel zeste.",
+    "dietary": [
+      "gluten_free"
+    ],
+    "sensoryRole": "Rich fatty crispy duck meat sliced rare against a bittersweet, acidic, glossy citrus sauce.",
+    "ingredients": [
+      {
+        "name": "Moulard or Magret duck breast (approx 350g each)",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "skin scored in fine 5mm diamond crosshatch",
+        "dept": "poultry"
+      },
+      {
+        "name": "Granulated white sugar",
+        "qty": 40,
+        "unit": "g",
+        "prep": "for the gastrique base",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Sherry vinegar or red wine vinegar",
+        "qty": 50,
+        "unit": "ml",
+        "prep": "for dissolving the gastrique",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fresh bitter oranges or blood oranges",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "juiced (150ml) and 1 orange zested in thin julienne",
+        "dept": "produce"
+      },
+      {
+        "name": "Grand Marnier or Cointreau liqueur",
+        "qty": 30,
+        "unit": "ml",
+        "prep": "for flamber and aromatics",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Rich brown duck or veal stock",
+        "qty": 300,
+        "unit": "ml",
+        "prep": "reduced, gelatinous",
+        "dept": "sauce_stock"
+      },
+      {
+        "name": "Cold unsalted European butter",
+        "qty": 35,
+        "unit": "g",
+        "prep": "diced into small cubes (monter au beurre)",
+        "dept": "dairy"
+      },
+      {
+        "name": "Fine sea salt and cracked white pepper",
+        "qty": 5,
+        "unit": "g",
+        "prep": "to season",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy cold 12-inch stainless steel skillet",
+        "type": "everyday"
+      },
+      {
+        "name": "Small heavy saucepan for gastrique reduction",
+        "type": "everyday"
+      },
+      {
+        "name": "Fine mesh conical strainer (chinois)",
+        "type": "everyday"
+      },
+      {
+        "name": "Instant-read meat thermometer",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Score duck skin deeply in 5mm diamonds taking extreme care not to cut into red meat beneath.",
+      "Blanch julienned orange zest in boiling water for 1 minute three times to remove harsh bitterness.",
+      "Cube butter and keep ice cold in refrigerator."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Season the duck breasts with salt and white pepper. Place skin-side down in a cold, ungreased skillet over medium-low heat. Cook slowly for 12-15 minutes, pouring off rendered liquid duck fat as it pools, until skin is paper-thin and deeply golden crisp.",
+        "timerMins": 14,
+        "sensoryCue": "Continuous gentle sizzle; fat liquefies rapidly; skin turns rigid and amber-gold.",
+        "scienceNote": "Starting in a cold pan allows duck subcutaneous fat (melting point 32°C) to render completely before the meat overcooks, yielding crisp skin without greasy flabbiness."
+      },
+      {
+        "stepNum": 2,
+        "text": "Flip duck breasts onto flesh side and sear for 3-4 minutes until core temperature registers 54°C (130°F) for medium-rare. Transfer to a warm plate and rest loosely tented for 10 minutes.",
+        "timerMins": 4,
+        "sensoryCue": "Flesh firms slightly with gentle spring; internal juices redistribute.",
+        "scienceNote": "Resting allows muscle fibers to relax and reabsorb intracellular juices, preventing blood from pooling when carved."
+      },
+      {
+        "stepNum": 3,
+        "text": "Make the gastrique: in a small saucepan, combine sugar and 1 tbsp water. Cook over medium-high heat without stirring until sugar melts and turns deep amber caramel (170°C). Immediately remove from heat and pour in vinegar.",
+        "timerMins": 6,
+        "sensoryCue": "Sugar turns from clear to pale gold to deep mahogany; sharp hiss when vinegar hits.",
+        "scienceNote": "A gastrique balances caramelized sucrose bitterness with acetic acid, creating a flavor foundation that cuts through duck fat."
+      },
+      {
+        "stepNum": 4,
+        "text": "Return pan to heat, stirring until hardened caramel dissolves. Pour in orange juice, Grand Marnier, and duck stock. Simmer vigorously until sauce reduces by half and coats the back of a spoon ('nappe').",
+        "timerMins": 10,
+        "sensoryCue": "Liquid thickens into a glossy, fragrant, translucent amber sauce with citrus perfume.",
+        "scienceNote": "Gelatin in stock and pectin from orange juice reduce into a viscous, cohesive liquid without requiring flour or starch."
+      },
+      {
+        "stepNum": 5,
+        "text": "Remove sauce from heat. Whisk in cold butter cubes one by one ('monter au beurre') until sauce is glossy and velvety. Stir in blanched orange zest strips. Season with salt and white pepper.",
+        "timerMins": 3,
+        "sensoryCue": "Sauce takes on a brilliant sheen and silky, coating viscosity.",
+        "scienceNote": "Cold butter creates a stable micro-emulsion of milk fat droplets suspended in the acid-stock liquid, rounding sharp edges."
+      },
+      {
+        "stepNum": 6,
+        "text": "Slice rested duck breast crosswise on a bias into 5mm medallions. Fan out across warm plates, spoon warm Sauce Bigarade over half the meat, leaving crispy skin exposed, and garnish with orange supreme segments.",
+        "timerMins": 3,
+        "sensoryCue": "Rosy pink duck interior contrasted against crisp mahogany skin and gleaming amber sauce.",
+        "scienceNote": "Pouring sauce across the base rather than over the skin preserves crackling crunch."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Rosy ruby duck medallions fanned across a plate with glass-crisp scored skin and glossy amber sauce studded with orange zest.",
+      "hear": "Crisp skin crackles under the chef's knife.",
+      "smell": "Roasted gamey duck, caramelized sugar, bright citrus oil, and Grand Marnier.",
+      "feel": "Crisp crunchy skin followed by tender, juicy, velvety duck flesh and tongue-coating bittersweet sauce."
+    },
+    "scienceNotes": [
+      "Duck fat has a high concentration of monounsaturated fatty acids (similar to olive oil), rendering at low pan temperatures without scorching."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Skin was chewy, not crisp",
+        "cause": "Pan was too hot at start, searing skin before fat rendered",
+        "solution": "Always start duck breast in an ice-cold skillet over medium-low heat."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Duck stock",
+        "substitute": "Rich veal demi-glace or concentrated chicken stock"
+      },
+      {
+        "ingredient": "Grand Marnier",
+        "substitute": "Cointreau, Triple Sec, or Cognac"
+      }
+    ],
+    "flavorPairings": [
+      "Pommes dauphinoise",
+      "Braised red cabbage",
+      "Haricots verts",
+      "Pinot Noir / Syrah"
+    ],
+    "advancedTechnique": "Cold-pan fat rendering, gastrique sugar caramelization, and monter au beurre.",
+    "storageAndReheating": "Duck is best eaten immediately. Leftovers can be reheated gently in a 160°C oven for 6 minutes.",
+    "nutritionEstimates": {
+      "calories": 560,
+      "proteinG": 42,
+      "carbsG": 18,
+      "fatG": 36
+    },
+    "relatedRecipes": [
+      "rec-duck-confit",
+      "rec-sole-meuniere"
+    ],
+    "relatedTechniques": [
+      "Classical Gastrique Architecture",
+      "Cold Pan Rendering",
+      "Monter au Beurre"
+    ]
+  },
+  {
+    "id": "rec-blanquette-veau",
+    "title": "Blanquette de Veau à l'Ancienne",
+    "cuisine": "French",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Intermediate",
+    "prepMins": 30,
+    "cookMins": 90,
+    "totalMins": 120,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "Tender veal breast gently poached without browning in an aromatic court-bouillon, served in an ivory velouté enriched with egg yolks, crème fraîche, glazed pearl onions, and butter-poached button mushrooms.",
+    "dietary": [],
+    "sensoryRole": "Ultra-silky, comforting, mild and savory with tender melt-in-mouth veal and lemon-fresh creaminess.",
+    "ingredients": [
+      {
+        "name": "Veal shoulder and breast (cut into 4cm cubes)",
+        "qty": 1200,
+        "unit": "g",
+        "prep": "trimmed of excess sinew",
+        "dept": "meat"
+      },
+      {
+        "name": "White mirepoix (white leek, onion, celery)",
+        "qty": 300,
+        "unit": "g",
+        "prep": "coarsely chopped",
+        "dept": "produce"
+      },
+      {
+        "name": "Bouquet garni (thyme, bay leaf, parsley stems, 2 cloves in onion)",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "tied",
+        "dept": "produce"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 60,
+        "unit": "g",
+        "prep": "divided for roux and garniture",
+        "dept": "dairy"
+      },
+      {
+        "name": "All-purpose flour",
+        "qty": 50,
+        "unit": "g",
+        "prep": "for the blond velouté roux",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Small white pearl onions",
+        "qty": 200,
+        "unit": "g",
+        "prep": "peeled, kept whole",
+        "dept": "produce"
+      },
+      {
+        "name": "Button mushrooms (champignons de Paris)",
+        "qty": 250,
+        "unit": "g",
+        "prep": "quartered, tossed in 10ml lemon juice",
+        "dept": "produce"
+      },
+      {
+        "name": "Egg yolks",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "for the liaison",
+        "dept": "dairy"
+      },
+      {
+        "name": "Crème fraîche épaisse",
+        "qty": 100,
+        "unit": "ml",
+        "prep": "high fat French cultured cream",
+        "dept": "dairy"
+      },
+      {
+        "name": "Fresh lemon juice",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "freshly squeezed",
+        "dept": "produce"
+      },
+      {
+        "name": "Freshly grated nutmeg & white pepper",
+        "qty": 3,
+        "unit": "g",
+        "prep": "freshly ground",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fine sea salt",
+        "qty": 10,
+        "unit": "g",
+        "prep": "to taste",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy 6-quart enameled Dutch oven or cocotte",
+        "type": "everyday"
+      },
+      {
+        "name": "Skimmer spoon for skimming broth scum",
+        "type": "everyday"
+      },
+      {
+        "name": "Fine conical sieve (chinois)",
+        "type": "everyday"
+      },
+      {
+        "name": "Small sauté pan for mushroom poaching",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Blanch veal cubes: cover with cold water, bring to a rapid boil for 2 minutes, then drain and rinse under cold water to clean exterior proteins.",
+      "Glaze pearl onions à blanc with 10g butter, 1 tsp sugar, and water just covering until tender and glistening white without browning.",
+      "Poach quartered mushrooms in 15g butter, 2 tbsp water, and lemon juice for 5 minutes."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Place blanched veal back into clean Dutch oven. Cover with 1.5L cold water. Add white mirepoix, bouquet garni, and 1 tsp salt. Bring to a bare simmer over medium-low heat. Skim every 10 minutes. Simmer gently for 75-85 minutes until veal is fork-tender.",
+        "timerMins": 80,
+        "sensoryCue": "Clear, fragrant broth with lazy bubbles; meat yields effortlessly to a paring knife.",
+        "scienceNote": "Starting with blanched meat in clean water prevents albumin clouds, yielding a pristine clear white cooking bouillon without gray foam."
+      },
+      {
+        "stepNum": 2,
+        "text": "Strain the veal through a colander over a large bowl, reserving 1 liter of the hot cooking bouillon. Discard the spent mirepoix and bouquet garni. Keep veal warm.",
+        "timerMins": 5,
+        "sensoryCue": "Fragrant golden-clear veal broth; clean, tender meat cubes.",
+        "scienceNote": "Veal collagen melts at 60-70°C into gelatin, enriching the poaching liquid with natural viscosity."
+      },
+      {
+        "stepNum": 3,
+        "text": "Make the blond velouté: in a clean saucepan, melt 50g butter over medium heat. Whisk in 50g flour and cook for 2 minutes without letting it brown. Gradually pour in 900ml of hot reserved veal broth, whisking constantly until smooth and simmering. Simmer for 10 minutes.",
+        "timerMins": 12,
+        "sensoryCue": "Velvety ivory sauce that bubbles gently and coats a spoon smoothly without lumps.",
+        "scienceNote": "A blond roux gelatinizes flour starches without thermal dextrinization (which occurs in brown roux), preserving maximum thickening power and pure dairy-meat flavor."
+      },
+      {
+        "stepNum": 4,
+        "text": "Prepare the liaison: in a bowl, whisk egg yolks with crème fraîche and lemon juice. Ladle 150ml of hot velouté into yolk mixture while whisking vigorously to temper, then pour tempered liaison back into the simmering velouté over low heat.",
+        "timerMins": 3,
+        "sensoryCue": "Sauce instantly transforms into a rich, glossy, pale cream color with luxurious body.",
+        "scienceNote": "Tempering prevents yolk proteins from curdling. The liaison thickens sauce below boiling (75-80°C) via yolk protein coagulation without requiring boiling starch."
+      },
+      {
+        "stepNum": 5,
+        "text": "Add the warm cooked veal cubes, glazed pearl onions, and poached button mushrooms to the sauce. Heat gently over lowest heat for 3 minutes without boiling. Season with nutmeg, white pepper, salt, and extra lemon drops. Garnish with chopped fresh chervil.",
+        "timerMins": 5,
+        "sensoryCue": "Veal, mushrooms, and pearl onions blanketed in satin ivory sauce.",
+        "scienceNote": "Never let the blanquette boil after adding the yolk liaison, or the emulsion will break into watery curds."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Pure ivory-white velvety sauce coating tender veal cubes, glistening pearlescent pearl onions, and white mushrooms, flecked with fresh chervil.",
+      "hear": "Gentle steaming simmer.",
+      "smell": "Delicate veal broth, fresh cream, lemon, butter, and faint nutmeg.",
+      "feel": "Ultra-silky, melting sauce coating fork-tender veal with delicate vegetal sweetness from glazed onions."
+    },
+    "scienceNotes": [
+      "Egg yolk vitellin and cream phospholipids create an exceptional secondary emulsion that masks any astringent notes, delivering maximum palatability."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Sauce curdled or broke",
+        "cause": "Sauce was boiled after adding egg yolk liaison",
+        "solution": "Remove from heat immediately, add 2 tbsp cold cream, and whisk vigorously."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Veal shoulder",
+        "substitute": "Free-range chicken thighs or turkey breast"
+      },
+      {
+        "ingredient": "Crème fraîche",
+        "substitute": "Heavy whipping cream with 1 tsp lemon juice"
+      }
+    ],
+    "flavorPairings": [
+      "Steamed buttered Basmati rice (riz pilaf)",
+      "White Burgundy (Chablis)",
+      "Sancerre Blanc"
+    ],
+    "advancedTechnique": "White court-bouillon blanching, blond roux velouté, and egg-yolk cream liaison.",
+    "storageAndReheating": "Keeps refrigerated up to 3 days. Reheat very gently over low heat or double boiler without boiling.",
+    "nutritionEstimates": {
+      "calories": 610,
+      "proteinG": 46,
+      "carbsG": 16,
+      "fatG": 38
+    },
+    "relatedRecipes": [
+      "rec-sauce-veloute",
+      "rec-fond-blanc-volaille"
+    ],
+    "relatedTechniques": [
+      "Egg-Yolk Liaison Suspension",
+      "Blond Roux Velouté",
+      "Poaching à Blanc"
+    ]
+  },
+  {
+    "id": "rec-spaghetti-amatriciana",
+    "title": "Spaghetti all'Amatriciana Tradizionale",
+    "cuisine": "Italian",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Novice",
+    "prepMins": 10,
+    "cookMins": 20,
+    "totalMins": 30,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The sacred Roman pasta masterpiece: thick cured guanciale rendered until crisp on the outside and melting within, deglazed with dry white wine, simmered with sweet San Marzano plum tomatoes and dried peperoncino, tossed with al dente spaghetti and snowdrifts of Pecorino Romano DOP.",
+    "dietary": [],
+    "sensoryRole": "Cured pork richness, tomato sweetness, piquant chili warmth, and salty sheep's milk tang.",
+    "ingredients": [
+      {
+        "name": "Spaghetti or bucatini (bronze-die extruded)",
+        "qty": 400,
+        "unit": "g",
+        "prep": "artisanal Italian pasta",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Guanciale (cured pork jowl)",
+        "qty": 200,
+        "unit": "g",
+        "prep": "trimmed of hard rind, cut into 5mm x 2cm strips",
+        "dept": "meat"
+      },
+      {
+        "name": "San Marzano whole peeled tomatoes (DOP)",
+        "qty": 600,
+        "unit": "g",
+        "prep": "hand-crushed in a bowl",
+        "dept": "produce"
+      },
+      {
+        "name": "Dry Italian white wine (Frascati or Trebbiano)",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "for pan deglazing",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Pecorino Romano DOP (from Amatrice or Lazio)",
+        "qty": 80,
+        "unit": "g",
+        "prep": "finely microplaned into airy snow",
+        "dept": "dairy"
+      },
+      {
+        "name": "Dried Peperoncino flakes or 1 whole dried chili",
+        "qty": 2,
+        "unit": "g",
+        "prep": "crushed",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Coarse sea salt",
+        "qty": 20,
+        "unit": "g",
+        "prep": "for pasta cooking water",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy 12-inch cast-iron or carbon steel skillet",
+        "type": "everyday"
+      },
+      {
+        "name": "Large pasta pot (6-quart)",
+        "type": "everyday"
+      },
+      {
+        "name": "Stainless steel pasta tongs",
+        "type": "everyday"
+      },
+      {
+        "name": "Microplane grater",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Cut guanciale into uniform batonnets 5mm thick so they crisp evenly without burning.",
+      "Hand-crush canned San Marzano tomatoes, removing any tough stem ends.",
+      "Bring 4 liters of water to a rolling boil with 20g salt."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Place the guanciale strips in a cold skillet without any added oil or butter. Set heat to medium-low. Cook slowly for 8-10 minutes, stirring occasionally, until fat renders clear and guanciale strips turn golden-amber and crisp on exterior while remaining tender inside.",
+        "timerMins": 10,
+        "sensoryCue": "Skillet fills with fragrant clear rendered pork fat; meat strips sizzle gently and turn amber.",
+        "scienceNote": "Guanciale pork jowl contains more collagen and oleic fat than belly pancetta, rendering a silken fat that forms the primary emulsifier of the sauce."
+      },
+      {
+        "stepNum": 2,
+        "text": "Remove half the crisp guanciale with a slotted spoon and reserve on paper towels for final topping. Add crushed peperoncino to the pan fat. Pour in white wine and let it bubble vigorously for 90 seconds until the wine alcohol cooks off and pan deglazes.",
+        "timerMins": 2,
+        "sensoryCue": "Sharp sizzle and sweet-wine steam as bottom pan fond lifts cleanly into fat.",
+        "scienceNote": "Ethanol dissolves alcohol-soluble flavor compounds from pork fond and chili seeds, unlocking flavors water cannot carry."
+      },
+      {
+        "stepNum": 3,
+        "text": "Pour in hand-crushed San Marzano tomatoes. Simmer gently over medium heat for 12-15 minutes, stirring occasionally, until tomato sauce thickens and emulsifies with the rendered guanciale fat into a cohesive orange-red sauce.",
+        "timerMins": 14,
+        "sensoryCue": "Sauce darkens to a lustrous reddish-orange; oil droplets integrate smoothly into tomato pulp.",
+        "scienceNote": "Simmering breaks down tomato pectin, allowing lycopene and tomato solids to bond with the pork lipid phase."
+      },
+      {
+        "stepNum": 4,
+        "text": "Drop spaghetti into boiling salted water. Cook until 2 minutes shy of al dente package time (still firm to tooth). Using tongs, transfer spaghetti directly into the simmering sauce. Add 60ml of starchy pasta cooking water.",
+        "timerMins": 8,
+        "sensoryCue": "Pasta enters sauce dripping hot water; pan begins vigorous bubbling emulsion.",
+        "scienceNote": "Finishing pasta directly in sauce forces wheat starch on noodle surfaces to gelatinize with sauce fat, binding the sauce permanently to the noodles ('risottare')."
+      },
+      {
+        "stepNum": 5,
+        "text": "Toss and stir pasta vigorously over high heat for 90 seconds until sauce is glossy and tightly clings to every strand. Remove pan completely from heat. Rest 30 seconds, then toss in 3/4 of the grated Pecorino Romano.",
+        "timerMins": 2,
+        "sensoryCue": "Sauce turns creamy and unctuous without visible pools of grease.",
+        "scienceNote": "Adding Pecorino off-heat prevents sheep milk proteins from clumping into chewy rubber strings, ensuring a silky, cohesive coating."
+      },
+      {
+        "stepNum": 6,
+        "text": "Twirl spaghetti onto warm plates using a carving fork and ladle. Top each nest with the reserved crispy guanciale pieces, an extra dusting of Pecorino Romano, and a sprinkle of crushed peperoncino.",
+        "timerMins": 2,
+        "sensoryCue": "Lustrous scarlet pasta nests topped with golden crunchy pork nuggets and white pecorino snow.",
+        "scienceNote": "Plating reserved guanciale on top preserves its glass-crisp texture against the moist pasta sauce."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Scarlet-orange glossy spaghetti twirled into nests, crowned with golden crispy guanciale and a snowfall of Pecorino Romano.",
+      "hear": "Crisp pork crackle between teeth; loud wet squelch as pasta is tossed in skillet.",
+      "smell": "Cured pork jowl, roasted chili oil, sweet San Marzano tomatoes, and sharp sheep's milk cheese.",
+      "feel": "Firm toothsome al dente pasta bite followed by unctuous, clingy sauce and shatteringly crisp pork."
+    },
+    "scienceNotes": [
+      "No garlic, no onion, no olive oil: authentic disciplinary code of Amatrice strictly prohibits aromatics that compete with pure cured jowl and tomato."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Cheese clumped into rubbery balls",
+        "cause": "Pecorino was added over high heat",
+        "solution": "Always remove skillet from flame and let rest 30 seconds before tossing in microplaned cheese."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Guanciale",
+        "substitute": "High-quality dry-cured pork belly (pancetta unsmoked)"
+      },
+      {
+        "ingredient": "Pecorino Romano",
+        "substitute": "Pecorino Sardo or 50/50 Pecorino and Parmigiano"
+      }
+    ],
+    "flavorPairings": [
+      "Cesanese del Piglio",
+      "Montepulciano d'Abruzzo",
+      "Frascati Superiore"
+    ],
+    "advancedTechnique": "Cold-pan rendering of cured jowl and off-heat cheese starch-water emulsification.",
+    "storageAndReheating": "Best eaten immediately. Leftovers can be pan-fried with olive oil the next day for crisp 'frittata di pasta'.",
+    "nutritionEstimates": {
+      "calories": 680,
+      "proteinG": 26,
+      "carbsG": 78,
+      "fatG": 28
+    },
+    "relatedRecipes": [
+      "rec-carbonara",
+      "rec-cacio-e-pepe"
+    ],
+    "relatedTechniques": [
+      "Pan Emulsion Kinetics (Mantecatura)",
+      "Starch Water Binding"
+    ]
+  },
+  {
+    "id": "rec-agnolotti-del-plin",
+    "title": "Agnolotti del Plin Piemontesi",
+    "cuisine": "Italian",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Master",
+    "prepMins": 90,
+    "cookMins": 25,
+    "totalMins": 115,
+    "yieldServings": 6,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The pride of the Langhe in Piedmont: gossamer-thin egg pasta sheets pinched ('plin') into tiny parcels filled with a three-meat braise (pork, veal, rabbit or beef) with Savoy cabbage and Parmigiano, tossed in foamy brown butter and fresh mountain sage.",
+    "dietary": [],
+    "sensoryRole": "Delicate silky pasta skin bursting with intense roasted braised meat savory sweetness and hazelnut sage butter.",
+    "ingredients": [
+      {
+        "name": "Tipo 00 Italian pasta flour",
+        "qty": 300,
+        "unit": "g",
+        "prep": "finely milled high-protein flour",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Egg yolks (deep yellow/orange Italian)",
+        "qty": 8,
+        "unit": "pcs",
+        "prep": "plus 1 whole egg",
+        "dept": "dairy"
+      },
+      {
+        "name": "Veal shoulder or beef chuck",
+        "qty": 200,
+        "unit": "g",
+        "prep": "braised in Nebbiolo wine, finely ground",
+        "dept": "meat"
+      },
+      {
+        "name": "Pork loin or shoulder",
+        "qty": 150,
+        "unit": "g",
+        "prep": "roasted with rosemary, finely ground",
+        "dept": "meat"
+      },
+      {
+        "name": "Savoy cabbage leaves",
+        "qty": 100,
+        "unit": "g",
+        "prep": "blanched, squeezed dry, and finely minced",
+        "dept": "produce"
+      },
+      {
+        "name": "Parmigiano Reggiano (24-month)",
+        "qty": 60,
+        "unit": "g",
+        "prep": "finely microplaned",
+        "dept": "dairy"
+      },
+      {
+        "name": "Whole nutmeg",
+        "qty": 1,
+        "unit": "pinch",
+        "prep": "freshly grated",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Unsalted European butter (84% fat)",
+        "qty": 100,
+        "unit": "g",
+        "prep": "for burro e salvia pan sauce",
+        "dept": "dairy"
+      },
+      {
+        "name": "Fresh sage leaves",
+        "qty": 12,
+        "unit": "pcs",
+        "prep": "whole fresh mountain sage",
+        "dept": "produce"
+      },
+      {
+        "name": "Rich dark veal roasting pan jus (arrosto)",
+        "qty": 60,
+        "unit": "ml",
+        "prep": "for finishing the butter emulsion",
+        "dept": "sauce_stock"
+      },
+      {
+        "name": "Fine sea salt and white pepper",
+        "qty": 6,
+        "unit": "g",
+        "prep": "to season",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Manual or electric Italian pasta roller (Marcato Atlas)",
+        "type": "specialty"
+      },
+      {
+        "name": "Fluted pastry wheel (rotella tagliapasta dentata)",
+        "type": "specialty"
+      },
+      {
+        "name": "Pastry piping bag with 8mm plain tip",
+        "type": "everyday"
+      },
+      {
+        "name": "Wide stainless steel saucier pan",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Knead 00 flour with yolks and whole egg for 10 minutes until elastic; rest wrapped in cling film 60 minutes.",
+      "Finely grind the braised meats and cabbage together in a food processor until a fine, moist, uniform paste forms.",
+      "Transfer filling to pastry bag; keep chilled."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Roll pasta dough progressively down to the thinnest setting (setting 7 or 8 on Marcato, ~0.8mm). The dough should be translucent enough to see shadows through. Lay sheet on a semolina-dusted wooden board.",
+        "timerMins": 20,
+        "sensoryCue": "Silky, golden-amber pasta sheet like gossamer fabric without tears or dry cracks.",
+        "scienceNote": "High egg yolk ratio (rich in fat and lecithin) plasticizes gluten strands, allowing paper-thin sheeting without stretching or breaking."
+      },
+      {
+        "stepNum": 2,
+        "text": "Pipe hazelnut-sized mounds (approx 4g each) along the top edge of the pasta sheet, spaced 2cm apart. Fold the pasta edge up and over the filling mounds, pressing gently along the front seam to expel all air.",
+        "timerMins": 15,
+        "sensoryCue": "Mounds are trapped in a snug pasta tube without air pockets.",
+        "scienceNote": "Trapped air expands violently in boiling water, bursting delicate pasta seams."
+      },
+      {
+        "stepNum": 3,
+        "text": "Using your thumb and index fingers, firmly pinch ('plin') the pasta between each mound of filling to seal individual compartments. Run the fluted pastry wheel along the long front edge, then slice between each pinch with the wheel.",
+        "timerMins": 15,
+        "sensoryCue": "Tiny rectangular pinched envelopes with fluted ruffle edges; each pillow is plump and firm.",
+        "scienceNote": "The iconic Piedmontese pinch creates a hollow pocket that traps butter and roasting pan juices when plated."
+      },
+      {
+        "stepNum": 4,
+        "text": "Melt butter in a wide saucier pan over medium heat with the fresh sage leaves. Cook until butter milk solids foam, subside, and turn hazelnut brown (beurre noisette). Add 2 ladles of pasta cooking water and 2 tbsp roasting jus to create a glossy emulsion.",
+        "timerMins": 6,
+        "sensoryCue": "Aroma of toasted hazelnuts and fragrant fried sage; glossy foaming pan sauce.",
+        "scienceNote": "Pasta water starch binds butter fat droplets with meat jus into a velvety coating without heavy cream."
+      },
+      {
+        "stepNum": 5,
+        "text": "Drop agnolotti into boiling salted water. Cook for merely 90 to 120 seconds. As soon as they float to surface, lift with a perforated spider directly into the foaming sage butter. Toss gently for 30 seconds to glaze each parcel.",
+        "timerMins": 3,
+        "sensoryCue": "Agnolotti turn translucent and shiny; butter coats the pinched pockets.",
+        "scienceNote": "Fresh thin egg pasta cooks in under 2 minutes; overcooking degrades gluten matrix and causes filling to leach out."
+      },
+      {
+        "stepNum": 6,
+        "text": "Ladle into warm bowls. Garnish with crisp sage leaves, a glossy drizzle of reduced pan jus, and a light shower of aged Parmigiano Reggiano.",
+        "timerMins": 2,
+        "sensoryCue": "Gleaming golden parcels nestled in brown butter with crisp emerald sage.",
+        "scienceNote": "Serving on warm ceramic preserves butter emulsion from breaking into cold grease."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Dozens of miniature golden-yellow pinched pasta pillows coated in glossy amber hazelnut butter with crisp sage leaves.",
+      "hear": "Gentle sizzle of sage frying in foaming butter.",
+      "smell": "Brown butter hazelnuts, resinous wild sage, savory roasted meats, and aged Parmigiano.",
+      "feel": "Paper-thin silky pasta giving way to an explosion of moist, savory, tender braised meat filling."
+    },
+    "scienceNotes": [
+      "Savoy cabbage in the filling contributes natural moisture, fiber, and subtle sulfur sweetness that keeps dense braised meats exceptionally tender inside small pasta."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Agnolotti burst open in water",
+        "cause": "Seams were dry when pinched or air trapped inside",
+        "solution": "Mist dough lightly with water before folding and press air firmly out before pinching."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Veal and pork braise",
+        "substitute": "Braised beef short rib and roasted chicken"
+      },
+      {
+        "ingredient": "Roasting jus",
+        "substitute": "Rich beef consommé or veal demi-glace"
+      }
+    ],
+    "flavorPairings": [
+      "Barolo / Barbaresco",
+      "Nebbiolo d'Alba",
+      "Dolcetto di Dogliani"
+    ],
+    "advancedTechnique": "Extreme high-yolk thin sheeting, precision pinch sealing ('plin'), and pan beurre noisette mantecatura.",
+    "storageAndReheating": "Agnolotti freeze exceptionally well: freeze single-layer on semolina trays for 2 hours, then bag. Boil directly from frozen for 2.5 minutes.",
+    "nutritionEstimates": {
+      "calories": 590,
+      "proteinG": 24,
+      "carbsG": 52,
+      "fatG": 32
+    },
+    "relatedRecipes": [
+      "rec-ravioli-sage-butter",
+      "rec-ragu-bolognese"
+    ],
+    "relatedTechniques": [
+      "Handmade Egg Pasta Sheeting",
+      "Burro e Salvia Pan Emulsion"
+    ]
+  },
+  {
+    "id": "rec-ossobuco-milanese",
+    "title": "Ossobuco alla Milanese con Gremolata",
+    "cuisine": "Italian",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Intermediate",
+    "prepMins": 25,
+    "cookMins": 120,
+    "totalMins": 145,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The monumental braise of Lombardy: cross-cut veal hindshanks packed with ivory marrow, browned in butter and slow-simmered in dry white wine, mirepoix, and veal broth until spoon-tender, finished with a zesty citrus-herb gremolata.",
+    "dietary": [],
+    "sensoryRole": "Deep, rich, melting braised veal and luscious bone marrow lifted by electric citrus and parsley aromatics.",
+    "ingredients": [
+      {
+        "name": "Cross-cut veal hindshanks (ossobuco, 4cm thick with central marrow bone)",
+        "qty": 4,
+        "unit": "pcs",
+        "prep": "approx 350g each, tied around circumference with butcher's twine",
+        "dept": "meat"
+      },
+      {
+        "name": "All-purpose flour for dusting",
+        "qty": 40,
+        "unit": "g",
+        "prep": "seasoned with salt and pepper",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 45,
+        "unit": "g",
+        "prep": "for browning shanks",
+        "dept": "dairy"
+      },
+      {
+        "name": "Extra-virgin olive oil",
+        "qty": 20,
+        "unit": "ml",
+        "prep": "combined with butter",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Yellow onion",
+        "qty": 150,
+        "unit": "g",
+        "prep": "finely brunoised 3mm",
+        "dept": "produce"
+      },
+      {
+        "name": "Carrot",
+        "qty": 100,
+        "unit": "g",
+        "prep": "finely brunoised 3mm",
+        "dept": "produce"
+      },
+      {
+        "name": "Celery stalk",
+        "qty": 80,
+        "unit": "g",
+        "prep": "finely brunoised 3mm",
+        "dept": "produce"
+      },
+      {
+        "name": "Garlic cloves",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "minced",
+        "dept": "produce"
+      },
+      {
+        "name": "Dry Italian white wine (Pinot Grigio or Soave)",
+        "qty": 200,
+        "unit": "ml",
+        "prep": "for deglazing",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Rich brown veal or beef stock",
+        "qty": 600,
+        "unit": "ml",
+        "prep": "hot, gelatinous",
+        "dept": "sauce_stock"
+      },
+      {
+        "name": "San Marzano whole peeled tomatoes",
+        "qty": 200,
+        "unit": "g",
+        "prep": "finely chopped (Milanese Bianco style uses stock, but modern incorporates small tomato touch)",
+        "dept": "produce"
+      },
+      {
+        "name": "Fresh lemon zest",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "microplaned for gremolata",
+        "dept": "produce"
+      },
+      {
+        "name": "Flat-leaf Italian parsley",
+        "qty": 25,
+        "unit": "g",
+        "prep": "finely minced for gremolata",
+        "dept": "produce"
+      },
+      {
+        "name": "Fresh garlic clove for gremolata",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "microplaned to a paste",
+        "dept": "produce"
+      },
+      {
+        "name": "Anchovy fillet (optional traditional secret)",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "mashed to a paste into gremolata",
+        "dept": "produce"
+      },
+      {
+        "name": "Fine sea salt and black pepper",
+        "qty": 8,
+        "unit": "g",
+        "prep": "to taste",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy 12-inch enameled cast-iron braiser or Dutch oven with tight-fitting lid",
+        "type": "everyday"
+      },
+      {
+        "name": "Kitchen twine for securing meat shanks",
+        "type": "everyday"
+      },
+      {
+        "name": "Splatter guard",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Tie butcher's twine snugly around the waist of each shank to keep meat from detaching from the bone during braising.",
+      "Score the outer connective membrane in 3 places to prevent shanks from curling while searing.",
+      "Prepare fresh gremolata: mix lemon zest, minced parsley, microplaned garlic, and anchovy paste in a small bowl."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Dredge veal shanks in seasoned flour and shake off all excess. In Dutch oven, heat butter and olive oil over medium-high heat until foaming. Sear shanks for 4-5 minutes per side until a deep golden-brown crust develops. Transfer to a plate.",
+        "timerMins": 12,
+        "sensoryCue": "Vigorous sizzle; rich roasted veal aroma; deep caramelized crust on both faces.",
+        "scienceNote": "Flour promotes rapid Maillard browning and provides starches that will naturally thicken the braising liquid into a velvety sauce."
+      },
+      {
+        "stepNum": 2,
+        "text": "Reduce heat to medium. Add diced onion, carrot, and celery (soffritto) to the remaining pan fat. Cook gently for 8-10 minutes until vegetables are soft, sweet, and golden. Add garlic and cook for 1 minute.",
+        "timerMins": 10,
+        "sensoryCue": "Vegetables soften, sweeten, and scrape up dark veal fond from pan bottom.",
+        "scienceNote": "Slowly sweating the soffritto releases allicin, disulfides, and sugars, creating an aromatic baseline for the braise."
+      },
+      {
+        "stepNum": 3,
+        "text": "Pour in white wine. Scrape up all caramelized fond with a wooden spatula. Simmer vigorously for 3-4 minutes until wine reduces by half.",
+        "timerMins": 4,
+        "sensoryCue": "Sharp wine acidity evaporates into a sweet, concentrated aroma.",
+        "scienceNote": "Wine acids tenderize connective tissues and deglaze glutamates from bottom of the braiser."
+      },
+      {
+        "stepNum": 4,
+        "text": "Add chopped tomatoes and hot veal stock. Nestle the veal shanks back into pan in a single snug layer. Liquid should reach 2/3 up the sides of shanks; marrow in bones must remain exposed above liquid line.",
+        "timerMins": 4,
+        "sensoryCue": "Shanks sit comfortably bathed in rich amber braising stock; marrow is clearly visible.",
+        "scienceNote": "Keeping marrow bones elevated prevents the delicate gelatinous marrow from dissolving completely into the broth."
+      },
+      {
+        "stepNum": 5,
+        "text": "Cover tightly with lid. Transfer to a 160°C (325°F) oven. Braise for 90 to 110 minutes, basting shanks with pan juices once after 45 minutes, until veal is fork-tender and pulls easily from bone.",
+        "timerMins": 100,
+        "sensoryCue": "Veal yields completely to a fork; sauce is thick, glossy, and bubbling slowly.",
+        "scienceNote": "Gentle 160°C radiant oven heat slowly denatures veal collagen into soluble gelatin without boiling muscle fibers into dry stringiness."
+      },
+      {
+        "stepNum": 6,
+        "text": "Carefully transfer shanks to warm plates and snip off twine. Skim excess fat from braising sauce and reduce on stovetop for 3 minutes if needed. Spoon rich sauce over meat. Sprinkle freshly prepared gremolata generously over the hot shanks.",
+        "timerMins": 5,
+        "sensoryCue": "Glossy mahogany sauce surrounding tender shanks; vibrant green-yellow gremolata releases burst of citrus and parsley perfume.",
+        "scienceNote": "Fresh gremolata provides volatile citrus terpenes (limonene) and sharp parsley apiol, cutting through dense braise richness and buttery bone marrow."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Monumental cross-cut shank with glistening bone marrow center, draped in velvety mahogany sauce and sprinkled with bright yellow-green gremolata.",
+      "hear": "Gentle simmer as sauce bubbles around the marrow bone.",
+      "smell": "Rich braised veal, caramelized soffritto, dry white wine, roasted bone marrow, and electric lemon zest.",
+      "feel": "Melt-in-the-mouth, collagen-rich veal that requires only a fork, paired with unctuous creamy bone marrow."
+    },
+    "scienceNotes": [
+      "Veal hindshank (the ossobuco cut) is packed with dense tendon and periosteal collagen; a 2-hour slow braise converts over 80% of this collagen into luscious gelatin."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Bone marrow melted out into sauce",
+        "cause": "Liquid level was too high or heat boiled too violently",
+        "solution": "Ensure braising liquid reaches only 2/3 up shanks and braise strictly at 160°C in oven."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Veal shank",
+        "substitute": "Beef shank or lamb shank (braised 30 mins longer)"
+      },
+      {
+        "ingredient": "Veal stock",
+        "substitute": "Rich beef bone stock or chicken stock"
+      }
+    ],
+    "flavorPairings": [
+      "Risotto alla Milanese con Zafferano",
+      "Creamy polenta",
+      "Barbera d'Asti",
+      "Nebbiolo"
+    ],
+    "advancedTechnique": "Twine-secured braising, marrow conservation, and finishing with raw gremolata.",
+    "storageAndReheating": "Tastes even better the next day! Reheat covered in 160°C oven for 25 minutes. Always add gremolata fresh upon serving.",
+    "nutritionEstimates": {
+      "calories": 620,
+      "proteinG": 52,
+      "carbsG": 14,
+      "fatG": 38
+    },
+    "relatedRecipes": [
+      "rec-risotto-milanese",
+      "rec-boeuf-bourguignon"
+    ],
+    "relatedTechniques": [
+      "Collagen Gelatinization Braising",
+      "Citrus-Herb Gremolata Counterbalance"
+    ]
+  },
+  {
+    "id": "rec-mole-poblano",
+    "title": "Mole Poblano Tradicional con Pollo",
+    "cuisine": "Mexican",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Master",
+    "prepMins": 60,
+    "cookMins": 90,
+    "totalMins": 150,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The crowning achievement of Mexican gastronomy: a velvety, pitch-black sauce combining 4 sun-dried chilies (Mulato, Ancho, Pasilla, Chipotle), roasted Roma tomatoes, charred aromatics, raisins, plantains, toasted spices, pumpkin seeds, Mexican chocolate, and rich poultry stock over tender braised chicken, dusted with sesame seeds.",
+    "dietary": [
+      "gluten_free"
+    ],
+    "sensoryRole": "Profoundly complex tapestry: smoky dried chilies, sweet fruitiness, bittersweet chocolate, nutty seeds, and warming cinnamon.",
+    "ingredients": [
+      {
+        "name": "Whole bone-in chicken thighs and drumsticks",
+        "qty": 1400,
+        "unit": "g",
+        "prep": "simmered in water with onion and garlic to make broth",
+        "dept": "poultry"
+      },
+      {
+        "name": "Dried Mulato chilies",
+        "qty": 6,
+        "unit": "pcs",
+        "prep": "stemmed, seeded, veins removed (reserve seeds)",
+        "dept": "produce"
+      },
+      {
+        "name": "Dried Ancho chilies",
+        "qty": 6,
+        "unit": "pcs",
+        "prep": "stemmed, seeded, veins removed",
+        "dept": "produce"
+      },
+      {
+        "name": "Dried Pasilla chilies",
+        "qty": 4,
+        "unit": "pcs",
+        "prep": "stemmed, seeded, veins removed",
+        "dept": "produce"
+      },
+      {
+        "name": "Dried Chipotle meco or morita chilies",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "stemmed and seeded",
+        "dept": "produce"
+      },
+      {
+        "name": "Rendered pork lard (manteca) or neutral oil",
+        "qty": 80,
+        "unit": "g",
+        "prep": "for authentic frying of ingredients",
+        "dept": "dairy"
+      },
+      {
+        "name": "Ripe plantain (macho)",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "sliced and fried golden in lard",
+        "dept": "produce"
+      },
+      {
+        "name": "Corn tortillas",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "torn and fried crisp in lard",
+        "dept": "bread"
+      },
+      {
+        "name": "Animal crackers or bolillo bread",
+        "qty": 30,
+        "unit": "g",
+        "prep": "fried in lard for thickening",
+        "dept": "bread"
+      },
+      {
+        "name": "Raw pumpkin seeds (pepitas)",
+        "qty": 40,
+        "unit": "g",
+        "prep": "toasted until popped",
+        "dept": "produce"
+      },
+      {
+        "name": "Whole raw almonds & peanuts",
+        "qty": 50,
+        "unit": "g",
+        "prep": "toasted golden in lard",
+        "dept": "produce"
+      },
+      {
+        "name": "White sesame seeds (ajonjolí)",
+        "qty": 60,
+        "unit": "g",
+        "prep": "toasted golden (reserve 20g for garnish)",
+        "dept": "produce"
+      },
+      {
+        "name": "Dark raisins",
+        "qty": 40,
+        "unit": "g",
+        "prep": "fried in lard until puffed",
+        "dept": "produce"
+      },
+      {
+        "name": "Roma tomatoes",
+        "qty": 350,
+        "unit": "g",
+        "prep": "charred under broiler until blackened",
+        "dept": "produce"
+      },
+      {
+        "name": "Tomatillos (husked)",
+        "qty": 150,
+        "unit": "g",
+        "prep": "charred under broiler",
+        "dept": "produce"
+      },
+      {
+        "name": "White onion & garlic head",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "halved and charred in cast-iron skillet",
+        "dept": "produce"
+      },
+      {
+        "name": "Mexican dark chocolate (Tableta de Chocolate de Mesa)",
+        "qty": 90,
+        "unit": "g",
+        "prep": "stone-ground with cinnamon and sugar, chopped",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Mexican canela (true Ceylon cinnamon)",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "toasted stick",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Whole cloves, allspice berries & black peppercorns",
+        "qty": 4,
+        "unit": "g",
+        "prep": "toasted and ground",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Rich chicken stock",
+        "qty": 1200,
+        "unit": "ml",
+        "prep": "hot, from simmering chicken",
+        "dept": "sauce_stock"
+      },
+      {
+        "name": "Fine sea salt",
+        "qty": 14,
+        "unit": "g",
+        "prep": "to taste",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy Mexican clay cazuela or enameled Dutch oven",
+        "type": "specialty"
+      },
+      {
+        "name": "High-powered blender (Vitamix)",
+        "type": "everyday"
+      },
+      {
+        "name": "Heavy cast-iron skillet for toasting chiles and spices",
+        "type": "everyday"
+      },
+      {
+        "name": "Wooden paddle spoon",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Stem and deseed all chilies; keep 1 tsp of seeds to char black for authentic bitter complexity.",
+      "Simmer chicken pieces in 2 liters of water with 1 onion half, 4 garlic cloves, and 1 tbsp salt for 35 minutes; strain and reserve stock.",
+      "Char tomatoes, tomatillos, onion, and garlic on a dry comal until blistered and blackened."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Toast the dried chilies: heat 2 tbsp lard in skillet over medium heat. Fry dried chilies for 5-8 seconds per side until fragrant and blistered. Do NOT burn them. Transfer directly into a bowl of hot chicken stock to rehydrate for 20 minutes.",
+        "timerMins": 10,
+        "sensoryCue": "Chilies puff and release warm aroma of tobacco, raisins, and dried cherries; avoid acrid smoke.",
+        "scienceNote": "Brief frying in hot fat dissolves oil-soluble capsaicin and carotenoids, blooming complex fruit notes while hydrating in hot liquid softens tough skins."
+      },
+      {
+        "stepNum": 2,
+        "text": "Fry the aromatics in the remaining lard: fry sliced plantain until caramelized; fry almonds, pumpkin seeds, peanuts, and sesame seeds until golden; fry tortillas and bread until crisp; fry raisins until puffed like balloons.",
+        "timerMins": 15,
+        "sensoryCue": "Array of toasted nutty, sweet, and caramelized aromas; golden-brown colors.",
+        "scienceNote": "Each ingredient contributes specific thickening starches, natural oils, and sugars that establish mole's multi-layered flavor architecture."
+      },
+      {
+        "stepNum": 3,
+        "text": "In the high-powered blender, blend rehydrated chilies, charred tomatoes, charred onions, garlic, fried nuts, seeds, plantains, spices, and tortillas in batches with chicken stock until completely silky and smooth (minimum 2 minutes on high).",
+        "timerMins": 12,
+        "sensoryCue": "Thick, ultra-smooth, dark mahogany-black puree that glazes the blender walls.",
+        "scienceNote": "High-shear blending pulverizes seed hulls and starches, creating an ultra-fine colloid suspension that feels velvety on the tongue without straining."
+      },
+      {
+        "stepNum": 4,
+        "text": "Heat 3 tbsp lard in the cazuela over medium-high heat until shimmering. Pour in the blended mole paste all at once ('chillar el mole'). Fry the mole paste vigorously for 8-10 minutes, stirring constantly with a wooden paddle.",
+        "timerMins": 10,
+        "sensoryCue": "Loud violent sizzle ('chillar') as paste hits hot lard; paste darkens into deep obsidian and releases intense aroma.",
+        "scienceNote": "Frying the puree in hot fat ('refreír') binds the pureed starches with lipids and drives off raw vegetable moisture, locking in deep savory flavor."
+      },
+      {
+        "stepNum": 5,
+        "text": "Gradually stir in remaining hot chicken stock until mole reaches the consistency of heavy cream. Add chopped Mexican chocolate and 1 tsp salt. Simmer gently over low heat, stirring frequently, for 35-45 minutes until fat droplets bead on surface.",
+        "timerMins": 40,
+        "sensoryCue": "Chocolate melts into sauce; shiny red-gold oil beads rise to the top of the glossy black sauce.",
+        "scienceNote": "Oil rising to the surface indicates the starches and fats have fully emulsified and cooked through, the hallmark of mature authentic mole."
+      },
+      {
+        "stepNum": 6,
+        "text": "Gently nestle the cooked chicken pieces into the hot mole and simmer for 8 minutes to warm through and absorb flavor. Plate chicken bathed generously in rich mole, sprinkled with toasted white sesame seeds, and serve with warm corn tortillas.",
+        "timerMins": 8,
+        "sensoryCue": "Chicken buried beneath glossy obsidian sauce, crowned with white sesame pearls.",
+        "scienceNote": "Resting chicken in mole allows the complex sauce to coat porous muscle fibers without breaking down tender meat."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Glossy, velvety pitch-black sauce blanketing tender chicken, glistening with oil beads and crowned with ivory toasted sesame seeds.",
+      "hear": "Gentle bubbling blip-blip as thick mole simmers in the clay pot.",
+      "smell": "Rich dried fruit, roasted chilies, toasted sesame, Mexican cinnamon, and bittersweet chocolate.",
+      "feel": "Silky, velvety, thick mouthfeel that clings to palate, followed by warm, mild, sweet-savory finish."
+    },
+    "scienceNotes": [
+      "Chocolate in mole is not a sweetener; its cocoa butter acts as an emulsifier while theobromine and polyphenols provide earthy bitter bass notes that harmonize intense chili acids."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Mole tastes bitter",
+        "cause": "Chilies were scorched during frying",
+        "solution": "Fry chilies for merely 5-8 seconds per side; discard any batch that turns black in the skillet."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Mulato chilies",
+        "substitute": "Extra Ancho chilies with 1 tsp molasses"
+      },
+      {
+        "ingredient": "Mexican chocolate",
+        "substitute": "70% dark bittersweet chocolate plus 1/2 tsp ground cinnamon and 1 tbsp sugar"
+      }
+    ],
+    "flavorPairings": [
+      "Arroz rojo mexicano",
+      "Warm corn tortillas",
+      "Frijoles de la olla",
+      "Mezcal joven",
+      "Mexican beer"
+    ],
+    "advancedTechnique": "Chili oil-blooming, high-shear emulsification, and lard-fry searing ('chillar el mole').",
+    "storageAndReheating": "Mole matures and improves dramatically after 24-48 hours! Reheat gently over low heat, thinning with a splash of broth as it thickens.",
+    "nutritionEstimates": {
+      "calories": 690,
+      "proteinG": 48,
+      "carbsG": 38,
+      "fatG": 42
+    },
+    "relatedRecipes": [
+      "rec-birria-de-res",
+      "rec-carnitas"
+    ],
+    "relatedTechniques": [
+      "Mexican Dried Chili Roasting",
+      "Deep Fat Purée Searing (Refreír)"
+    ]
+  },
+  {
+    "id": "rec-pad-thai-boran",
+    "title": "Pad Thai Boran Tradicional (Classical Old-Style Pad Thai)",
+    "cuisine": "Thai",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Intermediate",
+    "prepMins": 30,
+    "cookMins": 15,
+    "totalMins": 45,
+    "yieldServings": 2,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "Authentic street-style Bangkok Pad Thai: chewy rice noodles wok-charred in an authentic tamarind-palm sugar-fish sauce syrup with dried shrimp, pressed yellow tofu, sweet pickled radish, wild prawns, egg ribbons, fresh garlic chives, and crushed roasted peanuts.",
+    "dietary": [
+      "gluten_free"
+    ],
+    "sensoryRole": "Quintessential Thai four-flavor balance: sour tamarind, sweet coconut palm sugar, salty fish sauce, and smoky wok hei.",
+    "ingredients": [
+      {
+        "name": "Narrow dry rice noodles (sen lek, 3mm)",
+        "qty": 160,
+        "unit": "g",
+        "prep": "soaked in room temperature water for 60 mins until pliable and opaque white",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fresh wild prawns (tail-on, peeled & deveined)",
+        "qty": 8,
+        "unit": "pcs",
+        "prep": "patted dry",
+        "dept": "seafood"
+      },
+      {
+        "name": "Firm yellow or pressed extra-firm tofu",
+        "qty": 70,
+        "unit": "g",
+        "prep": "cut into 5mm x 2cm small matchsticks",
+        "dept": "produce"
+      },
+      {
+        "name": "Dried baby shrimp (koong haeng)",
+        "qty": 20,
+        "unit": "g",
+        "prep": "rinsed and dried",
+        "dept": "seafood"
+      },
+      {
+        "name": "Sweet preserved salted radish (chaipow)",
+        "qty": 30,
+        "unit": "g",
+        "prep": "finely chopped",
+        "dept": "produce"
+      },
+      {
+        "name": "Shallots",
+        "qty": 30,
+        "unit": "g",
+        "prep": "finely sliced",
+        "dept": "produce"
+      },
+      {
+        "name": "Garlic cloves",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "minced",
+        "dept": "produce"
+      },
+      {
+        "name": "Large eggs",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "beaten lightly",
+        "dept": "dairy"
+      },
+      {
+        "name": "Fresh garlic chives (kuichai)",
+        "qty": 50,
+        "unit": "g",
+        "prep": "cut into 3cm batonnets",
+        "dept": "produce"
+      },
+      {
+        "name": "Fresh bean sprouts (raw)",
+        "qty": 120,
+        "unit": "g",
+        "prep": "washed, drained thoroughly",
+        "dept": "produce"
+      },
+      {
+        "name": "Tamarind pulp paste (concentrated sour)",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "for the master sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Coconut palm sugar",
+        "qty": 45,
+        "unit": "g",
+        "prep": "shaved and melted for sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Premium Thai fish sauce (Megachef or Red Boat)",
+        "qty": 35,
+        "unit": "ml",
+        "prep": "for the master sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Neutral high-smoke oil or pork lard",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "divided for stir-frying",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Roasted skinless peanuts",
+        "qty": 40,
+        "unit": "g",
+        "prep": "freshly toasted and coarsely crushed",
+        "dept": "produce"
+      },
+      {
+        "name": "Dried chili flakes (prik pon) & fresh lime wedges",
+        "qty": 2,
+        "unit": "pcs",
+        "prep": "for table garnishing",
+        "dept": "produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Heavy 14-inch carbon steel round-bottom wok",
+        "type": "everyday"
+      },
+      {
+        "name": "Wok spatula (chan)",
+        "type": "everyday"
+      },
+      {
+        "name": "High-output gas burner",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Soak dry rice noodles in lukewarm water 1 hour until flexible like leather straps (never boil them in water).",
+      "Prepare Pad Thai sauce: simmer tamarind paste, palm sugar, and fish sauce in small pan until sugar dissolves completely into a thick syrup. Balance to 1:1:1 sour/sweet/salty.",
+      "Group all ingredients in bowls by the wok station: cooking proceeds in under 4 minutes."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Heat 1 tbsp oil in wok over high heat until smoking vigorously. Sear prawns for 60 seconds per side until pink and charred. Transfer to a clean plate, leaving fragrant prawn oil in the wok.",
+        "timerMins": 2,
+        "sensoryCue": "Prawns turn bright coral-pink with charred blistered spots; intense seafood aroma.",
+        "scienceNote": "High-heat flash searing sears the exterior while keeping the prawn interior succulent and springy."
+      },
+      {
+        "stepNum": 2,
+        "text": "Add 1.5 tbsp oil to the hot wok. Add sliced shallots, garlic, pressed tofu, dried shrimp, and sweet preserved radish. Stir-fry rapidly over medium-high heat for 90 seconds until tofu is golden and fragrant.",
+        "timerMins": 2,
+        "sensoryCue": "Tofu edges brown; dried shrimp puffs and releases savory umami perfume.",
+        "scienceNote": "Fried preserved radish and dried shrimp contribute concentrated inosinate and glutamate umami nucleotides."
+      },
+      {
+        "stepNum": 3,
+        "text": "Add the drained soaked rice noodles. Pour 75ml of the Pad Thai sauce and 3 tbsp water over noodles. Toss and stir rapidly with wok spatula, letting noodles absorb the sauce and turn soft, glossy, and amber-gold.",
+        "timerMins": 3,
+        "sensoryCue": "Noodles rapidly soften, absorb sauce, and turn pliable, chewy, and translucent amber.",
+        "scienceNote": "Raw soaked starch in rice noodles finishes gelatinization by absorbing the hot tamarind sauce, infusing flavor directly into noodle cores."
+      },
+      {
+        "stepNum": 4,
+        "text": "Push noodles to one side of the wok. Add 1 tsp oil to empty side. Pour in beaten eggs. Let eggs set for 15 seconds until half-cooked, then scramble into soft curds and fold the noodles over the eggs.",
+        "timerMins": 2,
+        "sensoryCue": "Fluffy yellow and white egg ribbons clinging to the amber noodles.",
+        "scienceNote": "Scrambling eggs separately prevents them from turning noodles greasy, keeping egg curds light and distinct."
+      },
+      {
+        "stepNum": 5,
+        "text": "Add seared prawns, 2/3 of the garlic chives, and half the bean sprouts. Toss over maximum heat for 30 seconds to impart 'wok hei' without wilting the sprouts completely.",
+        "timerMins": 1,
+        "sensoryCue": "Charred smoky aroma erupts from wok; sprouts remain crunchy and fresh.",
+        "scienceNote": "Wok hei occurs when atomized micro-droplets of oil vaporize and ignite over 300°C steel, depositing complex pyrolytic smoky aromatics."
+      },
+      {
+        "stepNum": 6,
+        "text": "Transfer immediately to warm plates. Garnish with remaining raw bean sprouts, fresh garlic chives, crushed toasted peanuts, chili powder, and fresh lime wedges.",
+        "timerMins": 2,
+        "sensoryCue": "Vibrant stir-fried noodles steaming hot, bordered by crunchy white sprouts, green chives, and golden peanut dust.",
+        "scienceNote": "Serving raw sprouts and chives alongside provides essential crunchy contrast against chewy, sauced noodles."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Glossy amber-tinted noodles interwoven with coral prawns, yellow egg ribbons, green chives, and a snow of roasted peanut crumbles.",
+      "hear": "Furious high-heat sizzle in carbon steel wok; crisp crunch of bean sprouts.",
+      "smell": "Intense smoky wok hei, tangy tamarind, savory fish sauce, toasted peanuts, and garlic chives.",
+      "feel": "Chewy, springy, toothsome rice noodles paired with crunchy sprouts and crisp roasted nuts."
+    },
+    "scienceNotes": [
+      "Never use tomato ketchup or paprika: traditional authentic Pad Thai derives its amber color exclusively from caramelized palm sugar, tamarind, and fish sauce."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Noodles clumped into a soggy ball",
+        "cause": "Noodles were boiled in water beforehand or too much water added to wok",
+        "solution": "Only soak dry noodles in room-temperature water until leathery; finish cooking in sauce."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Prawns",
+        "substitute": "Sliced chicken thigh, crispy pork belly, or extra tofu for vegetarian"
+      },
+      {
+        "ingredient": "Palm sugar",
+        "substitute": "Dark brown sugar or coconut sugar"
+      }
+    ],
+    "flavorPairings": [
+      "Fresh lime juice",
+      "Singha or Chang cold beer",
+      "Thai iced tea (Cha Yen)"
+    ],
+    "advancedTechnique": "Carbon steel wok temperature control, room-temp noodle rehydration, and wok hei vaporization.",
+    "storageAndReheating": "Best enjoyed straight from the blazing wok. Reheat leftovers in a smoking-hot skillet with a splash of water.",
+    "nutritionEstimates": {
+      "calories": 540,
+      "proteinG": 28,
+      "carbsG": 68,
+      "fatG": 18
+    },
+    "relatedRecipes": [
+      "rec-dan-dan-noodles",
+      "rec-tom-yum-goong"
+    ],
+    "relatedTechniques": [
+      "Carbon Steel Wok Seasoning & Wok Hei",
+      "Rice Noodle Hydration Mechanics"
+    ]
+  },
+  {
+    "id": "rec-baba-au-rhum",
+    "title": "Baba au Rhum Traditionnel (Savarin au Rhum)",
+    "cuisine": "French",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Advanced",
+    "prepMins": 40,
+    "cookMins": 25,
+    "totalMins": 65,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The Parisian pastry shop classic: feather-light yeast-leavened brioche sponge baked in individual fluted molds, soaked while warm until saturated in an aromatic Martinique dark rum and vanilla citrus syrup, glazed with apricot nappage and crowned with vanilla bean Chantilly cream.",
+    "dietary": [
+      "vegetarian"
+    ],
+    "sensoryRole": "Featherlight, syrup-soaked sponge yielding a gush of warm rum and vanilla, balanced by cold, silky, cloud-like cream.",
+    "ingredients": [
+      {
+        "name": "Bread flour (T45 or strong bread flour)",
+        "qty": 250,
+        "unit": "g",
+        "prep": "high gluten protein 12-13%",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Whole milk (lukewarm 35°C)",
+        "qty": 90,
+        "unit": "ml",
+        "prep": "for yeast activation",
+        "dept": "dairy"
+      },
+      {
+        "name": "Instant dry yeast",
+        "qty": 7,
+        "unit": "g",
+        "prep": "or 15g fresh baker's yeast",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Granulated white sugar",
+        "qty": 25,
+        "unit": "g",
+        "prep": "for dough enrichment",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fine sea salt",
+        "qty": 5,
+        "unit": "g",
+        "prep": "for gluten structure",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Large eggs (at room temperature)",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "approx 150g beaten",
+        "dept": "dairy"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 80,
+        "unit": "g",
+        "prep": "softened at room temperature",
+        "dept": "dairy"
+      },
+      {
+        "name": "Water for soaking syrup",
+        "qty": 750,
+        "unit": "ml",
+        "prep": "for rum punch syrup",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Granulated sugar for soaking syrup",
+        "qty": 350,
+        "unit": "g",
+        "prep": "for rum punch syrup",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Dark agricultural rum (Rhum Agricole de la Martinique)",
+        "qty": 150,
+        "unit": "ml",
+        "prep": "aged amber rum",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Madagascar vanilla bean",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "split and seeds scraped",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Orange and lemon peel",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "wide strips of zest",
+        "dept": "produce"
+      },
+      {
+        "name": "Apricot jam / nappage neutre",
+        "qty": 100,
+        "unit": "g",
+        "prep": "warmed and strained for brilliant shine",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Heavy whipping cream (36%)",
+        "qty": 250,
+        "unit": "ml",
+        "prep": "ice cold for Chantilly",
+        "dept": "dairy"
+      },
+      {
+        "name": "Powdered confectioners' sugar",
+        "qty": 30,
+        "unit": "g",
+        "prep": "for Chantilly",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "8 individual fluted savarin or baba molds (dariole or ring molds)",
+        "type": "specialty"
+      },
+      {
+        "name": "Stand mixer with paddle and dough hook attachments",
+        "type": "everyday"
+      },
+      {
+        "name": "Deep wire cooling rack set over a rimmed baking sheet",
+        "type": "everyday"
+      },
+      {
+        "name": "Pastry piping bag with star nozzle",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Butter and flour the 8 baba molds thoroughly; chill molds in fridge to set butter.",
+      "Bring butter, eggs, and milk to room temperature (20-22°C).",
+      "Prepare syrup: bring water, sugar, vanilla pod, and citrus peels to a boil for 3 minutes; remove from heat, cool to 60°C, and stir in dark rum."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "In stand mixer with paddle, combine flour, yeast, sugar, salt, lukewarm milk, and eggs. Beat on medium speed for 8-10 minutes until dough transforms from a wet batter into an elastic, shiny dough that slaps against bowl sides ('claquer la pâte').",
+        "timerMins": 10,
+        "sensoryCue": "Dough becomes remarkably smooth, glossy, and elastic, clearing the bowl sides.",
+        "scienceNote": "Intense mechanical slapping develops strong gluten strands in a very high-hydration dough (60% liquid + eggs), essential to hold syrup without collapsing later."
+      },
+      {
+        "stepNum": 2,
+        "text": "Add softened butter in three increments, beating after each until completely incorporated. Dough will be very soft and shiny. Pipe or spoon into buttered molds, filling each halfway. Let rise in a warm spot (28°C) for 35-45 minutes until dough reaches mold rims.",
+        "timerMins": 45,
+        "sensoryCue": "Dough doubles in volume, puffing light and airy right to the top edge of molds.",
+        "scienceNote": "Fat incorporates into gluten sheets, softening cell walls while yeast produces CO2 bubbles that create an open honeycomb sponge structure."
+      },
+      {
+        "stepNum": 3,
+        "text": "Bake at 180°C (350°F) for 20-25 minutes until deeply golden brown and dry to the touch. Unmold immediately onto a wire rack and allow to cool completely.",
+        "timerMins": 22,
+        "sensoryCue": "Babes are firm, hollow-sounding when tapped, and rich golden mahogany.",
+        "scienceNote": "Baking dry and firm creates a structural sponge that acts like cellulose: dry air cells absorb warm liquid like a sponge without dissolving."
+      },
+      {
+        "stepNum": 4,
+        "text": "Submerge room-temperature babas into the warm rum syrup (held at 55-60°C). Gently press them beneath the liquid for 2-3 minutes, turning them over, until completely saturated and heavy like wet sponges. Lift onto wire rack to drain excess syrup.",
+        "timerMins": 10,
+        "sensoryCue": "Babas double in weight, swell noticeably, and glisten translucent with syrup.",
+        "scienceNote": "Syrup temperature is critical: if too hot (>70°C), it turns starch into mush; if cold (<40°C), butter in dough solidifies and blocks syrup absorption."
+      },
+      {
+        "stepNum": 5,
+        "text": "Brush babas all over with warm strained apricot glaze to seal in moisture and provide a mirror shine. Chill for 1 hour.",
+        "timerMins": 5,
+        "sensoryCue": "Pristine mirror-like amber lacquer coats each fluted baba.",
+        "scienceNote": "Pectin in apricot nappage creates an airtight barrier that prevents volatile alcohol and moisture from evaporating into the fridge."
+      },
+      {
+        "stepNum": 6,
+        "text": "Whip cold heavy cream with confectioners' sugar and scraped vanilla seeds to medium-stiff peaks. Pipe a generous rosette of vanilla Chantilly cream into center well of each baba. Serve with an optional pipette of dark rum.",
+        "timerMins": 5,
+        "sensoryCue": "Billowing snowy white cream crowned with black vanilla seeds atop a gleaming amber jewel.",
+        "scienceNote": "Cold, aerated fat in Chantilly cream cools the palate and tempers alcohol heat from the rum punch."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Glossy amber fluted ring cake drenched in syrup, crowned with a billowing rosette of vanilla bean Chantilly cream.",
+      "hear": "Soft squelch when fork pierces syrup-saturated sponge.",
+      "smell": "Warm oak-aged rum, Madagascar vanilla, orange blossom, and sweet apricot.",
+      "feel": "Incredible juxtaposition: light, melting, syrupy sponge that gushes flavor, paired with feather-light whipped cream."
+    },
+    "scienceNotes": [
+      "Baba dough is technically an enriched brioche sponge formulated with lower sugar and butter than breakfast brioche, maximizing capillary absorption of liquid."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Babas collapsed and disintegrated when soaked",
+        "cause": "Syrup was boiling hot (>75°C) or gluten was underdeveloped",
+        "solution": "Always ensure syrup is cooled to 55-60°C and dough slapped for full 10 minutes."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Rhum Agricole",
+        "substitute": "Dark Jamaican rum, Bourbon, or Grand Marnier"
+      },
+      {
+        "ingredient": "Apricot glaze",
+        "substitute": "Warmed orange marmalade or strained apple jelly"
+      }
+    ],
+    "flavorPairings": [
+      "Fresh wild raspberries",
+      "Espresso",
+      "Sauternes / Tokaji",
+      "Aged rum on the rocks"
+    ],
+    "advancedTechnique": "Claquer dough aeration, calibrated syrup capillary soaking (55°C), and apricot nappage sealing.",
+    "storageAndReheating": "Soaked babas keep refrigerated in an airtight container for up to 4 days. Serve chilled or at cool room temp.",
+    "nutritionEstimates": {
+      "calories": 480,
+      "proteinG": 8,
+      "carbsG": 64,
+      "fatG": 20
+    },
+    "relatedRecipes": [
+      "rec-creme-caramel",
+      "rec-paris-brest"
+    ],
+    "relatedTechniques": [
+      "Enriched Brioche Dough Aeration",
+      "Capillary Syrup Saturation",
+      "Apricot Nappage Glazing"
+    ]
+  },
+  {
+    "id": "rec-gravlax-scandinave",
+    "title": "Gravlax Scandinave Traditionnel (Aquavit & Dill Cured Salmon)",
+    "cuisine": "Nordic",
+    "category": "appetizer",
+    "slot": "lunch",
+    "difficulty": "Intermediate",
+    "prepMins": 25,
+    "cookMins": 0,
+    "totalMins": 25,
+    "yieldServings": 8,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The Nordic masterwork: center-cut wild Atlantic salmon cured for 48 hours in coarse sea salt, raw sugar, cracked white peppercorns, crushed juniper, Danish aquavit, and mounds of fresh dill, sliced paper-thin and served with traditional sweet mustard-dill Hovmästarsås.",
+    "dietary": [
+      "gluten_free",
+      "dairy_free"
+    ],
+    "sensoryRole": "Silky, translucent, buttery cured salmon with herbal dill freshness, caraway aromatics, and sweet mustard tang.",
+    "ingredients": [
+      {
+        "name": "Sashimi-grade wild salmon fillet (skin-on, center-cut)",
+        "qty": 800,
+        "unit": "g",
+        "prep": "pin bones removed, patted bone dry",
+        "dept": "seafood"
+      },
+      {
+        "name": "Coarse sea salt (kosher salt)",
+        "qty": 60,
+        "unit": "g",
+        "prep": "approx 7.5% curing ratio",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Raw demerara or turbinado sugar",
+        "qty": 50,
+        "unit": "g",
+        "prep": "for balancing osmotic cure",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Whole white peppercorns",
+        "qty": 10,
+        "unit": "g",
+        "prep": "crushed coarse in mortar",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Juniper berries",
+        "qty": 5,
+        "unit": "g",
+        "prep": "crushed",
+        "dept": "produce"
+      },
+      {
+        "name": "Fresh dill (large bunches)",
+        "qty": 80,
+        "unit": "g",
+        "prep": "thick stems crushed, finely chopped",
+        "dept": "produce"
+      },
+      {
+        "name": "Danish or Norwegian Aquavit (Akvavit)",
+        "qty": 45,
+        "unit": "ml",
+        "prep": "caraway and anise spirit",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Swedish sweet mustard (Sötstark Senap) or Dijon",
+        "qty": 60,
+        "unit": "g",
+        "prep": "for Hovmästarsås sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "White wine vinegar",
+        "qty": 15,
+        "unit": "ml",
+        "prep": "for Hovmästarsås sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Brown sugar",
+        "qty": 20,
+        "unit": "g",
+        "prep": "for Hovmästarsås sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Neutral rapeseed or sunflower oil",
+        "qty": 80,
+        "unit": "ml",
+        "prep": "emulsified into sauce",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Extra finely chopped dill",
+        "qty": 20,
+        "unit": "g",
+        "prep": "stirred into finished sauce",
+        "dept": "produce"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Glass or ceramic baking dish (non-reactive)",
+        "type": "everyday"
+      },
+      {
+        "name": "Long flexible 10-inch salmon slicing knife (cuchillo jamonero)",
+        "type": "specialty"
+      },
+      {
+        "name": "Food tweezers for pin bone removal",
+        "type": "everyday"
+      },
+      {
+        "name": "Weight (approx 1-1.5kg, e.g. food cans on a cutting board)",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Run fingertips down salmon flesh to locate pin bones; pull each with tweezers in direction of grain.",
+      "Mix coarse salt, raw sugar, cracked white peppercorns, and crushed juniper thoroughly in a small bowl.",
+      "Wash and dry dill thoroughly; crush stems with rolling pin to release essential oils."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Rub the salmon flesh and skin with Aquavit. Cut the salmon fillet in half crosswise into two equal squares. Rub both halves generously on all sides with the salt-sugar-spice curing mixture.",
+        "timerMins": 10,
+        "sensoryCue": "Salmon glistens with spirit; salt and sugar cling in a thick crystalline crust.",
+        "scienceNote": "Aquavit delivers alcohol-soluble caraway (carvone) and fennel aromatics while ethanol accelerates osmotic fluid extraction."
+      },
+      {
+        "stepNum": 2,
+        "text": "Place one salmon half skin-side down in the glass dish. Pack the thick layer of crushed fresh dill over the flesh. Place the second salmon half flesh-side down on top of the dill (skin facing out), sandwiching the herbs tightly.",
+        "timerMins": 5,
+        "sensoryCue": "A dense green herb pillow sandwiched tightly between two salmon fillets.",
+        "scienceNote": "Flesh-to-flesh orientation ensures maximum contact surface area for osmotic solute transfer and essential oil diffusion."
+      },
+      {
+        "stepNum": 3,
+        "text": "Wrap the dish tightly in plastic film. Place a flat small cutting board on top and set a 1kg weight on the board. Refrigerate at 2-4°C for 48 hours, flipping the wrapped salmon sandwich every 12 hours and spooning rendered brine back over it.",
+        "timerMins": 5,
+        "sensoryCue": "Liquid brine pools in the bottom of dish as moisture is drawn from the salmon; flesh firms noticeably.",
+        "scienceNote": "Salt draws out water via osmosis, decreasing water activity (aw < 0.90) and inhibiting bacterial growth while concentrating rich salmon lipids."
+      },
+      {
+        "stepNum": 4,
+        "text": "Make Hovmästarsås: whisk sweet mustard, Dijon, vinegar, brown sugar, salt, and pepper in a small bowl. Whisking continuously, drizzle in the rapeseed oil in a slow, steady stream until an emulsified, creamy sauce forms. Fold in fresh chopped dill.",
+        "timerMins": 5,
+        "sensoryCue": "Glossy, golden-yellow emulsion flecked with bright emerald dill leaves.",
+        "scienceNote": "Mustard mucilage acts as a natural botanical emulsifier, stabilizing oil droplets in vinegar and sugar without egg yolks."
+      },
+      {
+        "stepNum": 5,
+        "text": "After 48 hours, remove salmon from brine. Scrape off excess curing salt and spent dill. Pat thoroughly dry with paper towels. Press fresh chopped dill onto the cured salmon flesh.",
+        "timerMins": 5,
+        "sensoryCue": "Flesh is firm, dense, deep ruby-coral, and translucent like polished marble.",
+        "scienceNote": "Denaturation of muscle myoglobin and structural protein compaction yields the prized translucent 'cured jewel' appearance."
+      },
+      {
+        "stepNum": 6,
+        "text": "Using a long flexible salmon knife held at a low 20-degree angle to the skin, shave salmon into paper-thin, translucent ribbons, pulling knife back in smooth single strokes. Arrange on chilled plates with rye bread, lemon wedges, and Hovmästarsås.",
+        "timerMins": 5,
+        "sensoryCue": "Gossamer ribbons of translucent salmon that melt on the tongue.",
+        "scienceNote": "Slicing across the muscle grain on a low bias cuts short connective myocommata membranes, creating effortless tenderness."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Translucent, glowing ruby-orange ribbons of salmon edged with fresh dill, accompanied by golden emulsified mustard sauce on dark rye crisps.",
+      "hear": "Crisp snap of dense rye knäckebröd.",
+      "smell": "Fragrant fresh dill, botanical juniper, caraway, clean sea breeze, and sweet-tart mustard.",
+      "feel": "Silky, buttery, velvety texture that coats the palate and melts without chewiness."
+    },
+    "scienceNotes": [
+      "Gravlax ('grave salmon') historically fermented in birch bark trenches in Scandinavia; modern refrigeration gravlax is an osmotic cure balancing salt dehydration with sugar tenderization."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Salmon tastes overly salty",
+        "cause": "Cured too long or fine table salt was used instead of coarse kosher salt",
+        "solution": "Always use coarse sea salt (which has larger crystals and lower density) and rinse briefly if cure exceeded 48 hours."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Aquavit",
+        "substitute": "Gin (for juniper forward notes) or dry white rum"
+      },
+      {
+        "ingredient": "Atlantic salmon",
+        "substitute": "Arctic char, steelhead trout, or wild king salmon"
+      }
+    ],
+    "flavorPairings": [
+      "Danish rugbrød (dark rye bread)",
+      "Boiled buttered fingerling potatoes",
+      "Cold pilsner beer",
+      "Chilled shot of Linie Aquavit"
+    ],
+    "advancedTechnique": "Cold osmotic dehydration curing, non-egg mustard emulsion, and precision bias salmon carving.",
+    "storageAndReheating": "Keeps refrigerated wrapped tightly in butcher paper for up to 6 days. Never freeze dressed slices; uncut cured fillet can be frozen up to 2 months.",
+    "nutritionEstimates": {
+      "calories": 320,
+      "proteinG": 34,
+      "carbsG": 8,
+      "fatG": 16
+    },
+    "relatedRecipes": [
+      "rec-ceviche-clasico-peruano",
+      "rec-salmon-papillote"
+    ],
+    "relatedTechniques": [
+      "Osmotic Protein Denaturation (Cold Curing)",
+      "Precision Fish Slicing",
+      "Botanical Mustard Emulsions"
+    ]
+  },
+  {
+    "id": "rec-moules-marinieres",
+    "title": "Moules Marinières Classiques au Vin Blanc",
+    "cuisine": "French",
+    "category": "dinner",
+    "slot": "dinner",
+    "difficulty": "Novice",
+    "prepMins": 20,
+    "cookMins": 10,
+    "totalMins": 30,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The quintessential French bistro maritime feast: rope-grown live black mussels steamed open in a rapid aromatic boil of dry white wine (Muscadet), butter, shallots, garlic, and flat-leaf parsley, served with crusty baguette to soak up the briny nectar.",
+    "dietary": [
+      "gluten_free"
+    ],
+    "sensoryRole": "Briny, sweet, tender bivalves bathed in a rich, buttery, wine-fragrant ocean broth.",
+    "ingredients": [
+      {
+        "name": "Live blue mussels (Bouchot or rope-grown)",
+        "qty": 1800,
+        "unit": "g",
+        "prep": "scrubbed clean, debearded, dead/broken discarded",
+        "dept": "seafood"
+      },
+      {
+        "name": "French shallots",
+        "qty": 80,
+        "unit": "g",
+        "prep": "finely minced",
+        "dept": "produce"
+      },
+      {
+        "name": "Garlic cloves",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "microplaned",
+        "dept": "produce"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 60,
+        "unit": "g",
+        "prep": "divided for sweating and monter",
+        "dept": "dairy"
+      },
+      {
+        "name": "Dry crisp white wine (Muscadet de Sèvre-et-Maine or Sauvignon)",
+        "qty": 250,
+        "unit": "ml",
+        "prep": "for steaming broth",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fresh flat-leaf parsley",
+        "qty": 30,
+        "unit": "g",
+        "prep": "leaves and tender stems finely chopped",
+        "dept": "produce"
+      },
+      {
+        "name": "Freshly ground black pepper",
+        "qty": 3,
+        "unit": "g",
+        "prep": "mignonette",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Heavy cream (crème fraîche)",
+        "qty": 50,
+        "unit": "ml",
+        "prep": "optional for Marinière à la Crème variation",
+        "dept": "dairy"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "Large heavy 8-quart Dutch oven or stockpot with tight-fitting lid",
+        "type": "everyday"
+      },
+      {
+        "name": "Slotted spoon or spider",
+        "type": "everyday"
+      },
+      {
+        "name": "Wide warm serving bowls",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Inspect all mussels: discard any with cracked shells or that remain wide open when tapped on counter.",
+      "Debeard mussels: pull fibrous byssal threads firmly toward the hinge end of the shell and discard.",
+      "Rinse in cold water to remove exterior grit, then drain in colander right before cooking."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Melt 30g butter in the large Dutch oven over medium heat. Add minced shallots and garlic. Sweat for 3 minutes until translucent and aromatic without browning.",
+        "timerMins": 3,
+        "sensoryCue": "Sweet, savory aroma of butter and softened shallots; no browning.",
+        "scienceNote": "Sweating shallots in butter extracts fat-soluble aromatic allicin before adding liquids, enriching the base flavor."
+      },
+      {
+        "stepNum": 2,
+        "text": "Pour in white wine and freshly cracked black pepper. Bring to a rolling boil over high heat for 1 minute to cook off raw alcohol fumes.",
+        "timerMins": 1,
+        "sensoryCue": "Wine boils vigorously; sharp alcohol vapors dissipate leaving fruity wine steam.",
+        "scienceNote": "Pre-boiling the wine ensures the mussels steam in alcohol-tempered wine vapors rather than harsh raw spirits."
+      },
+      {
+        "stepNum": 3,
+        "text": "Add all scrubbed mussels to the pot at once. Immediately cover with a tight-fitting lid. Keep heat on maximum. Steam for 3-4 minutes, shaking the closed pot vigorously twice to redistribute mussels.",
+        "timerMins": 4,
+        "sensoryCue": "Lid rattles with trapped steam; rich briny-sea aroma billows when lid is cracked.",
+        "scienceNote": "Steam transfers heat at nearly 2,260 kJ/kg (latent heat of vaporization), cooking mussels in minutes and causing adductor muscles to relax and pop shells open."
+      },
+      {
+        "stepNum": 4,
+        "text": "Remove lid. Verify that the shells have popped wide open revealing plump, tender orange and ivory meats. (Discard any mussels that remain stubbornly shut).",
+        "timerMins": 1,
+        "sensoryCue": "Black shells wide open, showing plump, glistening, juicy bivalves.",
+        "scienceNote": "Overcooking shrinks mussel meat into rubbery pellets; remove from heat the moment shells open."
+      },
+      {
+        "stepNum": 5,
+        "text": "Using slotted spoon, transfer mussels into warm serving bowls. Keep broth in pot on heat. Whisk remaining 30g cold butter and chopped parsley (plus cream if desired) directly into boiling broth for 60 seconds until emulsified into a cloudy, velvety nectar.",
+        "timerMins": 2,
+        "sensoryCue": "Broth foams slightly and transforms into a rich, fragrant, glossy green-flecked sauce.",
+        "scienceNote": "Cold butter whisked into hot mussel liquor (rich in natural sodium and glycogen) forms a silky emulsion without needing flour."
+      },
+      {
+        "stepNum": 6,
+        "text": "Ladle the steaming broth generously over the mussels in bowls. Serve immediately accompanied by warm crusty baguette and a bowl for empty shells.",
+        "timerMins": 1,
+        "sensoryCue": "Piping hot bowls brimming with glossy black shells and herb-flecked aromatic broth.",
+        "scienceNote": "Dipping crusty bread in mussel liquor captures water-soluble glutamates and mineral zinc."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Mountain of glistening black shells revealing plump orange and ivory meats, immersed in an ivory-emerald broth with flat parsley.",
+      "hear": "Clatter of shells being moved; crusty baguette crackling.",
+      "smell": "Intense fresh ocean brine, white wine, shallots, garlic, and fresh butter.",
+      "feel": "Plump, tender, juicy mussels yielding instantly to bite; rich warming broth."
+    },
+    "scienceNotes": [
+      "Mussels release up to 30% of their total weight in natural sea liquor during steaming, creating an instant natural fumet requiring zero added salt."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Mussels are gritty",
+        "cause": "Not soaked and rinsed properly before cooking",
+        "solution": "Scrub shells with a stiff brush and soak in cold water for 15 minutes before debearding."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Mussels",
+        "substitute": "Manila clams or cockles"
+      },
+      {
+        "ingredient": "Muscadet",
+        "substitute": "Sauvignon Blanc, dry cider, or Belgian wheat beer (Moules à la Bière)"
+      }
+    ],
+    "flavorPairings": [
+      "Crispy Belgian frites with mayonnaise",
+      "Crusty French baguette",
+      "Muscadet de Sèvre-et-Maine",
+      "Chablis"
+    ],
+    "advancedTechnique": "Steam pressure vaporization, shell culling, and sea-liquor monter au beurre.",
+    "storageAndReheating": "Must be eaten immediately. Do not store or reheat cooked mussels in shell.",
+    "nutritionEstimates": {
+      "calories": 410,
+      "proteinG": 38,
+      "carbsG": 12,
+      "fatG": 22
+    },
+    "relatedRecipes": [
+      "rec-bouillabaisse",
+      "rec-sole-meuniere"
+    ],
+    "relatedTechniques": [
+      "Shellfish Debearding & Culling",
+      "Latent Steam Poaching",
+      "Monter au Beurre Emulsion"
+    ]
+  },
+  {
+    "id": "rec-souffle-grand-marnier",
+    "title": "Soufflé Chaud au Grand Marnier",
+    "cuisine": "French",
+    "category": "dessert",
+    "slot": "dessert",
+    "difficulty": "Master",
+    "prepMins": 30,
+    "cookMins": 15,
+    "totalMins": 45,
+    "yieldServings": 4,
+    "heroImage": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "summary": "The supreme test of pastry craft: cloud-light individual soufflés built on an orange-infused crème pâtissière base flavored with Grand Marnier liqueur, folded into glossy French meringue, baked until risen proudly 3 inches above the ramekin rim, and dusted with powdered sugar.",
+    "dietary": [
+      "vegetarian"
+    ],
+    "sensoryRole": "Feather-light, cloud-like hot custard with explosive citrus aroma, warm cognac perfume, and melting molten center.",
+    "ingredients": [
+      {
+        "name": "Whole milk",
+        "qty": 250,
+        "unit": "ml",
+        "prep": "infused with vanilla bean and orange peel",
+        "dept": "dairy"
+      },
+      {
+        "name": "Madagascar vanilla bean",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "split and scraped",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Granulated sugar",
+        "qty": 80,
+        "unit": "g",
+        "prep": "divided for pastry cream and meringue",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Egg yolks",
+        "qty": 3,
+        "unit": "pcs",
+        "prep": "room temperature",
+        "dept": "dairy"
+      },
+      {
+        "name": "Egg whites",
+        "qty": 5,
+        "unit": "pcs",
+        "prep": "room temperature, zero yolk contamination",
+        "dept": "dairy"
+      },
+      {
+        "name": "Cornstarch (fécule de maïs)",
+        "qty": 25,
+        "unit": "g",
+        "prep": "sifted for pastry cream base",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Grand Marnier (Cordon Rouge)",
+        "qty": 50,
+        "unit": "ml",
+        "prep": "orange cognac liqueur",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Fresh orange zest",
+        "qty": 1,
+        "unit": "pcs",
+        "prep": "finely microplaned",
+        "dept": "produce"
+      },
+      {
+        "name": "Unsalted European butter",
+        "qty": 30,
+        "unit": "g",
+        "prep": "softened, for coating ramekins with vertical strokes",
+        "dept": "dairy"
+      },
+      {
+        "name": "Granulated sugar for ramekin lining",
+        "qty": 30,
+        "unit": "g",
+        "prep": "tapped around buttered molds",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Cream of tartar or lemon juice",
+        "qty": 1,
+        "unit": "pinch",
+        "prep": "for albumen stabilization",
+        "dept": "drygoods"
+      },
+      {
+        "name": "Powdered sugar",
+        "qty": 20,
+        "unit": "g",
+        "prep": "for dusting immediately before serving",
+        "dept": "drygoods"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "4 straight-sided ceramic soufflé ramekins (approx 200ml / 9cm diameter)",
+        "type": "specialty"
+      },
+      {
+        "name": "Stand mixer or electric hand mixer with balloon whisk",
+        "type": "everyday"
+      },
+      {
+        "name": "Flexible silicone spatula for delicate folding",
+        "type": "everyday"
+      },
+      {
+        "name": "Oven with baking stone or heavy sheet pan preheated",
+        "type": "everyday"
+      }
+    ],
+    "miseEnPlace": [
+      "Butter ramekins with softened butter using strict VERTICAL upward brush strokes; coat interiors thoroughly with granulated sugar and tap out excess.",
+      "Preheat oven to 195°C (385°F) with a heavy baking sheet on middle rack.",
+      "Separate eggs carefully while cold, then let whites come to room temperature (20°C) for maximum foam volume."
+    ],
+    "steps": [
+      {
+        "stepNum": 1,
+        "text": "Make the base: bring milk, vanilla pod, and orange peel to a simmer; steep 10 minutes. In a bowl, whisk egg yolks with 30g sugar until pale, then whisk in cornstarch. Strain hot milk into yolk mixture while whisking, return to saucepan, and boil for 1 minute until thick. Whisk in Grand Marnier and orange zest. Cool to lukewarm (35°C).",
+        "timerMins": 12,
+        "sensoryCue": "Thick, glossy, fragrant orange custard that coats the whisk.",
+        "scienceNote": "Cornstarch stabilizes the base by gelatinizing at 85°C, creating a viscous gel that prevents egg whites from weeping during baking."
+      },
+      {
+        "stepNum": 2,
+        "text": "Whip egg whites with a pinch of cream of tartar on medium speed until foamy. Gradually rain in the remaining 50g granulated sugar one tablespoon at a time while increasing speed to high. Whip to glossy, flexible medium-stiff peaks (the bird's beak / bec d'oiseau).",
+        "timerMins": 6,
+        "sensoryCue": "Whites form a snow-white lustrous cloud with curved peaks that do not flop over.",
+        "scienceNote": "Sugar strengthens the protein film surrounding millions of microscopic air bubbles; adding it gradually prevents dampening foam expansion."
+      },
+      {
+        "stepNum": 3,
+        "text": "Lighten the base: whisk 1/4 of the whipped whites vigorously into the lukewarm Grand Marnier pastry cream to loosen texture. Then gently fold in the remaining 3/4 whites with a silicone spatula in wide, gentle cutting sweeps until just combined.",
+        "timerMins": 3,
+        "sensoryCue": "Airy, cloud-like, pale orange-tinted mousse; zero streaks of unmixed white.",
+        "scienceNote": "Sacrificing 1/4 of whites equilibrates densities, allowing the remaining 75% delicate foam to be folded without deflating air cells."
+      },
+      {
+        "stepNum": 4,
+        "text": "Spoon mixture into prepared ramekins, filling right to the brim. Level the top perfectly flat with a metal offset spatula. Run your thumb tip around the inside top rim of each ramekin to create a 2mm 'moat' between batter and rim.",
+        "timerMins": 4,
+        "sensoryCue": "Mirror-flat smooth tops; clean 2mm channel around inner rim.",
+        "scienceNote": "The thumb moat detaches batter from the rim, preventing sticking and ensuring a proud, perfectly level vertical rise ('top hat effect')."
+      },
+      {
+        "stepNum": 5,
+        "text": "Place ramekins immediately onto preheated baking sheet in 195°C oven. Bake undisturbed for 13-15 minutes. NEVER open the oven door during baking. Soufflés are ready when risen 5-7cm above rim and golden brown.",
+        "timerMins": 14,
+        "sensoryCue": "Soufflés rise dramatically above ramekins like proud golden chef's toques; tops are bronzed.",
+        "scienceNote": "Thermal expansion of trapped air bubbles and rapid vaporization of water into steam (expanding 1,600 times in volume) drives the vertical rise, while egg albumens set structure at 80°C."
+      },
+      {
+        "stepNum": 6,
+        "text": "Remove from oven and rush to table immediately! Dust tops with powdered sugar, poke a small well in center with a spoon, and pour in warm Crème Anglaise or an extra splash of Grand Marnier.",
+        "timerMins": 1,
+        "sensoryCue": "Delicate powdered sugar melts on golden crust; fragrant orange vapor escapes.",
+        "scienceNote": "Soufflés begin deflating after 90 seconds as internal steam cools and contracts, making immediate service paramount."
+      }
+    ],
+    "sensoryIndicators": {
+      "see": "Spectacular golden-brown cylindrical rise standing 2 inches above ramekin rim, crowned with powdered sugar snow.",
+      "hear": "Gentle hiss as spoon breaches the delicate crust.",
+      "smell": "Intense aromatic Grand Marnier orange liqueur, sweet vanilla, and caramelized custard.",
+      "feel": "Whisper-light, cloud-like melting foam that dissolves instantly on the tongue into warm citrus cream."
+    },
+    "scienceNotes": [
+      "Vertical butter brush strokes create micro-grooves that guide rising batter upward without resistance."
+    ],
+    "troubleshooting": [
+      {
+        "problem": "Soufflé rose lopsided or tilted",
+        "cause": "Ramekins were buttered unevenly or thumb moat was omitted",
+        "solution": "Always brush butter in clean vertical upward strokes and run thumb around top rim."
+      }
+    ],
+    "substitutions": [
+      {
+        "ingredient": "Grand Marnier",
+        "substitute": "Cointreau, Cognac, dark rum, or fresh passionfruit puree for non-alcohol"
+      }
+    ],
+    "flavorPairings": [
+      "Crème Anglaise with Madagascar vanilla",
+      "Candied orange zest",
+      "Sauternes / Muscat de Beaumes-de-Venise"
+    ],
+    "advancedTechnique": "Vertical mold preparation, French meringue foam stabilization, thumb moat cutting, and rapid steam lift baking.",
+    "storageAndReheating": "Cannot be stored or reheated. Must be baked and enjoyed within 2 minutes of leaving oven.",
+    "nutritionEstimates": {
+      "calories": 310,
+      "proteinG": 10,
+      "carbsG": 34,
+      "fatG": 14
+    },
+    "relatedRecipes": [
+      "rec-souffle-chocolat",
+      "rec-creme-brulee"
+    ],
+    "relatedTechniques": [
+      "Egg White Foam Kinetics (Meringue)",
+      "Top Hat Soufflé Rim Channeling",
+      "Cornstarch Gel Stabilization"
+    ]
   }
 ];
-
-window.RecipeEngine = {
-  getAll: function() { return window.MASTER_RECIPES; },
-  getById: function(id) { return window.MASTER_RECIPES.find(r => r.id === id); },
-  getByCategory: function(cat) { return window.MASTER_RECIPES.filter(r => r.category === cat); },
-  getByCuisine: function(cui) { return window.MASTER_RECIPES.filter(r => r.cuisine.toLowerCase().includes(cui.toLowerCase())); },
-  search: function(q) {
-    const query = (q || '').toLowerCase().trim();
-    if (!query) return window.MASTER_RECIPES;
-    return window.MASTER_RECIPES.filter(r => 
-      r.title.toLowerCase().includes(query) ||
-      r.cuisine.toLowerCase().includes(query) ||
-      r.summary.toLowerCase().includes(query) ||
-      (r.ingredients || []).some(i => i.name.toLowerCase().includes(query))
-    );
-  }
-};

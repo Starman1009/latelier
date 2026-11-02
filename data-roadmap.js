@@ -3,7 +3,7 @@ window.CULINARY_ROADMAP = [
     "id": "track-eggs",
     "title": "Egg Cookery & Foundations",
     "category": "Foundations",
-    "icon": "\ud83e\udd5a",
+    "icon": "🥚",
     "color": "#F59E0B",
     "summary": "Master temperature control, curd suspension, and emulsion stability from humble scrambled eggs to classical rolled French omelettes and Hollandaise.",
     "nodes": [
@@ -47,7 +47,7 @@ window.CULINARY_ROADMAP = [
         "tierNumber": 4,
         "title": "Sauce Hollandaise Mastery",
         "recipeId": "rec-sauce-hollandaise",
-        "coreSkill": "Sabayon steam whisking to 65\u00b0C, slow clarified butter incorporation into a warm stable emulsion",
+        "coreSkill": "Sabayon steam whisking to 65°C, slow clarified butter incorporation into a warm stable emulsion",
         "prereqs": [
           "node-benedict"
         ],
@@ -59,9 +59,9 @@ window.CULINARY_ROADMAP = [
     "id": "track-sauces",
     "title": "Classical Sauces & Pan Architecture",
     "category": "Sauces & Reductions",
-    "icon": "\ud83e\udd58",
+    "icon": "🥘",
     "color": "#D4AF37",
-    "summary": "From cold emulsified vinaigrettes to brown veal stocks, starch-bound jus li\u00e9, and the electric sweet-sour punch of a classical French gastrique.",
+    "summary": "From cold emulsified vinaigrettes to brown veal stocks, starch-bound jus lié, and the electric sweet-sour punch of a classical French gastrique.",
     "nodes": [
       {
         "id": "node-fond-brun",
@@ -69,7 +69,7 @@ window.CULINARY_ROADMAP = [
         "tierNumber": 3,
         "title": "Master Brown Veal Stock",
         "recipeId": "rec-fond-brun-veau",
-        "coreSkill": "Oven bone roasting for Maillard depth, tomato paste pinc\u00e9, 12-hour gentle gelatin extraction",
+        "coreSkill": "Oven bone roasting for Maillard depth, tomato paste pincé, 12-hour gentle gelatin extraction",
         "prereqs": [],
         "difficultyScore": 6.5
       },
@@ -98,6 +98,18 @@ window.CULINARY_ROADMAP = [
         "difficultyScore": 8.5
       },
       {
+        "id": "node-canard-orange",
+        "tier": "Expert",
+        "tierNumber": 5,
+        "title": "Sauce Bigarade & Duck Pan Rendering",
+        "recipeId": "rec-canard-orange",
+        "coreSkill": "Sugar caramelization to 170°C, sharp vinegar deglaze, orange reduction, and monter au beurre with cold butter",
+        "prereqs": [
+          "node-cacio-pepe"
+        ],
+        "difficultyScore": 8.4
+      },
+      {
         "id": "node-sole-meuniere",
         "tier": "Master",
         "tierNumber": 6,
@@ -105,7 +117,7 @@ window.CULINARY_ROADMAP = [
         "recipeId": "rec-sole-meuniere",
         "coreSkill": "Hazelnut brown butter foaming, rapid lemon caper deglazing, and gentle whole fish basting",
         "prereqs": [
-          "node-duck-gastrique"
+          "node-canard-orange"
         ],
         "difficultyScore": 9.0
       }
@@ -113,9 +125,9 @@ window.CULINARY_ROADMAP = [
   },
   {
     "id": "track-pastry",
-    "title": "P\u00e2tisserie, Custards & Confectionery",
+    "title": "Pâtisserie, Custards & Confectionery",
     "category": "Pastry & Baking",
-    "icon": "\ud83e\udd50",
+    "icon": "🥐",
     "color": "#EC4899",
     "summary": "Master precise sugar crystallization, egg white foam kinetics, steam expansion in choux pastry, and delicate mirror glaze entremets.",
     "nodes": [
@@ -133,9 +145,9 @@ window.CULINARY_ROADMAP = [
         "id": "node-creme-brulee",
         "tier": "Intermediate",
         "tierNumber": 3,
-        "title": "Cr\u00e8me Br\u00fbl\u00e9e & Torch Caramelization",
+        "title": "Crème Brûlée & Torch Caramelization",
         "recipeId": "rec-creme-brulee",
-        "coreSkill": "Gentle water-bath baking to 82\u00b0C (180\u00b0F) interior, followed by rapid sugar torching into brittle glass",
+        "coreSkill": "Gentle water-bath baking to 82°C (180°F) interior, followed by rapid sugar torching into brittle glass",
         "prereqs": [
           "node-panna-cotta"
         ],
@@ -145,7 +157,7 @@ window.CULINARY_ROADMAP = [
         "id": "node-paris-brest",
         "tier": "Advanced",
         "tierNumber": 4,
-        "title": "P\u00e2te \u00e0 Choux & Pralin\u00e9 Mousseline",
+        "title": "Pâte à Choux & Praliné Mousseline",
         "recipeId": "rec-paris-brest",
         "coreSkill": "Stovetop flour gelatinization, egg volume incorporation, steam-lift oven baking, and mousseline piping",
         "prereqs": [
@@ -154,14 +166,26 @@ window.CULINARY_ROADMAP = [
         "difficultyScore": 7.5
       },
       {
+        "id": "node-baba-rhum",
+        "tier": "Advanced",
+        "tierNumber": 4,
+        "title": "Brioche Sponge & Capillary Rum Saturation",
+        "recipeId": "rec-baba-au-rhum",
+        "coreSkill": "Claquer dough kneading for strong gluten, proofing, and controlled capillary soaking at 55-60°C",
+        "prereqs": [
+          "node-creme-brulee"
+        ],
+        "difficultyScore": 7.4
+      },
+      {
         "id": "node-souffle-chocolat",
         "tier": "Expert",
         "tierNumber": 5,
-        "title": "Hot Dark Chocolate Souffl\u00e9",
+        "title": "Hot Dark Chocolate Soufflé",
         "recipeId": "rec-souffle-chocolat",
         "coreSkill": "Meringue folding into dark chocolate base, straight vertical rise along butter-sugared ceramic ramekins",
         "prereqs": [
-          "node-paris-brest"
+          "node-baba-rhum"
         ],
         "difficultyScore": 8.5
       },
@@ -169,7 +193,7 @@ window.CULINARY_ROADMAP = [
         "id": "node-caneles",
         "tier": "Master",
         "tierNumber": 6,
-        "title": "Canel\u00e9s de Bordeaux",
+        "title": "Canelés de Bordeaux",
         "recipeId": "rec-caneles-bordeaux",
         "coreSkill": "Beeswax and butter mold seasoning, 48-hour batter rest, dual-temperature baking for lacquered crunch",
         "prereqs": [
@@ -183,10 +207,32 @@ window.CULINARY_ROADMAP = [
     "id": "track-seafood",
     "title": "Seafood & Delicate Proteins",
     "category": "Seafood",
-    "icon": "\ud83d\udc1f",
+    "icon": "🐟",
     "color": "#06B6D4",
     "summary": "Master internal temperature precision, skin crisping under moisture control, and the delicate art of knife work for raw fish.",
     "nodes": [
+      {
+        "id": "node-moules",
+        "tier": "Beginner",
+        "tierNumber": 1,
+        "title": "Flash Steam Poaching & Pan Mounting",
+        "recipeId": "rec-moules-marinieres",
+        "coreSkill": "Debearding bivalves, high-heat wine steam poaching (2,260 kJ/kg latent heat), and sea-liquor monter au beurre",
+        "prereqs": [],
+        "difficultyScore": 2.5
+      },
+      {
+        "id": "node-gravlax",
+        "tier": "Novice",
+        "tierNumber": 2,
+        "title": "Nordic Osmotic Cold Curing",
+        "recipeId": "rec-gravlax-scandinave",
+        "coreSkill": "Salt-to-sugar ratio balancing for water activity reduction (aw < 0.90), aquavit infusion, and low-angle bias slicing",
+        "prereqs": [
+          "node-moules"
+        ],
+        "difficultyScore": 4.8
+      },
       {
         "id": "node-miso-cod",
         "tier": "Intermediate",
@@ -194,14 +240,16 @@ window.CULINARY_ROADMAP = [
         "title": "Saikyo Miso Cured Black Cod",
         "recipeId": "rec-miso-black-cod",
         "coreSkill": "48-hour sweet white miso osmosis cure, broiler caramelization without scorching",
-        "prereqs": [],
+        "prereqs": [
+          "node-gravlax"
+        ],
         "difficultyScore": 5.8
       },
       {
         "id": "node-sole",
         "tier": "Advanced",
         "tierNumber": 4,
-        "title": "Pan-Roasted Dover Sole Meuni\u00e8re",
+        "title": "Pan-Roasted Dover Sole Meunière",
         "recipeId": "rec-sole-meuniere",
         "coreSkill": "Flour dredging, gentle pan-flipping without tearing, and lemon-caper butter emulsification",
         "prereqs": [
@@ -227,7 +275,7 @@ window.CULINARY_ROADMAP = [
     "id": "track-meat",
     "title": "Meat, Roasting & Braising Kinetics",
     "category": "Butchery & Roasting",
-    "icon": "\ud83e\udd69",
+    "icon": "🥩",
     "color": "#DC2626",
     "summary": "Master the Maillard reaction, pan fond deglazing, and the thermal breakdown of tough collagen into velvety liquid gelatin.",
     "nodes": [
@@ -257,9 +305,9 @@ window.CULINARY_ROADMAP = [
         "id": "node-birria",
         "tier": "Advanced",
         "tierNumber": 4,
-        "title": "Birria de Res & Guajillo Consom\u00e9",
+        "title": "Birria de Res & Guajillo Consomé",
         "recipeId": "rec-birria-res",
-        "coreSkill": "Dried chile toasting and pureeing, dual-cut beef braising, and rich consom\u00e9 skim separation",
+        "coreSkill": "Dried chile toasting and pureeing, dual-cut beef braising, and rich consomé skim separation",
         "prereqs": [
           "node-boeuf-bourguignon"
         ],
@@ -271,11 +319,23 @@ window.CULINARY_ROADMAP = [
         "tierNumber": 5,
         "title": "Classic Confit de Canard",
         "recipeId": "rec-duck-confit",
-        "coreSkill": "24-hour salt and herb curing, 4-hour submerged duck fat poach at 85\u00b0C, and final skin crisping",
+        "coreSkill": "24-hour salt and herb curing, 4-hour submerged duck fat poach at 85°C, and final skin crisping",
         "prereqs": [
           "node-birria"
         ],
         "difficultyScore": 8.5
+      },
+      {
+        "id": "node-pate-croute",
+        "tier": "Master",
+        "tierNumber": 6,
+        "title": "Pâté en Croûte & Farce Emulsification",
+        "recipeId": "rec-pate-en-croute",
+        "coreSkill": "Hot water crust dough, salt-soluble myosin protein extraction, steam chimney venting, and Madeira aspic filling",
+        "prereqs": [
+          "node-duck-confit-meat"
+        ],
+        "difficultyScore": 9.8
       }
     ]
   },
@@ -283,7 +343,7 @@ window.CULINARY_ROADMAP = [
     "id": "track-dough-wok",
     "title": "Artisan Dough, Pasta & Wok Craft",
     "category": "Dough & High-Heat",
-    "icon": "\ud83c\udf5d",
+    "icon": "🍝",
     "color": "#10B981",
     "summary": "Harness gluten development, long cold fermentation, handmade egg pasta rolling, and extreme-heat wok tossing.",
     "nodes": [
@@ -298,6 +358,18 @@ window.CULINARY_ROADMAP = [
         "difficultyScore": 4.5
       },
       {
+        "id": "node-pad-thai",
+        "tier": "Intermediate",
+        "tierNumber": 3,
+        "title": "Rice Noodle Hydration & Wok Hei",
+        "recipeId": "rec-pad-thai-boran",
+        "coreSkill": "Room-temperature noodle soaking, 1:1:1 tamarind-palm sugar balance, and 300°C wok vapor searing",
+        "prereqs": [
+          "node-mapo-tofu"
+        ],
+        "difficultyScore": 6.2
+      },
+      {
         "id": "node-pizza-margherita",
         "tier": "Intermediate",
         "tierNumber": 3,
@@ -305,7 +377,7 @@ window.CULINARY_ROADMAP = [
         "recipeId": "rec-pizza-margherita",
         "coreSkill": "High-hydration dough kneading, 48-hour cold proofing, and hand-stretching without deflating the cornicione",
         "prereqs": [
-          "node-mapo-tofu"
+          "node-pad-thai"
         ],
         "difficultyScore": 6.5
       },
@@ -313,13 +385,25 @@ window.CULINARY_ROADMAP = [
         "id": "node-ragu-bolognese",
         "tier": "Advanced",
         "tierNumber": 4,
-        "title": "Handmade Tagliatelle al Rag\u00f9",
+        "title": "Handmade Tagliatelle al Ragù",
         "recipeId": "rec-ragu-bolognese",
         "coreSkill": "00 flour and whole yolk pasta kneading, sheet rolling to translucent 1mm thickness, and slow milk-meat reduction",
         "prereqs": [
           "node-pizza-margherita"
         ],
         "difficultyScore": 7.8
+      },
+      {
+        "id": "node-agnolotti",
+        "tier": "Expert",
+        "tierNumber": 5,
+        "title": "Agnolotti del Plin & Paper-Thin Sheeting",
+        "recipeId": "rec-agnolotti-del-plin",
+        "coreSkill": "0.8mm high-yolk pasta rolling, precision pocket pinching, and hazelnut brown butter sage emulsion",
+        "prereqs": [
+          "node-ragu-bolognese"
+        ],
+        "difficultyScore": 8.8
       },
       {
         "id": "node-tonkotsu",
@@ -329,7 +413,7 @@ window.CULINARY_ROADMAP = [
         "recipeId": "rec-tonkotsu-ramen",
         "coreSkill": "18-hour continuous rolling boil marrow emulsification, chashu sous-vide braise, and alkaline noodle timing",
         "prereqs": [
-          "node-ragu-bolognese"
+          "node-agnolotti"
         ],
         "difficultyScore": 9.5
       }

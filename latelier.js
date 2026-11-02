@@ -45,6 +45,7 @@
     braiseTemp: 82,
     braiseHours: 4,
     activeDietaryFilter: null,
+    activeAccomplishmentFilter: 'all',
     unitSystem: localStorage.getItem("atelier_unit_system") || "metric",
     accomplishments: JSON.parse(localStorage.getItem("atelier_accomplishments") || '{"recipes":{},"badges":[],"activeTab":"accomplishments"}')
   };
@@ -123,6 +124,17 @@
 
   function getRecipeAccomplishment(recipeId) {
     return AppState.accomplishments?.recipes?.[recipeId] || null;
+  }
+
+  // Native iOS Haptic Feedback Bridge
+  function triggerHaptic(style = 'MEDIUM') {
+    try {
+      if (window.Capacitor?.Plugins?.Haptics?.impact) {
+        window.Capacitor.Plugins.Haptics.impact({ style: style });
+      } else if (navigator.vibrate) {
+        navigator.vibrate(style === 'HEAVY' ? [40, 40, 80] : 25);
+      }
+    } catch (_) {}
   }
 
   function saveRecipeAccomplishment(recipeId, attemptData) {
@@ -867,8 +879,22 @@
       </div>
 
       <div class="dietary-filter-row" id="dietary-filter-row">
+        <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); align-self:center; margin-right:0.25rem; text-transform:uppercase;">Diet:</span>
         ${['All', 'Vegetarian', 'Vegan', 'Gluten-Free', 'Dairy-Free', 'Pescatarian'].map(d => `
           <button class="dietary-pill${AppState.activeDietaryFilter === (d === 'All' ? null : d.toLowerCase()) ? ' active' : ''}" data-diet="${d === 'All' ? '' : d.toLowerCase()}">${d}</button>
+        `).join('')}
+      </div>
+
+      <div class="dietary-filter-row" id="accomplishment-filter-row" style="margin-top:-0.5rem; margin-bottom:1.5rem;">
+        <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); align-self:center; margin-right:0.25rem; text-transform:uppercase;">Progression:</span>
+        ${[
+          ['all', `All Dishes (${allRecipes.length})`],
+          ['mastered', '★ Mastered'],
+          ['completed', '✓ Accomplished'],
+          ['attempted', '⏱ Attempted'],
+          ['uncooked', 'Uncooked']
+        ].map(([val, label]) => `
+          <button class="dietary-pill${(AppState.activeAccomplishmentFilter || 'all') === val ? ' active' : ''}" data-status-filter="${val}">${label}</button>
         `).join('')}
       </div>
 
@@ -898,7 +924,17 @@
         const matchesCat = !cat || r.category === cat;
         const matchesTime = r.totalMins <= maxTime;
         const matchesDiet = !diet || (r.dietary || []).map(d => d.toLowerCase()).includes(diet);
-        return matchesQ && matchesCui && matchesCat && matchesTime && matchesDiet;
+        const statusFilter = AppState.activeAccomplishmentFilter || 'all';
+        const matchesStatus = (() => {
+          if (statusFilter === 'all') return true;
+          const acc = getRecipeAccomplishment(r.id);
+          if (statusFilter === 'mastered') return acc?.status === 'mastered';
+          if (statusFilter === 'completed') return acc?.status === 'completed' || acc?.status === 'mastered';
+          if (statusFilter === 'attempted') return acc?.status === 'attempted';
+          if (statusFilter === 'uncooked') return !acc;
+          return true;
+        })();
+        return matchesQ && matchesCui && matchesCat && matchesTime && matchesDiet && matchesStatus;
       });
 
       $("#results-count", container).textContent = `Showing ${filtered.length} of ${allRecipes.length} recipes`;
@@ -998,6 +1034,21 @@
           AppState.activeDietaryFilter = val;
           dietRow.querySelectorAll(".dietary-pill").forEach(p => p.classList.remove("active"));
           pill.classList.add("active");
+          filterAndRender();
+        };
+      });
+    }
+
+    // Progression Accomplishment filter pill click handling
+    const statusRow = $("#accomplishment-filter-row", container);
+    if (statusRow) {
+      statusRow.querySelectorAll(".dietary-pill").forEach(pill => {
+        pill.onclick = () => {
+          const val = pill.dataset.statusFilter || 'all';
+          AppState.activeAccomplishmentFilter = val;
+          statusRow.querySelectorAll(".dietary-pill").forEach(p => p.classList.remove("active"));
+          pill.classList.add("active");
+          triggerHaptic('LIGHT');
           filterAndRender();
         };
       });
@@ -2729,6 +2780,9 @@
           <button class="occasion-btn ${activeTab === 'accomplishments' ? 'active' : ''}" data-hub-tab="accomplishments">
             🏆 Accomplishments & Badges (${totalAccomplished})
           </button>
+          <button class="occasion-btn ${activeTab === 'gallery' ? 'active' : ''}" data-hub-tab="gallery">
+            📸 Dish Photo Gallery (${allAttempts.filter(a => a.photo).length})
+          </button>
           <button class="occasion-btn ${activeTab === 'roadmap' ? 'active' : ''}" data-hub-tab="roadmap">
             🗺️ Culinary Skill Tree
           </button>
@@ -2884,6 +2938,57 @@
             </div>
           `}
         </section>
+      ` : ''}
+
+      <!-- ===================================================================
+           TAB 4: DISH PHOTOGRAPHY GALLERY
+           =================================================================== -->
+      ${activeTab === 'gallery' ? `
+        <div style="margin-bottom:2rem;">
+          <h2 style="font-size:2rem; font-family:var(--font-serif); margin-bottom:0.5rem;">Your Authentic Dish Gallery</h2>
+          <p style="color:var(--text-secondary); max-width:760px;">Every photograph logged from your cooking sessions, showcasing your genuine culinary executions, plating craft, and progress over time.</p>
+        </div>
+
+        ${allAttempts.filter(a => a.photo).length ? `
+          <div class="bento-grid" style="grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));">
+            ${allAttempts.filter(a => a.photo).map(att => `
+              <article class="bento-card" style="padding:0; overflow:hidden;">
+                <div style="position:relative; width:100%; height:240px; background:#000;">
+                  <img src="${att.photo}" alt="${esc(att.recipe?.title || 'Dish')}" style="width:100%; height:100%; object-fit:cover;">
+                  <span class="card-badge" style="position:absolute; top:12px; left:12px; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px);">
+                    ${esc(att.recipe?.cuisine || 'Cuisine')}
+                  </span>
+                  <span style="position:absolute; bottom:12px; right:12px; background:rgba(212,175,55,0.95); color:#000; font-family:var(--font-mono); font-size:0.75rem; font-weight:700; padding:0.2rem 0.5rem; border-radius:4px;">
+                    ★ ${att.resultRating}/5
+                  </span>
+                </div>
+                <div style="padding:1.25rem;">
+                  <h3 class="card-title" style="margin:0 0 0.4rem 0;">${esc(att.recipe?.title || 'Accomplished Recipe')}</h3>
+                  <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); display:block; margin-bottom:0.75rem;">
+                    Cooked ${att.date ? att.date.split('T')[0] : 'Recently'}
+                  </span>
+                  ${att.notes ? `
+                    <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5; margin-bottom:0.75rem;">
+                      "${esc(att.notes)}"
+                    </p>
+                  ` : ''}
+                  <button class="btn-primary btn-open-recipe" data-id="${att.recipeId}" style="width:100%; justify-content:center; font-size:0.8rem; margin-top:0.5rem;">
+                    View Recipe →
+                  </button>
+                </div>
+              </article>
+            `).join('')}
+          </div>
+        ` : `
+          <div class="bento-card" style="text-align:center; padding:4rem 1.5rem;">
+            <span style="font-size:3rem; display:block; margin-bottom:1rem; opacity:0.5;">📸</span>
+            <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:#FFFFFF; margin-bottom:0.5rem;">No Dish Photographs Yet</h3>
+            <p style="color:var(--text-muted); max-width:540px; margin:0 auto 1.5rem auto; line-height:1.6;">
+              When you finish cooking a dish in Kitchen Mode, or click "Log Accomplishment" on any recipe, snap a photo of your finished plate. Your personal culinary portfolio will display here!
+            </p>
+            <button class="btn-primary" onclick="window.AtelierApp.navigateTo('recipes')">Browse Recipes to Cook →</button>
+          </div>
+        `}
       ` : ''}
 
       <!-- ===================================================================
