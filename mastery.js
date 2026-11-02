@@ -14,8 +14,23 @@
     "'": "&#39;"
   }[c]));
 
-  // Verified culinary photography helper
+  // Editorial & Accomplished Culinary Image Engine
   window.culinaryImage = (r) => {
+    // 1. Check if user logged their own dish photo in accomplishments
+    const userAcc = (window.AtelierApp?.state || {})?.accomplishments?.recipes?.[r.id];
+    const userPhoto = userAcc?.attempts?.find(a => a.photo)?.photo;
+    if (userPhoto) {
+      return `
+        <figure class="culinary-image culinary-image--user-photo">
+          <img src="${userPhoto}" alt="Your cooked preparation of ${esc(r.title)}" class="loaded" style="opacity:1;">
+          <figcaption class="culinary-image-badge" style="background:rgba(16,185,129,0.92); color:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.5);">
+            ★ Your Dish (${userAcc.resultRating || 5}/5)
+          </figcaption>
+        </figure>
+      `;
+    }
+
+    // 2. Check verified official photography
     const image = window.ATELIER_VERIFIED_IMAGES?.[r.id];
     let src = "";
     if (image?.verified === true && image.src && image.alt && image.source) {
@@ -24,11 +39,40 @@
         if (u.protocol === "https:" || u.origin === location.origin) src = u.href;
       } catch {}
     }
+
+    if (src) {
+      return `
+        <figure class="culinary-image">
+          <img src="${esc(src)}" alt="${esc(image.alt)}" loading="lazy" decoding="async" onload="this.classList.add('loaded')" onerror="this.remove()">
+          <figcaption class="culinary-image-badge">${esc(r.category || "The culinary workshop")}</figcaption>
+        </figure>
+      `;
+    }
+
+    // 3. Luxurious Bespoke Editorial Art Motif
+    const categoryThemes = {
+      dessert: { icon: "🍰", gradient: "radial-gradient(ellipse at 70% 30%, rgba(236,72,153,0.18), rgba(212,175,55,0.08) 55%, #08080d 100%)", accent: "#EC4899" },
+      breakfast: { icon: "🍳", gradient: "radial-gradient(ellipse at 70% 30%, rgba(245,158,11,0.18), rgba(212,175,55,0.08) 55%, #08080d 100%)", accent: "#F59E0B" },
+      lunch: { icon: "🥗", gradient: "radial-gradient(ellipse at 70% 30%, rgba(16,185,129,0.18), rgba(212,175,55,0.08) 55%, #08080d 100%)", accent: "#10B981" },
+      dinner: { icon: "🍷", gradient: "radial-gradient(ellipse at 70% 30%, rgba(220,38,38,0.18), rgba(212,175,55,0.1) 55%, #08080d 100%)", accent: "#D4AF37" },
+      sauce_stock: { icon: "🥘", gradient: "radial-gradient(ellipse at 70% 30%, rgba(212,175,55,0.22), rgba(180,83,9,0.12) 55%, #08080d 100%)", accent: "#D4AF37" },
+      bread: { icon: "🌾", gradient: "radial-gradient(ellipse at 70% 30%, rgba(217,119,6,0.18), rgba(212,175,55,0.08) 55%, #08080d 100%)", accent: "#D97706" },
+      appetizer: { icon: "✨", gradient: "radial-gradient(ellipse at 70% 30%, rgba(139,92,246,0.18), rgba(212,175,55,0.08) 55%, #08080d 100%)", accent: "#8B5CF6" }
+    };
+    const theme = categoryThemes[r.category] || categoryThemes.dinner;
+
     return `
-      <figure class="culinary-image ${src ? "" : "culinary-image-empty"}">
-        <span>${esc(r.cuisine || "L’Atelier")}<small>${src ? "Recipe-specific photograph" : "No verified dish photograph"}</small></span>
-        ${src ? `<img src="${esc(src)}" alt="${esc(image.alt)}" loading="lazy" decoding="async" onload="this.classList.add('loaded')" onerror="this.remove()">` : ""}
-        <figcaption>${esc(r.category || "The culinary workshop")}</figcaption>
+      <figure class="culinary-image culinary-image--bespoke" style="background:${theme.gradient};">
+        <div class="culinary-motif-art">
+          <div class="culinary-motif-ring" style="border-color:${theme.accent}35;">
+            <span class="culinary-motif-icon">${theme.icon}</span>
+          </div>
+          <div class="culinary-motif-meta">
+            <span class="culinary-motif-cuisine" style="color:${theme.accent};">${esc(r.cuisine)}</span>
+            <span class="culinary-motif-title">${esc(r.title)}</span>
+          </div>
+        </div>
+        <figcaption class="culinary-image-badge">${esc((r.category||'').replace('_',' ').toUpperCase())}</figcaption>
       </figure>
     `;
   };

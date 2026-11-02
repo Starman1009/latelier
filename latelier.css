@@ -1767,6 +1767,350 @@ button, a, input, select, textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+/* ==========================================================================
+   CULINARY ACCOMPLISHMENTS, MILESTONE BADGES & SKILL TREE STYLES
+   ========================================================================== */
+
+/* ── Milestone Badge Cards ── */
+.badge-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.25s var(--ease-spring);
+}
+
+.badge-card--unlocked {
+  border-color: rgba(212, 175, 55, 0.4);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), var(--bg-elevated));
+  box-shadow: 0 4px 20px -5px rgba(212, 175, 55, 0.2);
+}
+
+.badge-card--locked {
+  opacity: 0.55;
+  border-style: dashed;
+}
+
+.badge-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.badge-card--unlocked .badge-icon-wrap {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.badge-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.badge-card--unlocked .badge-title {
+  color: var(--gold-primary);
+}
+
+.badge-status-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 9999px;
+  border: 1px solid currentColor;
+}
+
+.badge-card--unlocked .badge-status-tag {
+  color: var(--emerald);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.badge-card--locked .badge-status-tag {
+  color: var(--text-muted);
+}
+
+.badge-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: 0.25rem;
+}
+
+/* ── Cooking History Journal ── */
+.journal-entry-card {
+  padding: 1.5rem;
+  transition: transform 0.2s var(--ease-spring);
+}
+
+.journal-entry-card:hover {
+  transform: translateY(-2px);
+}
+
+.journal-photo-wrap {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-active);
+  box-shadow: var(--shadow-md);
+}
+
+.journal-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.journal-photo:hover {
+  transform: scale(1.06);
+}
+
+/* ── Interactive Skill Tree Roadmap ── */
+.roadmap-track-card {
+  padding: 1.75rem;
+}
+
+.roadmap-nodes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.roadmap-node {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.22s var(--ease-spring);
+}
+
+.roadmap-node:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.node--mastered {
+  border-color: var(--gold-primary);
+  background: linear-gradient(145deg, rgba(212, 175, 55, 0.08), var(--bg-elevated));
+  box-shadow: 0 4px 18px -4px rgba(212, 175, 55, 0.2);
+}
+
+.node--completed {
+  border-color: var(--emerald);
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.06), var(--bg-elevated));
+}
+
+.node--attempted {
+  border-color: var(--amber);
+}
+
+.node--available {
+  border-color: var(--border-subtle);
+}
+
+.roadmap-node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.roadmap-tier-pill {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.roadmap-status-icon {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.node--mastered .roadmap-status-icon { color: var(--gold-primary); }
+.node--completed .roadmap-status-icon { color: var(--emerald); }
+.node--attempted .roadmap-status-icon { color: var(--amber); }
+.node--available .roadmap-status-icon { color: var(--text-muted); opacity: 0.6; }
+
+.roadmap-node-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin: 0 0 0.4rem 0;
+  line-height: 1.25;
+}
+
+.roadmap-node-skill {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Recipe Status Pills (Catalog & Discovery) ── */
+.recipe-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid currentColor;
+}
+
+.recipe-status-pill--mastered {
+  color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.15);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
+}
+
+.recipe-status-pill--completed {
+  color: var(--emerald);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.recipe-status-pill--attempted {
+  color: var(--amber);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.recipe-accomplished-banner {
+  background: var(--bg-elevated);
+  border-left: 4px solid var(--emerald);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Star Rating Widget ── */
+.star-rating-widget {
+  display: flex;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.star-btn {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.15);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.star-btn:hover,
+.star-btn.active {
+  color: var(--gold-primary);
+  transform: scale(1.15);
+}
+
+
+/* ── Bespoke Editorial Culinary Art Motif ── */
+.culinary-image--bespoke {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+  min-height: 160px;
+}
+
+.culinary-motif-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  z-index: 2;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.culinary-motif-ring {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px -2px rgba(0, 0, 0, 0.8);
+}
+
+.culinary-motif-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.culinary-motif-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  max-width: 90%;
+}
+
+.culinary-motif-cuisine {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.culinary-motif-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.25;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.culinary-image-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(10, 10, 16, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  z-index: 3;
+}
+
 /* Print Styles */
 @media print {
   header.app-header, nav.primary-nav, .theme-toggle, .btn-primary, .btn-secondary, .occasion-bar, .app-footer {

@@ -45,7 +45,8 @@
     braiseTemp: 82,
     braiseHours: 4,
     activeDietaryFilter: null,
-    unitSystem: localStorage.getItem("atelier_unit_system") || "metric"
+    unitSystem: localStorage.getItem("atelier_unit_system") || "metric",
+    accomplishments: JSON.parse(localStorage.getItem("atelier_accomplishments") || '{"recipes":{},"badges":[],"activeTab":"accomplishments"}')
   };
 
 
@@ -104,6 +105,295 @@
       return { qty: +(qty * 1.05669).toFixed(1), unit: "qt" };
     }
     return { qty: +(qty).toFixed(qty % 1 === 0 ? 0 : 2), unit: unit };
+  }
+
+
+  // =========================================================================
+  // CULINARY ACCOMPLISHMENTS, REPUTATION & BADGE ENGINE
+  // =========================================================================
+  const CULINARY_MILESTONES = [
+    { id: "first-flame", title: "First Flame", icon: "🔥", desc: "Successfully cooked and accomplished your very first recipe in L'Atelier.", check: (s, r) => s.totalCompleted >= 1 },
+    { id: "saucier", title: "The Saucier", icon: "🥘", desc: "Mastered at least 2 classical sauces or pan emulsions.", check: (s, r) => Object.keys(r).filter(id => { const rec = (window.MASTER_RECIPES||[]).find(x => x.id === id); return rec && (rec.category === 'sauce_stock' || id.includes('hollandaise') || id.includes('cacio') || id.includes('sole')); }).length >= 2 },
+    { id: "pastry-virtuoso", title: "Pastry Virtuoso", icon: "🍰", desc: "Accomplished 3 or more pastries, custards, or plated desserts.", check: (s, r) => Object.keys(r).filter(id => { const rec = (window.MASTER_RECIPES||[]).find(x => x.id === id); return rec && rec.category === 'dessert'; }).length >= 3 },
+    { id: "knife-and-flame", title: "Fire & Steel", icon: "🔪", desc: "Accomplished 4 or more savory mains or multi-stage dinners.", check: (s, r) => Object.keys(r).filter(id => { const rec = (window.MASTER_RECIPES||[]).find(x => x.id === id); return rec && (rec.category === 'dinner' || rec.category === 'lunch'); }).length >= 4 },
+    { id: "global-gastronome", title: "Global Gastronome", icon: "🌍", desc: "Accomplished recipes spanning 4 or more distinct cultural cuisines.", check: (s, r) => { const cuisines = new Set(Object.keys(r).map(id => { const rec = (window.MASTER_RECIPES||[]).find(x => x.id === id); return rec ? rec.cuisine : null; }).filter(Boolean)); return cuisines.size >= 4; } },
+    { id: "perfectionist", title: "Perfectionist", icon: "📈", desc: "Attempted a recipe 2 or more times to hone and elevate your technique.", check: (s, r) => Object.values(r).some(rec => (rec.attempts || []).length >= 2) },
+    { id: "grand-degustation", title: "Grand Degustation", icon: "👑", desc: "Accomplished 10 total recipes across the Master Culinary Library.", check: (s, r) => s.totalCompleted >= 10 }
+  ];
+
+  function getRecipeAccomplishment(recipeId) {
+    return AppState.accomplishments?.recipes?.[recipeId] || null;
+  }
+
+  function saveRecipeAccomplishment(recipeId, attemptData) {
+    if (!AppState.accomplishments) {
+      AppState.accomplishments = { recipes: {}, badges: [], activeTab: "accomplishments" };
+    }
+    if (!AppState.accomplishments.recipes) {
+      AppState.accomplishments.recipes = {};
+    }
+
+    const current = AppState.accomplishments.recipes[recipeId] || {
+      status: "completed",
+      recipeRating: 5,
+      resultRating: 5,
+      totalAttempts: 0,
+      attempts: []
+    };
+
+    current.totalAttempts = (current.totalAttempts || 0) + 1;
+    current.recipeRating = attemptData.recipeRating || current.recipeRating || 5;
+    current.resultRating = attemptData.resultRating || current.resultRating || 5;
+    
+    // Status resolution: if resultRating >= 4.5 and attempts >= 2, award "mastered"
+    if (current.resultRating >= 4.5 && current.totalAttempts >= 2) {
+      current.status = "mastered";
+    } else if (current.resultRating >= 3.0) {
+      current.status = "completed";
+    } else {
+      current.status = "attempted";
+    }
+
+    current.attempts.unshift({
+      id: "att_" + Date.now(),
+      date: attemptData.date || new Date().toISOString(),
+      recipeRating: attemptData.recipeRating,
+      resultRating: attemptData.resultRating,
+      photo: attemptData.photo || null,
+      wentWell: attemptData.wentWell || "",
+      toImprove: attemptData.toImprove || "",
+      actualMins: attemptData.actualMins || null,
+      substitutions: attemptData.substitutions || ""
+    });
+
+    AppState.accomplishments.recipes[recipeId] = current;
+
+    // Evaluate Milestone Badges
+    const completedCount = Object.values(AppState.accomplishments.recipes).filter(r => r.status === 'completed' || r.status === 'mastered').length;
+    const stats = { totalCompleted: completedCount };
+    
+    const unlockedBadges = AppState.accomplishments.badges || [];
+    let newlyUnlocked = [];
+
+    CULINARY_MILESTONES.forEach(m => {
+      if (!unlockedBadges.includes(m.id) && m.check(stats, AppState.accomplishments.recipes)) {
+        unlockedBadges.push(m.id);
+        newlyUnlocked.push(m.title);
+      }
+    });
+
+    AppState.accomplishments.badges = unlockedBadges;
+    localStorage.setItem("atelier_accomplishments", JSON.stringify(AppState.accomplishments));
+
+    // Play victory chime
+    try { playChime(); } catch {}
+
+    if (newlyUnlocked.length) {
+      showNotification(`🏆 Milestone Unlocked: ${newlyUnlocked.join(', ')}!`, "success");
+    } else {
+      showNotification(`Recipe accomplished! Recorded in your Culinary Accomplishments.`, "success");
+    }
+  }
+
+  // Accomplishment Dialog Modal
+  function openAccomplishModal(recipeId) {
+    const recipe = (window.MASTER_RECIPES || []).find(r => r.id === recipeId);
+    if (!recipe) return;
+
+    let dialog = $("#atelier-accomplish-modal");
+    if (!dialog) {
+      dialog = document.createElement("dialog");
+      dialog.id = "atelier-accomplish-modal";
+      dialog.className = "atelier-modal";
+      dialog.style.maxWidth = "680px";
+      document.body.appendChild(dialog);
+    }
+
+    const prev = getRecipeAccomplishment(recipeId);
+    let photoBase64 = null;
+    let recipeRating = prev?.recipeRating || 5;
+    let resultRating = prev?.resultRating || 4;
+
+    dialog.innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1.25rem;">
+        <div>
+          <span class="card-badge" style="color:var(--gold-primary); border-color:var(--border-active);">CULINARY ACCOMPLISHMENT</span>
+          <h2 style="font-family:var(--font-serif); font-size:1.8rem; margin:0.25rem 0 0.15rem 0; color:var(--text-primary);">
+            Log: ${esc(recipe.title)}
+          </h2>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">
+            ${prev ? `Attempt #${(prev.totalAttempts || 0) + 1} · Previous Best: ${prev.resultRating}/5` : 'First Cooking Attempt'}
+          </span>
+        </div>
+        <button class="modal-close-btn" id="btn-close-accomplish">✕</button>
+      </div>
+
+      <form id="form-accomplish" style="display:flex; flex-direction:column; gap:1.25rem;">
+        <!-- Dual Star Rating System -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; background:var(--bg-elevated); padding:1rem 1.25rem; border-radius:var(--radius-lg); border:1px solid var(--border-subtle);">
+          <div>
+            <label style="font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:0.4rem;">Recipe Formulation:</label>
+            <div class="star-rating-widget" id="recipe-stars" data-stars="${recipeRating}">
+              ${[1,2,3,4,5].map(n => `<span class="star-btn ${n <= recipeRating ? 'active' : ''}" data-val="${n}">★</span>`).join('')}
+            </div>
+            <span style="font-size:0.7rem; color:var(--text-muted);">Taste, clarity, instructions</span>
+          </div>
+
+          <div>
+            <label style="font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; color:var(--gold-primary); display:block; margin-bottom:0.4rem;">My Cooking Execution:</label>
+            <div class="star-rating-widget" id="result-stars" data-stars="${resultRating}">
+              ${[1,2,3,4,5].map(n => `<span class="star-btn ${n <= resultRating ? 'active' : ''}" data-val="${n}">★</span>`).join('')}
+            </div>
+            <span style="font-size:0.7rem; color:var(--text-muted);">Doneness, texture, plating</span>
+          </div>
+        </div>
+
+        <!-- Date & Actual Time Taken -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label" for="acc-date">Date Prepared</label>
+            <input type="date" id="acc-date" class="form-input" value="${new Date().toISOString().split('T')[0]}">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="acc-time">Actual Cook Time (Minutes)</label>
+            <input type="number" id="acc-time" class="form-input" min="1" max="1440" value="${recipe.totalMins || 30}">
+          </div>
+        </div>
+
+        <!-- Reflections: What went well & What to improve -->
+        <div class="form-group">
+          <label class="form-label" for="acc-well">What Went Well? (Technique, Flavor, Crispness)</label>
+          <textarea id="acc-well" class="form-input" style="height:65px; font-size:0.875rem;" placeholder="e.g. Great sear on the fish, sauce held its emulsified gloss, seasoning was spot-on..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="acc-improve">What Would You Elevate Next Time?</label>
+          <textarea id="acc-improve" class="form-input" style="height:65px; font-size:0.875rem;" placeholder="e.g. Reduce heat slightly before adding butter, let steak rest 2 minutes longer, slice thinner..."></textarea>
+        </div>
+
+        <!-- Substitutions -->
+        <div class="form-group">
+          <label class="form-label" for="acc-subs">Substitutions or Modifications (Optional)</label>
+          <input type="text" id="acc-subs" class="form-input" placeholder="e.g. Used shallots instead of yellow onion, swapped chardonnay for vermouth...">
+        </div>
+
+        <!-- Photo Upload & Preview -->
+        <div class="form-group">
+          <label class="form-label">Dish Plating Photograph (Optional)</label>
+          <div style="display:flex; gap:1rem; align-items:center;">
+            <label class="btn-secondary" style="cursor:pointer; font-size:0.85rem;">
+              📷 Choose Dish Photo
+              <input type="file" id="acc-photo-input" accept="image/*" style="display:none;">
+            </label>
+            <div id="acc-photo-preview" style="display:none; align-items:center; gap:0.5rem;">
+              <img id="acc-photo-img" style="width:50px; height:50px; object-fit:cover; border-radius:6px; border:1px solid var(--border-active);" alt="Upload preview">
+              <button type="button" id="btn-remove-photo" style="background:none; border:none; color:var(--crimson); cursor:pointer; font-size:0.8rem;">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:flex-end; gap:0.75rem; margin-top:0.5rem; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+          <button type="button" class="btn-secondary" onclick="this.closest('dialog').close()">Cancel</button>
+          <button type="submit" class="btn-primary" style="padding:0.7rem 1.6rem; font-weight:700;">
+            ✦ Save Accomplishment & Claim Star
+          </button>
+        </div>
+      </form>
+    `;
+
+    // Star click handling
+    $$("#recipe-stars .star-btn", dialog).forEach(btn => {
+      btn.onclick = () => {
+        recipeRating = Number(btn.dataset.val);
+        $("#recipe-stars", dialog).dataset.stars = recipeRating;
+        $$("#recipe-stars .star-btn", dialog).forEach(b => {
+          b.classList.toggle("active", Number(b.dataset.val) <= recipeRating);
+        });
+      };
+    });
+
+    $$("#result-stars .star-btn", dialog).forEach(btn => {
+      btn.onclick = () => {
+        resultRating = Number(btn.dataset.val);
+        $("#result-stars", dialog).dataset.stars = resultRating;
+        $$("#result-stars .star-btn", dialog).forEach(b => {
+          b.classList.toggle("active", Number(b.dataset.val) <= resultRating);
+        });
+      };
+    });
+
+    // Image compression and preview handling
+    const photoInput = $("#acc-photo-input", dialog);
+    const photoPreview = $("#acc-photo-preview", dialog);
+    const photoImg = $("#acc-photo-img", dialog);
+    const removePhotoBtn = $("#btn-remove-photo", dialog);
+
+    photoInput.onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (re) => {
+        const img = new Image();
+        img.onload = () => {
+          // Compress to max 800px width/height for local storage efficiency
+          const canvas = document.createElement("canvas");
+          const maxDim = 800;
+          let w = img.width;
+          let h = img.height;
+          if (w > maxDim || h > maxDim) {
+            if (w > h) { h = Math.round(h * (maxDim / w)); w = maxDim; }
+            else { w = Math.round(w * (maxDim / h)); h = maxDim; }
+          }
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, w, h);
+          photoBase64 = canvas.toDataURL("image/jpeg", 0.82);
+          photoImg.src = photoBase64;
+          photoPreview.style.display = "flex";
+        };
+        img.src = re.target.result;
+      };
+      reader.readAsDataURL(file);
+    };
+
+    removePhotoBtn.onclick = () => {
+      photoBase64 = null;
+      photoInput.value = "";
+      photoPreview.style.display = "none";
+    };
+
+    $("#btn-close-accomplish", dialog).onclick = () => dialog.close();
+
+    $("#form-accomplish", dialog).onsubmit = (e) => {
+      e.preventDefault();
+      const attemptData = {
+        recipeRating: recipeRating,
+        resultRating: resultRating,
+        date: $("#acc-date", dialog).value,
+        actualMins: parseInt($("#acc-time", dialog).value) || recipe.totalMins || 30,
+        wentWell: $("#acc-well", dialog).value.trim(),
+        toImprove: $("#acc-improve", dialog).value.trim(),
+        substitutions: $("#acc-subs", dialog).value.trim(),
+        photo: photoBase64
+      };
+
+      saveRecipeAccomplishment(recipeId, attemptData);
+      dialog.close();
+
+      // Refresh current view if open
+      if (AppState.currentView === "notebook") {
+        renderNotebookView($("#main-viewport"));
+      } else if (AppState.currentView === "recipes") {
+        renderRecipeCatalogView($("#main-viewport"));
+      } else if (AppState.activeRecipe && AppState.activeRecipe.id === recipeId) {
+        let m = $("#atelier-recipe-modal");
+        if (m && m.open) renderRecipeModalContent(m, recipe);
+      }
+    };
+
+    dialog.showModal();
   }
 
   // Utilities
@@ -629,7 +919,16 @@
         <article class="bento-card recipe-card">
           ${window.culinaryImage(r)}
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
-            <span class="card-badge">${esc(r.cuisine)}</span>
+            <div style="display:flex; align-items:center; gap:0.4rem;">
+              <span class="card-badge">${esc(r.cuisine)}</span>
+              ${(() => {
+                const acc = getRecipeAccomplishment(r.id);
+                if (!acc) return '';
+                if (acc.status === 'mastered') return '<span class="recipe-status-pill recipe-status-pill--mastered" title="Mastered recipe">★ Mastered</span>';
+                if (acc.status === 'completed') return '<span class="recipe-status-pill recipe-status-pill--completed" title="Accomplished recipe">✓ Accomplished</span>';
+                return '<span class="recipe-status-pill recipe-status-pill--attempted" title="Attempted">⏱ Attempted</span>';
+              })()}
+            </div>
             <div style="display:flex; align-items:center; gap:0.5rem;">
               <span class="recipe-time-badge">⏱ ${r.totalMins}m</span>
               <span style="font-size:0.72rem; font-family:var(--font-mono); color:${diffColor}; text-transform:uppercase; font-weight:600;">${esc(r.difficulty)}</span>
@@ -1409,6 +1708,9 @@
         renderKitchenStep(overlay, recipe);
       } else {
         exitKitchenMode();
+        setTimeout(() => {
+          openAccomplishModal(recipe.id);
+        }, 300);
       }
     };
 
@@ -2390,54 +2692,352 @@
   function renderNotebookView(container) {
     const allRecipes = window.MASTER_RECIPES || [];
     const saved = allRecipes.filter(r => AppState.savedRecipeIds.includes(r.id));
+    const accomplishments = AppState.accomplishments || { recipes: {}, badges: [], activeTab: "accomplishments" };
+    const accRecipes = accomplishments.recipes || {};
+    const accList = Object.entries(accRecipes);
+    const activeTab = accomplishments.activeTab || "accomplishments";
+
+    // Flatten all attempts for cooking history journal
+    const allAttempts = [];
+    accList.forEach(([recId, data]) => {
+      const rec = allRecipes.find(r => r.id === recId);
+      (data.attempts || []).forEach(att => {
+        allAttempts.push({
+          recipeId: recId,
+          recipe: rec,
+          status: data.status,
+          ...att
+        });
+      });
+    });
+    allAttempts.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+
+    const totalAccomplished = accList.filter(([_, d]) => d.status === 'completed' || d.status === 'mastered').length;
+    const totalMastered = accList.filter(([_, d]) => d.status === 'mastered').length;
+    const unlockedBadges = accomplishments.badges || [];
 
     container.innerHTML = `
-      <section style="margin-bottom:2rem;">
-        <span class="card-badge">THE PERSONAL VAULT</span>
-        <h1 style="font-size:2.4rem; font-family:var(--font-serif); margin:0.25rem 0 0.5rem 0;">Your Culinary Notebook & Recipe Box</h1>
-        <p style="color:var(--text-secondary); max-width:760px;">Your saved master recipes, personal tasting notes, and session customizations. Export a complete JSON backup to safeguard your collection.</p>
+      <section class="hero-editorial">
+        <p class="hero-eyebrow">L'ATELIER · CULINARY ACCOMPLISHMENTS & VAULT</p>
+        <h1 class="hero-title">Culinary Accomplishments & Personal Vault</h1>
+        <p class="hero-lead">
+          Track your culinary progression, record genuine cooking accomplishments with dish photographs, unlock milestone badges, and explore the interactive chef skill tree.
+        </p>
+
+        <!-- View Switcher Tabs -->
+        <div class="occasion-bar" style="margin-top:1.5rem;">
+          <button class="occasion-btn ${activeTab === 'accomplishments' ? 'active' : ''}" data-hub-tab="accomplishments">
+            🏆 Accomplishments & Badges (${totalAccomplished})
+          </button>
+          <button class="occasion-btn ${activeTab === 'roadmap' ? 'active' : ''}" data-hub-tab="roadmap">
+            🗺️ Culinary Skill Tree
+          </button>
+          <button class="occasion-btn ${activeTab === 'saved' ? 'active' : ''}" data-hub-tab="saved">
+            ★ Saved Recipe Box (${saved.length})
+          </button>
+        </div>
       </section>
 
-      <div style="display:flex; gap:0.75rem; margin-bottom:2rem;">
-        <button id="btn-export-backup" class="btn-primary">Export JSON Backup</button>
-        <label class="btn-secondary" style="cursor:pointer;">
-          Restore Backup
-          <input type="file" id="file-restore-backup" accept="application/json" style="display:none;">
-        </label>
-      </div>
+      <!-- ===================================================================
+           TAB 1: ACCOMPLISHMENTS & COOKING HISTORY JOURNAL
+           =================================================================== -->
+      ${activeTab === 'accomplishments' ? `
+        <!-- Stats Summary Strip -->
+        <div class="notebook-stats-bar" style="margin-bottom:2rem;">
+          <div class="notebook-stat">
+            <span class="notebook-stat__num">${totalAccomplished}</span>
+            <span class="notebook-stat__label">Accomplished (${Math.round((totalAccomplished / (allRecipes.length || 1)) * 100)}%)</span>
+          </div>
+          <div class="notebook-stat">
+            <span class="notebook-stat__num" style="color:var(--gold-primary);">${totalMastered}</span>
+            <span class="notebook-stat__label">Mastered Dishes</span>
+          </div>
+          <div class="notebook-stat">
+            <span class="notebook-stat__num" style="color:var(--emerald);">${allAttempts.length}</span>
+            <span class="notebook-stat__label">Cooking Sessions</span>
+          </div>
+          <div class="notebook-stat">
+            <span class="notebook-stat__num" style="color:var(--amber);">${unlockedBadges.length} / 7</span>
+            <span class="notebook-stat__label">Milestones Earned</span>
+          </div>
+        </div>
 
-      <h2 style="font-size:1.8rem; font-family:var(--font-serif); margin-bottom:1rem;">Saved Dishes (${saved.length})</h2>
-      ${saved.length ? `
-        <div class="bento-grid">
-          ${saved.map(r => `
-            <article class="bento-card">
-              <div style="display:flex; justify-content:space-between; align-items:start;">
-                <span class="card-badge">${esc(r.cuisine)}</span>
-                <button class="btn-icon btn-remove-saved" data-id="${r.id}" title="Remove from Recipe Box">✕</button>
-              </div>
-              <h3 class="card-title">${esc(r.title)}</h3>
-              <p class="card-desc">${esc(r.summary)}</p>
-              
-              <!-- Personal Notes Area -->
-              <div style="margin:1rem 0; padding-top:0.75rem; border-top:1px solid var(--border-subtle);">
-                <label style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-muted); display:block; margin-bottom:0.35rem;">YOUR TASTING NOTES:</label>
-                <textarea class="form-input user-notes-input" data-id="${r.id}" style="width:100%; height:60px; font-size:0.8rem;" placeholder="Record seasonings, pan temperature tweaks, or wine pairings...">${esc(AppState.userNotes[r.id] || '')}</textarea>
-              </div>
+        <!-- Milestone Badges Grid -->
+        <section class="bento-card" style="margin-bottom:2.5rem;">
+          <span class="card-badge">CULINARY HONORS</span>
+          <h2 style="font-family:var(--font-serif); font-size:1.6rem; margin:0.25rem 0 1rem 0;">Milestone Badges & Honors</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1rem;">
+            ${CULINARY_MILESTONES.map(m => {
+              const unlocked = unlockedBadges.includes(m.id);
+              return `
+                <div class="badge-card ${unlocked ? 'badge-card--unlocked' : 'badge-card--locked'}">
+                  <div class="badge-icon-wrap">${m.icon}</div>
+                  <div style="flex:1;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                      <h4 class="badge-title">${esc(m.title)}</h4>
+                      <span class="badge-status-tag">${unlocked ? 'UNLOCKED' : 'LOCKED'}</span>
+                    </div>
+                    <p class="badge-desc">${esc(m.desc)}</p>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </section>
 
-              <button class="btn-primary btn-open-recipe" data-id="${r.id}" style="width:100%; justify-content:center; margin-top:auto;">
-                Open Full Recipe →
+        <!-- Cooking History Journal -->
+        <section style="margin-bottom:3rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <span class="card-badge">AUTHENTIC LOGBOOK</span>
+              <h2 style="font-family:var(--font-serif); font-size:1.8rem; margin:0.25rem 0;">Your Cooking History Journal</h2>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Real culinary attempts, execution ratings, and chef reflections recorded during your cooking sessions.</p>
+            </div>
+            ${allAttempts.length ? `
+              <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--gold-primary);">
+                ${allAttempts.length} logged sessions
+              </span>
+            ` : ''}
+          </div>
+
+          ${allAttempts.length ? `
+            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+              ${allAttempts.map(entry => `
+                <article class="bento-card journal-entry-card">
+                  <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
+                    ${entry.photo ? `
+                      <div class="journal-photo-wrap">
+                        <img src="${entry.photo}" alt="Finished dish photograph" class="journal-photo" onclick="window.open(this.src)">
+                      </div>
+                    ` : ''}
+                    <div style="flex:1; min-width:260px;">
+                      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.4rem; flex-wrap:wrap; gap:0.5rem;">
+                        <div>
+                          <span class="card-badge" style="margin-bottom:0.25rem;">
+                            ${entry.recipe?.cuisine || 'CULINARY'}
+                          </span>
+                          <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--text-primary); margin:0;">
+                            ${esc(entry.recipe?.title || 'Accomplished Recipe')}
+                          </h3>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:0.75rem;">
+                          <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">
+                            📅 ${entry.date?.split('T')[0] || 'Logged'}
+                          </div>
+                          ${entry.actualMins ? `<span class="recipe-time-badge">⏱ ${entry.actualMins}m</span>` : ''}
+                        </div>
+                      </div>
+
+                      <!-- Ratings Row -->
+                      <div style="display:flex; gap:1.5rem; margin:0.6rem 0; font-family:var(--font-mono); font-size:0.78rem;">
+                        <div>
+                          <span style="color:var(--text-muted);">Execution Result:</span>
+                          <span style="color:var(--gold-primary); font-weight:700;"> ${'★'.repeat(entry.resultRating || 5)}${'☆'.repeat(5 - (entry.resultRating || 5))}</span>
+                        </div>
+                        <div>
+                          <span style="color:var(--text-muted);">Recipe Rating:</span>
+                          <span style="color:var(--amber);"> ${entry.recipeRating || 5}/5</span>
+                        </div>
+                      </div>
+
+                      <!-- Reflections -->
+                      ${entry.wentWell ? `
+                        <div style="background:var(--bg-elevated); padding:0.65rem 0.9rem; border-radius:var(--radius-sm); border-left:3px solid var(--emerald); margin-bottom:0.5rem; font-size:0.85rem;">
+                          <strong style="color:var(--emerald); font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase;">What Went Well:</strong>
+                          <p style="color:var(--text-secondary); margin-top:0.2rem;">${esc(entry.wentWell)}</p>
+                        </div>
+                      ` : ''}
+
+                      ${entry.toImprove ? `
+                        <div style="background:var(--bg-elevated); padding:0.65rem 0.9rem; border-radius:var(--radius-sm); border-left:3px solid var(--gold-primary); margin-bottom:0.5rem; font-size:0.85rem;">
+                          <strong style="color:var(--gold-primary); font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase;">To Elevate Next Time:</strong>
+                          <p style="color:var(--text-secondary); margin-top:0.2rem;">${esc(entry.toImprove)}</p>
+                        </div>
+                      ` : ''}
+
+                      ${entry.substitutions ? `
+                        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.35rem;">
+                          <strong>Modifications:</strong> ${esc(entry.substitutions)}
+                        </div>
+                      ` : ''}
+
+                      <div style="display:flex; justify-content:flex-end; gap:0.5rem; margin-top:0.75rem;">
+                        <button class="btn-primary btn-open-recipe" data-id="${entry.recipeId}" style="font-size:0.8rem; padding:0.35rem 0.85rem;">
+                          View Recipe →
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              `).join('')}
+            </div>
+          ` : `
+            <div class="bento-card" style="text-align:center; padding:3.5rem 1.5rem;">
+              <span style="font-size:3rem; display:block; margin-bottom:1rem; opacity:0.6;">🍳</span>
+              <h3 style="font-family:var(--font-serif); font-size:1.5rem; margin-bottom:0.5rem;">Your Cooking Journal is Ready</h3>
+              <p style="color:var(--text-muted); max-width:480px; margin:0 auto 1.5rem auto; font-size:0.9rem; line-height:1.6;">
+                Every time you cook a dish, click <strong>"Log Accomplishment"</strong> on the recipe card or finish a cooking session in Kitchen Mode. Your photos, execution ratings, and chef reflections will be recorded here.
+              </p>
+              <button class="btn-primary" onclick="window.AtelierApp.navigateTo('recipes')">
+                Browse Master Library to Start Cooking →
               </button>
-            </article>
-          `).join('')}
+            </div>
+          `}
+        </section>
+      ` : ''}
+
+      <!-- ===================================================================
+           TAB 2: CULINARY SKILL TREE & PROGRESSION ROADMAP
+           =================================================================== -->
+      ${activeTab === 'roadmap' ? `
+        <section style="margin-bottom:3rem;">
+          <div style="margin-bottom:2rem;">
+            <span class="card-badge">STRUCTURED CULINARY PROGRESSION</span>
+            <h2 style="font-family:var(--font-serif); font-size:2rem; margin:0.25rem 0 0.5rem 0;">The Culinary Skill Tree</h2>
+            <p style="color:var(--text-secondary); max-width:760px; line-height:1.6;">
+              Progress from complete novice to master technique across 6 distinct culinary disciplines. Each milestone builds directly on prerequisite muscle memory, heat kinetics, and flavor balance.
+            </p>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:2.5rem;">
+            ${(window.CULINARY_ROADMAP || []).map(track => {
+              const trackCompleted = track.nodes.filter(n => {
+                const acc = getRecipeAccomplishment(n.recipeId);
+                return acc && (acc.status === 'completed' || acc.status === 'mastered');
+              }).length;
+              const pct = Math.round((trackCompleted / track.nodes.length) * 100);
+
+              return `
+                <div class="bento-card roadmap-track-card" style="border-top: 3px solid ${track.color};">
+                  <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1.25rem; flex-wrap:wrap; gap:1rem;">
+                    <div>
+                      <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.35rem;">
+                        <span style="font-size:1.8rem;">${track.icon}</span>
+                        <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:var(--text-primary); margin:0;">
+                          ${esc(track.title)}
+                        </h3>
+                      </div>
+                      <p style="color:var(--text-secondary); font-size:0.875rem; max-width:680px; line-height:1.5;">
+                        ${esc(track.summary)}
+                      </p>
+                    </div>
+
+                    <div style="min-width:180px;">
+                      <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-bottom:0.35rem;">
+                        <span>Track Mastery</span>
+                        <span style="color:${track.color}; font-weight:700;">${pct}%</span>
+                      </div>
+                      <div class="mise-progress-track">
+                        <div class="mise-progress-fill" style="width:${pct}%; background:linear-gradient(90deg, ${track.color}, var(--emerald));"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Interconnected Branch Nodes -->
+                  <div class="roadmap-nodes-container">
+                    ${track.nodes.map((node, nIdx) => {
+                      const acc = getRecipeAccomplishment(node.recipeId);
+                      const isCompleted = acc && (acc.status === 'completed' || acc.status === 'mastered');
+                      const isMastered = acc && acc.status === 'mastered';
+                      const isAttempted = acc && acc.status === 'attempted';
+                      const statusClass = isMastered ? 'node--mastered' : isCompleted ? 'node--completed' : isAttempted ? 'node--attempted' : 'node--available';
+
+                      return `
+                        <div class="roadmap-node ${statusClass}">
+                          <div class="roadmap-node-header">
+                            <span class="roadmap-tier-pill">${esc(node.tier.toUpperCase())}</span>
+                            <span class="roadmap-status-icon">${isMastered ? '★ MASTERED' : isCompleted ? '✓ ACCOMPLISHED' : isAttempted ? '⏱ ATTEMPTED' : 'UNLOCKED'}</span>
+                          </div>
+
+                          <h4 class="roadmap-node-title">${esc(node.title)}</h4>
+                          <p class="roadmap-node-skill"><strong>Skill Focus:</strong> ${esc(node.coreSkill)}</p>
+
+                          <div style="margin-top:auto; padding-top:0.75rem; display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted);">
+                              Difficulty: ${node.difficultyScore}/10
+                            </span>
+                            <button class="btn-primary btn-open-recipe" data-id="${node.recipeId}" style="font-size:0.75rem; padding:0.3rem 0.75rem;">
+                              ${isCompleted ? 'Review Dish →' : 'Cook This Step →'}
+                            </button>
+                          </div>
+                        </div>
+                      `;
+                    }).join('')}
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </section>
+      ` : ''}
+
+      <!-- ===================================================================
+           TAB 3: STARRED RECIPE BOX & PERSONAL TASTING NOTES
+           =================================================================== -->
+      ${activeTab === 'saved' ? `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h2 style="font-size:1.8rem; font-family:var(--font-serif); margin:0;">Saved Dishes (${saved.length})</h2>
+            <p style="color:var(--text-secondary); font-size:0.875rem;">Your bookmarked favorites and personal tasting notes.</p>
+          </div>
+          <div style="display:flex; gap:0.5rem;">
+            <button id="btn-export-backup" class="btn-primary" style="font-size:0.85rem;">Export Complete JSON Backup</button>
+            <label class="btn-secondary" style="cursor:pointer; font-size:0.85rem;">
+              Restore Backup
+              <input type="file" id="file-restore-backup" accept="application/json" style="display:none;">
+            </label>
+          </div>
         </div>
-      ` : `
-        <div class="bento-card" style="text-align:center; padding:3rem;">
-          <p style="color:var(--text-muted);">You have not starred any recipes yet. Browse the Master Library and click the star icon to save your favorites here.</p>
-          <button class="btn-secondary" onclick="window.AtelierApp.navigateTo('recipes')" style="margin-top:1rem;">Explore Recipe Library →</button>
-        </div>
-      `}
+
+        ${saved.length ? `
+          <div class="bento-grid">
+            ${saved.map(r => `
+              <article class="bento-card">
+                <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:0.5rem;">
+                  <span class="card-badge">${esc(r.cuisine)}</span>
+                  <button class="btn-icon btn-remove-saved" data-id="${r.id}" title="Remove from Recipe Box">✕</button>
+                </div>
+                <h3 class="card-title">${esc(r.title)}</h3>
+                <p style="font-size:0.8rem; font-family:var(--font-mono); color:var(--gold-primary); margin-bottom:0.35rem;">${r.totalMins}m · ${esc(r.difficulty)}</p>
+                ${(r.dietary && r.dietary.length) ? `<div class="recipe-dietary-tags" style="margin-bottom:0.5rem;">${(r.dietary||[]).slice(0,3).map(d => `<span class="recipe-diet-tag">${esc(d)}</span>`).join('')}</div>` : ''}
+                <p class="card-desc">${esc(r.summary)}</p>
+                
+                <!-- Personal Notes Area -->
+                <div style="margin:1rem 0; padding-top:0.75rem; border-top:1px solid var(--border-subtle);">
+                  <label style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-muted); display:block; margin-bottom:0.35rem;">YOUR TASTING NOTES:</label>
+                  <textarea class="form-input user-notes-input" data-id="${r.id}" style="width:100%; height:60px; font-size:0.8rem;" placeholder="Record seasonings, pan temperature tweaks, or wine pairings...">${esc(AppState.userNotes[r.id] || '')}</textarea>
+                </div>
+
+                <div style="display:flex; gap:0.5rem; margin-top:auto;">
+                  <button class="btn-primary btn-open-recipe" data-id="${r.id}" style="flex:1; justify-content:center; font-size:0.8rem;">
+                    Open Recipe →
+                  </button>
+                  <button class="btn-secondary btn-accomplish-direct" data-id="${r.id}" style="font-size:0.8rem; padding:0.4rem 0.8rem;" title="Log accomplishment">
+                    ★
+                  </button>
+                </div>
+              </article>
+            `).join('')}
+          </div>
+        ` : `
+          <div class="bento-card" style="text-align:center; padding:3.5rem 1.5rem;">
+            <p style="color:var(--text-muted); font-size:0.95rem;">You have not starred any recipes yet. Browse the Master Library and click the star icon to save your favorites here.</p>
+            <button class="btn-secondary" onclick="window.AtelierApp.navigateTo('recipes')" style="margin-top:1rem;">Explore Recipe Library →</button>
+          </div>
+        `}
+      ` : ''}
     `;
 
+    // Tab Switcher Handling
+    $$(".occasion-btn[data-hub-tab]", container).forEach(btn => {
+      btn.onclick = () => {
+        AppState.accomplishments.activeTab = btn.dataset.hubTab;
+        localStorage.setItem("atelier_accomplishments", JSON.stringify(AppState.accomplishments));
+        renderNotebookView(container);
+      };
+    });
+
+    // Event Bindings
     $$(".btn-remove-saved", container).forEach(b => {
       b.onclick = () => {
         toggleSaveRecipe(b.dataset.id);
@@ -2445,55 +3045,72 @@
       };
     });
 
-    $$(".user-notes-input", container).forEach(textarea => {
-      textarea.onchange = (e) => {
-        AppState.userNotes[e.target.dataset.id] = e.target.value;
-        localStorage.setItem("atelier_user_notes", JSON.stringify(AppState.userNotes));
-        showNotification("Notes saved.");
-      };
-    });
-
     $$(".btn-open-recipe", container).forEach(b => {
       b.onclick = () => openRecipeModal(b.dataset.id);
     });
 
-    $("#btn-export-backup", container).onclick = () => {
-      const backup = {
-        version: "2.0",
-        timestamp: new Date().toISOString(),
-        savedRecipeIds: AppState.savedRecipeIds,
-        userNotes: AppState.userNotes,
-        shoppingList: AppState.shoppingList,
-        flavorProfile: AppState.flavorProfile
-      };
-      const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `latelier-backup-${new Date().toISOString().split('T')[0]}.json`;
-      a.click();
-      URL.revokeObjectURL(url);
-      showNotification("Backup downloaded successfully.");
-    };
+    $$(".btn-accomplish-direct", container).forEach(b => {
+      b.onclick = () => openAccomplishModal(b.dataset.id);
+    });
 
-    $("#file-restore-backup", container).onchange = async (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      try {
-        const text = await file.text();
-        const data = JSON.parse(text);
-        if (data.savedRecipeIds) AppState.savedRecipeIds = data.savedRecipeIds;
-        if (data.userNotes) AppState.userNotes = data.userNotes;
-        if (data.shoppingList) AppState.shoppingList = data.shoppingList;
-        localStorage.setItem("atelier_saved_recipes", JSON.stringify(AppState.savedRecipeIds));
-        localStorage.setItem("atelier_user_notes", JSON.stringify(AppState.userNotes));
-        localStorage.setItem("atelier_shopping_v2", JSON.stringify(AppState.shoppingList));
-        renderNotebookView(container);
-        showNotification("Backup restored successfully!");
-      } catch (err) {
-        showNotification("Failed to parse backup file.");
-      }
-    };
+    let _notesDebounce = null;
+    $$(".user-notes-input", container).forEach(textarea => {
+      textarea.oninput = (e) => {
+        AppState.userNotes[e.target.dataset.id] = e.target.value;
+        clearTimeout(_notesDebounce);
+        _notesDebounce = setTimeout(() => {
+          localStorage.setItem("atelier_user_notes", JSON.stringify(AppState.userNotes));
+          showNotification("Notes saved.", "success");
+        }, 800);
+      };
+    });
+
+    const exportBtn = $("#btn-export-backup", container);
+    if (exportBtn) {
+      exportBtn.onclick = () => {
+        const backup = {
+          version: "3.0",
+          timestamp: new Date().toISOString(),
+          savedRecipeIds: AppState.savedRecipeIds,
+          userNotes: AppState.userNotes,
+          shoppingList: AppState.shoppingList,
+          flavorProfile: AppState.flavorProfile,
+          accomplishments: AppState.accomplishments
+        };
+        const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `latelier-backup-${new Date().toISOString().split('T')[0]}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showNotification("Full culinary backup downloaded successfully.", "success");
+      };
+    }
+
+    const restoreInput = $("#file-restore-backup", container);
+    if (restoreInput) {
+      restoreInput.onchange = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        try {
+          const text = await file.text();
+          const data = JSON.parse(text);
+          if (data.savedRecipeIds) AppState.savedRecipeIds = data.savedRecipeIds;
+          if (data.userNotes) AppState.userNotes = data.userNotes;
+          if (data.shoppingList) AppState.shoppingList = data.shoppingList;
+          if (data.accomplishments) AppState.accomplishments = data.accomplishments;
+          localStorage.setItem("atelier_saved_recipes", JSON.stringify(AppState.savedRecipeIds));
+          localStorage.setItem("atelier_user_notes", JSON.stringify(AppState.userNotes));
+          localStorage.setItem("atelier_shopping_v2", JSON.stringify(AppState.shoppingList));
+          if (data.accomplishments) localStorage.setItem("atelier_accomplishments", JSON.stringify(AppState.accomplishments));
+          renderNotebookView(container);
+          showNotification("Culinary backup restored successfully!", "success");
+        } catch (err) {
+          showNotification("Failed to parse backup file.", "error");
+        }
+      };
+    }
   }
 
   // =========================================================================
@@ -2622,6 +3239,18 @@
         ${(recipe.dietary || []).map(d => `<span class="recipe-diet-tag recipe-diet-tag--lg">${esc(d)}</span>`).join('')}
       </div>` : ''}
 
+      ${(() => {
+        const acc = getRecipeAccomplishment(recipe.id);
+        if (!acc) return '';
+        const statusLabel = acc.status === 'mastered' ? '★ MASTERED DISH' : '✓ ACCOMPLISHED';
+        const color = acc.status === 'mastered' ? 'var(--gold-primary)' : 'var(--emerald)';
+        return `
+          <div class="recipe-accomplished-banner" style="border-left-color:${color};">
+            <strong style="color:${color}; font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase;">${statusLabel} (${acc.resultRating}/5)</strong>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.2rem;">You cooked this dish on ${acc.attempts?.[0]?.date?.split('T')[0] || 'recent session'} · ${acc.totalAttempts} total attempt(s).</p>
+          </div>
+        `;
+      })()}
       <h1 style="font-size:clamp(2rem, 3.5vw, 2.8rem); font-family:var(--font-serif); margin-bottom:0.5rem; line-height:1.15;">
         ${esc(recipe.title)}
       </h1>
@@ -2658,7 +3287,8 @@
         </div>
 
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <button id="btn-modal-cook" class="btn-primary">▶ Cook in Kitchen Mode</button>
+          <button id="btn-modal-accomplish" class="btn-primary" style="background:linear-gradient(135deg, var(--gold-primary), var(--amber)); color:#000; font-weight:700;">★ Log Accomplishment</button>
+          <button id="btn-modal-cook" class="btn-secondary">▶ Kitchen Mode</button>
           <button id="btn-modal-add-shopping" class="btn-secondary">+ Add to Shopping List</button>
           <button id="btn-modal-print" class="btn-secondary" title="Print recipe card">⎙ Print</button>
           <button id="btn-modal-star" class="btn-icon">
@@ -2808,6 +3438,11 @@
         renderRecipeModalContent(modal, recipe);
         showNotification("Switched recipe to US Imperial units (oz/cups).");
       };
+    }
+
+        const accBtn = $("#btn-modal-accomplish", modal);
+    if (accBtn) {
+      accBtn.onclick = () => openAccomplishModal(recipe.id);
     }
 
     $("#btn-modal-cook", modal).onclick = () => {

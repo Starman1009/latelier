@@ -1,3 +1,35 @@
+## Master Continuation & Accomplishments Milestone — 2026-11-02
+
+- **Recipe Accomplishment & Cooking Journal System (`latelier.js`, `latelier.css`):**
+  - Implemented dual-score accomplishment tracking (`atelier_accomplishments` in LocalStorage) separating Recipe Formulation Quality (1–5 stars) from Personal Execution Result (1–5 stars).
+  - Modal prompt with canvas-compressed (800px, 0.82 JPEG) base64 dish photography, structured reflection ("What went well" / "To elevate next time"), actual cook duration, and ingredient substitutions.
+  - Automatically pops completion modal upon completing the final step in Kitchen Mode.
+  - Added visual accomplishment status badges across all discovery & catalog cards: `★ Mastered`, `✓ Accomplished`, and `⏱ Attempted`.
+  - Implemented 7 milestone honors: *First Flame*, *The Saucier*, *Pastry Virtuoso*, *Fire & Steel*, *Global Gastronome*, *Perfectionist*, and *Grand Degustation*.
+- **Culinary Progression Skill Tree & Roadmap (`data-roadmap.js`, `latelier.js`):**
+  - 6 structured culinary tracks across 24 milestone nodes with difficulty ratings (out of 10) and prerequisite dependencies:
+    1. *Egg Cookery & Foundations*
+    2. *Classical Sauces & Pan Architecture*
+    3. *Pâtisserie, Custards & Confectionery*
+    4. *Seafood & Delicate Proteins*
+    5. *Meat, Roasting & Braising Kinetics*
+    6. *Artisan Dough, Pasta & Wok Craft*
+  - Seamless integration into Notebook Hub: Progress bars, milestone unlock indicators, and direct "Cook This Step" launches.
+- **Editorial Dish Visual Motifs & Authentic User Dish Photography Engine (`mastery.js`):**
+  - Dynamic `window.culinaryImage(r)` displays authentic user-cooked dish photos when available with star rating overlay.
+  - High-res culinary photography fallback.
+  - Bespoke obsidian editorial art motif fallback featuring cuisine typography, category insignia rings, and golden badge accents.
+- **Metric ↔ US Imperial Live Dynamic Unit Converter:**
+  - One-click pill in recipe modal header converts all gram weights and ml volumes into ounces, pounds, cups, tablespoons, and teaspoons with intelligent fractional rounding.
+- **Le Lexique Culinaire (French Culinary Glossary Tooltips):**
+  - Classical French culinary terms (*mise en place*, *brunoise*, *chiffonade*, *beurre monté*, *jus lié*, *gastrique*, *nappe*, *sous-vide*, *concasse*, *mirepoix*, *velouté*, *fond*) are automatically detected and wrapped in dotted underline tags with pronunciation and plain-English definitions on hover.
+- **Native iOS PWA & Capacitor Foundation:**
+  - Added Capacitor iOS configuration (`capacitor.config.json`, `package.json`, `@capacitor/core`, `@capacitor/ios`).
+  - Safe-area insets (`env(safe-area-inset-top)`, `env(safe-area-inset-bottom)`) integrated into header, sticky nav, kitchen mode, and modals to support iPhone Dynamic Island and home bar.
+  - Added `IOS_DEPLOYMENT_GUIDE.md` detailing Xcode compilation, TestFlight distribution, and App Store submission.
+- **Service Worker & Cache:**
+  - Cached `data-roadmap.js` in `sw.js` and bumped cache to `atelier-kitchen-v17`.
+
 ## Continuation audit — 2026-11-02
 
 - Retained 153 master records with exactly 28 top-level keys. Filled 472 missing nested structural fields using empty strings/nulls (and ordinal step numbers), without inventing recipe facts. Existing draft provenance moved to `recipe-provenance.json`.
