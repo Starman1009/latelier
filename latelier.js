@@ -1610,6 +1610,7 @@
               <option value="herbs">Micro-Greens</option>
             </select>
             <button id="btn-clear-canvas" class="btn-secondary" style="font-size:0.8rem; padding:0.3rem 0.7rem;">Clear Canvas</button>
+            <button id="btn-export-canvas" class="btn-primary" style="font-size:0.8rem; padding:0.3rem 0.7rem;">Export PNG ⬇</button>
           </div>
         </div>
 
@@ -1817,6 +1818,13 @@
 
       $("#plating-vessel", container).onchange = (e) => drawVessel(e.target.value);
       $("#btn-clear-canvas", container).onclick = () => drawVessel(currentVessel);
+      $("#btn-export-canvas", container).onclick = () => {
+        const link = document.createElement("a");
+        link.download = "latelier-plating-design.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        showNotification("Plating composition exported as PNG.");
+      };
 
       let isDrawing = false;
       canvas.onmousedown = (e) => { isDrawing = true; paint(e); };
@@ -2356,6 +2364,7 @@
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
           <button id="btn-modal-cook" class="btn-primary">▶ Cook in Kitchen Mode</button>
           <button id="btn-modal-add-shopping" class="btn-secondary">+ Add to Shopping List</button>
+          <button id="btn-modal-print" class="btn-secondary" title="Print recipe card">⎙ Print</button>
           <button id="btn-modal-star" class="btn-icon">
             ${AppState.savedRecipeIds.includes(recipe.id) ? '★' : '☆'}
           </button>
@@ -2504,6 +2513,8 @@
       localStorage.setItem("atelier_shopping_v2", JSON.stringify(AppState.shoppingList));
       showNotification(`Added ${recipe.ingredients.length} ingredients to shopping list.`);
     };
+
+    $("#btn-modal-print", modal).onclick = () => window.print();
 
     $("#btn-modal-star", modal).onclick = () => {
       toggleSaveRecipe(recipe.id);

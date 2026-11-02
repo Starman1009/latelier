@@ -168,7 +168,7 @@
       </button>
       <button onclick="switchWorkspace('studio')" id="nav-studio" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all flex items-center gap-1.5">
         <i data-lucide="atom" class="w-3.5 h-3.5 text-cyanLab"></i>
-        <span>Exo-Studio Labs</span>
+        <span>Culinary Studio</span>
       </button>
       <button onclick="switchWorkspace('provisions')" id="nav-provisions" class="px-3 py-1.5 rounded-lg text-stone-400 hover:text-white transition-all flex items-center gap-1.5">
         <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
@@ -536,12 +536,12 @@
     </section>
 
     <!-- =========================================================================
-         WORKSPACE 3: ARGON EXO-STUDIO LABS (3D CAD, GC-MS, MAILLARD, EQ BRINE)
+         WORKSPACE 3: L'ATELIER CULINARY STUDIO (3D CAD, GC-MS, MAILLARD, EQ BRINE)
          ========================================================================= -->
     <section id="ws-studio" class="view-section hidden space-y-6">
       <div class="bento-card rounded-2xl p-5 flex flex-wrap justify-between items-center gap-4">
         <div>
-          <span class="text-[10px] font-mono uppercase tracking-widest text-cyanLab">Argon Culinary Physics & CAD Suite</span>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-cyanLab">L'Atelier Culinary Physics & CAD Suite</span>
           <h2 class="text-2xl font-serif font-bold text-white">Interactive Gastronomy Laboratories</h2>
         </div>
         <div class="flex flex-wrap gap-1.5 text-xs font-display">
@@ -2303,7 +2303,7 @@
     }
 
     /* =========================================================
-       6. ARGON EXO-STUDIO LABS (3D CAD, GC-MS, MAILLARD, EQ)
+       6. L'ATELIER CULINARY STUDIO (3D CAD, GC-MS, MAILLARD, EQ)
        ========================================================= */
     function setStudioLab(lab) {
       ['plating', 'compounds', 'kinetics', 'osmosis', 'molecular'].forEach(k => {
@@ -2913,10 +2913,10 @@
       { label: "Brigade: Open Backward-Scheduled Timeline", action: () => { switchWorkspace('brigade'); switchBrigadeSubTab('timeline'); } },
       { label: "Brigade: Launch High-Visibility Live Service Mode", action: () => { switchWorkspace('brigade'); switchBrigadeSubTab('service'); } },
       { label: "Brigade: View FDA HACCP vs. Culinary Quality Storage", action: () => { switchWorkspace('brigade'); switchBrigadeSubTab('haccp'); } },
-      { label: "Exo-Studio: Open 3D Ceramic Plating CAD", action: () => { switchWorkspace('studio'); setStudioLab('plating'); } },
-      { label: "Exo-Studio: Open GC-MS Volatile Compound Network", action: () => { switchWorkspace('studio'); setStudioLab('compounds'); } },
-      { label: "Exo-Studio: Open Maillard & 1D Fourier Thermal Simulator", action: () => { switchWorkspace('studio'); setStudioLab('kinetics'); } },
-      { label: "Exo-Studio: Open Equilibrium Brining & Dry-Age Lab", action: () => { switchWorkspace('studio'); setStudioLab('osmosis'); } },
+      { label: "Culinary Studio: Open 3D Ceramic Plating CAD", action: () => { switchWorkspace('studio'); setStudioLab('plating'); } },
+      { label: "Culinary Studio: Open GC-MS Volatile Compound Network", action: () => { switchWorkspace('studio'); setStudioLab('compounds'); } },
+      { label: "Culinary Studio: Open Maillard & 1D Fourier Thermal Simulator", action: () => { switchWorkspace('studio'); setStudioLab('kinetics'); } },
+      { label: "Culinary Studio: Open Equilibrium Brining & Dry-Age Lab", action: () => { switchWorkspace('studio'); setStudioLab('osmosis'); } },
       { label: "Provisions: Open Consolidated Grocery Matrix", action: () => switchWorkspace('provisions') },
       { label: "Archive: Browse & Search Full Recipe Corpus", action: () => switchWorkspace('archive') }
     ];
