@@ -5,6 +5,8 @@
 
 (() => {
   "use strict";
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;",
@@ -18,13 +20,13 @@
   window.culinaryImage = (r) => {
     // 1. Check if user logged their own dish photo in accomplishments
     const userAcc = (window.AtelierApp?.state || {})?.accomplishments?.recipes?.[r.id];
-    const userPhoto = userAcc?.attempts?.find(a => a.photo)?.photo;
+    const userPhoto = userAcc?.attempts?.find(a => typeof a.photo === 'string' && /^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(a.photo))?.photo;
     if (userPhoto) {
       return `
         <figure class="culinary-image culinary-image--user-photo">
-          <img src="${userPhoto}" alt="Your cooked preparation of ${esc(r.title)}" class="loaded" style="opacity:1;">
+          <img src="${esc(userPhoto)}" alt="Your cooked preparation of ${esc(r.title)}" class="loaded" style="opacity:1;">
           <figcaption class="culinary-image-badge" style="background:rgba(16,185,129,0.92); color:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.5);">
-            ★ Your Dish (${userAcc.resultRating || 5}/5)
+            ★ Your Dish (${esc(userAcc.resultRating || 5)}/5)
           </figcaption>
         </figure>
       `;

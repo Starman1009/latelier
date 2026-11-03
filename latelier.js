@@ -2861,7 +2861,7 @@
                   <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
                     ${entry.photo ? `
                       <div class="journal-photo-wrap">
-                        <img src="${entry.photo}" alt="Finished dish photograph" class="journal-photo" onclick="window.open(this.src)">
+                        <img src="${esc(entry.photo)}" alt="Finished dish photograph" class="journal-photo" onclick="window.open(this.src)">
                       </div>
                     ` : ''}
                     <div style="flex:1; min-width:260px;">
@@ -2954,7 +2954,7 @@
             ${allAttempts.filter(a => a.photo).map(att => `
               <article class="bento-card" style="padding:0; overflow:hidden;">
                 <div style="position:relative; width:100%; height:240px; background:#000;">
-                  <img src="${att.photo}" alt="${esc(att.recipe?.title || 'Dish')}" style="width:100%; height:100%; object-fit:cover;">
+                  <img src="${esc(att.photo)}" alt="${esc(att.recipe?.title || 'Dish')}" style="width:100%; height:100%; object-fit:cover;">
                   <span class="card-badge" style="position:absolute; top:12px; left:12px; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px);">
                     ${esc(att.recipe?.cuisine || 'Cuisine')}
                   </span>

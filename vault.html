@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="latelier.css?v=18">
-  <link rel="stylesheet" href="vault.css?v=18">
+  <link rel="stylesheet" href="vault.css?v=20">
 </head>
 <body class="vault-body-root">
   <main class="vault-shell">
@@ -29,7 +29,7 @@
       <div class="vault-header-actions">
         <div class="vault-security-pill" id="vault-security-indicator">
           <span class="vault-pulse-dot"></span>
-          <span>AES-256-GCM Hardware Encrypted</span>
+          <span>AES-256-GCM Encrypted Archive</span>
         </div>
         <button type="button" id="btn-vault-shortcuts" class="vault-nav-back" style="cursor:pointer;" title="View Keyboard Shortcuts (press ?)">
           <span>⌨️</span> Shortcuts
@@ -53,7 +53,7 @@
         <span class="vault-kicker">CONFIDENTIAL BRIGADE ARCHIVES</span>
         <h1 class="vault-gate-title">The Executive Culinary Vault</h1>
         <p class="vault-gate-desc">
-          Client-side in-memory decryption. Access all 12 authentic restaurant kitchen manuals, 750 high-resolution page scans, operational lineset specs, and master batch recipes.
+          Client-side in-memory decryption. Access all 12 authentic restaurant kitchen manuals, 757 source page images, operational lineset specs, and master batch recipes.
         </p>
 
         <form id="unlock" class="vault-gate-form">
@@ -77,7 +77,7 @@
         <div class="vault-trust-strip">
           <div class="vault-trust-item">
             <span class="vault-trust-icon">🛡️</span>
-            <span>Zero-Knowledge Decryption</span>
+            <span>Local Browser Decryption</span>
           </div>
           <div class="vault-trust-item">
             <span class="vault-trust-icon">⚡</span>
@@ -85,7 +85,7 @@
           </div>
           <div class="vault-trust-item">
             <span class="vault-trust-icon">🚫</span>
-            <span>Zero Plaintext Transmission</span>
+            <span>Encrypted Source Files</span>
           </div>
         </div>
       </div>
@@ -195,7 +195,8 @@
     </div>
   </main>
 
-  <script src="vault.js?v=18"></script>
+  <script src="vault-quantities.js?v=20"></script>
+  <script src="vault.js?v=20"></script>
   <script>
     // Eye toggle for password visibility
     const pwdInput = document.getElementById('password');

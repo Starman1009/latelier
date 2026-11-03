@@ -1,0 +1,4 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Private quantity checks</title><h1>Private quantity checks</h1><pre id="results"></pre><script src="vault-quantities.js"></script><script>
+const cases=[['1 T + 1 t',2,'2 T + 2 t'],['3 lb 10 oz',2,'6 lb + 20 oz'],['1 ½ t',2,'3 t'],['1½ t',2,'3 t'],['½ t',.5,'0.25 t'],['1/8 t',.5,'0.0625 t'],['1 1/2 oz',2,'3 oz'],['2-3 oz',2,null],['2 oz (divided)',2,null],['to taste',2,null],['1/0 oz',2,null],['3 oz +',2,null],['27 fl oz',2,'54 fl oz'],['5 oz',1,'5 oz']];
+document.querySelector('#results').textContent=cases.map(([input,factor,want])=>`${VaultQuantities.scale(input,factor)===want?'PASS':'FAIL'} ${input} × ${factor}`).join('\n');
+</script></html>

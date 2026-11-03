@@ -30,7 +30,9 @@
     }
   }
 
+  let modalReturnFocus = null;
   function openLightbox(src, title, tag) {
+    modalReturnFocus = document.activeElement;
     const modal = $('#vault-lightbox');
     const img = $('#vault-lightbox-img');
     const titleEl = $('#vault-lightbox-title');
@@ -46,43 +48,25 @@
     if (download) download.href = src;
     updateLightboxTransform();
     modal.hidden = false;
+    $("#vault-lightbox-close")?.focus();
   }
 
   function closeLightbox() {
     const modal = $('#vault-lightbox');
     if (modal) modal.hidden = true;
+    if (modalReturnFocus?.isConnected) modalReturnFocus.focus();
+    modalReturnFocus = null;
     lightboxZoom = 1;
     panOffset = { x: 0, y: 0 };
     updateLightboxTransform();
   }
 
-  function scaleNumberString(str, factor) {
-    if (factor === 1 || !str) return str;
-    const numRegex = /^(\d+\s+\d+\/\d+|\d+\/\d+|\d+(?:\.\d+)?)\s*(.*)$/;
-    const m = str.trim().match(numRegex);
-    if (!m) return str;
-    let numVal = 0;
-    const numPart = m[1];
-    const unitPart = m[2] ? ' ' + m[2] : '';
-
-    if (numPart.includes(' ')) {
-      const parts = numPart.split(' ');
-      const frac = parts[1].split('/');
-      numVal = parseFloat(parts[0]) + (parseFloat(frac[0]) / parseFloat(frac[1]));
-    } else if (numPart.includes('/')) {
-      const frac = numPart.split('/');
-      numVal = parseFloat(frac[0]) / parseFloat(frac[1]);
-    } else {
-      numVal = parseFloat(numPart);
-    }
-
-    if (isNaN(numVal) || numVal <= 0) return str;
-    const scaled = numVal * factor;
-    const formatted = scaled % 1 === 0 ? scaled.toFixed(0) : parseFloat(scaled.toFixed(2)).toString();
-    return `${formatted}${unitPart}`;
+  function scaleNumberString(value, factor) {
+    return window.VaultQuantities.scale(value, factor);
   }
 
   function syncToPublicProvisions() {
+    if (!$('#allow-public-export')?.checked) return;
     const raw = shopping.trim();
     if (!raw) {
       notifyVault('Private provisions list is empty. Add batch items from recipe tables first.', false);
@@ -90,9 +74,9 @@
     }
     try {
       const existing = JSON.parse(localStorage.getItem('atelier_shopping_v2') || '[]');
-      const lines = raw.split('\n').filter(l => l.trim() && !l.startsWith('/*'));
+      const lines = raw.split('\n').map(l => l.replace(/^[☐☑✓]\s*/, '').trim()).filter(l => l && !l.startsWith('/*'));
       let addedCount = 0;
-      const seenNames = new Set(existing.map(i => (i.name || '').toLowerCase()));
+      const seenNames = new Set(existing.map(i => ((i.name || '') + '|' + (i.qty || '')).toLowerCase()));
 
       lines.forEach(line => {
         let name = line;
@@ -102,17 +86,18 @@
           qty = parts[0].trim();
           name = parts[1].trim();
         }
-        if (!seenNames.has(name.toLowerCase())) {
+        const identity = (name + '|' + qty).toLowerCase();
+        if (!seenNames.has(identity)) {
           existing.push({
             id: 'priv-' + Math.random().toString(36).substring(2, 9),
             name: name,
             qty: qty,
             unit: '',
-            category: 'Salon Privé Provisions',
-            checked: false,
+            dept: 'Pantry',
+            done: false,
             timestamp: Date.now()
           });
-          seenNames.add(name.toLowerCase());
+          seenNames.add(identity);
           addedCount++;
         }
       });
@@ -187,6 +172,16 @@
 
     modal.hidden = false;
   }
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    const modal = [...document.querySelectorAll('[role="dialog"]')].reverse().find(m => !m.hidden);
+    if (!modal) return;
+    const items = [...modal.querySelectorAll('button:not([disabled]),a[href],input,select,textarea,[tabindex="0"]')].filter(el => el.getClientRects().length);
+    if (!items.length) return;
+    const first=items[0],last=items[items.length-1];
+    if (!modal.contains(document.activeElement) || (!event.shiftKey && document.activeElement===last)) {event.preventDefault();first.focus();}
+    else if (event.shiftKey && document.activeElement===first) {event.preventDefault();last.focus();}
+  });
   const PAGE_SIZE = 40;
 
   async function decrypt(file, activeKey = key) {
@@ -277,6 +272,11 @@
   };
 
   function releaseImages() {
+    closeLightbox();
+    $('#vault-lightbox-img')?.removeAttribute('src');
+    $('#vault-lightbox-download')?.removeAttribute('href');
+    if ($('#vault-lightbox-title')) $('#vault-lightbox-title').textContent = '';
+    if ($('#vault-lightbox-tag')) $('#vault-lightbox-tag').textContent = '';
     urls.forEach(URL.revokeObjectURL);
     urls = [];
     readerVersion++;
@@ -285,6 +285,8 @@
   function lock() {
     session++;
     releaseImages();
+    $("#vault-brigade-sheet-content")?.replaceChildren();
+    if ($("#vault-brigade-sheet-modal")) $("#vault-brigade-sheet-modal").hidden = true;
     key = null;
     data = null;
     rows = [];
@@ -300,7 +302,7 @@
     $('#login').hidden = false;
     $('#lock').hidden = true;
     $('#password').value = '';
-    $('#message').textContent = 'Vault locked. Decrypted memory, ephemeral images, and notes wiped completely.';
+    $('#message').textContent = 'Vault locked. Session pages and notes cleared. Any items explicitly exported to public provisions remain there.';
     $('#message').style.color = 'var(--text-muted)';
     $('#password').focus();
   }
@@ -363,7 +365,7 @@
       <div class="vault-stats-grid">
         <div class="vault-stat-card">
           <span class="vault-stat-value">${data.inventory?.length || data.manuals.length + data.aliases.length}</span>
-          <span class="vault-stat-label">Verified Manuals</span>
+          <span class="vault-stat-label">Supplied Files</span>
         </div>
         <div class="vault-stat-card">
           <span class="vault-stat-value">${rows.length}</span>
@@ -371,7 +373,7 @@
         </div>
         <div class="vault-stat-card">
           <span class="vault-stat-value">${data.manuals.length}</span>
-          <span class="vault-stat-label">Station Line Sections</span>
+          <span class="vault-stat-label">Unique Manuals</span>
         </div>
         <div class="vault-stat-card">
           <span class="vault-stat-value" id="vault-stat-menu-count">${menu.length}</span>
@@ -407,7 +409,7 @@
       body.innerHTML = `
         <div class="vault-search-toolbar">
           <label>
-            <span>Search All 750 Pages</span>
+            <span>Search All ${rows.length} Pages</span>
             <input id="q" type="search" placeholder="Recipe, ingredient, equipment, procedure, temperature…" value="${e(filters.q)}">
           </label>
           <label>
@@ -485,7 +487,7 @@
           <h2 style="font-family:var(--font-serif); font-size:2.2rem; color:#FFFFFF; margin-bottom:0.5rem;">Authentic Supplied Manuals</h2>
           <p style="color:var(--text-secondary); max-width:760px;">Complete cryptographic inventory of the 12 master operational files and aliases. Zero pages or procedures discarded.</p>
         </div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1.25rem;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap:1.25rem;">
           ${inventory.map(m => `
             <article class="vault-page" style="display:flex; flex-direction:column; gap:0.75rem; border-top:3px solid var(--gold-primary);">
               <div style="display:flex; justify-content:space-between; align-items:start;">
@@ -590,8 +592,9 @@
 
         <div class="vault-page">
           ${shop ? `
+            <label><input type="checkbox" id="allow-public-export"> Export outside the password-protected workspace. These items will stay in browser storage after locking.</label>
             <div class="vault-action-chips">
-              <button type="button" class="btn-chip" id="btn-sync-public-provisions" style="color:var(--gold-primary); border-color:rgba(212,175,55,0.4); background:rgba(212,175,55,0.1); font-weight:600;">
+              <button type="button" class="btn-chip" id="btn-sync-public-provisions" disabled style="color:var(--gold-primary); border-color:rgba(212,175,55,0.4); background:rgba(212,175,55,0.1); font-weight:600;">
                 🛒 Sync to Public Provisions
               </button>
               <button type="button" class="btn-chip" id="btn-format-provisions-check">
@@ -644,7 +647,10 @@
 
       if (shop) {
         const syncBtn = $('#btn-sync-public-provisions');
-        if (syncBtn) syncBtn.onclick = syncToPublicProvisions;
+        if (syncBtn) {
+          syncBtn.onclick = syncToPublicProvisions;
+          $("#allow-public-export").onchange = ev => { syncBtn.disabled = !ev.target.checked; };
+        }
 
         const checkBtn = $('#btn-format-provisions-check');
         if (checkBtn) {
@@ -694,7 +700,7 @@
           <h2 style="font-family:var(--font-serif); font-size:2.2rem; color:#FFFFFF; margin-bottom:0.5rem;">Authentic Line Training Videos</h2>
           <p style="color:var(--text-secondary); max-width:760px;">${links.length} video demonstrations referenced directly in the operational manuals.</p>
         </div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1.25rem;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap:1.25rem;">
           ${links.map(({ p, url }) => `
             <article class="vault-page" style="display:flex; flex-direction:column; gap:0.75rem; border-top:3px solid var(--emerald);">
               <span class="vault-manual-pill">${e(p.manual)} · PAGE ${p.number}</span>
@@ -722,7 +728,7 @@
           <h2 style="font-family:var(--font-serif); font-size:2.2rem; color:#FFFFFF; margin-bottom:0.5rem;">Brigade Prep Transcriptions</h2>
           <p style="color:var(--text-secondary); max-width:760px;">Legacy operational summaries retained for quick glance reference.</p>
         </div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:1.25rem;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap:1.25rem;">
           ${(data.prepCards || []).map(c => `
             <details class="vault-page" style="border-top:3px solid var(--gold-primary);">
               <summary style="font-family:var(--font-serif); font-size:1.2rem; color:#FFFFFF; cursor:pointer;">
@@ -800,7 +806,7 @@
     return `
       <section class="source-table" data-table-index="${index}" data-ingredient-col="${ingredient}">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem; flex-wrap:wrap; gap:0.6rem;">
-          <div class="vault-scaling-strip" data-scale-strip="${index}">
+          ${ingredient >= 0 ? `<div class="vault-scaling-strip" data-scale-strip="${index}">
             <label>Yield Scale:</label>
             <button type="button" class="btn-vault-scale-pill active" data-scale-val="1">1x</button>
             <button type="button" class="btn-vault-scale-pill" data-scale-val="0.5">0.5x</button>
@@ -808,7 +814,7 @@
             <button type="button" class="btn-vault-scale-pill" data-scale-val="2">2x</button>
             <button type="button" class="btn-vault-scale-pill" data-scale-val="3">3x</button>
             <button type="button" class="btn-vault-scale-pill" data-scale-val="4">4x</button>
-          </div>
+          </div>` : ''}
           <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted);">
             ✦ Click column header to trace batch
           </span>
@@ -909,7 +915,7 @@
           Structured Recipe & Operational Specs
         </h3>
         <p style="font-size:0.825rem; color:var(--text-muted); margin-bottom:1.25rem;">
-          Extracted verbatim from master line manual. Stated batch quantities and procedures retained without approximation.
+          Formatted extraction from the source manual. Compare table alignment and quantities with the original scan; calculated batches are labeled separately.
         </p>
         
         <div class="source-content">
@@ -975,6 +981,8 @@
         const tableSec = btn.closest('.source-table');
         const table = tableSec.querySelector('table');
         const factor = parseFloat(btn.dataset.scaleVal) || 1;
+        tableSec.dataset.factor = factor;
+        tableSec.querySelectorAll("[data-shop-table]").forEach(b => { b.disabled = false; b.textContent = "Add Batch to Private Provisions"; });
         const ingCol = parseInt(tableSec.dataset.ingredientCol, 10);
 
         strip.querySelectorAll('.btn-vault-scale-pill').forEach(b => b.classList.remove('active'));
@@ -988,14 +996,17 @@
             td.innerHTML = e(raw);
           } else {
             const scaled = scaleNumberString(raw, factor);
-            if (scaled !== raw) {
+            if (scaled === null) {
+              td.innerHTML = `${e(raw)} <strong class="vault-scaled-badge">Not scaled — review manually</strong>`;
+            } else if (scaled !== raw) {
               td.innerHTML = `${e(scaled)} <span class="vault-scaled-badge">${factor}x</span>`;
             } else {
               td.innerHTML = e(raw);
             }
           }
         });
-        notifyVault(`Table quantities scaled to ${factor}x yield.`);
+        table.querySelector("caption").textContent = `Calculated batch × ${factor}. Original quantities remain in the source scan. Flagged entries need manual scaling.`;
+        notifyVault(`Batch factor ${factor}x selected. Review any entries marked not scaled.`);
       };
     });
 
@@ -1004,7 +1015,13 @@
       b.onclick = () => {
         const idx = Number(b.dataset.copyTable);
         const t = tables[idx].rows;
-        const tsv = t.map(row => row.join('\t')).join('\n');
+        const section = b.closest('.source-table');
+        const factor = Number(section.dataset.factor || 1);
+        const ingredient = Number(section.dataset.ingredientCol);
+        const tsv = `Calculated batch factor: ${factor}x (column headings identify original source batches)\n` + t.map((row, n) => row.map((cell, col) => {
+          if (!n || col === ingredient || !cell || ingredient < 0) return cell || '';
+          return scaleNumberString(cell, factor) ?? ('NOT SCALED: '+cell);
+        }).join('\t')).join('\n');
         navigator.clipboard.writeText(tsv).then(() => {
           notifyVault('Table data copied to clipboard as TSV for spreadsheet paste!');
           const orig = b.textContent;
@@ -1029,19 +1046,30 @@
         const col = Number(el.querySelector(`[data-column="${i}"]`).value);
         const ing = Number(b.dataset.ingredient);
         const t = tables[i].rows;
-        const lines = t.slice(1).filter(row => row[col] && row[ing]).map(row => `${row[col]} — ${row[ing]}`);
+        const factor = Number(b.closest('.source-table').dataset.factor || 1);
+        const lines = t.slice(1).filter(row => row[col] && row[ing]).map(row => {
+          const value = scaleNumberString(row[col], factor);
+          return `${value === null ? 'MANUAL SCALING REQUIRED: '+row[col] : value} — ${row[ing]}`;
+        });
         
         if (!lines.length) {
           notifyVault('No paired quantity and ingredient cells found.', false);
           return;
         }
 
-        shopping += `\n/* ${p.title} · ${p.manual} p.${p.number} · ${t[0][col]} */\n${lines.join('\n')}\n`;
+        shopping += `\n/* ${p.title} · ${p.manual} p.${p.number} · ${t[0][col]} × ${factor} */\n${lines.join('\n')}\n`;
         notifyVault(`Added ${lines.length} items from ${p.title} (${t[0][col]}) to Private Provisions!`);
         b.textContent = '✓ Batch Added to Provisions';
         b.style.borderColor = 'var(--emerald)';
         b.style.color = 'var(--emerald)';
         b.disabled = true;
+      };
+    });
+
+    el.querySelectorAll('[data-column]').forEach(select => {
+      select.onchange = () => {
+        const button=el.querySelector(`[data-shop-table="${select.dataset.column}"]`);
+        if(button){button.disabled=false;button.textContent='Add Batch to Private Provisions';}
       };
     });
 

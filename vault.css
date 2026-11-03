@@ -1523,3 +1523,12 @@
     padding: 0.65rem 1rem;
   }
 }
+
+[hidden]{display:none!important}
+
+/* Explicit width prevents flex min-content from stretching the entire mobile page. */
+.vault-shell{width:100%;min-width:0;box-sizing:border-box}
+.vault-workspace,#vault-body,.vault-header-hero,.vault-hero-lead,.vault-nav-ribbon{min-width:0;max-width:100%}
+.vault-page h2,.vault-page h3,.vault-manual-pill{overflow-wrap:anywhere}
+.vault-page-toolbar{flex-wrap:wrap}
+@media(max-width:600px){.vault-header-actions{flex-wrap:wrap}.vault-stat-label{overflow-wrap:anywhere}}

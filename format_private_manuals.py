@@ -16,7 +16,17 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parent
 AAD = b'latelier-vault-v1'
 
-def build(password):
+def ordered_words(words):
+    lines=[]
+    for word in sorted(words, key=lambda w: (w[1], w[0])):
+        center=(word[1]+word[3])/2
+        line=next((line for line in lines if abs(line[0]-center) < max(2, (word[3]-word[1])*.35)),None)
+        if line is None:
+            line=[center,[]];lines.append(line)
+        line[1].append(word)
+    return '\n'.join(' '.join(w[4] for w in sorted(line[1],key=lambda w:w[0])) for line in sorted(lines,key=lambda line:line[0]))
+
+def build(password, render_previews=True):
     vault = ROOT / 'private-vault'
     config = json.loads((vault / 'config.json').read_text(encoding='utf-8'))
     key = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32,
@@ -54,7 +64,7 @@ def build(password):
             elements = []
             bounds = []
             for table in tables:
-                cells = table.extract()
+                cells = [[ordered_words(page.get_text('words',clip=pymupdf.Rect(cell))) if cell else None for cell in row.cells] for row in table.rows]
                 if not cells or not any(any(cell for cell in row) for row in cells):
                     continue
                 bounds.append(pymupdf.Rect(table.bbox))
@@ -67,7 +77,10 @@ def build(password):
                 # Only omit a block if it is entirely represented by a table.
                 if any(b.contains(rect) for b in bounds):
                     continue
-                elements.append({'kind': 'text', 'y': block[1], 'text': block[4].strip()})
+                words=page.get_text('words',clip=rect)
+                outside=[w for w in words if not any(b.contains(pymupdf.Point((w[0]+w[2])/2,(w[1]+w[3])/2)) for b in bounds)]
+                text=ordered_words(outside)
+                if text:elements.append({'kind': 'text', 'y': block[1], 'text': text})
             record['content'] = sorted(elements, key=lambda x: x['y'])
             record['hasIngredientTable'] = any(
                 'ingredient' in str(cell).lower()
@@ -77,11 +90,12 @@ def build(password):
             record['width'], record['height'] = page.rect.width, page.rect.height
             filename = f"{m['id']}-{record['number']}.bin"
             record['preview'] = 'pages/' + filename
-            pix = page.get_pixmap(matrix=pymupdf.Matrix(1.5, 1.5), alpha=False)
-            image = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
-            buf = io.BytesIO()
-            image.save(buf, format='WEBP', quality=88, method=4)
-            seal(buf.getvalue(), pages_dir / filename)
+            if render_previews or not (pages_dir / filename).exists():
+                pix = page.get_pixmap(matrix=pymupdf.Matrix(1.5, 1.5), alpha=False)
+                image = Image.frombytes('RGB', [pix.width, pix.height], pix.samples)
+                buf = io.BytesIO()
+                image.save(buf, format='WEBP', quality=88, method=4)
+                seal(buf.getvalue(), pages_dir / filename)
         print(f"Formatted {len(m['pages'])} pages", flush=True)
         doc.close()
     data['inventory'] = inventory
@@ -92,4 +106,4 @@ def build(password):
                       'encryptedPreviewBytes': sum(p.stat().st_size for p in pages_dir.glob('*.bin'))}))
 
 if __name__ == '__main__':
-    build(sys.stdin.readline().rstrip('\r\n'))
+    build(sys.stdin.readline().rstrip('\r\n'), render_previews='--tables-only' not in sys.argv)
